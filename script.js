@@ -1,6 +1,6 @@
 //#region \0rolldown/runtime.js
 var __create = Object.create;
-var __defProp$31 = Object.defineProperty;
+var __defProp$32 = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
@@ -8,24 +8,24 @@ var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __commonJSMin = (cb, mod) => () => (mod || (cb((mod = { exports: {} }).exports, mod), cb = null), mod.exports);
 var __exportAll = (all, no_symbols) => {
 	let target = {};
-	for (var name in all) __defProp$31(target, name, {
+	for (var name in all) __defProp$32(target, name, {
 		get: all[name],
 		enumerable: true
 	});
-	if (!no_symbols) __defProp$31(target, Symbol.toStringTag, { value: "Module" });
+	if (!no_symbols) __defProp$32(target, Symbol.toStringTag, { value: "Module" });
 	return target;
 };
 var __copyProps = (to, from, except, desc) => {
 	if (from && typeof from === "object" || typeof from === "function") for (var keys = __getOwnPropNames(from), i = 0, n = keys.length, key; i < n; i++) {
 		key = keys[i];
-		if (!__hasOwnProp.call(to, key) && key !== except) __defProp$31(to, key, {
+		if (!__hasOwnProp.call(to, key) && key !== except) __defProp$32(to, key, {
 			get: ((k) => from[k]).bind(null, key),
 			enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
 		});
 	}
 	return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp$31(target, "default", {
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp$32(target, "default", {
 	value: mod,
 	enumerable: true
 }) : target, mod));
@@ -61,7 +61,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 	}
 })();
 //#endregion
-//#region node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js
 /**
 * @license React
 * scheduler.production.js
@@ -302,12 +302,12 @@ var require_scheduler_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js
 var require_scheduler = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_scheduler_production();
 }));
 //#endregion
-//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react.production.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react.production.js
 /**
 * @license React
 * react.production.js
@@ -667,12 +667,12 @@ var require_react_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region node_modules/.pnpm/react@19.2.6/node_modules/react/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react@19.2.6/node_modules/react/index.js
 var require_react = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_production();
 }));
 //#endregion
-//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom.production.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom.production.js
 /**
 * @license React
 * react-dom.production.js
@@ -813,7 +813,7 @@ var require_react_dom_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/index.js
 var require_react_dom = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function checkDCE() {
 		if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -827,7 +827,7 @@ var require_react_dom = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_dom_production();
 }));
 //#endregion
-//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom-client.production.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom-client.production.js
 /**
 * @license React
 * react-dom-client.production.js
@@ -9907,7 +9907,7 @@ var require_react_dom_client_production = /* @__PURE__ */ __commonJSMin(((export
 	};
 }));
 //#endregion
-//#region app/json-response.ts
+//#region package/source/app/json-response.ts
 var import_client = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function checkDCE() {
 		if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -9936,7 +9936,7 @@ async function readJsonResponse(response, message) {
 	return data;
 }
 //#endregion
-//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9947,7 +9947,7 @@ var mergeClasses = (...classes) => classes.filter((className, index, array) => {
 	return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
 }).join(" ").trim();
 //#endregion
-//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toKebabCase.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toKebabCase.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9956,7 +9956,7 @@ var mergeClasses = (...classes) => classes.filter((className, index, array) => {
 */
 var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 //#endregion
-//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toCamelCase.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toCamelCase.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9965,7 +9965,7 @@ var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLo
 */
 var toCamelCase = (string) => string.replace(/^([A-Z])|[\s-_]+(\w)/g, (match, p1, p2) => p2 ? p2.toUpperCase() : p1.toLowerCase());
 //#endregion
-//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toPascalCase.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toPascalCase.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9977,7 +9977,7 @@ var toPascalCase = (string) => {
 	return camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
 };
 //#endregion
-//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/defaultAttributes.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/defaultAttributes.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9996,7 +9996,7 @@ var defaultAttributes = {
 	strokeLinejoin: "round"
 };
 //#endregion
-//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/hasA11yProp.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/hasA11yProp.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -10008,7 +10008,7 @@ var hasA11yProp = (props) => {
 	return false;
 };
 //#endregion
-//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/context.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/context.mjs
 var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
 /**
 * @license lucide-react v1.31.0 - ISC
@@ -10019,7 +10019,7 @@ var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
 var LucideContext = (0, import_react.createContext)({});
 var useLucideContext = () => (0, import_react.useContext)(LucideContext);
 //#endregion
-//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/Icon.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/Icon.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -10042,7 +10042,7 @@ var Icon = (0, import_react.forwardRef)(({ color, size, strokeWidth, absoluteStr
 	}, [...iconNode.map(([tag, attrs]) => (0, import_react.createElement)(tag, attrs)), ...Array.isArray(children) ? children : [children]]);
 });
 //#endregion
-//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/createLucideIcon.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/createLucideIcon.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -10438,6 +10438,19 @@ var Heart = createLucideIcon("heart", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var House = createLucideIcon("house", [["path", {
+	d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8",
+	key: "5wwlr5"
+}], ["path", {
+	d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
+	key: "r6nss1"
+}]]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Info = createLucideIcon("info", [
 	["circle", {
 		cx: "12",
@@ -10552,6 +10565,26 @@ var MapPin = createLucideIcon("map-pin", [["path", {
 	r: "3",
 	key: "ilqhr7"
 }]]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Menu$1 = createLucideIcon("menu", [
+	["path", {
+		d: "M4 5h16",
+		key: "1tepv9"
+	}],
+	["path", {
+		d: "M4 12h16",
+		key: "1lakjw"
+	}],
+	["path", {
+		d: "M4 19h16",
+		key: "1djgab"
+	}]
+]);
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -11065,7 +11098,7 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-//#region app/speech-reader.ts
+//#region package/source/app/speech-reader.ts
 var readingSpeeds = {
 	"Very slow": .45,
 	Slow: .7,
@@ -11102,14 +11135,52 @@ function readingTokens(text) {
 	});
 	return result;
 }
+var voiceStyles = {
+	reader: {
+		pitch: 1,
+		label: "Natural reader"
+	},
+	mateo: {
+		pitch: 1.4,
+		label: "Youthful boy style"
+	},
+	motherly: {
+		pitch: 1,
+		label: "Calm, warm narrator"
+	},
+	teacher: {
+		pitch: 1,
+		label: "Friendly story narrator"
+	}
+};
+function naturalVoiceScore(voice, profile) {
+	const name = voice.name + " " + voice.voiceURI;
+	let score = 0;
+	if (/premium|enhanced|natural|neural|online/i.test(name)) score += 70;
+	if (/google|microsoft/i.test(name)) score += 25;
+	if (/compact|espeak|robot/i.test(name)) score -= 60;
+	const female = /\b(karen|samantha|victoria|zira|aria|jenny|susan|serena|moira|tessa|hazel|sara|sonia|libby|female)\b/i.test(name);
+	if ((profile === "motherly" || profile === "teacher") && female) score += profile === "motherly" ? 85 : 35;
+	if (profile === "motherly" && /serena|karen|samantha|sonia/i.test(name)) score += 10;
+	if (profile === "teacher" && /aria|jenny|samantha|google uk english female/i.test(name)) score += 10;
+	if (/^en[-_]NZ/i.test(voice.lang)) score += 12;
+	else if (/^en[-_]AU/i.test(voice.lang)) score += 8;
+	return score;
+}
+function speechRate(profile, rate) {
+	if (profile === "motherly") return rate === .45 ? .55 : rate === .7 ? .82 : rate === 1 ? .94 : 1.15;
+	if (profile === "teacher" && rate === 1) return 1.04;
+	return rate;
+}
 function selectSpeechVoice(voices, profile, preferred) {
 	const english = voices.filter((v) => /^en/i.test(v.lang));
 	if (preferred) {
 		const chosen = voices.find((v) => v.voiceURI === preferred);
 		if (chosen) return chosen;
 	}
+	if (profile === "motherly" || profile === "teacher") return [...english].sort((a, b) => naturalVoiceScore(b, profile) - naturalVoiceScore(a, profile))[0];
 	if (profile === "mateo") {
-		const named = english.find((v) => /\b(daniel|alex|david|george|james|guy|aaron|fred|thomas|oliver|arthur|lee|rishi|male)\b/i.test(v.name));
+		const named = english.find((v) => /\b(junior|boy|child|daniel|alex|david|george|james|guy|aaron|fred|thomas|oliver|arthur|lee|rishi|male)\b/i.test(v.name));
 		if (named) return named;
 	}
 	return english.find((v) => /^en[-_]NZ/i.test(v.lang)) || english.find((v) => /^en[-_]AU/i.test(v.lang)) || english.find((v) => v.localService) || english[0];
@@ -11151,9 +11222,9 @@ var SpeechReader = class {
 			this.current = utterance;
 			utterance.text = parts[index];
 			utterance.lang = "en-NZ";
-			utterance.rate = this.rate;
+			utterance.rate = speechRate(this.profile, this.rate);
 			const voice = selectSpeechVoice(this.synth.getVoices(), this.profile, this.preferredVoice);
-			utterance.pitch = this.profile === "mateo" ? .65 : 1;
+			utterance.pitch = voiceStyles[this.profile].pitch;
 			if (voice) {
 				utterance.voice = voice;
 				utterance.lang = voice.lang;
@@ -11177,7 +11248,7 @@ var SpeechReader = class {
 				this.emit({
 					...idleSpeech,
 					status: "error",
-					message: e.error === "not-allowed" ? "Tap Read again to allow your browser to speak." : "Audio could not play. You can still read the story, or try another browser with speech support."
+					message: e.error === "not-allowed" ? "Tap the audio button again to allow your browser to speak." : "Audio could not play. You can still read the text, or try another browser with speech support."
 				});
 			};
 			this.synth.speak(utterance);
@@ -11229,7 +11300,7 @@ var SpeechReader = class {
 	}
 };
 //#endregion
-//#region app/use-speech.ts
+//#region package/source/app/use-speech.ts
 function useSpeech(profile = "reader", initialSpeed = "Med") {
 	const reader = (0, import_react.useRef)(null), [supported, setSupported] = (0, import_react.useState)(null), [state, setState] = (0, import_react.useState)(idleSpeech), [speed, setSpeed] = (0, import_react.useState)(initialSpeed);
 	(0, import_react.useEffect)(() => {
@@ -11262,7 +11333,990 @@ function useSpeech(profile = "reader", initialSpeed = "Med") {
 	};
 }
 //#endregion
-//#region app/content.ts
+//#region package/source/app/new-family-stories.ts
+var newFamilyStories = [
+	{
+		"title": "Sue and the rice cup",
+		"theme": "Helping at home",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Mom was making dinner when Sue asked, “May I help cook the rice?” Mom smiled. They washed their hands and found a measuring cup. Rae watched from a safe spot beside Dad.",
+			"Sue poured dry rice into a bowl. One cup, then another. Mom showed her how to rinse it gently. A few grains stuck to Sue’s fingers. “Tiny rice passengers!” she laughed.",
+			"Mom added the water and handled the rice cooker, hot lid and steam. Sue set spoons on the table while Mye watched from Mom’s arms and Mateo rested away from the kitchen.",
+			"At dinner, Sue pointed to the fluffy rice. “I measured that!” she said. “And you helped us share a meal,” Mom replied. Rae gave her sister a happy thumbs-up."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Measure: find how much there is. Fluffy: soft and light.",
+		"image": "./story-cartoons/story-31.webp",
+		"imageAlt": "Sue gathers rice and a measuring cup with Mom."
+	},
+	{
+		"title": "Sue and the bubbly dishes",
+		"theme": "Helping at home",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"After lunch, Sue saw a little mountain of dishes. “Let’s make it smaller together,” Mom said. She put sharp knives and heavy plates aside for a grown-up to wash.",
+			"Mom checked the warm water. Sue washed a light, unbreakable plate with a soft cloth. Bubbles gathered around its handle. Rae counted three bubbles, then giggled when one popped.",
+			"Sue rinsed the plate and placed it carefully on the rack. Mom washed the next dish. Dad kept Mye nearby, and Mateo watched from his mat without stepping into the kitchen.",
+			"They wiped up a splash so nobody would slip. Sue looked at the tidy sink. “A mountain can become a molehill,” she said. Mom hugged her. “One small job at a time.”"
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Rinse: wash away soap with clean water. Rack: a place for things to dry.",
+		"image": "./story-cartoons/story-32.webp",
+		"imageAlt": "Sue and Mom find the dishes waiting by the sink."
+	},
+	{
+		"title": "Sue feeds the chickens",
+		"theme": "Caring for animals",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Dad carried a bucket of chicken feed into the garden. Sue followed with a small scoop. “Quiet steps,” Dad reminded her. The chickens tilted their heads as if they were listening.",
+			"Sue put the feed where Dad showed her. She watched the hens peck, peck, peck. Rae stayed beside Mom, who held Mye. Mateo waited outside the chicken fence with Dad.",
+			"One hen scratched the ground with a busy foot. “She is looking for more breakfast,” Sue said. Dad checked the chickens’ water while Sue watched without chasing them.",
+			"After their job, Dad and Sue washed their hands with soap and water. “Animals need gentle helpers,” Sue told Rae. “Tomorrow I can bring the scoop again.”"
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Hen: a female chicken. Peck: pick up food with a beak.",
+		"image": "./story-cartoons/story-33.webp",
+		"imageAlt": "Sue carries chicken feed to the coop with Dad."
+	},
+	{
+		"title": "Sue and Grandma’s egg basket",
+		"theme": "Grandma’s garden",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Grandma invited Sue to collect chicken eggs. She gave Sue a little basket lined with a soft cloth. “We will be gentle visitors,” Grandma said as they walked to the coop.",
+			"Grandma checked the nesting box first. Then Sue carefully lifted an egg where Grandma showed her. It felt warm and smooth. She placed it in the basket instead of holding it too tightly.",
+			"They found two more eggs. Grandma carried the basket back inside, and they washed their hands. Dad kept Mateo away from the coop while Rae and Mom admired the basket from the doorway.",
+			"Later Grandma cooked the eggs thoroughly for lunch. “Three eggs and one careful helper,” she said. Sue grinned. She liked knowing that a small, gentle job could help feed her family."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Coop: a home for chickens. Nesting box: a cosy place where hens lay eggs.",
+		"image": "./story-cartoons/story-34.webp",
+		"imageAlt": "Sue takes an empty egg basket to the coop with Grandma."
+	},
+	{
+		"title": "Sue’s quiet play club",
+		"theme": "Sisters together",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Mom opened her notebook at the table. “I’m writing a book,” she said. “Could we have a little quiet playtime?” Dad stayed with the girls while Sue chose a soft play mat.",
+			"Sue built a pretend town for Rae. They put big blocks in a row and made a road for a toy bus. Mye lay nearby with Dad, watching a bright baby toy. Mateo settled on his mat beside them.",
+			"When Mye reached for her toy, Sue smiled and shook it gently where Dad could see. Rae brought the pretend bus to Sue. They whispered, “Welcome to our town!”",
+			"Mom finished a page and joined the club. “Thank you for the peaceful moment,” she said. Sue showed her the town. “Our story has a bus,” Sue said. “What does yours have?”"
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Notebook: a book for writing ideas. Peaceful: quiet and calm.",
+		"image": "./story-cartoons/story-35.webp",
+		"imageAlt": "Mom writes her book while Sue and Rae bring their toys."
+	},
+	{
+		"title": "Rae makes a little rainbow",
+		"theme": "Learning together",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Sue laid big pieces of coloured paper on the craft table. Rae pulled up a chair beside her. “I want to make one like yours,” Rae said. Mom brought safe supplies and stayed to help.",
+			"Sue put a red strip above a yellow strip. Rae chose yellow first. She watched Sue use a glue stick, then tried her own. A corner curled up like a tiny wave.",
+			"“Mine is different,” Rae said. “It is your rainbow,” Sue replied. Mom helped press down the corner. Dad held Mye nearby while Mateo rested away from the craft pieces.",
+			"The sisters hung their pictures side by side. Sue’s rainbow was wide; Rae’s rainbow was wiggly. Both made the wall cheerful. “Next time I’ll show you my way,” Rae told Sue."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Craft: something you make with your hands. Wiggly: bending this way and that.",
+		"image": "./story-cartoons/story-36.webp",
+		"imageAlt": "Sue shows Rae the bright paper pieces for their craft."
+	},
+	{
+		"title": "Rae follows the toy trail",
+		"theme": "Helping at home",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"The living room held a tiny town of toys. Sue picked up a toy bus. “This one goes back to our bedroom,” she said. Rae picked up a soft rabbit. “I’m helping too!”",
+			"Sue walked along the clear hallway with one toy. Rae followed slowly with her rabbit. Mom kept the path tidy, and Dad held Mye while Mateo waited out of the way.",
+			"The sisters put toys into a low basket. Sue showed Rae where the blocks belonged. Rae found another rabbit behind a cushion and carried it to the same basket.",
+			"At last they could see the floor again. “Our toys have homes,” Rae announced. Sue nodded. “Now we know where to find them tomorrow.” They waved goodnight to the toy town."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Trail: a path to follow. Basket: a container for carrying or storing things.",
+		"image": "./story-cartoons/story-37.webp",
+		"imageAlt": "Rae notices toys scattered across her bedroom."
+	},
+	{
+		"title": "Rae’s gentle baby game",
+		"theme": "Sisters together",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Sue sat beside Mom and baby Mye on the floor. She held up a large, soft baby toy. Mye looked at it, then at Sue. Rae came over. “Can I play like you?” she asked.",
+			"“Gentle hands and a little space,” Mom said. Rae watched Sue slowly move the toy. Then Rae waved softly and said, “Hello, Mye!” Dad sat nearby while Mateo relaxed on his mat.",
+			"Mye answered with a little sound. Rae laughed. Sue laughed too. When Mye turned her head away, Mom noticed. “Our baby would like a rest now.” The sisters put the toy down.",
+			"Rae tucked her own doll into a pretend bed. “Gentle hands,” she whispered. Sue smiled. Rae had copied the best part of the game: listening to their little sister."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Gentle: careful and kind. Notice: pay attention to something.",
+		"image": "./story-cartoons/story-38.webp",
+		"imageAlt": "Rae sits beside baby Mye on the soft play mat."
+	},
+	{
+		"title": "Mye’s little journey",
+		"theme": "Growing at my own pace",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Mom spread a clean mat on the floor. She checked that little objects were out of reach and sat close to Mye. Sue and Rae watched from the edge, giving their baby sister room.",
+			"Mye lifted her head. She wriggled one knee, then the other. Dad placed a large baby toy nearby. Mateo lay on his own mat, safely away from the baby’s little journey.",
+			"Mye reached, rocked and moved a tiny bit forward. Sue almost cheered loudly, then made a soft happy clap. “You tried!” Rae whispered. Mye looked up at their smiling faces.",
+			"After a short play, Mom picked Mye up for a cuddle. “There is no race,” Dad said. “She will learn in her own time.” Sue decided that even a tiny journey deserved a happy welcome."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Wriggle: move with little twists. Journey: going from one place to another.",
+		"image": "./story-cartoons/story-39.webp",
+		"imageAlt": "Mye reaches for a soft ball on the play mat."
+	},
+	{
+		"title": "Mye and the sitting surprise",
+		"theme": "Growing at my own pace",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Mom sat on the floor beside Mye, ready to help. Sue put a large soft toy where Mye could see it. Rae sat nearby with her doll. Dad called this their little floor party.",
+			"Mye sat up for a brief moment and looked very pleased. Mom’s hands stayed close in case she wobbled. Mateo watched from his mat without crowding the baby.",
+			"Wobble, wobble! Mom gently helped Mye settle. “Trying counts,” Sue said. Rae made her doll sit up too, then tucked it safely into her lap.",
+			"Mye tried again, then leaned into Mom for a cuddle. The floor party ended with a song. Nobody needed to sit for a certain time. Being together was the best surprise."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Wobble: rock from side to side. Brief: lasting a short time.",
+		"image": "./story-cartoons/story-40.webp",
+		"imageAlt": "Mom helps Mye sit on the soft mat."
+	},
+	{
+		"title": "Mye’s new little taste",
+		"theme": "Trying something new",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Mom had talked with their health visitor about Mye being ready to try food. Today Mye sat upright in her highchair, with Mom beside her. Sue and Rae washed their hands and came to watch.",
+			"Mom offered a small spoon of suitable soft food. Mye made a surprised face. “A new taste!” Sue said softly. Dad smiled while Mateo waited away from the table.",
+			"On another day, Mom offered a different soft food. Mye looked, tasted, and turned her head when she had enough. “She is telling us,” Mom said. The sisters listened.",
+			"Rae made a pretend tasting face that made Sue giggle. Mye smiled too. There was no hurry to finish anything. Their family was learning to notice a little person’s little signals."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Taste: a flavour you notice when you eat. Signal: a way of showing something.",
+		"image": "./story-cartoons/story-41.webp",
+		"imageAlt": "Mom brings soft food to Mye in the highchair."
+	},
+	{
+		"title": "Mye’s giggle orchestra",
+		"theme": "Sisters together",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Dad sat with Mye on the play mat. Sue rested her hands against her cheeks and made a funny surprised face. Rae watched, then tried a funny face too. Mom settled beside them with a smile.",
+			"Sue said, “Good morning, Captain Giggle!” Mye gave one bright giggle. Rae copied Sue’s funny greeting in a tiny voice. Mye giggled again.",
+			"Mateo tilted his head from his mat. The girls laughed at his puzzled face. They kept their voices gentle so the fun would not become too loud for Mye.",
+			"When Mye grew quiet, Dad cuddled her. “Our orchestra has finished its song,” Mom said. Sue and Rae bowed from their seats. Their little audience was ready for a rest."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Orchestra: a group making music together. Audience: people watching a performance.",
+		"image": "./story-cartoons/story-42.webp",
+		"imageAlt": "Sue and Rae sit where Mye can see them."
+	},
+	{
+		"title": "Mateo and the waiting lead",
+		"theme": "Patience",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Mateo heard Dad’s shoes by the door. His tail made a happy swish. Sue spotted the walking lead on its hook. “He knows what is coming!” she said.",
+			"Dad filled a water bowl and checked their walking things. Mateo waited while Dad got ready. Rae waved from beside Mom, who held Mye safely in her arms.",
+			"Dad clipped the lead to Mateo’s harness. Sue came along with Dad on a familiar path. They stopped while Dad checked for traffic. Mateo stayed close instead of rushing ahead.",
+			"After their walk, Mateo rested with fresh water nearby. “Waiting helped us have a lovely walk,” Dad said. Sue stroked him gently while Dad supervised. His tail gave one more happy swish."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Harness: straps used safely with a dog’s lead. Swish: a soft sweeping movement.",
+		"image": "./story-cartoons/story-43.webp",
+		"imageAlt": "Mateo waits by the door for his walk."
+	},
+	{
+		"title": "Mateo watches the little game",
+		"theme": "Gentle company",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Sue and Rae took a big soft ball into the garden. Dad stayed beside them while Mom sat with Mye. There was room for everyone, including a shady resting place for Mateo.",
+			"Mateo rested and watched the girls roll the ball. Rae looked at him. “You can be our game watcher,” she said. Mateo’s ears lifted at her friendly voice.",
+			"The ball rolled past Sue. She took a breath and fetched it. Rae waited for the next turn. Mateo stayed calm while the girls began again, with Dad nearby.",
+			"When the game was done, the girls put the ball away. They gave Mateo space to stretch. “Good watching,” Sue said. Sometimes being a friend meant keeping gentle company."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Company: being together. Patient: able to wait calmly.",
+		"image": "./story-cartoons/story-44.webp",
+		"imageAlt": "Sue and Rae bring a ball onto the lawn."
+	},
+	{
+		"title": "Mateo’s toy invitation",
+		"theme": "Playing together",
+		"level": "Ages 4–7 · 2 min",
+		"paragraphs": [
+			"Mateo picked up his own big soft dog ball. He carried it towards Sue and Rae, who were sitting with Dad in the garden. “Is that an invitation?” Sue asked with a grin.",
+			"Mateo put the toy near Dad. Dad checked it was a good time for a gentle game. Mom stayed with Mye nearby. The girls let Dad handle the dog’s toy and washed their hands after playing.",
+			"Dad rolled the toy a short distance across a clear patch of grass. Mateo brought it back, looking pleased. Sue counted, “One happy delivery!” Rae clapped from her seat.",
+			"After a few turns, Dad put the toy away and let Mateo rest. “Thanks for inviting us,” Sue said. Rae waved. Mateo lay down with his paws together, as if he had hosted a very good party."
+		],
+		"ask": [
+			"What was your favourite part?",
+			"How did the family help one another?",
+			"What could you try with a grown-up?"
+		],
+		"words": "Invitation: asking someone to join you. Delivery: bringing something to a place.",
+		"image": "./story-cartoons/story-45.webp",
+		"imageAlt": "Sue and Rae call Mateo to join their game."
+	}
+];
+var newFamilyQuizzes = {
+	"Sue and the rice cup": [
+		{
+			"q": "What did Sue use to measure rice?",
+			"options": [
+				"A measuring cup",
+				"A toy truck",
+				"A shoe"
+			],
+			"answer": 0,
+			"why": "A measuring cup. Look back at the story to find this detail."
+		},
+		{
+			"q": "Who handled the hot rice cooker?",
+			"options": [
+				"Mye",
+				"Mom",
+				"Mateo"
+			],
+			"answer": 1,
+			"why": "Mom. Look back at the story to find this detail."
+		},
+		{
+			"q": "How did Sue help while the rice cooked?",
+			"options": [
+				"She climbed on the cooker",
+				"She hid the plates",
+				"She set spoons on the table"
+			],
+			"answer": 2,
+			"why": "She set spoons on the table. Look back at the story to find this detail."
+		}
+	],
+	"Sue and the bubbly dishes": [
+		{
+			"q": "What did Sue wash?",
+			"options": [
+				"A light plate",
+				"A sharp knife",
+				"A heavy pan"
+			],
+			"answer": 0,
+			"why": "Sue washed a light, unbreakable plate with Mom beside her."
+		},
+		{
+			"q": "What did they wipe up?",
+			"options": [
+				"A cloud",
+				"A splash of water",
+				"A rainbow"
+			],
+			"answer": 1,
+			"why": "A splash of water. Look back at the story to find this detail."
+		},
+		{
+			"q": "How did they finish the job?",
+			"options": [
+				"By racing on a wet floor",
+				"By hiding the cups",
+				"Together, one dish at a time"
+			],
+			"answer": 2,
+			"why": "Together, one dish at a time. Look back at the story to find this detail."
+		}
+	],
+	"Sue feeds the chickens": [
+		{
+			"q": "What did Sue carry?",
+			"options": [
+				"A small scoop",
+				"A kite",
+				"A necklace"
+			],
+			"answer": 0,
+			"why": "A small scoop. Look back at the story to find this detail."
+		},
+		{
+			"q": "How did Sue move near the hens?",
+			"options": [
+				"By chasing them",
+				"Quietly",
+				"By shouting"
+			],
+			"answer": 1,
+			"why": "Quietly. Look back at the story to find this detail."
+		},
+		{
+			"q": "What did Sue do afterwards?",
+			"options": [
+				"Ate chicken feed",
+				"Jumped into the coop",
+				"Washed her hands"
+			],
+			"answer": 2,
+			"why": "Washed her hands. Look back at the story to find this detail."
+		}
+	],
+	"Sue and Grandma’s egg basket": [
+		{
+			"q": "Who collected eggs with Sue?",
+			"options": [
+				"Grandma",
+				"A teacher",
+				"A pilot"
+			],
+			"answer": 0,
+			"why": "Grandma. Look back at the story to find this detail."
+		},
+		{
+			"q": "What lined the basket?",
+			"options": [
+				"Sharp stones",
+				"A soft cloth",
+				"Ice cubes"
+			],
+			"answer": 1,
+			"why": "A soft cloth. Look back at the story to find this detail."
+		},
+		{
+			"q": "How did Sue handle the eggs?",
+			"options": [
+				"By throwing them",
+				"By squeezing them",
+				"Gently"
+			],
+			"answer": 2,
+			"why": "Gently. Look back at the story to find this detail."
+		}
+	],
+	"Sue’s quiet play club": [
+		{
+			"q": "What was Mom doing?",
+			"options": [
+				"Writing a book",
+				"Flying a plane",
+				"Painting the fence"
+			],
+			"answer": 0,
+			"why": "Writing a book. Look back at the story to find this detail."
+		},
+		{
+			"q": "Who stayed with the girls?",
+			"options": [
+				"Nobody",
+				"Dad",
+				"A chicken"
+			],
+			"answer": 1,
+			"why": "Dad. Look back at the story to find this detail."
+		},
+		{
+			"q": "What did Sue and Rae make?",
+			"options": [
+				"A bonfire",
+				"A hot meal alone",
+				"A pretend town"
+			],
+			"answer": 2,
+			"why": "Sue and Rae made a pretend town with big blocks and a toy bus."
+		}
+	],
+	"Rae makes a little rainbow": [
+		{
+			"q": "What did the sisters use?",
+			"options": [
+				"Coloured paper",
+				"Hot metal",
+				"Glass pieces"
+			],
+			"answer": 0,
+			"why": "Coloured paper. Look back at the story to find this detail."
+		},
+		{
+			"q": "Who helped at the craft table?",
+			"options": [
+				"Mateo",
+				"Mom",
+				"Mye"
+			],
+			"answer": 1,
+			"why": "Mom. Look back at the story to find this detail."
+		},
+		{
+			"q": "What did Sue say about Rae’s rainbow?",
+			"options": [
+				"It had to be identical",
+				"It belonged in the bin",
+				"It was Rae’s own rainbow"
+			],
+			"answer": 2,
+			"why": "It was Rae’s own rainbow. Look back at the story to find this detail."
+		}
+	],
+	"Rae follows the toy trail": [
+		{
+			"q": "Where did the toys belong?",
+			"options": [
+				"In the bedroom basket",
+				"On the stairs",
+				"In the cooker"
+			],
+			"answer": 0,
+			"why": "In the bedroom basket. Look back at the story to find this detail."
+		},
+		{
+			"q": "What did Rae carry?",
+			"options": [
+				"A sharp knife",
+				"A soft rabbit",
+				"A hot cup"
+			],
+			"answer": 1,
+			"why": "A soft rabbit. Look back at the story to find this detail."
+		},
+		{
+			"q": "Why put toys away?",
+			"options": [
+				"To lose them",
+				"To make a trip hazard",
+				"To find them and clear the floor"
+			],
+			"answer": 2,
+			"why": "To find them and clear the floor. Look back at the story to find this detail."
+		}
+	],
+	"Rae’s gentle baby game": [
+		{
+			"q": "What kind of hands did Mom ask for?",
+			"options": [
+				"Gentle hands",
+				"Rough hands",
+				"Sticky hands"
+			],
+			"answer": 0,
+			"why": "Gentle hands. Look back at the story to find this detail."
+		},
+		{
+			"q": "Who stayed with Mye?",
+			"options": [
+				"Only the dog",
+				"Mom",
+				"Nobody"
+			],
+			"answer": 1,
+			"why": "Mom. Look back at the story to find this detail."
+		},
+		{
+			"q": "What did they do when Mye wanted a rest?",
+			"options": [
+				"Shouted louder",
+				"Kept waving the toy",
+				"Stopped the game"
+			],
+			"answer": 2,
+			"why": "Stopped the game. Look back at the story to find this detail."
+		}
+	],
+	"Mye’s little journey": [
+		{
+			"q": "Where did Mye practise moving?",
+			"options": [
+				"On a clear floor mat",
+				"On a high table",
+				"On the stairs"
+			],
+			"answer": 0,
+			"why": "On a clear floor mat. Look back at the story to find this detail."
+		},
+		{
+			"q": "Who stayed close?",
+			"options": [
+				"Nobody",
+				"Mom",
+				"A chicken"
+			],
+			"answer": 1,
+			"why": "Mom. Look back at the story to find this detail."
+		},
+		{
+			"q": "Was learning a race?",
+			"options": [
+				"Yes, she had to win",
+				"Yes, she needed a prize",
+				"No, Mye learned in her own time"
+			],
+			"answer": 2,
+			"why": "No, Mye learned in her own time. Look back at the story to find this detail."
+		}
+	],
+	"Mye and the sitting surprise": [
+		{
+			"q": "Where was Mom?",
+			"options": [
+				"Beside Mye on the floor",
+				"Far away",
+				"On the roof"
+			],
+			"answer": 0,
+			"why": "Beside Mye on the floor. Look back at the story to find this detail."
+		},
+		{
+			"q": "What did Mom do when Mye wobbled?",
+			"options": [
+				"Laughed at her",
+				"Gently helped her",
+				"Walked away"
+			],
+			"answer": 1,
+			"why": "Gently helped her. Look back at the story to find this detail."
+		},
+		{
+			"q": "What ended the floor party?",
+			"options": [
+				"A race",
+				"A loud alarm",
+				"A song"
+			],
+			"answer": 2,
+			"why": "A song. Look back at the story to find this detail."
+		}
+	],
+	"Mye’s new little taste": [
+		{
+			"q": "Who stayed beside Mye while she ate?",
+			"options": [
+				"Mom",
+				"Nobody",
+				"Only Mateo"
+			],
+			"answer": 0,
+			"why": "Mom. Look back at the story to find this detail."
+		},
+		{
+			"q": "How was Mye sitting?",
+			"options": [
+				"Lying flat",
+				"Upright in her highchair",
+				"Running around"
+			],
+			"answer": 1,
+			"why": "Upright in her highchair. Look back at the story to find this detail."
+		},
+		{
+			"q": "What did Mom notice?",
+			"options": [
+				"A need to force every spoonful",
+				"A cooking competition",
+				"Mye’s signals that she had enough"
+			],
+			"answer": 2,
+			"why": "Mye’s signals that she had enough. Look back at the story to find this detail."
+		}
+	],
+	"Mye’s giggle orchestra": [
+		{
+			"q": "What made Mye giggle?",
+			"options": [
+				"The sisters’ funny faces and greeting",
+				"A scary shout",
+				"A sharp tool"
+			],
+			"answer": 0,
+			"why": "Sue and Rae made gentle funny faces and a silly greeting."
+		},
+		{
+			"q": "What did Mateo do?",
+			"options": [
+				"Played a trumpet",
+				"Tilted his head",
+				"Cooked rice"
+			],
+			"answer": 1,
+			"why": "Tilted his head. Look back at the story to find this detail."
+		},
+		{
+			"q": "What happened when Mye grew quiet?",
+			"options": [
+				"They got louder",
+				"They started a race",
+				"Dad cuddled her for a rest"
+			],
+			"answer": 2,
+			"why": "Dad cuddled her for a rest. Look back at the story to find this detail."
+		}
+	],
+	"Mateo and the waiting lead": [
+		{
+			"q": "What excited Mateo?",
+			"options": [
+				"Dad getting ready for a walk",
+				"A bath of soup",
+				"A toy airplane"
+			],
+			"answer": 0,
+			"why": "Dad getting ready for a walk. Look back at the story to find this detail."
+		},
+		{
+			"q": "What did Dad clip to the harness?",
+			"options": [
+				"A ribbon of rice",
+				"A lead",
+				"A spoon"
+			],
+			"answer": 1,
+			"why": "A lead. Look back at the story to find this detail."
+		},
+		{
+			"q": "What was nearby after the walk?",
+			"options": [
+				"Chicken feed",
+				"Hot tea",
+				"Fresh water"
+			],
+			"answer": 2,
+			"why": "Fresh water. Look back at the story to find this detail."
+		}
+	],
+	"Mateo watches the little game": [
+		{
+			"q": "What did Sue and Rae play with?",
+			"options": [
+				"A big soft ball",
+				"A sharp tool",
+				"A hot stove"
+			],
+			"answer": 0,
+			"why": "The sisters rolled a big soft ball in the garden."
+		},
+		{
+			"q": "Where did Mateo rest?",
+			"options": [
+				"On top of Mye",
+				"In a shady place",
+				"In the cooker"
+			],
+			"answer": 1,
+			"why": "Mateo watched from a shady resting place."
+		},
+		{
+			"q": "What did the girls do after the game?",
+			"options": [
+				"Left everything on the path",
+				"Pulled Mateo’s ears",
+				"Put the ball away and gave Mateo space"
+			],
+			"answer": 2,
+			"why": "The girls put their ball away and let Mateo stretch."
+		}
+	],
+	"Mateo’s toy invitation": [
+		{
+			"q": "What did Mateo bring?",
+			"options": [
+				"His soft dog ball",
+				"A baby’s bottle",
+				"A hot pan"
+			],
+			"answer": 0,
+			"why": "Mateo brought his own large soft dog ball to invite a game."
+		},
+		{
+			"q": "Who handled the toy during the game?",
+			"options": [
+				"Mye",
+				"Dad",
+				"A chicken"
+			],
+			"answer": 1,
+			"why": "Dad. Look back at the story to find this detail."
+		},
+		{
+			"q": "What happened after a few turns?",
+			"options": [
+				"They played without stopping",
+				"The girls climbed on him",
+				"Mateo had a rest"
+			],
+			"answer": 2,
+			"why": "Mateo had a rest. Look back at the story to find this detail."
+		}
+	]
+};
+var newFamilyPictures = [
+	[
+		{
+			"image": "./story-pages/story-31-begin.webp",
+			"alt": "Sue gathers rice and a measuring cup with Mom."
+		},
+		{
+			"image": "./story-pages/story-31-middle.webp",
+			"alt": "Sue rinses the rice while Mom stays beside her."
+		},
+		{
+			"image": "./story-pages/story-31-end.webp",
+			"alt": "Warm rice is ready for the family to share."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-32-begin.webp",
+			"alt": "Sue and Mom find the dishes waiting by the sink."
+		},
+		{
+			"image": "./story-pages/story-32-middle.webp",
+			"alt": "Sue washes a plate with bubbly soap."
+		},
+		{
+			"image": "./story-pages/story-32-end.webp",
+			"alt": "The clean dishes shine in their drying rack."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-33-begin.webp",
+			"alt": "Sue carries chicken feed to the coop with Dad."
+		},
+		{
+			"image": "./story-pages/story-33-middle.webp",
+			"alt": "Sue scatters feed for the hungry hens."
+		},
+		{
+			"image": "./story-pages/story-33-end.webp",
+			"alt": "Sue and Dad watch the hens enjoy their breakfast."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-34-begin.webp",
+			"alt": "Sue takes an empty egg basket to the coop with Grandma."
+		},
+		{
+			"image": "./story-pages/story-34-middle.webp",
+			"alt": "Grandma shows Sue how to lift an egg gently."
+		},
+		{
+			"image": "./story-pages/story-34-end.webp",
+			"alt": "Sue and Grandma carry their fresh eggs home."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-35-begin.webp",
+			"alt": "Mom writes her book while Sue and Rae bring their toys."
+		},
+		{
+			"image": "./story-pages/story-35-middle.webp",
+			"alt": "The sisters build together while Mom writes nearby."
+		},
+		{
+			"image": "./story-pages/story-35-end.webp",
+			"alt": "Mom smiles at their beautiful block creation."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-36-begin.webp",
+			"alt": "Sue shows Rae the bright paper pieces for their craft."
+		},
+		{
+			"image": "./story-pages/story-36-middle.webp",
+			"alt": "Rae copies Sue and carefully sticks her circles down."
+		},
+		{
+			"image": "./story-pages/story-36-end.webp",
+			"alt": "The sisters proudly show their paper flowers."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-37-begin.webp",
+			"alt": "Rae notices toys scattered across her bedroom."
+		},
+		{
+			"image": "./story-pages/story-37-middle.webp",
+			"alt": "Rae puts each toy into its basket."
+		},
+		{
+			"image": "./story-pages/story-37-end.webp",
+			"alt": "Rae feels proud of her tidy room."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-38-begin.webp",
+			"alt": "Rae sits beside baby Mye on the soft play mat."
+		},
+		{
+			"image": "./story-pages/story-38-middle.webp",
+			"alt": "Rae offers Mye a soft bunny gently."
+		},
+		{
+			"image": "./story-pages/story-38-end.webp",
+			"alt": "Mye cuddles the bunny and smiles at Rae."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-39-begin.webp",
+			"alt": "Mye reaches for a soft ball on the play mat."
+		},
+		{
+			"image": "./story-pages/story-39-middle.webp",
+			"alt": "Mye crawls toward the ball while Mom watches."
+		},
+		{
+			"image": "./story-pages/story-39-end.webp",
+			"alt": "Mye reaches the ball and Mom claps."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-40-begin.webp",
+			"alt": "Mom helps Mye sit on the soft mat."
+		},
+		{
+			"image": "./story-pages/story-40-middle.webp",
+			"alt": "Mye practises sitting while Mom stays close."
+		},
+		{
+			"image": "./story-pages/story-40-end.webp",
+			"alt": "Mye smiles proudly beside Mom."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-41-begin.webp",
+			"alt": "Mom brings soft food to Mye in the highchair."
+		},
+		{
+			"image": "./story-pages/story-41-middle.webp",
+			"alt": "Mye tries one little spoonful."
+		},
+		{
+			"image": "./story-pages/story-41-end.webp",
+			"alt": "Mye smiles after the new taste."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-42-begin.webp",
+			"alt": "Sue and Rae sit where Mye can see them."
+		},
+		{
+			"image": "./story-pages/story-42-middle.webp",
+			"alt": "The sisters make gentle silly faces."
+		},
+		{
+			"image": "./story-pages/story-42-end.webp",
+			"alt": "All three sisters share a happy giggle."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-43-begin.webp",
+			"alt": "Mateo waits by the door for his walk."
+		},
+		{
+			"image": "./story-pages/story-43-middle.webp",
+			"alt": "Dad clips the lead onto Mateo’s collar."
+		},
+		{
+			"image": "./story-pages/story-43-end.webp",
+			"alt": "Dad and Mateo enjoy their garden walk."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-44-begin.webp",
+			"alt": "Sue and Rae bring a ball onto the lawn."
+		},
+		{
+			"image": "./story-pages/story-44-middle.webp",
+			"alt": "Mateo watches the girls play catch."
+		},
+		{
+			"image": "./story-pages/story-44-end.webp",
+			"alt": "The girls rest beside their happy dog."
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-45-begin.webp",
+			"alt": "Sue and Rae call Mateo to join their game."
+		},
+		{
+			"image": "./story-pages/story-45-middle.webp",
+			"alt": "Mateo brings them a soft toy ball."
+		},
+		{
+			"image": "./story-pages/story-45-end.webp",
+			"alt": "The girls thank Mateo and play together."
+		}
+	]
+];
+//#endregion
+//#region package/source/app/content.ts
 var categories = [
 	"Leadership",
 	"Spiritual guidance",
@@ -12001,8 +13055,9 @@ var stories = [
 		"imageAlt": "Sue points out the first bright evening star as the family watches the garden sky."
 	}
 ];
+stories.push(...newFamilyStories);
 //#endregion
-//#region app/story-quizzes.ts
+//#region package/source/app/story-quizzes.ts
 var quizByTitle = {
 	"Sue and the little light": [
 		{
@@ -12965,969 +14020,12 @@ var quizByTitle = {
 		}
 	]
 };
+Object.assign(quizByTitle, newFamilyQuizzes);
 var storyQuizzes = stories.map((story) => quizByTitle[story.title]);
 //#endregion
-//#region app/story-page-pictures.ts
-var storyPictures = [
-	[
-		{
-			"image": "./story-pages/story-01-begin.webp",
-			"alt": "Sue and Dad look toward lighthouse beam at dusk by sea"
-		},
-		{
-			"image": "./story-pages/story-01-middle.webp",
-			"alt": "Sue holds mast as Dad helps disappointed Rae repair toy sailboat at shallow rock pool"
-		},
-		{
-			"image": "./story-pages/story-01-end.webp",
-			"alt": "Sisters place repaired boat upright in rock pool while parents baby and leashed Mateo watch"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-02-begin.webp",
-			"alt": "Rae frowns at rushed bird drawing as Sue sits beside her"
-		},
-		{
-			"image": "./story-pages/story-02-middle.webp",
-			"alt": "Family listens quietly near window with bird outside, Dad's cup and Mateo"
-		},
-		{
-			"image": "./story-pages/story-02-end.webp",
-			"alt": "Dad pins Rae's improved bird drawing on fridge while sisters smile"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-03-begin.webp",
-			"alt": "Sue and Rae plant bean and Dad tests pot soil with finger"
-		},
-		{
-			"image": "./story-pages/story-03-middle.webp",
-			"alt": "Girls study new green shoot and their picture chart by sunny window"
-		},
-		{
-			"image": "./story-pages/story-03-end.webp",
-			"alt": "Dad helps Sue read book beside bean plant with two leaves and family"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-04-begin.webp",
-			"alt": "Mom helps Sue measure flour and Rae add water to dough bowl"
-		},
-		{
-			"image": "./story-pages/story-04-middle.webp",
-			"alt": "Girls knead sticky dough at table with Mom supervising Dad holding Mye"
-		},
-		{
-			"image": "./story-pages/story-04-end.webp",
-			"alt": "Sue shares cooled crooked loaf slice with Rae in warm kitchen"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-05-begin.webp",
-			"alt": "Sue and Rae choose library picture books with parents, no dog at library"
-		},
-		{
-			"image": "./story-pages/story-05-middle.webp",
-			"alt": "Dad helps Sue sound out picture book while Mom points to illustration"
-		},
-		{
-			"image": "./story-pages/story-05-end.webp",
-			"alt": "Sisters read borrowed books at home with Mateo curled beside them"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-06-begin.webp",
-			"alt": "Girls discover shell with small creature at beach with family away from waves"
-		},
-		{
-			"image": "./story-pages/story-06-middle.webp",
-			"alt": "Dad helps Rae gently replace occupied shell while Sue draws notebook"
-		},
-		{
-			"image": "./story-pages/story-06-end.webp",
-			"alt": "Rae and Sue walk home showing shell drawings, Mateo leashed"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-07-begin.webp",
-			"alt": "Girls look disappointed at rain window and raincoats"
-		},
-		{
-			"image": "./story-pages/story-07-middle.webp",
-			"alt": "Family gathers red bracelet blue book yellow tea towel on table"
-		},
-		{
-			"image": "./story-pages/story-07-end.webp",
-			"alt": "Girls smile at rainbow arrangement of household items and golden Mateo"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-08-begin.webp",
-			"alt": "Rae struggles with wrong shoe at front door Sue ready beside her"
-		},
-		{
-			"image": "./story-pages/story-08-middle.webp",
-			"alt": "Sue arranges shoes as Rae opens straps and puts on own shoes"
-		},
-		{
-			"image": "./story-pages/story-08-end.webp",
-			"alt": "Rae walks proudly beside Sue outdoors with family and leashed Mateo"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-09-begin.webp",
-			"alt": "Paper kite drops onto open grassy field family observes"
-		},
-		{
-			"image": "./story-pages/story-09-middle.webp",
-			"alt": "Mom helps add cloth tail to grounded kite"
-		},
-		{
-			"image": "./story-pages/story-09-end.webp",
-			"alt": "Sue flies kite with cloth tail steadily high as Rae cheers"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-10-begin.webp",
-			"alt": "Girls paint large smooth stones at garden table with parents"
-		},
-		{
-			"image": "./story-pages/story-10-middle.webp",
-			"alt": "Sue yellow Rae pink Dad blue stones drying beside plant"
-		},
-		{
-			"image": "./story-pages/story-10-end.webp",
-			"alt": "Rae points at yellow stone reassuring Sue with broken crayon, family warmth"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-11-begin.webp",
-			"alt": "Sisters disagree whether cardboard box is moon ship or bakery"
-		},
-		{
-			"image": "./story-pages/story-11-middle.webp",
-			"alt": "Girls decorate box control panel and paper pretend buns"
-		},
-		{
-			"image": "./story-pages/story-11-end.webp",
-			"alt": "Girls play combined moon bakery Mom with baby customer Mateo resting outside box"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-12-begin.webp",
-			"alt": "Sue bounces bright ball Rae reaches for turn on lawn"
-		},
-		{
-			"image": "./story-pages/story-12-middle.webp",
-			"alt": "Dad counts on fingers Rae retrieves dropped ball Sue patiently waits"
-		},
-		{
-			"image": "./story-pages/story-12-end.webp",
-			"alt": "Girls happily roll ball between them family on picnic blanket"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-13-begin.webp",
-			"alt": "Family eats picnic on clean lawn blanket"
-		},
-		{
-			"image": "./story-pages/story-13-middle.webp",
-			"alt": "Girls gather own food wrappers into bag Dad supervises"
-		},
-		{
-			"image": "./story-pages/story-13-end.webp",
-			"alt": "Girls play on clean grass looking back at tidy picnic spot"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-14-begin.webp",
-			"alt": "Sue and Rae draw red apple blue puddle on thick paper for Mye"
-		},
-		{
-			"image": "./story-pages/story-14-middle.webp",
-			"alt": "Dad securely binds crayon pages Mom holds Mye"
-		},
-		{
-			"image": "./story-pages/story-14-end.webp",
-			"alt": "Mom shows homemade colour book golden dog page to Mye sisters smile"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-15-begin.webp",
-			"alt": "Dad Sue Rae walk garden path beginning to count steps"
-		},
-		{
-			"image": "./story-pages/story-15-middle.webp",
-			"alt": "Girls count slowly together Dad pointing to flower pot"
-		},
-		{
-			"image": "./story-pages/story-15-end.webp",
-			"alt": "Girls compare Dad long stride their short steps at pot Mom baby Mateo"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-16-begin.webp",
-			"alt": "Family sees neighbour struggling with heavy garden bag"
-		},
-		{
-			"image": "./story-pages/story-16-middle.webp",
-			"alt": "Dad carries heavy bag sisters carry light watering can to gate"
-		},
-		{
-			"image": "./story-pages/story-16-end.webp",
-			"alt": "Neighbour thanks family girls smile at small kind job"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-17-begin.webp",
-			"alt": "Rae asks another game as Sue brings bedtime book"
-		},
-		{
-			"image": "./story-pages/story-17-middle.webp",
-			"alt": "Family shares bedtime story and memories Mom cuddles Mye"
-		},
-		{
-			"image": "./story-pages/story-17-end.webp",
-			"alt": "Dad tucks girls in cosy beds Mateo sleeps on dog bed"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-18-begin.webp",
-			"alt": "Busy morning girls seek school bag and bracelet"
-		},
-		{
-			"image": "./story-pages/story-18-middle.webp",
-			"alt": "Girls draw picture-only morning plan at table Dad includes dog bowl"
-		},
-		{
-			"image": "./story-pages/story-18-end.webp",
-			"alt": "Girls prepared school bag shoes by door enjoy goodbye cuddle"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-19-begin.webp",
-			"alt": "Family watches bee on flower at safe little distance"
-		},
-		{
-			"image": "./story-pages/story-19-middle.webp",
-			"alt": "Sue notices pollen legs Rae whispers Dad keeps Mateo close"
-		},
-		{
-			"image": "./story-pages/story-19-end.webp",
-			"alt": "Girls draw bee and flower in notebook at home"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-20-begin.webp",
-			"alt": "Mom helps girls shape biscuit dough Sue precise Rae crooked"
-		},
-		{
-			"image": "./story-pages/story-20-middle.webp",
-			"alt": "Girls stand safely back Dad handles tray at oven"
-		},
-		{
-			"image": "./story-pages/story-20-end.webp",
-			"alt": "Girls admire cooled circle and crooked oval biscuits and share with adults"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-21-begin.webp",
-			"alt": "Girls plan Mom birthday surprise Dad holds Mye"
-		},
-		{
-			"image": "./story-pages/story-21-middle.webp",
-			"alt": "Dad helps girls make loaf and homemade picture-only card"
-		},
-		{
-			"image": "./story-pages/story-21-end.webp",
-			"alt": "Mom delights at card and small loaf on simple birthday table"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-22-begin.webp",
-			"alt": "Family checks sunny view before walk and Dad weather phone"
-		},
-		{
-			"image": "./story-pages/story-22-middle.webp",
-			"alt": "Dad helps Sue put warm layer Rae chooses closed shoes"
-		},
-		{
-			"image": "./story-pages/story-22-end.webp",
-			"alt": "Family enjoys cool sunny walk jackets baby warm face clear Mateo leashed"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-23-begin.webp",
-			"alt": "Mom greets Sue Dad welcomes Rae at home"
-		},
-		{
-			"image": "./story-pages/story-23-middle.webp",
-			"alt": "Sisters practise greetings taking turns kindly parents listening"
-		},
-		{
-			"image": "./story-pages/story-23-end.webp",
-			"alt": "Family displays picture-only welcome sign by door Mateo cheerful"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-24-begin.webp",
-			"alt": "Sue cross after school Rae excited Dad listens"
-		},
-		{
-			"image": "./story-pages/story-24-middle.webp",
-			"alt": "Girls draw dark cloud and yellow cloud using crayons"
-		},
-		{
-			"image": "./story-pages/story-24-end.webp",
-			"alt": "Sue's cloud gains blue patch Dad gives quiet comforting cuddle"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-25-begin.webp",
-			"alt": "Girls sort puzzle pieces on table Mom holds baby away"
-		},
-		{
-			"image": "./story-pages/story-25-middle.webp",
-			"alt": "Mom points at corner piece beside box girls connect edge row"
-		},
-		{
-			"image": "./story-pages/story-25-end.webp",
-			"alt": "Family leaves unfinished puzzle safely covered for restful break"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-26-begin.webp",
-			"alt": "Rae searches mitten Sue checks sofa family waits at door"
-		},
-		{
-			"image": "./story-pages/story-26-middle.webp",
-			"alt": "Sue finds mitten beneath coat hooks beside shoe"
-		},
-		{
-			"image": "./story-pages/story-26-end.webp",
-			"alt": "Rae puts mittens in reachable basket after walk"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-27-begin.webp",
-			"alt": "Girls quietly watch small bird on fence through window"
-		},
-		{
-			"image": "./story-pages/story-27-middle.webp",
-			"alt": "Dad shows bird guide sisters observe bird feet and head"
-		},
-		{
-			"image": "./story-pages/story-27-end.webp",
-			"alt": "Sue writes notebook Rae draws tiny bird feet after patient observation"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-28-begin.webp",
-			"alt": "Dad places saving jar on high shelf girls use paper coins at table"
-		},
-		{
-			"image": "./story-pages/story-28-middle.webp",
-			"alt": "Girls draw toy and sparkly bag savings goals on paper"
-		},
-		{
-			"image": "./story-pages/story-28-end.webp",
-			"alt": "Rae proudly decorates existing bag ribbon Mom helps Dad deposits real coins safely high"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-29-begin.webp",
-			"alt": "Girls notice Dad tired before busy work morning"
-		},
-		{
-			"image": "./story-pages/story-29-middle.webp",
-			"alt": "Dad at lunch looks fondly at folded note with golden dog drawing beside lunchbox"
-		},
-		{
-			"image": "./story-pages/story-29-end.webp",
-			"alt": "Dad thanks girls at home Mateo leans knee Mom holds smiling baby"
-		}
-	],
-	[
-		{
-			"image": "./story-pages/story-30-begin.webp",
-			"alt": "Sue points bright light above garden as dusk falls"
-		},
-		{
-			"image": "./story-pages/story-30-middle.webp",
-			"alt": "Dad and girls look up sky light using guide phone Mom baby nearby"
-		},
-		{
-			"image": "./story-pages/story-30-end.webp",
-			"alt": "Family admires purple orange horizon from safe garden"
-		}
-	]
-];
-var storyPageMaps = [
-	[
-		0,
-		1,
-		1,
-		1,
-		2,
-		0
-	],
-	[
-		0,
-		1,
-		1,
-		-1,
-		2,
-		1
-	],
-	[
-		0,
-		0,
-		1,
-		1,
-		2,
-		2
-	],
-	[
-		0,
-		1,
-		2,
-		2
-	],
-	[
-		0,
-		1,
-		0,
-		2
-	],
-	[
-		0,
-		0,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		2,
-		2
-	],
-	[
-		0,
-		0,
-		1,
-		2
-	],
-	[
-		0,
-		0,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		2,
-		2
-	],
-	[
-		0,
-		0,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		2,
-		2
-	],
-	[
-		0,
-		1,
-		2,
-		2
-	],
-	[
-		0,
-		1,
-		2,
-		2
-	],
-	[
-		0,
-		1,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		1,
-		2
-	],
-	[
-		0,
-		0,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		2,
-		2
-	],
-	[
-		0,
-		1,
-		1,
-		2
-	],
-	[
-		0,
-		0,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		1,
-		2
-	],
-	[
-		0,
-		0,
-		1,
-		2
-	],
-	[
-		0,
-		0,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		0,
-		2
-	],
-	[
-		0,
-		1,
-		2,
-		2
-	],
-	[
-		0,
-		-1,
-		1,
-		2
-	],
-	[
-		0,
-		1,
-		2,
-		2
-	]
-];
-//#endregion
-//#region app/story-illustration.ts
-function storyIllustration(index, page) {
-	const story = stories[index];
-	const panel = storyPageMaps[index][page - 1];
-	if (page === 0 || panel === -1) return {
-		image: story.image,
-		alt: story.imageAlt
-	};
-	return storyPictures[index][panel ?? 2];
-}
-//#endregion
-//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react-jsx-runtime.production.js
-/**
-* @license React
-* react-jsx-runtime.production.js
-*
-* Copyright (c) Meta Platforms, Inc. and affiliates.
-*
-* This source code is licensed under the MIT license found in the
-* LICENSE file in the root directory of this source tree.
-*/
-var require_react_jsx_runtime_production = /* @__PURE__ */ __commonJSMin(((exports) => {
-	var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-	function jsxProd(type, config, maybeKey) {
-		var key = null;
-		void 0 !== maybeKey && (key = "" + maybeKey);
-		void 0 !== config.key && (key = "" + config.key);
-		if ("key" in config) {
-			maybeKey = {};
-			for (var propName in config) "key" !== propName && (maybeKey[propName] = config[propName]);
-		} else maybeKey = config;
-		config = maybeKey.ref;
-		return {
-			$$typeof: REACT_ELEMENT_TYPE,
-			type,
-			key,
-			ref: void 0 !== config ? config : null,
-			props: maybeKey
-		};
-	}
-	exports.Fragment = REACT_FRAGMENT_TYPE;
-	exports.jsx = jsxProd;
-	exports.jsxs = jsxProd;
-}));
-//#endregion
-//#region app/story-reader.tsx
-var import_jsx_runtime = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
-	module.exports = require_react_jsx_runtime_production();
-})))();
-function StoryReader({ index, onBack }) {
-	const story = stories[index], speech = useSpeech("reader", "Very slow");
-	const [page, setPage] = (0, import_react.useState)(0), [direction, setDirection] = (0, import_react.useState)("forward"), [word, setWord] = (0, import_react.useState)(null), [scope, setScope] = (0, import_react.useState)("page");
-	const touch = (0, import_react.useRef)(null);
-	const last = story.paragraphs.length + 1, busy = speech.state.status === "reading" || speech.state.status === "paused";
-	const picture = storyIllustration(index, page);
-	(0, import_react.useEffect)(() => {
-		if (scope !== "all") return;
-		if (speech.state.status === "reading" && speech.state.segment >= 0) {
-			setDirection("forward");
-			setPage(speech.state.segment);
-		} else if (speech.state.status === "done") {
-			setDirection("forward");
-			setPage(last);
-		}
-	}, [
-		scope,
-		speech.state.segment,
-		speech.state.status,
-		last
-	]);
-	(0, import_react.useEffect)(() => {
-		const images = new Set(story.paragraphs.map((_, i) => storyIllustration(index, i + 1).image));
-		for (const src of images) {
-			const preload = new Image();
-			preload.src = src;
-		}
-	}, [index]);
-	function turn(next) {
-		if (next < 0 || next > last) return;
-		speech.stop();
-		setWord(null);
-		setScope("page");
-		setDirection(next < page ? "backward" : "forward");
-		setPage(next);
-	}
-	function text(value, segment) {
-		return readingTokens(value).map((t, i) => t.word ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-			type: "button",
-			className: "readable-word" + (scope === "word" && word === t.text && busy || scope !== "word" && speech.state.segment === segment && speech.state.char >= t.start && speech.state.char < t.start + t.text.length && busy ? " speaking" : ""),
-			disabled: !speech.supported,
-			onClick: () => {
-				setScope("word");
-				setWord(t.text);
-				speech.read([t.text]);
-			},
-			"aria-label": "Read word: " + t.text,
-			children: t.text
-		}, i) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: t.text }, i));
-	}
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-		className: "story story-book-reader",
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-				className: "secondary",
-				onClick: () => {
-					speech.stop();
-					onBack();
-				},
-				children: "Back to all stories"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-				className: "eyebrow",
-				children: [
-					story.level,
-					" · ",
-					story.theme
-				]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: story.title }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-				className: "story-audio",
-				"aria-label": "Read-aloud controls",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 21 }), "Read with me"] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Touch a word to hear it. Turn pages with the buttons, left/right keys, or a swipe." }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
-						className: "audio-speed-label",
-						children: ["Reading pace", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", {
-							value: speech.speed,
-							onChange: (e) => speech.changeSpeed(e.target.value),
-							children: Object.keys(readingSpeeds).map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: v }, v))
-						})]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "timer-actions",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-								className: "primary",
-								disabled: !speech.supported,
-								onClick: () => {
-									setWord(null);
-									setScope("all");
-									setPage(0);
-									speech.read([story.title, ...story.paragraphs]);
-								},
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }), "Read entire book"]
-							}),
-							page < last && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-								className: "secondary",
-								disabled: !speech.supported,
-								onClick: () => {
-									setWord(null);
-									setScope("page");
-									speech.read([page === 0 ? story.title : story.paragraphs[page - 1]]);
-								},
-								children: "Read this page"
-							}),
-							busy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-								className: "secondary",
-								onClick: () => speech.state.status === "paused" ? speech.resume() : speech.pause(),
-								children: [
-									speech.state.status === "paused" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 16 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { size: 16 }),
-									" ",
-									speech.state.status === "paused" ? "Resume" : "Pause"
-								]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-								className: "secondary",
-								onClick: speech.stop,
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 16 }), "Stop"]
-							})] })
-						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						role: "status",
-						className: "small-note",
-						children: speech.supported === false ? "Audio is unavailable here. You can still read and turn every page." : speech.state.message
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "small-note",
-						children: "Very slow gives little readers extra time. Browser voices and highlighting vary. Changing pace restarts the current paragraph; turning a page stops audio."
-					})
-				]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-				className: "storybook",
-				"aria-label": story.title + " book",
-				tabIndex: 0,
-				onKeyDown: (e) => {
-					if (e.key === "ArrowRight") {
-						e.preventDefault();
-						turn(page + 1);
-					}
-					if (e.key === "ArrowLeft") {
-						e.preventDefault();
-						turn(page - 1);
-					}
-				},
-				onTouchStart: (e) => {
-					touch.current = {
-						x: e.touches[0].clientX,
-						y: e.touches[0].clientY
-					};
-				},
-				onTouchEnd: (e) => {
-					if (!touch.current) return;
-					const dx = e.changedTouches[0].clientX - touch.current.x, dy = e.changedTouches[0].clientY - touch.current.y;
-					touch.current = null;
-					if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.5) turn(page + (dx < 0 ? 1 : -1));
-				},
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "book-leaf " + direction + (page === last ? " quiz-leaf" : ""),
-					children: page === last ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "book-quiz-page",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(StoryQuiz, { index }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "story-questions",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Let’s talk about it" }),
-								story.ask.map((q) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: q }, q)),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Words to discover" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: story.words })
-							]
-						})]
-					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
-						className: "book-picture",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							src: picture.image,
-							alt: picture.alt
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: picture.alt })]
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "book-text interactive-story-text",
-						children: page === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "eyebrow",
-								children: "OPEN A LITTLE ADVENTURE"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-								className: "interactive-story-title",
-								children: text(story.title, 0)
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "With Dad, Mom, Sue, Rae, Mye and Mateo." }),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Turn the page to begin." })
-						] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-							className: "pill",
-							children: ["PAGE ", page]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: text(story.paragraphs[page - 1], scope === "all" ? page : 0) })] })
-					})] })
-				}, page)
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
-				className: "book-pagination",
-				"aria-label": "Book pages",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						className: "secondary",
-						disabled: page === 0,
-						onClick: () => turn(page - 1),
-						children: "Previous page"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						role: "status",
-						children: page === 0 ? "Cover" : page === last ? "Story quiz" : `Page ${page} of ${story.paragraphs.length}`
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						className: "primary",
-						disabled: page === last,
-						onClick: () => turn(page + 1),
-						children: page === 0 ? "Open book" : page === last - 1 ? "Go to quiz" : "Next page"
-					})
-				]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "small-note",
-				children: "The James NZ · original story"
-			})
-		]
-	});
-}
-function StoryQuiz({ index }) {
-	const questions = storyQuizzes[index];
-	const [answers, setAnswers] = (0, import_react.useState)({}), [checked, setChecked] = (0, import_react.useState)(false);
-	const score = questions.reduce((n, q, i) => n + (answers[i] === q.answer ? 1 : 0), 0);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-		className: "story-quiz",
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "eyebrow",
-				children: "A LITTLE DISCOVERY"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Story quiz" }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Three easy questions. Take your time, and look back at the story whenever you like." }),
-			questions.map((q, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("fieldset", { children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("legend", { children: [
-					i + 1,
-					". ",
-					q.q
-				] }),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "answers",
-					children: q.options.map((value, j) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						type: "button",
-						disabled: checked,
-						"aria-pressed": answers[i] === j,
-						className: checked ? j === q.answer ? "correct" : answers[i] === j ? "incorrect" : "" : answers[i] === j ? "selected" : "",
-						onClick: () => setAnswers((v) => ({
-							...v,
-							[i]: j
-						})),
-						children: value
-					}, value))
-				}),
-				checked && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-					className: "quiz-explanation",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: answers[i] === q.answer ? "That’s right!" : "A little clue for next time:" }),
-						" ",
-						q.why
-					]
-				})
-			] }, q.q)),
-			checked ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-				role: "status",
-				children: [
-					"You got ",
-					score,
-					" of ",
-					questions.length,
-					" right. ",
-					score === questions.length ? "Lovely reading!" : "Every answer helps you learn. You can read again and have another go."
-				]
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-				className: "secondary",
-				onClick: () => {
-					setAnswers({});
-					setChecked(false);
-				},
-				children: "Try quiz again"
-			})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-				className: "primary",
-				disabled: Object.keys(answers).length !== questions.length,
-				onClick: () => setChecked(true),
-				children: "Check my answers"
-			})
-		]
-	});
-}
-//#endregion
-//#region node_modules/.pnpm/@radix-ui+react-compose-refs@1.1.5_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-compose-refs/dist/index.mjs
-var __defProp$30 = Object.defineProperty;
-var __name$30 = (target, value) => __defProp$30(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-compose-refs@1.1.5_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-compose-refs/dist/index.mjs
+var __defProp$31 = Object.defineProperty;
+var __name$31 = (target, value) => __defProp$31(target, "name", {
 	value,
 	configurable: true
 });
@@ -13935,7 +14033,7 @@ function setRef$1(ref, value) {
 	if (typeof ref === "function") return ref(value);
 	else if (ref !== null && ref !== void 0) ref.current = value;
 }
-__name$30(setRef$1, "setRef");
+__name$31(setRef$1, "setRef");
 function composeRefs(...refs) {
 	return (node) => {
 		let hasCleanup = false;
@@ -13953,15 +14051,15 @@ function composeRefs(...refs) {
 		};
 	};
 }
-__name$30(composeRefs, "composeRefs");
+__name$31(composeRefs, "composeRefs");
 function useComposedRefs(...refs) {
 	return import_react.useCallback(composeRefs(...refs), refs);
 }
-__name$30(useComposedRefs, "useComposedRefs");
+__name$31(useComposedRefs, "useComposedRefs");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-slot@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-slot/dist/index.mjs
-var __defProp$29 = Object.defineProperty;
-var __name$29 = (target, value) => __defProp$29(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-slot@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-slot/dist/index.mjs
+var __defProp$30 = Object.defineProperty;
+var __name$30 = (target, value) => __defProp$30(target, "name", {
 	value,
 	configurable: true
 });
@@ -13998,18 +14096,18 @@ function createSlot(ownerName) {
 	Slot2.displayName = `${ownerName}.Slot`;
 	return Slot2;
 }
-__name$29(createSlot, "createSlot");
-var Slot$2 = /* @__PURE__ */ createSlot("Slot");
+__name$30(createSlot, "createSlot");
+var Slot$3 = /* @__PURE__ */ createSlot("Slot");
 var SLOTTABLE_IDENTIFIER = Symbol.for("radix.slottable");
 /* @__NO_SIDE_EFFECTS__ */
 function createSlottable(ownerName) {
-	const Slottable2 = /* @__PURE__ */ __name$29((props) => "child" in props ? props.children(props.child) : props.children, "Slottable");
+	const Slottable2 = /* @__PURE__ */ __name$30((props) => "child" in props ? props.children(props.child) : props.children, "Slottable");
 	Slottable2.displayName = `${ownerName}.Slottable`;
 	Slottable2.__radixId = SLOTTABLE_IDENTIFIER;
 	return Slottable2;
 }
-__name$29(createSlottable, "createSlottable");
-var getSlottableElementFromSlottable = /* @__PURE__ */ __name$29((slottable, child) => {
+__name$30(createSlottable, "createSlottable");
+var getSlottableElementFromSlottable = /* @__PURE__ */ __name$30((slottable, child) => {
 	if ("child" in slottable.props) {
 		const child2 = slottable.props.child;
 		if (!import_react.isValidElement(child2)) return null;
@@ -14040,7 +14138,7 @@ function mergeProps(slotProps, childProps) {
 		...overrideProps
 	};
 }
-__name$29(mergeProps, "mergeProps");
+__name$30(mergeProps, "mergeProps");
 function getElementRef$1(element) {
 	let getter = Object.getOwnPropertyDescriptor(element.props, "ref")?.get;
 	let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
@@ -14050,32 +14148,72 @@ function getElementRef$1(element) {
 	if (mayWarn) return element.props.ref;
 	return element.props.ref || element.ref;
 }
-__name$29(getElementRef$1, "getElementRef");
+__name$30(getElementRef$1, "getElementRef");
 function isSlottable(child) {
 	return import_react.isValidElement(child) && typeof child.type === "function" && "__radixId" in child.type && child.type.__radixId === SLOTTABLE_IDENTIFIER;
 }
-__name$29(isSlottable, "isSlottable");
+__name$30(isSlottable, "isSlottable");
 var REACT_LAZY_TYPE = Symbol.for("react.lazy");
 function isLazyComponent(element) {
 	return element != null && typeof element === "object" && "$$typeof" in element && element.$$typeof === REACT_LAZY_TYPE && "_payload" in element && isPromiseLike(element._payload);
 }
-__name$29(isLazyComponent, "isLazyComponent");
+__name$30(isLazyComponent, "isLazyComponent");
 function isPromiseLike(value) {
 	return typeof value === "object" && value !== null && "then" in value;
 }
-__name$29(isPromiseLike, "isPromiseLike");
-var createSlotError = /* @__PURE__ */ __name$29((ownerName) => {
+__name$30(isPromiseLike, "isPromiseLike");
+var createSlotError = /* @__PURE__ */ __name$30((ownerName) => {
 	return `${ownerName} failed to slot onto its children. Expected a single React element child or \`Slottable\`.`;
 }, "createSlotError");
-var createSlottableError = /* @__PURE__ */ __name$29((ownerName) => {
+var createSlottableError = /* @__PURE__ */ __name$30((ownerName) => {
 	return `${ownerName} failed to slot onto its \`Slottable\`. Expected \`Slottable\` to receive a single React element child.`;
 }, "createSlottableError");
 var use = import_react[" use ".trim().toString()];
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-primitive@2.1.10_@types+react-dom@19.2.3_@types+react@19.2.14__@types+r_27cc90bfdf39cd858b25dc435d408769/node_modules/@radix-ui/react-primitive/dist/index.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react-jsx-runtime.production.js
+/**
+* @license React
+* react-jsx-runtime.production.js
+*
+* Copyright (c) Meta Platforms, Inc. and affiliates.
+*
+* This source code is licensed under the MIT license found in the
+* LICENSE file in the root directory of this source tree.
+*/
+var require_react_jsx_runtime_production = /* @__PURE__ */ __commonJSMin(((exports) => {
+	var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+	function jsxProd(type, config, maybeKey) {
+		var key = null;
+		void 0 !== maybeKey && (key = "" + maybeKey);
+		void 0 !== config.key && (key = "" + config.key);
+		if ("key" in config) {
+			maybeKey = {};
+			for (var propName in config) "key" !== propName && (maybeKey[propName] = config[propName]);
+		} else maybeKey = config;
+		config = maybeKey.ref;
+		return {
+			$$typeof: REACT_ELEMENT_TYPE,
+			type,
+			key,
+			ref: void 0 !== config ? config : null,
+			props: maybeKey
+		};
+	}
+	exports.Fragment = REACT_FRAGMENT_TYPE;
+	exports.jsx = jsxProd;
+	exports.jsxs = jsxProd;
+}));
+//#endregion
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react@19.2.6/node_modules/react/jsx-runtime.js
+var require_jsx_runtime = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+	module.exports = require_react_jsx_runtime_production();
+}));
+//#endregion
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-primitive@2.1.10_@types+react-dom@19.2.3_@types+react@19.2.14__@types+r_27cc90bfdf39cd858b25dc435d408769/node_modules/@radix-ui/react-primitive/dist/index.mjs
 var import_react_dom = /* @__PURE__ */ __toESM(require_react_dom(), 1);
-var __defProp$28 = Object.defineProperty;
-var __name$28 = (target, value) => __defProp$28(target, "name", {
+var import_jsx_runtime = require_jsx_runtime();
+var __defProp$29 = Object.defineProperty;
+var __name$29 = (target, value) => __defProp$29(target, "name", {
 	value,
 	configurable: true
 });
@@ -14117,9 +14255,9 @@ var Primitive = [
 function dispatchDiscreteCustomEvent(target, event) {
 	if (target) import_react_dom.flushSync(() => target.dispatchEvent(event));
 }
-__name$28(dispatchDiscreteCustomEvent, "dispatchDiscreteCustomEvent");
+__name$29(dispatchDiscreteCustomEvent, "dispatchDiscreteCustomEvent");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-visually-hidden@1.2.11_@types+react-dom@19.2.3_@types+react@19.2.14__@t_9dd925c72117cab446dfe9dd399ded80/node_modules/@radix-ui/react-visually-hidden/dist/index.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-visually-hidden@1.2.11_@types+react-dom@19.2.3_@types+react@19.2.14__@t_9dd925c72117cab446dfe9dd399ded80/node_modules/@radix-ui/react-visually-hidden/dist/index.mjs
 var VISUALLY_HIDDEN_STYLES = Object.freeze({
 	position: "absolute",
 	border: 0,
@@ -14133,9 +14271,9 @@ var VISUALLY_HIDDEN_STYLES = Object.freeze({
 	wordWrap: "normal"
 });
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-context@1.2.2_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-context/dist/index.mjs
-var __defProp$27 = Object.defineProperty;
-var __name$27 = (target, value) => __defProp$27(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-context@1.2.2_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-context/dist/index.mjs
+var __defProp$28 = Object.defineProperty;
+var __name$28 = (target, value) => __defProp$28(target, "name", {
 	value,
 	configurable: true
 });
@@ -14143,7 +14281,7 @@ var __name$27 = (target, value) => __defProp$27(target, "name", {
 function createContext2(rootComponentName, defaultContext) {
 	const Context = import_react.createContext(defaultContext);
 	Context.displayName = rootComponentName + "Context";
-	const Provider = /* @__PURE__ */ __name$27((props) => {
+	const Provider = /* @__PURE__ */ __name$28((props) => {
 		const { children, ...context } = props;
 		const value = import_react.useMemo(() => context, Object.values(context));
 		return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Context.Provider, {
@@ -14160,10 +14298,10 @@ function createContext2(rootComponentName, defaultContext) {
 		if (optional) return void 0;
 		throw new Error(`\`${consumerName}\` must be used within \`${rootComponentName}\``);
 	}
-	__name$27(useContext2, "useContext");
+	__name$28(useContext2, "useContext");
 	return [Provider, useContext2];
 }
-__name$27(createContext2, "createContext");
+__name$28(createContext2, "createContext");
 /* @__NO_SIDE_EFFECTS__ */
 function createContextScope(scopeName, createContextScopeDeps = []) {
 	let defaultContexts = [];
@@ -14172,7 +14310,7 @@ function createContextScope(scopeName, createContextScopeDeps = []) {
 		BaseContext.displayName = rootComponentName + "Context";
 		const index = defaultContexts.length;
 		defaultContexts = [...defaultContexts, defaultContext];
-		const Provider = /* @__PURE__ */ __name$27((props) => {
+		const Provider = /* @__PURE__ */ __name$28((props) => {
 			const { scope, children, ...context } = props;
 			const Context = scope?.[scopeName]?.[index] || BaseContext;
 			const value = import_react.useMemo(() => context, Object.values(context));
@@ -14191,15 +14329,15 @@ function createContextScope(scopeName, createContextScopeDeps = []) {
 			if (optional) return void 0;
 			throw new Error(`\`${consumerName}\` must be used within \`${rootComponentName}\``);
 		}
-		__name$27(useContext2, "useContext");
+		__name$28(useContext2, "useContext");
 		return [Provider, useContext2];
 	}
-	__name$27(createContext3, "createContext");
-	const createScope = /* @__PURE__ */ __name$27(() => {
+	__name$28(createContext3, "createContext");
+	const createScope = /* @__PURE__ */ __name$28(() => {
 		const scopeContexts = defaultContexts.map((defaultContext) => {
 			return import_react.createContext(defaultContext);
 		});
-		return /* @__PURE__ */ __name$27(function useScope(scope) {
+		return /* @__PURE__ */ __name$28(function useScope(scope) {
 			const contexts = scope?.[scopeName] || scopeContexts;
 			return import_react.useMemo(() => ({ [`__scope${scopeName}`]: {
 				...scope,
@@ -14210,16 +14348,16 @@ function createContextScope(scopeName, createContextScopeDeps = []) {
 	createScope.scopeName = scopeName;
 	return [createContext3, composeContextScopes(createScope, ...createContextScopeDeps)];
 }
-__name$27(createContextScope, "createContextScope");
+__name$28(createContextScope, "createContextScope");
 function composeContextScopes(...scopes) {
 	const baseScope = scopes[0];
 	if (scopes.length === 1) return baseScope;
-	const createScope = /* @__PURE__ */ __name$27(() => {
+	const createScope = /* @__PURE__ */ __name$28(() => {
 		const scopeHooks = scopes.map((createScope2) => ({
 			useScope: createScope2(),
 			scopeName: createScope2.scopeName
 		}));
-		return /* @__PURE__ */ __name$27(function useComposedScopes(overrideScopes) {
+		return /* @__PURE__ */ __name$28(function useComposedScopes(overrideScopes) {
 			const nextScopes = scopeHooks.reduce((nextScopes2, { useScope, scopeName }) => {
 				const currentScope = useScope(overrideScopes)[`__scope${scopeName}`];
 				return {
@@ -14233,11 +14371,11 @@ function composeContextScopes(...scopes) {
 	createScope.scopeName = baseScope.scopeName;
 	return createScope;
 }
-__name$27(composeContextScopes, "composeContextScopes");
+__name$28(composeContextScopes, "composeContextScopes");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-collection@1.1.15_@types+react-dom@19.2.3_@types+react@19.2.14__@types+_cd91dfc3494d322c5ab139167ff27ec6/node_modules/@radix-ui/react-collection/dist/index.mjs
-var __defProp$26 = Object.defineProperty;
-var __name$26 = (target, value) => __defProp$26(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-collection@1.1.15_@types+react-dom@19.2.3_@types+react@19.2.14__@types+_cd91dfc3494d322c5ab139167ff27ec6/node_modules/@radix-ui/react-collection/dist/index.mjs
+var __defProp$27 = Object.defineProperty;
+var __name$27 = (target, value) => __defProp$27(target, "name", {
 	value,
 	configurable: true
 });
@@ -14249,7 +14387,7 @@ function createCollection(name) {
 		collectionRef: { current: null },
 		itemMap: /* @__PURE__ */ new Map()
 	});
-	const CollectionProvider = /* @__PURE__ */ __name$26((props) => {
+	const CollectionProvider = /* @__PURE__ */ __name$27((props) => {
 		const { scope, children } = props;
 		const ref = import_react.useRef(null);
 		const itemMap = import_react.useRef(/* @__PURE__ */ new Map()).current;
@@ -14302,7 +14440,7 @@ function createCollection(name) {
 			return Array.from(context.itemMap.values()).sort((a, b) => orderedNodes.indexOf(a.ref.current) - orderedNodes.indexOf(b.ref.current));
 		}, [context.collectionRef, context.itemMap]);
 	}
-	__name$26(useCollection, "useCollection");
+	__name$27(useCollection, "useCollection");
 	return [
 		{
 			Provider: CollectionProvider,
@@ -14313,11 +14451,11 @@ function createCollection(name) {
 		createCollectionScope
 	];
 }
-__name$26(createCollection, "createCollection");
+__name$27(createCollection, "createCollection");
 var __instanciated = /* @__PURE__ */ new WeakMap();
 var OrderedDict = class _OrderedDict extends Map {
 	static {
-		__name$26(this, "OrderedDict");
+		__name$27(this, "OrderedDict");
 	}
 	#keys;
 	constructor(entries) {
@@ -14584,18 +14722,18 @@ function at(array, index) {
 	const actualIndex = toSafeIndex(array, index);
 	return actualIndex === -1 ? void 0 : array[actualIndex];
 }
-__name$26(at, "at");
+__name$27(at, "at");
 function toSafeIndex(array, index) {
 	const length = array.length;
 	const relativeIndex = toSafeInteger(index);
 	const actualIndex = relativeIndex >= 0 ? relativeIndex : length + relativeIndex;
 	return actualIndex < 0 || actualIndex >= length ? -1 : actualIndex;
 }
-__name$26(toSafeIndex, "toSafeIndex");
+__name$27(toSafeIndex, "toSafeIndex");
 function toSafeInteger(number) {
 	return number !== number || number === 0 ? 0 : Math.trunc(number);
 }
-__name$26(toSafeInteger, "toSafeInteger");
+__name$27(toSafeInteger, "toSafeInteger");
 /* @__NO_SIDE_EFFECTS__ */
 function createCollection2(name) {
 	const PROVIDER_NAME = name + "CollectionProvider";
@@ -14605,16 +14743,16 @@ function createCollection2(name) {
 		collectionRef: { current: null },
 		collectionRefObject: { current: null },
 		itemMap: new OrderedDict(),
-		setItemMap: /* @__PURE__ */ __name$26(() => void 0, "setItemMap")
+		setItemMap: /* @__PURE__ */ __name$27(() => void 0, "setItemMap")
 	});
-	const CollectionProvider = /* @__PURE__ */ __name$26(({ state, ...props }) => {
+	const CollectionProvider = /* @__PURE__ */ __name$27(({ state, ...props }) => {
 		return state ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CollectionProviderImpl, {
 			...props,
 			state
 		}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CollectionInit, { ...props });
 	}, "CollectionProvider");
 	CollectionProvider.displayName = PROVIDER_NAME;
-	const CollectionInit = /* @__PURE__ */ __name$26((props) => {
+	const CollectionInit = /* @__PURE__ */ __name$27((props) => {
 		const state = useInitCollection();
 		return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CollectionProviderImpl, {
 			...props,
@@ -14622,7 +14760,7 @@ function createCollection2(name) {
 		});
 	}, "CollectionInit");
 	CollectionInit.displayName = PROVIDER_NAME + "Init";
-	const CollectionProviderImpl = /* @__PURE__ */ __name$26((props) => {
+	const CollectionProviderImpl = /* @__PURE__ */ __name$27((props) => {
 		const { scope, children, state } = props;
 		const ref = import_react.useRef(null);
 		const [collectionElement, setCollectionElement] = import_react.useState(null);
@@ -14710,12 +14848,12 @@ function createCollection2(name) {
 	function useInitCollection() {
 		return import_react.useState(new OrderedDict());
 	}
-	__name$26(useInitCollection, "useInitCollection");
+	__name$27(useInitCollection, "useInitCollection");
 	function useCollection(scope) {
 		const { itemMap } = useCollectionContext(name + "CollectionConsumer", scope);
 		return itemMap;
 	}
-	__name$26(useCollection, "useCollection");
+	__name$27(useCollection, "useCollection");
 	return [{
 		Provider: CollectionProvider,
 		Slot: CollectionSlot,
@@ -14726,7 +14864,7 @@ function createCollection2(name) {
 		useInitCollection
 	}];
 }
-__name$26(createCollection2, "createCollection");
+__name$27(createCollection2, "createCollection");
 function shallowEqual(a, b) {
 	if (a === b) return true;
 	if (typeof a !== "object" || typeof b !== "object") return false;
@@ -14740,15 +14878,15 @@ function shallowEqual(a, b) {
 	}
 	return true;
 }
-__name$26(shallowEqual, "shallowEqual");
+__name$27(shallowEqual, "shallowEqual");
 function isElementPreceding(a, b) {
 	return !!(b.compareDocumentPosition(a) & Node.DOCUMENT_POSITION_PRECEDING);
 }
-__name$26(isElementPreceding, "isElementPreceding");
+__name$27(isElementPreceding, "isElementPreceding");
 function sortByDocumentPosition(a, b) {
 	return !a[1].element || !b[1].element ? 0 : isElementPreceding(a[1].element, b[1].element) ? -1 : 1;
 }
-__name$26(sortByDocumentPosition, "sortByDocumentPosition");
+__name$27(sortByDocumentPosition, "sortByDocumentPosition");
 function getChildListObserver(callback) {
 	return new MutationObserver((mutationsList) => {
 		for (const mutation of mutationsList) if (mutation.type === "childList") {
@@ -14757,32 +14895,32 @@ function getChildListObserver(callback) {
 		}
 	});
 }
-__name$26(getChildListObserver, "getChildListObserver");
+__name$27(getChildListObserver, "getChildListObserver");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+primitive@1.1.7/node_modules/@radix-ui/primitive/dist/index.mjs
-var __defProp$25 = Object.defineProperty;
-var __name$25 = (target, value) => __defProp$25(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+primitive@1.1.7/node_modules/@radix-ui/primitive/dist/index.mjs
+var __defProp$26 = Object.defineProperty;
+var __name$26 = (target, value) => __defProp$26(target, "name", {
 	value,
 	configurable: true
 });
 var canUseDOM = !!(typeof window !== "undefined" && window.document && window.document.createElement);
 function composeEventHandlers(originalEventHandler, ourEventHandler, { checkForDefaultPrevented = true } = {}) {
-	return /* @__PURE__ */ __name$25(function handleEvent(event) {
+	return /* @__PURE__ */ __name$26(function handleEvent(event) {
 		originalEventHandler?.(event);
 		if (checkForDefaultPrevented === false || !event || !event.defaultPrevented) return ourEventHandler?.(event);
 	}, "handleEvent");
 }
-__name$25(composeEventHandlers, "composeEventHandlers");
+__name$26(composeEventHandlers, "composeEventHandlers");
 function getOwnerWindow(element) {
 	if (!canUseDOM) throw new Error("Cannot access window outside of the DOM");
 	return element?.ownerDocument?.defaultView ?? window;
 }
-__name$25(getOwnerWindow, "getOwnerWindow");
+__name$26(getOwnerWindow, "getOwnerWindow");
 function getOwnerDocument(element) {
 	if (!canUseDOM) throw new Error("Cannot access document outside of the DOM");
 	return element?.ownerDocument ?? document;
 }
-__name$25(getOwnerDocument, "getOwnerDocument");
+__name$26(getOwnerDocument, "getOwnerDocument");
 function getActiveElement(node, activeDescendant = false) {
 	const { activeElement } = getOwnerDocument(node);
 	if (!activeElement?.nodeName) return null;
@@ -14796,18 +14934,18 @@ function getActiveElement(node, activeDescendant = false) {
 	}
 	return activeElement;
 }
-__name$25(getActiveElement, "getActiveElement");
+__name$26(getActiveElement, "getActiveElement");
 function isFrame(element) {
 	return element.tagName === "IFRAME";
 }
-__name$25(isFrame, "isFrame");
+__name$26(isFrame, "isFrame");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-use-layout-effect@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-layout-effect@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs
 var useLayoutEffect2 = globalThis?.document ? import_react.useLayoutEffect : () => {};
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-use-effect-event@0.0.5_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-effect-event/dist/index.mjs
-var __defProp$24 = Object.defineProperty;
-var __name$24 = (target, value) => __defProp$24(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-effect-event@0.0.5_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-effect-event/dist/index.mjs
+var __defProp$25 = Object.defineProperty;
+var __name$25 = (target, value) => __defProp$25(target, "name", {
 	value,
 	configurable: true
 });
@@ -14826,16 +14964,16 @@ function useEffectEvent(callback) {
 	});
 	return import_react.useMemo(() => ((...args) => ref.current?.(...args)), []);
 }
-__name$24(useEffectEvent, "useEffectEvent");
+__name$25(useEffectEvent, "useEffectEvent");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-use-controllable-state@1.2.6_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs
-var __defProp$23 = Object.defineProperty;
-var __name$23 = (target, value) => __defProp$23(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-controllable-state@1.2.6_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs
+var __defProp$24 = Object.defineProperty;
+var __name$24 = (target, value) => __defProp$24(target, "name", {
 	value,
 	configurable: true
 });
 var useInsertionEffect = import_react[" useInsertionEffect ".trim().toString()] || useLayoutEffect2;
-function useControllableState({ prop, defaultProp, onChange = /* @__PURE__ */ __name$23(() => {}, "onChange"), caller }) {
+function useControllableState({ prop, defaultProp, onChange = /* @__PURE__ */ __name$24(() => {}, "onChange"), caller }) {
 	const [uncontrolledProp, setUncontrolledProp, onChangeRef] = useUncontrolledState({
 		defaultProp,
 		onChange
@@ -14853,7 +14991,7 @@ function useControllableState({ prop, defaultProp, onChange = /* @__PURE__ */ __
 		onChangeRef
 	])];
 }
-__name$23(useControllableState, "useControllableState");
+__name$24(useControllableState, "useControllableState");
 function useUncontrolledState({ defaultProp, onChange }) {
 	const [value, setValue] = import_react.useState(defaultProp);
 	const prevValueRef = import_react.useRef(value);
@@ -14873,11 +15011,11 @@ function useUncontrolledState({ defaultProp, onChange }) {
 		onChangeRef
 	];
 }
-__name$23(useUncontrolledState, "useUncontrolledState");
+__name$24(useUncontrolledState, "useUncontrolledState");
 function isFunction$3(value) {
 	return typeof value === "function";
 }
-__name$23(isFunction$3, "isFunction");
+__name$24(isFunction$3, "isFunction");
 var SYNC_STATE = Symbol("RADIX:SYNC_STATE");
 function useControllableStateReducer(reducer, userArgs, initialArg, init) {
 	const { prop: controlledState, defaultProp, onChange: onChangeProp, caller } = userArgs;
@@ -14928,11 +15066,11 @@ function useControllableStateReducer(reducer, userArgs, initialArg, init) {
 	]);
 	return [state, dispatch];
 }
-__name$23(useControllableStateReducer, "useControllableStateReducer");
+__name$24(useControllableStateReducer, "useControllableStateReducer");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-presence@1.1.10_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_b749a9ebe1d4ae59943e055e03b8e8b4/node_modules/@radix-ui/react-presence/dist/index.mjs
-var __defProp$22 = Object.defineProperty;
-var __name$22 = (target, value) => __defProp$22(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-presence@1.1.10_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_b749a9ebe1d4ae59943e055e03b8e8b4/node_modules/@radix-ui/react-presence/dist/index.mjs
+var __defProp$23 = Object.defineProperty;
+var __name$23 = (target, value) => __defProp$23(target, "name", {
 	value,
 	configurable: true
 });
@@ -14941,8 +15079,8 @@ function useStateMachine(initialState, machine) {
 		return machine[state][event] ?? state;
 	}, initialState);
 }
-__name$22(useStateMachine, "useStateMachine");
-var Presence = /* @__PURE__ */ __name$22((props) => {
+__name$23(useStateMachine, "useStateMachine");
+var Presence = /* @__PURE__ */ __name$23((props) => {
 	const { present, children } = props;
 	const presence = usePresence(present);
 	const child = typeof children === "function" ? children({ present: presence.isPresent }) : import_react.Children.only(children);
@@ -14991,7 +15129,7 @@ function usePresence(present) {
 		if (node) {
 			let timeoutId;
 			const ownerWindow = node.ownerDocument.defaultView ?? window;
-			const handleAnimationEnd = /* @__PURE__ */ __name$22((event) => {
+			const handleAnimationEnd = /* @__PURE__ */ __name$23((event) => {
 				const isCurrentAnimation = getAnimationName(stylesRef.current).includes(CSS.escape(event.animationName));
 				if (event.target === node && isCurrentAnimation) {
 					send("ANIMATION_END");
@@ -15004,7 +15142,7 @@ function usePresence(present) {
 					}
 				}
 			}, "handleAnimationEnd");
-			const handleAnimationStart = /* @__PURE__ */ __name$22((event) => {
+			const handleAnimationStart = /* @__PURE__ */ __name$23((event) => {
 				if (event.target === node) prevAnimationNameRef.current = getAnimationName(stylesRef.current);
 			}, "handleAnimationStart");
 			node.addEventListener("animationstart", handleAnimationStart);
@@ -15030,12 +15168,12 @@ function usePresence(present) {
 		}, [])
 	};
 }
-__name$22(usePresence, "usePresence");
+__name$23(usePresence, "usePresence");
 function setRef(ref, value) {
 	if (typeof ref === "function") return ref(value);
 	else if (ref !== null && ref !== void 0) ref.current = value;
 }
-__name$22(setRef, "setRef");
+__name$23(setRef, "setRef");
 function useStableComposedRefs(...refs) {
 	const refsRef = import_react.useRef(refs);
 	refsRef.current = refs;
@@ -15056,11 +15194,11 @@ function useStableComposedRefs(...refs) {
 		};
 	}, []);
 }
-__name$22(useStableComposedRefs, "useStableComposedRefs");
+__name$23(useStableComposedRefs, "useStableComposedRefs");
 function getAnimationName(styles) {
 	return styles?.animationName || "none";
 }
-__name$22(getAnimationName, "getAnimationName");
+__name$23(getAnimationName, "getAnimationName");
 function getElementRef(element) {
 	let getter = Object.getOwnPropertyDescriptor(element.props, "ref")?.get;
 	let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
@@ -15070,11 +15208,11 @@ function getElementRef(element) {
 	if (mayWarn) return element.props.ref;
 	return element.props.ref || element.ref;
 }
-__name$22(getElementRef, "getElementRef");
+__name$23(getElementRef, "getElementRef");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-id@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-id/dist/index.mjs
-var __defProp$21 = Object.defineProperty;
-var __name$21 = (target, value) => __defProp$21(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-id@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-id/dist/index.mjs
+var __defProp$22 = Object.defineProperty;
+var __name$22 = (target, value) => __defProp$22(target, "name", {
 	value,
 	configurable: true
 });
@@ -15087,18 +15225,18 @@ function useId(deterministicId) {
 	}, [deterministicId]);
 	return deterministicId || (id ? `radix-${id}` : "");
 }
-__name$21(useId, "useId");
+__name$22(useId, "useId");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-collapsible@1.1.20_@types+react-dom@19.2.3_@types+react@19.2.14__@types_ef3a43b9002ef0036ecabc8d63bf174e/node_modules/@radix-ui/react-collapsible/dist/index.mjs
-var __defProp$20 = Object.defineProperty;
-var __name$20 = (target, value) => __defProp$20(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-collapsible@1.1.20_@types+react-dom@19.2.3_@types+react@19.2.14__@types_ef3a43b9002ef0036ecabc8d63bf174e/node_modules/@radix-ui/react-collapsible/dist/index.mjs
+var __defProp$21 = Object.defineProperty;
+var __name$21 = (target, value) => __defProp$21(target, "name", {
 	value,
 	configurable: true
 });
 var COLLAPSIBLE_NAME = "Collapsible";
 var [createCollapsibleContext, createCollapsibleScope] = /* @__PURE__ */ createContextScope(COLLAPSIBLE_NAME);
 var [CollapsibleProvider, useCollapsibleContext] = createCollapsibleContext(COLLAPSIBLE_NAME);
-var Collapsible = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$20(function Collapsible2(props, forwardedRef) {
+var Collapsible = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$21(function Collapsible2(props, forwardedRef) {
 	const { __scopeCollapsible, open: openProp, defaultOpen, disabled, onOpenChange, ...collapsibleProps } = props;
 	const [open, setOpen] = useControllableState({
 		prop: openProp,
@@ -15121,7 +15259,7 @@ var Collapsible = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name
 	});
 }, "Collapsible"));
 var TRIGGER_NAME$6 = "CollapsibleTrigger";
-var CollapsibleTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$20(function CollapsibleTrigger2(props, forwardedRef) {
+var CollapsibleTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$21(function CollapsibleTrigger2(props, forwardedRef) {
 	const { __scopeCollapsible, ...triggerProps } = props;
 	const context = useCollapsibleContext(TRIGGER_NAME$6, __scopeCollapsible);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.button, {
@@ -15136,10 +15274,10 @@ var CollapsibleTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */
 		onClick: composeEventHandlers(props.onClick, context.onOpenToggle)
 	});
 }, "CollapsibleTrigger"));
-var CONTENT_NAME$5 = "CollapsibleContent";
-var CollapsibleContent = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$20(function CollapsibleContent2(props, forwardedRef) {
+var CONTENT_NAME$6 = "CollapsibleContent";
+var CollapsibleContent = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$21(function CollapsibleContent2(props, forwardedRef) {
 	const { forceMount, ...contentProps } = props;
-	const context = useCollapsibleContext(CONTENT_NAME$5, props.__scopeCollapsible);
+	const context = useCollapsibleContext(CONTENT_NAME$6, props.__scopeCollapsible);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Presence, {
 		present: forceMount || context.open,
 		children: ({ present }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CollapsibleContentImpl, {
@@ -15149,9 +15287,9 @@ var CollapsibleContent = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */
 		})
 	});
 }, "CollapsibleContent"));
-var CollapsibleContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$20(function CollapsibleContentImpl2(props, forwardedRef) {
+var CollapsibleContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$21(function CollapsibleContentImpl2(props, forwardedRef) {
 	const { __scopeCollapsible, present, children, ...contentProps } = props;
-	const context = useCollapsibleContext(CONTENT_NAME$5, __scopeCollapsible);
+	const context = useCollapsibleContext(CONTENT_NAME$6, __scopeCollapsible);
 	const [isPresent, setIsPresent] = import_react.useState(present);
 	const ref = import_react.useRef(null);
 	const composedRefs = useComposedRefs(forwardedRef, ref);
@@ -15203,14 +15341,14 @@ var CollapsibleContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE_
 function getState$4(open) {
 	return open ? "open" : "closed";
 }
-__name$20(getState$4, "getState");
+__name$21(getState$4, "getState");
 var Root$3 = Collapsible;
 var Trigger$1 = CollapsibleTrigger;
-var Content$2 = CollapsibleContent;
+var Content$1 = CollapsibleContent;
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-direction@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-direction/dist/index.mjs
-var __defProp$19 = Object.defineProperty;
-var __name$19 = (target, value) => __defProp$19(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-direction@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-direction/dist/index.mjs
+var __defProp$20 = Object.defineProperty;
+var __name$20 = (target, value) => __defProp$20(target, "name", {
 	value,
 	configurable: true
 });
@@ -15219,11 +15357,11 @@ function useDirection(localDir) {
 	const globalDir = import_react.useContext(DirectionContext);
 	return localDir || globalDir || "ltr";
 }
-__name$19(useDirection, "useDirection");
+__name$20(useDirection, "useDirection");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-accordion@1.2.20_@types+react-dom@19.2.3_@types+react@19.2.14__@types+r_e3959b1e7d17c0b0f5106e4a5d3324df/node_modules/@radix-ui/react-accordion/dist/index.mjs
-var __defProp$18 = Object.defineProperty;
-var __name$18 = (target, value) => __defProp$18(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-accordion@1.2.20_@types+react-dom@19.2.3_@types+react@19.2.14__@types+r_e3959b1e7d17c0b0f5106e4a5d3324df/node_modules/@radix-ui/react-accordion/dist/index.mjs
+var __defProp$19 = Object.defineProperty;
+var __name$19 = (target, value) => __defProp$19(target, "name", {
 	value,
 	configurable: true
 });
@@ -15236,14 +15374,14 @@ var ACCORDION_KEYS = [
 	"ArrowLeft",
 	"ArrowRight"
 ];
-var [Collection$2, useCollection$2, createCollectionScope$2] = /* @__PURE__ */ createCollection(ACCORDION_NAME);
-var [createAccordionContext, createAccordionScope] = /* @__PURE__ */ createContextScope(ACCORDION_NAME, [createCollectionScope$2, createCollapsibleScope]);
+var [Collection$3, useCollection$3, createCollectionScope$3] = /* @__PURE__ */ createCollection(ACCORDION_NAME);
+var [createAccordionContext, createAccordionScope] = /* @__PURE__ */ createContextScope(ACCORDION_NAME, [createCollectionScope$3, createCollapsibleScope]);
 var useCollapsibleScope = createCollapsibleScope();
-var Accordion$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$18(function Accordion2(props, forwardedRef) {
+var Accordion$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$19(function Accordion2(props, forwardedRef) {
 	const { type, ...accordionProps } = props;
 	const singleProps = accordionProps;
 	const multipleProps = accordionProps;
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$2.Provider, {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$3.Provider, {
 		scope: props.__scopeAccordion,
 		children: type === "multiple" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AccordionImplMultiple, {
 			...multipleProps,
@@ -15256,8 +15394,8 @@ var Accordion$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name
 }, "Accordion"));
 var [AccordionValueProvider, useAccordionValueContext] = createAccordionContext(ACCORDION_NAME);
 var [AccordionCollapsibleProvider, useAccordionCollapsibleContext] = createAccordionContext(ACCORDION_NAME, { collapsible: false });
-var AccordionImplSingle = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$18(function AccordionImplSingle2(props, forwardedRef) {
-	const { value: valueProp, defaultValue, onValueChange = /* @__PURE__ */ __name$18(() => {}, "onValueChange"), collapsible = false, ...accordionSingleProps } = props;
+var AccordionImplSingle = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$19(function AccordionImplSingle2(props, forwardedRef) {
+	const { value: valueProp, defaultValue, onValueChange = /* @__PURE__ */ __name$19(() => {}, "onValueChange"), collapsible = false, ...accordionSingleProps } = props;
 	const [value, setValue] = useControllableState({
 		prop: valueProp,
 		defaultProp: defaultValue ?? "",
@@ -15279,8 +15417,8 @@ var AccordionImplSingle = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ *
 		})
 	});
 }, "AccordionImplSingle"));
-var AccordionImplMultiple = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$18(function AccordionImplMultiple2(props, forwardedRef) {
-	const { value: valueProp, defaultValue, onValueChange = /* @__PURE__ */ __name$18(() => {}, "onValueChange"), ...accordionMultipleProps } = props;
+var AccordionImplMultiple = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$19(function AccordionImplMultiple2(props, forwardedRef) {
+	const { value: valueProp, defaultValue, onValueChange = /* @__PURE__ */ __name$19(() => {}, "onValueChange"), ...accordionMultipleProps } = props;
 	const [value, setValue] = useControllableState({
 		prop: valueProp,
 		defaultProp: defaultValue ?? [],
@@ -15305,10 +15443,10 @@ var AccordionImplMultiple = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__
 	});
 }, "AccordionImplMultiple"));
 var [AccordionImplProvider, useAccordionContext] = createAccordionContext(ACCORDION_NAME);
-var AccordionImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$18(function AccordionImpl2(props, forwardedRef) {
+var AccordionImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$19(function AccordionImpl2(props, forwardedRef) {
 	const { __scopeAccordion, disabled, dir, orientation = "vertical", ...accordionProps } = props;
 	const composedRefs = useComposedRefs(import_react.useRef(null), forwardedRef);
-	const getItems = useCollection$2(__scopeAccordion);
+	const getItems = useCollection$3(__scopeAccordion);
 	const isDirectionLTR = useDirection(dir) === "ltr";
 	const handleKeyDown = composeEventHandlers(props.onKeyDown, (event) => {
 		if (!ACCORDION_KEYS.includes(event.key)) return;
@@ -15321,11 +15459,11 @@ var AccordionImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __na
 		let nextIndex = triggerIndex;
 		const homeIndex = 0;
 		const endIndex = triggerCount - 1;
-		const moveNext = /* @__PURE__ */ __name$18(() => {
+		const moveNext = /* @__PURE__ */ __name$19(() => {
 			nextIndex = triggerIndex + 1;
 			if (nextIndex > endIndex) nextIndex = homeIndex;
 		}, "moveNext");
-		const movePrev = /* @__PURE__ */ __name$18(() => {
+		const movePrev = /* @__PURE__ */ __name$19(() => {
 			nextIndex = triggerIndex - 1;
 			if (nextIndex < homeIndex) nextIndex = endIndex;
 		}, "movePrev");
@@ -15358,7 +15496,7 @@ var AccordionImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __na
 		disabled,
 		direction: dir,
 		orientation,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$2.Slot, {
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$3.Slot, {
 			scope: __scopeAccordion,
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
 				...accordionProps,
@@ -15369,12 +15507,12 @@ var AccordionImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __na
 		})
 	});
 }, "AccordionImpl"));
-var ITEM_NAME$2 = "AccordionItem";
-var [AccordionItemProvider, useAccordionItemContext] = createAccordionContext(ITEM_NAME$2);
-var AccordionItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$18(function AccordionItem2(props, forwardedRef) {
+var ITEM_NAME$3 = "AccordionItem";
+var [AccordionItemProvider, useAccordionItemContext] = createAccordionContext(ITEM_NAME$3);
+var AccordionItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$19(function AccordionItem2(props, forwardedRef) {
 	const { __scopeAccordion, value, ...accordionItemProps } = props;
-	const accordionContext = useAccordionContext(ITEM_NAME$2, __scopeAccordion);
-	const valueContext = useAccordionValueContext(ITEM_NAME$2, __scopeAccordion);
+	const accordionContext = useAccordionContext(ITEM_NAME$3, __scopeAccordion);
+	const valueContext = useAccordionValueContext(ITEM_NAME$3, __scopeAccordion);
 	const collapsibleScope = useCollapsibleScope(__scopeAccordion);
 	const triggerId = useId();
 	const open = value && valueContext.value.includes(value) || false;
@@ -15400,7 +15538,7 @@ var AccordionItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 	});
 }, "AccordionItem"));
 var HEADER_NAME = "AccordionHeader";
-var AccordionHeader = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$18(function AccordionHeader2(props, forwardedRef) {
+var AccordionHeader = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$19(function AccordionHeader2(props, forwardedRef) {
 	const { __scopeAccordion, ...headerProps } = props;
 	const accordionContext = useAccordionContext(ACCORDION_NAME, __scopeAccordion);
 	const itemContext = useAccordionItemContext(HEADER_NAME, __scopeAccordion);
@@ -15413,13 +15551,13 @@ var AccordionHeader = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 	});
 }, "AccordionHeader"));
 var TRIGGER_NAME$5 = "AccordionTrigger";
-var AccordionTrigger$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$18(function AccordionTrigger2(props, forwardedRef) {
+var AccordionTrigger$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$19(function AccordionTrigger2(props, forwardedRef) {
 	const { __scopeAccordion, ...triggerProps } = props;
 	const accordionContext = useAccordionContext(ACCORDION_NAME, __scopeAccordion);
 	const itemContext = useAccordionItemContext(TRIGGER_NAME$5, __scopeAccordion);
 	const collapsibleContext = useAccordionCollapsibleContext(TRIGGER_NAME$5, __scopeAccordion);
 	const collapsibleScope = useCollapsibleScope(__scopeAccordion);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$2.ItemSlot, {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$3.ItemSlot, {
 		scope: __scopeAccordion,
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Trigger$1, {
 			"aria-disabled": itemContext.open && !collapsibleContext.collapsible || void 0,
@@ -15431,13 +15569,13 @@ var AccordionTrigger$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */
 		})
 	});
 }, "AccordionTrigger"));
-var CONTENT_NAME$4 = "AccordionContent";
-var AccordionContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$18(function AccordionContent2(props, forwardedRef) {
+var CONTENT_NAME$5 = "AccordionContent";
+var AccordionContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$19(function AccordionContent2(props, forwardedRef) {
 	const { __scopeAccordion, ...contentProps } = props;
 	const accordionContext = useAccordionContext(ACCORDION_NAME, __scopeAccordion);
-	const itemContext = useAccordionItemContext(CONTENT_NAME$4, __scopeAccordion);
+	const itemContext = useAccordionItemContext(CONTENT_NAME$5, __scopeAccordion);
 	const collapsibleScope = useCollapsibleScope(__scopeAccordion);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content$2, {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content$1, {
 		role: "region",
 		"aria-labelledby": itemContext.triggerId,
 		"data-orientation": accordionContext.orientation,
@@ -15454,16 +15592,16 @@ var AccordionContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */
 function getState$3(open) {
 	return open ? "open" : "closed";
 }
-__name$18(getState$3, "getState");
+__name$19(getState$3, "getState");
 var Root2$3 = Accordion$1;
 var Item$1 = AccordionItem$1;
 var Header = AccordionHeader;
 var Trigger2 = AccordionTrigger$1;
-var Content2$1 = AccordionContent$1;
+var Content2$3 = AccordionContent$1;
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-use-callback-ref@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs
-var __defProp$17 = Object.defineProperty;
-var __name$17 = (target, value) => __defProp$17(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-callback-ref@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs
+var __defProp$18 = Object.defineProperty;
+var __name$18 = (target, value) => __defProp$18(target, "name", {
 	value,
 	configurable: true
 });
@@ -15474,11 +15612,11 @@ function useCallbackRef$1(callback) {
 	});
 	return import_react.useMemo(() => ((...args) => callbackRef.current?.(...args)), []);
 }
-__name$17(useCallbackRef$1, "useCallbackRef");
+__name$18(useCallbackRef$1, "useCallbackRef");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-dismissable-layer@1.1.19_@types+react-dom@19.2.3_@types+react@19.2.14___aef6053db4c6dbb8c0a45ae2dcd35fbe/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs
-var __defProp$16 = Object.defineProperty;
-var __name$16 = (target, value) => __defProp$16(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-dismissable-layer@1.1.19_@types+react-dom@19.2.3_@types+react@19.2.14___aef6053db4c6dbb8c0a45ae2dcd35fbe/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs
+var __defProp$17 = Object.defineProperty;
+var __name$17 = (target, value) => __defProp$17(target, "name", {
 	value,
 	configurable: true
 });
@@ -15492,7 +15630,7 @@ var DismissableLayerContext = import_react.createContext({
 	branches: /* @__PURE__ */ new Set(),
 	dismissableSurfaces: /* @__PURE__ */ new Set()
 });
-var DismissableLayer = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$16(function DismissableLayer2(props, forwardedRef) {
+var DismissableLayer = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$17(function DismissableLayer2(props, forwardedRef) {
 	const { disableOutsidePointerEvents = false, deferPointerDownOutside = false, onEscapeKeyDown, onPointerDownOutside, onFocusOutside, onInteractOutside, onDismiss, ...layerProps } = props;
 	const context = import_react.useContext(DismissableLayerContext);
 	const [node, setNode] = import_react.useState(null);
@@ -15579,7 +15717,7 @@ var DismissableLayer = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ _
 		};
 	}, [node, context]);
 	import_react.useEffect(() => {
-		const handleUpdate = /* @__PURE__ */ __name$16(() => force({}), "handleUpdate");
+		const handleUpdate = /* @__PURE__ */ __name$17(() => force({}), "handleUpdate");
 		document.addEventListener(CONTEXT_UPDATE, handleUpdate);
 		return () => document.removeEventListener(CONTEXT_UPDATE, handleUpdate);
 	}, []);
@@ -15607,8 +15745,8 @@ function useDismissableLayerSurface() {
 	}, [node, context.dismissableSurfaces]);
 	return setNode;
 }
-__name$16(useDismissableLayerSurface, "useDismissableLayerSurface");
-var IS_TRUE = /* @__PURE__ */ __name$16(() => true, "IS_TRUE");
+__name$17(useDismissableLayerSurface, "useDismissableLayerSurface");
+var IS_TRUE = /* @__PURE__ */ __name$17(() => true, "IS_TRUE");
 function usePointerDownOutside(onPointerDownOutside, args) {
 	const { ownerDocument = globalThis?.document, deferPointerDownOutside = false, isDeferredPointerDownOutsideRef, dismissableSurfaces, shouldHandlePointerDownOutside = IS_TRUE } = args;
 	const handlePointerDownOutside = useCallbackRef$1(onPointerDownOutside);
@@ -15622,11 +15760,11 @@ function usePointerDownOutside(onPointerDownOutside, args) {
 			isDeferredPointerDownOutsideRef.current = false;
 			interceptedOutsideInteractionEventsRef.current.clear();
 		}
-		__name$16(resetOutsideInteraction, "resetOutsideInteraction");
+		__name$17(resetOutsideInteraction, "resetOutsideInteraction");
 		function isOutsideInteractionIntercepted() {
 			return Array.from(interceptedOutsideInteractionEventsRef.current.values()).some(Boolean);
 		}
-		__name$16(isOutsideInteractionIntercepted, "isOutsideInteractionIntercepted");
+		__name$17(isOutsideInteractionIntercepted, "isOutsideInteractionIntercepted");
 		function handleInteractionCapture(event) {
 			if (!isPointerDownOutsideRef.current) return;
 			const target = event.target;
@@ -15635,12 +15773,12 @@ function usePointerDownOutside(onPointerDownOutside, args) {
 				if (isPointerDownOutsideRef.current) handleClickRef.current();
 			}, 0);
 		}
-		__name$16(handleInteractionCapture, "handleInteractionCapture");
+		__name$17(handleInteractionCapture, "handleInteractionCapture");
 		function handleInteractionBubble(event) {
 			if (isPointerDownOutsideRef.current) interceptedOutsideInteractionEventsRef.current.set(event.type, false);
 		}
-		__name$16(handleInteractionBubble, "handleInteractionBubble");
-		const handlePointerDown = /* @__PURE__ */ __name$16((event) => {
+		__name$17(handleInteractionBubble, "handleInteractionBubble");
+		const handlePointerDown = /* @__PURE__ */ __name$17((event) => {
 			if (event.target && !isPointerInsideReactTreeRef.current) {
 				let handleAndDispatchPointerDownOutsideEvent2 = function() {
 					ownerDocument.removeEventListener("click", handleClickRef.current);
@@ -15648,7 +15786,7 @@ function usePointerDownOutside(onPointerDownOutside, args) {
 					resetOutsideInteraction();
 					if (!wasOutsideInteractionIntercepted) handleAndDispatchCustomEvent(POINTER_DOWN_OUTSIDE, handlePointerDownOutside, eventDetail, { discrete: true });
 				};
-				__name$16(handleAndDispatchPointerDownOutsideEvent2, "handleAndDispatchPointerDownOutsideEvent");
+				__name$17(handleAndDispatchPointerDownOutsideEvent2, "handleAndDispatchPointerDownOutsideEvent");
 				if (!shouldHandlePointerDownOutside(event.target)) {
 					ownerDocument.removeEventListener("click", handleClickRef.current);
 					resetOutsideInteraction();
@@ -15703,30 +15841,30 @@ function usePointerDownOutside(onPointerDownOutside, args) {
 		dismissableSurfaces,
 		shouldHandlePointerDownOutside
 	]);
-	return { onPointerDownCapture: /* @__PURE__ */ __name$16(() => isPointerInsideReactTreeRef.current = true, "onPointerDownCapture") };
+	return { onPointerDownCapture: /* @__PURE__ */ __name$17(() => isPointerInsideReactTreeRef.current = true, "onPointerDownCapture") };
 }
-__name$16(usePointerDownOutside, "usePointerDownOutside");
+__name$17(usePointerDownOutside, "usePointerDownOutside");
 function useFocusOutside(onFocusOutside, ownerDocument = globalThis?.document) {
 	const handleFocusOutside = useCallbackRef$1(onFocusOutside);
 	const isFocusInsideReactTreeRef = import_react.useRef(false);
 	import_react.useEffect(() => {
-		const handleFocus = /* @__PURE__ */ __name$16((event) => {
+		const handleFocus = /* @__PURE__ */ __name$17((event) => {
 			if (event.target && !isFocusInsideReactTreeRef.current) handleAndDispatchCustomEvent(FOCUS_OUTSIDE, handleFocusOutside, { originalEvent: event }, { discrete: false });
 		}, "handleFocus");
 		ownerDocument.addEventListener("focusin", handleFocus);
 		return () => ownerDocument.removeEventListener("focusin", handleFocus);
 	}, [ownerDocument, handleFocusOutside]);
 	return {
-		onFocusCapture: /* @__PURE__ */ __name$16(() => isFocusInsideReactTreeRef.current = true, "onFocusCapture"),
-		onBlurCapture: /* @__PURE__ */ __name$16(() => isFocusInsideReactTreeRef.current = false, "onBlurCapture")
+		onFocusCapture: /* @__PURE__ */ __name$17(() => isFocusInsideReactTreeRef.current = true, "onFocusCapture"),
+		onBlurCapture: /* @__PURE__ */ __name$17(() => isFocusInsideReactTreeRef.current = false, "onBlurCapture")
 	};
 }
-__name$16(useFocusOutside, "useFocusOutside");
+__name$17(useFocusOutside, "useFocusOutside");
 function dispatchUpdate() {
 	const event = new CustomEvent(CONTEXT_UPDATE);
 	document.dispatchEvent(event);
 }
-__name$16(dispatchUpdate, "dispatchUpdate");
+__name$17(dispatchUpdate, "dispatchUpdate");
 function handleAndDispatchCustomEvent(name, handler, detail, { discrete }) {
 	const target = detail.originalEvent.target;
 	const event = new CustomEvent(name, {
@@ -15738,11 +15876,11 @@ function handleAndDispatchCustomEvent(name, handler, detail, { discrete }) {
 	if (discrete) dispatchDiscreteCustomEvent(target, event);
 	else target.dispatchEvent(event);
 }
-__name$16(handleAndDispatchCustomEvent, "handleAndDispatchCustomEvent");
+__name$17(handleAndDispatchCustomEvent, "handleAndDispatchCustomEvent");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-focus-scope@1.1.16_@types+react-dom@19.2.3_@types+react@19.2.14__@types_81e264bd7e9c78fc68f9265e162603d7/node_modules/@radix-ui/react-focus-scope/dist/index.mjs
-var __defProp$15 = Object.defineProperty;
-var __name$15 = (target, value) => __defProp$15(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-focus-scope@1.1.16_@types+react-dom@19.2.3_@types+react@19.2.14__@types_81e264bd7e9c78fc68f9265e162603d7/node_modules/@radix-ui/react-focus-scope/dist/index.mjs
+var __defProp$16 = Object.defineProperty;
+var __name$16 = (target, value) => __defProp$16(target, "name", {
 	value,
 	configurable: true
 });
@@ -15752,7 +15890,7 @@ var EVENT_OPTIONS$1 = {
 	bubbles: false,
 	cancelable: true
 };
-var FocusScope = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$15(function FocusScope2(props, forwardedRef) {
+var FocusScope = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$16(function FocusScope2(props, forwardedRef) {
 	const { loop = false, trapped = false, onMountAutoFocus: onMountAutoFocusProp, onUnmountAutoFocus: onUnmountAutoFocusProp, ...scopeProps } = props;
 	const [container, setContainer] = import_react.useState(null);
 	const onMountAutoFocus = useCallbackRef$1(onMountAutoFocusProp);
@@ -15784,9 +15922,9 @@ var FocusScope = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$
 				if (document.activeElement !== document.body) return;
 				for (const mutation of mutations) if (mutation.removedNodes.length > 0) focus(container);
 			};
-			__name$15(handleFocusIn2, "handleFocusIn");
-			__name$15(handleFocusOut2, "handleFocusOut");
-			__name$15(handleMutations2, "handleMutations");
+			__name$16(handleFocusIn2, "handleFocusIn");
+			__name$16(handleFocusOut2, "handleFocusOut");
+			__name$16(handleMutations2, "handleMutations");
 			document.addEventListener("focusin", handleFocusIn2);
 			document.addEventListener("focusout", handleFocusOut2);
 			const mutationObserver = new MutationObserver(handleMutations2);
@@ -15814,7 +15952,7 @@ var FocusScope = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$
 				container.addEventListener(AUTOFOCUS_ON_MOUNT, onMountAutoFocus);
 				container.dispatchEvent(mountEvent);
 				if (!mountEvent.defaultPrevented) {
-					focusFirst$1(removeLinks(getTabbableCandidates(container)), { select: true });
+					focusFirst$2(removeLinks(getTabbableCandidates(container)), { select: true });
 					if (document.activeElement === previouslyFocusedElement) focus(container);
 				}
 			}
@@ -15866,22 +16004,22 @@ var FocusScope = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$
 		onKeyDown: handleKeyDown
 	});
 }, "FocusScope"));
-function focusFirst$1(candidates, { select = false } = {}) {
+function focusFirst$2(candidates, { select = false } = {}) {
 	const previouslyFocusedElement = document.activeElement;
 	for (const candidate of candidates) {
 		focus(candidate, { select });
 		if (document.activeElement !== previouslyFocusedElement) return;
 	}
 }
-__name$15(focusFirst$1, "focusFirst");
+__name$16(focusFirst$2, "focusFirst");
 function getTabbableEdges(container) {
 	const candidates = getTabbableCandidates(container);
 	return [findVisible(candidates, container), findVisible(candidates.reverse(), container)];
 }
-__name$15(getTabbableEdges, "getTabbableEdges");
+__name$16(getTabbableEdges, "getTabbableEdges");
 function getTabbableCandidates(container) {
 	const nodes = [];
-	const walker = document.createTreeWalker(container, NodeFilter.SHOW_ELEMENT, { acceptNode: /* @__PURE__ */ __name$15((node) => {
+	const walker = document.createTreeWalker(container, NodeFilter.SHOW_ELEMENT, { acceptNode: /* @__PURE__ */ __name$16((node) => {
 		const isHiddenInput = node.tagName === "INPUT" && node.type === "hidden";
 		if (node.disabled || node.hidden || isHiddenInput) return NodeFilter.FILTER_SKIP;
 		return node.tabIndex >= 0 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
@@ -15889,12 +16027,12 @@ function getTabbableCandidates(container) {
 	while (walker.nextNode()) nodes.push(walker.currentNode);
 	return nodes;
 }
-__name$15(getTabbableCandidates, "getTabbableCandidates");
+__name$16(getTabbableCandidates, "getTabbableCandidates");
 function findVisible(elements, container) {
 	const canUseCheckVisibility = typeof container.checkVisibility === "function" && container.checkVisibility({ checkVisibilityCSS: true });
 	for (const element of elements) if (!(canUseCheckVisibility ? !element.checkVisibility({ checkVisibilityCSS: true }) : isHidden(element, { upTo: container }))) return element;
 }
-__name$15(findVisible, "findVisible");
+__name$16(findVisible, "findVisible");
 function isHidden(node, { upTo }) {
 	if (getComputedStyle(node).visibility === "hidden") return true;
 	while (node) {
@@ -15904,11 +16042,11 @@ function isHidden(node, { upTo }) {
 	}
 	return false;
 }
-__name$15(isHidden, "isHidden");
+__name$16(isHidden, "isHidden");
 function isSelectableInput(element) {
 	return element instanceof HTMLInputElement && "select" in element;
 }
-__name$15(isSelectableInput, "isSelectableInput");
+__name$16(isSelectableInput, "isSelectableInput");
 function focus(element, { select = false } = {}) {
 	if (element && element.focus) {
 		const previouslyFocusedElement = document.activeElement;
@@ -15916,7 +16054,7 @@ function focus(element, { select = false } = {}) {
 		if (element !== previouslyFocusedElement && isSelectableInput(element) && select) element.select();
 	}
 }
-__name$15(focus, "focus");
+__name$16(focus, "focus");
 var focusScopesStack = createFocusScopesStack();
 function createFocusScopesStack() {
 	let stack = [];
@@ -15933,26 +16071,26 @@ function createFocusScopesStack() {
 		}
 	};
 }
-__name$15(createFocusScopesStack, "createFocusScopesStack");
+__name$16(createFocusScopesStack, "createFocusScopesStack");
 function arrayRemove(array, item) {
 	const updatedArray = [...array];
 	const index = updatedArray.indexOf(item);
 	if (index !== -1) updatedArray.splice(index, 1);
 	return updatedArray;
 }
-__name$15(arrayRemove, "arrayRemove");
+__name$16(arrayRemove, "arrayRemove");
 function removeLinks(items) {
 	return items.filter((item) => item.tagName !== "A");
 }
-__name$15(removeLinks, "removeLinks");
+__name$16(removeLinks, "removeLinks");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-portal@1.1.17_@types+react-dom@19.2.3_@types+react@19.2.14__@types+reac_f7cbbc7df5ea253e16fa4e69f04c481a/node_modules/@radix-ui/react-portal/dist/index.mjs
-var __defProp$14 = Object.defineProperty;
-var __name$14 = (target, value) => __defProp$14(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-portal@1.1.17_@types+react-dom@19.2.3_@types+react@19.2.14__@types+reac_f7cbbc7df5ea253e16fa4e69f04c481a/node_modules/@radix-ui/react-portal/dist/index.mjs
+var __defProp$15 = Object.defineProperty;
+var __name$15 = (target, value) => __defProp$15(target, "name", {
 	value,
 	configurable: true
 });
-var Portal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$14(function Portal2(props, forwardedRef) {
+var Portal$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$15(function Portal2(props, forwardedRef) {
 	const { container: containerProp, ...portalProps } = props;
 	const [mounted, setMounted] = import_react.useState(false);
 	useLayoutEffect2(() => setMounted(true), []);
@@ -15963,9 +16101,9 @@ var Portal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$14(f
 	}), container) : null;
 }, "Portal"));
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-focus-guards@1.1.6_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-focus-guards/dist/index.mjs
-var __defProp$13 = Object.defineProperty;
-var __name$13 = (target, value) => __defProp$13(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-focus-guards@1.1.6_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-focus-guards/dist/index.mjs
+var __defProp$14 = Object.defineProperty;
+var __name$14 = (target, value) => __defProp$14(target, "name", {
 	value,
 	configurable: true
 });
@@ -15975,7 +16113,7 @@ function FocusGuards(props) {
 	useFocusGuards();
 	return props.children;
 }
-__name$13(FocusGuards, "FocusGuards");
+__name$14(FocusGuards, "FocusGuards");
 function useFocusGuards() {
 	import_react.useEffect(() => {
 		if (!guards) guards = {
@@ -15996,7 +16134,7 @@ function useFocusGuards() {
 		};
 	}, []);
 }
-__name$13(useFocusGuards, "useFocusGuards");
+__name$14(useFocusGuards, "useFocusGuards");
 function createFocusGuard() {
 	const element = document.createElement("span");
 	element.setAttribute("data-radix-focus-guard", "");
@@ -16007,9 +16145,9 @@ function createFocusGuard() {
 	element.style.pointerEvents = "none";
 	return element;
 }
-__name$13(createFocusGuard, "createFocusGuard");
+__name$14(createFocusGuard, "createFocusGuard");
 //#endregion
-//#region node_modules/.pnpm/tslib@2.8.1/node_modules/tslib/tslib.es6.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/tslib@2.8.1/node_modules/tslib/tslib.es6.mjs
 var __assign = function() {
 	__assign = Object.assign || function __assign(t) {
 		for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -16038,7 +16176,7 @@ function __spreadArray(to, from, pack) {
 	return to.concat(ar || Array.prototype.slice.call(from));
 }
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/constants.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/constants.js
 var zeroRightClassName = "right-scroll-bar-position";
 var fullWidthClassName = "width-before-scroll-bar";
 var noScrollbarsClassName = "with-scroll-bars-hidden";
@@ -16048,7 +16186,7 @@ var noScrollbarsClassName = "with-scroll-bars-hidden";
 */
 var removedBarSizeVariable = "--removed-body-scroll-bar-size";
 //#endregion
-//#region node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/assignRef.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/assignRef.js
 /**
 * Assigns a value for a given ref, no matter of the ref format
 * @param {RefObject} ref - a callback function or ref object
@@ -16068,7 +16206,7 @@ function assignRef(ref, value) {
 	return ref;
 }
 //#endregion
-//#region node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/useRef.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/useRef.js
 /**
 * creates a MutableRef with ref change callback
 * @param initialValue - initial ref value
@@ -16106,7 +16244,7 @@ function useCallbackRef(initialValue, callback) {
 	return ref.facade;
 }
 //#endregion
-//#region node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/useMergeRef.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/useMergeRef.js
 var useIsomorphicLayoutEffect = typeof window !== "undefined" ? import_react.useLayoutEffect : import_react.useEffect;
 var currentValues = /* @__PURE__ */ new WeakMap();
 /**
@@ -16147,7 +16285,7 @@ function useMergeRefs(refs, defaultValue) {
 	return callbackRef;
 }
 //#endregion
-//#region node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.14_react@19.2.6/node_modules/use-sidecar/dist/es2015/medium.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.14_react@19.2.6/node_modules/use-sidecar/dist/es2015/medium.js
 function ItoI(a) {
 	return a;
 }
@@ -16227,7 +16365,7 @@ function createSidecarMedium(options) {
 	return medium;
 }
 //#endregion
-//#region node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.14_react@19.2.6/node_modules/use-sidecar/dist/es2015/exports.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.14_react@19.2.6/node_modules/use-sidecar/dist/es2015/exports.js
 var SideCar = function(_a) {
 	var sideCar = _a.sideCar, rest = __rest(_a, ["sideCar"]);
 	if (!sideCar) throw new Error("Sidecar: please provide `sideCar` property to import the right car");
@@ -16241,10 +16379,10 @@ function exportSidecar(medium, exported) {
 	return SideCar;
 }
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/medium.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/medium.js
 var effectCar = createSidecarMedium();
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/UI.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/UI.js
 var nothing = function() {};
 /**
 * Removes scrollbar from the page and contain the scroll within the Lock
@@ -16300,14 +16438,14 @@ RemoveScroll.classNames = {
 	zeroRight: zeroRightClassName
 };
 //#endregion
-//#region node_modules/.pnpm/get-nonce@1.0.1/node_modules/get-nonce/dist/es2015/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/get-nonce@1.0.1/node_modules/get-nonce/dist/es2015/index.js
 var currentNonce;
 var getNonce = function() {
 	if (currentNonce) return currentNonce;
 	if (typeof __webpack_nonce__ !== "undefined") return __webpack_nonce__;
 };
 //#endregion
-//#region node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/singleton.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/singleton.js
 function makeStyleTag() {
 	if (!document) return null;
 	var tag = document.createElement("style");
@@ -16346,7 +16484,7 @@ var stylesheetSingleton = function() {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/hook.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/hook.js
 /**
 * creates a hook to control style singleton
 * @see {@link styleSingleton} for a safer component version
@@ -16368,7 +16506,7 @@ var styleHookSingleton = function() {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/component.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/component.js
 /**
 * create a Component to add styles on demand
 * - styles are added when first instance is mounted
@@ -16385,7 +16523,7 @@ var styleSingleton = function() {
 	return Sheet;
 };
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/utils.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/utils.js
 var zeroGap = {
 	left: 0,
 	top: 0,
@@ -16420,7 +16558,7 @@ var getGapWidth = function(gapMode) {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/component.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/component.js
 var Style = styleSingleton();
 var lockAttribute = "data-scroll-locked";
 var getStyles = function(_a, allowRelative, gapMode, important) {
@@ -16458,7 +16596,7 @@ var RemoveScrollBar = function(_a) {
 	return import_react.createElement(Style, { styles: getStyles(gap, !noRelative, gapMode, !noImportant ? "!important" : "") });
 };
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js
 var passiveSupported = false;
 if (typeof window !== "undefined") try {
 	var options = Object.defineProperty({}, "passive", { get: function() {
@@ -16472,7 +16610,7 @@ if (typeof window !== "undefined") try {
 }
 var nonPassive = passiveSupported ? { passive: false } : false;
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/handleScroll.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/handleScroll.js
 var alwaysContainsScroll = function(node) {
 	return node.tagName === "TEXTAREA";
 };
@@ -16555,7 +16693,7 @@ var handleScroll = function(axis, endTarget, event, sourceDelta, noOverscroll) {
 	return shouldCancelScroll;
 };
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/SideEffect.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/SideEffect.js
 var getTouchXY = function(event) {
 	return "changedTouches" in event ? [event.changedTouches[0].clientX, event.changedTouches[0].clientY] : [0, 0];
 };
@@ -16710,10 +16848,10 @@ function getOutermostShadowParent(node) {
 	return shadowParent;
 }
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/sidecar.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/sidecar.js
 var sidecar_default = exportSidecar(effectCar, RemoveScrollSideCar);
 //#endregion
-//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/Combination.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/Combination.js
 var ReactRemoveScroll = import_react.forwardRef(function(props, ref) {
 	return import_react.createElement(RemoveScroll, __assign({}, props, {
 		ref,
@@ -16722,7 +16860,7 @@ var ReactRemoveScroll = import_react.forwardRef(function(props, ref) {
 });
 ReactRemoveScroll.classNames = RemoveScroll.classNames;
 //#endregion
-//#region node_modules/.pnpm/aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js
 var getDefaultParent = function(originalTarget) {
 	if (typeof document === "undefined") return null;
 	return (Array.isArray(originalTarget) ? originalTarget[0] : originalTarget).ownerDocument.body;
@@ -16828,16 +16966,16 @@ var hideOthers = function(originalTarget, parentNode, markerName) {
 	return applyAttributeToOthers(targets, activeParentNode, markerName, "aria-hidden");
 };
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-dialog@1.1.23_@types+react-dom@19.2.3_@types+react@19.2.14__@types+reac_4f2d06368a9f8619113962ab14e94ae4/node_modules/@radix-ui/react-dialog/dist/index.mjs
-var __defProp$12 = Object.defineProperty;
-var __name$12 = (target, value) => __defProp$12(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-dialog@1.1.23_@types+react-dom@19.2.3_@types+react@19.2.14__@types+reac_4f2d06368a9f8619113962ab14e94ae4/node_modules/@radix-ui/react-dialog/dist/index.mjs
+var __defProp$13 = Object.defineProperty;
+var __name$13 = (target, value) => __defProp$13(target, "name", {
 	value,
 	configurable: true
 });
 var DIALOG_NAME = "Dialog";
 var [createDialogContext, createDialogScope] = /* @__PURE__ */ createContextScope(DIALOG_NAME);
 var [DialogProvider, useDialogContext] = createDialogContext(DIALOG_NAME);
-var Dialog$1 = /* @__PURE__ */ __name$12((props) => {
+var Dialog$1 = /* @__PURE__ */ __name$13((props) => {
 	const { __scopeDialog, children, open: openProp, defaultOpen, onOpenChange, modal = true } = props;
 	const triggerRef = import_react.useRef(null);
 	const contentRef = import_react.useRef(null);
@@ -16868,7 +17006,7 @@ var Dialog$1 = /* @__PURE__ */ __name$12((props) => {
 	});
 }, "Dialog");
 var TRIGGER_NAME$4 = "DialogTrigger";
-var DialogTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogTrigger2(props, forwardedRef) {
+var DialogTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogTrigger2(props, forwardedRef) {
 	const { __scopeDialog, ...triggerProps } = props;
 	const context = useDialogContext(TRIGGER_NAME$4, __scopeDialog);
 	const composedTriggerRef = useComposedRefs(forwardedRef, context.triggerRef);
@@ -16883,17 +17021,17 @@ var DialogTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __na
 		onClick: composeEventHandlers(props.onClick, context.onOpenToggle)
 	});
 }, "DialogTrigger"));
-var PORTAL_NAME = "DialogPortal";
-var [PortalProvider$1, usePortalContext$1] = createDialogContext(PORTAL_NAME, { forceMount: void 0 });
-var DialogPortal$1 = /* @__PURE__ */ __name$12((props) => {
+var PORTAL_NAME$1 = "DialogPortal";
+var [PortalProvider$2, usePortalContext$2] = createDialogContext(PORTAL_NAME$1, { forceMount: void 0 });
+var DialogPortal$1 = /* @__PURE__ */ __name$13((props) => {
 	const { __scopeDialog, forceMount, children, container } = props;
-	const context = useDialogContext(PORTAL_NAME, __scopeDialog);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PortalProvider$1, {
+	const context = useDialogContext(PORTAL_NAME$1, __scopeDialog);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PortalProvider$2, {
 		scope: __scopeDialog,
 		forceMount,
 		children: import_react.Children.map(children, (child) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Presence, {
 			present: forceMount || context.open,
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Portal, {
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Portal$1, {
 				asChild: true,
 				container,
 				children: child
@@ -16902,8 +17040,8 @@ var DialogPortal$1 = /* @__PURE__ */ __name$12((props) => {
 	});
 }, "DialogPortal");
 var OVERLAY_NAME = "DialogOverlay";
-var DialogOverlay$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogOverlay2(props, forwardedRef) {
-	const portalContext = usePortalContext$1(OVERLAY_NAME, props.__scopeDialog);
+var DialogOverlay$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogOverlay2(props, forwardedRef) {
+	const portalContext = usePortalContext$2(OVERLAY_NAME, props.__scopeDialog);
 	const { forceMount = portalContext.forceMount, ...overlayProps } = props;
 	const context = useDialogContext(OVERLAY_NAME, props.__scopeDialog);
 	return context.modal ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Presence, {
@@ -16914,13 +17052,13 @@ var DialogOverlay$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 		})
 	}) : null;
 }, "DialogOverlay"));
-var Slot$1 = /* @__PURE__ */ createSlot("DialogOverlay.RemoveScroll");
-var DialogOverlayImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogOverlayImpl2(props, forwardedRef) {
+var Slot$2 = /* @__PURE__ */ createSlot("DialogOverlay.RemoveScroll");
+var DialogOverlayImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogOverlayImpl2(props, forwardedRef) {
 	const { __scopeDialog, ...overlayProps } = props;
 	const context = useDialogContext(OVERLAY_NAME, __scopeDialog);
 	const composedRefs = useComposedRefs(forwardedRef, useDismissableLayerSurface());
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ReactRemoveScroll, {
-		as: Slot$1,
+		as: Slot$2,
 		allowPinchZoom: true,
 		shards: [context.contentRef],
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
@@ -16934,11 +17072,11 @@ var DialogOverlayImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ 
 		})
 	});
 }, "DialogOverlayImpl"));
-var CONTENT_NAME$3 = "DialogContent";
-var DialogContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogContent2(props, forwardedRef) {
-	const portalContext = usePortalContext$1(CONTENT_NAME$3, props.__scopeDialog);
+var CONTENT_NAME$4 = "DialogContent";
+var DialogContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogContent2(props, forwardedRef) {
+	const portalContext = usePortalContext$2(CONTENT_NAME$4, props.__scopeDialog);
 	const { forceMount = portalContext.forceMount, ...contentProps } = props;
-	const context = useDialogContext(CONTENT_NAME$3, props.__scopeDialog);
+	const context = useDialogContext(CONTENT_NAME$4, props.__scopeDialog);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Presence, {
 		present: forceMount || context.open,
 		children: context.modal ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogContentModal, {
@@ -16950,8 +17088,8 @@ var DialogContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 		})
 	});
 }, "DialogContent"));
-var DialogContentModal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogContentModal2(props, forwardedRef) {
-	const context = useDialogContext(CONTENT_NAME$3, props.__scopeDialog);
+var DialogContentModal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogContentModal2(props, forwardedRef) {
+	const context = useDialogContext(CONTENT_NAME$4, props.__scopeDialog);
 	const contentRef = import_react.useRef(null);
 	const composedRefs = useComposedRefs(forwardedRef, context.contentRef, contentRef);
 	import_react.useEffect(() => {
@@ -16975,8 +17113,8 @@ var DialogContentModal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */
 		onFocusOutside: composeEventHandlers(props.onFocusOutside, (event) => event.preventDefault())
 	});
 }, "DialogContentModal"));
-var DialogContentNonModal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogContentNonModal2(props, forwardedRef) {
-	const context = useDialogContext(CONTENT_NAME$3, props.__scopeDialog);
+var DialogContentNonModal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogContentNonModal2(props, forwardedRef) {
+	const context = useDialogContext(CONTENT_NAME$4, props.__scopeDialog);
 	const hasInteractedOutsideRef = import_react.useRef(false);
 	const hasPointerDownOutsideRef = import_react.useRef(false);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogContentImpl, {
@@ -17005,9 +17143,9 @@ var DialogContentNonModal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__
 		}
 	});
 }, "DialogContentNonModal"));
-var DialogContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogContentImpl2(props, forwardedRef) {
+var DialogContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogContentImpl2(props, forwardedRef) {
 	const { __scopeDialog, trapFocus, onOpenAutoFocus, onCloseAutoFocus, ...contentProps } = props;
-	const context = useDialogContext(CONTENT_NAME$3, __scopeDialog);
+	const context = useDialogContext(CONTENT_NAME$4, __scopeDialog);
 	useFocusGuards();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_jsx_runtime.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FocusScope, {
 		asChild: true,
@@ -17029,7 +17167,7 @@ var DialogContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ 
 	}) });
 }, "DialogContentImpl"));
 var TITLE_NAME = "DialogTitle";
-var DialogTitle$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogTitle2(props, forwardedRef) {
+var DialogTitle$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogTitle2(props, forwardedRef) {
 	const { __scopeDialog, ...titleProps } = props;
 	const context = useDialogContext(TITLE_NAME, __scopeDialog);
 	const { setTitleCount } = context;
@@ -17044,7 +17182,7 @@ var DialogTitle$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __na
 	});
 }, "DialogTitle"));
 var DESCRIPTION_NAME = "DialogDescription";
-var DialogDescription$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogDescription2(props, forwardedRef) {
+var DialogDescription$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogDescription2(props, forwardedRef) {
 	const { __scopeDialog, ...descriptionProps } = props;
 	const context = useDialogContext(DESCRIPTION_NAME, __scopeDialog);
 	const { setDescriptionCount } = context;
@@ -17059,7 +17197,7 @@ var DialogDescription$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ *
 	});
 }, "DialogDescription"));
 var CLOSE_NAME = "DialogClose";
-var DialogClose = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$12(function DialogClose2(props, forwardedRef) {
+var DialogClose = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$13(function DialogClose2(props, forwardedRef) {
 	const { __scopeDialog, ...closeProps } = props;
 	const context = useDialogContext(CLOSE_NAME, __scopeDialog);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.button, {
@@ -17072,17 +17210,17 @@ var DialogClose = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name
 function getState$2(open) {
 	return open ? "open" : "closed";
 }
-__name$12(getState$2, "getState");
+__name$13(getState$2, "getState");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-alert-dialog@1.1.23_@types+react-dom@19.2.3_@types+react@19.2.14__@type_1bf2e65aa102eba0965a70dcf7b7cf1a/node_modules/@radix-ui/react-alert-dialog/dist/index.mjs
-var __defProp$11 = Object.defineProperty;
-var __name$11 = (target, value) => __defProp$11(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-alert-dialog@1.1.23_@types+react-dom@19.2.3_@types+react@19.2.14__@type_1bf2e65aa102eba0965a70dcf7b7cf1a/node_modules/@radix-ui/react-alert-dialog/dist/index.mjs
+var __defProp$12 = Object.defineProperty;
+var __name$12 = (target, value) => __defProp$12(target, "name", {
 	value,
 	configurable: true
 });
 var [createAlertDialogContext, createAlertDialogScope] = /* @__PURE__ */ createContextScope("AlertDialog", [createDialogScope]);
 var useDialogScope = createDialogScope();
-var AlertDialog$1 = /* @__PURE__ */ __name$11((props) => {
+var AlertDialog$1 = /* @__PURE__ */ __name$12((props) => {
 	const { __scopeAlertDialog, ...alertDialogProps } = props;
 	const dialogScope = useDialogScope(__scopeAlertDialog);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog$1, {
@@ -17091,7 +17229,7 @@ var AlertDialog$1 = /* @__PURE__ */ __name$11((props) => {
 		modal: true
 	});
 }, "AlertDialog");
-import_react.forwardRef(/* @__PURE__ */ __name$11(function AlertDialogTrigger2(props, forwardedRef) {
+import_react.forwardRef(/* @__PURE__ */ __name$12(function AlertDialogTrigger2(props, forwardedRef) {
 	const { __scopeAlertDialog, ...triggerProps } = props;
 	const dialogScope = useDialogScope(__scopeAlertDialog);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTrigger, {
@@ -17100,7 +17238,7 @@ import_react.forwardRef(/* @__PURE__ */ __name$11(function AlertDialogTrigger2(p
 		ref: forwardedRef
 	});
 }, "AlertDialogTrigger"));
-var AlertDialogPortal$1 = /* @__PURE__ */ __name$11((props) => {
+var AlertDialogPortal$1 = /* @__PURE__ */ __name$12((props) => {
 	const { __scopeAlertDialog, ...portalProps } = props;
 	const dialogScope = useDialogScope(__scopeAlertDialog);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogPortal$1, {
@@ -17108,7 +17246,7 @@ var AlertDialogPortal$1 = /* @__PURE__ */ __name$11((props) => {
 		...portalProps
 	});
 }, "AlertDialogPortal");
-var AlertDialogOverlay$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(function AlertDialogOverlay2(props, forwardedRef) {
+var AlertDialogOverlay$1 = import_react.forwardRef(/* @__PURE__ */ __name$12(function AlertDialogOverlay2(props, forwardedRef) {
 	const { __scopeAlertDialog, ...overlayProps } = props;
 	const dialogScope = useDialogScope(__scopeAlertDialog);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay$1, {
@@ -17118,7 +17256,7 @@ var AlertDialogOverlay$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(fun
 	});
 }, "AlertDialogOverlay"));
 var [AlertDialogContentProvider, useAlertDialogContentContext] = createAlertDialogContext("AlertDialogContent");
-var AlertDialogContent$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(function AlertDialogContent2(props, forwardedRef) {
+var AlertDialogContent$1 = import_react.forwardRef(/* @__PURE__ */ __name$12(function AlertDialogContent2(props, forwardedRef) {
 	const { __scopeAlertDialog, children, ...contentProps } = props;
 	const dialogScope = useDialogScope(__scopeAlertDialog);
 	const composedRefs = useComposedRefs(forwardedRef, import_react.useRef(null));
@@ -17141,7 +17279,7 @@ var AlertDialogContent$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(fun
 		})
 	});
 }, "AlertDialogContent"));
-var AlertDialogTitle$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(function AlertDialogTitle2(props, forwardedRef) {
+var AlertDialogTitle$1 = import_react.forwardRef(/* @__PURE__ */ __name$12(function AlertDialogTitle2(props, forwardedRef) {
 	const { __scopeAlertDialog, ...titleProps } = props;
 	const dialogScope = useDialogScope(__scopeAlertDialog);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle$1, {
@@ -17150,7 +17288,7 @@ var AlertDialogTitle$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(funct
 		ref: forwardedRef
 	});
 }, "AlertDialogTitle"));
-var AlertDialogDescription$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(function AlertDialogDescription2(props, forwardedRef) {
+var AlertDialogDescription$1 = import_react.forwardRef(/* @__PURE__ */ __name$12(function AlertDialogDescription2(props, forwardedRef) {
 	const { __scopeAlertDialog, ...descriptionProps } = props;
 	const dialogScope = useDialogScope(__scopeAlertDialog);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription$1, {
@@ -17159,7 +17297,7 @@ var AlertDialogDescription$1 = import_react.forwardRef(/* @__PURE__ */ __name$11
 		ref: forwardedRef
 	});
 }, "AlertDialogDescription"));
-var AlertDialogAction$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(function AlertDialogAction2(props, forwardedRef) {
+var AlertDialogAction$1 = import_react.forwardRef(/* @__PURE__ */ __name$12(function AlertDialogAction2(props, forwardedRef) {
 	const { __scopeAlertDialog, ...actionProps } = props;
 	const dialogScope = useDialogScope(__scopeAlertDialog);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogClose, {
@@ -17169,7 +17307,7 @@ var AlertDialogAction$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(func
 	});
 }, "AlertDialogAction"));
 var CANCEL_NAME = "AlertDialogCancel";
-var AlertDialogCancel$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(function AlertDialogCancel2(props, forwardedRef) {
+var AlertDialogCancel$1 = import_react.forwardRef(/* @__PURE__ */ __name$12(function AlertDialogCancel2(props, forwardedRef) {
 	const { __scopeAlertDialog, ...cancelProps } = props;
 	const { cancelRef } = useAlertDialogContentContext(CANCEL_NAME, __scopeAlertDialog);
 	const dialogScope = useDialogScope(__scopeAlertDialog);
@@ -17181,17 +17319,17 @@ var AlertDialogCancel$1 = import_react.forwardRef(/* @__PURE__ */ __name$11(func
 	});
 }, "AlertDialogCancel"));
 var Root2$2 = AlertDialog$1;
-var Portal2 = AlertDialogPortal$1;
+var Portal2$1 = AlertDialogPortal$1;
 var Overlay2 = AlertDialogOverlay$1;
-var Content2 = AlertDialogContent$1;
+var Content2$2 = AlertDialogContent$1;
 var Action = AlertDialogAction$1;
 var Cancel = AlertDialogCancel$1;
 var Title2 = AlertDialogTitle$1;
 var Description2 = AlertDialogDescription$1;
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-use-size@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-size/dist/index.mjs
-var __defProp$10 = Object.defineProperty;
-var __name$10 = (target, value) => __defProp$10(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-size@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-size/dist/index.mjs
+var __defProp$11 = Object.defineProperty;
+var __name$11 = (target, value) => __defProp$11(target, "name", {
 	value,
 	configurable: true
 });
@@ -17229,11 +17367,11 @@ function useSize(element) {
 	}, [element]);
 	return size;
 }
-__name$10(useSize, "useSize");
+__name$11(useSize, "useSize");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-checkbox@1.3.11_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_10f4bbe0d32cb51b8f243241612dbabc/node_modules/@radix-ui/react-checkbox/dist/index.mjs
-var __defProp$9 = Object.defineProperty;
-var __name$9 = (target, value) => __defProp$9(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-checkbox@1.3.11_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_10f4bbe0d32cb51b8f243241612dbabc/node_modules/@radix-ui/react-checkbox/dist/index.mjs
+var __defProp$10 = Object.defineProperty;
+var __name$10 = (target, value) => __defProp$10(target, "name", {
 	value,
 	configurable: true
 });
@@ -17266,7 +17404,7 @@ function CheckboxProvider(props) {
 		userInteractionCount,
 		onUserInteraction,
 		required,
-		defaultChecked: isIndeterminate(defaultChecked) ? false : defaultChecked,
+		defaultChecked: isIndeterminate$1(defaultChecked) ? false : defaultChecked,
 		isFormControl,
 		bubbleInput,
 		setBubbleInput
@@ -17277,16 +17415,16 @@ function CheckboxProvider(props) {
 		children: isFunction$2(internal_do_not_use_render) ? internal_do_not_use_render(context) : children
 	});
 }
-__name$9(CheckboxProvider, "CheckboxProvider");
+__name$10(CheckboxProvider, "CheckboxProvider");
 var TRIGGER_NAME$3 = "CheckboxTrigger";
-var CheckboxTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$9(function CheckboxTrigger2({ __scopeCheckbox, onKeyDown, onClick, ...checkboxProps }, forwardedRef) {
+var CheckboxTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$10(function CheckboxTrigger2({ __scopeCheckbox, onKeyDown, onClick, ...checkboxProps }, forwardedRef) {
 	const { control, value, disabled, checked, required, setControl, setChecked, hasConsumerStoppedPropagationRef, onUserInteraction, isFormControl, bubbleInput } = useCheckboxContext(TRIGGER_NAME$3, __scopeCheckbox);
 	const composedRefs = useComposedRefs(forwardedRef, setControl);
 	const initialCheckedStateRef = import_react.useRef(checked);
 	import_react.useEffect(() => {
 		const form = control?.form;
 		if (form) {
-			const reset = /* @__PURE__ */ __name$9(() => setChecked(initialCheckedStateRef.current), "reset");
+			const reset = /* @__PURE__ */ __name$10(() => setChecked(initialCheckedStateRef.current), "reset");
 			form.addEventListener("reset", reset);
 			return () => form.removeEventListener("reset", reset);
 		}
@@ -17294,7 +17432,7 @@ var CheckboxTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.button, {
 		type: "button",
 		role: "checkbox",
-		"aria-checked": isIndeterminate(checked) ? "mixed" : checked,
+		"aria-checked": isIndeterminate$1(checked) ? "mixed" : checked,
 		"aria-required": required,
 		"data-state": getState$1(checked),
 		"data-disabled": disabled ? "" : void 0,
@@ -17307,7 +17445,7 @@ var CheckboxTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 		}),
 		onClick: composeEventHandlers(onClick, (event) => {
 			onUserInteraction();
-			setChecked((prevChecked) => isIndeterminate(prevChecked) ? true : !prevChecked);
+			setChecked((prevChecked) => isIndeterminate$1(prevChecked) ? true : !prevChecked);
 			if (bubbleInput && isFormControl) {
 				hasConsumerStoppedPropagationRef.current = event.isPropagationStopped();
 				if (!hasConsumerStoppedPropagationRef.current) event.stopPropagation();
@@ -17315,7 +17453,7 @@ var CheckboxTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 		})
 	});
 }, "CheckboxTrigger"));
-var Checkbox$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$9(function Checkbox2(props, forwardedRef) {
+var Checkbox$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$10(function Checkbox2(props, forwardedRef) {
 	const { __scopeCheckbox, name, checked, defaultChecked, required, disabled, value, onCheckedChange, form, ...checkboxProps } = props;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CheckboxProvider, {
 		__scopeCheckbox,
@@ -17335,11 +17473,11 @@ var Checkbox$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$
 	});
 }, "Checkbox"));
 var INDICATOR_NAME$2 = "CheckboxIndicator";
-var CheckboxIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$9(function CheckboxIndicator2(props, forwardedRef) {
+var CheckboxIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$10(function CheckboxIndicator2(props, forwardedRef) {
 	const { __scopeCheckbox, forceMount, ...indicatorProps } = props;
 	const context = useCheckboxContext(INDICATOR_NAME$2, __scopeCheckbox);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Presence, {
-		present: forceMount || isIndeterminate(context.checked) || context.checked === true,
+		present: forceMount || isIndeterminate$1(context.checked) || context.checked === true,
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.span, {
 			"data-state": getState$1(context.checked),
 			"data-disabled": context.disabled ? "" : void 0,
@@ -17353,7 +17491,7 @@ var CheckboxIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ 
 	});
 }, "CheckboxIndicator"));
 var BUBBLE_INPUT_NAME$2 = "CheckboxBubbleInput";
-var CheckboxBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$9(function CheckboxBubbleInput2({ __scopeCheckbox, onClick, ...props }, forwardedRef) {
+var CheckboxBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$10(function CheckboxBubbleInput2({ __scopeCheckbox, onClick, ...props }, forwardedRef) {
 	const { control, hasConsumerStoppedPropagationRef, userInteractionCount, checked, defaultChecked, required, disabled, name, value, form, bubbleInput, setBubbleInput } = useCheckboxContext(BUBBLE_INPUT_NAME$2, __scopeCheckbox);
 	const composedRefs = useComposedRefs(forwardedRef, setBubbleInput);
 	const controlSize = useSize(control);
@@ -17373,8 +17511,8 @@ var CheckboxBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ *
 		if (checkedChanged && setChecked) {
 			shouldStopClickPropagationRef.current = !isUserInteraction;
 			const event = new Event("click", { bubbles });
-			input.indeterminate = isIndeterminate(checked);
-			setChecked.call(input, isIndeterminate(checked) ? false : checked);
+			input.indeterminate = isIndeterminate$1(checked);
+			setChecked.call(input, isIndeterminate$1(checked) ? false : checked);
 			input.dispatchEvent(event);
 			shouldStopClickPropagationRef.current = false;
 		}
@@ -17384,7 +17522,7 @@ var CheckboxBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ *
 		hasConsumerStoppedPropagationRef,
 		userInteractionCount
 	]);
-	const defaultCheckedRef = import_react.useRef(isIndeterminate(checked) ? false : checked);
+	const defaultCheckedRef = import_react.useRef(isIndeterminate$1(checked) ? false : checked);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.input, {
 		type: "checkbox",
 		"aria-hidden": true,
@@ -17414,17 +17552,17 @@ var CheckboxBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ *
 function isFunction$2(value) {
 	return typeof value === "function";
 }
-__name$9(isFunction$2, "isFunction");
-function isIndeterminate(checked) {
+__name$10(isFunction$2, "isFunction");
+function isIndeterminate$1(checked) {
 	return checked === "indeterminate";
 }
-__name$9(isIndeterminate, "isIndeterminate");
+__name$10(isIndeterminate$1, "isIndeterminate");
 function getState$1(checked) {
-	return isIndeterminate(checked) ? "indeterminate" : checked ? "checked" : "unchecked";
+	return isIndeterminate$1(checked) ? "indeterminate" : checked ? "checked" : "unchecked";
 }
-__name$9(getState$1, "getState");
+__name$10(getState$1, "getState");
 //#endregion
-//#region node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs
 /**
 * Custom positioning reference element.
 * @see https://floating-ui.com/docs/virtual-elements
@@ -17553,7 +17691,7 @@ function rectToClientRect(rect) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/@floating-ui+core@1.8.0/node_modules/@floating-ui/core/dist/floating-ui.core.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+core@1.8.0/node_modules/@floating-ui/core/dist/floating-ui.core.mjs
 function computeCoordsFromPlacement(_ref, placement, rtl) {
 	let { reference, floating } = _ref;
 	const sideAxis = getSideAxis(placement);
@@ -18094,7 +18232,7 @@ var size$2 = function(options) {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs
 function hasWindow() {
 	return typeof window !== "undefined";
 }
@@ -18207,7 +18345,7 @@ function getFrameElement(win) {
 	return win.parent && Object.getPrototypeOf(win.parent) ? win.frameElement : null;
 }
 //#endregion
-//#region node_modules/.pnpm/@floating-ui+dom@1.8.0/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+dom@1.8.0/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs
 function getCssDimensions(element) {
 	const css = getComputedStyle$1(element);
 	let width = parseFloat(css.width) || 0;
@@ -18739,7 +18877,7 @@ var computePosition = (reference, floating, options) => {
 	});
 };
 //#endregion
-//#region node_modules/.pnpm/@floating-ui+react-dom@2.1.9_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/@floating-ui/react-dom/dist/floating-ui.react-dom.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+react-dom@2.1.9_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/@floating-ui/react-dom/dist/floating-ui.react-dom.mjs
 var index = typeof document !== "undefined" ? import_react.useLayoutEffect : function noop() {};
 function deepEqual(a, b) {
 	if (a === b) return true;
@@ -19053,16 +19191,16 @@ var arrow = (options, deps) => {
 	};
 };
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-popper@1.3.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react_10114d9d8383e78d6a73c10a966e4f8c/node_modules/@radix-ui/react-popper/dist/index.mjs
-var __defProp$8 = Object.defineProperty;
-var __name$8 = (target, value) => __defProp$8(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-popper@1.3.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react_10114d9d8383e78d6a73c10a966e4f8c/node_modules/@radix-ui/react-popper/dist/index.mjs
+var __defProp$9 = Object.defineProperty;
+var __name$9 = (target, value) => __defProp$9(target, "name", {
 	value,
 	configurable: true
 });
 var POPPER_NAME = "Popper";
 var [createPopperContext, createPopperScope] = /* @__PURE__ */ createContextScope(POPPER_NAME);
 var [PopperProvider, usePopperContext] = createPopperContext(POPPER_NAME);
-var Popper = /* @__PURE__ */ __name$8((props) => {
+var Popper = /* @__PURE__ */ __name$9((props) => {
 	const { __scopePopper, children } = props;
 	const [anchor, setAnchor] = import_react.useState(null);
 	const [placementState, setPlacementState] = import_react.useState(void 0);
@@ -19076,7 +19214,7 @@ var Popper = /* @__PURE__ */ __name$8((props) => {
 	});
 }, "Popper");
 var ANCHOR_NAME = "PopperAnchor";
-var PopperAnchor = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$8(function PopperAnchor2(props, forwardedRef) {
+var PopperAnchor = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$9(function PopperAnchor2(props, forwardedRef) {
 	const { __scopePopper, virtualRef, ...anchorProps } = props;
 	const context = usePopperContext(ANCHOR_NAME, __scopePopper);
 	const ref = import_react.useRef(null);
@@ -19102,11 +19240,11 @@ var PopperAnchor = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __nam
 		ref: composedRefs
 	});
 }, "PopperAnchor"));
-var CONTENT_NAME$2 = "PopperContent";
-var [PopperContentProvider, useContentContext] = createPopperContext(CONTENT_NAME$2);
-var PopperContent = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$8(function PopperContent2(props, forwardedRef) {
+var CONTENT_NAME$3 = "PopperContent";
+var [PopperContentProvider, useContentContext] = createPopperContext(CONTENT_NAME$3);
+var PopperContent = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$9(function PopperContent2(props, forwardedRef) {
 	const { __scopePopper, side = "bottom", sideOffset = 0, align = "center", alignOffset = 0, arrowPadding = 0, avoidCollisions = true, collisionBoundary = [], collisionPadding: collisionPaddingProp = 0, sticky = "partial", hideWhenDetached = false, updatePositionStrategy = "optimized", onPlaced, ...contentProps } = props;
-	const context = usePopperContext(CONTENT_NAME$2, __scopePopper);
+	const context = usePopperContext(CONTENT_NAME$3, __scopePopper);
 	const [content, setContent] = import_react.useState(null);
 	const composedRefs = useComposedRefs(forwardedRef, setContent);
 	const [arrow$4, setArrow] = import_react.useState(null);
@@ -19131,7 +19269,7 @@ var PopperContent = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __na
 	const { refs, floatingStyles, placement, isPositioned, middlewareData } = useFloating({
 		strategy: "fixed",
 		placement: desiredPlacement,
-		whileElementsMounted: /* @__PURE__ */ __name$8((...args) => {
+		whileElementsMounted: /* @__PURE__ */ __name$9((...args) => {
 			return autoUpdate(...args, { animationFrame: updatePositionStrategy === "always" });
 		}, "whileElementsMounted"),
 		elements: { reference: context.anchor },
@@ -19149,7 +19287,7 @@ var PopperContent = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __na
 			avoidCollisions && flip({ ...detectOverflowOptions }),
 			size({
 				...detectOverflowOptions,
-				apply: /* @__PURE__ */ __name$8(({ elements, rects, availableWidth, availableHeight }) => {
+				apply: /* @__PURE__ */ __name$9(({ elements, rects, availableWidth, availableHeight }) => {
 					const { width: anchorWidth, height: anchorHeight } = rects.reference;
 					const contentStyle = elements.floating.style;
 					contentStyle.setProperty("--radix-popper-available-width", `${availableWidth}px`);
@@ -19231,8 +19369,8 @@ var PopperContent = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __na
 function isNotNull(value) {
 	return value !== null;
 }
-__name$8(isNotNull, "isNotNull");
-var transformOrigin = /* @__PURE__ */ __name$8((options) => ({
+__name$9(isNotNull, "isNotNull");
+var transformOrigin = /* @__PURE__ */ __name$9((options) => ({
 	name: "transformOrigin",
 	options,
 	fn(data) {
@@ -19273,14 +19411,14 @@ function getSideAndAlignFromPlacement(placement) {
 	const [side, align = "center"] = placement.split("-");
 	return [side, align];
 }
-__name$8(getSideAndAlignFromPlacement, "getSideAndAlignFromPlacement");
+__name$9(getSideAndAlignFromPlacement, "getSideAndAlignFromPlacement");
 var Root2$1 = Popper;
 var Anchor = PopperAnchor;
-var Content$1 = PopperContent;
+var Content = PopperContent;
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-use-is-hydrated@0.1.3_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-is-hydrated/dist/index.mjs
-var __defProp$7 = Object.defineProperty;
-var __name$7 = (target, value) => __defProp$7(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-is-hydrated@0.1.3_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-is-hydrated/dist/index.mjs
+var __defProp$8 = Object.defineProperty;
+var __name$8 = (target, value) => __defProp$8(target, "name", {
 	value,
 	configurable: true
 });
@@ -19295,21 +19433,21 @@ function useIsHydrated() {
 	}, []);
 	return isHydrated;
 }
-__name$7(useIsHydrated, "useIsHydrated");
+__name$8(useIsHydrated, "useIsHydrated");
 var useReactSyncExternalStore = import_react[" useSyncExternalStore ".trim().toString()];
 function subscribe() {
 	return () => {};
 }
-__name$7(subscribe, "subscribe");
+__name$8(subscribe, "subscribe");
 function useIsHydratedModern() {
 	return useReactSyncExternalStore(subscribe, () => true, () => false);
 }
-__name$7(useIsHydratedModern, "useIsHydratedModern");
+__name$8(useIsHydratedModern, "useIsHydratedModern");
 var useIsHydrated2 = typeof useReactSyncExternalStore === "function" ? useIsHydratedModern : useIsHydrated;
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-roving-focus@1.1.19_@types+react-dom@19.2.3_@types+react@19.2.14__@type_cb34a51f9aa695c33116267c3846fe0d/node_modules/@radix-ui/react-roving-focus/dist/index.mjs
-var __defProp$6 = Object.defineProperty;
-var __name$6 = (target, value) => __defProp$6(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-roving-focus@1.1.19_@types+react-dom@19.2.3_@types+react@19.2.14__@type_cb34a51f9aa695c33116267c3846fe0d/node_modules/@radix-ui/react-roving-focus/dist/index.mjs
+var __defProp$7 = Object.defineProperty;
+var __name$7 = (target, value) => __defProp$7(target, "name", {
 	value,
 	configurable: true
 });
@@ -19319,13 +19457,13 @@ var EVENT_OPTIONS = {
 	cancelable: true
 };
 var GROUP_NAME = "RovingFocusGroup";
-var [Collection$1, useCollection$1, createCollectionScope$1] = /* @__PURE__ */ createCollection(GROUP_NAME);
-var [createRovingFocusGroupContext, createRovingFocusGroupScope] = /* @__PURE__ */ createContextScope(GROUP_NAME, [createCollectionScope$1]);
+var [Collection$2, useCollection$2, createCollectionScope$2] = /* @__PURE__ */ createCollection(GROUP_NAME);
+var [createRovingFocusGroupContext, createRovingFocusGroupScope] = /* @__PURE__ */ createContextScope(GROUP_NAME, [createCollectionScope$2]);
 var [RovingFocusProvider, useRovingFocusContext] = createRovingFocusGroupContext(GROUP_NAME);
-var RovingFocusGroup = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function RovingFocusGroup2(props, forwardedRef) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$1.Provider, {
+var RovingFocusGroup = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$7(function RovingFocusGroup2(props, forwardedRef) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$2.Provider, {
 		scope: props.__scopeRovingFocusGroup,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$1.Slot, {
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$2.Slot, {
 			scope: props.__scopeRovingFocusGroup,
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(RovingFocusGroupImpl, {
 				...props,
@@ -19334,7 +19472,7 @@ var RovingFocusGroup = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ _
 		})
 	});
 }, "RovingFocusGroup"));
-var RovingFocusGroupImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function RovingFocusGroupImpl2(props, forwardedRef) {
+var RovingFocusGroupImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$7(function RovingFocusGroupImpl2(props, forwardedRef) {
 	const { __scopeRovingFocusGroup, orientation, loop = false, dir, currentTabStopId: currentTabStopIdProp, defaultCurrentTabStopId, onCurrentTabStopIdChange, onEntryFocus, preventScrollOnEntryFocus = false, ...groupProps } = props;
 	const ref = import_react.useRef(null);
 	const composedRefs = useComposedRefs(forwardedRef, ref);
@@ -19347,7 +19485,7 @@ var RovingFocusGroupImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ 
 	});
 	const [isTabbingBackOut, setIsTabbingBackOut] = import_react.useState(false);
 	const handleEntryFocus = useCallbackRef$1(onEntryFocus);
-	const getItems = useCollection$1(__scopeRovingFocusGroup);
+	const getItems = useCollection$2(__scopeRovingFocusGroup);
 	const isClickFocusRef = import_react.useRef(false);
 	const [focusableItemsCount, setFocusableItemsCount] = import_react.useState(0);
 	import_react.useEffect(() => {
@@ -19386,7 +19524,7 @@ var RovingFocusGroupImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ 
 					event.currentTarget.dispatchEvent(entryFocusEvent);
 					if (!entryFocusEvent.defaultPrevented) {
 						const items = getItems().filter((item) => item.focusable);
-						focusFirst([
+						focusFirst$1([
 							items.find((item) => item.active),
 							items.find((item) => item.id === currentTabStopId),
 							...items
@@ -19399,14 +19537,14 @@ var RovingFocusGroupImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ 
 		})
 	});
 }, "RovingFocusGroupImpl"));
-var ITEM_NAME$1 = "RovingFocusGroupItem";
-var RovingFocusGroupItem = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function RovingFocusGroupItem2(props, forwardedRef) {
+var ITEM_NAME$2 = "RovingFocusGroupItem";
+var RovingFocusGroupItem = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$7(function RovingFocusGroupItem2(props, forwardedRef) {
 	const { __scopeRovingFocusGroup, focusable = true, active = false, tabStopId, children, ...itemProps } = props;
 	const autoId = useId();
 	const id = tabStopId || autoId;
-	const context = useRovingFocusContext(ITEM_NAME$1, __scopeRovingFocusGroup);
+	const context = useRovingFocusContext(ITEM_NAME$2, __scopeRovingFocusGroup);
 	const isCurrentTabStop = context.currentTabStopId === id;
-	const getItems = useCollection$1(__scopeRovingFocusGroup);
+	const getItems = useCollection$2(__scopeRovingFocusGroup);
 	const { onFocusableItemAdd, onFocusableItemRemove, currentTabStopId } = context;
 	const isHydrated = useIsHydrated2();
 	useLayoutEffect2(() => {
@@ -19429,7 +19567,7 @@ var RovingFocusGroupItem = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ 
 		onFocusableItemAdd,
 		onFocusableItemRemove
 	]);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$1.ItemSlot, {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$2.ItemSlot, {
 		scope: __scopeRovingFocusGroup,
 		id,
 		focusable,
@@ -19459,9 +19597,9 @@ var RovingFocusGroupItem = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ 
 					else if (focusIntent === "prev" || focusIntent === "next") {
 						if (focusIntent === "prev") candidateNodes.reverse();
 						const currentIndex = candidateNodes.indexOf(event.currentTarget);
-						candidateNodes = context.loop ? wrapArray$1(candidateNodes, currentIndex + 1) : candidateNodes.slice(currentIndex + 1);
+						candidateNodes = context.loop ? wrapArray$2(candidateNodes, currentIndex + 1) : candidateNodes.slice(currentIndex + 1);
 					}
-					setTimeout(() => focusFirst(candidateNodes));
+					setTimeout(() => focusFirst$1(candidateNodes));
 				}
 			}),
 			children: typeof children === "function" ? children({
@@ -19485,19 +19623,448 @@ function getDirectionAwareKey(key, dir) {
 	if (dir !== "rtl") return key;
 	return key === "ArrowLeft" ? "ArrowRight" : key === "ArrowRight" ? "ArrowLeft" : key;
 }
-__name$6(getDirectionAwareKey, "getDirectionAwareKey");
+__name$7(getDirectionAwareKey, "getDirectionAwareKey");
 function getFocusIntent(event, orientation, dir) {
 	const key = getDirectionAwareKey(event.key, dir);
 	if (orientation === "vertical" && ["ArrowLeft", "ArrowRight"].includes(key)) return void 0;
 	if (orientation === "horizontal" && ["ArrowUp", "ArrowDown"].includes(key)) return void 0;
 	return MAP_KEY_TO_FOCUS_INTENT[key];
 }
-__name$6(getFocusIntent, "getFocusIntent");
-function focusFirst(candidates, preventScroll = false) {
+__name$7(getFocusIntent, "getFocusIntent");
+function focusFirst$1(candidates, preventScroll = false) {
 	const PREVIOUSLY_FOCUSED_ELEMENT = document.activeElement;
 	for (const candidate of candidates) {
 		if (candidate === PREVIOUSLY_FOCUSED_ELEMENT) return;
 		candidate.focus({ preventScroll });
+		if (document.activeElement !== PREVIOUSLY_FOCUSED_ELEMENT) return;
+	}
+}
+__name$7(focusFirst$1, "focusFirst");
+function wrapArray$2(array, startIndex) {
+	return array.map((_, index) => array[(startIndex + index) % array.length]);
+}
+__name$7(wrapArray$2, "wrapArray");
+var Root$2 = RovingFocusGroup;
+var Item = RovingFocusGroupItem;
+//#endregion
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-menu@2.1.24_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react@_95bbdd9bd4af4f76a796630d1bb9b90f/node_modules/@radix-ui/react-menu/dist/index.mjs
+var __defProp$6 = Object.defineProperty;
+var __name$6 = (target, value) => __defProp$6(target, "name", {
+	value,
+	configurable: true
+});
+var SELECTION_KEYS$1 = ["Enter", " "];
+var FIRST_KEYS = [
+	"ArrowDown",
+	"PageUp",
+	"Home"
+];
+var LAST_KEYS = [
+	"ArrowUp",
+	"PageDown",
+	"End"
+];
+var FIRST_LAST_KEYS = [...FIRST_KEYS, ...LAST_KEYS];
+[...SELECTION_KEYS$1], [...SELECTION_KEYS$1];
+var MENU_NAME = "Menu";
+var [Collection$1, useCollection$1, createCollectionScope$1] = /* @__PURE__ */ createCollection(MENU_NAME);
+var [createMenuContext, createMenuScope] = /* @__PURE__ */ createContextScope(MENU_NAME, [
+	createCollectionScope$1,
+	createPopperScope,
+	createRovingFocusGroupScope
+]);
+var usePopperScope$1 = createPopperScope();
+var useRovingFocusGroupScope$1 = createRovingFocusGroupScope();
+var [MenuProvider, useMenuContext] = createMenuContext(MENU_NAME);
+var [MenuRootProvider, useMenuRootContext] = createMenuContext(MENU_NAME);
+var Menu = /* @__PURE__ */ __name$6((props) => {
+	const { __scopeMenu, open = false, children, dir, onOpenChange, modal = true } = props;
+	const popperScope = usePopperScope$1(__scopeMenu);
+	const [content, setContent] = import_react.useState(null);
+	const isUsingKeyboardRef = import_react.useRef(false);
+	const handleOpenChange = useCallbackRef$1(onOpenChange);
+	const direction = useDirection(dir);
+	import_react.useEffect(() => {
+		const handleKeyDown = /* @__PURE__ */ __name$6(() => {
+			isUsingKeyboardRef.current = true;
+			document.addEventListener("pointerdown", handlePointer, {
+				capture: true,
+				once: true
+			});
+			document.addEventListener("pointermove", handlePointer, {
+				capture: true,
+				once: true
+			});
+		}, "handleKeyDown");
+		const handlePointer = /* @__PURE__ */ __name$6(() => isUsingKeyboardRef.current = false, "handlePointer");
+		document.addEventListener("keydown", handleKeyDown, { capture: true });
+		return () => {
+			document.removeEventListener("keydown", handleKeyDown, { capture: true });
+			document.removeEventListener("pointerdown", handlePointer, { capture: true });
+			document.removeEventListener("pointermove", handlePointer, { capture: true });
+		};
+	}, []);
+	import_react.useEffect(() => {
+		if (!open) return;
+		const handleBlur = /* @__PURE__ */ __name$6(() => handleOpenChange(false), "handleBlur");
+		window.addEventListener("blur", handleBlur);
+		return () => window.removeEventListener("blur", handleBlur);
+	}, [open, handleOpenChange]);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root2$1, {
+		...popperScope,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuProvider, {
+			scope: __scopeMenu,
+			open,
+			onOpenChange: handleOpenChange,
+			content,
+			onContentChange: setContent,
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuRootProvider, {
+				scope: __scopeMenu,
+				onClose: import_react.useCallback(() => handleOpenChange(false), [handleOpenChange]),
+				isUsingKeyboardRef,
+				dir: direction,
+				modal,
+				children
+			})
+		})
+	});
+}, "Menu");
+var MenuAnchor = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function MenuAnchor2(props, forwardedRef) {
+	const { __scopeMenu, ...anchorProps } = props;
+	const popperScope = usePopperScope$1(__scopeMenu);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Anchor, {
+		...popperScope,
+		...anchorProps,
+		ref: forwardedRef
+	});
+}, "MenuAnchor"));
+var PORTAL_NAME = "MenuPortal";
+var [PortalProvider$1, usePortalContext$1] = createMenuContext(PORTAL_NAME, { forceMount: void 0 });
+var MenuPortal = /* @__PURE__ */ __name$6((props) => {
+	const { __scopeMenu, forceMount, children, container } = props;
+	const context = useMenuContext(PORTAL_NAME, __scopeMenu);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PortalProvider$1, {
+		scope: __scopeMenu,
+		forceMount,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Presence, {
+			present: forceMount || context.open,
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Portal$1, {
+				asChild: true,
+				container,
+				children
+			})
+		})
+	});
+}, "MenuPortal");
+var CONTENT_NAME$2 = "MenuContent";
+var [MenuContentProvider, useMenuContentContext] = createMenuContext(CONTENT_NAME$2);
+var MenuContent = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function MenuContent2(props, forwardedRef) {
+	const portalContext = usePortalContext$1(CONTENT_NAME$2, props.__scopeMenu);
+	const { forceMount = portalContext.forceMount, ...contentProps } = props;
+	const context = useMenuContext(CONTENT_NAME$2, props.__scopeMenu);
+	const rootContext = useMenuRootContext(CONTENT_NAME$2, props.__scopeMenu);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$1.Provider, {
+		scope: props.__scopeMenu,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Presence, {
+			present: forceMount || context.open,
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$1.Slot, {
+				scope: props.__scopeMenu,
+				children: rootContext.modal ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuRootContentModal, {
+					...contentProps,
+					ref: forwardedRef
+				}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuRootContentNonModal, {
+					...contentProps,
+					ref: forwardedRef
+				})
+			})
+		})
+	});
+}, "MenuContent"));
+var MenuRootContentModal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function MenuRootContentModal2(props, forwardedRef) {
+	const context = useMenuContext(CONTENT_NAME$2, props.__scopeMenu);
+	const ref = import_react.useRef(null);
+	const composedRefs = useComposedRefs(forwardedRef, ref);
+	import_react.useEffect(() => {
+		const content = ref.current;
+		if (content) return hideOthers(content);
+	}, []);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuContentImpl, {
+		...props,
+		ref: composedRefs,
+		trapFocus: context.open,
+		disableOutsidePointerEvents: context.open,
+		disableOutsideScroll: true,
+		onFocusOutside: composeEventHandlers(props.onFocusOutside, (event) => event.preventDefault(), { checkForDefaultPrevented: false }),
+		onDismiss: () => context.onOpenChange(false)
+	});
+}, "MenuRootContentModal"));
+var MenuRootContentNonModal = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function MenuRootContentNonModal2(props, forwardedRef) {
+	const context = useMenuContext(CONTENT_NAME$2, props.__scopeMenu);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuContentImpl, {
+		...props,
+		ref: forwardedRef,
+		trapFocus: false,
+		disableOutsidePointerEvents: false,
+		disableOutsideScroll: false,
+		onDismiss: () => context.onOpenChange(false)
+	});
+}, "MenuRootContentNonModal"));
+var Slot$1 = /* @__PURE__ */ createSlot("MenuContent.ScrollLock");
+var MenuContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function MenuContentImpl2(props, forwardedRef) {
+	const { __scopeMenu, loop = false, trapFocus, onOpenAutoFocus, onCloseAutoFocus, disableOutsidePointerEvents, onEntryFocus, onEscapeKeyDown, onPointerDownOutside, onFocusOutside, onInteractOutside, onDismiss, disableOutsideScroll, ...contentProps } = props;
+	const context = useMenuContext(CONTENT_NAME$2, __scopeMenu);
+	const rootContext = useMenuRootContext(CONTENT_NAME$2, __scopeMenu);
+	const popperScope = usePopperScope$1(__scopeMenu);
+	const rovingFocusGroupScope = useRovingFocusGroupScope$1(__scopeMenu);
+	const getItems = useCollection$1(__scopeMenu);
+	const [currentItemId, setCurrentItemId] = import_react.useState(null);
+	const contentRef = import_react.useRef(null);
+	const composedRefs = useComposedRefs(forwardedRef, contentRef, context.onContentChange);
+	const timerRef = import_react.useRef(0);
+	const searchRef = import_react.useRef("");
+	const pointerGraceTimerRef = import_react.useRef(0);
+	const pointerGraceIntentRef = import_react.useRef(null);
+	const pointerDirRef = import_react.useRef("right");
+	const lastPointerXRef = import_react.useRef(0);
+	const ScrollLockWrapper = disableOutsideScroll ? ReactRemoveScroll : import_react.Fragment;
+	const scrollLockWrapperProps = disableOutsideScroll ? {
+		as: Slot$1,
+		allowPinchZoom: true
+	} : void 0;
+	const handleTypeaheadSearch = /* @__PURE__ */ __name$6((key) => {
+		const search = searchRef.current + key;
+		const items = getItems().filter((item) => !item.disabled);
+		const currentItem = document.activeElement;
+		const currentMatch = items.find((item) => item.ref.current === currentItem)?.textValue;
+		const nextMatch = getNextMatch(items.map((item) => item.textValue), search, currentMatch);
+		const newItem = items.find((item) => item.textValue === nextMatch)?.ref.current;
+		(/* @__PURE__ */ __name$6((function updateSearch(value) {
+			searchRef.current = value;
+			window.clearTimeout(timerRef.current);
+			if (value !== "") timerRef.current = window.setTimeout(() => updateSearch(""), 1e3);
+		}), "updateSearch"))(search);
+		if (newItem) setTimeout(() => newItem.focus());
+	}, "handleTypeaheadSearch");
+	import_react.useEffect(() => {
+		return () => window.clearTimeout(timerRef.current);
+	}, []);
+	useFocusGuards();
+	const isPointerMovingToSubmenu = import_react.useCallback((event) => {
+		return pointerDirRef.current === pointerGraceIntentRef.current?.side && isPointerInGraceArea(event, pointerGraceIntentRef.current?.area);
+	}, []);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuContentProvider, {
+		scope: __scopeMenu,
+		searchRef,
+		onItemEnter: import_react.useCallback((event) => {
+			if (isPointerMovingToSubmenu(event)) event.preventDefault();
+		}, [isPointerMovingToSubmenu]),
+		onItemLeave: import_react.useCallback((event) => {
+			if (isPointerMovingToSubmenu(event)) return;
+			contentRef.current?.focus();
+			setCurrentItemId(null);
+		}, [isPointerMovingToSubmenu]),
+		onTriggerLeave: import_react.useCallback((event) => {
+			if (isPointerMovingToSubmenu(event)) event.preventDefault();
+		}, [isPointerMovingToSubmenu]),
+		pointerGraceTimerRef,
+		onPointerGraceIntentChange: import_react.useCallback((intent) => {
+			pointerGraceIntentRef.current = intent;
+		}, []),
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollLockWrapper, {
+			...scrollLockWrapperProps,
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FocusScope, {
+				asChild: true,
+				trapped: trapFocus,
+				onMountAutoFocus: composeEventHandlers(onOpenAutoFocus, (event) => {
+					event.preventDefault();
+					contentRef.current?.focus({ preventScroll: true });
+				}),
+				onUnmountAutoFocus: onCloseAutoFocus,
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DismissableLayer, {
+					asChild: true,
+					disableOutsidePointerEvents,
+					onEscapeKeyDown,
+					onPointerDownOutside,
+					onFocusOutside,
+					onInteractOutside,
+					onDismiss,
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root$2, {
+						asChild: true,
+						...rovingFocusGroupScope,
+						dir: rootContext.dir,
+						orientation: "vertical",
+						loop,
+						currentTabStopId: currentItemId,
+						onCurrentTabStopIdChange: setCurrentItemId,
+						onEntryFocus: composeEventHandlers(onEntryFocus, (event) => {
+							if (!rootContext.isUsingKeyboardRef.current) event.preventDefault();
+						}),
+						preventScrollOnEntryFocus: true,
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content, {
+							role: "menu",
+							"aria-orientation": "vertical",
+							"data-state": getOpenState(context.open),
+							"data-radix-menu-content": "",
+							dir: rootContext.dir,
+							...popperScope,
+							...contentProps,
+							ref: composedRefs,
+							style: {
+								outline: "none",
+								...contentProps.style
+							},
+							onKeyDown: composeEventHandlers(contentProps.onKeyDown, (event) => {
+								const isKeyDownInside = event.target.closest("[data-radix-menu-content]") === event.currentTarget;
+								const isModifierKey = event.ctrlKey || event.altKey || event.metaKey;
+								const isCharacterKey = event.key.length === 1;
+								if (isKeyDownInside) {
+									if (event.key === "Tab") event.preventDefault();
+									if (!isModifierKey && isCharacterKey) handleTypeaheadSearch(event.key);
+								}
+								const content = contentRef.current;
+								if (event.target !== content) return;
+								if (!FIRST_LAST_KEYS.includes(event.key)) return;
+								event.preventDefault();
+								const candidateNodes = getItems().filter((item) => !item.disabled).map((item) => item.ref.current);
+								if (LAST_KEYS.includes(event.key)) candidateNodes.reverse();
+								focusFirst(candidateNodes);
+							}),
+							onBlur: composeEventHandlers(props.onBlur, (event) => {
+								if (!event.currentTarget.contains(event.target)) {
+									window.clearTimeout(timerRef.current);
+									searchRef.current = "";
+								}
+							}),
+							onPointerMove: composeEventHandlers(props.onPointerMove, whenMouse((event) => {
+								const target = event.target;
+								const pointerXHasChanged = lastPointerXRef.current !== event.clientX;
+								if (event.currentTarget.contains(target) && pointerXHasChanged) {
+									pointerDirRef.current = event.clientX > lastPointerXRef.current ? "right" : "left";
+									lastPointerXRef.current = event.clientX;
+								}
+							}))
+						})
+					})
+				})
+			})
+		})
+	});
+}, "MenuContentImpl"));
+var MenuLabel = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function MenuLabel2(props, forwardedRef) {
+	const { __scopeMenu, ...labelProps } = props;
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
+		...labelProps,
+		ref: forwardedRef
+	});
+}, "MenuLabel"));
+var ITEM_NAME$1 = "MenuItem";
+var ITEM_SELECT = "menu.itemSelect";
+var MenuItem = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function MenuItem2(props, forwardedRef) {
+	const { disabled = false, onSelect, ...itemProps } = props;
+	const ref = import_react.useRef(null);
+	const rootContext = useMenuRootContext(ITEM_NAME$1, props.__scopeMenu);
+	const contentContext = useMenuContentContext(ITEM_NAME$1, props.__scopeMenu);
+	const composedRefs = useComposedRefs(forwardedRef, ref);
+	const isPointerDownRef = import_react.useRef(false);
+	const handleSelect = /* @__PURE__ */ __name$6(() => {
+		const menuItem = ref.current;
+		if (!disabled && menuItem) {
+			const itemSelectEvent = new CustomEvent(ITEM_SELECT, {
+				bubbles: true,
+				cancelable: true
+			});
+			menuItem.addEventListener(ITEM_SELECT, (event) => onSelect?.(event), { once: true });
+			dispatchDiscreteCustomEvent(menuItem, itemSelectEvent);
+			if (itemSelectEvent.defaultPrevented) isPointerDownRef.current = false;
+			else rootContext.onClose();
+		}
+	}, "handleSelect");
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MenuItemImpl, {
+		...itemProps,
+		ref: composedRefs,
+		disabled,
+		onClick: composeEventHandlers(props.onClick, handleSelect),
+		onPointerDown: (event) => {
+			props.onPointerDown?.(event);
+			isPointerDownRef.current = true;
+		},
+		onPointerUp: composeEventHandlers(props.onPointerUp, (event) => {
+			if (!isPointerDownRef.current) event.currentTarget?.click();
+		}),
+		onKeyDown: composeEventHandlers(props.onKeyDown, (event) => {
+			if (disabled || event.target !== event.currentTarget) return;
+			if (contentContext.searchRef.current !== "" && event.key === " ") return;
+			if (SELECTION_KEYS$1.includes(event.key)) {
+				event.currentTarget.click();
+				event.preventDefault();
+			}
+		})
+	});
+}, "MenuItem"));
+var MenuItemImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$6(function MenuItemImpl2(props, forwardedRef) {
+	const { __scopeMenu, disabled = false, textValue, ...itemProps } = props;
+	const contentContext = useMenuContentContext(ITEM_NAME$1, __scopeMenu);
+	const rovingFocusGroupScope = useRovingFocusGroupScope$1(__scopeMenu);
+	const ref = import_react.useRef(null);
+	const composedRefs = useComposedRefs(forwardedRef, ref);
+	const [isFocused, setIsFocused] = import_react.useState(false);
+	const [textContent, setTextContent] = import_react.useState("");
+	import_react.useEffect(() => {
+		const menuItem = ref.current;
+		if (menuItem) setTextContent((menuItem.textContent ?? "").trim());
+	}, [itemProps.children]);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Collection$1.ItemSlot, {
+		scope: __scopeMenu,
+		disabled,
+		textValue: textValue ?? textContent,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+			asChild: true,
+			...rovingFocusGroupScope,
+			focusable: !disabled,
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
+				role: "menuitem",
+				"data-highlighted": isFocused ? "" : void 0,
+				"aria-disabled": disabled || void 0,
+				"data-disabled": disabled ? "" : void 0,
+				...itemProps,
+				ref: composedRefs,
+				onPointerMove: composeEventHandlers(props.onPointerMove, whenMouse((event) => {
+					if (disabled) contentContext.onItemLeave(event);
+					else {
+						contentContext.onItemEnter(event);
+						if (!event.defaultPrevented) event.currentTarget.focus({ preventScroll: true });
+					}
+				})),
+				onPointerLeave: composeEventHandlers(props.onPointerLeave, whenMouse((event) => contentContext.onItemLeave(event))),
+				onFocus: composeEventHandlers(props.onFocus, () => setIsFocused(true)),
+				onBlur: composeEventHandlers(props.onBlur, () => setIsFocused(false))
+			})
+		})
+	});
+}, "MenuItemImpl"));
+var [RadioGroupProvider$1, useRadioGroupContext$1] = createMenuContext("MenuRadioGroup", {
+	value: void 0,
+	onValueChange: /* @__PURE__ */ __name$6(() => {}, "onValueChange")
+});
+var [ItemIndicatorProvider, useItemIndicatorContext] = createMenuContext("MenuItemIndicator", { checked: false });
+var [MenuSubProvider, useMenuSubContext] = createMenuContext("MenuSub");
+function getOpenState(open) {
+	return open ? "open" : "closed";
+}
+__name$6(getOpenState, "getOpenState");
+function isIndeterminate(checked) {
+	return checked === "indeterminate";
+}
+__name$6(isIndeterminate, "isIndeterminate");
+function getCheckedState(checked) {
+	return isIndeterminate(checked) ? "indeterminate" : checked ? "checked" : "unchecked";
+}
+__name$6(getCheckedState, "getCheckedState");
+function focusFirst(candidates) {
+	const PREVIOUSLY_FOCUSED_ELEMENT = document.activeElement;
+	for (const candidate of candidates) {
+		if (candidate === PREVIOUSLY_FOCUSED_ELEMENT) return;
+		candidate.focus();
 		if (document.activeElement !== PREVIOUSLY_FOCUSED_ELEMENT) return;
 	}
 }
@@ -19506,12 +20073,196 @@ function wrapArray$1(array, startIndex) {
 	return array.map((_, index) => array[(startIndex + index) % array.length]);
 }
 __name$6(wrapArray$1, "wrapArray");
-var Root$2 = RovingFocusGroup;
-var Item = RovingFocusGroupItem;
+function getNextMatch(values, search, currentMatch) {
+	const normalizedSearch = search.length > 1 && Array.from(search).every((char) => char === search[0]) ? search[0] : search;
+	const currentMatchIndex = currentMatch ? values.indexOf(currentMatch) : -1;
+	let wrappedValues = wrapArray$1(values, Math.max(currentMatchIndex, 0));
+	if (normalizedSearch.length === 1) wrappedValues = wrappedValues.filter((v) => v !== currentMatch);
+	const nextMatch = wrappedValues.find((value) => value.toLowerCase().startsWith(normalizedSearch.toLowerCase()));
+	return nextMatch !== currentMatch ? nextMatch : void 0;
+}
+__name$6(getNextMatch, "getNextMatch");
+function isPointInPolygon(point, polygon) {
+	const { x, y } = point;
+	let inside = false;
+	for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
+		const ii = polygon[i];
+		const jj = polygon[j];
+		const xi = ii.x;
+		const yi = ii.y;
+		const xj = jj.x;
+		const yj = jj.y;
+		if (yi > y !== yj > y && x < (xj - xi) * (y - yi) / (yj - yi) + xi) inside = !inside;
+	}
+	return inside;
+}
+__name$6(isPointInPolygon, "isPointInPolygon");
+function isPointerInGraceArea(event, area) {
+	if (!area) return false;
+	return isPointInPolygon({
+		x: event.clientX,
+		y: event.clientY
+	}, area);
+}
+__name$6(isPointerInGraceArea, "isPointerInGraceArea");
+function whenMouse(handler) {
+	return (event) => event.pointerType === "mouse" ? handler(event) : void 0;
+}
+__name$6(whenMouse, "whenMouse");
+var Root3 = Menu;
+var Anchor2 = MenuAnchor;
+var Portal = MenuPortal;
+var Content2$1 = MenuContent;
+var Label = MenuLabel;
+var Item2$1 = MenuItem;
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-use-previous@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-previous/dist/index.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-dropdown-menu@2.1.24_@types+react-dom@19.2.3_@types+react@19.2.14__@typ_8b4bd5e87bdfc6f78977825c660a3d8c/node_modules/@radix-ui/react-dropdown-menu/dist/index.mjs
 var __defProp$5 = Object.defineProperty;
 var __name$5 = (target, value) => __defProp$5(target, "name", {
+	value,
+	configurable: true
+});
+var DROPDOWN_MENU_NAME = "DropdownMenu";
+var [createDropdownMenuContext, createDropdownMenuScope] = /* @__PURE__ */ createContextScope(DROPDOWN_MENU_NAME, [createMenuScope]);
+var useMenuScope = createMenuScope();
+var [DropdownMenuProvider, useDropdownMenuContext] = createDropdownMenuContext(DROPDOWN_MENU_NAME);
+var DropdownMenu$1 = /* @__PURE__ */ __name$5((props) => {
+	const { __scopeDropdownMenu, children, dir, open: openProp, defaultOpen, onOpenChange, modal = true } = props;
+	const menuScope = useMenuScope(__scopeDropdownMenu);
+	const triggerRef = import_react.useRef(null);
+	const [open, setOpen] = useControllableState({
+		prop: openProp,
+		defaultProp: defaultOpen ?? false,
+		onChange: onOpenChange,
+		caller: DROPDOWN_MENU_NAME
+	});
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuProvider, {
+		scope: __scopeDropdownMenu,
+		triggerId: useId(),
+		triggerRef,
+		contentId: useId(),
+		open,
+		onOpenChange: setOpen,
+		onOpenToggle: import_react.useCallback(() => setOpen((prevOpen) => !prevOpen), [setOpen]),
+		modal,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root3, {
+			...menuScope,
+			open,
+			onOpenChange: setOpen,
+			dir,
+			modal,
+			children
+		})
+	});
+}, "DropdownMenu");
+var TRIGGER_NAME$2 = "DropdownMenuTrigger";
+var DropdownMenuTrigger$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$5(function DropdownMenuTrigger2(props, forwardedRef) {
+	const { __scopeDropdownMenu, disabled = false, ...triggerProps } = props;
+	const context = useDropdownMenuContext(TRIGGER_NAME$2, __scopeDropdownMenu);
+	const menuScope = useMenuScope(__scopeDropdownMenu);
+	const composedRefs = useComposedRefs(forwardedRef, context.triggerRef);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Anchor2, {
+		asChild: true,
+		...menuScope,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.button, {
+			type: "button",
+			id: context.triggerId,
+			"aria-haspopup": "menu",
+			"aria-expanded": context.open,
+			"aria-controls": context.open ? context.contentId : void 0,
+			"data-state": context.open ? "open" : "closed",
+			"data-disabled": disabled ? "" : void 0,
+			disabled,
+			...triggerProps,
+			ref: composedRefs,
+			onPointerDown: composeEventHandlers(props.onPointerDown, (event) => {
+				if (!disabled && event.button === 0 && event.ctrlKey === false) {
+					context.onOpenToggle();
+					if (!context.open) event.preventDefault();
+				}
+			}),
+			onKeyDown: composeEventHandlers(props.onKeyDown, (event) => {
+				if (disabled) return;
+				if (["Enter", " "].includes(event.key)) context.onOpenToggle();
+				if (event.key === "ArrowDown") context.onOpenChange(true);
+				if ([
+					"Enter",
+					" ",
+					"ArrowDown"
+				].includes(event.key)) event.preventDefault();
+			})
+		})
+	});
+}, "DropdownMenuTrigger"));
+var DropdownMenuPortal = /* @__PURE__ */ __name$5((props) => {
+	const { __scopeDropdownMenu, ...portalProps } = props;
+	const menuScope = useMenuScope(__scopeDropdownMenu);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Portal, {
+		...menuScope,
+		...portalProps
+	});
+}, "DropdownMenuPortal");
+var CONTENT_NAME$1 = "DropdownMenuContent";
+var DropdownMenuContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$5(function DropdownMenuContent2(props, forwardedRef) {
+	const { __scopeDropdownMenu, ...contentProps } = props;
+	const context = useDropdownMenuContext(CONTENT_NAME$1, __scopeDropdownMenu);
+	const menuScope = useMenuScope(__scopeDropdownMenu);
+	const hasInteractedOutsideRef = import_react.useRef(false);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content2$1, {
+		id: context.contentId,
+		"aria-labelledby": context.triggerId,
+		...menuScope,
+		...contentProps,
+		ref: forwardedRef,
+		onCloseAutoFocus: composeEventHandlers(props.onCloseAutoFocus, (event) => {
+			if (!hasInteractedOutsideRef.current) context.triggerRef.current?.focus();
+			hasInteractedOutsideRef.current = false;
+			event.preventDefault();
+		}),
+		onInteractOutside: composeEventHandlers(props.onInteractOutside, (event) => {
+			const originalEvent = event.detail.originalEvent;
+			const ctrlLeftClick = originalEvent.button === 0 && originalEvent.ctrlKey === true;
+			const isRightClick = originalEvent.button === 2 || ctrlLeftClick;
+			if (!context.modal || isRightClick) hasInteractedOutsideRef.current = true;
+		}),
+		style: {
+			...props.style,
+			"--radix-dropdown-menu-content-transform-origin": "var(--radix-popper-transform-origin)",
+			"--radix-dropdown-menu-content-available-width": "var(--radix-popper-available-width)",
+			"--radix-dropdown-menu-content-available-height": "var(--radix-popper-available-height)",
+			"--radix-dropdown-menu-trigger-width": "var(--radix-popper-anchor-width)",
+			"--radix-dropdown-menu-trigger-height": "var(--radix-popper-anchor-height)"
+		}
+	});
+}, "DropdownMenuContent"));
+var DropdownMenuLabel$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$5(function DropdownMenuLabel2(props, forwardedRef) {
+	const { __scopeDropdownMenu, ...labelProps } = props;
+	const menuScope = useMenuScope(__scopeDropdownMenu);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Label, {
+		...menuScope,
+		...labelProps,
+		ref: forwardedRef
+	});
+}, "DropdownMenuLabel"));
+var DropdownMenuItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$5(function DropdownMenuItem2(props, forwardedRef) {
+	const { __scopeDropdownMenu, ...itemProps } = props;
+	const menuScope = useMenuScope(__scopeDropdownMenu);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item2$1, {
+		...menuScope,
+		...itemProps,
+		ref: forwardedRef
+	});
+}, "DropdownMenuItem"));
+var Root2 = DropdownMenu$1;
+var Trigger = DropdownMenuTrigger$1;
+var Portal2 = DropdownMenuPortal;
+var Content2 = DropdownMenuContent$1;
+var Label2 = DropdownMenuLabel$1;
+var Item2 = DropdownMenuItem$1;
+//#endregion
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-previous@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-previous/dist/index.mjs
+var __defProp$4 = Object.defineProperty;
+var __name$4 = (target, value) => __defProp$4(target, "name", {
 	value,
 	configurable: true
 });
@@ -19528,22 +20279,22 @@ function usePrevious(value) {
 		return ref.current.previous;
 	}, [value]);
 }
-__name$5(usePrevious, "usePrevious");
+__name$4(usePrevious, "usePrevious");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+number@1.1.3/node_modules/@radix-ui/number/dist/index.mjs
-var __defProp$4 = Object.defineProperty;
-var __name$4 = (target, value) => __defProp$4(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+number@1.1.3/node_modules/@radix-ui/number/dist/index.mjs
+var __defProp$3 = Object.defineProperty;
+var __name$3 = (target, value) => __defProp$3(target, "name", {
 	value,
 	configurable: true
 });
 function clamp(value, [min, max]) {
 	return Math.min(max, Math.max(min, value));
 }
-__name$4(clamp, "clamp");
+__name$3(clamp, "clamp");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-progress@1.1.16_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_34d9dcd918a25bf239c427eeb50caceb/node_modules/@radix-ui/react-progress/dist/index.mjs
-var __defProp$3 = Object.defineProperty;
-var __name$3 = (target, value) => __defProp$3(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-progress@1.1.16_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_34d9dcd918a25bf239c427eeb50caceb/node_modules/@radix-ui/react-progress/dist/index.mjs
+var __defProp$2 = Object.defineProperty;
+var __name$2 = (target, value) => __defProp$2(target, "name", {
 	value,
 	configurable: true
 });
@@ -19551,7 +20302,7 @@ var PROGRESS_NAME = "Progress";
 var DEFAULT_MAX = 100;
 var [createProgressContext, createProgressScope] = /* @__PURE__ */ createContextScope(PROGRESS_NAME);
 var [ProgressProvider, useProgressContext] = createProgressContext(PROGRESS_NAME);
-var Progress$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$3(function Progress2(props, forwardedRef) {
+var Progress$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function Progress2(props, forwardedRef) {
 	const { __scopeProgress, value: valueProp = null, max: maxProp, getValueLabel = defaultGetValueLabel, ...progressProps } = props;
 	if ((maxProp || maxProp === 0) && !isValidMaxNumber(maxProp)) console.error(getInvalidMaxError(`${maxProp}`, "Progress"));
 	const max = isValidMaxNumber(maxProp) ? maxProp : DEFAULT_MAX;
@@ -19577,7 +20328,7 @@ var Progress$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$
 	});
 }, "Progress"));
 var INDICATOR_NAME$1 = "ProgressIndicator";
-var ProgressIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$3(function ProgressIndicator2(props, forwardedRef) {
+var ProgressIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function ProgressIndicator2(props, forwardedRef) {
 	const { __scopeProgress, ...indicatorProps } = props;
 	const context = useProgressContext(INDICATOR_NAME$1, __scopeProgress);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
@@ -19591,27 +20342,27 @@ var ProgressIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ 
 function defaultGetValueLabel(value, max) {
 	return `${Math.round(value / max * 100)}%`;
 }
-__name$3(defaultGetValueLabel, "defaultGetValueLabel");
+__name$2(defaultGetValueLabel, "defaultGetValueLabel");
 function getProgressState(value, maxValue) {
 	return value == null ? "indeterminate" : value === maxValue ? "complete" : "loading";
 }
-__name$3(getProgressState, "getProgressState");
+__name$2(getProgressState, "getProgressState");
 function isNumber$1(value) {
 	return typeof value === "number";
 }
-__name$3(isNumber$1, "isNumber");
+__name$2(isNumber$1, "isNumber");
 function isValidMaxNumber(max) {
 	return isNumber$1(max) && !isNaN(max) && max > 0;
 }
-__name$3(isValidMaxNumber, "isValidMaxNumber");
+__name$2(isValidMaxNumber, "isValidMaxNumber");
 function isValidValueNumber(value, max) {
 	return isNumber$1(value) && !isNaN(value) && value <= max && value >= 0;
 }
-__name$3(isValidValueNumber, "isValidValueNumber");
+__name$2(isValidValueNumber, "isValidValueNumber");
 function getInvalidMaxError(propValue, componentName) {
 	return `Invalid prop \`max\` of value \`${propValue}\` supplied to \`${componentName}\`. Only numbers greater than 0 are valid max values. Defaulting to \`${DEFAULT_MAX}\`.`;
 }
-__name$3(getInvalidMaxError, "getInvalidMaxError");
+__name$2(getInvalidMaxError, "getInvalidMaxError");
 function getInvalidValueError(propValue, componentName) {
 	return `Invalid prop \`value\` of value \`${propValue}\` supplied to \`${componentName}\`. The \`value\` prop must be:
   - a positive number
@@ -19620,13 +20371,13 @@ function getInvalidValueError(propValue, componentName) {
 
 Defaulting to \`null\`.`;
 }
-__name$3(getInvalidValueError, "getInvalidValueError");
+__name$2(getInvalidValueError, "getInvalidValueError");
 var Root$1 = Progress$1;
 var Indicator = ProgressIndicator;
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-radio-group@1.4.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+_f83232ddac98ee0c29a9a73ffdcfd011/node_modules/@radix-ui/react-radio-group/dist/index.mjs
-var __defProp$2 = Object.defineProperty;
-var __name$2 = (target, value) => __defProp$2(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-radio-group@1.4.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+_f83232ddac98ee0c29a9a73ffdcfd011/node_modules/@radix-ui/react-radio-group/dist/index.mjs
+var __defProp$1 = Object.defineProperty;
+var __name$1 = (target, value) => __defProp$1(target, "name", {
 	value,
 	configurable: true
 });
@@ -19654,7 +20405,7 @@ function RadioProvider(props) {
 		isFormControl: control ? !!form || !!control.closest("form") : true,
 		bubbleInput,
 		setBubbleInput,
-		onCheck: /* @__PURE__ */ __name$2(() => onCheck?.(), "onCheck")
+		onCheck: /* @__PURE__ */ __name$1(() => onCheck?.(), "onCheck")
 	};
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(RadioProviderImpl, {
 		scope: __scopeRadio,
@@ -19662,10 +20413,10 @@ function RadioProvider(props) {
 		children: isFunction$1(internal_do_not_use_render) ? internal_do_not_use_render(context) : children
 	});
 }
-__name$2(RadioProvider, "RadioProvider");
-var TRIGGER_NAME$2 = "RadioTrigger";
-var RadioTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function RadioTrigger2({ __scopeRadio, onClick, ...radioProps }, forwardedRef) {
-	const { checked, disabled, value, setControl, onCheck, hasConsumerStoppedPropagationRef, onUserInteraction, isFormControl, bubbleInput } = useRadioContext(TRIGGER_NAME$2, __scopeRadio);
+__name$1(RadioProvider, "RadioProvider");
+var TRIGGER_NAME$1 = "RadioTrigger";
+var RadioTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function RadioTrigger2({ __scopeRadio, onClick, ...radioProps }, forwardedRef) {
+	const { checked, disabled, value, setControl, onCheck, hasConsumerStoppedPropagationRef, onUserInteraction, isFormControl, bubbleInput } = useRadioContext(TRIGGER_NAME$1, __scopeRadio);
 	const composedRefs = useComposedRefs(forwardedRef, setControl);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.button, {
 		type: "button",
@@ -19690,7 +20441,7 @@ var RadioTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __nam
 	});
 }, "RadioTrigger"));
 var INDICATOR_NAME = "RadioIndicator";
-var RadioIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function RadioIndicator2(props, forwardedRef) {
+var RadioIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function RadioIndicator2(props, forwardedRef) {
 	const { __scopeRadio, forceMount, ...indicatorProps } = props;
 	const context = useRadioContext(INDICATOR_NAME, __scopeRadio);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Presence, {
@@ -19704,7 +20455,7 @@ var RadioIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __n
 	});
 }, "RadioIndicator"));
 var BUBBLE_INPUT_NAME$1 = "RadioBubbleInput";
-var RadioBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function RadioBubbleInput2({ __scopeRadio, onClick, ...props }, forwardedRef) {
+var RadioBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function RadioBubbleInput2({ __scopeRadio, onClick, ...props }, forwardedRef) {
 	const { control, checked, required, disabled, name, value, form, bubbleInput, setBubbleInput, hasConsumerStoppedPropagationRef, userInteractionCount } = useRadioContext(BUBBLE_INPUT_NAME$1, __scopeRadio);
 	const composedRefs = useComposedRefs(forwardedRef, setBubbleInput);
 	const controlSize = useSize(control);
@@ -19764,11 +20515,11 @@ var RadioBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ _
 function isFunction$1(value) {
 	return typeof value === "function";
 }
-__name$2(isFunction$1, "isFunction");
+__name$1(isFunction$1, "isFunction");
 function getState(checked) {
 	return checked ? "checked" : "unchecked";
 }
-__name$2(getState, "getState");
+__name$1(getState, "getState");
 var ARROW_KEYS = [
 	"ArrowUp",
 	"ArrowDown",
@@ -19777,12 +20528,12 @@ var ARROW_KEYS = [
 ];
 var RADIO_GROUP_NAME = "RadioGroup";
 var [createRadioGroupContext, createRadioGroupScope] = /* @__PURE__ */ createContextScope(RADIO_GROUP_NAME, [createRovingFocusGroupScope, createRadioScope]);
-var useRovingFocusGroupScope$1 = createRovingFocusGroupScope();
+var useRovingFocusGroupScope = createRovingFocusGroupScope();
 var useRadioScope = createRadioScope();
 var [RadioGroupProvider, useRadioGroupContext] = createRadioGroupContext(RADIO_GROUP_NAME);
-var RadioGroup$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function RadioGroup2(props, forwardedRef) {
+var RadioGroup$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function RadioGroup2(props, forwardedRef) {
 	const { __scopeRadioGroup, name, form, defaultValue, value: valueProp, required = false, disabled = false, orientation, dir, loop = true, onValueChange, ...groupProps } = props;
-	const rovingFocusGroupScope = useRovingFocusGroupScope$1(__scopeRadioGroup);
+	const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeRadioGroup);
 	const direction = useDirection(dir);
 	const [value, setValue] = useControllableState({
 		prop: valueProp,
@@ -19796,7 +20547,7 @@ var RadioGroup$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __nam
 	import_react.useEffect(() => {
 		const associatedForm = form ? control?.ownerDocument.getElementById(form) : control?.closest("form");
 		if (associatedForm instanceof HTMLFormElement) {
-			const reset = /* @__PURE__ */ __name$2(() => setValue(initialValueRef.current), "reset");
+			const reset = /* @__PURE__ */ __name$1(() => setValue(initialValueRef.current), "reset");
 			associatedForm.addEventListener("reset", reset);
 			return () => associatedForm.removeEventListener("reset", reset);
 		}
@@ -19851,20 +20602,20 @@ function RadioGroupItemProvider(props) {
 		children
 	});
 }
-__name$2(RadioGroupItemProvider, "RadioGroupItemProvider");
-var RadioGroupItemTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function RadioGroupItemTrigger2(props, forwardedRef) {
+__name$1(RadioGroupItemProvider, "RadioGroupItemProvider");
+var RadioGroupItemTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function RadioGroupItemTrigger2(props, forwardedRef) {
 	const { __scopeRadioGroup, ...triggerProps } = props;
-	const rovingFocusGroupScope = useRovingFocusGroupScope$1(__scopeRadioGroup);
+	const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeRadioGroup);
 	const radioScope = useRadioScope(__scopeRadioGroup);
 	const { checked, disabled } = useRadioContext(ITEM_TRIGGER_NAME, radioScope.__scopeRadio);
 	const ref = import_react.useRef(null);
 	const composedRefs = useComposedRefs(forwardedRef, ref);
 	const isArrowKeyPressedRef = import_react.useRef(false);
 	import_react.useEffect(() => {
-		const handleKeyDown = /* @__PURE__ */ __name$2((event) => {
+		const handleKeyDown = /* @__PURE__ */ __name$1((event) => {
 			if (ARROW_KEYS.includes(event.key)) isArrowKeyPressedRef.current = true;
 		}, "handleKeyDown");
-		const handleKeyUp = /* @__PURE__ */ __name$2(() => isArrowKeyPressedRef.current = false, "handleKeyUp");
+		const handleKeyUp = /* @__PURE__ */ __name$1(() => isArrowKeyPressedRef.current = false, "handleKeyUp");
 		document.addEventListener("keydown", handleKeyDown);
 		document.addEventListener("keyup", handleKeyUp);
 		return () => {
@@ -19890,7 +20641,7 @@ var RadioGroupItemTrigger = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__
 		})
 	});
 }, "RadioGroupItemTrigger"));
-var RadioGroupItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function RadioGroupItem2(props, forwardedRef) {
+var RadioGroupItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function RadioGroupItem2(props, forwardedRef) {
 	const { __scopeRadioGroup, value, disabled, ...itemProps } = props;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(RadioGroupItemProvider, {
 		__scopeRadioGroup,
@@ -19903,7 +20654,7 @@ var RadioGroupItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ _
 		}), isFormControl && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(RadioGroupItemBubbleInput, { __scopeRadioGroup })] })
 	});
 }, "RadioGroupItem"));
-var RadioGroupItemBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function RadioGroupItemBubbleInput2(props, forwardedRef) {
+var RadioGroupItemBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function RadioGroupItemBubbleInput2(props, forwardedRef) {
 	const { __scopeRadioGroup, ...bubbleProps } = props;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(RadioBubbleInput, {
 		...useRadioScope(__scopeRadioGroup),
@@ -19911,7 +20662,7 @@ var RadioGroupItemBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PU
 		ref: forwardedRef
 	});
 }, "RadioGroupItemBubbleInput"));
-var RadioGroupIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$2(function RadioGroupIndicator2(props, forwardedRef) {
+var RadioGroupIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function RadioGroupIndicator2(props, forwardedRef) {
 	const { __scopeRadioGroup, ...indicatorProps } = props;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(RadioIndicator, {
 		...useRadioScope(__scopeRadioGroup),
@@ -19920,9 +20671,9 @@ var RadioGroupIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ *
 	});
 }, "RadioGroupIndicator"));
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-select@2.3.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react_bf9645fe15d12591feb024a88d90a0d4/node_modules/@radix-ui/react-select/dist/index.mjs
-var __defProp$1 = Object.defineProperty;
-var __name$1 = (target, value) => __defProp$1(target, "name", {
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-select@2.3.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react_bf9645fe15d12591feb024a88d90a0d4/node_modules/@radix-ui/react-select/dist/index.mjs
+var __defProp = Object.defineProperty;
+var __name = (target, value) => __defProp(target, "name", {
 	value,
 	configurable: true
 });
@@ -19963,7 +20714,7 @@ function SelectProvider(props) {
 	import_react.useEffect(() => {
 		const associatedForm = form ? trigger?.ownerDocument.getElementById(form) : trigger?.form;
 		if (associatedForm instanceof HTMLFormElement) {
-			const reset = /* @__PURE__ */ __name$1(() => setValue(initialValueRef.current), "reset");
+			const reset = /* @__PURE__ */ __name(() => setValue(initialValueRef.current), "reset");
 			associatedForm.addEventListener("reset", reset);
 			return () => associatedForm.removeEventListener("reset", reset);
 		}
@@ -20026,8 +20777,8 @@ function SelectProvider(props) {
 		})
 	});
 }
-__name$1(SelectProvider, "SelectProvider");
-var Select$2 = /* @__PURE__ */ __name$1((props) => {
+__name(SelectProvider, "SelectProvider");
+var Select$2 = /* @__PURE__ */ __name((props) => {
 	const { __scopeSelect, children, ...providerProps } = props;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectProvider, {
 		__scopeSelect,
@@ -20035,11 +20786,11 @@ var Select$2 = /* @__PURE__ */ __name$1((props) => {
 		internal_do_not_use_render: ({ isFormControl }) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [children, isFormControl ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectBubbleInput, { __scopeSelect }) : null] })
 	});
 }, "Select");
-var TRIGGER_NAME$1 = "SelectTrigger";
-var SelectTrigger$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectTrigger2(props, forwardedRef) {
+var TRIGGER_NAME = "SelectTrigger";
+var SelectTrigger$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectTrigger2(props, forwardedRef) {
 	const { __scopeSelect, disabled = false, ...triggerProps } = props;
 	const popperScope = usePopperScope(__scopeSelect);
-	const context = useSelectContext(TRIGGER_NAME$1, __scopeSelect);
+	const context = useSelectContext(TRIGGER_NAME, __scopeSelect);
 	const isDisabled = context.disabled || disabled;
 	const composedRefs = useComposedRefs(forwardedRef, context.onTriggerChange);
 	const getItems = useCollection(__scopeSelect);
@@ -20049,7 +20800,7 @@ var SelectTrigger$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 		const nextItem = findNextItem(enabledItems, search, enabledItems.find((item) => item.value === context.value));
 		if (nextItem !== void 0) context.onValueChange(nextItem.value);
 	});
-	const handleOpen = /* @__PURE__ */ __name$1((pointerEvent) => {
+	const handleOpen = /* @__PURE__ */ __name((pointerEvent) => {
 		if (!isDisabled) {
 			context.onOpenChange(true);
 			resetTypeahead();
@@ -20102,7 +20853,7 @@ var SelectTrigger$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 	});
 }, "SelectTrigger"));
 var VALUE_NAME = "SelectValue";
-var SelectValue$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectValue2(props, forwardedRef) {
+var SelectValue$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectValue2(props, forwardedRef) {
 	const { __scopeSelect, className, style, children, placeholder = "", ...valueProps } = props;
 	const context = useSelectContext(VALUE_NAME, __scopeSelect);
 	const { onValueNodeHasChildrenChange } = context;
@@ -20120,7 +20871,7 @@ var SelectValue$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __na
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.Fragment, { children: showPlaceholder ? placeholder : children }, showPlaceholder ? "placeholder" : "value")
 	});
 }, "SelectValue"));
-var SelectIcon = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectIcon2(props, forwardedRef) {
+var SelectIcon = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectIcon2(props, forwardedRef) {
 	const { __scopeSelect, children, ...iconProps } = props;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.span, {
 		"aria-hidden": true,
@@ -20130,22 +20881,22 @@ var SelectIcon = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$
 	});
 }, "SelectIcon"));
 var [PortalProvider, usePortalContext] = createSelectContext("SelectPortal", { forceMount: void 0 });
-var SelectPortal = /* @__PURE__ */ __name$1((props) => {
+var SelectPortal = /* @__PURE__ */ __name((props) => {
 	const { __scopeSelect, forceMount, ...portalProps } = props;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PortalProvider, {
 		scope: props.__scopeSelect,
 		forceMount,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Portal, {
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Portal$1, {
 			asChild: true,
 			...portalProps
 		})
 	});
 }, "SelectPortal");
-var CONTENT_NAME$1 = "SelectContent";
-var SelectContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectContent2(props, forwardedRef) {
-	const portalContext = usePortalContext(CONTENT_NAME$1, props.__scopeSelect);
+var CONTENT_NAME = "SelectContent";
+var SelectContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectContent2(props, forwardedRef) {
+	const portalContext = usePortalContext(CONTENT_NAME, props.__scopeSelect);
 	const { forceMount = portalContext.forceMount, ...contentProps } = props;
-	const context = useSelectContext(CONTENT_NAME$1, props.__scopeSelect);
+	const context = useSelectContext(CONTENT_NAME, props.__scopeSelect);
 	const [fragment, setFragment] = import_react.useState();
 	useLayoutEffect2(() => {
 		setFragment(new DocumentFragment());
@@ -20161,7 +20912,7 @@ var SelectContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __
 		})
 	});
 }, "SelectContent"));
-var SelectContentFragment = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectContentFragment2(props, forwardedRef) {
+var SelectContentFragment = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectContentFragment2(props, forwardedRef) {
 	const { __scopeSelect, children, fragment } = props;
 	if (!fragment) return null;
 	return import_react_dom.createPortal(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectContentProvider, {
@@ -20176,12 +20927,12 @@ var SelectContentFragment = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__
 	}), fragment);
 }, "SelectContentFragment"));
 var CONTENT_MARGIN = 10;
-var [SelectContentProvider, useSelectContentContext] = createSelectContext(CONTENT_NAME$1);
+var [SelectContentProvider, useSelectContentContext] = createSelectContext(CONTENT_NAME);
 var Slot = /* @__PURE__ */ createSlot("SelectContent.RemoveScroll");
-var SelectContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectContentImpl2(props, forwardedRef) {
+var SelectContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectContentImpl2(props, forwardedRef) {
 	const { __scopeSelect } = props;
 	const { position = "item-aligned", onCloseAutoFocus, onEscapeKeyDown, onPointerDownOutside, side, sideOffset, align, alignOffset, arrowPadding, collisionBoundary, collisionPadding, sticky, hideWhenDetached, avoidCollisions, ...contentProps } = props;
-	const context = useSelectContext(CONTENT_NAME$1, __scopeSelect);
+	const context = useSelectContext(CONTENT_NAME, __scopeSelect);
 	const [content, setContent] = import_react.useState(null);
 	const [viewport, setViewport] = import_react.useState(null);
 	const composedRefs = useComposedRefs(forwardedRef, setContent);
@@ -20222,13 +20973,13 @@ var SelectContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ 
 				x: 0,
 				y: 0
 			};
-			const handlePointerMove = /* @__PURE__ */ __name$1((event) => {
+			const handlePointerMove = /* @__PURE__ */ __name((event) => {
 				pointerMoveDelta = {
 					x: Math.abs(Math.round(event.pageX) - (triggerPointerDownPosRef.current?.x ?? 0)),
 					y: Math.abs(Math.round(event.pageY) - (triggerPointerDownPosRef.current?.y ?? 0))
 				};
 			}, "handlePointerMove");
-			const handlePointerUp = /* @__PURE__ */ __name$1((event) => {
+			const handlePointerUp = /* @__PURE__ */ __name((event) => {
 				if (pointerMoveDelta.x <= 10 && pointerMoveDelta.y <= 10) event.preventDefault();
 				else if (!event.composedPath().includes(content)) onOpenChange(false);
 				document.removeEventListener("pointermove", handlePointerMove);
@@ -20252,7 +21003,7 @@ var SelectContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ 
 		triggerPointerDownPosRef
 	]);
 	import_react.useEffect(() => {
-		const close = /* @__PURE__ */ __name$1(() => onOpenChange(false), "close");
+		const close = /* @__PURE__ */ __name(() => onOpenChange(false), "close");
 		window.addEventListener("blur", close);
 		window.addEventListener("resize", close);
 		return () => {
@@ -20367,10 +21118,10 @@ var SelectContentImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ 
 		})
 	});
 }, "SelectContentImpl"));
-var SelectItemAlignedPosition = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectItemAlignedPosition2(props, forwardedRef) {
+var SelectItemAlignedPosition = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectItemAlignedPosition2(props, forwardedRef) {
 	const { __scopeSelect, onPlaced, ...popperProps } = props;
-	const context = useSelectContext(CONTENT_NAME$1, __scopeSelect);
-	const contentContext = useSelectContentContext(CONTENT_NAME$1, __scopeSelect);
+	const context = useSelectContext(CONTENT_NAME, __scopeSelect);
+	const contentContext = useSelectContentContext(CONTENT_NAME, __scopeSelect);
 	const [contentWrapper, setContentWrapper] = import_react.useState(null);
 	const [content, setContent] = import_react.useState(null);
 	const composedRefs = useComposedRefs(forwardedRef, setContent);
@@ -20491,10 +21242,10 @@ var SelectItemAlignedPosition = /* @__PURE__ */ import_react.forwardRef(/* @__PU
 		})
 	});
 }, "SelectItemAlignedPosition"));
-var SelectPopperPosition = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectPopperPosition2(props, forwardedRef) {
+var SelectPopperPosition = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectPopperPosition2(props, forwardedRef) {
 	const { __scopeSelect, align = "start", collisionPadding = CONTENT_MARGIN, ...popperProps } = props;
 	const popperScope = usePopperScope(__scopeSelect);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content$1, {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content, {
 		...popperScope,
 		...popperProps,
 		ref: forwardedRef,
@@ -20511,9 +21262,9 @@ var SelectPopperPosition = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ 
 		}
 	});
 }, "SelectPopperPosition"));
-var [SelectViewportProvider, useSelectViewportContext] = createSelectContext(CONTENT_NAME$1, {});
+var [SelectViewportProvider, useSelectViewportContext] = createSelectContext(CONTENT_NAME, {});
 var VIEWPORT_NAME = "SelectViewport";
-var SelectViewport = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectViewport2(props, forwardedRef) {
+var SelectViewport = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectViewport2(props, forwardedRef) {
 	const { __scopeSelect, nonce, ...viewportProps } = props;
 	const contentContext = useSelectContentContext(VIEWPORT_NAME, __scopeSelect);
 	const viewportContext = useSelectViewportContext(VIEWPORT_NAME, __scopeSelect);
@@ -20563,33 +21314,9 @@ var SelectViewport = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __n
 	})] });
 }, "SelectViewport"));
 var [SelectGroupContextProvider, useSelectGroupContext] = createSelectContext("SelectGroup");
-var SelectGroup$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectGroup2(props, forwardedRef) {
-	const { __scopeSelect, ...groupProps } = props;
-	const groupId = useId();
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectGroupContextProvider, {
-		scope: __scopeSelect,
-		id: groupId,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
-			role: "group",
-			"aria-labelledby": groupId,
-			...groupProps,
-			ref: forwardedRef
-		})
-	});
-}, "SelectGroup"));
-var LABEL_NAME = "SelectLabel";
-var SelectLabel$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectLabel2(props, forwardedRef) {
-	const { __scopeSelect, ...labelProps } = props;
-	const groupContext = useSelectGroupContext(LABEL_NAME, __scopeSelect);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
-		id: groupContext.id,
-		...labelProps,
-		ref: forwardedRef
-	});
-}, "SelectLabel"));
 var ITEM_NAME = "SelectItem";
 var [SelectItemContextProvider, useSelectItemContext] = createSelectContext(ITEM_NAME);
-var SelectItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectItem2(props, forwardedRef) {
+var SelectItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectItem2(props, forwardedRef) {
 	const { __scopeSelect, value, disabled = false, textValue: textValueProp, ...itemProps } = props;
 	const context = useSelectContext(ITEM_NAME, __scopeSelect);
 	const contentContext = useSelectContentContext(ITEM_NAME, __scopeSelect);
@@ -20599,7 +21326,7 @@ var SelectItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __nam
 	const composedRefs = useComposedRefs(forwardedRef, useCallbackRef$1((node) => contentContext.itemRefCallback?.(node, value, disabled)));
 	const textId = useId();
 	const pointerTypeRef = import_react.useRef("touch");
-	const handleSelect = /* @__PURE__ */ __name$1(() => {
+	const handleSelect = /* @__PURE__ */ __name(() => {
 		if (!disabled) {
 			context.onValueChange(value);
 			context.onOpenChange(false);
@@ -20660,7 +21387,7 @@ var SelectItem$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __nam
 	});
 }, "SelectItem"));
 var ITEM_TEXT_NAME = "SelectItemText";
-var SelectItemText = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectItemText2(props, forwardedRef) {
+var SelectItemText = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectItemText2(props, forwardedRef) {
 	const { __scopeSelect, className, style, ...itemTextProps } = props;
 	const context = useSelectContext(ITEM_TEXT_NAME, __scopeSelect);
 	const contentContext = useSelectContentContext(ITEM_TEXT_NAME, __scopeSelect);
@@ -20695,7 +21422,7 @@ var SelectItemText = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __n
 	}), itemContext.isSelected && context.valueNode && !context.valueNodeHasChildren && !shouldShowPlaceholder(context.value) ? import_react_dom.createPortal(itemTextProps.children, context.valueNode) : null] });
 }, "SelectItemText"));
 var ITEM_INDICATOR_NAME = "SelectItemIndicator";
-var SelectItemIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectItemIndicator2(props, forwardedRef) {
+var SelectItemIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectItemIndicator2(props, forwardedRef) {
 	const { __scopeSelect, ...itemIndicatorProps } = props;
 	return useSelectItemContext(ITEM_INDICATOR_NAME, __scopeSelect).isSelected ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.span, {
 		"aria-hidden": true,
@@ -20704,7 +21431,7 @@ var SelectItemIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ *
 	}) : null;
 }, "SelectItemIndicator"));
 var SCROLL_UP_BUTTON_NAME = "SelectScrollUpButton";
-var SelectScrollUpButton$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectScrollUpButton2(props, forwardedRef) {
+var SelectScrollUpButton$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectScrollUpButton2(props, forwardedRef) {
 	const contentContext = useSelectContentContext(SCROLL_UP_BUTTON_NAME, props.__scopeSelect);
 	const viewportContext = useSelectViewportContext(SCROLL_UP_BUTTON_NAME, props.__scopeSelect);
 	const [canScrollUp, setCanScrollUp] = import_react.useState(false);
@@ -20714,7 +21441,7 @@ var SelectScrollUpButton$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE_
 			let handleScroll2 = function() {
 				setCanScrollUp(viewport.scrollTop > 0);
 			};
-			__name$1(handleScroll2, "handleScroll");
+			__name(handleScroll2, "handleScroll");
 			const viewport = contentContext.viewport;
 			handleScroll2();
 			viewport.addEventListener("scroll", handleScroll2);
@@ -20731,7 +21458,7 @@ var SelectScrollUpButton$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE_
 	}) : null;
 }, "SelectScrollUpButton"));
 var SCROLL_DOWN_BUTTON_NAME = "SelectScrollDownButton";
-var SelectScrollDownButton$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectScrollDownButton2(props, forwardedRef) {
+var SelectScrollDownButton$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectScrollDownButton2(props, forwardedRef) {
 	const contentContext = useSelectContentContext(SCROLL_DOWN_BUTTON_NAME, props.__scopeSelect);
 	const viewportContext = useSelectViewportContext(SCROLL_DOWN_BUTTON_NAME, props.__scopeSelect);
 	const [canScrollDown, setCanScrollDown] = import_react.useState(false);
@@ -20742,7 +21469,7 @@ var SelectScrollDownButton$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PUR
 				const maxScroll = viewport.scrollHeight - viewport.clientHeight;
 				setCanScrollDown(Math.ceil(viewport.scrollTop) < maxScroll);
 			};
-			__name$1(handleScroll2, "handleScroll");
+			__name(handleScroll2, "handleScroll");
 			const viewport = contentContext.viewport;
 			handleScroll2();
 			viewport.addEventListener("scroll", handleScroll2);
@@ -20758,7 +21485,7 @@ var SelectScrollDownButton$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PUR
 		}
 	}) : null;
 }, "SelectScrollDownButton"));
-var SelectScrollButtonImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectScrollButtonImpl2(props, forwardedRef) {
+var SelectScrollButtonImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectScrollButtonImpl2(props, forwardedRef) {
 	const { __scopeSelect, onAutoScroll, ...scrollIndicatorProps } = props;
 	const contentContext = useSelectContentContext("SelectScrollButton", __scopeSelect);
 	const autoScrollTimerRef = import_react.useRef(null);
@@ -20796,7 +21523,7 @@ var SelectScrollButtonImpl = /* @__PURE__ */ import_react.forwardRef(/* @__PURE_
 	});
 }, "SelectScrollButtonImpl"));
 var BUBBLE_INPUT_NAME = "SelectBubbleInput";
-var SelectBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$1(function SelectBubbleInput2({ __scopeSelect, ...props }, forwardedRef) {
+var SelectBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function SelectBubbleInput2({ __scopeSelect, ...props }, forwardedRef) {
 	const context = useSelectContext(BUBBLE_INPUT_NAME, __scopeSelect);
 	const { value, onValueChange, required, disabled, name, autoComplete, form } = context;
 	const { nativeOptions, nativeSelectKey } = context;
@@ -20838,11 +21565,11 @@ var SelectBubbleInput = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ 
 function isFunction(value) {
 	return typeof value === "function";
 }
-__name$1(isFunction, "isFunction");
+__name(isFunction, "isFunction");
 function shouldShowPlaceholder(value) {
 	return value === "" || value === void 0;
 }
-__name$1(shouldShowPlaceholder, "shouldShowPlaceholder");
+__name(shouldShowPlaceholder, "shouldShowPlaceholder");
 function useTypeaheadSearch(onSearchChange) {
 	const handleSearchChange = useCallbackRef$1(onSearchChange);
 	const searchRef = import_react.useRef("");
@@ -20850,7 +21577,7 @@ function useTypeaheadSearch(onSearchChange) {
 	const handleTypeaheadSearch = import_react.useCallback((key) => {
 		const search = searchRef.current + key;
 		handleSearchChange(search);
-		(/* @__PURE__ */ __name$1((function updateSearch(value) {
+		(/* @__PURE__ */ __name((function updateSearch(value) {
 			searchRef.current = value;
 			window.clearTimeout(timerRef.current);
 			if (value !== "") timerRef.current = window.setTimeout(() => updateSearch(""), 1e3);
@@ -20869,7 +21596,7 @@ function useTypeaheadSearch(onSearchChange) {
 		resetTypeahead
 	];
 }
-__name$1(useTypeaheadSearch, "useTypeaheadSearch");
+__name(useTypeaheadSearch, "useTypeaheadSearch");
 function findNextItem(items, search, currentItem) {
 	const normalizedSearch = search.length > 1 && Array.from(search).every((char) => char === search[0]) ? search[0] : search;
 	const currentItemIndex = currentItem ? items.indexOf(currentItem) : -1;
@@ -20878,151 +21605,13 @@ function findNextItem(items, search, currentItem) {
 	const nextItem = wrappedItems.find((item) => item.textValue.toLowerCase().startsWith(normalizedSearch.toLowerCase()));
 	return nextItem !== currentItem ? nextItem : void 0;
 }
-__name$1(findNextItem, "findNextItem");
+__name(findNextItem, "findNextItem");
 function wrapArray(array, startIndex) {
 	return array.map((_, index) => array[(startIndex + index) % array.length]);
 }
-__name$1(wrapArray, "wrapArray");
+__name(wrapArray, "wrapArray");
 //#endregion
-//#region node_modules/.pnpm/@radix-ui+react-tabs@1.1.21_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react@_79aebdff57f0a3532f42cd10b1dce5a8/node_modules/@radix-ui/react-tabs/dist/index.mjs
-var __defProp = Object.defineProperty;
-var __name = (target, value) => __defProp(target, "name", {
-	value,
-	configurable: true
-});
-var TABS_NAME = "Tabs";
-var [createTabsContext, createTabsScope] = /* @__PURE__ */ createContextScope(TABS_NAME, [createRovingFocusGroupScope]);
-var useRovingFocusGroupScope = createRovingFocusGroupScope();
-var [TabsProvider, useTabsContext] = createTabsContext(TABS_NAME);
-var Tabs$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function Tabs2(props, forwardedRef) {
-	const { __scopeTabs, value: valueProp, onValueChange, defaultValue, orientation = "horizontal", dir, activationMode = "automatic", ...tabsProps } = props;
-	const direction = useDirection(dir);
-	const [value, setValue] = useControllableState({
-		prop: valueProp,
-		onChange: onValueChange,
-		defaultProp: defaultValue ?? "",
-		caller: TABS_NAME
-	});
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TabsProvider, {
-		scope: __scopeTabs,
-		baseId: useId(),
-		value,
-		onValueChange: setValue,
-		orientation,
-		dir: direction,
-		activationMode,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
-			dir: direction,
-			"data-orientation": orientation,
-			...tabsProps,
-			ref: forwardedRef
-		})
-	});
-}, "Tabs"));
-var TAB_LIST_NAME = "TabsList";
-var TabsList$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function TabsList2(props, forwardedRef) {
-	const { __scopeTabs, loop = true, ...listProps } = props;
-	const context = useTabsContext(TAB_LIST_NAME, __scopeTabs);
-	const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeTabs);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root$2, {
-		asChild: true,
-		...rovingFocusGroupScope,
-		orientation: context.orientation,
-		dir: context.dir,
-		loop,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
-			role: "tablist",
-			"aria-orientation": context.orientation,
-			...listProps,
-			ref: forwardedRef
-		})
-	});
-}, "TabsList"));
-var TRIGGER_NAME = "TabsTrigger";
-var TabsTrigger$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function TabsTrigger2(props, forwardedRef) {
-	const { __scopeTabs, value, disabled = false, ...triggerProps } = props;
-	const context = useTabsContext(TRIGGER_NAME, __scopeTabs);
-	const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeTabs);
-	const triggerId = makeTriggerId(context.baseId, value);
-	const contentId = makeContentId(context.baseId, value);
-	const isSelected = value === context.value;
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
-		asChild: true,
-		...rovingFocusGroupScope,
-		focusable: !disabled,
-		active: isSelected,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.button, {
-			type: "button",
-			role: "tab",
-			"aria-selected": isSelected,
-			"aria-controls": contentId,
-			"data-state": isSelected ? "active" : "inactive",
-			"data-disabled": disabled ? "" : void 0,
-			disabled,
-			id: triggerId,
-			...triggerProps,
-			ref: forwardedRef,
-			onMouseDown: composeEventHandlers(props.onMouseDown, (event) => {
-				if (!disabled && event.button === 0 && event.ctrlKey === false) context.onValueChange(value);
-				else event.preventDefault();
-			}),
-			onKeyDown: composeEventHandlers(props.onKeyDown, (event) => {
-				if (disabled || event.target !== event.currentTarget) return;
-				if ([" ", "Enter"].includes(event.key)) context.onValueChange(value);
-			}),
-			onFocus: composeEventHandlers(props.onFocus, () => {
-				const isAutomaticActivation = context.activationMode !== "manual";
-				if (!isSelected && !disabled && isAutomaticActivation) context.onValueChange(value);
-			})
-		})
-	});
-}, "TabsTrigger"));
-var CONTENT_NAME = "TabsContent";
-var TabsContent$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name(function TabsContent2(props, forwardedRef) {
-	const { __scopeTabs, value, forceMount, children, ...contentProps } = props;
-	const context = useTabsContext(CONTENT_NAME, __scopeTabs);
-	const triggerId = makeTriggerId(context.baseId, value);
-	const contentId = makeContentId(context.baseId, value);
-	const isSelected = value === context.value;
-	const isMountAnimationPreventedRef = import_react.useRef(isSelected);
-	import_react.useEffect(() => {
-		const rAF = requestAnimationFrame(() => isMountAnimationPreventedRef.current = false);
-		return () => cancelAnimationFrame(rAF);
-	}, []);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Presence, {
-		present: forceMount || isSelected,
-		children: ({ present }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Primitive.div, {
-			"data-state": isSelected ? "active" : "inactive",
-			"data-orientation": context.orientation,
-			role: "tabpanel",
-			"aria-labelledby": triggerId,
-			hidden: !present,
-			id: contentId,
-			tabIndex: 0,
-			...contentProps,
-			ref: forwardedRef,
-			style: {
-				...props.style,
-				animationDuration: isMountAnimationPreventedRef.current ? "0s" : void 0
-			},
-			children: present && children
-		})
-	});
-}, "TabsContent"));
-function makeTriggerId(baseId, value) {
-	return `${baseId}-trigger-${value}`;
-}
-__name(makeTriggerId, "makeTriggerId");
-function makeContentId(baseId, value) {
-	return `${baseId}-content-${value}`;
-}
-__name(makeContentId, "makeContentId");
-var Root2 = Tabs$1;
-var List = TabsList$1;
-var Trigger = TabsTrigger$1;
-var Content = TabsContent$1;
-//#endregion
-//#region node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
 function r$1(e) {
 	var t, f, n = "";
 	if ("string" == typeof e || "number" == typeof e) n += e;
@@ -21037,7 +21626,7 @@ function clsx() {
 	return n;
 }
 //#endregion
-//#region node_modules/.pnpm/tailwind-merge@3.6.0/node_modules/tailwind-merge/dist/bundle-mjs.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/tailwind-merge@3.6.0/node_modules/tailwind-merge/dist/bundle-mjs.mjs
 /**
 * Concatenates two arrays faster than the array spread operator.
 */
@@ -24416,302 +25005,12 @@ var getDefaultConfig = () => {
 };
 var twMerge = /* @__PURE__ */ createTailwindMerge(getDefaultConfig);
 //#endregion
-//#region lib/utils.ts
+//#region package/source/lib/utils.ts
 function cn$1(...inputs) {
 	return twMerge(clsx(inputs));
 }
 //#endregion
-//#region components/ui/progress.tsx
-function Progress({ className, value, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root$1, {
-		"data-slot": "progress",
-		value,
-		className: cn$1("relative h-2 w-full overflow-hidden rounded-full bg-primary/20", className),
-		...props,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Indicator, {
-			"data-slot": "progress-indicator",
-			className: "h-full w-full flex-1 bg-primary transition-all",
-			style: { transform: `translateX(-${100 - (value ?? 0)}%)` }
-		})
-	});
-}
-//#endregion
-//#region app/mindfulness.tsx
-var who = "https://tdr.who.int/home/our-work/global-engagement/9789240003927";
-var mindfulnessExercises = [
-	{
-		id: "leaves",
-		title: "Leaves on a Stream",
-		kind: "COGNITIVE DEFUSION",
-		icon: Leaf,
-		summary: "Notice thoughts without needing to chase or remove them.",
-		source: "US Department of Veterans Affairs · exercise guide",
-		url: "https://www.ptsd.va.gov/gethelp/captions/Track03_LeavesOnTheStream.pdf",
-		steps: [
-			"Sit somewhere comfortable and safe. Keep your eyes open if you prefer. Imagine a gentle stream; you do not need to visit real water.",
-			"Notice a thought. Imagine placing its words or picture on a leaf floating along the stream. Pleasant and difficult thoughts can both have leaves.",
-			"Let the leaf move at its own pace. You do not have to force the thought away or make the stream flow faster.",
-			"If you get caught in a thought, gently notice that. Return to watching. A thought about doing this wrong can have a leaf too.",
-			"Come back to the room. Notice your feet and one nearby sound. Choose a small, kind next step."
-		]
-	},
-	{
-		id: "grounding",
-		title: "Feet on the floor",
-		kind: "MINDFULNESS",
-		icon: Footprints,
-		summary: "Bring attention gently back to the room.",
-		source: "WHO · grounding guidance",
-		url: who,
-		steps: [
-			"Notice your feet touching the floor and your body’s support.",
-			"Breathe naturally. Look around and name three things you see.",
-			"Notice two sounds and one comfortable point of contact.",
-			"Choose one small task, bringing your attention back gently."
-		]
-	},
-	{
-		id: "thought",
-		title: "I notice the thought…",
-		kind: "COGNITIVE DEFUSION",
-		icon: MessageCircle,
-		summary: "Practise hearing a thought as a thought.",
-		source: "WHO · noticing, naming and unhooking",
-		url: who,
-		steps: [
-			"Choose an ordinary thought, such as “I might make a mistake.”",
-			"Say: “I notice I am having the thought that…”",
-			"Notice the wording. You need not debate or obey the thought.",
-			"Return attention to your surroundings and a useful next action."
-		]
-	},
-	{
-		id: "feelings",
-		title: "Name it, make room",
-		kind: "MINDFULNESS",
-		icon: Sun,
-		summary: "Notice a feeling without rushing to change it.",
-		source: "WHO · making room guidance",
-		url: who,
-		steps: [
-			"Gently name a feeling: worry, excitement, frustration, or something else.",
-			"Notice where it feels present, without forcing yourself to examine it.",
-			"Let your breathing be ordinary. Allow some room around the feeling.",
-			"Look around again. Choose a caring action while the feeling is here."
-		]
-	},
-	{
-		id: "kindness",
-		title: "A kind next step",
-		kind: "MINDFULNESS",
-		icon: Heart,
-		summary: "Respond to a busy mind with kindness.",
-		source: "WHO · kindness and values guidance",
-		url: who,
-		steps: [
-			"Notice whether your mind is speaking harshly to you.",
-			"Try one kind sentence you would offer a friend.",
-			"Choose a small action that matters: listen, rest, or ask for help.",
-			"You can act kindly without waiting for every thought to change."
-		]
-	}
-];
-function MindfulnessExercises() {
-	const [selected, setSelected] = (0, import_react.useState)("leaves"), [step, setStep] = (0, import_react.useState)(0), [started, setStarted] = (0, import_react.useState)(false), [done, setDone] = (0, import_react.useState)(false);
-	const speech = useSpeech();
-	const exercise = mindfulnessExercises.find((e) => e.id === selected);
-	const audioBusy = speech.state.status === "reading" || speech.state.status === "paused";
-	(0, import_react.useEffect)(() => {
-		if (speech.state.status === "reading" && speech.state.segment > 0) {
-			setStarted(true);
-			setDone(false);
-			setStep(Math.min(speech.state.segment - 1, exercise.steps.length - 1));
-		}
-	}, [
-		speech.state.segment,
-		speech.state.status,
-		exercise.steps.length
-	]);
-	function reset() {
-		speech.stop();
-		setStep(0);
-		setStarted(false);
-		setDone(false);
-	}
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-		className: "mindfulness-panel",
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "section-row",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "eyebrow",
-					children: "PAUSE WITH KINDNESS"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Mindfulness & noticing thoughts" })] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Leaf, { size: 32 })]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Cognitive defusion means noticing thoughts as thoughts. These short, original guided adaptations invite observation, rather than trying to make thoughts disappear." }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "mindfulness-choices",
-				children: mindfulnessExercises.map((e) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-					"aria-pressed": selected === e.id,
-					className: "mindfulness-choice" + (selected === e.id ? " selected" : ""),
-					onClick: () => {
-						setSelected(e.id);
-						reset();
-					},
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(e.icon, { size: 21 }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: e.title }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: e.kind === "COGNITIVE DEFUSION" ? "Noticing thoughts" : "Mindful attention" })] })]
-				}, e.id))
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-				className: "mindfulness-guide",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "eyebrow",
-						children: exercise.kind
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: exercise.title }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: exercise.summary }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-						className: "story-audio mindfulness-audio",
-						"aria-label": "Mindfulness audio",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 20 }), "Listen to the guide"] }),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "filters",
-								"aria-label": "Mindfulness reading speed",
-								children: Object.keys(readingSpeeds).map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: speech.speed === v ? "selected" : "",
-									"aria-pressed": speech.speed === v,
-									onClick: () => speech.changeSpeed(v),
-									children: v
-								}, v))
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "timer-actions",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-										className: "primary",
-										disabled: !speech.supported,
-										onClick: () => {
-											setStarted(true);
-											setDone(false);
-											speech.read([exercise.title, ...exercise.steps]);
-										},
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }), "Read entire exercise"]
-									}),
-									audioBusy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-										className: "secondary",
-										onClick: () => speech.state.status === "paused" ? speech.resume() : speech.pause(),
-										children: [
-											speech.state.status === "paused" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { size: 17 }),
-											" ",
-											speech.state.status === "paused" ? "Resume" : "Pause"
-										]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-										className: "secondary",
-										disabled: !audioBusy,
-										onClick: speech.stop,
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 16 }), "Stop audio"]
-									})
-								]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "small-note",
-								role: "status",
-								children: speech.supported === false ? "Audio is unavailable in this browser. Follow the written steps below." : speech.state.message
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "small-note",
-								children: "Pause whenever you need more time. Changing speed restarts the current step. Uses your browser’s available voice."
-							})
-						]
-					}),
-					!started && !done ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Follow one step at a time. Stay with each step as long as you like." }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						className: "primary",
-						onClick: () => setStarted(true),
-						children: "Begin exercise"
-					})] }) : done ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						role: "status",
-						children: "You made a little space to notice. There is no perfect score here."
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						className: "secondary",
-						onClick: reset,
-						children: "Start again"
-					})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-							className: "pill",
-							children: [
-								"STEP ",
-								step + 1,
-								" OF ",
-								exercise.steps.length
-							]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Progress, {
-							value: (step + 1) / exercise.steps.length * 100,
-							"aria-label": "Exercise progress"
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mindfulness-instruction",
-							"aria-live": "polite",
-							children: exercise.steps[step]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "timer-actions",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: "secondary",
-									disabled: step === 0,
-									onClick: () => {
-										speech.stop();
-										setStep((v) => v - 1);
-									},
-									children: "Previous step"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: "primary",
-									onClick: () => {
-										speech.stop();
-										step === exercise.steps.length - 1 ? setDone(true) : setStep((v) => v + 1);
-									},
-									children: step === exercise.steps.length - 1 ? "Finish exercise" : "Next step"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: "secondary",
-									onClick: reset,
-									children: "Stop exercise"
-								})
-							]
-						})
-					] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						className: "exercise-source",
-						href: exercise.url,
-						target: "_blank",
-						rel: "noopener noreferrer",
-						children: exercise.source
-					})
-				]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "small-note",
-				children: "Children can practise with a trusted grown-up. Keep your eyes open, skip a step or stop if it feels uncomfortable. These are general wellbeing practices, not treatment; seek support from someone you trust or a health professional if you need it."
-			})
-		]
-	});
-}
-//#endregion
-//#region app/coffee-post.ts
-var coffeeBackgrounds = [
-	"./coffee-posts/coffee-01.webp",
-	"./coffee-posts/coffee-02.webp",
-	"./coffee-posts/coffee-03.webp"
-];
-function coffeeBackground(index) {
-	return coffeeBackgrounds[index % coffeeBackgrounds.length];
-}
-//#endregion
-//#region node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs
 /**
 * Copyright 2022 Joe Bell. All rights reserved.
 *
@@ -24764,7 +25063,7 @@ var cva = (base, config) => (props) => {
 	}, []), props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
 };
 //#endregion
-//#region components/ui/button.tsx
+//#region package/source/components/ui/button.tsx
 var buttonVariants = cva("inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", {
 	variants: {
 		variant: {
@@ -24792,7 +25091,7 @@ var buttonVariants = cva("inline-flex shrink-0 items-center justify-center gap-2
 	}
 });
 function Button({ className, variant = "default", size = "default", asChild = false, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(asChild ? Slot$2 : "button", {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(asChild ? Slot$3 : "button", {
 		"data-slot": "button",
 		"data-variant": variant,
 		"data-size": size,
@@ -24805,7 +25104,7 @@ function Button({ className, variant = "default", size = "default", asChild = fa
 	});
 }
 //#endregion
-//#region components/ui/dialog.tsx
+//#region package/source/components/ui/dialog.tsx
 function Dialog({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog$1, {
 		"data-slot": "dialog",
@@ -24858,7 +25157,7 @@ function DialogDescription({ className, ...props }) {
 	});
 }
 //#endregion
-//#region app/photo-post.ts
+//#region package/source/app/photo-post.ts
 var savingsBackgrounds = {
 	"Groceries": "./photo-share/savings-groceries.webp",
 	"Money habits": "./photo-share/savings-money.webp",
@@ -24957,7 +25256,7 @@ async function sharePhotoFile(file, title) {
 	});
 }
 //#endregion
-//#region app/photo-share.tsx
+//#region package/source/app/photo-share.tsx
 var apps = [
 	{
 		name: "Facebook",
@@ -24975,7 +25274,7 @@ var apps = [
 		icon: MessageCircle
 	}
 ];
-function PhotoShare({ post }) {
+function PhotoShare({ post, label = "Share" }) {
 	const [open, setOpen] = (0, import_react.useState)(false), [file, setFile] = (0, import_react.useState)(null), [preview, setPreview] = (0, import_react.useState)(""), [busy, setBusy] = (0, import_react.useState)(false), [preparing, setPreparing] = (0, import_react.useState)(false), [message, setMessage] = (0, import_react.useState)(""), [app, setApp] = (0, import_react.useState)("");
 	const generation = (0, import_react.useRef)(0), previewURL = (0, import_react.useRef)("");
 	(0, import_react.useEffect)(() => () => {
@@ -25020,7 +25319,7 @@ function PhotoShare({ post }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 		className: "secondary photo-share-trigger",
 		onClick: prepare,
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Share2, { size: 17 }), "Share"]
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Share2, { size: 17 }), label]
 	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog, {
 		open,
 		onOpenChange: (v) => {
@@ -25035,7 +25334,7 @@ function PhotoShare({ post }) {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent, {
 			className: "photo-share-dialog",
 			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle, { children: "Share a little encouragement" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle, { children: "Share your photo post" }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription, { children: "Preview your square photo, then choose how to share it." }),
 				preparing ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					role: "status",
@@ -25108,7 +25407,1407 @@ function PhotoShare({ post }) {
 	})] });
 }
 //#endregion
-//#region app/photo-card.tsx
+//#region package/source/app/voice-picker.tsx
+function VoicePicker({ profile, onChange }) {
+	const [voices, setVoices] = (0, import_react.useState)([]), [choice, setChoice] = (0, import_react.useState)("");
+	(0, import_react.useEffect)(() => {
+		if (!window.speechSynthesis) return;
+		const load = () => setVoices(window.speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang)).sort((a, b) => naturalVoiceScore(b, profile) - naturalVoiceScore(a, profile)));
+		load();
+		window.speechSynthesis.addEventListener("voiceschanged", load);
+		return () => window.speechSynthesis.removeEventListener("voiceschanged", load);
+	}, []);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("details", {
+		className: "narrator-settings",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("summary", { children: [voiceStyles[profile].label, " · voice options"] }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: ["Choose a narrator", /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
+				value: choice,
+				onChange: (e) => {
+					setChoice(e.target.value);
+					onChange(e.target.value);
+				},
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+					value: "",
+					children: "Automatic · prefer natural voices"
+				}), voices.map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("option", {
+					value: v.voiceURI,
+					children: [
+						v.name,
+						" · ",
+						v.lang
+					]
+				}, v.voiceURI))]
+			})] }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "small-note",
+				children: "For a smoother voice, choose one labelled Enhanced, Premium, Natural or Neural if available. Voices come from your device; your choice applies to the next passage."
+			})
+		]
+	});
+}
+//#endregion
+//#region package/source/app/story-page-pictures.ts
+var storyPictures = [
+	[
+		{
+			"image": "./story-pages/story-01-begin.webp",
+			"alt": "Sue and Dad look toward lighthouse beam at dusk by sea"
+		},
+		{
+			"image": "./story-pages/story-01-middle.webp",
+			"alt": "Sue holds mast as Dad helps disappointed Rae repair toy sailboat at shallow rock pool"
+		},
+		{
+			"image": "./story-pages/story-01-end.webp",
+			"alt": "Sisters place repaired boat upright in rock pool while parents baby and leashed Mateo watch"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-02-begin.webp",
+			"alt": "Rae frowns at rushed bird drawing as Sue sits beside her"
+		},
+		{
+			"image": "./story-pages/story-02-middle.webp",
+			"alt": "Family listens quietly near window with bird outside, Dad's cup and Mateo"
+		},
+		{
+			"image": "./story-pages/story-02-end.webp",
+			"alt": "Dad pins Rae's improved bird drawing on fridge while sisters smile"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-03-begin.webp",
+			"alt": "Sue and Rae plant bean and Dad tests pot soil with finger"
+		},
+		{
+			"image": "./story-pages/story-03-middle.webp",
+			"alt": "Girls study new green shoot and their picture chart by sunny window"
+		},
+		{
+			"image": "./story-pages/story-03-end.webp",
+			"alt": "Dad helps Sue read book beside bean plant with two leaves and family"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-04-begin.webp",
+			"alt": "Mom helps Sue measure flour and Rae add water to dough bowl"
+		},
+		{
+			"image": "./story-pages/story-04-middle.webp",
+			"alt": "Girls knead sticky dough at table with Mom supervising Dad holding Mye"
+		},
+		{
+			"image": "./story-pages/story-04-end.webp",
+			"alt": "Sue shares cooled crooked loaf slice with Rae in warm kitchen"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-05-begin.webp",
+			"alt": "Sue and Rae choose library picture books with parents, no dog at library"
+		},
+		{
+			"image": "./story-pages/story-05-middle.webp",
+			"alt": "Dad helps Sue sound out picture book while Mom points to illustration"
+		},
+		{
+			"image": "./story-pages/story-05-end.webp",
+			"alt": "Sisters read borrowed books at home with Mateo curled beside them"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-06-begin.webp",
+			"alt": "Girls discover shell with small creature at beach with family away from waves"
+		},
+		{
+			"image": "./story-pages/story-06-middle.webp",
+			"alt": "Dad helps Rae gently replace occupied shell while Sue draws notebook"
+		},
+		{
+			"image": "./story-pages/story-06-end.webp",
+			"alt": "Rae and Sue walk home showing shell drawings, Mateo leashed"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-07-begin.webp",
+			"alt": "Girls look disappointed at rain window and raincoats"
+		},
+		{
+			"image": "./story-pages/story-07-middle.webp",
+			"alt": "Family gathers red bracelet blue book yellow tea towel on table"
+		},
+		{
+			"image": "./story-pages/story-07-end.webp",
+			"alt": "Girls smile at rainbow arrangement of household items and golden Mateo"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-08-begin.webp",
+			"alt": "Rae struggles with wrong shoe at front door Sue ready beside her"
+		},
+		{
+			"image": "./story-pages/story-08-middle.webp",
+			"alt": "Sue arranges shoes as Rae opens straps and puts on own shoes"
+		},
+		{
+			"image": "./story-pages/story-08-end.webp",
+			"alt": "Rae walks proudly beside Sue outdoors with family and leashed Mateo"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-09-begin.webp",
+			"alt": "Paper kite drops onto open grassy field family observes"
+		},
+		{
+			"image": "./story-pages/story-09-middle.webp",
+			"alt": "Mom helps add cloth tail to grounded kite"
+		},
+		{
+			"image": "./story-pages/story-09-end.webp",
+			"alt": "Sue flies kite with cloth tail steadily high as Rae cheers"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-10-begin.webp",
+			"alt": "Girls paint large smooth stones at garden table with parents"
+		},
+		{
+			"image": "./story-pages/story-10-middle.webp",
+			"alt": "Sue yellow Rae pink Dad blue stones drying beside plant"
+		},
+		{
+			"image": "./story-pages/story-10-end.webp",
+			"alt": "Rae points at yellow stone reassuring Sue with broken crayon, family warmth"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-11-begin.webp",
+			"alt": "Sisters disagree whether cardboard box is moon ship or bakery"
+		},
+		{
+			"image": "./story-pages/story-11-middle.webp",
+			"alt": "Girls decorate box control panel and paper pretend buns"
+		},
+		{
+			"image": "./story-pages/story-11-end.webp",
+			"alt": "Girls play combined moon bakery Mom with baby customer Mateo resting outside box"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-12-begin.webp",
+			"alt": "Sue bounces bright ball Rae reaches for turn on lawn"
+		},
+		{
+			"image": "./story-pages/story-12-middle.webp",
+			"alt": "Dad counts on fingers Rae retrieves dropped ball Sue patiently waits"
+		},
+		{
+			"image": "./story-pages/story-12-end.webp",
+			"alt": "Girls happily roll ball between them family on picnic blanket"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-13-begin.webp",
+			"alt": "Family eats picnic on clean lawn blanket"
+		},
+		{
+			"image": "./story-pages/story-13-middle.webp",
+			"alt": "Girls gather own food wrappers into bag Dad supervises"
+		},
+		{
+			"image": "./story-pages/story-13-end.webp",
+			"alt": "Girls play on clean grass looking back at tidy picnic spot"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-14-begin.webp",
+			"alt": "Sue and Rae draw red apple blue puddle on thick paper for Mye"
+		},
+		{
+			"image": "./story-pages/story-14-middle.webp",
+			"alt": "Dad securely binds crayon pages Mom holds Mye"
+		},
+		{
+			"image": "./story-pages/story-14-end.webp",
+			"alt": "Mom shows homemade colour book golden dog page to Mye sisters smile"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-15-begin.webp",
+			"alt": "Dad Sue Rae walk garden path beginning to count steps"
+		},
+		{
+			"image": "./story-pages/story-15-middle.webp",
+			"alt": "Girls count slowly together Dad pointing to flower pot"
+		},
+		{
+			"image": "./story-pages/story-15-end.webp",
+			"alt": "Girls compare Dad long stride their short steps at pot Mom baby Mateo"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-16-begin.webp",
+			"alt": "Family sees neighbour struggling with heavy garden bag"
+		},
+		{
+			"image": "./story-pages/story-16-middle.webp",
+			"alt": "Dad carries heavy bag sisters carry light watering can to gate"
+		},
+		{
+			"image": "./story-pages/story-16-end.webp",
+			"alt": "Neighbour thanks family girls smile at small kind job"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-17-begin.webp",
+			"alt": "Rae asks another game as Sue brings bedtime book"
+		},
+		{
+			"image": "./story-pages/story-17-middle.webp",
+			"alt": "Family shares bedtime story and memories Mom cuddles Mye"
+		},
+		{
+			"image": "./story-pages/story-17-end.webp",
+			"alt": "Dad tucks girls in cosy beds Mateo sleeps on dog bed"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-18-begin.webp",
+			"alt": "Busy morning girls seek school bag and bracelet"
+		},
+		{
+			"image": "./story-pages/story-18-middle.webp",
+			"alt": "Girls draw picture-only morning plan at table Dad includes dog bowl"
+		},
+		{
+			"image": "./story-pages/story-18-end.webp",
+			"alt": "Girls prepared school bag shoes by door enjoy goodbye cuddle"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-19-begin.webp",
+			"alt": "Family watches bee on flower at safe little distance"
+		},
+		{
+			"image": "./story-pages/story-19-middle.webp",
+			"alt": "Sue notices pollen legs Rae whispers Dad keeps Mateo close"
+		},
+		{
+			"image": "./story-pages/story-19-end.webp",
+			"alt": "Girls draw bee and flower in notebook at home"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-20-begin.webp",
+			"alt": "Mom helps girls shape biscuit dough Sue precise Rae crooked"
+		},
+		{
+			"image": "./story-pages/story-20-middle.webp",
+			"alt": "Girls stand safely back Dad handles tray at oven"
+		},
+		{
+			"image": "./story-pages/story-20-end.webp",
+			"alt": "Girls admire cooled circle and crooked oval biscuits and share with adults"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-21-begin.webp",
+			"alt": "Girls plan Mom birthday surprise Dad holds Mye"
+		},
+		{
+			"image": "./story-pages/story-21-middle.webp",
+			"alt": "Dad helps girls make loaf and homemade picture-only card"
+		},
+		{
+			"image": "./story-pages/story-21-end.webp",
+			"alt": "Mom delights at card and small loaf on simple birthday table"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-22-begin.webp",
+			"alt": "Family checks sunny view before walk and Dad weather phone"
+		},
+		{
+			"image": "./story-pages/story-22-middle.webp",
+			"alt": "Dad helps Sue put warm layer Rae chooses closed shoes"
+		},
+		{
+			"image": "./story-pages/story-22-end.webp",
+			"alt": "Family enjoys cool sunny walk jackets baby warm face clear Mateo leashed"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-23-begin.webp",
+			"alt": "Mom greets Sue Dad welcomes Rae at home"
+		},
+		{
+			"image": "./story-pages/story-23-middle.webp",
+			"alt": "Sisters practise greetings taking turns kindly parents listening"
+		},
+		{
+			"image": "./story-pages/story-23-end.webp",
+			"alt": "Family displays picture-only welcome sign by door Mateo cheerful"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-24-begin.webp",
+			"alt": "Sue cross after school Rae excited Dad listens"
+		},
+		{
+			"image": "./story-pages/story-24-middle.webp",
+			"alt": "Girls draw dark cloud and yellow cloud using crayons"
+		},
+		{
+			"image": "./story-pages/story-24-end.webp",
+			"alt": "Sue's cloud gains blue patch Dad gives quiet comforting cuddle"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-25-begin.webp",
+			"alt": "Girls sort puzzle pieces on table Mom holds baby away"
+		},
+		{
+			"image": "./story-pages/story-25-middle.webp",
+			"alt": "Mom points at corner piece beside box girls connect edge row"
+		},
+		{
+			"image": "./story-pages/story-25-end.webp",
+			"alt": "Family leaves unfinished puzzle safely covered for restful break"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-26-begin.webp",
+			"alt": "Rae searches mitten Sue checks sofa family waits at door"
+		},
+		{
+			"image": "./story-pages/story-26-middle.webp",
+			"alt": "Sue finds mitten beneath coat hooks beside shoe"
+		},
+		{
+			"image": "./story-pages/story-26-end.webp",
+			"alt": "Rae puts mittens in reachable basket after walk"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-27-begin.webp",
+			"alt": "Girls quietly watch small bird on fence through window"
+		},
+		{
+			"image": "./story-pages/story-27-middle.webp",
+			"alt": "Dad shows bird guide sisters observe bird feet and head"
+		},
+		{
+			"image": "./story-pages/story-27-end.webp",
+			"alt": "Sue writes notebook Rae draws tiny bird feet after patient observation"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-28-begin.webp",
+			"alt": "Dad places saving jar on high shelf girls use paper coins at table"
+		},
+		{
+			"image": "./story-pages/story-28-middle.webp",
+			"alt": "Girls draw toy and sparkly bag savings goals on paper"
+		},
+		{
+			"image": "./story-pages/story-28-end.webp",
+			"alt": "Rae proudly decorates existing bag ribbon Mom helps Dad deposits real coins safely high"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-29-begin.webp",
+			"alt": "Girls notice Dad tired before busy work morning"
+		},
+		{
+			"image": "./story-pages/story-29-middle.webp",
+			"alt": "Dad at lunch looks fondly at folded note with golden dog drawing beside lunchbox"
+		},
+		{
+			"image": "./story-pages/story-29-end.webp",
+			"alt": "Dad thanks girls at home Mateo leans knee Mom holds smiling baby"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-30-begin.webp",
+			"alt": "Sue points bright light above garden as dusk falls"
+		},
+		{
+			"image": "./story-pages/story-30-middle.webp",
+			"alt": "Dad and girls look up sky light using guide phone Mom baby nearby"
+		},
+		{
+			"image": "./story-pages/story-30-end.webp",
+			"alt": "Family admires purple orange horizon from safe garden"
+		}
+	]
+];
+var storyPageMaps = [
+	[
+		0,
+		1,
+		1,
+		1,
+		2,
+		0
+	],
+	[
+		0,
+		1,
+		1,
+		-1,
+		2,
+		1
+	],
+	[
+		0,
+		0,
+		1,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		0,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		0,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		-1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	]
+];
+storyPictures.push(...newFamilyPictures);
+storyPageMaps.push(...newFamilyPictures.map(() => [
+	0,
+	1,
+	1,
+	2
+]));
+//#endregion
+//#region package/source/app/story-illustration.ts
+function storyIllustration(index, page) {
+	const story = stories[index];
+	const panel = storyPageMaps[index][page - 1];
+	if (page === 0 || panel === -1) return {
+		image: story.image,
+		alt: story.imageAlt
+	};
+	return storyPictures[index][panel ?? 2];
+}
+//#endregion
+//#region package/source/app/story-reader.tsx
+function StoryReader({ index, onBack }) {
+	const story = stories[index], speech = useSpeech("teacher", "Med");
+	const [page, setPage] = (0, import_react.useState)(0), [direction, setDirection] = (0, import_react.useState)("forward"), [word, setWord] = (0, import_react.useState)(null), [scope, setScope] = (0, import_react.useState)("page");
+	const touch = (0, import_react.useRef)(null);
+	const last = story.paragraphs.length + 1, busy = speech.state.status === "reading" || speech.state.status === "paused";
+	const picture = storyIllustration(index, page);
+	(0, import_react.useEffect)(() => {
+		if (scope !== "all") return;
+		if (speech.state.status === "reading" && speech.state.segment >= 0) {
+			setDirection("forward");
+			setPage(speech.state.segment);
+		} else if (speech.state.status === "done") {
+			setDirection("forward");
+			setPage(last);
+		}
+	}, [
+		scope,
+		speech.state.segment,
+		speech.state.status,
+		last
+	]);
+	(0, import_react.useEffect)(() => {
+		const images = new Set(story.paragraphs.map((_, i) => storyIllustration(index, i + 1).image));
+		for (const src of images) {
+			const preload = new Image();
+			preload.src = src;
+		}
+	}, [index]);
+	function turn(next) {
+		if (next < 0 || next > last) return;
+		speech.stop();
+		setWord(null);
+		setScope("page");
+		setDirection(next < page ? "backward" : "forward");
+		setPage(next);
+	}
+	function text(value, segment) {
+		return readingTokens(value).map((t, i) => t.word ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			type: "button",
+			className: "readable-word" + (scope === "word" && word === t.text && busy || scope !== "word" && speech.state.segment === segment && speech.state.char >= t.start && speech.state.char < t.start + t.text.length && busy ? " speaking" : ""),
+			disabled: !speech.supported,
+			onClick: () => {
+				setScope("word");
+				setWord(t.text);
+				speech.read([t.text]);
+			},
+			"aria-label": "Read word: " + t.text,
+			children: t.text
+		}, i) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: t.text }, i));
+	}
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+		className: "story story-book-reader",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: "secondary",
+				onClick: () => {
+					speech.stop();
+					onBack();
+				},
+				children: "Back to all stories"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+				className: "eyebrow",
+				children: [
+					story.level,
+					" · ",
+					story.theme
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: story.title }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhotoShare, {
+				label: "Share story",
+				post: {
+					title: story.title,
+					text: story.paragraphs.join("\n\n"),
+					credit: "The James NZ · original family story",
+					background: story.image,
+					filename: "the-james-nz-story-" + (index + 1)
+				}
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "story-audio",
+				"aria-label": "Read-aloud controls",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 21 }), "Read with me"] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Touch a word to hear it. Turn pages with the buttons, left/right keys, or a swipe." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+						className: "audio-speed-label",
+						children: ["Reading pace", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", {
+							value: speech.speed,
+							onChange: (e) => speech.changeSpeed(e.target.value),
+							children: Object.keys(readingSpeeds).map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: v }, v))
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(VoicePicker, {
+						profile: "teacher",
+						onChange: speech.setVoice
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "timer-actions",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								className: "primary",
+								disabled: !speech.supported,
+								onClick: () => {
+									setWord(null);
+									setScope("all");
+									setPage(0);
+									speech.read([story.title, ...story.paragraphs]);
+								},
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }), "Read entire book"]
+							}),
+							page < last && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								className: "secondary",
+								disabled: !speech.supported,
+								onClick: () => {
+									setWord(null);
+									setScope("page");
+									speech.read([page === 0 ? story.title : story.paragraphs[page - 1]]);
+								},
+								children: "Read this page"
+							}),
+							busy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								className: "secondary",
+								onClick: () => speech.state.status === "paused" ? speech.resume() : speech.pause(),
+								children: [
+									speech.state.status === "paused" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 16 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { size: 16 }),
+									" ",
+									speech.state.status === "paused" ? "Resume" : "Pause"
+								]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								className: "secondary",
+								onClick: speech.stop,
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 16 }), "Stop"]
+							})] })
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						role: "status",
+						className: "small-note",
+						children: speech.supported === false ? "Audio is unavailable here. You can still read and turn every page." : speech.state.message
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "small-note",
+						children: "A friendly narrator starts at a natural, lively pace. Choose Very slow for extra time with each word. Enhanced voices are preferred when available; voices and highlighting vary by device. Changing pace restarts the current paragraph; turning a page stops audio."
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+				className: "storybook",
+				"aria-label": story.title + " book",
+				tabIndex: 0,
+				onKeyDown: (e) => {
+					if (e.key === "ArrowRight") {
+						e.preventDefault();
+						turn(page + 1);
+					}
+					if (e.key === "ArrowLeft") {
+						e.preventDefault();
+						turn(page - 1);
+					}
+				},
+				onTouchStart: (e) => {
+					touch.current = {
+						x: e.touches[0].clientX,
+						y: e.touches[0].clientY
+					};
+				},
+				onTouchEnd: (e) => {
+					if (!touch.current) return;
+					const dx = e.changedTouches[0].clientX - touch.current.x, dy = e.changedTouches[0].clientY - touch.current.y;
+					touch.current = null;
+					if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.5) turn(page + (dx < 0 ? 1 : -1));
+				},
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "book-leaf " + direction + (page === last ? " quiz-leaf" : ""),
+					children: page === last ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "book-quiz-page",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(StoryQuiz, { index }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "story-questions",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Let’s talk about it" }),
+								story.ask.map((q) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: q }, q)),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Words to discover" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: story.words })
+							]
+						})]
+					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
+						className: "book-picture",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: picture.image,
+							alt: picture.alt
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: picture.alt })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "book-text interactive-story-text",
+						children: page === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "eyebrow",
+								children: "OPEN A LITTLE ADVENTURE"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "interactive-story-title",
+								children: text(story.title, 0)
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "With Dad, Mom, Sue, Rae, Mye and Mateo." }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Turn the page to begin." })
+						] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+							className: "pill",
+							children: ["PAGE ", page]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: text(story.paragraphs[page - 1], scope === "all" ? page : 0) })] })
+					})] })
+				}, page)
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
+				className: "book-pagination",
+				"aria-label": "Book pages",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "secondary",
+						disabled: page === 0,
+						onClick: () => turn(page - 1),
+						children: "Previous page"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						role: "status",
+						children: page === 0 ? "Cover" : page === last ? "Story quiz" : `Page ${page} of ${story.paragraphs.length}`
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "primary",
+						disabled: page === last,
+						onClick: () => turn(page + 1),
+						children: page === 0 ? "Open book" : page === last - 1 ? "Go to quiz" : "Next page"
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "small-note",
+				children: "The James NZ · original story"
+			})
+		]
+	});
+}
+function StoryQuiz({ index }) {
+	const questions = storyQuizzes[index];
+	const [answers, setAnswers] = (0, import_react.useState)({}), [checked, setChecked] = (0, import_react.useState)(false);
+	const score = questions.reduce((n, q, i) => n + (answers[i] === q.answer ? 1 : 0), 0);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		className: "story-quiz",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "eyebrow",
+				children: "A LITTLE DISCOVERY"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Story quiz" }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Three easy questions. Take your time, and look back at the story whenever you like." }),
+			questions.map((q, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("fieldset", { children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("legend", { children: [
+					i + 1,
+					". ",
+					q.q
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "answers",
+					children: q.options.map((value, j) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						type: "button",
+						disabled: checked,
+						"aria-pressed": answers[i] === j,
+						className: checked ? j === q.answer ? "correct" : answers[i] === j ? "incorrect" : "" : answers[i] === j ? "selected" : "",
+						onClick: () => setAnswers((v) => ({
+							...v,
+							[i]: j
+						})),
+						children: value
+					}, value))
+				}),
+				checked && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+					className: "quiz-explanation",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: answers[i] === q.answer ? "That’s right!" : "A little clue for next time:" }),
+						" ",
+						q.why
+					]
+				})
+			] }, q.q)),
+			checked ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+				role: "status",
+				children: [
+					"You got ",
+					score,
+					" of ",
+					questions.length,
+					" right. ",
+					score === questions.length ? "Lovely reading!" : "Every answer helps you learn. You can read again and have another go."
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: "secondary",
+				onClick: () => {
+					setAnswers({});
+					setChecked(false);
+				},
+				children: "Try quiz again"
+			})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: "primary",
+				disabled: Object.keys(answers).length !== questions.length,
+				onClick: () => setChecked(true),
+				children: "Check my answers"
+			})
+		]
+	});
+}
+//#endregion
+//#region package/source/app/content-backgrounds.ts
+function recipeCuisine(r) {
+	return "cuisine" in r && typeof r.cuisine === "string" ? r.cuisine : "Everyday";
+}
+function recipePhoto(r) {
+	if ("photo" in r && typeof r.photo === "string") return r.photo;
+	const name = r.name.toLowerCase();
+	return recipePhotos[/pancake|fritter/.test(name) ? "pancakes" : /fish|salmon/.test(name) ? "fish" : /chicken|turkey|beef/.test(name) ? "chicken" : /salad|slaw|quinoa|wrap/.test(name) ? "salad" : /soup|minestrone/.test(name) ? "soup" : /rice|polenta|porridge/.test(name) ? "rice" : /pasta|bolognese/.test(name) ? "noodles" : /egg|frittata|omelette/.test(name) ? "eggs" : /toast|pizza|bread|rice cakes/.test(name) ? "bread" : /yoghurt|chia|dessert/.test(name) ? "yoghurt" : /apple|banana|fruit/.test(name) ? "fruit" : /lentil|bean|chickpea|hummus|dip|curry|chilli/.test(name) ? "lentils" : "vegetables"];
+}
+var recipePhotos = {
+	rice: "./recipe-photos/rice.webp",
+	chicken: "./recipe-photos/chicken.webp",
+	lentils: "./recipe-photos/lentils.webp",
+	soup: "./recipe-photos/soup.webp",
+	bread: "./recipe-photos/bread.webp",
+	eggs: "./recipe-photos/eggs.webp",
+	noodles: "./recipe-photos/noodles.webp",
+	fruit: "./recipe-photos/fruit.webp",
+	yoghurt: "./recipe-photos/yoghurt.webp",
+	vegetables: "./recipe-photos/vegetables.webp",
+	fish: "./recipe-photos/fish.webp",
+	salad: "./recipe-photos/salad.webp",
+	pancakes: "./recipe-photos/pancakes.webp"
+};
+var workoutPhotos = {
+	"Easy-Home": "./workout-photos/easy-home.webp",
+	"Med-Home": "./workout-photos/med-home.webp",
+	"Intense-Home": "./workout-photos/intense-home.webp",
+	"Easy-Outdoor": "./workout-photos/easy-outdoor.webp",
+	"Med-Outdoor": "./workout-photos/med-outdoor.webp",
+	"Intense-Outdoor": "./workout-photos/intense-outdoor.webp"
+};
+var mindfulnessScenes = {
+	leaves: {
+		poster: "./mindfulness-scenes/stream.webp",
+		video: "./mindfulness-scenes/stream.mp4",
+		alt: "Leaves beside a quiet stream"
+	},
+	grounding: {
+		poster: "./mindfulness-scenes/garden.webp",
+		video: "./mindfulness-scenes/garden.mp4",
+		alt: "A quiet leafy garden"
+	},
+	thought: {
+		poster: "./mindfulness-scenes/sky.webp",
+		video: "./mindfulness-scenes/sky.mp4",
+		alt: "Soft clouds in an open sky"
+	},
+	feelings: {
+		poster: "./mindfulness-scenes/sky.webp",
+		video: "./mindfulness-scenes/sky.mp4",
+		alt: "Soft clouds in an open sky"
+	},
+	kindness: {
+		poster: "./mindfulness-scenes/garden.webp",
+		video: "./mindfulness-scenes/garden.mp4",
+		alt: "A quiet leafy garden"
+	}
+};
+//#endregion
+//#region package/source/app/mindfulness-scene.tsx
+function MindfulnessScene({ id, title, summary }) {
+	const scene = mindfulnessScenes[id], ref = (0, import_react.useRef)(null), [moving, setMoving] = (0, import_react.useState)(false), [failed, setFailed] = (0, import_react.useState)(false), [ready, setReady] = (0, import_react.useState)(false);
+	(0, import_react.useEffect)(() => {
+		const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+		setMoving(!query.matches);
+		const change = () => {
+			if (query.matches) setMoving(false);
+		};
+		query.addEventListener("change", change);
+		return () => query.removeEventListener("change", change);
+	}, []);
+	(0, import_react.useEffect)(() => {
+		setFailed(false);
+		setReady(false);
+	}, [scene.video]);
+	(0, import_react.useEffect)(() => {
+		const video = ref.current;
+		if (!video) return;
+		if (moving && !failed) video.play().catch(() => setMoving(false));
+		else video.pause();
+	}, [
+		moving,
+		failed,
+		id
+	]);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "mindfulness-scene",
+		style: { backgroundImage: `url("${scene.poster}")` },
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("video", {
+			ref,
+			src: scene.video,
+			poster: scene.poster,
+			muted: true,
+			loop: true,
+			playsInline: true,
+			preload: "metadata",
+			"aria-hidden": "true",
+			className: ready && !failed ? "ready" : "",
+			onCanPlay: () => setReady(true),
+			onError: () => {
+				setFailed(true);
+				setMoving(false);
+			}
+		}, scene.video), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "mindfulness-scene-copy",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: title }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: summary })]
+		})]
+	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "scene-control",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			className: "secondary",
+			"aria-pressed": moving,
+			disabled: failed,
+			onClick: () => setMoving((v) => !v),
+			children: moving ? "Pause background" : "Play background"
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: failed ? "Still picture shown; the video could not play." : "Gentle moving photo video loop · silent" })]
+	})] });
+}
+//#endregion
+//#region package/source/components/ui/progress.tsx
+function Progress({ className, value, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root$1, {
+		"data-slot": "progress",
+		value,
+		className: cn$1("relative h-2 w-full overflow-hidden rounded-full bg-primary/20", className),
+		...props,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Indicator, {
+			"data-slot": "progress-indicator",
+			className: "h-full w-full flex-1 bg-primary transition-all",
+			style: { transform: `translateX(-${100 - (value ?? 0)}%)` }
+		})
+	});
+}
+//#endregion
+//#region package/source/app/mindfulness.tsx
+var who = "https://tdr.who.int/home/our-work/global-engagement/9789240003927";
+var mindfulnessExercises = [
+	{
+		id: "leaves",
+		title: "Leaves on a Stream",
+		kind: "COGNITIVE DEFUSION",
+		icon: Leaf,
+		summary: "Notice thoughts without needing to chase or remove them.",
+		source: "US Department of Veterans Affairs · exercise guide",
+		url: "https://www.ptsd.va.gov/gethelp/captions/Track03_LeavesOnTheStream.pdf",
+		steps: [
+			"Sit somewhere comfortable and safe. Keep your eyes open if you prefer. Imagine a gentle stream; you do not need to visit real water.",
+			"Notice a thought. Imagine placing its words or picture on a leaf floating along the stream. Pleasant and difficult thoughts can both have leaves.",
+			"Let the leaf move at its own pace. You do not have to force the thought away or make the stream flow faster.",
+			"If you get caught in a thought, gently notice that. Return to watching. A thought about doing this wrong can have a leaf too.",
+			"Come back to the room. Notice your feet and one nearby sound. Choose a small, kind next step."
+		]
+	},
+	{
+		id: "grounding",
+		title: "Feet on the floor",
+		kind: "MINDFULNESS",
+		icon: Footprints,
+		summary: "Bring attention gently back to the room.",
+		source: "WHO · grounding guidance",
+		url: who,
+		steps: [
+			"Notice your feet touching the floor and your body’s support.",
+			"Breathe naturally. Look around and name three things you see.",
+			"Notice two sounds and one comfortable point of contact.",
+			"Choose one small task, bringing your attention back gently."
+		]
+	},
+	{
+		id: "thought",
+		title: "I notice the thought…",
+		kind: "COGNITIVE DEFUSION",
+		icon: MessageCircle,
+		summary: "Practise hearing a thought as a thought.",
+		source: "WHO · noticing, naming and unhooking",
+		url: who,
+		steps: [
+			"Choose an ordinary thought, such as “I might make a mistake.”",
+			"Say: “I notice I am having the thought that…”",
+			"Notice the wording. You need not debate or obey the thought.",
+			"Return attention to your surroundings and a useful next action."
+		]
+	},
+	{
+		id: "feelings",
+		title: "Name it, make room",
+		kind: "MINDFULNESS",
+		icon: Sun,
+		summary: "Notice a feeling without rushing to change it.",
+		source: "WHO · making room guidance",
+		url: who,
+		steps: [
+			"Gently name a feeling: worry, excitement, frustration, or something else.",
+			"Notice where it feels present, without forcing yourself to examine it.",
+			"Let your breathing be ordinary. Allow some room around the feeling.",
+			"Look around again. Choose a caring action while the feeling is here."
+		]
+	},
+	{
+		id: "kindness",
+		title: "A kind next step",
+		kind: "MINDFULNESS",
+		icon: Heart,
+		summary: "Respond to a busy mind with kindness.",
+		source: "WHO · kindness and values guidance",
+		url: who,
+		steps: [
+			"Notice whether your mind is speaking harshly to you.",
+			"Try one kind sentence you would offer a friend.",
+			"Choose a small action that matters: listen, rest, or ask for help.",
+			"You can act kindly without waiting for every thought to change."
+		]
+	}
+];
+function MindfulnessExercises() {
+	const [selected, setSelected] = (0, import_react.useState)("leaves"), [step, setStep] = (0, import_react.useState)(0), [started, setStarted] = (0, import_react.useState)(false), [done, setDone] = (0, import_react.useState)(false);
+	const speech = useSpeech("motherly", "Slow");
+	const exercise = mindfulnessExercises.find((e) => e.id === selected);
+	const audioBusy = speech.state.status === "reading" || speech.state.status === "paused";
+	(0, import_react.useEffect)(() => {
+		if (speech.state.status === "reading" && speech.state.segment > 0) {
+			setStarted(true);
+			setDone(false);
+			setStep(Math.min(speech.state.segment - 1, exercise.steps.length - 1));
+		}
+	}, [
+		speech.state.segment,
+		speech.state.status,
+		exercise.steps.length
+	]);
+	function reset() {
+		speech.stop();
+		setStep(0);
+		setStarted(false);
+		setDone(false);
+	}
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		className: "mindfulness-panel",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "section-row",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "eyebrow",
+					children: "PAUSE WITH KINDNESS"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Mindfulness & noticing thoughts" })] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Leaf, { size: 32 })]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Cognitive defusion means noticing thoughts as thoughts. These short, original guided adaptations invite observation, rather than trying to make thoughts disappear." }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "mindfulness-choices",
+				children: mindfulnessExercises.map((e) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+					"aria-pressed": selected === e.id,
+					className: "mindfulness-choice" + (selected === e.id ? " selected" : ""),
+					style: { backgroundImage: `linear-gradient(#081318c7,#081318c7),url("${mindfulnessScenes[e.id].poster}")` },
+					onClick: () => {
+						setSelected(e.id);
+						reset();
+					},
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(e.icon, { size: 21 }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: e.title }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: e.kind === "COGNITIVE DEFUSION" ? "Noticing thoughts" : "Mindful attention" })] })]
+				}, e.id))
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+				className: "mindfulness-guide",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "eyebrow",
+						children: exercise.kind
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MindfulnessScene, {
+						id: exercise.id,
+						title: exercise.title,
+						summary: exercise.summary
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+						className: "story-audio mindfulness-audio",
+						"aria-label": "Mindfulness audio",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 20 }), "Listen to the guide"] }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "filters",
+								"aria-label": "Mindfulness reading speed",
+								children: Object.keys(readingSpeeds).map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									className: speech.speed === v ? "selected" : "",
+									"aria-pressed": speech.speed === v,
+									onClick: () => speech.changeSpeed(v),
+									children: v
+								}, v))
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(VoicePicker, {
+								profile: "motherly",
+								onChange: speech.setVoice
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "timer-actions",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										className: "primary",
+										disabled: !speech.supported,
+										onClick: () => {
+											setStarted(true);
+											setDone(false);
+											speech.read([exercise.title, ...exercise.steps]);
+										},
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }), "Read entire exercise"]
+									}),
+									audioBusy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										className: "secondary",
+										onClick: () => speech.state.status === "paused" ? speech.resume() : speech.pause(),
+										children: [
+											speech.state.status === "paused" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { size: 17 }),
+											" ",
+											speech.state.status === "paused" ? "Resume" : "Pause"
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										className: "secondary",
+										disabled: !audioBusy,
+										onClick: speech.stop,
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 16 }), "Stop audio"]
+									})
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "small-note",
+								role: "status",
+								children: speech.supported === false ? "Audio is unavailable in this browser. Follow the written steps below." : speech.state.message
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "small-note",
+								children: "Pause whenever you need more time. Changing speed restarts the current step. A warm, motherly narrator starts at a gently slowed pace, with its natural pitch. Enhanced voices are preferred when available."
+							})
+						]
+					}),
+					!started && !done ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Follow one step at a time. Stay with each step as long as you like." }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "primary",
+						onClick: () => setStarted(true),
+						children: "Begin exercise"
+					})] }) : done ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						role: "status",
+						children: "You made a little space to notice. There is no perfect score here."
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "secondary",
+						onClick: reset,
+						children: "Start again"
+					})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+							className: "pill",
+							children: [
+								"STEP ",
+								step + 1,
+								" OF ",
+								exercise.steps.length
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Progress, {
+							value: (step + 1) / exercise.steps.length * 100,
+							"aria-label": "Exercise progress"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mindfulness-instruction",
+							"aria-live": "polite",
+							children: exercise.steps[step]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "timer-actions",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									className: "secondary",
+									disabled: step === 0,
+									onClick: () => {
+										speech.stop();
+										setStep((v) => v - 1);
+									},
+									children: "Previous step"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									className: "primary",
+									onClick: () => {
+										speech.stop();
+										step === exercise.steps.length - 1 ? setDone(true) : setStep((v) => v + 1);
+									},
+									children: step === exercise.steps.length - 1 ? "Finish exercise" : "Next step"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									className: "secondary",
+									onClick: reset,
+									children: "Stop exercise"
+								})
+							]
+						})
+					] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						className: "exercise-source",
+						href: exercise.url,
+						target: "_blank",
+						rel: "noopener noreferrer",
+						children: exercise.source
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "small-note",
+				children: "Children can practise with a trusted grown-up. Keep your eyes open, skip a step or stop if it feels uncomfortable. These are general wellbeing practices, not treatment; seek support from someone you trust or a health professional if you need it."
+			})
+		]
+	});
+}
+//#endregion
+//#region package/source/app/coffee-post.ts
+var coffeeBackgrounds = [
+	"./coffee-posts/coffee-01.webp",
+	"./coffee-posts/coffee-02.webp",
+	"./coffee-posts/coffee-03.webp"
+];
+function coffeeBackground(index) {
+	return coffeeBackgrounds[index % coffeeBackgrounds.length];
+}
+//#endregion
+//#region package/source/app/photo-card.tsx
 function PhotoCard({ text, title, credit, background, filename, kind = "reflection" }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "photo-card-content " + kind,
@@ -25130,7 +26829,7 @@ function PhotoCard({ text, title, credit, background, filename, kind = "reflecti
 	});
 }
 //#endregion
-//#region app/coffee-quote-card.tsx
+//#region package/source/app/coffee-quote-card.tsx
 function CoffeeQuoteCard({ quote, index }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", {
 		className: "coffee-post-card",
@@ -25144,7 +26843,7 @@ function CoffeeQuoteCard({ quote, index }) {
 	});
 }
 //#endregion
-//#region app/coffee-content.ts
+//#region package/source/app/coffee-content.ts
 var coffeeFacts = [
 	{
 		title: "A bean that is really a seed",
@@ -25381,7 +27080,7 @@ coffeeQuotes.push(...[
 	"Let the last sip be a reminder to pass kindness on."
 ]);
 //#endregion
-//#region app/coffee-corner.tsx
+//#region package/source/app/coffee-corner.tsx
 function CoffeeCorner() {
 	const [view, setView] = (0, import_react.useState)("Did you know?"), [fact, setFact] = (0, import_react.useState)(0), [quote, setQuote] = (0, import_react.useState)(0), [search, setSearch] = (0, import_react.useState)(""), [page, setPage] = (0, import_react.useState)(0);
 	const filteredFacts = coffeeFacts.filter((f) => (f.title + " " + f.text).toLowerCase().includes(search.toLowerCase())), filteredQuotes = coffeeQuotes.filter((q) => q.toLowerCase().includes(search.toLowerCase()));
@@ -25546,47 +27245,570 @@ function CoffeeCorner() {
 	});
 }
 //#endregion
-//#region components/ui/tabs.tsx
-function Tabs({ className, orientation = "horizontal", ...props }) {
+//#region package/source/components/ui/dropdown-menu.tsx
+function DropdownMenu({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root2, {
-		"data-slot": "tabs",
-		"data-orientation": orientation,
-		orientation,
-		className: cn$1("group/tabs flex gap-2 data-[orientation=horizontal]:flex-col", className),
+		"data-slot": "dropdown-menu",
 		...props
 	});
 }
-var tabsListVariants = cva("group/tabs-list inline-flex w-fit items-center justify-center rounded-lg p-[3px] text-muted-foreground group-data-[orientation=horizontal]/tabs:h-9 group-data-[orientation=vertical]/tabs:h-fit group-data-[orientation=vertical]/tabs:flex-col data-[variant=line]:rounded-none", {
-	variants: { variant: {
-		default: "bg-muted",
-		line: "gap-1 bg-transparent"
-	} },
-	defaultVariants: { variant: "default" }
-});
-function TabsList({ className, variant = "default", ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(List, {
-		"data-slot": "tabs-list",
-		"data-variant": variant,
-		className: cn$1(tabsListVariants({ variant }), className),
-		...props
-	});
-}
-function TabsTrigger({ className, ...props }) {
+function DropdownMenuTrigger({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Trigger, {
-		"data-slot": "tabs-trigger",
-		className: cn$1("relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap text-foreground/60 transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none dark:text-muted-foreground dark:hover:text-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", "group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent", "data-[state=active]:bg-background data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 dark:data-[state=active]:text-foreground", "after:absolute after:bg-foreground after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100", className),
+		"data-slot": "dropdown-menu-trigger",
 		...props
 	});
 }
-function TabsContent({ className, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content, {
-		"data-slot": "tabs-content",
-		className: cn$1("flex-1 outline-none", className),
+function DropdownMenuContent({ className, sideOffset = 4, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Portal2, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content2, {
+		"data-slot": "dropdown-menu-content",
+		sideOffset,
+		className: cn$1("z-50 max-h-(--radix-dropdown-menu-content-available-height) min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-md border bg-popover p-1 text-popover-foreground shadow-md data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95", className),
+		...props
+	}) });
+}
+function DropdownMenuItem({ className, inset, variant = "default", ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item2, {
+		"data-slot": "dropdown-menu-item",
+		"data-inset": inset,
+		"data-variant": variant,
+		className: cn$1("relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 data-[variant=destructive]:focus:text-destructive dark:data-[variant=destructive]:focus:bg-destructive/20 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-muted-foreground data-[variant=destructive]:*:[svg]:text-destructive!", className),
+		...props
+	});
+}
+function DropdownMenuLabel({ className, inset, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Label2, {
+		"data-slot": "dropdown-menu-label",
+		"data-inset": inset,
+		className: cn$1("px-2 py-1.5 text-sm font-medium data-[inset]:pl-8", className),
 		...props
 	});
 }
 //#endregion
-//#region components/ui/checkbox.tsx
+//#region package/source/components/ui/sheet.tsx
+function Sheet({ ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog$1, {
+		"data-slot": "sheet",
+		...props
+	});
+}
+function SheetTrigger({ ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTrigger, {
+		"data-slot": "sheet-trigger",
+		...props
+	});
+}
+function SheetPortal({ ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogPortal$1, {
+		"data-slot": "sheet-portal",
+		...props
+	});
+}
+function SheetOverlay({ className, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay$1, {
+		"data-slot": "sheet-overlay",
+		className: cn$1("fixed inset-0 z-50 bg-black/50 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0", className),
+		...props
+	});
+}
+function SheetContent({ className, children, side = "right", showCloseButton = true, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SheetPortal, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetOverlay, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent$1, {
+		"data-slot": "sheet-content",
+		className: cn$1("fixed z-50 flex flex-col gap-4 bg-background shadow-lg transition ease-in-out data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:animate-in data-[state=open]:duration-500", side === "right" && "inset-y-0 right-0 h-full w-3/4 border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm", side === "left" && "inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm", side === "top" && "inset-x-0 top-0 h-auto border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top", side === "bottom" && "inset-x-0 bottom-0 h-auto border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom", className),
+		...props,
+		children: [children, showCloseButton && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogClose, {
+			className: "absolute top-4 right-4 rounded-xs opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-secondary",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "size-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "sr-only",
+				children: "Close"
+			})]
+		})]
+	})] });
+}
+function SheetHeader({ className, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		"data-slot": "sheet-header",
+		className: cn$1("flex flex-col gap-1.5 p-4", className),
+		...props
+	});
+}
+function SheetTitle({ className, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle$1, {
+		"data-slot": "sheet-title",
+		className: cn$1("font-semibold text-foreground", className),
+		...props
+	});
+}
+function SheetDescription({ className, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription$1, {
+		"data-slot": "sheet-description",
+		className: cn$1("text-sm text-muted-foreground", className),
+		...props
+	});
+}
+//#endregion
+//#region package/source/components/ui/accordion.tsx
+function Accordion({ ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root2$3, {
+		"data-slot": "accordion",
+		...props
+	});
+}
+function AccordionItem({ className, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item$1, {
+		"data-slot": "accordion-item",
+		className: cn$1("border-b last:border-b-0", className),
+		...props
+	});
+}
+function AccordionTrigger({ className, children, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Header, {
+		className: "flex",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Trigger2, {
+			"data-slot": "accordion-trigger",
+			className: cn$1("flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180", className),
+			...props,
+			children: [children, /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "pointer-events-none size-4 shrink-0 translate-y-0.5 text-muted-foreground transition-transform duration-200" })]
+		})
+	});
+}
+function AccordionContent({ className, children, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content2$3, {
+		"data-slot": "accordion-content",
+		className: "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+		...props,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: cn$1("pt-0 pb-4", className),
+			children
+		})
+	});
+}
+//#endregion
+//#region package/source/app/site-navigation.ts
+var navGroups = [
+	{
+		label: "YOUR DAY",
+		items: [
+			{
+				name: "Weather & OOTD",
+				icon: CloudSun
+			},
+			{
+				name: "Homemade recipes",
+				icon: Utensils
+			},
+			{
+				name: "Saving tips",
+				icon: PiggyBank
+			},
+			{
+				name: "Coffee corner",
+				icon: Coffee
+			},
+			{
+				name: "Workouts",
+				icon: Dumbbell
+			},
+			{
+				name: "Mateo · AI friend",
+				icon: Sparkles
+			}
+		]
+	},
+	{
+		label: "FAMILY & LEARNING",
+		items: [
+			{
+				name: "Family checklists",
+				icon: ListChecks
+			},
+			{
+				name: "Breastfeeding tips",
+				icon: Heart
+			},
+			{
+				name: "Languages",
+				icon: BookOpen
+			},
+			{
+				name: "NZ quiz",
+				icon: Compass
+			},
+			{
+				name: "Focus time",
+				icon: Timer
+			},
+			{
+				name: "Reading nook",
+				icon: BookOpen
+			}
+		]
+	},
+	{
+		label: "FAITH & INSPIRATION",
+		items: [
+			{
+				name: "Inspiration",
+				icon: Quote
+			},
+			{
+				name: "Saints day",
+				icon: Sun
+			},
+			{
+				name: "How to pray the rosary",
+				icon: Heart
+			},
+			{
+				name: "Angelus & St Jude",
+				icon: Heart
+			},
+			{
+				name: "Short prayers",
+				icon: Heart
+			},
+			{
+				name: "Bible & Gospel",
+				icon: BookOpen
+			},
+			{
+				name: "Catholic churches",
+				icon: Church
+			}
+		]
+	},
+	{
+		label: "COMMUNITY",
+		items: [
+			{
+				name: "Small business",
+				icon: Store
+			},
+			{
+				name: "About us",
+				icon: Heart
+			},
+			{
+				name: "FAQ",
+				icon: Compass
+			},
+			{
+				name: "Report an issue",
+				icon: MapPin
+			},
+			{
+				name: "Review",
+				icon: Heart
+			}
+		]
+	}
+];
+//#endregion
+//#region package/source/app/site-navigation-bar.tsx
+var titles = [
+	"Your day",
+	"Family & learning",
+	"Faith & inspiration",
+	"Community"
+];
+function SiteNavigation({ tab, onNavigate }) {
+	const [mobile, setMobile] = (0, import_react.useState)(false);
+	function go(section) {
+		setMobile(false);
+		onNavigate(section);
+	}
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: "utility-bar",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "FAITH · FAMILY · COMMUNITY" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				onClick: () => go("About us"),
+				children: "About us"
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				onClick: () => go("FAQ"),
+				children: "FAQ"
+			})] })] })
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+			className: "header bookstore-header",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+					className: "brand",
+					onClick: () => go("Home"),
+					"aria-label": "The James NZ home",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: "brand-icon",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sun, { size: 28 })
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: ["The James NZ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "AOTEAROA NEW ZEALAND" })] })]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "header-shortcuts",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						onClick: () => go("Reading nook"),
+						children: "Reading nook"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						onClick: () => go("Mateo · AI friend"),
+						children: "Meet Mateo"
+					})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Sheet, {
+					open: mobile,
+					onOpenChange: setMobile,
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetTrigger, {
+						asChild: true,
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							className: "mobile-menu-button secondary",
+							"aria-label": "Open section menu",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu$1, { size: 22 }), "Menu"]
+						})
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SheetContent, {
+						side: "left",
+						className: "bookstore-mobile-menu",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SheetHeader, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetTitle, { children: "Explore The James NZ" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetDescription, { children: "Choose a section for your day." })] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
+							"aria-label": "Mobile sections",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								className: "mobile-home-link",
+								"aria-current": tab === "Home" ? "page" : void 0,
+								onClick: () => go("Home"),
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(House, { size: 19 }), "Home"]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Accordion, {
+								type: "multiple",
+								defaultValue: navGroups.filter((g) => g.items.some((t) => t.name === tab)).map((g) => g.label),
+								children: navGroups.map((group, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AccordionItem, {
+									value: group.label,
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AccordionTrigger, { children: titles[i] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AccordionContent, { children: group.items.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										className: "mobile-section-link",
+										"aria-current": tab === item.name ? "page" : void 0,
+										onClick: () => go(item.name),
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(item.icon, { size: 18 }), item.name]
+									}, item.name)) })]
+								}, group.label))
+							})]
+						})]
+					})]
+				})
+			]
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
+			className: "bookstore-category-nav",
+			"aria-label": "Website sections",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+				className: "category-home",
+				"data-active": tab === "Home",
+				"aria-current": tab === "Home" ? "page" : void 0,
+				onClick: () => go("Home"),
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(House, { size: 18 }), "Home"]
+			}), navGroups.map((group, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DropdownMenu, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuTrigger, {
+				asChild: true,
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+					className: "category-trigger",
+					"data-active": group.items.some((item) => item.name === tab),
+					children: [titles[i], /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { size: 16 })]
+				})
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DropdownMenuContent, {
+				className: "bookstore-mega-menu",
+				align: "start",
+				sideOffset: 8,
+				collisionPadding: 16,
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DropdownMenuLabel, { children: titles[i] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "mega-menu-items",
+					children: group.items.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DropdownMenuItem, {
+						onSelect: () => go(item.name),
+						className: "mega-menu-link",
+						"aria-current": tab === item.name ? "page" : void 0,
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(item.icon, { size: 21 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: item.name })]
+					}, item.name))
+				})]
+			})] }, group.label))] })
+		})
+	] });
+}
+//#endregion
+//#region package/source/app/browse-home.tsx
+var collections = [
+	{
+		title: "Your day",
+		text: "Weather, food, coffee & small savings",
+		image: "./photo-share/savings-groceries.webp",
+		section: "Weather & OOTD"
+	},
+	{
+		title: "Family & learning",
+		text: "Stories, languages & little discoveries",
+		image: "./story-pages/story-02-middle.webp",
+		section: "Reading nook"
+	},
+	{
+		title: "Faith & inspiration",
+		text: "Prayers, reflections & the Catholic calendar",
+		image: "./photo-share/inspiration.webp",
+		section: "Inspiration"
+	},
+	{
+		title: "Community",
+		text: "Our family, local business & your feedback",
+		image: "./family-seaside-consistent.webp",
+		section: "About us"
+	}
+];
+var everyday = [
+	{
+		title: "Coffee corner",
+		text: "A warm thought for your next break",
+		image: "./coffee-posts/coffee-01.webp",
+		section: "Coffee corner"
+	},
+	{
+		title: "Make room for savings",
+		text: "300 practical household tips",
+		image: "./photo-share/savings-money.webp",
+		section: "Saving tips"
+	},
+	{
+		title: "Easy homemade recipes",
+		text: "64 recipes, including Filipino and Indian favourites",
+		image: "./recipe-art.png",
+		section: "Homemade recipes"
+	},
+	{
+		title: "A little time in prayer",
+		text: "Bring a worry, a hope or a name",
+		image: "./photo-share/prayer.webp",
+		section: "Short prayers"
+	}
+];
+function BrowseHome({ onNavigate, onStory }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "browse-home",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "collection-section",
+				"aria-labelledby": "browse-heading",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "browse-section-heading",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+						id: "browse-heading",
+						children: "Find your next little discovery."
+					})
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "collection-grid",
+					children: collections.map((c) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						className: "collection-card",
+						onClick: () => onNavigate(c.section),
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: c.image,
+							alt: ""
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: c.title }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: c.text })] })]
+					}, c.title))
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "bookstore-hero",
+				"aria-labelledby": "hero-heading",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "hero-copy",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "eyebrow",
+							children: "THE READING NOOK"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+							id: "hero-heading",
+							children: [
+								"A little adventure.",
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+								"One page at a time."
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+							"Join Dad, Mom, Sue, Rae, Mye and Mateo in ",
+							stories.length,
+							" illustrated storybooks. Touch a word, listen along, and turn the page."
+						] }),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+							className: "primary",
+							onClick: () => onStory(0),
+							children: "Open the first story"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+							className: "hero-text-button",
+							onClick: () => onNavigate("Reading nook"),
+							children: "Browse all stories"
+						})] })
+					]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					src: "./story-pages/story-01-end.webp",
+					alt: "Sue and Rae sail their toy boat at a rock pool with Mom, Dad, baby Mye and Mateo nearby"
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "bookstore-shelf",
+				"aria-labelledby": "story-shelf-heading",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "browse-section-heading",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "eyebrow",
+						children: "READ TOGETHER"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						id: "story-shelf-heading",
+						children: "Stories for curious minds"
+					})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						className: "browse-all",
+						onClick: () => onNavigate("Reading nook"),
+						children: [
+							"View all ",
+							stories.length,
+							" stories"
+						]
+					})]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "story-shelf-grid",
+					children: stories.slice(0, 4).map((s, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						className: "shelf-story",
+						onClick: () => onStory(i),
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								src: s.image,
+								alt: s.imageAlt,
+								loading: "lazy"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "shelf-story-theme",
+								children: s.theme
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: s.title }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: s.level })
+						]
+					}, s.title))
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "everyday-shelf",
+				"aria-labelledby": "everyday-heading",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "browse-section-heading",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "eyebrow",
+						children: "FOR YOUR DAY"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						id: "everyday-heading",
+						children: "Small moments, good company"
+					})] })
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "everyday-grid",
+					children: everyday.map((c) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						className: "everyday-card",
+						onClick: () => onNavigate(c.section),
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: c.image,
+							alt: "",
+							loading: "lazy"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: c.title }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: c.text })] })]
+					}, c.title))
+				})]
+			})
+		]
+	});
+}
+//#endregion
+//#region package/source/components/ui/checkbox.tsx
 function Checkbox({ className, ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Checkbox$1, {
 		"data-slot": "checkbox",
@@ -25600,16 +27822,10 @@ function Checkbox({ className, ...props }) {
 	});
 }
 //#endregion
-//#region components/ui/select.tsx
+//#region package/source/components/ui/select.tsx
 function Select$1({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Select$2, {
 		"data-slot": "select",
-		...props
-	});
-}
-function SelectGroup({ ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectGroup$1, {
-		"data-slot": "select-group",
 		...props
 	});
 }
@@ -25648,13 +27864,6 @@ function SelectContent({ className, children, position = "item-aligned", align =
 		]
 	}) });
 }
-function SelectLabel({ className, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectLabel$1, {
-		"data-slot": "select-label",
-		className: cn$1("px-2 py-1.5 text-xs text-muted-foreground", className),
-		...props
-	});
-}
 function SelectItem({ className, children, ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SelectItem$1, {
 		"data-slot": "select-item",
@@ -25684,7 +27893,7 @@ function SelectScrollDownButton({ className, ...props }) {
 	});
 }
 //#endregion
-//#region components/ui/alert-dialog.tsx
+//#region package/source/components/ui/alert-dialog.tsx
 function AlertDialog({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root2$2, {
 		"data-slot": "alert-dialog",
@@ -25692,7 +27901,7 @@ function AlertDialog({ ...props }) {
 	});
 }
 function AlertDialogPortal({ ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Portal2, {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Portal2$1, {
 		"data-slot": "alert-dialog-portal",
 		...props
 	});
@@ -25705,7 +27914,7 @@ function AlertDialogOverlay({ className, ...props }) {
 	});
 }
 function AlertDialogContent({ className, size = "default", ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AlertDialogPortal, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AlertDialogOverlay, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content2, {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AlertDialogPortal, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AlertDialogOverlay, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content2$2, {
 		"data-slot": "alert-dialog-content",
 		"data-size": size,
 		className: cn$1("group/alert-dialog-content fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border bg-background p-6 shadow-lg duration-200 data-[size=sm]:max-w-xs data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 data-[size=default]:sm:max-w-lg", className),
@@ -25751,7 +27960,7 @@ function AlertDialogCancel({ className, variant = "outline", size = "default", .
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/next-themes@0.4.6_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/next-themes/dist/index.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/next-themes@0.4.6_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/next-themes/dist/index.mjs
 var M = (e, i, s, u, m, a, l, h) => {
 	let d = document.documentElement, w = ["light", "dark"];
 	function p(n) {
@@ -25797,7 +28006,7 @@ import_react.memo(({ forcedTheme: e, storageKey: i, attribute: s, enableSystem: 
 	});
 });
 //#endregion
-//#region node_modules/.pnpm/sonner@2.0.8_@types+react@19.2.14_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/sonner/dist/index.mjs
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/sonner@2.0.8_@types+react@19.2.14_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/sonner/dist/index.mjs
 function __insertCSS(code) {
 	if (!code || typeof document == "undefined") return;
 	let head = document.head || document.getElementsByTagName("head")[0];
@@ -26741,7 +28950,7 @@ var Toaster$1 = /* @__PURE__ */ import_react.forwardRef(function Toaster(props, 
 	}));
 });
 //#endregion
-//#region components/ui/sonner.tsx
+//#region package/source/components/ui/sonner.tsx
 var Toaster = ({ ...props }) => {
 	const { theme = "system" } = z();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Toaster$1, {
@@ -26764,7 +28973,7 @@ var Toaster = ({ ...props }) => {
 	});
 };
 //#endregion
-//#region app/calendar-utils.ts
+//#region package/source/app/calendar-utils.ts
 function nzDate(now = /* @__PURE__ */ new Date()) {
 	const parts = new Intl.DateTimeFormat("en-NZ", {
 		timeZone: "Pacific/Auckland",
@@ -26788,7 +28997,7 @@ function moveDate(value, days, months = 0) {
 	return d.toISOString().slice(0, 10);
 }
 //#endregion
-//#region app/weather-service.ts
+//#region package/source/app/weather-service.ts
 var WeatherError = class extends Error {
 	constructor(message, status = 503) {
 		super(message);
@@ -26815,7 +29024,7 @@ async function loadWeather(name, signal) {
 	return data;
 }
 //#endregion
-//#region app/family-outfit.tsx
+//#region package/source/app/family-outfit.tsx
 var wardrobe = {
 	Casual: "./family-play-consistent.webp",
 	"Smart casual": "./family-smart-casual.png",
@@ -26867,7 +29076,7 @@ function FamilyOutfitAnimation({ kind, style = "Casual", confirmed, manual = fal
 	});
 }
 //#endregion
-//#region app/metservice-weather.tsx
+//#region package/source/app/metservice-weather.tsx
 var slugs = {
 	"Auckland": "auckland",
 	"Whangārei": "whangarei",
@@ -26923,7 +29132,7 @@ function MetServiceWeather({ location, refresh }) {
 	});
 }
 //#endregion
-//#region app/outfit-weather.ts
+//#region package/source/app/outfit-weather.ts
 function weatherOutfit(weather) {
 	if (!weather) return "mild";
 	if ((weather.daily.rain ?? 0) >= 45 || weather.daily.rainExpected || weather.current.precipitation > 0) return "rain";
@@ -26931,7 +29140,7 @@ function weatherOutfit(weather) {
 	return "mild";
 }
 //#endregion
-//#region app/daily-life.tsx
+//#region package/source/app/daily-life.tsx
 var cities = [
 	"Auckland",
 	"Whangārei",
@@ -27368,7 +29577,7 @@ function SeasonalProduce() {
 	});
 }
 //#endregion
-//#region app/bible-books.json
+//#region package/source/app/bible-books.json
 var bible_books_default = [
 	{
 		"name": "Genesis",
@@ -27664,7 +29873,7 @@ var bible_books_default = [
 	}
 ];
 //#endregion
-//#region app/bible.tsx
+//#region package/source/app/bible.tsx
 function BibleLibrary() {
 	const [book, setBook] = (0, import_react.useState)("John"), [chapter, setChapter] = (0, import_react.useState)("1"), [search, setSearch] = (0, import_react.useState)(""), [query, setQuery] = (0, import_react.useState)(""), [page, setPage] = (0, import_react.useState)(0), [data, setData] = (0, import_react.useState)(null), [error, setError] = (0, import_react.useState)(""), [loading, setLoading] = (0, import_react.useState)(true);
 	(0, import_react.useEffect)(() => {
@@ -27942,10 +30151,10 @@ function GospelReading() {
 	});
 }
 //#endregion
-//#region app/churches.json
+//#region package/source/app/churches.json
 var churches_default = /* @__PURE__ */ JSON.parse("[{\"id\":\"featured-auckland\",\"name\":\"Cathedral of St Patrick & St Joseph\",\"diocese\":\"Auckland\",\"address\":\"43 Wyndham Street, Auckland Central\",\"schedule\":\"Sunday:9am, 11am, 4:30pm, 7pm. Monday–Friday:7am, 12:15pm. Saturday and public holidays:8:30am.\",\"source\":\"https://stpatricks.org.nz/\",\"url\":\"https://stpatricks.org.nz/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=43 Wyndham Street, Auckland Central\"},{\"id\":\"ak-1\",\"name\":\"Avondale, St Mary of the Immaculate Conception\",\"diocese\":\"Auckland\",\"address\":\"2134 Great North Rd, Avondale\",\"schedule\":\"Sunday Masses · Due to fire destroying the Church building the Avondale Catholic Community will join the Christ the King Parish Owairaka for Sunday Mass · Saturday Vigil Mass:6.00pm · Sunday Masses:8.30am & 10.00am, 6pm · Weekday Masses · These will be held on site from 22 July details coming later · Tuesday to Saturday - Mass at 9.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2134 Great North Rd, Avondale\"},{\"id\":\"ak-2\",\"name\":\"Balmoral, Good Shepherd\",\"diocese\":\"Auckland\",\"address\":\"27 Telford Ave, Mt Eden\",\"schedule\":\"Sunday Masses · Saturday 5pm Vigil Mass · Sunday 9.30am · [NZSL interpreters present 4th Sunday of month] · Weekday Masses · Tuesday - Saturday 9.30am · Saturday: Exposition & Rosary from 8.30am followed by Mass at 9.30am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=27 Telford Ave, Mt Eden\"},{\"id\":\"ak-3\",\"name\":\"BeachHaven, Maria Assumpta\",\"diocese\":\"Auckland\",\"address\":\"198 Beach Haven Rd, Beach Haven\",\"schedule\":\"Sunday Masses · 8.00am & 10.00am · Weekday Masses · Monday:9.00 am\xA0Liturgy of the Word · Tuesday-Friday:9.00 am\xA0Mass · (1st Friday Mass at 9 am followed by adoration up to 12 pm) · Saturday:9.00 am\xA0Mass \xA0(Reconciliation 10 am - 12 pm)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=198 Beach Haven Rd, Beach Haven\"},{\"id\":\"ak-4\",\"name\":\"Blockhouse Bay, St Dominic\",\"diocese\":\"Auckland\",\"address\":\"St Dominic, Blockhouse Bay · check official parish for address\",\"schedule\":\"Sunday Masses · Saturday:6:00pm Vigil · Sunday:8:00am and 9:30am · Saturday Parish Renewal Rosary 7:30am and Sacrament of Baptism (By Fr. Ranjit) 10.00 am - 12 Noon · Weekday Masses · Monday 7:00am · Tuesday, Thursday and Friday\xA0 9:15am · Tuesday Reconciliation & Exposition will take place after the 9:15 AM Mass and continue until 11:00 a.m. · Wednesday - Novena at 6:45pm followed by Mass at 7:00pm · First Friday (Mass of Healing & Anointing of the sick)\xA0 9:15am · First Friday Adoration followed by Mass 6:30pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St+Dominic+Blockhouse+Bay+New+Zealand\"},{\"id\":\"ak-5\",\"name\":\"Clover Park, St Peter Chanel\",\"diocese\":\"Auckland\",\"address\":\"44 Boundary Rd, Clover Park\",\"schedule\":\"Sunday Mass · 9.00am · Weekday Mass · Tuesday to Friday:5.30pm · Saturday:8.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=44 Boundary Rd, Clover Park\"},{\"id\":\"ak-6\",\"name\":\"Coromandel Peninsula & Hauraki Plains\",\"diocese\":\"Auckland\",\"address\":\"111 Baillie St, Thames\",\"schedule\":\"Sunday Mass - Thames · Sunday Mass:8.30am (in Church) · Weekday Masses - Thames · Tuesday Mass:5.15pm (in Chapel) · Wed & Thurs Mass:9.15am (in Chapel) · Friday Rosary:11.00am (in Chapel) · Friday Exposition:11.15am (in Chapel) · Friday Mass:12.15pm (in Chapel) · Saturday Mass:9.15am (in Chapel)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=111 Baillie St, Thames\"},{\"id\":\"ak-7\",\"name\":\"Dargaville, Sacred Heart\",\"diocese\":\"Auckland\",\"address\":\"97 Hokianga Rd, Dargaville\",\"schedule\":\"Sunday Masses · Dargaville\xA0Sunday @ 9.30am · Dargaville\xA0Vigil 2nd and 4th Saturday @ 5.30pm · Kaihu\xA01st Sunday @ 11.30am · Ruawai\xA0Vigil 1st and 3rd Saturday @ Ruawai Community Church 5.30pm · Weekday Masses · Tuesday...Church open for prayer · Wednesday 5.30pm · Thursday 5.30pm · Friday 11.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=97 Hokianga Rd, Dargaville\"},{\"id\":\"ak-8\",\"name\":\"Devonport, St Francis de Sales & All Souls\",\"diocese\":\"Auckland\",\"address\":\"2A Albert St, Devonport\",\"schedule\":\"Sunday Masses · Saturday Vigil:5.30pm · Sunday:9.30am · Weekday Masses · Wednesday:12.00 noon · Friday:12.00 noon · Saturday:9.00am (Reconciliation available after Mass)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2A Albert St, Devonport\"},{\"id\":\"ak-9\",\"name\":\"East Coast Bays Parishes\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · Saturday – 5:30pm Vigil Mass · Sunday – 8:00am Mass · Weekday Masses · Monday\xA09.15am: Liturgy of the Word with Communion · Wednesday, Friday 9:15am Mass · Saturday - 9:00am Mass · St Francis de Sales · 8 Finchley Rd, Torbay · Sunday Masses · 10:00am Mass · Weekday Masses · Tuesday – 10:00am Liturgy of the Word with Communion · Thursday – 10:00am Mass · Saturday – 9:00am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-10\",\"name\":\"Ellerslie, Immaculate Conception\",\"diocese\":\"Auckland\",\"address\":\"66 Main Highway, Ellerslie\",\"schedule\":\"Sunday Masses · 5:30pm - Saturday Vigil · 9:00am - Sunday · Weekday Masses · Monday at 8:00am - Liturgy of the Word · Tuesday to Thursday - 8:00am · Friday, Saturday and Public Holiday - 9:00am · Anointing Mass will be every 1st Saturday of the month at 9am · Friday at 8:00am - Exposition of the Blessed Sacrament\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=66 Main Highway, Ellerslie\"},{\"id\":\"ak-11\",\"name\":\"Epsom, Our Lady of the Sacred Heart\",\"diocese\":\"Auckland\",\"address\":\"19 Banff Ave, Epsom\",\"schedule\":\"Sunday Masses · Saturday Vigil\xA0 5.30pm · Sunday Mass\xA0 \xA0 9.00am · Weekday Masses · Tuesday–Thursday\xA0 \xA08.00am · Friday Adoration of the Blessed Sacrament 11am, · followed by Mass at 12.05pm · Saturday 9.00am · Sacrament of Reconciliation: Saturday 4.45-5.15pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=19 Banff Ave, Epsom\"},{\"id\":\"ak-12\",\"name\":\"Flat Bush, St Luke\",\"diocese\":\"Auckland\",\"address\":\"260 Chapel Rd, Flatbush\",\"schedule\":\"Sunday Masses · Saturday 5pm Vigil Mass · Sunday 8:30am,10:30am and 5.00pm · Weekday Masses · Tuesday - Thursday 9am · Friday 9am · Friday 1:30pm only during school term · Saturday 9am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=260 Chapel Rd, Flatbush\"},{\"id\":\"ak-14\",\"name\":\"Glen Eden, Our Lady of Lourdes\",\"diocese\":\"Auckland\",\"address\":\"7 Glendale Rd, Glen Eden\",\"schedule\":\"Sunday Masses · Saturday:5 pm Vigil · Sunday:9am, 10.30 am, 5pm · Weekday Masses · Monday:9 am · Tues/Wed/Thurs:6.30 pm · Wed: Novena - 6 pm · Friday:9 am · First Friday:6.30 pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=7 Glendale Rd, Glen Eden\"},{\"id\":\"ak-16\",\"name\":\"Glen Innes, St Pius X\",\"diocese\":\"Auckland\",\"address\":\"101 Castledine Cres, Glen Innes\",\"schedule\":\"Sunday Masses · 8.30am and 10.00am · 12.30pm Samoan Divine Mercy Mass · (2nd Sunday of month) · Weekday Masses · Tuesday-Saturday 9am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=101 Castledine Cres, Glen Innes\"},{\"id\":\"ak-13\",\"name\":\"Glendowie, Mother of Perpetual Help\",\"diocese\":\"Auckland\",\"address\":\"510 Riddell Rd, Glendowie\",\"schedule\":\"Sunday Mass · 10:30am - Sunday Mass · Sacrament of Reconciliation - 8:45am - Saturday · Rosary - 8:50am - Saturday\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=510 Riddell Rd, Glendowie\"},{\"id\":\"ak-15\",\"name\":\"Glenfield, St Thomas More\",\"diocese\":\"Auckland\",\"address\":\"336 Wairau Rd, Glenfield\",\"schedule\":\"Sunday Masses · Saturday Vigil – 5:30pm · Sunday – 8:00am & 10:00am · Chaldean Rite\xA0\xA0Summer – 6:00pm\xA0 Winter – 5:00pm · Weekday Masses · Monday to Saturday – 9:15am · Thursday – 7:30pm · 1st Wednesday – 7:30pm · 1st Friday – 7:30pm · 4th Friday – Tongan Mass 7:00pm · Reconciliation · Thursday – 7:00pm · Saturday –\xA0 9:45am · Devotions · Blessed Sacrament Adoration · All day Thursday. · Our Lady of Perpetual Help · 1st Wednesday – 7:00pm · Divine Mercy Chaplet · 1st Friday – 7:00pm · Rosary Devotion · 1st Saturday after 9:15am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=336 Wairau Rd, Glenfield\"},{\"id\":\"ak-17\",\"name\":\"Grey Lynn, St Joseph\",\"diocese\":\"Auckland\",\"address\":\"470 Great North Rd, Grey Lynn\",\"schedule\":\"Sunday Masses · Saturday:5.30pm Vigil Mass · Sunday:8.30am Mass · Sunday:10.30am Samoan Mass · Weekday Masses · Monday - Friday:9.00am Mass · Saturday:8.15am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=470 Great North Rd, Grey Lynn\"},{\"id\":\"ak-18\",\"name\":\"Helensville, St Joseph\",\"diocese\":\"Auckland\",\"address\":\"1 Puriri St, Helensville\",\"schedule\":\"Sunday Masses · Vigil Mass, Weeks 2 and 4 @ 6.00pm · Sunday Mass, Weeks 1, 3 and 5 at 9.00am · Weekday Masses · Mass -\xA09:00 Mon, Wed and Thurs · Adoration -\xA09:30 to 10:30 Thursdays · Reconciliation -\xA0During adoration & other times by appointment · St Patrick's Huapai · Sunday Masses · Vigil Mass, Weeks 1, 3 and 5 @ 5.00pm · Sunday Mass, Weeks 2 and 4 at 9.00am · Weekday Masses · Mass -\xA010:00 Tuesday and Friday · Adoration -10:30 to 11:30 Friday · Reconciliation\xA0- During Adoration & other times by appointment\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=1 Puriri St, Helensville\"},{\"id\":\"ak-20\",\"name\":\"Henderson, Holy Cross\",\"diocese\":\"Auckland\",\"address\":\"2 Lavelle Rd, Henderson\",\"schedule\":\"Sunday Masses · 6.00pm Vigil Mass · Sunday 7.00am, 9.00am, 11.00am & 6.00pm · Weekday Masses · Tues, Thurs & Friday.....9.00am · Wednesday.....9.00am, 7.30pm · Friday.....7.30pm (1st Friday Mass) · Saturday....8.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2 Lavelle Rd, Henderson\"},{\"id\":\"ak-21\",\"name\":\"Hibiscus Coast\",\"diocese\":\"Auckland\",\"address\":\"180 Centreway Rd, Orewa\",\"schedule\":\"Weekday Masses:\xA0 Monday, Tuesday, Wednesday, Thursday and Saturday – 9.30am · St Francis by the Sea · Motutapu Ave, Manly · Sunday:8:30am · Liturgy of the Word & Holy Communion:\xA0Monday, Tuesday, Thursday and Saturday – 9.30am · Weekday Masses:\xA0Wednesday and Friday – 9.30am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=180 Centreway Rd, Orewa\"},{\"id\":\"ak-22\",\"name\":\"Hillsborough, St John Vianney\",\"diocese\":\"Auckland\",\"address\":\"317 Hillsborough Rd, Hillsborough\",\"schedule\":\"Sunday Masses · Vigil Mass 5.30pm · Sunday 9am and 5.30pm · Weekday Masses · Monday · No Mass · Tuesday · 7.00pm · Wednesday · 9am (At Murray Halberg Village, residents only) · 6:30 - 6:50 pm Reconciliation 7 pm Mass followed by the Novena of Mother of Perpetual Help · Thursday · 8.45am (At Hillsborough Heights Village, residents only) · 7.00pm · Friday · 10am · Saturday · Exposition of the Blessed Sacrament and Reconciliation 8 - 8:45 am followed by Benediction and Mass 9 am · _________________________________________________________________________________________________________________________________________________\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=317 Hillsborough Rd, Hillsborough\"},{\"id\":\"ak-19\",\"name\":\"Hospital Masses\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Mass 11.00am · (Liturgy of Word with Holy Communion · on the first Sunday of each month) · Auckland City Hospital · Sunday Mass\xA0 11.30am · Middlemore Hospital · Sunday Mass 11.00am · Wednesday Mass12.15pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-23\",\"name\":\"Howick, Our Lady, Star of the Sea\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · Howick · Saturday:6.00 p.m. · Sunday:9.00am and 5.30p.m. · Beachlands · Saturday 4.30p.m · This will be a Liturgy of the Word with Holy Communion, · Except on the Saturday before the 1st Saturday of the month, · when there will be Mass. · At St Hilda's Anglican Church, 3 Wakelin Road, Beachlands. · Weekday Masses · Monday : Rosary at 9.15am (no Mass) · Tuesday - Friday:9.15am. · (except on Friday, any funeral Mass may displace 9.15am Mass)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-24\",\"name\":\"Kaitaia, Holy Family\",\"diocese\":\"Auckland\",\"address\":\"23a Dominion Rd, Kaitaia\",\"schedule\":\"Sunday Masses · 9am St. Joseph Kaitaia · 3:30pm St. Andrew's Mangonui · 11am once a month Switzer Residential Care Home · 9am Mass in Te Reo every first Sunday of the month at St Joseph Kaitaia · Weekday Masses · 9:15am Wednesday and Friday · St Joseph Kaitaia\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=23a Dominion Rd, Kaitaia\"},{\"id\":\"ak-25\",\"name\":\"Kerikeri, Holy Family\",\"diocese\":\"Auckland\",\"address\":\"34 Cobham Rd, Kerikeri\",\"schedule\":\"Sunday Masses · Kerikeri · Sunday 10:15am · Waitāruke · Saturday Vigil 5.00pm · Liturgy every 3rd Sunday · Weekday Masses · Kerikeri · Monday - 9:15am (except January) · Tuesday, Wednesday, Saturday - 9:15am · Friday - 12:30pm · Waitāruke · Thursday - 9am (school mass) · __________________________________________________________________________________________________________________________________________________\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=34 Cobham Rd, Kerikeri\"},{\"id\":\"ak-26\",\"name\":\"Korean Parish, Holy Family\",\"diocese\":\"Auckland\",\"address\":\"28 Bishop Dunn Pl, Flatbush\",\"schedule\":\"Check the official parish timetable.\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=28 Bishop Dunn Pl, Flatbush\"},{\"id\":\"ak-27\",\"name\":\"Mangere Parishes\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · St Therese Parish Mangere East · Sunday – 8am, 10am & 6pm · Samoan Mass 12.00pm Noon · (every 4th Sunday of month except January) · St Anthony Parish Mangere Bridge · Saturday...Vigil Mass 5.00pm · Sunday Mass 9.00am · Weekday Masses · St Therese Parish Mangere East · Tuesday, Thursday, Saturday 9.00am · Tongan Mass Friday 7.00pm · (every first Friday of the month, except December) · St Anthony Parish Mangere Bridge · Monday, Wednesday, Friday 9.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-28\",\"name\":\"Manurewa, St Anne\",\"diocese\":\"Auckland\",\"address\":\"126 Russell Rd, Manurewa\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass 5:30pm · 8:00am Mass · 10:00am Mass · 5:00pm Mass · Occasional Sunday Masses · 11:30am Maori Mass - 4th Sunday (Feb - Nov) · 12pm Tongan Mass - 2nd Sunday (March - Nov) · 12pm Samoan Mass - 3rd Sunday (March - Nov) · Weekday Masses · Monday - 12:05pm Liturgy of the Word with Holy Communion · Tuesday – Thursday 12:05pm Mass · Friday - 9:00am Mass · Saturday - 8:00am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=126 Russell Rd, Manurewa\"},{\"id\":\"ak-29\",\"name\":\"Massey, St Paul\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · St Paul's Church · 162 Waimumu Rd, Massey · Saturday - 5.00pm Vigil (Reconciliation @ 4.15am) · Sunday - 7.30am & 10.30am Mass · St Malachy's Church · 461 Swanson Rd, Ranui · Sunday - 9.00am Mass · Weekday Masses · St Paul's Church · Monday, Wednesday & Friday - 9.00am Mass · St Malachy's Church · Tuesday & Thursday - 9.15am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-30\",\"name\":\"Meadowbank, Our Lady of Fatima\",\"diocese\":\"Auckland\",\"address\":\"4 Lucia Glade, Meadowbank\",\"schedule\":\"Sunday Masses · Saturday Vigil 5.30pm · Sunday 9.30am · Weekday Masses · Monday, Wednesday, Thursday, Friday & Saturday 9.00am · Tuesday 6.30pm Rosary, Novena and Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=4 Lucia Glade, Meadowbank\"},{\"id\":\"ak-31\",\"name\":\"Mid-North Parishes\",\"diocese\":\"Auckland\",\"address\":\"3 Hulme Dr, Okaihau\xA0 (Presbytery)\",\"schedule\":\"Sunday Masses · St Anthony Church · 126 Broadway, Kaikohe · 9.00am · The Shrine of Peter Chanel · Cnr Chapel & Beresford Sts · 11.30am · St Patrick Church · 234 Horeke Rd, Settlers Way · 5.30pm · St Charles Borromeo · 61 Parnell St, Rawene · 11:00am (4th Sunday) · St Nicholas in the Field · end of Wikaira Rd, Whirinaki · 11:00am (1st & 2nd Sunday) · St Therese Church · 17 Snowden Ave, Moerewa · 9.00am · St Paul's Anglican Church · 36 Marsden Rd, Paihia · Summer: · 1st Saturday of October – 1st Saturday of April · 5:30pm · Winter: · 2nd Saturday of April – 4th Saturday of September · 5:00pm · Weekday Masses · St Anthony Church · Tuesday 6.30pm · 1st Friday: Mass & Anointing at Kaikohe Care Centre and Hospital at 9.30am · St Patrick Church · Holy Hour:6:30pm · (every last Friday of the month) · St. Charles Borromeo · 61 Parnell St, Rawene · Wednesday Mass:9.00am · Rawene Hospital Mass:10.30am · (every 2nd Friday of the month) · St Therese Church · Wednesdays:6:30pm · Holy Hour:6:30pm · (every 1st Friday of the month) · Liturgy of the word with Bible sharing:6:30pm · (every Thursday)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=3 Hulme Dr, Okaihau\xA0 (Presbytery)\"},{\"id\":\"ak-32\",\"name\":\"Mt Albert, St Mary\",\"diocese\":\"Auckland\",\"address\":\"20 Kitenui Ave, Mt Albert\",\"schedule\":\"Sunday Masses · 8.00am, 10.00am & 5.30pm · Weekday Masses · Monday Liturgy:9.00am · (Liturgy of the Word with Holy Communion) · Tuesday Mass:6.30pm · Wednesday Mass:9.00am · Thursday Mass:10.00am · Friday Mass:9.00am · Saturday Mass:9.00am · (followed by Reconciliation Rite 1)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=20 Kitenui Ave, Mt Albert\"},{\"id\":\"ak-33\",\"name\":\"Mt Wellington, St Bernadette\",\"diocese\":\"Auckland\",\"address\":\"27 Bailey Rd, Mt Wellington\",\"schedule\":\"Sunday Masses · 9.00am Mass · Tongan Mass:1st Saturday of the month @ 6pm · Weekday Masses · Tuesday - Friday 6pm Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=27 Bailey Rd, Mt Wellington\"},{\"id\":\"ak-39\",\"name\":\"NZSL and Mass\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Check the official parish timetable.\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-34\",\"name\":\"Newton, St Benedicts\",\"diocese\":\"Auckland\",\"address\":\"1 St Benedicts St, Eden Terrace\",\"schedule\":\"Sunday Masses · Saturday Vigil 6.00pm · Sunday 9.30am · Weekday Masses · Wednesday - Friday:12.10pm · Wednesday Filipino Community @ 7.30pm · 1st & 3rd Friday Filipino Community @ 7.30pm · Ethnic Masses · Filipino @ 11.30am every Sunday · Tongan @ 1.30pm every 3rd Sunday · Indonesian @ 1.30pm every 4th Sunday\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=1 St Benedicts St, Eden Terrace\"},{\"id\":\"ak-35\",\"name\":\"Northcote, St Mary\",\"diocese\":\"Auckland\",\"address\":\"117 Onewa Rd, Northcote\",\"schedule\":\"Sunday Masses · 5.30pm Saturday Vigil · 8.30am, 10.30am & 5.00pm · Weekday Masses · Monday - Saturday 9.15am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=117 Onewa Rd, Northcote\"},{\"id\":\"ak-36\",\"name\":\"Onehunga, Our Lady of the Assumption\",\"diocese\":\"Auckland\",\"address\":\"97 Galway St, Onehunga\",\"schedule\":\"Sunday Masses · 6.00pm Saturday Vigil Mass · 8.30am Mass · 10.00am Mass · 10.00am Youth Mass (4th Sunday) · 11.30am Samoan Mass (3rd Sunday) · 12.00pm Tongan Mass (2nd Sunday) · Weekday Masses · Monday 7.30am Mass · Tuesday, Wednesday, Thursday 7.30am and 7.00pm · Friday 7.30am (all weeks) and 7.00pm (1st Friday only)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=97 Galway St, Onehunga\"},{\"id\":\"ak-37\",\"name\":\"Orakei, St Joseph\",\"diocese\":\"Auckland\",\"address\":\"16 Brenton Pl, Orakei\",\"schedule\":\"Sunday Masses · 5.30pm Saturday Vigil Mass · Sunday:9.30am and\xA05.00pm Mass · Weekday Masses · Monday & Wednesday:9.15am Mass · 4th Wed :\xA0CWL Mass @ 10.30am · Tuesday & Friday:6.00pm Mass · Saturday:9.00am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=16 Brenton Pl, Orakei\"},{\"id\":\"ak-38\",\"name\":\"Otahuhu, Ss Joseph & Joachim\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · 8am & 10am Mass · Weekday Masses · Tuesday 6.00pm Mass · Wednesday - Saturday:9.00am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-40\",\"name\":\"Otara, St John the Evangelist\",\"diocese\":\"Auckland\",\"address\":\"14 Otara Rd, Otara\",\"schedule\":\"Sunday Masses · 8:30am & 10:30am · Weekday and Saturday Masses · 8.30am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=14 Otara Rd, Otara\"},{\"id\":\"ak-41\",\"name\":\"Owairaka, Christ the King\",\"diocese\":\"Auckland\",\"address\":\"260 Richardson Rd, Mt Roskill\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass:6.00pm · Sunday Masses:8.30am & 10.00am, 6pm · Weekday Masses · Monday: Liturgy of the Word & Holy Communion 9.00am · Tues - Thursday & Saturday:9.00am · Friday:10.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=260 Richardson Rd, Mt Roskill\"},{\"id\":\"ak-42\",\"name\":\"Pakuranga, St Mark\",\"diocese\":\"Auckland\",\"address\":\"334 Pakuranga Rd, Pakuranga\",\"schedule\":\"Sunday Masses · 5:30pm: Vigil Mass · 8.30am, 10.30am & 6.30pm · Weekday Masses · Tuesday to Saturday 9.00am · Wednesday 7.00pm · First Friday of the Month 7.00pm Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=334 Pakuranga Rd, Pakuranga\"},{\"id\":\"ak-43\",\"name\":\"Panguru, St Peter\",\"diocese\":\"Auckland\",\"address\":\"2204 West Coast Rd, RD2 Kohukohu.\",\"schedule\":\"Sunday Masses · 1st Sunday · 9am - Panguru · 11am - Pawarenga · 1pm - Herekino · 2nd Sunday · 9am - Panguru · 11am - Broadwood · 1pm - Whangape · 3rd Sunday · 9am Panguru · 11am - Pawarenga · 1.30pm-Motukaraka · 4th Sunday · 9am - Waihou / Te Karaka · 11am - Mitimiti · 1.30pm Kohukohu · 5th Sunday · 10am Area Mass - Panguru or Pawarenga · 1st - 3rd Saturday · 5pm Vigil - Motuti · 4th Saturday · 5pm Liturgy - Motuti · 4th Saturday · 5pm Mass - Broadwood\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2204 West Coast Rd, RD2 Kohukohu.\"},{\"id\":\"ak-44\",\"name\":\"Panmure, St Patrick\",\"diocese\":\"Auckland\",\"address\":\"19 Sunset View Rd, Panmure\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass:5.30 pm · Sunday:9 am · Weekday Masses · Monday -Saturday 9 am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=19 Sunset View Rd, Panmure\"},{\"id\":\"ak-45\",\"name\":\"Papakura, St Mary\",\"diocese\":\"Auckland\",\"address\":\"46 East Street, Papakura\",\"schedule\":\"Sunday Masses · Saturday 8:30am · Saturday Vigil 5:00pm · Sunday\xA0 8:30am, 10:30am · Ethnic Masses · Filipino Mass 1st Sunday 2:00pm · Samoan Mass 3rd Sunday 12:00pm · Every other month (call office for the confirmed date) · Tongan Mass 4th Sunday, 2:00pm · Every three months (call office for the confirmed date) · Weekday Masses · Monday 9.00am · Tuesday 6.30pm · Wednesday 6.30pm · Thursday 9.30am · Friday 9.00am · First Fridays of the month 10.00am · First Saturdays of the month · Anointing of the Sick - 8:30am · RECONCILIATION · 9:00 - 10:00am, Saturdays\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=46 East Street, Papakura\"},{\"id\":\"ak-46\",\"name\":\"Papatoetoe, Holy Cross\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · 5.30pm Vigil Mass · 8.00am Mass · 10.00 Mass · 5.30pm Mass · Filipino Mass:3rd Sunday at 2.30pm · Tongan Mass:3rd Saturday at 7.00pm · Weekday Masses · Monday, Tuesday, Thursday, Friday. Saturday 9.30am Mass · Wednesday, 12.00pm Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-47\",\"name\":\"Parnell, St John the Baptist\",\"diocese\":\"Auckland\",\"address\":\"244 Parnell Rd, Parnell\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass 5.00 pm · Sunday Masses 7am and 9.30am · Weekday Masses · NO Weekday Masses until further notice. · Saturday and Public Holidays Mass at 9.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=244 Parnell Rd, Parnell\"},{\"id\":\"ak-48\",\"name\":\"Ponsonby Herne Bay Parish\",\"diocese\":\"Auckland\",\"address\":\"16 Vermont St, Ponsonby\",\"schedule\":\"Sunday Masses · Sacred Heart Parish · 16 Vermont St, Ponsonby · Vigil Mass 5pm · Sunday 10.30am · Spanish Mass:2nd and 4th Sundays 12.30pm · Our Lady of Perpetual Help Church · 84 Kelmarna Ave, Herne Bay · Mandarin Vigil Mass 5.00pm · Parish Mass 8.30am · Cantonese Mass 11.00am · Syro-Malankara Mass 3.00pm (Every Sunday except 3^{rd} of the month) · Weekday Masses · Sacred Heart Church · Tuesday 8am · Wednesday 5.30pm · Thursday 6.30am · Friday 12.10pm · Saturday 8.00am · Our Lady of Perpetual Help Church · Monday 7am · Wednesday 7am · Friday 7am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=16 Vermont St, Ponsonby\"},{\"id\":\"ak-49\",\"name\":\"Pt Chevalier, Ss Francis & Therese\",\"diocese\":\"Auckland\",\"address\":\"46 Pt Chevalier Rd, Pt Chevalier\",\"schedule\":\"Sunday Masses · Saturday 5:30pm Vigil · Sunday 9am · Weekday Masses · Monday 10am Selwyn Village Chapel (Residents only) · Tuesday 9:15am · Wednesday 12pm · Friday 9:15am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=46 Pt Chevalier Rd, Pt Chevalier\"},{\"id\":\"ak-50\",\"name\":\"Pukekohe, St Patrick\",\"diocese\":\"Auckland\",\"address\":\"133 Seddon St, Pukekohe\",\"schedule\":\"Sunday Masses · Sunday 8am, 10am, 5pm · Weekday Masses · Tuesday, Wednesday, Friday and Saturday 9am · Thursday 7pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=133 Seddon St, Pukekohe\"},{\"id\":\"ak-51\",\"name\":\"Remuera, St Michael\",\"diocese\":\"Auckland\",\"address\":\"6 Beatrice Rd, Remuera\",\"schedule\":\"Sunday Masses · 8am, 10am & 5pm · Weekday Masses · Monday - Friday 7am & 12noon · Saturday\xA08am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=6 Beatrice Rd, Remuera\"},{\"id\":\"ak-52\",\"name\":\"St Heliers, St Ignatius\",\"diocese\":\"Auckland\",\"address\":\"12 Kotiri St, St Heliers\",\"schedule\":\"Sunday Masses · 5:00pm - Saturday Vigil · 9:00am - Sunday\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=12 Kotiri St, St Heliers\"},{\"id\":\"ak-53\",\"name\":\"Takapuna, St Joseph\",\"diocese\":\"Auckland\",\"address\":\"10 Dominion St, Takapuna\",\"schedule\":\"Sunday Masses · 5.00pm Vigil Mass · SUNDAY 7.30am, 10.30am and 6.00pm · Youth Mass, every 3rd Sunday, 6pm · Korean Mass, every Saturday, 7:30pm · Weekday Masses · Monday - Friday 9.15am · Saturday 9.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=10 Dominion St, Takapuna\"},{\"id\":\"ak-54\",\"name\":\"Te Atatu, Holy Family\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · 8am (Latin)\xA0 &\xA0 9:30am (English) · Weekday Masses · Monday-Saturday 9am · Tuesday - 9am and 7pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-55\",\"name\":\"Three Kings, St Therese\",\"diocese\":\"Auckland\",\"address\":\"1/7 Frost Rd, Mt Albert\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass:5:00 pm · Sunday Mass 9:30 am · Weekday Masses · Monday to Friday:7:00 am · Special Masses · Tamil:6:30 pm every 1st Saturday · Fijian:2:00 pm every 1st Sunday\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=1/7 Frost Rd, Mt Albert\"},{\"id\":\"ak-56\",\"name\":\"Tuakau & Waiuku Parishes\",\"diocese\":\"Auckland\",\"address\":\"24 Domain St. Waiuku\",\"schedule\":\"Sunday Masses · St Anthony Waiuku · Sunday 9.00am · St Andrew's Tuakau · Saturday Vigil 5.00pm · Holy Rosary Matakawau · The last Sunday of the month at 12:00 noon. · Weekday Masses · St Anthony Waiuku · Tuesday, Thursday and Saturday 9.00am · St Andrew's Tuakau · Wednesday and Friday 11.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=24 Domain St. Waiuku\"},{\"id\":\"ak-57\",\"name\":\"Waiheke Island, St Peter\",\"diocese\":\"Auckland\",\"address\":\"197 Ocean View Rd, Oneroa\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass @ 5pm · Sunday Mass @ 9.15am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=197 Ocean View Rd, Oneroa\"},{\"id\":\"ak-58\",\"name\":\"Warkworth, Holy Name\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · Holy Name Warkworth · Saturday Vigil 6:00 p.m. · Sunday Mass 10:30 a.m. · Sts Peter and Paul Puhoi · Sunday Mass 8:30 a.m. · Weekday Mass · Wednesday 9:00 am at Puhoi\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-59\",\"name\":\"Wellsford, St Mary\",\"diocese\":\"Auckland\",\"address\":\"Matheson Rd, Wellsford\",\"schedule\":\"Sunday Masses · St Mary’s Wellsford · 6 Matheson Rd · Sunday 10.30am · Maungaturoto Church · Griffin Rd · Saturday Vigil 4.00pm · Mangawhai Heads · 8A Fagan Pl · Sunday 8.30am · Weekday Masses · St Mary’s Wellsford · Tuesday and Saturday 9.00am · Friday:11.30am · Maungaturoto Church · Wednesday, 10.00am · Mangawhai Heads · Thursday:10.30am · (Private home, check weekly newsletter for address)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Matheson Rd, Wellsford\"},{\"id\":\"ak-60\",\"name\":\"Whangarei, St Francis Xavier\",\"diocese\":\"Auckland\",\"address\":\"Cnr Kamo Rd & Park Ave\",\"schedule\":\"Sunday Masses · St Francis Xavier · 63 Park Ave, Kensington, Whangarei · 5pm Vigil Mass (Standard Time) · 6pm Vigil Mass (Daylight Savings Time) · Sunday 8am & 10am · 1st Sunday\xA0@ 10am: Miha · 5th Sunday\xA0@ 5pm: Filipino · Ruakaka · Holy Family Centre, Peter Snell Rd, Ruakaka · 1st, 3rd & 5th Sunday:10.30am Liturgy of the Word with Holy Communion · 2nd & 4th Sunday 10.30am Mass · Whangarei Heads · McLeod Bay Community Church · 1st Sunday:5pm Saturday evening Vigil Mass (Standard time) · 6pm Saturday evening Vigil Mass (Daylight Savings Time) · 2nd & 4th:8.30am Liturgy of the Word with Holy Communion · 5th Sunday:10.00am, Combined Community Service · Hikurangi · Holy Name of Mary · 10 Valley Rd, Hikurangi · 1st Sunday:8am Mass · 3rd Sunday:10am Mass · 2nd, 4th & 5th Sunday:10am Liturgy of the Word with Holy Communion · Maungatapere · Interdenominational Church · 4th Sunday:8.30am Mass · Maungakaramea · St Peter & Paul Church · Main Rd, Maungakaramea · 1st Sunday:10.30am Mass · Weekday Masses · Monday and Thursday 7am · Tuesday 9am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Cnr Kamo Rd & Park Ave\"},{\"id\":\"featured-hamilton\",\"name\":\"Cathedral of the Blessed Virgin Mary\",\"diocese\":\"Hamilton\",\"address\":\"494 Grey Street, Hamilton East\",\"schedule\":\"Saturday vigil:6pm. Sunday:7:30am, 10:30am, 6pm. Monday:8am; Tuesday:12:05pm; Wednesday/Thursday:8am, 12:05pm; Friday:12:05pm.\",\"source\":\"https://www.cdh.org.nz/hamilton-cathedral/\",\"url\":\"https://www.cdh.org.nz/hamilton-cathedral/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=494 Grey Street, Hamilton East\"},{\"id\":\"hm-opotoki\",\"name\":\"Parish of Our Lady Help of Christians\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Tuesday:9:00 am (Ōpōtiki) Wednesday:9:00 am (Ōpōtiki) Friday:9:00 am (Ōpōtiki) WEEKEND MASS TIMES Sunday:9:00 am (Ōpōtiki First Sunday:11:00 am (Miha Māori, Church of Our Lady Waiaua)\",\"source\":\"https://www.cdh.org.nz/opotoki/\",\"url\":\"https://www.cdh.org.nz/opotoki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-waihi\",\"name\":\"Parish of St Joseph's\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday:9.00 am (Liturgy Only) Thursday:9.00 am Friday:9.00 am Saturday:9.00 am WEEKEND MASS TIMES Sunday:9.00 am\",\"source\":\"https://www.cdh.org.nz/waihi/\",\"url\":\"https://www.cdh.org.nz/waihi/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-Rotorua\",\"name\":\"Parish of St Mary of the Cross MacKilliop\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday:9:00 am (St Mary's, Liturgy of the Word) Tuesday:5:30 pm (St Michael's) Thursday:9:00 am (St Michael's) Wednesday:12:05 pm (St Mary's) Friday:9:00 am (St Mary's) Saturday:9:00 am (St Mary's) WEEKEND MASS TIMES Saturday:5:00 pm (St Michael's, Vigil) Sunday:8:00 am (St Michael's) Sunday:10:00 am, 5:00 pm (St Mary's) Second Sunday of the Month:11:00 am (Murupara) Fourth Sunday of the Month:11:00 am (Murupara) Other Sundays:11:00am (Murupara, Liturgy of the Word with Holy Communion Service)\",\"source\":\"https://www.cdh.org.nz/Rotorua/\",\"url\":\"https://www.cdh.org.nz/Rotorua/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-whakatane\",\"name\":\"Parish of St Peter Chanel\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday:8.00 am Tuesday:5.15 pm Wednesday:8.00 am Thursday:8.00 am Friday:12.05 pm Saturday:8.00 am WEEKEND MASS TIMES Saturday:5.00 pm Sunday:9.00 am\",\"source\":\"https://www.cdh.org.nz/whakatane/\",\"url\":\"https://www.cdh.org.nz/whakatane/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-cambridge\",\"name\":\"Parish of St Peter's\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday:9.15 am (Matamata) Tuesday:5:30 pm (Cambridge) Wednesday:9.15 am (Cambridge) Thursday:9.15 am (Cambridge) Friday:12.05 pm (Cambridge), 5.00 pm (Matamata) WEEKEND MASS TIMES Saturday Vigil:5:30 p.m (Cambridge) Sunday:8:30 a.m (Cambridge) and 10.30 a.m (Matamata)\",\"source\":\"https://www.cdh.org.nz/cambridge/\",\"url\":\"https://www.cdh.org.nz/cambridge/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-hamilton-holy-cross\",\"name\":\"Parish of the Holy Cross\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Tuesday 9.15 am (St Josephs Fairfield), 10.15 am (St Peter Chanel Te Rapa) Wednesday 9.15 am (St Josephs Fairfield), 10.15 am (St Peter Chanel Te Rapa) Thursday 9.15 am (St Josephs Fairfield), 10.15 am (St Peter Chanel Te Rapa) Friday 9.15 am (St Josephs Fairfield), 10.15 am (St Peter Chanel Te Rapa) Saturday:9.00 am (St Joseph's Fairfield) WEEKEND MASS TIMES Saturday:5.00 pm (St Peter Chanel Te Rapa) Sunday:9.00 am (St Joseph's Fairfield)\",\"source\":\"https://www.cdh.org.nz/hamilton-holy-cross/\",\"url\":\"https://www.cdh.org.nz/hamilton-holy-cross/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-hamilton-st-marys-chapel\",\"name\":\"St Mary's Chapel\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday 6.45 am Tuesday 6.45 am Wednesday 6.45 am Thursday 6.45 am Friday 6.45 am, 6:00 pm (Adoration) WEEKEND MASS TIMES Sunday, 5:00 pm (Latin Mass, normally preceded by Reconciliation)\",\"source\":\"https://www.cdh.org.nz/hamilton-st-marys-chapel/\",\"url\":\"https://www.cdh.org.nz/hamilton-st-marys-chapel/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"featured-palmerston-north\",\"name\":\"Cathedral of the Holy Spirit\",\"diocese\":\"Palmerston North\",\"address\":\"197 Broadway Avenue, Palmerston North\",\"schedule\":\"Sunday:7:30am, 10am, 6pm. Monday:7:30am. Tuesday–Friday:12:05pm; Tuesday also 5:30pm. Saturday:9am. Public holidays:9am. Monday 12:05pm: Liturgy of the Word with Holy Communion.\",\"source\":\"https://pncathedral.org.nz/page/cathedral-of-holy-spirit.html\",\"url\":\"https://pncathedral.org.nz/page/cathedral-of-holy-spirit.html\",\"map\":\"https://www.google.com/maps/search/?api=1&query=197 Broadway Avenue, Palmerston North\"},{\"id\":\"pn-taranaki-204\",\"name\":\"Bell Block Catholic Centre\",\"diocese\":\"Palmerston North\",\"address\":\"Bell Block Catholic Centre, 138 Parklands Ave, Bell Block\",\"schedule\":\"Sunday 10:30am (Mass 1st Sunday of the month; Liturgy of the Word with Holy Communion 3rd Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Bell Block Catholic Centre, 138 Parklands Ave, Bell Block New Zealand\"},{\"id\":\"pn-whanganui-waimarino-231\",\"name\":\"Holy Family\",\"diocese\":\"Palmerston North\",\"address\":\"Holy Family, \xA022 Tawhero St, Whanganui\",\"schedule\":\"Saturday Vigil 5:30pm · Syro-Malabar Mass 5:30pm (1st Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Holy Family, \xA022 Tawhero St, Whanganui New Zealand\"},{\"id\":\"pn-taranaki-214\",\"name\":\"Immaculate Conception\",\"diocese\":\"Palmerston North\",\"address\":\"Immaculate Conception, 90 Miranda St, Stratford\",\"schedule\":\"Sunday 10:15am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception, 90 Miranda St, Stratford New Zealand\"},{\"id\":\"pn-hawkes-bay-223\",\"name\":\"Immaculate Conception\",\"diocese\":\"Palmerston North\",\"address\":\"Immaculate Conception, 16 Miriama Rd, Paki Paki\",\"schedule\":\"Sunday 8am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception, 16 Miriama Rd, Paki Paki New Zealand\"},{\"id\":\"pn-whanganui-waimarino-234\",\"name\":\"Kaiwhaiki\",\"diocese\":\"Palmerston North\",\"address\":\"Kaiwhaiki\",\"schedule\":\"Sunday 11am\xA0(1st Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Kaiwhaiki New Zealand\"},{\"id\":\"pn-taranaki-212\",\"name\":\"Nga Pekanga Te Kohanga Reo\",\"diocese\":\"Palmerston North\",\"address\":\"Nga Pekanga Te Kohanga Reo, cnr Bayly St and Princess St, Waitara\",\"schedule\":\"Contact Waitara (【57†[email\xA0protected])】 for Mass Times\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Nga Pekanga Te Kohanga Reo, cnr Bayly St and Princess St, Waitara New Zealand\"},{\"id\":\"pn-taranaki-205\",\"name\":\"Our Lady Help of Christians\",\"diocese\":\"Palmerston North\",\"address\":\"Our Lady Help of Christians, 24 Clinton St, Fitzroy\",\"schedule\":\"Saturday Vigil 5:30pm · Sunday 10:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady Help of Christians, 24 Clinton St, Fitzroy New Zealand\"},{\"id\":\"pn-taranaki-208\",\"name\":\"Our Lady Star of the Sea\",\"diocese\":\"Palmerston North\",\"address\":\"Our Lady Star of the Sea, 49 Whitcombe Rd, Opunake\",\"schedule\":\"Sunday 10am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady Star of the Sea, 49 Whitcombe Rd, Opunake New Zealand\"},{\"id\":\"pn-hawkes-bay-224\",\"name\":\"Our Lady of Lourdes\",\"diocese\":\"Palmerston North\",\"address\":\"Our Lady of Lourdes, \xA085 Te Mata Rd, Havelock North\",\"schedule\":\"Sunday 9:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Lourdes, \xA085 Te Mata Rd, Havelock North New Zealand\"},{\"id\":\"pn-taranaki-213\",\"name\":\"Our Lady of the Wayside\",\"diocese\":\"Palmerston North\",\"address\":\"Our Lady of the Wayside, 32 North St, Mokau\",\"schedule\":\"Contact Waitara (【59†[email\xA0protected])】 for Mass Times\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of the Wayside, 32 North St, Mokau New Zealand\"},{\"id\":\"pn-taranaki-210\",\"name\":\"Sacred Heart\",\"diocese\":\"Palmerston North\",\"address\":\"Sacred Heart, 23 Standish St, Inglewood\",\"schedule\":\"Sunday 10:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, 23 Standish St, Inglewood New Zealand\"},{\"id\":\"pn-hawkes-bay-225\",\"name\":\"Sacred Heart\",\"diocese\":\"Palmerston North\",\"address\":\"Sacred Heart, 425 Heretaunga Street East, Hastings\",\"schedule\":\"Sunday 9am & 5:30pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, 425 Heretaunga Street East, Hastings New Zealand\"},{\"id\":\"pn-whanganui-waimarino-233\",\"name\":\"Sacred Heart Catholic Church\",\"diocese\":\"Palmerston North\",\"address\":\"Sacred Heart Catholic Church, London (Rānana)\",\"schedule\":\"Sunday 12pm (4th Sunday of the month, alternating with Hiruhārama)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart Catholic Church, London (Rānana) New Zealand\"},{\"id\":\"pn-whanganui-waimarino-237\",\"name\":\"St Andrew’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Andrew’s, next to the Whangaehu Community Hall on Whangaehu Village Rd, Whangaehu\",\"schedule\":\"Sunday 9am\xA0(first Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Andrew’s, next to the Whangaehu Community Hall on Whangaehu Village Rd, Whangaehu New Zealand\"},{\"id\":\"pn-whanganui-waimarino-235\",\"name\":\"St Francis Xavier\",\"diocese\":\"Palmerston North\",\"address\":\"St Francis Xavier, 17 Russell St, Marton\",\"schedule\":\"Sunday 9.30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis Xavier, 17 Russell St, Marton New Zealand\"},{\"id\":\"pn-taranaki-219\",\"name\":\"St Francis de Sales\",\"diocese\":\"Palmerston North\",\"address\":\"St Francis de Sales, cnr Wilson and Brassey Sts, Waverley\",\"schedule\":\"Sunday 9:30am (Liturgy of the Word with Holy Communion, 3rd Sunday of the month) · Sunday 11am (Mass 2nd Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis de Sales, cnr Wilson and Brassey Sts, Waverley New Zealand\"},{\"id\":\"pn-taranaki-206\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 106 Powderham St, New Plymouth\",\"schedule\":\"Sunday 9am, 5:30pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 106 Powderham St, New Plymouth New Zealand\"},{\"id\":\"pn-taranaki-211\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 17 Nelson Street, Waitara\",\"schedule\":\"Sunday 9am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 17 Nelson Street, Waitara New Zealand\"},{\"id\":\"pn-taranaki-215\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 29 Stanners St, Eltham\",\"schedule\":\"Saturday Vigil 6pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 29 Stanners St, Eltham New Zealand\"},{\"id\":\"pn-taranaki-217\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, \xA038 Victoria St, Hawera\",\"schedule\":\"Saturday Vigil 5pm · Sunday 9am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, \xA038 Victoria St, Hawera New Zealand\"},{\"id\":\"pn-hawkes-bay-227\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 15 St Joseph St, Waipukurau\",\"schedule\":\"Sunday 9:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 15 St Joseph St, Waipukurau New Zealand\"},{\"id\":\"pn-whanganui-waimarino-238\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 45 Arawa St, Ohakune\",\"schedule\":\"Saturday Vigil 5:30pm · Please text 027 348 8508 for confirmation of Mass times and place\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 45 Arawa St, Ohakune New Zealand\"},{\"id\":\"pn-whanganui-waimarino-232\",\"name\":\"St Joseph’s Church\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s Church, Otaranoho Road, Jerusalem (Hiruhārama)\",\"schedule\":\"Sunday 12pm (4th Sunday of the month, alternating with\xA0Rānana)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s Church, Otaranoho Road, Jerusalem (Hiruhārama) New Zealand\"},{\"id\":\"pn-taranaki-209\",\"name\":\"St Martin’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Martin’s, 6328 South Rd, Pungarehu\",\"schedule\":\"No fixed schedule published. Contact the parish.\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Martin’s, 6328 South Rd, Pungarehu New Zealand\"},{\"id\":\"pn-hawkes-bay-220\",\"name\":\"St Mary’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Mary’s, 58 Osier Rd, Taradale\",\"schedule\":\"Sunday 9am & 5pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary’s, 58 Osier Rd, Taradale New Zealand\"},{\"id\":\"pn-whanganui-waimarino-230\",\"name\":\"St Mary’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Mary’s, 1 Campbell St, Whanganui\",\"schedule\":\"Sunday 9:30am\xA0(Māori miha mass 3rd Sunday of the month, Filipino Mass 4th Sunday of the month) and 5:30pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary’s, 1 Campbell St, Whanganui New Zealand\"},{\"id\":\"pn-whanganui-waimarino-236\",\"name\":\"St Mary’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Mary’s, 15 Johnson St, Bulls\",\"schedule\":\"No masses at this time\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary’s, 15 Johnson St, Bulls New Zealand\"},{\"id\":\"pn-whanganui-waimarino-239\",\"name\":\"St Mary’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Mary’s, 51 Huia St, Taihape\",\"schedule\":\"Sunday 8am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary’s, 51 Huia St, Taihape New Zealand\"},{\"id\":\"pn-taranaki-207\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 36 Cumming St, Okato\",\"schedule\":\"Saturday Vigil 6pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 36 Cumming St, Okato New Zealand\"},{\"id\":\"pn-taranaki-216\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 78 Victoria St, Kaponga\",\"schedule\":\"Sunday 8:45am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 78 Victoria St, Kaponga New Zealand\"},{\"id\":\"pn-taranaki-218\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 27 Egmont St,Patea\",\"schedule\":\"Sunday 9:30am (Liturgy of the Word with Holy Communion, 1st Sunday of the month) · Sunday 11am (Mass 4th Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 27 Egmont St,Patea New Zealand\"},{\"id\":\"pn-hawkes-bay-221\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 4 Munroe St, Napier\",\"schedule\":\"Saturday Vigil 5:30pm · Sunday 10am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 4 Munroe St, Napier New Zealand\"},{\"id\":\"pn-hawkes-bay-228\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 46 Waverley St, Waipawa\",\"schedule\":\"Saturday Vigil 5:30pm.\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 46 Waverley St, Waipawa New Zealand\"},{\"id\":\"pn-hawkes-bay-226\",\"name\":\"St Peter Chanel\",\"diocese\":\"Palmerston North\",\"address\":\"St Peter Chanel, 817 Gordon Road, Raureka, Hastings\",\"schedule\":\"Saturday Vigil 5:30pm · Sunday 10:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Peter Chanel, 817 Gordon Road, Raureka, Hastings New Zealand\"},{\"id\":\"pn-hawkes-bay-229\",\"name\":\"St Peter’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Peter’s, 64 Queen St, Wairoa\",\"schedule\":\"Sunday 9am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Peter’s, 64 Queen St, Wairoa New Zealand\"},{\"id\":\"pn-hawkes-bay-222\",\"name\":\"St Thomas More\",\"diocese\":\"Palmerston North\",\"address\":\"St Thomas More, 92 Wycliffe St, Onekawa, Napier South\",\"schedule\":\"Sunday 8am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Thomas More, 92 Wycliffe St, Onekawa, Napier South New Zealand\"},{\"id\":\"featured-wellington\",\"name\":\"Metropolitan Cathedral of the Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"Hill Street, Thorndon, Wellington\",\"schedule\":\"Saturday:8:30am, 5:30pm vigil. Sunday:10am, 7pm. Tuesday–Friday:8am, 12:10pm. Monday 12:10pm: Liturgy of the Word with Holy Communion (except public holidays). Check calendar for changes.\",\"source\":\"https://mcshwellington.org/mass-and-reconciliation-times/\",\"url\":\"https://mcshwellington.org/mass-and-reconciliation-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Hill Street, Thorndon, Wellington\"},{\"id\":\"wn-wn-holy-family-porirua-east.data-1\",\"name\":\"Holy Family\",\"diocese\":\"Wellington\",\"address\":\"Holy Family Porirua East · see parish for church address\",\"schedule\":\"Saturday:6.00pm (Vigil) · Sunday:9.30am · Sunday:12.30pm 2nd Sunday (Cook Island) · Sunday:11.00am 2nd, 3rd, 4th, 5th Sundays (Samoan) · Sunday:12.30pm 4th Sunday (Tokelauan)\",\"source\":\"https://cadw.nz/parish/holy-family-porirua-east/\",\"url\":\"https://cadw.nz/parish/holy-family-porirua-east/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Holy Family Holy Family Porirua East New Zealand\"},{\"id\":\"wn-wn-te-whetu-o-te-moana-star-of-the-sea-marlborough-parish.data-3\",\"name\":\"Immaculate Conception\",\"diocese\":\"Wellington\",\"address\":\"Te Whetu o te Moana – Star of the Sea Marlborough Parish · see parish for church address\",\"schedule\":\"Sunday:8am Mass\",\"source\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"url\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception Te Whetu o te Moana – Star of the Sea Marlborough Parish New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-2\",\"name\":\"Motueka - St Peter Chanel\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Sunday:11.00am (Mass) · Tuesday: Holy Communion · Friday:9.30am (Liturgy of the Word)\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Motueka - St Peter Chanel St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-0\",\"name\":\"Nelson - St Mary\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Saturday:6.00pm (Vigil) · Sunday:10.30am (Mass)\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Nelson - St Mary St John Paul II New Zealand\"},{\"id\":\"wn-wn-our-lady-of-hope-parish.data-1\",\"name\":\"Our Lady of Fatima\",\"diocese\":\"Wellington\",\"address\":\"Our Lady of Hope Parish · see parish for church address\",\"schedule\":\"Sunday:8.30am, 10.30am\",\"source\":\"https://cadw.nz/parish/our-lady-of-hope-parish/\",\"url\":\"https://cadw.nz/parish/our-lady-of-hope-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Fatima Our Lady of Hope Parish New Zealand\"},{\"id\":\"wn-wn-our-lady-of-the-valleys-parish.data-0\",\"name\":\"Our Lady of Grace\",\"diocese\":\"Wellington\",\"address\":\"Our Lady of the Valleys Parish · see parish for church address\",\"schedule\":\"Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/our-lady-of-the-valleys-parish/\",\"url\":\"https://cadw.nz/parish/our-lady-of-the-valleys-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Grace Our Lady of the Valleys Parish New Zealand\"},{\"id\":\"wn-wn-te-whaea-tapu-o-kapiti-our-lady-of-kapiti-parish.data-0\",\"name\":\"Our Lady of Kapiti Church\",\"diocese\":\"Wellington\",\"address\":\"Te Whaea Tapu o Kāpiti – Our Lady of Kapiti Parish · see parish for church address\",\"schedule\":\"Saturday:5pm Vigil · Sunday:9.30am\",\"source\":\"https://cadw.nz/parish/te-whaea-tapu-o-kapiti-our-lady-of-kapiti-parish/\",\"url\":\"https://cadw.nz/parish/te-whaea-tapu-o-kapiti-our-lady-of-kapiti-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Kapiti Church Te Whaea Tapu o Kāpiti – Our Lady of Kapiti Parish New Zealand\"},{\"id\":\"wn-wn-te-wairua-tapu-holy-spirit-parish.data-3\",\"name\":\"Our Lady of the Rosary\",\"diocese\":\"Wellington\",\"address\":\"Te Wairua Tapu – Holy Spirit Parish · see parish for church address\",\"schedule\":\"Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"url\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of the Rosary Te Wairua Tapu – Holy Spirit Parish New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-3\",\"name\":\"Richmond – Our Lady of Perpetual Help\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Sunday:9.00am (Mass) · Wednesday:9.30am (Mass) · Friday:9.30am (Mass)\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Richmond – Our Lady of Perpetual Help St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-canice-parish-westport.data-1\",\"name\":\"Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Buller and Inangahua · see parish for church address\",\"schedule\":\"1st, 3rd, and 5th Sundays: Saturday vigil 5pm · 2nd and 4th Sundays: Sunday 9am\",\"source\":\"https://cadw.nz/parish/st-canice-parish-westport/\",\"url\":\"https://cadw.nz/parish/st-canice-parish-westport/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart Catholic Parish of Buller and Inangahua New Zealand\"},{\"id\":\"wn-wn-te-whetu-o-te-moana-star-of-the-sea-marlborough-parish.data-1\",\"name\":\"Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"Te Whetu o te Moana – Star of the Sea Marlborough Parish · see parish for church address\",\"schedule\":\"Tuesday:9.30am W&C · Wednesday:9.30am W&C; 7pm Rosary · Thursday:10am Scripture group; 5.15pm W&C · Friday:9.30am W&C · Sunday:9.30am Mass\",\"source\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"url\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart Te Whetu o te Moana – Star of the Sea Marlborough Parish New Zealand\"},{\"id\":\"wn-wn-te-wairua-tapu-holy-spirit-parish.data-1\",\"name\":\"Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"Te Wairua Tapu – Holy Spirit Parish · see parish for church address\",\"schedule\":\"Sunday:9.30am · Sunday:5.30pm\",\"source\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"url\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart Te Wairua Tapu – Holy Spirit Parish New Zealand\"},{\"id\":\"wn-wn-te-wairua-tapu-holy-spirit-parish.data-0\",\"name\":\"San Antonio\",\"diocese\":\"Wellington\",\"address\":\"Te Wairua Tapu – Holy Spirit Parish · see parish for church address\",\"schedule\":\"Saturday:5.30pm (Vigil)\",\"source\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"url\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=San Antonio Te Wairua Tapu – Holy Spirit Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-te-awakairangi.data-0\",\"name\":\"Ss Peter & Paul\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Te Awakairangi · see parish for church address\",\"schedule\":\"Saturday:5:30pm (Vigil) · Sunday:9.00am · Sunday:5.30pm\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Ss Peter & Paul Catholic Parish of Te Awakairangi New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-wellington-south.data-1\",\"name\":\"St Anne\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Wellington South · see parish for church address\",\"schedule\":\"Sunday:9.00am · Sunday:5.00pm · Sunday:11.00am Samoan Mass (3rd Sunday)\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-wellington-south/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-wellington-south/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Anne Catholic Parish of Wellington South New Zealand\"},{\"id\":\"wn-wn-holy-trinity-parish.data-1\",\"name\":\"St Anthony's\",\"diocese\":\"Wellington\",\"address\":\"Holy Trinity Parish · see parish for church address\",\"schedule\":\"Saturday:5.30pm (Vigil) · Wednesday:9.30am\",\"source\":\"https://cadw.nz/parish/holy-trinity-parish/\",\"url\":\"https://cadw.nz/parish/holy-trinity-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Anthony's Holy Trinity Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-te-awakairangi.data-1\",\"name\":\"St Bernadette\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Te Awakairangi · see parish for church address\",\"schedule\":\"Sunday:10.00am\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Bernadette Catholic Parish of Te Awakairangi New Zealand\"},{\"id\":\"wn-wn-st-canice-parish-westport.data-0\",\"name\":\"St Canice\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Buller and Inangahua · see parish for church address\",\"schedule\":\"1st, 3rd and 5th Sundays: Sunday 9.30am · 2nd and 4th Sundays: Saturday vigil 5pm\",\"source\":\"https://cadw.nz/parish/st-canice-parish-westport/\",\"url\":\"https://cadw.nz/parish/st-canice-parish-westport/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Canice Catholic Parish of Buller and Inangahua New Zealand\"},{\"id\":\"wn-wn-our-lady-of-the-valleys-parish.data-1\",\"name\":\"St Francis Xavier\",\"diocese\":\"Wellington\",\"address\":\"Our Lady of the Valleys Parish · see parish for church address\",\"schedule\":\"Saturday:5.30pm (Vigil) · Sunday:8.30am\",\"source\":\"https://cadw.nz/parish/our-lady-of-the-valleys-parish/\",\"url\":\"https://cadw.nz/parish/our-lady-of-the-valleys-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis Xavier Our Lady of the Valleys Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-wellington-south.data-0\",\"name\":\"St Francis de Sales\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Wellington South · see parish for church address\",\"schedule\":\"Saturday:6.00pm Vigil · Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-wellington-south/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-wellington-south/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis de Sales Catholic Parish of Wellington South New Zealand\"},{\"id\":\"wn-wn-st-francis-of-assisi-ohariu-parish.data-0\",\"name\":\"St Francis of Assisi Ohariu\",\"diocese\":\"Wellington\",\"address\":\"St Francis of Assisi Ohariu Parish · see parish for church address\",\"schedule\":\"Saturday: Vigil Mass 5pm · Sunday: Mass 10am\",\"source\":\"https://cadw.nz/parish/st-francis-of-assisi-ohariu-parish/\",\"url\":\"https://cadw.nz/parish/st-francis-of-assisi-ohariu-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis of Assisi Ohariu St Francis of Assisi Ohariu Parish New Zealand\"},{\"id\":\"wn-wn-holy-family-porirua-east.data-0\",\"name\":\"St John of the Cross\",\"diocese\":\"Wellington\",\"address\":\"Holy Family Porirua East · see parish for church address\",\"schedule\":\"Sunday:8.30am\",\"source\":\"https://cadw.nz/parish/holy-family-porirua-east/\",\"url\":\"https://cadw.nz/parish/holy-family-porirua-east/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St John of the Cross Holy Family Porirua East New Zealand\"},{\"id\":\"wn-wn-te-whetu-o-te-moana-star-of-the-sea-marlborough-parish.data-2\",\"name\":\"St Joseph's\",\"diocese\":\"Wellington\",\"address\":\"Te Whetu o te Moana – Star of the Sea Marlborough Parish · see parish for church address\",\"schedule\":\"Wednesday:9.30am Mass · Wednesday:10-10.30am (and by appointment) Exposition & Reconciliation · Thursday:5.15pm Adoration · Saturday:4pm Mass (5pm during Daylight Savings Time)\",\"source\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"url\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph's Te Whetu o te Moana – Star of the Sea Marlborough Parish New Zealand\"},{\"id\":\"wn-wn-st-josephs-upper-hutt.data-0\",\"name\":\"St Joseph's Church\",\"diocese\":\"Wellington\",\"address\":\"St Joseph’s Upper Hutt · see parish for church address\",\"schedule\":\"Saturday:6.00pm (Vigil) · Sunday:9.00am · Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/st-josephs-upper-hutt/\",\"url\":\"https://cadw.nz/parish/st-josephs-upper-hutt/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph's Church St Joseph’s Upper Hutt New Zealand\"},{\"id\":\"wn-wn-st-mary-of-the-angels-wellington-central-parish.data-1\",\"name\":\"St Joseph's church\",\"diocese\":\"Wellington\",\"address\":\"St Mary of the Angels Wellington Central Parish · see parish for church address\",\"schedule\":\"Sunday:9:30am\",\"source\":\"https://cadw.nz/parish/st-mary-of-the-angels-wellington-central-parish/\",\"url\":\"https://cadw.nz/parish/st-mary-of-the-angels-wellington-central-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph's church St Mary of the Angels Wellington Central Parish New Zealand\"},{\"id\":\"wn-wn-te-whetu-o-te-moana-star-of-the-sea-marlborough-parish.data-0\",\"name\":\"St Mary\",\"diocese\":\"Wellington\",\"address\":\"Te Whetu o te Moana – Star of the Sea Marlborough Parish · see parish for church address\",\"schedule\":\"Tuesday:9.30am Mass in Mercy Chapel · Wednesday:12.05pm Mass in Mercy Chapel; 5.30pm Rosary ph. 572 9067 for venue · Thursday:9.30am Mass in Mercy Chapel · Friday:11am Exposition in St Mary's Church; Reconciliation 11.30am-12 noon; 12.05pm Mass in St Mary's Church · Saturday:9.30am Mass (weekday mass) followed by Reconciliation; 5pm Mass · Sunday:10am Mass; 5pm Mass\",\"source\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"url\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary Te Whetu o te Moana – Star of the Sea Marlborough Parish New Zealand\"},{\"id\":\"wn-wn-hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-levin.data-0\",\"name\":\"St Mary's\",\"diocese\":\"Wellington\",\"address\":\"Hāto Mere – St Mary’s Parish Ōtaki · see parish for church address\",\"schedule\":\"Sunday:10am (Miha Māori 1st Sunday) · Monday:10am (Liturgy of the Word & Communion) · Tuesday:10am (Liturgy of the Word & Communion) · Wednesday:10am Mass · Thursday:10am Mass · Friday:10am Mass\",\"source\":\"https://cadw.nz/parish/hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-levin/\",\"url\":\"https://cadw.nz/parish/hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-levin/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary's Hāto Mere – St Mary’s Parish Ōtaki New Zealand\"},{\"id\":\"wn-wn-hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-otaki-and-levin.data-0\",\"name\":\"St Mary's\",\"diocese\":\"Wellington\",\"address\":\"St. Joseph’s Parish Levin · see parish for church address\",\"schedule\":\"Sunday:9:30am Mass · Monday:5:30pm Mass · Tuesday:9:30am Mass · Wednesday:7:00pm Mass · Thursday:9:30am Mass · Friday:12:10pm Mass · Saturday:5:30pm (Vigil Mass)\",\"source\":\"https://cadw.nz/parish/hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-otaki-and-levin/\",\"url\":\"https://cadw.nz/parish/hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-otaki-and-levin/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary's St. Joseph’s Parish Levin New Zealand\"},{\"id\":\"wn-wn-st-mary-of-the-angels-wellington-central-parish.data-0\",\"name\":\"St Mary's of the Angels church\",\"diocese\":\"Wellington\",\"address\":\"St Mary of the Angels Wellington Central Parish · see parish for church address\",\"schedule\":\"Sunday:7.00am; 9.00am 11.00am (Choral); 5.00pm\",\"source\":\"https://cadw.nz/parish/st-mary-of-the-angels-wellington-central-parish/\",\"url\":\"https://cadw.nz/parish/st-mary-of-the-angels-wellington-central-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary's of the Angels church St Mary of the Angels Wellington Central Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-te-awakairangi.data-2\",\"name\":\"St Michael\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Te Awakairangi · see parish for church address\",\"schedule\":\"Sunday:8.30am · Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Michael Catholic Parish of Te Awakairangi New Zealand\"},{\"id\":\"wn-wn-te-wairua-tapu-holy-spirit-parish.data-2\",\"name\":\"St Patrick\",\"diocese\":\"Wellington\",\"address\":\"Te Wairua Tapu – Holy Spirit Parish · see parish for church address\",\"schedule\":\"Sunday:8.30am\",\"source\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"url\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick Te Wairua Tapu – Holy Spirit Parish New Zealand\"},{\"id\":\"wn-wn-holy-trinity-parish.data-0\",\"name\":\"St Patrick's\",\"diocese\":\"Wellington\",\"address\":\"Holy Trinity Parish · see parish for church address\",\"schedule\":\"Sunday:8.30am, 10.30am · Tuesday:9.30am · Friday:9.30am\",\"source\":\"https://cadw.nz/parish/holy-trinity-parish/\",\"url\":\"https://cadw.nz/parish/holy-trinity-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick's Holy Trinity Parish New Zealand\"},{\"id\":\"wn-wn-our-lady-of-hope-parish.data-0\",\"name\":\"St Pius X\",\"diocese\":\"Wellington\",\"address\":\"Our Lady of Hope Parish · see parish for church address\",\"schedule\":\"Saturday:5.30pm (Vigil)\",\"source\":\"https://cadw.nz/parish/our-lady-of-hope-parish/\",\"url\":\"https://cadw.nz/parish/our-lady-of-hope-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Pius X Our Lady of Hope Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-otari.data-0\",\"name\":\"St Teresa's\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Otari · see parish for church address\",\"schedule\":\"Saturday:5.30pm Vigil · Sunday:10.00am\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-otari/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-otari/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Teresa's Catholic Parish of Otari New Zealand\"},{\"id\":\"wn-wn-st-theresas-parish-plimmerton.data-0\",\"name\":\"St Theresa's\",\"diocese\":\"Wellington\",\"address\":\"St Theresa’s Parish Plimmerton · see parish for church address\",\"schedule\":\"Sunday:9.30am · Monday:9.30am (followed by Adoration until 1.30pm) · Tuesday-Friday:9.30am · Saturday:9.00am, 5.00pm (Vigil)\",\"source\":\"https://cadw.nz/parish/st-theresas-parish-plimmerton/\",\"url\":\"https://cadw.nz/parish/st-theresas-parish-plimmerton/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Theresa's St Theresa’s Parish Plimmerton New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-1\",\"name\":\"Stoke – St Francis of Assisi\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Sunday:8.30am (Mass)\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Stoke – St Francis of Assisi St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-4\",\"name\":\"Takaka - Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Sunday:5.00pm summer (winter 4pm) - 1st and 3rd Sunday of the month · Sunday:9.30am (Liturgy of the Word) - 2nd Sundays of the month\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Takaka - Sacred Heart St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-6\",\"name\":\"Waimea West – Ss Peter & Paul\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Saturday:5pm (Vigil) - on 4th Saturday of the month\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Waimea West – Ss Peter & Paul St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-5\",\"name\":\"Wakefield – St Joseph's\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Saturday:5pm (Vigil) - 2nd Saturdays of the month\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Wakefield – St Joseph's St John Paul II New Zealand\"},{\"id\":\"featured-christchurch\",\"name\":\"St Mary’s Pro-Cathedral\",\"diocese\":\"Christchurch\",\"address\":\"373 Manchester Street, Christchurch\",\"schedule\":\"Saturday vigil:5:30pm. Sunday:8am, 9:30am, 11am (choral), 4:30pm, 6pm. Fourth Sunday:12:30pm Samoan Mass.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/find-a-church\",\"map\":\"https://www.google.com/maps/search/?api=1&query=373 Manchester Street, Christchurch\"},{\"id\":\"chch-0\",\"name\":\"Addington - Sacred Heart\",\"diocese\":\"Christchurch\",\"address\":\"70 Spencer Street, Addington, Christchurch 8024, New Zealand\",\"schedule\":\"Saturday (Vigil):5:00 pm | Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sacred-heart\",\"map\":\"https://www.google.com/maps/search/?api=1&query=70 Spencer Street, Addington, Christchurch 8024, New Zealand&query_place_id=ChIJT-kdzXuKMW0Rgs6imzF8V7Q\"},{\"id\":\"chch-1\",\"name\":\"Akaroa - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"29 Rue Lavaud, Akaroa 7520, New Zealand\",\"schedule\":\"Sunday:9:30 am ‘Liturgy of the Word with the Distribution of Communion’; Sunday Mass is celebrated periodically.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-akaroa\",\"map\":\"https://www.google.com/maps/search/?api=1&query=29 Rue Lavaud, Akaroa 7520, New Zealand&query_place_id=ChIJd_efFHXMM20R00JGkNL48RY\"},{\"id\":\"chch-26\",\"name\":\"Amberley - Holy Passion of the Lord\",\"diocese\":\"Christchurch\",\"address\":\"138 Carters Road, Amberley 7410, New Zealand\",\"schedule\":\"Official listing includes conflicting Sunday times (9am and 8:30am). Please confirm directly with the parish.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/holy-passion-of-the-lord-amberley\",\"map\":\"https://www.google.com/maps/search/?api=1&query=138 Carters Road, Amberley 7410, New Zealand&query_place_id=ChIJxxlt5Eu7MW0RuEe6dsu8FGA\"},{\"id\":\"chch-22\",\"name\":\"Ashburton - Holy Name\",\"diocese\":\"Christchurch\",\"address\":\"58 Sealy Street, Ashburton 7700, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/holy-name-ashburton\",\"map\":\"https://www.google.com/maps/search/?api=1&query=58 Sealy Street, Ashburton 7700, New Zealand&query_place_id=ChIJ-TGwFLC7LW0RVtq0v1MUYE0\"},{\"id\":\"chch-2\",\"name\":\"Beckenham - St Peter's\",\"diocese\":\"Christchurch\",\"address\":\"11 Fisher Avenue, Beckenham, Christchurch 8023, New Zealand\",\"schedule\":\"Sunday:9:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-peters\",\"map\":\"https://www.google.com/maps/search/?api=1&query=11 Fisher Avenue, Beckenham, Christchurch 8023, New Zealand&query_place_id=EjUxMSBGaXNoZXIgQXZlbnVlLCBDYW50ZXJidXJ5IFJlZ2lvbiA4MDIzLCBOZXcgWmVhbGFuZCIwEi4KFAoSCWdUHGivIDJtEc4EOZeEsBEMEAsqFAoSCZ1OS6OuIDJtEbF_nLSiboav\"},{\"id\":\"chch-3\",\"name\":\"Bishopdale - St Gregory's\",\"diocese\":\"Christchurch\",\"address\":\"26 Cotswold Avenue, Bishopdale, Christchurch 8053, New Zealand\",\"schedule\":\"Saturday (Vigil):6:00pm | Sunday:8:00 am | 10:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-gregorys\",\"map\":\"https://www.google.com/maps/search/?api=1&query=26 Cotswold Avenue, Bishopdale, Christchurch 8053, New Zealand&query_place_id=ChIJ754EjWiLMW0RjA7YgebgdTk\"},{\"id\":\"chch-4\",\"name\":\"Burnside - Christ the King\",\"diocese\":\"Christchurch\",\"address\":\"90 Greers Road, Burnside, Christchurch 8053, New Zealand\",\"schedule\":\"No Masses currently due to building safety risk\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/christ-the-king\",\"map\":\"https://www.google.com/maps/search/?api=1&query=90 Greers Road, Burnside, Christchurch 8053, New Zealand&query_place_id=ChIJQ7Ya3yaLMW0RAtkDprN8ouE\"},{\"id\":\"chch-27\",\"name\":\"Cheviot - St Anthony's\",\"diocese\":\"Christchurch\",\"address\":\"62 Ward Road, Cheviot 7310, New Zealand\",\"schedule\":\"Sunday:11:00 am - 1st, 3rd & 5th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-anthonys-cheviot\",\"map\":\"https://www.google.com/maps/search/?api=1&query=62 Ward Road, Cheviot 7310, New Zealand&query_place_id=ChIJS0gf6LvCMG0RO8FvadjKz9o\"},{\"id\":\"chch-45\",\"name\":\"Cobden - Holy Rosary\",\"diocese\":\"Christchurch\",\"address\":\"48 Richmond Street, Cobden, Greymouth 7802, New Zealand\",\"schedule\":\"Sunday:8:00 am (1st, 2nd & 3rd Sundays of the month)\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/holy-rosary-cobden\",\"map\":\"https://www.google.com/maps/search/?api=1&query=48 Richmond Street, Cobden, Greymouth 7802, New Zealand&query_place_id=ChIJe586sHdpL20Rqoz0gDgFHQA\"},{\"id\":\"chch-28\",\"name\":\"Culverden - Our Lady Help of Christians\",\"diocese\":\"Christchurch\",\"address\":\"12 Montrose Avenue, Culverden 7392, New Zealand\",\"schedule\":\"Saturday (Vigil):7:00pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-help-of-christians-culverden\",\"map\":\"https://www.google.com/maps/search/?api=1&query=12 Montrose Avenue, Culverden 7392, New Zealand&query_place_id=ChIJhR7P7LhZMG0RJGhjl4FcYsg\"},{\"id\":\"chch-6\",\"name\":\"Darfield - St Joseph's\",\"diocese\":\"Christchurch\",\"address\":\"Telegraph Road, Darfield 7510, New Zealand\",\"schedule\":\"Sunday:9.00 am (Winter) | 8.30am (during daylight saving)\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-josephs-darfield\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Telegraph Road, Darfield 7510, New Zealand&query_place_id=EipUZWxlZ3JhcGggUm9hZCwgRGFyZmllbGQgNzUxMCwgTmV3IFplYWxhbmQiLiosChQKEgmnffaxBv8tbREpOTrsGymvsRIUChIJm4vE_iQHLm0RJ60I-UIo2W0\"},{\"id\":\"chch-7\",\"name\":\"Diamond Harbour - St Andrew's Community Church\",\"diocese\":\"Christchurch\",\"address\":\"85 Marine Drive, Diamond Harbour 8971, New Zealand\",\"schedule\":\"Sunday:8:30am (Celebration in absence of priest 2nd, 3rd and 4th Sunday of the month) | 5:30pm (1st Sunday of the month)\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-andrews-community-church-diamond-harbour\",\"map\":\"https://www.google.com/maps/search/?api=1&query=85 Marine Drive, Diamond Harbour 8971, New Zealand&query_place_id=ChIJ_yNlFAMmMm0Rn1RapOIrStU\"},{\"id\":\"chch-36\",\"name\":\"Fairlie - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"7 Gall Street, Fairlie 7925, New Zealand\",\"schedule\":\"Sunday:9:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-fairlie\",\"map\":\"https://www.google.com/maps/search/?api=1&query=7 Gall Street, Fairlie 7925, New Zealand&query_place_id=ChIJcfADtvWBLG0RjGuh14bFWKo\"},{\"id\":\"chch-46\",\"name\":\"Fox Glacier - Our Lady of the Snows\",\"diocese\":\"Christchurch\",\"address\":\"Cook Flat Road, Fox Glacier 7886, New Zealand\",\"schedule\":\"The weekend timetable is subject to change. For up-to-date Mass times please check the schedule displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-snows-fox-glacier\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Cook Flat Road, Fox Glacier 7886, New Zealand&query_place_id=Ei1Db29rIEZsYXQgUm9hZCwgRm94IEdsYWNpZXIgNzg4NiwgTmV3IFplYWxhbmQiLiosChQKEglPcuu0Bi8qbRGKYOMaHGIKTRIUChIJ_epAj4UvKm0RcG55hIbvAAU\"},{\"id\":\"chch-47\",\"name\":\"Franz Josef - Our Lady of the Alps\",\"diocese\":\"Christchurch\",\"address\":\"Franz Josef Highway, Franz Josef / Waiau 7886, New Zealand\",\"schedule\":\"The weekend timetable is subject to change. For up-to-date Mass times please check the schedule displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-alps-franz-josef\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Franz Josef Highway, Franz Josef / Waiau 7886, New Zealand&query_place_id=EjpGcmFueiBKb3NlZiBIaWdod2F5LCBGcmFueiBKb3NlZiAvIFdhaWF1IDc4ODYsIE5ldyBaZWFsYW5kIi4qLAoUChIJhdpAHcl8KW0Rlcs-Ec8sarUSFAoSCTe0L-8mfiltEcBueYSG7wAF\"},{\"id\":\"chch-37\",\"name\":\"Geraldine - Immaculate Conception\",\"diocese\":\"Christchurch\",\"address\":\"19 Hislop Street, Geraldine 7930, New Zealand\",\"schedule\":\"Sunday:9:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/immaculate-conception-geraldine\",\"map\":\"https://www.google.com/maps/search/?api=1&query=19 Hislop Street, Geraldine 7930, New Zealand&query_place_id=ChIJ9dxgUsX1LG0RvGYazshWWe4\"},{\"id\":\"chch-48\",\"name\":\"Grey Valley-Ngahere - Sacred Heart\",\"diocese\":\"Christchurch\",\"address\":\"2296 State Highway 7, Ngahere 7872, New Zealand\",\"schedule\":\"Sunday:11:00 am - 4th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sacred-heart-grey-valley-ngahere\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2296 State Highway 7, Ngahere 7872, New Zealand&query_place_id=ChIJ6cxFjU93L20R4ESgjWG6imo\"},{\"id\":\"chch-49\",\"name\":\"Greymouth - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"40 High Street, Greymouth 7805, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:9:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-greymouth\",\"map\":\"https://www.google.com/maps/search/?api=1&query=40 High Street, Greymouth 7805, New Zealand&query_place_id=ChIJ2e2VIDJqL20RnDzZIB919R0\"},{\"id\":\"chch-50\",\"name\":\"Haast - Our Lady of Lourdes\",\"diocese\":\"Christchurch\",\"address\":\"Johnston Crescent, Haast 7886, New Zealand\",\"schedule\":\"Sunday: The weekend timetable is subject to change. For up-to-date Mass times please check the schedule displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-lourdes-haast\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Johnston Crescent, Haast 7886, New Zealand&query_place_id=EipKb2huc3RvbiBDcmVzY2VudCwgSGFhc3QgNzg4NiwgTmV3IFplYWxhbmQiLiosChQKEglRa0pDggnVbBHPCbTOEg6xnhIUChIJZ5vYbCWd1WwR0HJ5hIbvAAU\"},{\"id\":\"chch-8\",\"name\":\"Halswell - Sts Peter & Paul\",\"diocese\":\"Christchurch\",\"address\":\"56 Nicholls Road, Halswell, Christchurch 8025, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:9:00am | 10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sts-peter-paul\",\"map\":\"https://www.google.com/maps/search/?api=1&query=56 Nicholls Road, Halswell, Christchurch 8025, New Zealand&query_place_id=ChIJD0gYb4cfMm0Rnn-7SiD9wiQ\"},{\"id\":\"chch-29\",\"name\":\"Hanmer Springs - St Roch's\",\"diocese\":\"Christchurch\",\"address\":\"27 Amuri Avenue, Hanmer Springs 7334, New Zealand\",\"schedule\":\"Saturday:5:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-rochs-hanmer-springs\",\"map\":\"https://www.google.com/maps/search/?api=1&query=27 Amuri Avenue, Hanmer Springs 7334, New Zealand&query_place_id=ChIJx0vy_YJjMG0R4obV5ucX1mE\"},{\"id\":\"chch-51\",\"name\":\"Hari Hari - St Anne's\",\"diocese\":\"Christchurch\",\"address\":\"Wanganui Flat Road, Harihari 7884, New Zealand\",\"schedule\":\"Sunday: The weekend timetable is subject to change. For up-to-date Mass times please check the schedule displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-annes-hari-hari\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Wanganui Flat Road, Harihari 7884, New Zealand&query_place_id=Ei5XYW5nYW51aSBGbGF0IFJvYWQsIEhhcmloYXJpIDc4ODQsIE5ldyBaZWFsYW5kIi4qLAoUChIJLRWppkBHKW0RRg08_kl_ojwSFAoSCV9FcJzTRyltETB0eYSG7wAF\"},{\"id\":\"chch-30\",\"name\":\"Hawarden - St Raphael\",\"diocese\":\"Christchurch\",\"address\":\"22 Ocarrolls Road, Hawarden 7385, New Zealand\",\"schedule\":\"Sunday:10:30 am - 2nd & 4th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-raphael-hawarden\",\"map\":\"https://www.google.com/maps/search/?api=1&query=22 Ocarrolls Road, Hawarden 7385, New Zealand&query_place_id=ChIJV7EvKVpLMG0RaH3Z6z6L8Ls\"},{\"id\":\"chch-9\",\"name\":\"Hei Hei - St Bernadette's\",\"diocese\":\"Christchurch\",\"address\":\"76 Hei Hei Road, Hei Hei, Christchurch 8042, New Zealand\",\"schedule\":\"Saturday:6:00 pm Samoan Mass: Sunday 12:30 pm on the third Sunday of the month | Brazilian Mass: Sunday 6:00 pm on the last Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-bernadettes\",\"map\":\"https://www.google.com/maps/search/?api=1&query=76 Hei Hei Road, Hei Hei, Christchurch 8042, New Zealand&query_place_id=ChIJr-AOGHH1MW0Rx23hur5vLFo\"},{\"id\":\"chch-52\",\"name\":\"Hokitika - St Mary's Chapel\",\"diocese\":\"Christchurch\",\"address\":\"71 Sewell Street, Hokitika 7810, New Zealand\",\"schedule\":\"Saturday:5:00 pm (St Mary's Chapel) *In Summer Mass is celebrated at 6.00pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-marys-hokitika\",\"map\":\"https://www.google.com/maps/search/?api=1&query=71 Sewell Street, Hokitika 7810, New Zealand&query_place_id=ChIJz0bmq2wvL20RgJ1B6k9Ywk0\"},{\"id\":\"chch-53\",\"name\":\"Hokitika - St Mary's School Hall\",\"diocese\":\"Christchurch\",\"address\":\"87 Sewell Street, Hokitika 7810, New Zealand\",\"schedule\":\"Sunday:9.00am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/hokitika-st-marys-school-hall\",\"map\":\"https://www.google.com/maps/search/?api=1&query=87 Sewell Street, Hokitika 7810, New Zealand&query_place_id=ChIJcVp0r2wvL20RhOfyTZGdMJk\"},{\"id\":\"chch-10\",\"name\":\"Hoon Hay - Carmelite Monastery\",\"diocese\":\"Christchurch\",\"address\":\"52 Halswell Road, Hillmorton, Christchurch 8025, New Zealand\",\"schedule\":\"Sunday:8:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/carmelite-monastery\",\"map\":\"https://www.google.com/maps/search/?api=1&query=52 Halswell Road, Hillmorton, Christchurch 8025, New Zealand&query_place_id=ChIJh_MbKHcgMm0RPBDgZobHDqU\"},{\"id\":\"chch-11\",\"name\":\"Hoon Hay - Our Lady of the Assumption\",\"diocese\":\"Christchurch\",\"address\":\"89 Sparks Road, Hoon Hay, Christchurch 8025, New Zealand\",\"schedule\":\"No Masses currently due to building safety risk\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-assumption\",\"map\":\"https://www.google.com/maps/search/?api=1&query=89 Sparks Road, Hoon Hay, Christchurch 8025, New Zealand&query_place_id=ChIJpe8-vIkgMm0RMjSJDTibVMY\"},{\"id\":\"chch-31\",\"name\":\"Kaiapoi - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"61 Fuller Street, Kaiapoi 7630, New Zealand\",\"schedule\":\"Sunday:9:00am, 11.00am (Latin Mass)\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-kaiapoi\",\"map\":\"https://www.google.com/maps/search/?api=1&query=61 Fuller Street, Kaiapoi 7630, New Zealand&query_place_id=ChIJ47TOZfORMW0Ra-u3khh0gds\"},{\"id\":\"chch-54\",\"name\":\"Kokatahi - St Paul's\",\"diocese\":\"Christchurch\",\"address\":\"Upper Kokatahi Road, Kokatahi 7881, New Zealand\",\"schedule\":\"Sunday:10:45am - 1st, 2nd, 3rd and 5th Sundays of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-pauls-kokatahi\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Upper Kokatahi Road, Kokatahi 7881, New Zealand&query_place_id=Ei9VcHBlciBLb2thdGFoaSBSb2FkLCBLb2thdGFoaSA3ODgxLCBOZXcgWmVhbGFuZCIuKiwKFAoSCcNj_ccj3y5tER6OFbBbLBMuEhQKEgkhygvMdd4ubRHA4nmEhu8ABQ\"},{\"id\":\"chch-55\",\"name\":\"Kumara - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"Third Street, Kumara 7832, New Zealand\",\"schedule\":\"Sunday:11:00 am - 5 th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-kumara\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Third Street, Kumara 7832, New Zealand&query_place_id=EiZUaGlyZCBTdHJlZXQsIEt1bWFyYSA3ODMyLCBOZXcgWmVhbGFuZCIuKiwKFAoSCfEP_xZIFi9tEVFUD0-c0FyXEhQKEgk5XuxHNBYvbRGAgHmEhu8ABQ\"},{\"id\":\"chch-12\",\"name\":\"Leeston - St John the Evangelist\",\"diocese\":\"Christchurch\",\"address\":\"154 High Street, Leeston 7632, New Zealand\",\"schedule\":\"Sunday:10:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-john-the-evangelist-leeston\",\"map\":\"https://www.google.com/maps/search/?api=1&query=154 High Street, Leeston 7632, New Zealand&query_place_id=Ei0xNTQgSGlnaCBTdHJlZXQsIENhbnRlcmJ1cnkgNzYzMiwgTmV3IFplYWxhbmQiMRIvChQKEgnbmW2K5AsybRH_9NWs3mSuZRCaASoUChIJZ7gr-PwLMm0R7xmr7lHDQ_4\"},{\"id\":\"chch-32\",\"name\":\"Leithfield - Community of the Beatitudes\",\"diocese\":\"Christchurch\",\"address\":\"67 Leithfield Road, Leithfield 7481, New Zealand\",\"schedule\":\"Sunday:11.00am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/community-of-the-beatitudes\",\"map\":\"https://www.google.com/maps/search/?api=1&query=67 Leithfield Road, Leithfield 7481, New Zealand&query_place_id=ChIJUx9MH7W8MW0R4Tg31LaUA-I\"},{\"id\":\"chch-13\",\"name\":\"Lincoln - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"31 Gerald Street, Lincoln 7608, New Zealand\",\"schedule\":\"Saturday:5:30 pm | Sunday:8:30am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-lincoln\",\"map\":\"https://www.google.com/maps/search/?api=1&query=31 Gerald Street, Lincoln 7608, New Zealand&query_place_id=ChIJX6zszWAZMm0RRUrO9RFVOjo\"},{\"id\":\"chch-23\",\"name\":\"Methven - Our Lady of the Snows\",\"diocese\":\"Christchurch\",\"address\":\"201 Main Street, Methven 7730, New Zealand\",\"schedule\":\"Sunday:8:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-snows-methven\",\"map\":\"https://www.google.com/maps/search/?api=1&query=201 Main Street, Methven 7730, New Zealand&query_place_id=ChIJQ-MwtDLQLW0RDu-tfL3TzYk\"},{\"id\":\"chch-14\",\"name\":\"New Brighton - St Mary's\",\"diocese\":\"Christchurch\",\"address\":\"116 Lonsdale Street, New Brighton, Christchurch 8083, New Zealand\",\"schedule\":\"Sunday:10:30 am | Samoan Mass:12:30 pm - 2nd Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-marys-new-brighton\",\"map\":\"https://www.google.com/maps/search/?api=1&query=116 Lonsdale Street, New Brighton, Christchurch 8083, New Zealand&query_place_id=ChIJfxKkW5eIMW0RqqGe6FnwI-w\"},{\"id\":\"chch-33\",\"name\":\"Oxford - Sacred Heart\",\"diocese\":\"Christchurch\",\"address\":\"100 Main Street, Oxford 7430, New Zealand\",\"schedule\":\"Sunday:8:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sacred-heart-oxford\",\"map\":\"https://www.google.com/maps/search/?api=1&query=100 Main Street, Oxford 7430, New Zealand&query_place_id=ChIJ-zdjfdkdLm0RgB6XqlmxF1Y\"},{\"id\":\"chch-15\",\"name\":\"Papanui - St Bede's College Chapel\",\"diocese\":\"Christchurch\",\"address\":\"210 Main North Road, Redwood, Christchurch 8051, New Zealand\",\"schedule\":\"Sunday:5:00pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-bedes-college-chapel\",\"map\":\"https://www.google.com/maps/search/?api=1&query=210 Main North Road, Redwood, Christchurch 8051, New Zealand&query_place_id=ChIJPy7nmo-LMW0RurWRDrH-iEY\"},{\"id\":\"chch-38\",\"name\":\"Pleasant Point - St Mary's\",\"diocese\":\"Christchurch\",\"address\":\"29 Afghan Street, Pleasant Point 7903, New Zealand\",\"schedule\":\"Saturday:6:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-marys-pleasant-point\",\"map\":\"https://www.google.com/maps/search/?api=1&query=29 Afghan Street, Pleasant Point 7903, New Zealand&query_place_id=ChIJb4GhrxKTLG0RkKxTnUSDdZQ\"},{\"id\":\"chch-24\",\"name\":\"Rakaia - St Ita's\",\"diocese\":\"Christchurch\",\"address\":\"West Town Belt, Rakaia 7710, New Zealand\",\"schedule\":\"Sunday:6:30 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-itas-rakaia\",\"map\":\"https://www.google.com/maps/search/?api=1&query=West Town Belt, Rakaia 7710, New Zealand&query_place_id=EihXZXN0IFRvd24gQmVsdCwgUmFrYWlhIDc3MTAsIE5ldyBaZWFsYW5kIi4qLAoUChIJRwlFjOftLW0RmxpPAHMNVqASFAoSCSEkzcTo7S1tER8-RV86msq3\"},{\"id\":\"chch-34\",\"name\":\"Rangiora - St Mary & St Francis de Sales\",\"diocese\":\"Christchurch\",\"address\":\"41 Victoria Street, Rangiora 7400, New Zealand\",\"schedule\":\"Saturday (Vigil):6:00 pm | Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-mary-st-francis-de-sales-rangiora\",\"map\":\"https://www.google.com/maps/search/?api=1&query=41 Victoria Street, Rangiora 7400, New Zealand&query_place_id=ChIJy3K6FI6UMW0REBH0lV20g5c\"},{\"id\":\"chch-16\",\"name\":\"Riccarton - St Teresa of Lisieux\",\"diocese\":\"Christchurch\",\"address\":\"8041/8 Puriri Street, Riccarton, Christchurch 8041, New Zealand\",\"schedule\":\"Sunday:8:00 am | 10:00 am | 7:00 pm Indonesian Mass: Saturday (vigil) 5:00 pm on the First Saturday of the month | Spanish Mass: Saturday (vigil) 5:00 pm on the Second Saturday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-teresa-of-lisieux-church-riccarton\",\"map\":\"https://www.google.com/maps/search/?api=1&query=8041/8 Puriri Street, Riccarton, Christchurch 8041, New Zealand&query_place_id=EjI4MDQxLzggUHVyaXJpIFN0cmVldCwgQ2FudGVyYnVyeSA4MDQxLCBOZXcgWmVhbGFuZCI6GjgKMBIuChQKEglJi0oA7YoxbREWKU_d1ZwwTRAIKhQKEgnT1Kpj7ooxbRGB6-xFj3vDcBIEODA0MQ\"},{\"id\":\"chch-17\",\"name\":\"Rolleston - Primary School\",\"diocese\":\"Christchurch\",\"address\":\"11 Tennyson Street, Rolleston 7614, New Zealand\",\"schedule\":\"Sunday:11.00am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/rolleston-primary-school\",\"map\":\"https://www.google.com/maps/search/?api=1&query=11 Tennyson Street, Rolleston 7614, New Zealand&query_place_id=ChIJfw-ZUTYDMm0R5TwcH9y157w\"},{\"id\":\"chch-56\",\"name\":\"Ross - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"19 Saint James Street, Ross 7812, New Zealand\",\"schedule\":\"Sunday:10:45am - 4th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-church-ross\",\"map\":\"https://www.google.com/maps/search/?api=1&query=19 Saint James Street, Ross 7812, New Zealand&query_place_id=ChIJ73qaNkrTLm0RUlRRGreMUwM\"},{\"id\":\"chch-18\",\"name\":\"Sockburn - Our Lady of Victories\",\"diocese\":\"Christchurch\",\"address\":\"106 Main South Road, Sockburn, Christchurch 8042, New Zealand\",\"schedule\":\"Sunday:9:00 am | 11:00 am | 5:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-victories\",\"map\":\"https://www.google.com/maps/search/?api=1&query=106 Main South Road, Sockburn, Christchurch 8042, New Zealand&query_place_id=ChIJZRq9WEz1MW0RuPVpzvnyPfI\"},{\"id\":\"chch-19\",\"name\":\"Sumner - Our Lady Star of the Sea\",\"diocese\":\"Christchurch\",\"address\":\"42 Dryden Street, Sumner, Christchurch 8081, New Zealand\",\"schedule\":\"Sunday:9:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-star-of-the-sea-sumner\",\"map\":\"https://www.google.com/maps/search/?api=1&query=42 Dryden Street, Sumner, Christchurch 8081, New Zealand&query_place_id=ChIJeaN9mDsoMm0RY7_BQXaXFY0\"},{\"id\":\"chch-20\",\"name\":\"Te Rangimārie Chaplaincy\",\"diocese\":\"Christchurch\",\"address\":\"373 Manchester Street, Christchurch Central City, Christchurch 8013, New Zealand\",\"schedule\":\"Sunday:12:30 pm (First, Second, Third, Fifth Sunday) 6.00pm (Fourth Sunday) \",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/te-rangimārie-centre\",\"map\":\"https://www.google.com/maps/search/?api=1&query=373 Manchester Street, Christchurch Central City, Christchurch 8013, New Zealand&query_place_id=ChIJUYfftC-KMW0Rzq4NYAkhHDs\"},{\"id\":\"chch-39\",\"name\":\"Tekapo - Church of the Good Shepherd\",\"diocese\":\"Christchurch\",\"address\":\"Pioneer Drive, Lake Tekapo 7999, New Zealand\",\"schedule\":\"Sunday:6:00 pm - last Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/church-of-the-good-shepherd\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Pioneer Drive, Lake Tekapo 7999, New Zealand&query_place_id=EixQaW9uZWVyIERyaXZlLCBMYWtlIFRla2FwbyA3OTk5LCBOZXcgWmVhbGFuZCIuKiwKFAoSCTuhs6tjdSttEThlW8y2tvlfEhQKEgmZrDHBGpkrbRHAgnmEhu8ABQ\"},{\"id\":\"chch-40\",\"name\":\"Temuka - St Joseph's\",\"diocese\":\"Christchurch\",\"address\":\"30 Wilkin Street, Temuka 7920, New Zealand\",\"schedule\":\"Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-josephs-temuka\",\"map\":\"https://www.google.com/maps/search/?api=1&query=30 Wilkin Street, Temuka 7920, New Zealand&query_place_id=ChIJb1KmiE_uLG0Rg3jn346PT6c\"},{\"id\":\"chch-41\",\"name\":\"Timaru - Sacred Heart Basilica\",\"diocese\":\"Christchurch\",\"address\":\"7 Craigie Avenue, Parkside, Timaru 7910, New Zealand\",\"schedule\":\"Sunday:9:00am | 5:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sacred-heart-basilica-timaru\",\"map\":\"https://www.google.com/maps/search/?api=1&query=7 Craigie Avenue, Parkside, Timaru 7910, New Zealand&query_place_id=ChIJV4X3R3_BLG0RYje5NR6Mqqc\"},{\"id\":\"chch-42\",\"name\":\"Timaru North - St Thomas the Apostle\",\"diocese\":\"Christchurch\",\"address\":\"12 Mountain View Road, Glenwood, Timaru 7910, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-thomas-the-apostle-timaru-north\",\"map\":\"https://www.google.com/maps/search/?api=1&query=12 Mountain View Road, Glenwood, Timaru 7910, New Zealand&query_place_id=ChIJFwMeLUzALG0RHMJ3n6Y-XeI\"},{\"id\":\"chch-25\",\"name\":\"Tinwald - Holy Spirit\",\"diocese\":\"Christchurch\",\"address\":\"52 Thomson Street, Tinwald, Ashburton 7700, New Zealand\",\"schedule\":\"No schedule published. Contact the parish.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/holy-spirit-tinwald\",\"map\":\"https://www.google.com/maps/search/?api=1&query=52 Thomson Street, Tinwald, Ashburton 7700, New Zealand&query_place_id=ChIJN-jld_u6LW0RQjAM-GbP468\"},{\"id\":\"chch-43\",\"name\":\"Twizel - All Saints\",\"diocese\":\"Christchurch\",\"address\":\"52-54 MacKenzie Drive, Twizel 7901, New Zealand\",\"schedule\":\"Saturday:5:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/all-saints-twizel\",\"map\":\"https://www.google.com/maps/search/?api=1&query=52-54 MacKenzie Drive, Twizel 7901, New Zealand&query_place_id=ChIJK5ISMeIfK20RVHzGZgIp8vU\"},{\"id\":\"chch-44\",\"name\":\"Waimate - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"1 Timaru Road, Waimate 7924, New Zealand\",\"schedule\":\"Sunday:9:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-waimate\",\"map\":\"https://www.google.com/maps/search/?api=1&query=1 Timaru Road, Waimate 7924, New Zealand&query_place_id=ChIJFUBSy6nmKagRTrcIc73sYmc\"},{\"id\":\"chch-57\",\"name\":\"Whataroa - Our Lady of the Woods\",\"diocese\":\"Christchurch\",\"address\":\"7 Whataroa Flat Road, Whataroa 7886, New Zealand\",\"schedule\":\"Sunday: The weekend timetable is displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-woods-whataroa\",\"map\":\"https://www.google.com/maps/search/?api=1&query=7 Whataroa Flat Road, Whataroa 7886, New Zealand&query_place_id=ChIJUd5PwNBlKW0RDpUXS-IlCUE\"},{\"id\":\"chch-21\",\"name\":\"Woolston - St Anne's\",\"diocese\":\"Christchurch\",\"address\":\"739 Ferry Road, Woolston, Christchurch 8023, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:10:30 am Samoan Mass:12:30 pm - 1st Sunday of the month 12:30 | Tongan Mass:3:30 pm - 2nd Sunday of the month 3:30pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-annes-woolston\",\"map\":\"https://www.google.com/maps/search/?api=1&query=739 Ferry Road, Woolston, Christchurch 8023, New Zealand&query_place_id=ChIJlaf1fdGJMW0R1hA-RWNz3SA\"},{\"id\":\"featured-dunedin\",\"name\":\"St Joseph’s Cathedral\",\"diocese\":\"Dunedin\",\"address\":\"Corner Rattray and Smith Streets, Dunedin\",\"schedule\":\"Sunday:10:30am; 9am Latin Mass in chapel. Monday:9:30am chapel. Wednesday:5:30pm cathedral. Saturday:9:30am chapel.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Corner Rattray and Smith Streets, Dunedin\"},{\"id\":\"dn-gore-0\",\"name\":\"Blessed Sacrament, Gore\",\"diocese\":\"Dunedin\",\"address\":\"16 Ardwick St Gore 9710\",\"schedule\":\"Saturday Vigil Mass:5:00pm Sunday Mass:9.00am Weekday Mass: Tuesday, Wednesday, Thursday, Saturday at 9.00am Friday at 1.30pm Filipino Mass: Second Sunday of the month at 7:00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"url\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Blessed Sacrament, Gore New Zealand\"},{\"id\":\"dn-invercargill-1\",\"name\":\"Catholic Māori Community, Invercargill\",\"diocese\":\"Dunedin\",\"address\":\"Te Tomairangi Marae (Behind Basilica) 54 Eye Street, Invercargill, Southland 9812\",\"schedule\":\"Sunday Mass:10:00am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Catholic Māori Community, Invercargill New Zealand\"},{\"id\":\"dn-dunedin-8\",\"name\":\"Filipino Catholic Community\",\"diocese\":\"Dunedin\",\"address\":\"Postal Address 24 Forbury Rd, Forbury, Dunedin 9012\",\"schedule\":\"St Brigid's, St Bernadette's & Dunedin Filipino Catholic Community are now part of the new Mercy parish of Dunedin South, which worships at St Patrick's Basilica on Macandrew Rd. Refer to Dunedin South for Mass times. Dunedin Filipino Gore: Church of the Blessed Sacrament 7pm every Second Sunday of the month. Also check out our Facebook Page by clicking here\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Filipino Catholic Community New Zealand\"},{\"id\":\"dn-central-otago-7\",\"name\":\"Glenorchy Church, Glenorchy\",\"diocese\":\"Dunedin\",\"address\":\"PO Box 208, Queenstown 9348\",\"schedule\":\"Sunday Mass 11.30am (2nd Sunday)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Glenorchy Church, Glenorchy New Zealand\"},{\"id\":\"dn-central-otago-4\",\"name\":\"Holy Fam ily, Wanaka\",\"diocese\":\"Dunedin\",\"address\":\"154 Aubrey R oad Wanaka 9305\",\"schedule\":\"Sunday Mass 9am (1st, 3rd, 5th Sundays) 11am (2nd, 4th Sundays) Weekday 9:30am Thurs & Fri\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Holy Fam ily, Wanaka New Zealand\"},{\"id\":\"dn-dunedin-9\",\"name\":\"Holy Name, Dunedin North\",\"diocese\":\"Dunedin\",\"address\":\"420 Great King Street Dunedin PO Box 6090 Dunedin 9059\",\"schedule\":\"Sunday Mass 7:30am, 10:00am & 7:00pm Weekday Mass Monday to Saturday, 8:30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Holy Name, Dunedin North New Zealand\"},{\"id\":\"dn-south-otago-2\",\"name\":\"Immaculate Conception, Milton\",\"diocese\":\"Dunedin\",\"address\":\"24 Dryden St, Milton Postal Address: 16 Colonsay Street, Lawrence 9532\",\"schedule\":\"Sunday Mass 9am Saturday Mass 9am Weekday Mass Wednesday, 9am in the school\",\"source\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception, Milton New Zealand\"},{\"id\":\"dn-dunedin-5\",\"name\":\"Immaculate Conception, Mosgiel\",\"diocese\":\"Dunedin\",\"address\":\"89 Church St Mosgiel 9024\",\"schedule\":\"Sunday Mass 6:00pm Vigil (Saturday) & 9:3 0am Weekday Mass Mon, Tues, Thurs, Fri, Sat 9:15am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception, Mosgiel New Zealand\"},{\"id\":\"dn-dunedin-6\",\"name\":\"Mercy Parish, Dunedin South (included St Brigid Tainui, St Bernadette Forbury, Filipino Catholic Community, Samoan Community)\",\"diocese\":\"Dunedin\",\"address\":\"32 Macandrew Road Dunedin South, Dunedin 9012\",\"schedule\":\"Sunday Mass times:6:00pm Vigil (Saturday), 9:30am & 11:00am Weekday Mass 9:00am in the Mercy Chapel (situated behind St Patrick's) + Tue 12:10pm & Thurs 6:00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Mercy Parish, Dunedin South (included St Brigid Tainui, St Bernadette Forbury, Filipino Catholic Community, Samoan Community) New Zealand\"},{\"id\":\"dn-dunedin-13\",\"name\":\"Our Lady Star of the Sea, Hampden\",\"diocese\":\"Dunedin\",\"address\":\"83 Newcastle St reet Hampden\",\"schedule\":\"Sunday Mass 1:30pm (2nd & 4th Sundays)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady Star of the Sea, Hampden New Zealand\"},{\"id\":\"dn-central-otago-0\",\"name\":\"Our Lady of Peace, Roxburgh\",\"diocese\":\"Dunedin\",\"address\":\"5 Liddle St, Roxburgh 9500 Served from Alexandra 3 Killarney St, Alexandra 9320\",\"schedule\":\"Sunday Mass 11am Weekday Mass Wednesday, 5.15pm (church)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Peace, Roxburgh New Zealand\"},{\"id\":\"dn-north-otago-2\",\"name\":\"Sacred Heart, Kurow Parish Website>>\",\"diocese\":\"Dunedin\",\"address\":\"1 Ferguson Street, Kurow 9498 Served from Oamaru 68 Reed St Oamaru 9400\",\"schedule\":\"Sunday Mass 12 noon (1st and 3rd Sundays)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, Kurow Parish Website>> New Zealand\"},{\"id\":\"dn-dunedin-10\",\"name\":\"Sacred Heart, North East Valley\",\"diocese\":\"Dunedin\",\"address\":\"89 North Road North East Valley Dunedin 9010\",\"schedule\":\"Sunday Mass 9:30am Weekday Mass 9:30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, North East Valley New Zealand\"},{\"id\":\"dn-central-otago-8\",\"name\":\"Sacred Heart, Ranfurly\",\"diocese\":\"Dunedin\",\"address\":\"4 Stuart Rd, Ranfurly 9332\",\"schedule\":\"Sunday Mass 4pm Winter Months 5pm Summer Months Changes with Daylight Saving.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, Ranfurly New Zealand\"},{\"id\":\"dn-invercargill-6\",\"name\":\"Sacred Heart, Waikiwi\",\"diocese\":\"Dunedin\",\"address\":\"Invercargill North Pastoral Area. 449 North Rd, Waikiwi, Invercargill 9810\",\"schedule\":\"Sunday Mass 10.30am Weekday Mass 9.30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, Waikiwi New Zealand\"},{\"id\":\"dn-western-southland-8\",\"name\":\"Saint's Peter & Paul, Nightcaps\",\"diocese\":\"Dunedin\",\"address\":\"11 Digger Road, Nightcaps, Southland 9630 Postal address: 65 Tyne Street Invercargill 98 1 0 Served by Invercargill Central\",\"schedule\":\"Sunday Mass - 11.00am 3rd Sunday Weekday Mass Friday 10.00am (during school term)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Saint's Peter & Paul, Nightcaps New Zealand\"},{\"id\":\"dn-dunedin-7\",\"name\":\"Samoan Catholic Community Dunedin\",\"diocese\":\"Dunedin\",\"address\":\"172 Corstorphine Road Corstorphine Dunedin\",\"schedule\":\"Contact the parish for the current timetable.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Samoan Catholic Community Dunedin New Zealand\"},{\"id\":\"dn-dunedin-12\",\"name\":\"St Anne's Church , Waikouaiti\",\"diocese\":\"Dunedin\",\"address\":\"Postal Address: P O Box 6090 Dunedin 9059 E: holynameparish@hotmail.com Mass Times Sunday Mass Waikouaiti 12:00pm (noon) 11 Thomas Street, Waikouaiti 9510 Hampden 1:30pm (2nd & 4th Sundays) Clergy Rev Fr Mark Chamberlain ( Parish Priest ) E: machamberlain61@gmail.com\",\"schedule\":\"Sunday Mass Waikouaiti 12:00pm (noon) 11 Thomas Street, Waikouaiti 9510 Hampden 1:30pm (2nd & 4th Sundays)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Anne's Church , Waikouaiti New Zealand\"},{\"id\":\"dn-western-southland-2\",\"name\":\"St Bernard, Te Anau\",\"diocese\":\"Dunedin\",\"address\":\"Serviced from Winton Parish PO Box 79, Winton 9741\",\"schedule\":\"Saturday Vigil Mass 7.00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Bernard, Te Anau New Zealand\"},{\"id\":\"dn-gore-2\",\"name\":\"St Columba, Balfour\",\"diocese\":\"Dunedin\",\"address\":\"62 Queen Street, Balfour Served from Gore\",\"schedule\":\"Sunday Mass 11:00 am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"url\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Columba, Balfour New Zealand\"},{\"id\":\"dn-western-southland-6\",\"name\":\"St Columba, Riverton\",\"diocese\":\"Dunedin\",\"address\":\"16 Milton Street, Riverton Postal address: 65 Tyne Street Invercargill 98 1 0 Served by Invercargill Central\",\"schedule\":\"Sunday Mass 9.00 am 1st, 3 rd & 5th Sundays (Liturgy of the Word with Holy Communion 2nd & 4th Sundays)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Columba, Riverton New Zealand\"},{\"id\":\"dn-dunedin-2\",\"name\":\"St Francis Xavier, Mornington\",\"diocese\":\"Dunedin\",\"address\":\"27 Benhar Street Maryhill, Dunedin 9011\",\"schedule\":\"Sunday Mass 9.00am Weekday Mass Wednesday:9:30am Thursday:9:30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis Xavier, Mornington New Zealand\"},{\"id\":\"dn-western-southland-4\",\"name\":\"St Joan of Arc, Mossburn\",\"diocese\":\"Dunedin\",\"address\":\"Serviced from Te Anau 37 State Hwy 94 Po Box 79, Winton 9741\",\"schedule\":\"Sunday Mass 9:00am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joan of Arc, Mossburn New Zealand\"},{\"id\":\"dn-invercargill-4\",\"name\":\"St Joan of Arc, Rimu\",\"diocese\":\"Dunedin\",\"address\":\"Church Address 871 Rimu Road Southland Invercargill South Pastoral Area Served by Invercargill Central\",\"schedule\":\"Sunday Mass 11am (2nd & 4th Sunday of each month)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joan of Arc, Rimu New Zealand\"},{\"id\":\"dn-central-otago-1\",\"name\":\"St John the Baptist, Alexandra\",\"diocese\":\"Dunedin\",\"address\":\"3 Killarney St, Alexandra 9320\",\"schedule\":\"Sunday Mass 9am Weekday Mass Tuesday, 5pm (Side Chapel) Wed, Thurs & Sat 9am (Side Chapel) Friday, noon (Church)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St John the Baptist, Alexandra New Zealand\"},{\"id\":\"dn-dunedin-3\",\"name\":\"St Joseph, Brockville - Little Sisters of the Poor, Sacred Heart Home & Hospital\",\"diocese\":\"Dunedin\",\"address\":\"295 Brockville Road Brockville, Dunedin\",\"schedule\":\"Sunday Mass 11:00am Weekday Mass Mon-Sat:11:00am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph, Brockville - Little Sisters of the Poor, Sacred Heart Home & Hospital New Zealand\"},{\"id\":\"dn-western-southland-5\",\"name\":\"St Joseph, Otautau\",\"diocese\":\"Dunedin\",\"address\":\"Former Sunday School Hall cnr Chester Street & Queen Street Otautau, Southland 9610 Postal address: 65 Tyne Street Invercargill 98 1 0 Served by Invercargill Central\",\"schedule\":\"Sunday Mass 7:00pm Vigil (Saturday) 2nd & 4th Sunday in the former Sunday School Hall, cnr Chester Street and Queen Street.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph, Otautau New Zealand\"},{\"id\":\"dn-central-otago-5\",\"name\":\"St Joseph, Queenstown\",\"diocese\":\"Dunedin\",\"address\":\"39 Melbourne St, Queenstown PO Box 208, Queenstown 9348\",\"schedule\":\"Sunday Mass 9am Saturday Mass Vigil 6.30pm Mass 9:30am - Monday, Wednesday & Friday\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph, Queenstown New Zealand\"},{\"id\":\"dn-north-otago-1\",\"name\":\"St Kevin's College Chapel, Oamaru Parish Website>>\",\"diocese\":\"Dunedin\",\"address\":\"57 Taward St Oamaru, Otago 9400\",\"schedule\":\"Contact the College for school mass times.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Kevin's College Chapel, Oamaru Parish Website>> New Zealand\"},{\"id\":\"dn-south-otago-0\",\"name\":\"St Mary MacKillop, Balclutha\",\"diocese\":\"Dunedin\",\"address\":\"19 Gordon St, Balclutha Balclutha 9240\",\"schedule\":\"Sunday Mass 1st Sunday of the month, 5.30pm Saturday Vigil, 5.30pm Sundays , 10.30am Weekday Mass Tuesday, 10am Thursday, 10am Friday, 10am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary MacKillop, Balclutha New Zealand\"},{\"id\":\"dn-dunedin-1\",\"name\":\"St Mary, Kaikorai\",\"diocese\":\"Dunedin\",\"address\":\"200 Taieri Road Wakari, Dunedin 9010\",\"schedule\":\"Sunday Mass 6:00pm Vigil (Saturday) Weekday Mass Tuesday 9:30am Friday 9:30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary, Kaikorai New Zealand\"},{\"id\":\"dn-invercargill-2\",\"name\":\"St Mary, Star of the Sea, Bluff\",\"diocese\":\"Dunedin\",\"address\":\"190 Barrow Street, Bluff, Southland 9814 Postal address: 65 Tyne Street Invercargill 98 1 0 Invercargill South Pastoral Area. Served from Invercargill Central\",\"schedule\":\"Sunday Mass 9.00am (2nd and 4th Sunday of each month)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary, Star of the Sea, Bluff New Zealand\"},{\"id\":\"dn-dunedin-11\",\"name\":\"St Mary, Star of the Sea, Port Chalmers\",\"diocese\":\"Dunedin\",\"address\":\"38 Magnetic Street Port Chalmers\",\"schedule\":\"Sunday Mass Vigil 5pm Saturday\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary, Star of the Sea, Port Chalmers New Zealand\"},{\"id\":\"dn-western-southland-3\",\"name\":\"St Michael, Lumsden\",\"diocese\":\"Dunedin\",\"address\":\"Serviced from Te Anau Po Box 79, Winton 9741\",\"schedule\":\"First & Last Sunday Mass 7.00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Michael, Lumsden New Zealand\"},{\"id\":\"dn-central-otago-6\",\"name\":\"St Patrick, Arrowtown\",\"diocese\":\"Dunedin\",\"address\":\"Hertford St, Arrowtown PO Box 208, Queenstown 9348\",\"schedule\":\"Sunday Mass 11.00am (1st, 3rd, 4th & 5th Sundays) Liturgy of the Word with Holy Communion 11.00am (2nd Sunday )\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Arrowtown New Zealand\"},{\"id\":\"dn-invercargill-3\",\"name\":\"St Patrick, Georgetown\",\"diocese\":\"Dunedin\",\"address\":\"Church address 21 Rimu St, Heidelberg, Invercargill 9812 Postal address: 65 Tyne Street Invercargill 98 1 0 Invercargill South Pastoral Area. Served from Invercargill Central\",\"schedule\":\"Sunday Mass 6:00pm Vigil (Saturday) Weekday Mass Wednesday:9.30am (during school term)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Georgetown New Zealand\"},{\"id\":\"dn-south-otago-1\",\"name\":\"St Patrick, Lawrence\",\"diocese\":\"Dunedin\",\"address\":\"16 Colonsay St Lawrence 9532 P O Box 10 Lawrence 9543\",\"schedule\":\"Sunday Mass 1st Sunday of month - 11.00am Sundays - Saturday Vigil 4.30pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Lawrence New Zealand\"},{\"id\":\"dn-north-otago-0\",\"name\":\"St Patrick, Oamaru Parish Website>>\",\"diocese\":\"Dunedin\",\"address\":\"68 Reed St Oamaru 9400\",\"schedule\":\"Sunday Mass 9.30am (St Patrick's Basilica) Saturday Mass Vigil 5pm (St Patrick's Basilica) Daily Mass: Monday, Tuesday, Wednesday & Friday at 9.15 am in Dean O'Reilly Lounge. And Thursday during school holidays. Anointing Mass is the 1st Friday of the month.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Oamaru Parish Website>> New Zealand\"},{\"id\":\"dn-invercargill-7\",\"name\":\"St Patrick, Rakauhauka\",\"diocese\":\"Dunedin\",\"address\":\"4 Rakauhouka Church Road, Rakahouka 9872\",\"schedule\":\"Sunday Mass Rakauhouka - Sunday 8.30am (1st Sunday of each month)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Rakauhauka New Zealand\"},{\"id\":\"dn-dunedin-4\",\"name\":\"St Peter Chanel, Green Island\",\"diocese\":\"Dunedin\",\"address\":\"250 Main South Road Po Box 13004 Green Island, Dunedin 9052\",\"schedule\":\"Sunday Mass 10.45am Weekday Mass Wed:9:15 am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Peter Chanel, Green Island New Zealand\"},{\"id\":\"dn-central-otago-2\",\"name\":\"St Peter, Omakau\",\"diocese\":\"Dunedin\",\"address\":\"Harvey Street Omakau Served from Alexandra 3 Killarney St, Alexandra 9320\",\"schedule\":\"Sunday Mass Vigil 6pm (Saturday)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Peter, Omakau New Zealand\"},{\"id\":\"dn-invercargill-5\",\"name\":\"St Theresa of Lisieux, Invercargill North\",\"diocese\":\"Dunedin\",\"address\":\"Church address: 40 Perth St, Windsor, Invercargill 9810 Invercargill North Pastoral Area. Served from Waikiwi Parish\",\"schedule\":\"Sunday Mass 9:00am & 7pm Weekday Mass 9am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Theresa of Lisieux, Invercargill North New Zealand\"},{\"id\":\"dn-western-southland-7\",\"name\":\"St Therese of Lisieux, Tuatapere\",\"diocese\":\"Dunedin\",\"address\":\"Mass Celebrated in the Anglican Church 43 Orawia Road, Tuatapere 9600 Postal address: 65 Tyne Street Invercargill 98 1 0 Served by Invercargill Central\",\"schedule\":\"Sunday Mass - 11.00am 1st Sunday in Anglican Church Weekday Liturgy Friday 1.00pm in Anglican Church\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Therese of Lisieux, Tuatapere New Zealand\"},{\"id\":\"dn-western-southland-1\",\"name\":\"St Thomas Aquinas, Dipton\",\"diocese\":\"Dunedin\",\"address\":\"9 Dipton-Castlerock Rd, Dipton, Southland Served from Winton 84 Great North Rd, Winton PO Box 79, Winton 9741\",\"schedule\":\"Saturday Vigil Mass 5.00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Thomas Aquinas, Dipton New Zealand\"},{\"id\":\"dn-western-southland-0\",\"name\":\"St Thomas Aquinas, Winton\",\"diocese\":\"Dunedin\",\"address\":\"84 Great North Rd, Winton Po Box 79 Winton 9741\",\"schedule\":\"Sunday Mass 10.30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Thomas Aquinas, Winton New Zealand\"},{\"id\":\"dn-gore-1\",\"name\":\"Tapanui Community Centre Mass\",\"diocese\":\"Dunedin\",\"address\":\"Tapanui Community Centre 1 Suffolk Street, Tapanui Served from Gore 16 Ardwick St Gore 9710\",\"schedule\":\"Sunday Mass Vigil(1st & 3rd Sundays) 3.30pm (No Mass in January)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"url\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Tapanui Community Centre Mass New Zealand\"},{\"id\":\"dn-central-otago-3\",\"name\":\"The Irish Martyrs, Cromwell\",\"diocese\":\"Dunedin\",\"address\":\"10 Sligo St reet Cromwell 9310\",\"schedule\":\"Sunday Mass 11am ( 1st, 3rd, 5th Sundays) 9 am (2nd, 4th Sundays) Weekday 5:00pm Tuesday 9:30am Wed & Sat\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=The Irish Martyrs, Cromwell New Zealand\"},{\"id\":\"dn-invercargill-0\",\"name\":\"St Mary, Invercargill Central (Basilica)\",\"diocese\":\"Dunedin\",\"address\":\"65 Tyne Street, Invercargill 9810\",\"schedule\":\"Sunday: 8am and 10am. Monday, Tuesday, Thursday and Saturday: 9am. Wednesday: 5.30pm. Friday: 12.10pm.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.invercargillcatholic.nz\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St+Mary+Basilica+65+Tyne+Street+Invercargill\"}]");
 //#endregion
-//#region app/photo-credits.json
+//#region package/source/app/photo-credits.json
 var photo_credits_default = [
 	{
 		"slug": "auckland",
@@ -28003,7 +30212,7 @@ var photo_credits_default = [
 	}
 ];
 //#endregion
-//#region app/church-directory.tsx
+//#region package/source/app/church-directory.tsx
 var dioceses = [
 	{
 		name: "Auckland",
@@ -28223,7 +30432,7 @@ function ChurchDirectory() {
 	] });
 }
 //#endregion
-//#region app/checklist-content.ts
+//#region package/source/app/checklist-content.ts
 var checklists = [
 	{
 		id: "first-mum",
@@ -28376,7 +30585,7 @@ var checklists = [
 	}
 ];
 //#endregion
-//#region app/checklists.tsx
+//#region package/source/app/checklists.tsx
 function FamilyChecklists() {
 	const [id, setId] = (0, import_react.useState)(checklists[0].id), [checked, setChecked] = (0, import_react.useState)([]), [error, setError] = (0, import_react.useState)(""), [auth, setAuth] = (0, import_react.useState)(true), [busy, setBusy] = (0, import_react.useState)(false), [loading, setLoading] = (0, import_react.useState)(true);
 	const c = checklists.find((c) => c.id === id);
@@ -28505,7 +30714,7 @@ function FamilyChecklists() {
 	] });
 }
 //#endregion
-//#region app/workouts.tsx
+//#region package/source/app/workouts.tsx
 var sessions = [
 	{
 		level: "Easy",
@@ -28665,15 +30874,22 @@ function Workouts() {
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 			className: "workout-panel",
 			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-					className: "pill",
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+					className: "content-photo-banner",
+					style: { backgroundImage: `linear-gradient(#0813187d,#081318c9),url("${workoutPhotos[level + "-" + place]}")` },
 					children: [
-						level.toUpperCase(),
-						" · ",
-						place.toUpperCase()
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+							className: "pill",
+							children: [
+								level.toUpperCase(),
+								" · ",
+								place.toUpperCase()
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: s.name }),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "Illustrative movement photo · follow the written instructions below" })
 					]
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: s.name }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Warm up:" }),
 					" ",
@@ -28780,7 +30996,7 @@ function Workouts() {
 	] });
 }
 //#endregion
-//#region app/use-voice-input.ts
+//#region package/source/app/use-voice-input.ts
 function useVoiceInput(onTranscript) {
 	const [supported, setSupported] = (0, import_react.useState)(null), [listening, setListening] = (0, import_react.useState)(false), [message, setMessage] = (0, import_react.useState)("");
 	const active = (0, import_react.useRef)(null), callback = (0, import_react.useRef)(onTranscript);
@@ -28871,7 +31087,7 @@ function useVoiceInput(onTranscript) {
 	};
 }
 //#endregion
-//#region app/mateo-encouragement.ts
+//#region package/source/app/mateo-encouragement.ts
 var messages = {
 	calm: {
 		words: /anxious|anxiety|stress|worried|worry|overwhelm|panic|sad|depress|tired|lonely/i,
@@ -28956,7 +31172,7 @@ function mateoEncouragement(text, mode, index = 0) {
 	};
 }
 //#endregion
-//#region app/mateo-local-reply.ts
+//#region package/source/app/mateo-local-reply.ts
 function mateoLocalReply(text, mode, index = 0, now = /* @__PURE__ */ new Date()) {
 	if (mode !== "Automatic") return mateoEncouragement(text, mode, index);
 	const normalized = text.trim().toLowerCase().replace(/[.!?]+$/, "");
@@ -29004,7 +31220,7 @@ function mateoLocalReply(text, mode, index = 0, now = /* @__PURE__ */ new Date()
 	return mateoEncouragement(text, mode, index);
 }
 //#endregion
-//#region app/ai-friend.tsx
+//#region package/source/app/ai-friend.tsx
 function AIFriend({ canEdit }) {
 	const [moving, setMoving] = (0, import_react.useState)(true), [messages, setMessages] = (0, import_react.useState)([]), [text, setText] = (0, import_react.useState)(""), [enabled, setEnabled] = (0, import_react.useState)(false), [busy, setBusy] = (0, import_react.useState)(false), [error, setError] = (0, import_react.useState)(""), [mode, setMode] = (0, import_react.useState)("Automatic");
 	const end = (0, import_react.useRef)(null);
@@ -29221,7 +31437,7 @@ function AIFriend({ canEdit }) {
 								},
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
 									value: "",
-									children: "Automatic · prefer a male voice"
+									children: "Automatic · youthful boy style"
 								}), voices.map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("option", {
 									value: v.voiceURI,
 									children: [
@@ -29254,7 +31470,7 @@ function AIFriend({ canEdit }) {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 						className: "small-note",
-						children: ["A lower pitch gives Mateo a warm, playful character voice. Male voices and pitch changes depend on your device; choose the voice you prefer. ", speech.supported === false && "Audio is unavailable in this browser."]
+						children: ["Mateo uses a higher, playful pitch for a young-boy style. An actual child voice may not be available on your device; choose the voice you prefer. ", speech.supported === false && "Audio is unavailable in this browser."]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 						className: "secondary",
@@ -29288,7 +31504,7 @@ function AIFriend({ canEdit }) {
 	})] });
 }
 //#endregion
-//#region app/coming-soon-business.tsx
+//#region package/source/app/coming-soon-business.tsx
 var businesses = [
 	{
 		name: "Kids’ accessories",
@@ -29329,7 +31545,230 @@ function ComingSoonBusiness() {
 	});
 }
 //#endregion
-//#region app/more-recipes.ts
+//#region package/source/app/family-recipes.ts
+var gf$1 = "Gluten-free ingredients", df$1 = "Dairy-free ingredients", kid$1 = "Kids-friendly";
+function recipe(id, name, cuisine, category, minutes, serves, description, ingredients, steps, allergens, tags, photo) {
+	return {
+		id,
+		name,
+		cuisine,
+		category,
+		minutes,
+		serves,
+		description,
+		ingredients,
+		steps,
+		allergens,
+		tags: [...tags, cuisine],
+		photo,
+		tip: "Make the spice level gentle for your household. Portion leftovers into small containers and refrigerate promptly."
+	};
+}
+var familyRecipes = [
+	recipe("filipino-adobo", "Home-style chicken adobo", "Filipino", "Dinner", 45, 4, "A simple vinegar, garlic and soy braise; a home-style version of a Filipino favourite.", [
+		"600 g boneless chicken thighs",
+		"3 tbsp soy sauce",
+		"3 tbsp cane or white vinegar",
+		"150 ml water",
+		"4 garlic cloves, crushed",
+		"2 bay leaves",
+		"½ tsp ground black pepper",
+		"1 tsp oil"
+	], [
+		"Keep raw chicken and its utensils separate from ready-to-eat food. Heat oil in a deep pan and brown chicken for 4–5 minutes, turning carefully.",
+		"Add garlic, soy sauce, vinegar, water, bay leaves and pepper. Bring to a boil, then cover and simmer gently for 25–30 minutes, turning once.",
+		"Check chicken reaches at least 75°C in the thickest part. Uncover and simmer briefly to reduce the sauce; remove bay leaves.",
+		"Serve hot with a portion of rice and cooked vegetables."
+	], "Soy; ordinary soy sauce usually contains wheat.", [df$1, kid$1], "./recipe-photos/chicken.webp"),
+	recipe("filipino-tinola", "Simple chicken tinola", "Filipino", "Dinner", 40, 4, "Ginger chicken soup with chayote or courgette and leafy greens.", [
+		"500 g boneless chicken thigh, cut into large pieces",
+		"1 onion, sliced",
+		"2 garlic cloves, chopped",
+		"1 tbsp sliced fresh ginger",
+		"1 tbsp oil",
+		"1 litre low-salt chicken stock",
+		"2 chayote, peeled and sliced, or 2 courgettes",
+		"2 cups spinach",
+		"1 tsp fish sauce, optional"
+	], [
+		"Cook onion in oil for 4 minutes. Add garlic and ginger and stir for 1 minute.",
+		"Add chicken and stock. Bring to a boil, cover and simmer for 15 minutes.",
+		"Add chayote and simmer 10–15 minutes until tender; courgette needs only about 5–7 minutes. Check chicken is at least 75°C throughout.",
+		"Stir in spinach until wilted. Add optional fish sauce to taste and serve hot."
+	], "Fish if using fish sauce; check stock for other allergens.", [df$1, kid$1], "./recipe-photos/soup.webp"),
+	recipe("filipino-munggo", "Ginisang munggo with spinach", "Filipino", "Dinner", 60, 4, "A meat-free home version of mung bean stew with tomatoes and greens.", [
+		"200 g dry mung beans, rinsed",
+		"1 litre water, plus extra if needed",
+		"1 tbsp oil",
+		"1 onion, diced",
+		"3 garlic cloves, chopped",
+		"2 tomatoes, chopped",
+		"3 cups spinach",
+		"½ tsp salt, optional"
+	], [
+		"Simmer mung beans in water for 35–45 minutes until very tender, adding water if the pot becomes dry.",
+		"In a second pan, cook onion in oil for 5 minutes. Add garlic and tomatoes and cook for another 5 minutes.",
+		"Stir tomato mixture into the beans. Simmer 5 minutes and add water to your preferred stew thickness.",
+		"Add spinach, cook until wilted, and season lightly if desired. Serve hot."
+	], "No major allergens in the listed ingredients; check packets.", [
+		gf$1,
+		df$1,
+		kid$1
+	], "./recipe-photos/lentils.webp"),
+	recipe("filipino-pancit", "Vegetable pancit bihon", "Filipino", "Dinner", 30, 4, "Rice noodles with tender vegetables, inspired by Filipino pancit bihon.", [
+		"200 g dried bihon rice noodles",
+		"1 tbsp oil",
+		"1 onion, sliced",
+		"2 garlic cloves, chopped",
+		"1 carrot, cut into fine strips",
+		"3 cups finely sliced cabbage",
+		"600 ml low-salt vegetable stock",
+		"2 tbsp soy sauce",
+		"Lemon wedges to serve"
+	], [
+		"Soak or prepare noodles according to their packet, then drain.",
+		"Cook onion in oil for 3 minutes. Add garlic, carrot and cabbage and cook for 4–5 minutes.",
+		"Add stock and soy sauce and bring to a simmer. Add noodles, tossing gently, until tender and liquid is mostly absorbed. Follow packet timing and add a splash of water if needed.",
+		"Serve hot with lemon. Cut noodles into manageable lengths for younger children."
+	], "Soy; ordinary soy sauce contains wheat. Check noodles and stock.", [df$1, kid$1], "./recipe-photos/noodles.webp"),
+	recipe("filipino-sinangag", "Garlic rice · sinangag", "Filipino", "Side", 15, 4, "A quick garlic rice using safely chilled cooked rice.", [
+		"3 cups cooked rice, cooled quickly and kept refrigerated for no more than 2 days",
+		"1 tbsp oil",
+		"5 garlic cloves, finely chopped",
+		"¼ tsp salt, optional",
+		"2 tbsp chopped spring onion, optional"
+	], [
+		"Use only rice that was cooled quickly in small amounts and refrigerated promptly. Keep it chilled until cooking; discard rice left to cool slowly at room temperature.",
+		"Warm oil in a large pan. Cook garlic over medium-low heat until pale golden, stirring so it does not burn.",
+		"Add rice and break up clumps. Stir and cook until piping hot throughout, above 75°C, adding a small splash of water if needed.",
+		"Add optional seasoning and spring onion. Serve immediately; reheat rice only once."
+	], "No major allergens in the listed ingredients; check packets.", [
+		gf$1,
+		df$1,
+		kid$1
+	], "./recipe-photos/rice.webp"),
+	recipe("filipino-tortang-talong", "Tortang talong · aubergine omelette", "Filipino", "Lunch", 45, 2, "Soft roasted aubergine folded into a simple egg coating.", [
+		"2 small aubergines",
+		"3 eggs",
+		"1 tbsp oil",
+		"¼ tsp salt, optional",
+		"1 tomato, chopped, to serve"
+	], [
+		"Heat oven to 220°C. Prick aubergines several times and roast on a lined tray for 25–30 minutes until soft. Allow to cool enough to handle.",
+		"Peel off the skin, keeping each stalk attached. Flatten the soft flesh gently with a fork.",
+		"Beat eggs with optional salt. Dip each flattened aubergine into egg.",
+		"Heat half the oil in a non-stick pan. Cook one aubergine with half the egg for about 3–4 minutes each side until egg is fully set. Repeat with the other. Serve hot with tomato."
+	], "Egg.", [
+		gf$1,
+		df$1,
+		kid$1
+	], "./recipe-photos/eggs.webp"),
+	recipe("indian-dal", "Gentle red lentil dal", "Indian", "Dinner", 35, 4, "A mild home-style dal with red lentils, tomato and warming spices.", [
+		"200 g dry red lentils, rinsed",
+		"750 ml water",
+		"1 tbsp oil",
+		"1 onion, diced",
+		"2 garlic cloves, chopped",
+		"1 tsp grated ginger",
+		"½ tsp turmeric",
+		"1 tsp cumin",
+		"2 tomatoes, chopped",
+		"1 tbsp lemon juice"
+	], [
+		"Simmer lentils in water for 15–20 minutes until soft, stirring occasionally and adding water if needed.",
+		"In a second pan, cook onion in oil for 5 minutes. Add garlic, ginger, turmeric and cumin and stir for 1 minute.",
+		"Add tomatoes and cook for 5 minutes, then stir the mixture into the lentils. Simmer another 5 minutes.",
+		"Finish with lemon juice. Serve with cooked vegetables and a portion of rice or chapati."
+	], "Check spice labels; chapati served alongside contains wheat.", [
+		gf$1,
+		df$1,
+		kid$1
+	], "./recipe-photos/lentils.webp"),
+	recipe("indian-chana", "Easy chana masala", "Indian", "Dinner", 30, 4, "A pantry chickpea curry with a mild tomato sauce.", [
+		"2 × 400 g cans chickpeas, drained and rinsed",
+		"1 tbsp oil",
+		"1 onion, diced",
+		"2 garlic cloves, chopped",
+		"1 tsp grated ginger",
+		"1 tsp ground cumin",
+		"1 tsp ground coriander",
+		"½ tsp turmeric",
+		"1 × 400 g can chopped tomatoes",
+		"150 ml water",
+		"1 tbsp lemon juice"
+	], [
+		"Cook onion in oil for 5 minutes. Add garlic, ginger and spices and cook for 1 minute.",
+		"Add tomatoes and simmer for 8 minutes, stirring.",
+		"Stir in chickpeas and water. Simmer 10–12 minutes until sauce thickens; add water if needed.",
+		"Finish with lemon juice and serve hot. Add chilli at the table only if wanted."
+	], "Check canned foods and spice labels.", [
+		gf$1,
+		df$1,
+		kid$1
+	], "./recipe-photos/lentils.webp"),
+	recipe("indian-pulao", "Vegetable pulao", "Indian", "Dinner", 35, 4, "One-pot basmati rice with peas, carrots and a gentle cumin aroma.", [
+		"1½ cups basmati rice, rinsed",
+		"1 tbsp oil",
+		"1 onion, sliced",
+		"1 tsp cumin seeds",
+		"1 carrot, diced small",
+		"1 cup frozen peas",
+		"2½ cups water, or packet-specified amount",
+		"½ tsp salt, optional"
+	], [
+		"Cook onion in oil for 5 minutes. Add cumin seeds and carrot and stir for 1 minute.",
+		"Add rice, peas, water and optional salt. Bring to a boil.",
+		"Cover and cook over low heat for the rice packet’s suggested time, usually 12–15 minutes. Check rice is tender; add a little hot water if needed.",
+		"Turn off heat and rest covered for 5 minutes. Fluff with a fork and serve hot. Cool any leftovers quickly in small portions and refrigerate."
+	], "Check spice labels.", [
+		gf$1,
+		df$1,
+		kid$1
+	], "./recipe-photos/rice.webp"),
+	recipe("indian-aloo-gobi", "Simple aloo gobi", "Indian", "Side", 35, 4, "Potato and cauliflower cooked with mild spices.", [
+		"2 medium potatoes, cut into 2 cm cubes",
+		"1 small cauliflower, small florets",
+		"1 tbsp oil",
+		"1 onion, diced",
+		"1 tsp grated ginger",
+		"1 tsp cumin",
+		"½ tsp turmeric",
+		"1 tomato, chopped",
+		"100 ml water"
+	], [
+		"Cook onion in oil for 5 minutes. Add ginger, cumin and turmeric and stir for 1 minute.",
+		"Add potatoes, tomato and water. Cover and simmer for 10 minutes.",
+		"Add cauliflower and cook covered for 10–15 minutes, stirring occasionally, until potatoes and cauliflower are tender. Add water if the pan becomes dry.",
+		"Uncover briefly to reduce excess liquid. Serve hot alongside dal or your usual protein."
+	], "Check spice labels.", [
+		gf$1,
+		df$1,
+		kid$1
+	], "./recipe-photos/vegetables.webp"),
+	recipe("indian-raita", "Cucumber raita", "Indian", "Side", 10, 4, "A cool yoghurt accompaniment to a warm meal.", [
+		"1 cup plain unsweetened yoghurt",
+		"½ cucumber, washed and grated",
+		"¼ tsp ground cumin",
+		"1 tbsp chopped mint, optional"
+	], [
+		"Squeeze excess water from the grated cucumber using clean hands or a clean cloth.",
+		"Mix cucumber into yoghurt. Stir in cumin and optional mint.",
+		"Keep refrigerated until serving. Use a clean spoon and return leftovers promptly to the fridge."
+	], "Milk.", [gf$1, kid$1], "./recipe-photos/yoghurt.webp"),
+	recipe("indian-chapati", "Everyday chapati", "Indian", "Side", 35, 4, "Simple wholemeal flatbreads made on a hot pan.", [
+		"250 g wholemeal flour, plus a little for rolling",
+		"160–180 ml warm water",
+		"1 tsp oil",
+		"¼ tsp salt, optional"
+	], [
+		"Mix flour and optional salt. Gradually add water and oil to make a soft dough. Knead for 5 minutes, then cover and rest 10 minutes.",
+		"Divide into 8 balls. Roll each into a thin circle on a lightly floured surface.",
+		"Heat a dry heavy frying pan over medium-high heat. Cook a chapati for about 1 minute until small bubbles form, then turn.",
+		"Cook the other side for 1–2 minutes until brown spots appear and the bread is cooked through. Use tongs near the hot pan. Keep covered with a clean cloth while cooking the rest."
+	], "Wheat (gluten).", [df$1, kid$1], "./recipe-photos/bread.webp")
+];
+//#endregion
+//#region package/source/app/more-recipes.ts
 function r(id, name, category, minutes, serves, tags, ingredients, steps, allergens) {
 	return {
 		id,
@@ -29484,203 +31923,207 @@ var moreRecipes = [
 	], "4 eggs|1 tomato, diced|1 tbsp chopped parsley|1 tsp oil|2 tbsp water", "Beat eggs with water and parsley.|Heat oil in a non-stick pan and add eggs; scatter tomato on top.|Cook gently until fully set, folding if desired.", "Egg"),
 	r("polenta", "Soft polenta with mushrooms", "Dinner", 25, 4, [gf, df], "1 cup quick-cooking polenta|4 cups gluten-free vegetable stock|300 g mushrooms, sliced|1 tbsp oil|1 tsp dried thyme", "Bring stock to a simmer and whisk in polenta.|Cook, stirring, according to packet time until soft; add water if needed.|Cook mushrooms in oil and thyme until tender and serve over polenta.", "Check stock and polenta labels")
 ];
-var recipes = [...[
-	{
-		id: "lentil-soup",
-		name: "Tomato & lentil soup",
-		category: "Dinner",
-		minutes: 35,
-		serves: 4,
-		description: "A warming pot made from pantry staples.",
-		allergens: "Check stock ingredients. Bread served alongside may contain wheat.",
-		ingredients: [
-			"1 tbsp oil",
-			"1 onion, finely chopped",
-			"2 carrots, diced",
-			"200 g dry red lentils, rinsed",
-			"1 × 400 g can chopped tomatoes",
-			"1 litre vegetable stock",
-			"½ tsp ground cumin (optional)"
-		],
-		steps: [
-			"Heat the oil in a large saucepan. Add onion and carrots; cook over medium heat for 5 minutes, stirring.",
-			"Stir in lentils, tomatoes, stock, and cumin. Bring to a boil.",
-			"Reduce heat and simmer for 20–25 minutes, stirring occasionally, until lentils and carrots are soft. Add a little water if it becomes too thick.",
-			"Taste before adding seasoning. Serve hot, with bread if you like."
-		],
-		tip: "Freeze extra portions promptly in small containers for another meal."
-	},
-	{
-		id: "bean-pasta",
-		name: "One-pan tomato & bean pasta",
-		category: "Dinner",
-		minutes: 25,
-		serves: 4,
-		description: "A simple dinner with fewer dishes.",
-		allergens: "Wheat in ordinary pasta; optional cheese contains milk.",
-		ingredients: [
-			"250 g dried small pasta",
-			"1 × 400 g can chopped tomatoes",
-			"1 × 400 g can cannellini beans, drained and rinsed",
-			"700 ml water",
-			"1 tbsp oil",
-			"1 tsp dried mixed herbs",
-			"1 cup frozen peas"
-		],
-		steps: [
-			"Put pasta, tomatoes, beans, water, oil, and herbs in a wide saucepan. Bring to a gentle boil.",
-			"Simmer uncovered for 12–16 minutes, stirring frequently so pasta does not stick. Add small splashes of hot water if needed.",
-			"Add peas in the last 4 minutes and cook until hot. Check the pasta is tender.",
-			"Serve immediately. Add grated cheese if you wish."
-		],
-		tip: "Use a can of chickpeas or kidney beans if that is what you have."
-	},
-	{
-		id: "banana-pancakes",
-		name: "Banana pancakes",
-		category: "Breakfast",
-		minutes: 20,
-		serves: 3,
-		description: "A good way to use a very ripe banana.",
-		allergens: "Egg, milk, and wheat.",
-		ingredients: [
-			"1 ripe banana, mashed",
-			"1 egg",
-			"150 g plain flour",
-			"1 tsp baking powder",
-			"200 ml milk",
-			"1 tbsp oil, plus a little for the pan"
-		],
-		steps: [
-			"Whisk banana, egg, milk, and oil together in a bowl.",
-			"Stir in flour and baking powder until just combined. Do not worry about a few lumps.",
-			"Lightly oil a non-stick pan over medium heat. Add small spoonfuls of batter.",
-			"Cook until bubbles appear and the edges set, then flip. Cook the second side until golden and the centres are cooked through."
-		],
-		tip: "Freeze cooked pancakes in small portions, separated with baking paper."
-	},
-	{
-		id: "vegetable-frittata",
-		name: "Easy vegetable frittata",
-		category: "Lunch",
-		minutes: 30,
-		serves: 4,
-		description: "Turn a few vegetables into a shared lunch.",
-		allergens: "Egg and milk.",
-		ingredients: [
-			"6 eggs",
-			"80 ml milk",
-			"2 cups chopped vegetables, such as courgette, capsicum, or cooked broccoli",
-			"½ cup grated cheese",
-			"1 tbsp oil"
-		],
-		steps: [
-			"Heat oven to 180°C. Grease a shallow baking dish.",
-			"Cook any raw vegetables in the oil in a pan for 5–7 minutes until softened. Spread in the baking dish.",
-			"Whisk eggs and milk, stir in cheese, and pour over vegetables.",
-			"Bake for 20–25 minutes until the centre is set and cooked through. Rest for 5 minutes before slicing."
-		],
-		tip: "Use vegetables you already have; cook hard vegetables until tender first."
-	},
-	{
-		id: "bean-potatoes",
-		name: "Baked potatoes with beans",
-		category: "Dinner",
-		minutes: 65,
-		serves: 4,
-		description: "A filling meal with an easy topping.",
-		allergens: "Optional cheese contains milk; check baked-bean labels.",
-		ingredients: [
-			"4 medium potatoes",
-			"1 tsp oil",
-			"1 × 420 g can baked beans",
-			"½ cup grated cheese (optional)",
-			"A simple side salad"
-		],
-		steps: [
-			"Heat oven to 200°C. Wash and dry potatoes, prick several times with a fork, and rub lightly with oil.",
-			"Bake on a tray for 50–60 minutes until tender when pierced.",
-			"Heat beans in a saucepan, stirring, until piping hot.",
-			"Split potatoes carefully, spoon in hot beans, and add cheese if using. Serve with salad."
-		],
-		tip: "Bake extra potatoes only if you will use or freeze them safely; reheat thoroughly."
-	},
-	{
-		id: "porridge",
-		name: "Apple & cinnamon porridge",
-		category: "Breakfast",
-		minutes: 12,
-		serves: 2,
-		description: "A quick, cosy breakfast.",
-		allergens: "Oats; milk if used. Oats are not suitable for everyone with coeliac disease; use the rice-flake recipe for an oat-free option.",
-		ingredients: [
-			"1 cup rolled oats",
-			"2 cups milk, water, or a mixture",
-			"1 apple, washed and grated",
-			"½ tsp ground cinnamon"
-		],
-		steps: [
-			"Combine oats, liquid, and grated apple in a saucepan.",
-			"Bring to a gentle simmer and cook for 5–8 minutes, stirring, until creamy.",
-			"Stir in cinnamon. Add a little more liquid if needed.",
-			"Let it cool to a comfortable eating temperature before serving."
-		],
-		tip: "Plain oats in a larger bag can be cheaper per 100 g; compare the unit price."
-	},
-	{
-		id: "mini-pizzas",
-		name: "Toast mini pizzas",
-		category: "Lunch",
-		minutes: 15,
-		serves: 2,
-		description: "Small pizzas for a quick lunch.",
-		allergens: "Wheat and milk.",
-		ingredients: [
-			"4 slices bread",
-			"4 tbsp tomato passata",
-			"½ cup grated cheese",
-			"½ cup finely chopped capsicum or other quick-cooking vegetables",
-			"½ tsp dried mixed herbs"
-		],
-		steps: [
-			"Heat oven to 200°C. Put bread on a baking tray.",
-			"Spread each slice with passata. Add finely chopped vegetables, herbs, and cheese.",
-			"Bake for 8–10 minutes until cheese bubbles, vegetables are cooked, and the edges are crisp.",
-			"Cool slightly, then cut into manageable pieces."
-		],
-		tip: "Use bread from the freezer and avoid buying toppings just for this recipe."
-	},
-	{
-		id: "chickpea-wraps",
-		name: "Crunchy chickpea wraps",
-		category: "Lunch",
-		minutes: 15,
-		serves: 3,
-		description: "A no-cook lunch you can mix and fold.",
-		allergens: "Wheat in ordinary wraps; milk if using yoghurt.",
-		ingredients: [
-			"1 × 400 g can chickpeas, drained and rinsed",
-			"3 tbsp plain yoghurt",
-			"1 tsp lemon juice",
-			"½ carrot, grated",
-			"½ cucumber, diced",
-			"3 wraps",
-			"A handful of washed lettuce"
-		],
-		steps: [
-			"Mash chickpeas roughly with yoghurt and lemon juice.",
-			"Stir in carrot and cucumber.",
-			"Divide the mixture between wraps and add lettuce.",
-			"Fold and serve promptly. Refrigerate any mixture you are keeping for later."
-		],
-		tip: "For a milk-free version, use a suitable dairy-free yoghurt."
-	}
-].map((r) => ({
-	...r,
-	tags: ["Kids-friendly", ...r.id === "lentil-soup" ? ["Gluten-free ingredients", "Dairy-free ingredients"] : []]
-})), ...moreRecipes];
+var recipes = [
+	...[
+		{
+			id: "lentil-soup",
+			name: "Tomato & lentil soup",
+			category: "Dinner",
+			minutes: 35,
+			serves: 4,
+			description: "A warming pot made from pantry staples.",
+			allergens: "Check stock ingredients. Bread served alongside may contain wheat.",
+			ingredients: [
+				"1 tbsp oil",
+				"1 onion, finely chopped",
+				"2 carrots, diced",
+				"200 g dry red lentils, rinsed",
+				"1 × 400 g can chopped tomatoes",
+				"1 litre vegetable stock",
+				"½ tsp ground cumin (optional)"
+			],
+			steps: [
+				"Heat the oil in a large saucepan. Add onion and carrots; cook over medium heat for 5 minutes, stirring.",
+				"Stir in lentils, tomatoes, stock, and cumin. Bring to a boil.",
+				"Reduce heat and simmer for 20–25 minutes, stirring occasionally, until lentils and carrots are soft. Add a little water if it becomes too thick.",
+				"Taste before adding seasoning. Serve hot, with bread if you like."
+			],
+			tip: "Freeze extra portions promptly in small containers for another meal."
+		},
+		{
+			id: "bean-pasta",
+			name: "One-pan tomato & bean pasta",
+			category: "Dinner",
+			minutes: 25,
+			serves: 4,
+			description: "A simple dinner with fewer dishes.",
+			allergens: "Wheat in ordinary pasta; optional cheese contains milk.",
+			ingredients: [
+				"250 g dried small pasta",
+				"1 × 400 g can chopped tomatoes",
+				"1 × 400 g can cannellini beans, drained and rinsed",
+				"700 ml water",
+				"1 tbsp oil",
+				"1 tsp dried mixed herbs",
+				"1 cup frozen peas"
+			],
+			steps: [
+				"Put pasta, tomatoes, beans, water, oil, and herbs in a wide saucepan. Bring to a gentle boil.",
+				"Simmer uncovered for 12–16 minutes, stirring frequently so pasta does not stick. Add small splashes of hot water if needed.",
+				"Add peas in the last 4 minutes and cook until hot. Check the pasta is tender.",
+				"Serve immediately. Add grated cheese if you wish."
+			],
+			tip: "Use a can of chickpeas or kidney beans if that is what you have."
+		},
+		{
+			id: "banana-pancakes",
+			name: "Banana pancakes",
+			category: "Breakfast",
+			minutes: 20,
+			serves: 3,
+			description: "A good way to use a very ripe banana.",
+			allergens: "Egg, milk, and wheat.",
+			ingredients: [
+				"1 ripe banana, mashed",
+				"1 egg",
+				"150 g plain flour",
+				"1 tsp baking powder",
+				"200 ml milk",
+				"1 tbsp oil, plus a little for the pan"
+			],
+			steps: [
+				"Whisk banana, egg, milk, and oil together in a bowl.",
+				"Stir in flour and baking powder until just combined. Do not worry about a few lumps.",
+				"Lightly oil a non-stick pan over medium heat. Add small spoonfuls of batter.",
+				"Cook until bubbles appear and the edges set, then flip. Cook the second side until golden and the centres are cooked through."
+			],
+			tip: "Freeze cooked pancakes in small portions, separated with baking paper."
+		},
+		{
+			id: "vegetable-frittata",
+			name: "Easy vegetable frittata",
+			category: "Lunch",
+			minutes: 30,
+			serves: 4,
+			description: "Turn a few vegetables into a shared lunch.",
+			allergens: "Egg and milk.",
+			ingredients: [
+				"6 eggs",
+				"80 ml milk",
+				"2 cups chopped vegetables, such as courgette, capsicum, or cooked broccoli",
+				"½ cup grated cheese",
+				"1 tbsp oil"
+			],
+			steps: [
+				"Heat oven to 180°C. Grease a shallow baking dish.",
+				"Cook any raw vegetables in the oil in a pan for 5–7 minutes until softened. Spread in the baking dish.",
+				"Whisk eggs and milk, stir in cheese, and pour over vegetables.",
+				"Bake for 20–25 minutes until the centre is set and cooked through. Rest for 5 minutes before slicing."
+			],
+			tip: "Use vegetables you already have; cook hard vegetables until tender first."
+		},
+		{
+			id: "bean-potatoes",
+			name: "Baked potatoes with beans",
+			category: "Dinner",
+			minutes: 65,
+			serves: 4,
+			description: "A filling meal with an easy topping.",
+			allergens: "Optional cheese contains milk; check baked-bean labels.",
+			ingredients: [
+				"4 medium potatoes",
+				"1 tsp oil",
+				"1 × 420 g can baked beans",
+				"½ cup grated cheese (optional)",
+				"A simple side salad"
+			],
+			steps: [
+				"Heat oven to 200°C. Wash and dry potatoes, prick several times with a fork, and rub lightly with oil.",
+				"Bake on a tray for 50–60 minutes until tender when pierced.",
+				"Heat beans in a saucepan, stirring, until piping hot.",
+				"Split potatoes carefully, spoon in hot beans, and add cheese if using. Serve with salad."
+			],
+			tip: "Bake extra potatoes only if you will use or freeze them safely; reheat thoroughly."
+		},
+		{
+			id: "porridge",
+			name: "Apple & cinnamon porridge",
+			category: "Breakfast",
+			minutes: 12,
+			serves: 2,
+			description: "A quick, cosy breakfast.",
+			allergens: "Oats; milk if used. Oats are not suitable for everyone with coeliac disease; use the rice-flake recipe for an oat-free option.",
+			ingredients: [
+				"1 cup rolled oats",
+				"2 cups milk, water, or a mixture",
+				"1 apple, washed and grated",
+				"½ tsp ground cinnamon"
+			],
+			steps: [
+				"Combine oats, liquid, and grated apple in a saucepan.",
+				"Bring to a gentle simmer and cook for 5–8 minutes, stirring, until creamy.",
+				"Stir in cinnamon. Add a little more liquid if needed.",
+				"Let it cool to a comfortable eating temperature before serving."
+			],
+			tip: "Plain oats in a larger bag can be cheaper per 100 g; compare the unit price."
+		},
+		{
+			id: "mini-pizzas",
+			name: "Toast mini pizzas",
+			category: "Lunch",
+			minutes: 15,
+			serves: 2,
+			description: "Small pizzas for a quick lunch.",
+			allergens: "Wheat and milk.",
+			ingredients: [
+				"4 slices bread",
+				"4 tbsp tomato passata",
+				"½ cup grated cheese",
+				"½ cup finely chopped capsicum or other quick-cooking vegetables",
+				"½ tsp dried mixed herbs"
+			],
+			steps: [
+				"Heat oven to 200°C. Put bread on a baking tray.",
+				"Spread each slice with passata. Add finely chopped vegetables, herbs, and cheese.",
+				"Bake for 8–10 minutes until cheese bubbles, vegetables are cooked, and the edges are crisp.",
+				"Cool slightly, then cut into manageable pieces."
+			],
+			tip: "Use bread from the freezer and avoid buying toppings just for this recipe."
+		},
+		{
+			id: "chickpea-wraps",
+			name: "Crunchy chickpea wraps",
+			category: "Lunch",
+			minutes: 15,
+			serves: 3,
+			description: "A no-cook lunch you can mix and fold.",
+			allergens: "Wheat in ordinary wraps; milk if using yoghurt.",
+			ingredients: [
+				"1 × 400 g can chickpeas, drained and rinsed",
+				"3 tbsp plain yoghurt",
+				"1 tsp lemon juice",
+				"½ carrot, grated",
+				"½ cucumber, diced",
+				"3 wraps",
+				"A handful of washed lettuce"
+			],
+			steps: [
+				"Mash chickpeas roughly with yoghurt and lemon juice.",
+				"Stir in carrot and cucumber.",
+				"Divide the mixture between wraps and add lettuce.",
+				"Fold and serve promptly. Refrigerate any mixture you are keeping for later."
+			],
+			tip: "For a milk-free version, use a suitable dairy-free yoghurt."
+		}
+	].map((r) => ({
+		...r,
+		tags: ["Kids-friendly", ...r.id === "lentil-soup" ? ["Gluten-free ingredients", "Dairy-free ingredients"] : []]
+	})),
+	...moreRecipes,
+	...familyRecipes
+];
 //#endregion
-//#region app/savings-content.ts
+//#region package/source/app/savings-content.ts
 var savingCategories = [
 	"Groceries",
 	"Money habits",
@@ -31489,9 +33932,9 @@ var expandedSavingTips = [
 	}
 ];
 //#endregion
-//#region app/home-life.tsx
+//#region package/source/app/home-life.tsx
 function Recipes() {
-	const [filter, setFilter] = (0, import_react.useState)("All recipes"), [diet, setDiet] = (0, import_react.useState)("All dietary needs"), [search, setSearch] = (0, import_react.useState)(""), [selected, setSelected] = (0, import_react.useState)(null);
+	const [filter, setFilter] = (0, import_react.useState)("All recipes"), [diet, setDiet] = (0, import_react.useState)("All dietary needs"), [cuisine, setCuisine] = (0, import_react.useState)("All cuisines"), [search, setSearch] = (0, import_react.useState)(""), [selected, setSelected] = (0, import_react.useState)(null);
 	const r = recipes.find((r) => r.id === selected);
 	if (r) return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 		className: "secondary",
@@ -31500,12 +33943,23 @@ function Recipes() {
 	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 		className: "recipe-detail",
 		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-				className: "eyebrow",
-				children: [r.category, " · HOMEMADE"]
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+				className: "content-photo-banner",
+				style: { backgroundImage: `linear-gradient(#0813188c,#081318c9),url("${recipePhoto(r)}")` },
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "eyebrow",
+						children: [
+							r.category,
+							" · ",
+							recipeCuisine(r)
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: r.name }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: r.description }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "Illustrative food photo" })
+				]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: r.name }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: r.description }),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "small-note",
 				children: r.tags.join(" · ")
@@ -31551,7 +34005,7 @@ function Recipes() {
 					children: "SIMPLE FOOD · EVERYDAY INGREDIENTS"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Easy homemade recipes." }),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "52 easy recipes, including kids-friendly and dietary options." })
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [recipes.length, " easy recipes, including Filipino and Indian home favourites, kids-friendly and dietary options."] })
 			] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Utensils, { size: 35 })]
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -31593,6 +34047,21 @@ function Recipes() {
 				children: t
 			}, t))
 		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: "filters",
+			"aria-label": "Recipe cuisine",
+			children: [
+				"All cuisines",
+				"Filipino",
+				"Indian",
+				"Everyday"
+			].map((c) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: cuisine === c ? "selected" : "",
+				"aria-pressed": cuisine === c,
+				onClick: () => setCuisine(c),
+				children: c
+			}, c))
+		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: ["Search recipes", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
 			type: "search",
 			value: search,
@@ -31610,12 +34079,19 @@ function Recipes() {
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "recipe-grid",
-			children: recipes.filter((r) => (filter === "All recipes" || r.category === filter) && (diet === "All dietary needs" || r.tags.includes(diet)) && (r.name + " " + r.ingredients.join(" ")).toLowerCase().includes(search.toLowerCase())).map((r) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-					className: "pill",
-					children: r.category
+			children: recipes.filter((r) => (filter === "All recipes" || r.category === filter) && (diet === "All dietary needs" || r.tags.includes(diet)) && (cuisine === "All cuisines" || recipeCuisine(r) === cuisine) && (r.name + " " + r.ingredients.join(" ")).toLowerCase().includes(search.toLowerCase())).map((r) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+					className: "recipe-photo-heading",
+					style: { backgroundImage: `linear-gradient(#08131877,#081318d1),url("${recipePhoto(r)}")` },
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+						className: "pill",
+						children: [
+							r.category,
+							" · ",
+							recipeCuisine(r)
+						]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: r.name })]
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: r.name }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: r.description }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "small-note",
@@ -31648,12 +34124,18 @@ function FoodSafety() {
 		className: "food-safety",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Keep homemade food safe" }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Refrigerate or freeze leftovers within two hours. Reheat until piping hot, above 75°C. Meals kept to eat cold should be refrigerated and used within two days. Children need a grown-up’s help with knives, heat, and ovens." }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Refrigerate or freeze leftovers within two hours. Reheat until piping hot, above 75°C. Meals kept to eat cold should be refrigerated and used within two days. Children need a grown-up’s help with knives, heat, and ovens. Cool rice quickly in small amounts, refrigerate promptly and use within two days; do not leave it to cool slowly on the counter." }),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 				href: "https://www.mpi.govt.nz/food-safety-home/preparing-and-storing-food-safely-at-home/safe-food-preparation-cooking-and-storage-at-home",
 				target: "_blank",
 				rel: "noopener noreferrer",
 				children: "Food safety guidance · New Zealand Food Safety / MPI"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+				href: "https://www.mpi.govt.nz/food-safety-home/food-poisoning-symptoms-causes/bacillus-cereus-bacteria-rice-starchy-food",
+				target: "_blank",
+				rel: "noopener noreferrer",
+				children: "MPI · keeping cooked rice safe"
 			})
 		]
 	});
@@ -31775,44 +34257,7 @@ function SavingTips() {
 	] });
 }
 //#endregion
-//#region components/ui/accordion.tsx
-function Accordion({ ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root2$3, {
-		"data-slot": "accordion",
-		...props
-	});
-}
-function AccordionItem({ className, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item$1, {
-		"data-slot": "accordion-item",
-		className: cn$1("border-b last:border-b-0", className),
-		...props
-	});
-}
-function AccordionTrigger({ className, children, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Header, {
-		className: "flex",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Trigger2, {
-			"data-slot": "accordion-trigger",
-			className: cn$1("flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180", className),
-			...props,
-			children: [children, /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: "pointer-events-none size-4 shrink-0 translate-y-0.5 text-muted-foreground transition-transform duration-200" })]
-		})
-	});
-}
-function AccordionContent({ className, children, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Content2$1, {
-		"data-slot": "accordion-content",
-		className: "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
-		...props,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			className: cn$1("pt-0 pb-4", className),
-			children
-		})
-	});
-}
-//#endregion
-//#region components/ui/radio-group.tsx
+//#region package/source/components/ui/radio-group.tsx
 function RadioGroup({ className, ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(RadioGroup$1, {
 		"data-slot": "radio-group",
@@ -31833,7 +34278,7 @@ function RadioGroupItem({ className, ...props }) {
 	});
 }
 //#endregion
-//#region app/faith-content.ts
+//#region package/source/app/faith-content.ts
 var prayers = [
 	{
 		intention: "Daily prayer",
@@ -31889,7 +34334,7 @@ var faqs = [
 	["Do I need to sign in?", "The site is currently private and uses ChatGPT sign-in. Submitting a report or review also requires sign-in. The custom domain does not change who can access the site."]
 ];
 //#endregion
-//#region app/languages.ts
+//#region package/source/app/languages.ts
 var languages = [
 	{
 		name: "Te reo Māori",
@@ -32436,7 +34881,7 @@ languages.push(...[
 	}
 ]);
 //#endregion
-//#region app/community.tsx
+//#region package/source/app/community.tsx
 function PrayerLibrary() {
 	const [intention, setIntention] = (0, import_react.useState)("Daily prayer");
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
@@ -32839,7 +35284,7 @@ function Feedback({ kind, canEdit }) {
 	] });
 }
 //#endregion
-//#region node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/tzName/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/tzName/index.js
 /**
 * Time zone name format.
 */
@@ -32874,7 +35319,7 @@ function tzName(timeZone, date, format = "long") {
 	}).format(date).split(/\s/g).slice(2).join(" ");
 }
 //#endregion
-//#region node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/tzOffset/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/tzOffset/index.js
 var offsetFormatCache = {};
 var offsetCache = {};
 /**
@@ -32917,7 +35362,7 @@ function calcOffset(cacheStr, values) {
 	return offsetCache[cacheStr] = hours * 60 + minutes > 0 ? hours * 60 + minutes + seconds : hours * 60 - minutes - seconds;
 }
 //#endregion
-//#region node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/date/mini.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/date/mini.js
 var TZDateMini = class TZDateMini extends Date {
 	constructor(...args) {
 		super();
@@ -33060,7 +35505,7 @@ function targetInternalTime(date, time) {
 	return +internal;
 }
 //#endregion
-//#region node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/date/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/date/index.js
 var TZDate = class TZDate extends TZDateMini {
 	static tz(tz, ...args) {
 		return args.length ? new TZDate(...args, tz) : new TZDate(Date.now(), tz);
@@ -33116,7 +35561,7 @@ var TZDate = class TZDate extends TZDateMini {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/constants.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/constants.js
 /**
 * @constant
 * @name daysInYear
@@ -33165,7 +35610,7 @@ secondsInDay * daysInYear / 12 * 3;
 */
 var constructFromSymbol = Symbol.for("constructDateFrom");
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/constructFrom.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/constructFrom.js
 /**
 * @name constructFrom
 * @category Generic Helpers
@@ -33208,7 +35653,7 @@ function constructFrom(date, value) {
 	return new Date(value);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/toDate.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/toDate.js
 /**
 * @name toDate
 * @category Common Helpers
@@ -33251,7 +35696,7 @@ function toDate(argument, context) {
 	return constructFrom(context || argument, argument);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addDays.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addDays.js
 /**
 * The {@link addDays} function options.
 */
@@ -33304,7 +35749,7 @@ function addDays(date, amount, options) {
 	return _date;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addMonths.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addMonths.js
 /**
 * The {@link addMonths} function options.
 */
@@ -33348,13 +35793,13 @@ function addMonths(date, amount, options) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/defaultOptions.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/defaultOptions.js
 var defaultOptions = {};
 function getDefaultOptions() {
 	return defaultOptions;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfWeek.js
 /**
 * The {@link startOfWeek} function options.
 */
@@ -33396,7 +35841,7 @@ function startOfWeek(date, options) {
 	return _date;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfISOWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfISOWeek.js
 /**
 * The {@link startOfISOWeek} function options.
 */
@@ -33431,7 +35876,7 @@ function startOfISOWeek(date, options) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getISOWeekYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getISOWeekYear.js
 /**
 * The {@link getISOWeekYear} function options.
 */
@@ -33471,7 +35916,7 @@ function getISOWeekYear(date, options) {
 	else return year - 1;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/getTimezoneOffsetInMilliseconds.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/getTimezoneOffsetInMilliseconds.js
 /**
 * Google Chrome as of 67.0.3396.87 introduced timezones with offset that includes seconds.
 * They usually appear for dates that denote time before the timezones were introduced
@@ -33490,13 +35935,13 @@ function getTimezoneOffsetInMilliseconds(date) {
 	return +date - +utcDate;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/normalizeDates.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/normalizeDates.js
 function normalizeDates(context, ...dates) {
 	const normalize = constructFrom.bind(null, context || dates.find((date) => typeof date === "object"));
 	return dates.map(normalize);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfDay.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfDay.js
 /**
 * The {@link startOfDay} function options.
 */
@@ -33528,7 +35973,7 @@ function startOfDay(date, options) {
 	return _date;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/differenceInCalendarDays.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/differenceInCalendarDays.js
 /**
 * The {@link differenceInCalendarDays} function options.
 */
@@ -33572,7 +36017,7 @@ function differenceInCalendarDays(laterDate, earlierDate, options) {
 	return Math.round((laterTimestamp - earlierTimestamp) / millisecondsInDay);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfISOWeekYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfISOWeekYear.js
 /**
 * The {@link startOfISOWeekYear} function options.
 */
@@ -33609,7 +36054,7 @@ function startOfISOWeekYear(date, options) {
 	return startOfISOWeek(fourthOfJanuary);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addWeeks.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addWeeks.js
 /**
 * The {@link addWeeks} function options.
 */
@@ -33639,7 +36084,7 @@ function addWeeks(date, amount, options) {
 	return addDays(date, amount * 7, options);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addYears.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addYears.js
 /**
 * The {@link addYears} function options.
 */
@@ -33669,7 +36114,7 @@ function addYears(date, amount, options) {
 	return addMonths(date, amount * 12, options);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/max.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/max.js
 /**
 * The {@link max} function options.
 */
@@ -33709,7 +36154,7 @@ function max(dates, options) {
 	return constructFrom(context, result || NaN);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/min.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/min.js
 /**
 * The {@link min} function options.
 */
@@ -33749,7 +36194,7 @@ function min(dates, options) {
 	return constructFrom(context, result || NaN);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameDay.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameDay.js
 /**
 * The {@link isSameDay} function options.
 */
@@ -33787,7 +36232,7 @@ function isSameDay(laterDate, earlierDate, options) {
 	return +startOfDay(dateLeft_) === +startOfDay(dateRight_);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isDate.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isDate.js
 /**
 * @name isDate
 * @category Common Helpers
@@ -33824,7 +36269,7 @@ function isDate(value) {
 	return value instanceof Date || typeof value === "object" && Object.prototype.toString.call(value) === "[object Date]";
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isValid.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isValid.js
 /**
 * @name isValid
 * @category Common Helpers
@@ -33860,7 +36305,7 @@ function isValid(date) {
 	return !(!isDate(date) && typeof date !== "number" || isNaN(+toDate(date)));
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/differenceInCalendarMonths.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/differenceInCalendarMonths.js
 /**
 * The {@link differenceInCalendarMonths} function options.
 */
@@ -33893,7 +36338,7 @@ function differenceInCalendarMonths(laterDate, earlierDate, options) {
 	return yearsDiff * 12 + monthsDiff;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfMonth.js
 /**
 * The {@link endOfMonth} function options.
 */
@@ -33927,7 +36372,7 @@ function endOfMonth(date, options) {
 	return _date;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/normalizeInterval.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/normalizeInterval.js
 function normalizeInterval(context, interval) {
 	const [start, end] = normalizeDates(context, interval.start, interval.end);
 	return {
@@ -33936,7 +36381,7 @@ function normalizeInterval(context, interval) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/eachMonthOfInterval.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/eachMonthOfInterval.js
 /**
 * The {@link eachMonthOfInterval} function options.
 */
@@ -33996,7 +36441,7 @@ function eachMonthOfInterval(interval, options) {
 	return reversed ? dates.reverse() : dates;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfMonth.js
 /**
 * The {@link startOfMonth} function options.
 */
@@ -34030,7 +36475,7 @@ function startOfMonth(date, options) {
 	return _date;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfYear.js
 /**
 * The {@link endOfYear} function options.
 */
@@ -34064,7 +36509,7 @@ function endOfYear(date, options) {
 	return _date;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfYear.js
 /**
 * The {@link startOfYear} function options.
 */
@@ -34097,7 +36542,7 @@ function startOfYear(date, options) {
 	return date_;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/eachYearOfInterval.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/eachYearOfInterval.js
 /**
 * The {@link eachYearOfInterval} function options.
 */
@@ -34157,7 +36602,7 @@ function eachYearOfInterval(interval, options) {
 	return reversed ? dates.reverse() : dates;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfWeek.js
 /**
 * The {@link endOfWeek} function options.
 */
@@ -34199,7 +36644,7 @@ function endOfWeek(date, options) {
 	return _date;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfISOWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfISOWeek.js
 /**
 * The {@link endOfISOWeek} function options.
 */
@@ -34234,7 +36679,7 @@ function endOfISOWeek(date, options) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/formatDistance.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/formatDistance.js
 var formatDistanceLocale = {
 	lessThanXSeconds: {
 		one: "less than a second",
@@ -34309,7 +36754,7 @@ var formatDistance = (token, count, options) => {
 	return result;
 };
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildFormatLongFn.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildFormatLongFn.js
 function buildFormatLongFn(args) {
 	return (options = {}) => {
 		const width = options.width ? String(options.width) : args.defaultWidth;
@@ -34346,7 +36791,7 @@ var formatLong = {
 	})
 };
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/formatRelative.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/formatRelative.js
 var formatRelativeLocale = {
 	lastWeek: "'last' eeee 'at' p",
 	yesterday: "'yesterday at' p",
@@ -34357,7 +36802,7 @@ var formatRelativeLocale = {
 };
 var formatRelative = (token, _date, _baseDate, _options) => formatRelativeLocale[token];
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildLocalizeFn.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildLocalizeFn.js
 /**
 * The localize function argument callback which allows to convert raw value to
 * the actual type.
@@ -34407,7 +36852,7 @@ function buildLocalizeFn(args) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/localize.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/localize.js
 var eraValues = {
 	narrow: ["B", "A"],
 	abbreviated: ["BC", "AD"],
@@ -34616,7 +37061,7 @@ var localize = {
 	})
 };
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildMatchFn.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildMatchFn.js
 function buildMatchFn(args) {
 	return (string, options = {}) => {
 		const width = options.width;
@@ -34643,7 +37088,7 @@ function findIndex(array, predicate) {
 	for (let key = 0; key < array.length; key++) if (predicate(array[key])) return key;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildMatchPatternFn.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildMatchPatternFn.js
 function buildMatchPatternFn(args) {
 	return (string, options = {}) => {
 		const matchResult = string.match(args.matchPattern);
@@ -34661,7 +37106,7 @@ function buildMatchPatternFn(args) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US.js
 /**
 * @category Locales
 * @summary English locale (United States).
@@ -34802,7 +37247,7 @@ var enUS$1 = {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getDayOfYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getDayOfYear.js
 /**
 * The {@link getDayOfYear} function options.
 */
@@ -34829,7 +37274,7 @@ function getDayOfYear(date, options) {
 	return differenceInCalendarDays(_date, startOfYear(_date)) + 1;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getISOWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getISOWeek.js
 /**
 * The {@link getISOWeek} function options.
 */
@@ -34859,7 +37304,7 @@ function getISOWeek(date, options) {
 	return Math.round(diff / millisecondsInWeek) + 1;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getWeekYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getWeekYear.js
 /**
 * The {@link getWeekYear} function options.
 */
@@ -34915,7 +37360,7 @@ function getWeekYear(date, options) {
 	else return year - 1;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfWeekYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfWeekYear.js
 /**
 * The {@link startOfWeekYear} function options.
 */
@@ -34966,7 +37411,7 @@ function startOfWeekYear(date, options) {
 	return startOfWeek(firstWeek, options);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getWeek.js
 /**
 * The {@link getWeek} function options.
 */
@@ -35010,12 +37455,12 @@ function getWeek(date, options) {
 	return Math.round(diff / millisecondsInWeek) + 1;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/addLeadingZeros.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/addLeadingZeros.js
 function addLeadingZeros(number, targetLength) {
 	return (number < 0 ? "-" : "") + Math.abs(number).toString().padStart(targetLength, "0");
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/lightFormatters.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/lightFormatters.js
 var lightFormatters = {
 	y(date, token) {
 		const signedYear = date.getFullYear();
@@ -35058,7 +37503,7 @@ var lightFormatters = {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/formatters.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/formatters.js
 var dayPeriodEnum = {
 	am: "am",
 	pm: "pm",
@@ -35468,7 +37913,7 @@ function formatTimezone(offset, delimiter = "") {
 	return sign + hours + delimiter + minutes;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/longFormatters.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/longFormatters.js
 var dateLongFormatter = (pattern, formatLong) => {
 	switch (pattern) {
 		case "P": return formatLong.date({ width: "short" });
@@ -35512,7 +37957,7 @@ var longFormatters = {
 	P: dateTimeLongFormatter
 };
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/protectedTokens.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/protectedTokens.js
 var dayOfYearTokenRE = /^D+$/;
 var weekYearTokenRE = /^Y+$/;
 var throwTokens = [
@@ -35537,7 +37982,7 @@ function message(token, format, input) {
 	return `Use \`${token.toLowerCase()}\` instead of \`${token}\` (in \`${format}\`) for formatting ${subject} to the input \`${input}\`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md`;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/format.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/format.js
 var formattingTokensRegExp = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g;
 var longFormattingTokensRegExp = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g;
 var escapedStringRegExp = /^'([^]*?)'?$/;
@@ -35884,7 +38329,7 @@ function cleanEscapedString(input) {
 	return matched[1].replace(doubleQuoteRegExp, "'");
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getDaysInMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getDaysInMonth.js
 /**
 * The {@link getDaysInMonth} function options.
 */
@@ -35916,7 +38361,7 @@ function getDaysInMonth(date, options) {
 	return lastDayOfMonth.getDate();
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getMonth.js
 /**
 * The {@link getMonth} function options.
 */
@@ -35942,7 +38387,7 @@ function getMonth(date, options) {
 	return toDate(date, options?.in).getMonth();
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getYear.js
 /**
 * The {@link getYear} function options.
 */
@@ -35968,7 +38413,7 @@ function getYear(date, options) {
 	return toDate(date, options?.in).getFullYear();
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isAfter.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isAfter.js
 /**
 * @name isAfter
 * @category Common Helpers
@@ -35991,7 +38436,7 @@ function isAfter(date, dateToCompare) {
 	return +toDate(date) > +toDate(dateToCompare);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isBefore.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isBefore.js
 /**
 * @name isBefore
 * @category Common Helpers
@@ -36014,7 +38459,7 @@ function isBefore(date, dateToCompare) {
 	return +toDate(date) < +toDate(dateToCompare);
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameMonth.js
 /**
 * The {@link isSameMonth} function options.
 */
@@ -36047,7 +38492,7 @@ function isSameMonth(laterDate, earlierDate, options) {
 	return laterDate_.getFullYear() === earlierDate_.getFullYear() && laterDate_.getMonth() === earlierDate_.getMonth();
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameYear.js
 /**
 * The {@link isSameYear} function options.
 */
@@ -36075,7 +38520,7 @@ function isSameYear(laterDate, earlierDate, options) {
 	return laterDate_.getFullYear() === earlierDate_.getFullYear();
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/setMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/setMonth.js
 /**
 * The {@link setMonth} function options.
 */
@@ -36113,7 +38558,7 @@ function setMonth(date, month, options) {
 	return _date;
 }
 //#endregion
-//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/setYear.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/setYear.js
 /**
 * The {@link setYear} function options.
 */
@@ -36146,7 +38591,7 @@ function setYear(date, year, options) {
 	return date_;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getBroadcastWeeksInMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getBroadcastWeeksInMonth.js
 var FIVE_WEEKS = 5;
 var FOUR_WEEKS = 4;
 /**
@@ -36169,7 +38614,7 @@ function getBroadcastWeeksInMonth(month, dateLib) {
 	return dateLib.getMonth(month) === dateLib.getMonth(lastDateOfLastWeek) ? FIVE_WEEKS : FOUR_WEEKS;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/startOfBroadcastWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/startOfBroadcastWeek.js
 /**
 * Returns the start date of the week in the broadcast calendar.
 *
@@ -36190,7 +38635,7 @@ function startOfBroadcastWeek(date, dateLib) {
 	else return dateLib.addDays(firstOfMonth, -1 * (dayOfWeek - 1));
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/endOfBroadcastWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/endOfBroadcastWeek.js
 /**
 * Returns the end date of the week in the broadcast calendar.
 *
@@ -36208,7 +38653,7 @@ function endOfBroadcastWeek(date, dateLib) {
 	return dateLib.addDays(startDate, numberOfWeeks * 7 - 1);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/locale/en-US.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/locale/en-US.js
 /** English (United States) locale extended with DayPicker-specific translations. */
 var enUS = {
 	...enUS$1,
@@ -36264,7 +38709,7 @@ var enUS = {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/DateLib.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/DateLib.js
 /**
 * A wrapper class around [date-fns](http://date-fns.org) that provides utility
 * methods for date manipulation and formatting.
@@ -36732,7 +39177,7 @@ DateLib.yearFirstLocales = new Set([
 */
 var defaultDateLib = new DateLib();
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarDay.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarDay.js
 /**
 * Represents a day displayed in the calendar.
 *
@@ -36762,7 +39207,7 @@ var CalendarDay = class {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarMonth.js
 /**
 * Represents a month in a calendar year.
 *
@@ -36776,7 +39221,7 @@ var CalendarMonth = class {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarWeek.js
 /**
 * Represents a week in a calendar month.
 *
@@ -36789,7 +39234,7 @@ var CalendarWeek = class {
 	}
 };
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/CaptionLabel.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/CaptionLabel.js
 /**
 * Render the label in the month caption.
 *
@@ -36800,7 +39245,7 @@ function CaptionLabel(props) {
 	return import_react.createElement("span", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Chevron.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Chevron.js
 /**
 * Render the chevron icon used in the navigation buttons and dropdowns.
 *
@@ -36818,7 +39263,7 @@ function Chevron(props) {
 	}, orientation === "up" && import_react.createElement("polygon", { points: "6.77 17 12.5 11.43 18.24 17 20 15.28 12.5 8 5 15.28" }), orientation === "down" && import_react.createElement("polygon", { points: "6.77 8 12.5 13.57 18.24 8 20 9.72 12.5 17 5 9.72" }), orientation === "left" && import_react.createElement("polygon", { points: "16 18.112 9.81111111 12 16 5.87733333 14.0888889 4 6 12 14.0888889 20" }), orientation === "right" && import_react.createElement("polygon", { points: "8 18.112 14.18888889 12 8 5.87733333 9.91111111 4 18 12 9.91111111 20" }));
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Day.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Day.js
 /**
 * Render a grid cell for a specific day in the calendar.
 *
@@ -36834,7 +39279,7 @@ function Day(props) {
 	return import_react.createElement("td", { ...tdProps });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/DayButton.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/DayButton.js
 /**
 * Render a button for a specific day in the calendar.
 *
@@ -36853,7 +39298,7 @@ function DayButton(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/UI.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/UI.js
 /**
 * Enum representing the UI elements composing DayPicker. These elements are
 * mapped to {@link CustomComponents}, {@link ClassNames}, and {@link Styles}.
@@ -36975,7 +39420,7 @@ var Animation;
 	Animation["caption_before_exit"] = "caption_before_exit";
 })(Animation || (Animation = {}));
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useDayPicker.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useDayPicker.js
 /** @ignore */
 var dayPickerContext = (0, import_react.createContext)(void 0);
 /**
@@ -36996,7 +39441,7 @@ function useDayPicker() {
 	return context;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Dropdown.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Dropdown.js
 /**
 * Render a dropdown component for navigation in the calendar.
 *
@@ -37031,7 +39476,7 @@ function Dropdown(props) {
 	})));
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/DropdownNav.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/DropdownNav.js
 /**
 * Render the navigation dropdowns for the calendar.
 *
@@ -37042,7 +39487,7 @@ function DropdownNav(props) {
 	return import_react.createElement("div", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Footer.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Footer.js
 /**
 * Render the footer of the calendar.
 *
@@ -37053,7 +39498,7 @@ function Footer(props) {
 	return import_react.createElement("div", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Month.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Month.js
 /**
 * Render the grid with the weekday header row and the weeks for a specific
 * month.
@@ -37066,7 +39511,7 @@ function Month(props) {
 	return import_react.createElement("div", { ...divProps }, props.children);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthCaption.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthCaption.js
 /**
 * Render the caption for a month in the calendar.
 *
@@ -37078,7 +39523,7 @@ function MonthCaption(props) {
 	return import_react.createElement("div", { ...divProps });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthGrid.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthGrid.js
 /**
 * Render the grid of days for a specific month.
 *
@@ -37089,7 +39534,7 @@ function MonthGrid(props) {
 	return import_react.createElement("table", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Months.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Months.js
 /**
 * Render a container wrapping the month grids.
 *
@@ -37100,7 +39545,7 @@ function Months(props) {
 	return import_react.createElement("div", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthsDropdown.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthsDropdown.js
 /**
 * Render a dropdown to navigate between months in the calendar.
 *
@@ -37112,7 +39557,7 @@ function MonthsDropdown(props) {
 	return import_react.createElement(components.Dropdown, { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Nav.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Nav.js
 /**
 * Render the navigation toolbar with buttons to navigate between months.
 *
@@ -37157,7 +39602,7 @@ function Nav(props) {
 	})));
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/NextMonthButton.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/NextMonthButton.js
 /**
 * Render the button to navigate to the next month in the calendar.
 *
@@ -37168,7 +39613,7 @@ function NextMonthButton(props) {
 	return import_react.createElement("button", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Option.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Option.js
 /**
 * Render an `option` element.
 *
@@ -37179,7 +39624,7 @@ function Option(props) {
 	return import_react.createElement("option", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/PreviousMonthButton.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/PreviousMonthButton.js
 /**
 * Render the button to navigate to the previous month in the calendar.
 *
@@ -37190,7 +39635,7 @@ function PreviousMonthButton(props) {
 	return import_react.createElement("button", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Root.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Root.js
 /**
 * Render the root element of the calendar.
 *
@@ -37205,7 +39650,7 @@ function Root(props) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Select.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Select.js
 /**
 * Render a `select` element.
 *
@@ -37216,7 +39661,7 @@ function Select(props) {
 	return import_react.createElement("select", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Week.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Week.js
 /**
 * Render a table row representing a week in the calendar.
 *
@@ -37228,7 +39673,7 @@ function Week(props) {
 	return import_react.createElement("tr", { ...trProps });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weekday.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weekday.js
 /**
 * Render a table header cell with the name of a weekday (e.g., "Mo", "Tu").
 *
@@ -37239,7 +39684,7 @@ function Weekday(props) {
 	return import_react.createElement("th", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weekdays.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weekdays.js
 /**
 * Render the table row containing the weekday names.
 *
@@ -37250,7 +39695,7 @@ function Weekdays(props) {
 	return import_react.createElement("thead", { "aria-hidden": true }, import_react.createElement("tr", { ...props }));
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/WeekNumber.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/WeekNumber.js
 /**
 * Render a table cell displaying the number of the week.
 *
@@ -37262,7 +39707,7 @@ function WeekNumber(props) {
 	return import_react.createElement("th", { ...thProps });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/WeekNumberHeader.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/WeekNumberHeader.js
 /**
 * Render the header cell for the week numbers column.
 *
@@ -37273,7 +39718,7 @@ function WeekNumberHeader(props) {
 	return import_react.createElement("th", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weeks.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weeks.js
 /**
 * Render the container for the weeks in the month grid.
 *
@@ -37284,7 +39729,7 @@ function Weeks(props) {
 	return import_react.createElement("tbody", { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/YearsDropdown.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/YearsDropdown.js
 /**
 * Render a dropdown to navigate between years in the calendar.
 *
@@ -37296,7 +39741,7 @@ function YearsDropdown(props) {
 	return import_react.createElement(components.Dropdown, { ...props });
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/custom-components.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/custom-components.js
 var custom_components_exports = /* @__PURE__ */ __exportAll({
 	CaptionLabel: () => CaptionLabel,
 	Chevron: () => Chevron,
@@ -37325,7 +39770,7 @@ var custom_components_exports = /* @__PURE__ */ __exportAll({
 	YearsDropdown: () => YearsDropdown
 });
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeIncludesDate.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeIncludesDate.js
 /**
 * Checks if a given date is within a specified date range.
 *
@@ -37349,7 +39794,7 @@ function rangeIncludesDate(range, date, excludeEnds = false, dateLib = defaultDa
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/typeguards.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/typeguards.js
 /**
 * Checks if the given value is of type {@link DateInterval}.
 *
@@ -37412,7 +39857,7 @@ function isDatesArray(value, dateLib) {
 	return Array.isArray(value) && value.every(dateLib.isDate);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/dateMatchModifiers.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/dateMatchModifiers.js
 /**
 * Checks if a given date matches at least one of the specified {@link Matcher}.
 *
@@ -37449,7 +39894,7 @@ function dateMatchModifiers(date, matchers, dateLib = defaultDateLib) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/createGetModifiers.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/createGetModifiers.js
 /**
 * Creates a function to retrieve the modifiers for a given day.
 *
@@ -37513,7 +39958,7 @@ function createGetModifiers(days, props, navStart, navEnd, dateLib) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getClassNamesForModifiers.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getClassNamesForModifiers.js
 /**
 * Returns the class names for a day based on its modifiers.
 *
@@ -37535,7 +39980,7 @@ function getClassNamesForModifiers(modifiers, classNames, modifiersClassNames = 
 	}, [classNames[UI.Day]]);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getComponents.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getComponents.js
 /**
 * Merges custom components from the props with the default components.
 *
@@ -37553,7 +39998,7 @@ function getComponents(customComponents) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDataAttributes.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDataAttributes.js
 /**
 * Extracts `data-` attributes from the DayPicker props.
 *
@@ -37578,7 +40023,7 @@ function getDataAttributes(props) {
 	return dataAttributes;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDefaultClassNames.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDefaultClassNames.js
 /**
 * Returns the default class names for the UI elements.
 *
@@ -37597,7 +40042,7 @@ function getDefaultClassNames() {
 	return classNames;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatCaption.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatCaption.js
 /**
 * Formats the caption of the month.
 *
@@ -37614,7 +40059,7 @@ function formatCaption(month, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).formatMonthYear(month);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatDay.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatDay.js
 /**
 * Formats the day date shown in the day cell.
 *
@@ -37631,7 +40076,7 @@ function formatDay(date, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).format(date, "d");
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatMonthDropdown.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatMonthDropdown.js
 /**
 * Formats the month for the dropdown option label.
 *
@@ -37647,7 +40092,7 @@ function formatMonthDropdown(month, dateLib = defaultDateLib) {
 	return dateLib.format(month, "LLLL");
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekdayName.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekdayName.js
 /**
 * Formats the name of a weekday to be displayed in the weekdays header.
 *
@@ -37664,7 +40109,7 @@ function formatWeekdayName(weekday, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).format(weekday, "cccccc");
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekNumber.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekNumber.js
 /**
 * Formats the week number.
 *
@@ -37681,7 +40126,7 @@ function formatWeekNumber(weekNumber, dateLib = defaultDateLib) {
 	return dateLib.formatNumber(`${weekNumber.toLocaleString()}`);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekNumberHeader.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekNumberHeader.js
 /**
 * Formats the header for the week number column.
 *
@@ -37694,7 +40139,7 @@ function formatWeekNumberHeader() {
 	return ``;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatYearDropdown.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatYearDropdown.js
 /**
 * Formats the year for the dropdown option label.
 *
@@ -37709,7 +40154,7 @@ function formatYearDropdown(year, dateLib = defaultDateLib) {
 	return dateLib.format(year, "yyyy");
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/index.js
 var formatters_exports = /* @__PURE__ */ __exportAll({
 	formatCaption: () => formatCaption,
 	formatDay: () => formatDay,
@@ -37720,7 +40165,7 @@ var formatters_exports = /* @__PURE__ */ __exportAll({
 	formatYearDropdown: () => formatYearDropdown
 });
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getFormatters.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getFormatters.js
 /**
 * Merges custom formatters from the props with the default formatters.
 *
@@ -37735,7 +40180,7 @@ function getFormatters(customFormatters) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelDayButton.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelDayButton.js
 /**
 * Generates the ARIA label for a day button.
 *
@@ -37758,7 +40203,7 @@ function labelDayButton(date, modifiers, options, dateLib) {
 	return label;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelGrid.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelGrid.js
 /**
 * Generates the ARIA label for the month grid, which is announced when entering
 * the grid.
@@ -37775,7 +40220,7 @@ function labelGrid(date, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).formatMonthYear(date);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelGridcell.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelGridcell.js
 /**
 * Generates the label for a day grid cell when the calendar is not interactive.
 *
@@ -37793,7 +40238,7 @@ function labelGridcell(date, modifiers, options, dateLib) {
 	return label;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelMonthDropdown.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelMonthDropdown.js
 /**
 * Generates the ARIA label for the months dropdown.
 *
@@ -37807,7 +40252,7 @@ function labelMonthDropdown(_options) {
 	return "Choose the Month";
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelNav.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelNav.js
 /**
 * Generates the ARIA label for the navigation toolbar.
 *
@@ -37820,7 +40265,7 @@ function labelNav() {
 	return "";
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelNext.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelNext.js
 var defaultLabel = "Go to the Next Month";
 /**
 * Generates the ARIA label for the "next month" button.
@@ -37836,7 +40281,7 @@ function labelNext(_month, _options) {
 	return defaultLabel;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelPrevious.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelPrevious.js
 /**
 * Generates the ARIA label for the "previous month" button.
 *
@@ -37851,7 +40296,7 @@ function labelPrevious(_month) {
 	return "Go to the Previous Month";
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekday.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekday.js
 /**
 * Generates the ARIA label for a weekday column header.
 *
@@ -37867,7 +40312,7 @@ function labelWeekday(date, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).format(date, "cccc");
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekNumber.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekNumber.js
 /**
 * Generates the ARIA label for the week number cell (the first cell in a row).
 *
@@ -37882,7 +40327,7 @@ function labelWeekNumber(weekNumber, _options) {
 	return `Week ${weekNumber}`;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekNumberHeader.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekNumberHeader.js
 /**
 * Generates the ARIA label for the week number header element.
 *
@@ -37896,7 +40341,7 @@ function labelWeekNumberHeader(_options) {
 	return "Week Number";
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelYearDropdown.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelYearDropdown.js
 /**
 * Generates the ARIA label for the years dropdown.
 *
@@ -37910,7 +40355,7 @@ function labelYearDropdown(_options) {
 	return "Choose the Year";
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/index.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/index.js
 var labels_exports = /* @__PURE__ */ __exportAll({
 	labelDayButton: () => labelDayButton,
 	labelGrid: () => labelGrid,
@@ -37925,7 +40370,7 @@ var labels_exports = /* @__PURE__ */ __exportAll({
 	labelYearDropdown: () => labelYearDropdown
 });
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getLabels.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getLabels.js
 var resolveLabel = (defaultLabel, customLabel, localeLabel) => {
 	if (customLabel) return customLabel;
 	if (localeLabel) return typeof localeLabel === "function" ? localeLabel : (..._args) => localeLabel;
@@ -37960,7 +40405,7 @@ function getLabels(customLabels, options) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getMonthOptions.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getMonthOptions.js
 /**
 * Returns the months to show in the dropdown.
 *
@@ -37991,7 +40436,7 @@ function getMonthOptions(displayMonth, navStart, navEnd, formatters, dateLib) {
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getStyleForModifiers.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getStyleForModifiers.js
 /**
 * Returns the computed style for a day based on its modifiers.
 *
@@ -38014,7 +40459,7 @@ function getStyleForModifiers(dayModifiers, styles = {}, modifiersStyles = {}) {
 	return style;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getWeekdays.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getWeekdays.js
 /**
 * Generates a series of 7 days, starting from the beginning of the week, to use
 * for formatting weekday names (e.g., Monday, Tuesday, etc.).
@@ -38036,7 +40481,7 @@ function getWeekdays(dateLib, ISOWeek, broadcastCalendar, today) {
 	return days;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getYearOptions.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getYearOptions.js
 /**
 * Returns the years to display in the dropdown.
 *
@@ -38070,7 +40515,7 @@ function getYearOptions(navStart, navEnd, formatters, dateLib, reverse = false) 
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/noonDateLib.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/noonDateLib.js
 /**
 * Creates `dateLib` overrides that keep all calendar math at noon in the target
 * time zone. This avoids second-level offset changes (e.g., historical zones
@@ -38203,7 +40648,7 @@ function createNoonOverrides(timeZone, options = {}) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useAnimation.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useAnimation.js
 var asHtmlElement = (element) => {
 	if (element instanceof HTMLElement) return element;
 	return null;
@@ -38299,7 +40744,7 @@ function useAnimation(rootElRef, enabled, { classNames, months, focused, dateLib
 	});
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDates.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDates.js
 /**
 * Returns all the dates to display in the calendar.
 *
@@ -38338,7 +40783,7 @@ function getDates(displayMonths, maxDate, props, dateLib) {
 	return dates;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDays.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDays.js
 /**
 * Returns all the days belonging to the calendar by merging the days in the
 * weeks for each month.
@@ -38357,7 +40802,7 @@ function getDays(calendarMonths) {
 	}, initialDays.slice());
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDisplayMonths.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDisplayMonths.js
 /**
 * Returns the months to display in the calendar.
 *
@@ -38379,7 +40824,7 @@ function getDisplayMonths(firstDisplayedMonth, calendarEndMonth, props, dateLib)
 	return months;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getInitialMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getInitialMonth.js
 /**
 * Determines the initial month to display in the calendar based on the provided
 * props.
@@ -38400,7 +40845,7 @@ function getInitialMonth(props, navStart, navEnd, dateLib) {
 	return startOfMonth(initialMonth);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getMonths.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getMonths.js
 /**
 * Returns the months to display in the calendar.
 *
@@ -38447,7 +40892,7 @@ function getMonths(displayMonths, dates, props, dateLib) {
 	else return dayPickerMonths.reverse();
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNavMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNavMonth.js
 /**
 * Returns the start and end months for calendar navigation.
 *
@@ -38466,7 +40911,7 @@ function getNavMonths(props, dateLib) {
 	return [startMonth ? startOfDay(startMonth) : startMonth, endMonth ? startOfDay(endMonth) : endMonth];
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNextMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNextMonth.js
 /**
 * Returns the next month the user can navigate to, based on the given options.
 *
@@ -38495,7 +40940,7 @@ function getNextMonth(firstDisplayedMonth, calendarEndMonth, options, dateLib) {
 	return addMonths(month, offset);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getPreviousMonth.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getPreviousMonth.js
 /**
 * Returns the previous month the user can navigate to, based on the given
 * options.
@@ -38525,7 +40970,7 @@ function getPreviousMonth(firstDisplayedMonth, calendarStartMonth, options, date
 	return addMonths(month, -offset);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getWeeks.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getWeeks.js
 /**
 * Returns an array of calendar weeks from an array of calendar months.
 *
@@ -38538,7 +40983,7 @@ function getWeeks(months) {
 	}, [].slice());
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/useControlledValue.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/useControlledValue.js
 /**
 * A custom hook for managing both controlled and uncontrolled component states.
 *
@@ -38566,7 +41011,7 @@ function useControlledValue(defaultValue, controlledValue) {
 	return [controlledValue === void 0 ? uncontrolledValue : controlledValue, setValue];
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useCalendar.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useCalendar.js
 /**
 * Provides the calendar object to work with the calendar in custom components.
 *
@@ -38645,7 +41090,7 @@ function useCalendar(props, dateLib) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/calculateFocusTarget.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/calculateFocusTarget.js
 var FocusTargetPriority;
 (function(FocusTargetPriority) {
 	FocusTargetPriority[FocusTargetPriority["Today"] = 0] = "Today";
@@ -38704,7 +41149,7 @@ function calculateFocusTarget(days, getModifiers, isSelected, lastFocused) {
 	return focusTarget;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getFocusableDate.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getFocusableDate.js
 /**
 * Calculates the next date that should be focused in the calendar.
 *
@@ -38737,7 +41182,7 @@ function getFocusableDate(moveBy, moveDir, refDate, navStart, navEnd, props, dat
 	return focusableDate;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNextFocus.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNextFocus.js
 /**
 * Determines the next focusable day in the calendar.
 *
@@ -38765,7 +41210,7 @@ function getNextFocus(moveBy, moveDir, refDay, calendarStartMonth, calendarEndMo
 	return getNextFocus(moveBy, moveDir, focusDay, calendarStartMonth, calendarEndMonth, props, dateLib, attempt + 1);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useFocus.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useFocus.js
 /**
 * Manages focus behavior for the DayPicker component, including setting,
 * moving, and blurring focus on calendar days.
@@ -38811,7 +41256,7 @@ function useFocus(props, calendar, getModifiers, isSelected, dateLib) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useMulti.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useMulti.js
 /**
 * Hook to manage multiple-date selection in the DayPicker component.
 *
@@ -38849,7 +41294,7 @@ function useMulti(props, dateLib) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/addToRange.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/addToRange.js
 /**
 * Adds a date to an existing range, considering constraints like minimum and
 * maximum range size.
@@ -38928,7 +41373,7 @@ function addToRange(date, initialRange, min = 0, max = 0, required = false, date
 	return range;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeContainsDayOfWeek.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeContainsDayOfWeek.js
 /**
 * Checks if a date range contains one or more specified days of the week.
 *
@@ -38953,7 +41398,7 @@ function rangeContainsDayOfWeek(range, dayOfWeek, dateLib = defaultDateLib) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeOverlaps.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeOverlaps.js
 /**
 * Determines if two date ranges overlap.
 *
@@ -38968,7 +41413,7 @@ function rangeOverlaps(rangeLeft, rangeRight, dateLib = defaultDateLib) {
 	return rangeIncludesDate(rangeLeft, rangeRight.from, false, dateLib) || rangeIncludesDate(rangeLeft, rangeRight.to, false, dateLib) || rangeIncludesDate(rangeRight, rangeLeft.from, false, dateLib) || rangeIncludesDate(rangeRight, rangeLeft.to, false, dateLib);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeContainsModifiers.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeContainsModifiers.js
 /**
 * Checks if a date range contains dates that match the given modifiers.
 *
@@ -39015,7 +41460,7 @@ function rangeContainsModifiers(range, modifiers, dateLib = defaultDateLib) {
 	return false;
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useRange.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useRange.js
 /**
 * Hook to manage range selection in the DayPicker component.
 *
@@ -39065,7 +41510,7 @@ function useRange(props, dateLib) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useSingle.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useSingle.js
 /**
 * Hook to manage single-date selection in the DayPicker component.
 *
@@ -39098,7 +41543,7 @@ function useSingle(props, dateLib) {
 	};
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useSelection.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useSelection.js
 /**
 * Determines the appropriate selection hook to use based on the selection mode
 * and returns the corresponding selection object.
@@ -39121,7 +41566,7 @@ function useSelection(props, dateLib) {
 	}
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/toTimeZone.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/toTimeZone.js
 /**
 * Convert a {@link Date} or {@link TZDate} instance to the given time zone.
 * Reuses the same instance when it is already a {@link TZDate} using the target
@@ -39132,7 +41577,7 @@ function toTimeZone(date, timeZone) {
 	return new TZDate(date, timeZone);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/convertMatchersToTimeZone.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/convertMatchersToTimeZone.js
 function toZoneNoon(date, timeZone, noonSafe) {
 	if (!noonSafe) return toTimeZone(date, timeZone);
 	const zoned = toTimeZone(date, timeZone);
@@ -39170,7 +41615,7 @@ function convertMatchersToTimeZone(matchers, timeZone, noonSafe) {
 	return convertMatcher(matchers, timeZone, noonSafe);
 }
 //#endregion
-//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/DayPicker.js
+//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/DayPicker.js
 /**
 * Renders the DayPicker calendar component.
 *
@@ -39617,7 +42062,7 @@ function DayPicker(initialProps) {
 	}, props.footer)));
 }
 //#endregion
-//#region components/ui/calendar.tsx
+//#region package/source/components/ui/calendar.tsx
 function Calendar({ className, classNames, showOutsideDays = true, captionLayout = "label", buttonVariant = "ghost", formatters, components, ...props }) {
 	const defaultClassNames = getDefaultClassNames();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DayPicker, {
@@ -39714,7 +42159,7 @@ function CalendarDayButton({ className, day, modifiers, ...props }) {
 	});
 }
 //#endregion
-//#region app/saint-calendar.tsx
+//#region package/source/app/saint-calendar.tsx
 function SaintCalendar() {
 	const [date, setDate] = (0, import_react.useState)(() => nzDate()), [todayMode, setTodayMode] = (0, import_react.useState)(true), [showCalendar, setShowCalendar] = (0, import_react.useState)(false), [data, setData] = (0, import_react.useState)(null), [loading, setLoading] = (0, import_react.useState)(true), [error, setError] = (0, import_react.useState)("");
 	const [month, setMonth] = (0, import_react.useState)(() => /* @__PURE__ */ new Date(date + "T12:00:00"));
@@ -39960,7 +42405,7 @@ function SaintCalendar() {
 	});
 }
 //#endregion
-//#region app/rosary-content.ts
+//#region package/source/app/rosary-content.ts
 var rosaryPrayers = {
 	"Sign of the Cross": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
 	"Apostles’ Creed": "I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; he descended into hell; on the third day he rose again from the dead; he ascended into heaven, and is seated at the right hand of God the Father almighty; from there he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.",
@@ -40002,7 +42447,67 @@ var mysterySets = {
 	]
 };
 //#endregion
-//#region app/rosary.tsx
+//#region package/source/app/rosary-audio.ts
+function rosarySequence({ full, set, mystery = 0, fatima = true }) {
+	const parts = [];
+	function prayer(name, extra = {}) {
+		parts.push({
+			title: name,
+			text: rosaryPrayers[name],
+			kind: name,
+			...extra
+		});
+	}
+	prayer("Sign of the Cross");
+	if (full) {
+		prayer("Apostles’ Creed");
+		prayer("Our Father");
+		for (let i = 0; i < 3; i++) prayer("Hail Mary", { title: "Opening Hail Mary · " + [
+			"faith",
+			"hope",
+			"charity"
+		][i] });
+		prayer("Glory Be");
+	}
+	const mysteries = full ? mysterySets[set].map((name, i) => ({
+		name,
+		index: i
+	})) : [{
+		name: mysterySets[set][Math.max(0, Math.min(4, mystery))],
+		index: Math.max(0, Math.min(4, mystery))
+	}];
+	for (const { name, index } of mysteries) {
+		const decade = index + 1;
+		parts.push({
+			kind: "Mystery",
+			title: `Mystery ${decade} · ${name}`,
+			text: `The ${[
+				"first",
+				"second",
+				"third",
+				"fourth",
+				"fifth"
+			][index]} ${set.toLowerCase()} mystery: ${name}.`,
+			decade
+		});
+		prayer("Our Father", { decade });
+		for (let i = 1; i <= 10; i++) prayer("Hail Mary", {
+			title: `Hail Mary ${i} of 10`,
+			decade,
+			bead: i
+		});
+		prayer("Glory Be", { decade });
+		if (fatima) prayer("Fatima prayer (optional)", { decade });
+	}
+	if (full) {
+		prayer("Hail, Holy Queen");
+		prayer("Closing prayer");
+	}
+	prayer("Sign of the Cross");
+	return parts;
+}
+//#endregion
+//#region package/source/app/rosary.tsx
 function Rosary() {
 	const [mode, setMode] = (0, import_react.useState)("Short · one decade"), [set, setSet] = (0, import_react.useState)(() => [
 		"Glorious",
@@ -40012,8 +42517,19 @@ function Rosary() {
 		"Luminous",
 		"Sorrowful",
 		"Joyful"
-	][(/* @__PURE__ */ new Date(nzDate() + "T12:00:00Z")).getUTCDay()]);
-	const short = mode.startsWith("Short");
+	][(/* @__PURE__ */ new Date(nzDate() + "T12:00:00Z")).getUTCDay()]), [mystery, setMystery] = (0, import_react.useState)(0), [fatima, setFatima] = (0, import_react.useState)(true);
+	const speech = useSpeech("motherly", "Med"), short = mode.startsWith("Short"), busy = speech.state.status === "reading" || speech.state.status === "paused";
+	const passages = (0, import_react.useMemo)(() => rosarySequence({
+		full: !short,
+		set,
+		mystery,
+		fatima
+	}), [
+		short,
+		set,
+		mystery,
+		fatima
+	]), current = busy ? passages[speech.state.segment] : null;
 	const steps = short ? [
 		"Begin with the Sign of the Cross. Offer your intention.",
 		"Choose one mystery from the list below and pause to reflect on it.",
@@ -40040,78 +42556,192 @@ function Rosary() {
 				})]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
-				className: "rosary-photo rosary-guide",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-					href: "./rosary-guide.svg",
-					target: "_blank",
-					rel: "noopener noreferrer",
-					"aria-label": "Open the enlarged rosary guide",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						src: "./rosary-guide.svg",
-						alt: "Rosary bead guide: begin at the cross, pray Our Father, three Hail Marys and Glory Be, then five decades of one Our Father, ten Hail Marys and Glory Be",
-						width: "1200",
-						height: "920"
-					})
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figcaption", { children: [
-					"A clearer guide based on the diagram you supplied. ",
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "./rosary-guide.svg",
-						target: "_blank",
-						rel: "noopener noreferrer",
-						children: "Open enlarged guide"
-					}),
-					" · ",
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "./rosary-original.png",
-						target: "_blank",
-						rel: "noopener noreferrer",
-						children: "View your original diagram"
-					})
-				] })]
+				className: "rosary-natural-photo",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					src: "./rosary-natural.webp",
+					alt: "Wooden rosary beads and a silver crucifix resting on softly lit linen",
+					width: "1536",
+					height: "1024"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: "A quiet moment of prayer. Follow the bead guide below for the prayer sequence." })]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "filters",
+				"aria-label": "Rosary length",
 				children: ["Short · one decade", "Full · five decades"].map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 					className: mode === m ? "selected" : "",
 					"aria-pressed": mode === m,
-					onClick: () => setMode(m),
+					onClick: () => {
+						speech.stop();
+						setMode(m);
+					},
 					children: m
 				}, m))
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: short ? "A short one-decade devotion for a little time in prayer. The usual daily rosary has five decades." : "The usual five-decade rosary, with opening prayers, five mysteries, and closing prayers." }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
-				className: "rosary-steps",
-				children: steps.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: s }, s))
-			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "mystery-select",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
-					htmlFor: "mystery-set",
-					children: "Choose your mysteries"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Select$1, {
-					value: set,
-					onValueChange: (v) => setSet(v),
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectTrigger, {
-						"aria-label": "Rosary mysteries",
-						id: "mystery-set",
-						className: "category-select",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectValue, {})
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectContent, {
-						className: "site-select-menu",
-						position: "popper",
-						align: "start",
-						sideOffset: 6,
-						collisionPadding: 16,
-						children: Object.keys(mysterySets).map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectItem, {
-							value: s,
-							children: s
-						}, s))
+				className: "rosary-options",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mystery-select",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
+						htmlFor: "mystery-set",
+						children: "Choose your mysteries"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Select$1, {
+						value: set,
+						onValueChange: (v) => {
+							speech.stop();
+							setSet(v);
+						},
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectTrigger, {
+							"aria-label": "Rosary mysteries",
+							id: "mystery-set",
+							className: "category-select",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectValue, {})
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectContent, {
+							className: "site-select-menu",
+							position: "popper",
+							align: "start",
+							sideOffset: 6,
+							collisionPadding: 16,
+							children: Object.keys(mysterySets).map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectItem, {
+								value: s,
+								children: s
+							}, s))
+						})]
+					})]
+				}), short && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+					className: "rosary-mystery-choice",
+					children: ["Mystery for this decade", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", {
+						value: mystery,
+						onChange: (e) => {
+							speech.stop();
+							setMystery(Number(e.target.value));
+						},
+						children: mysterySets[set].map((m, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("option", {
+							value: i,
+							children: [
+								i + 1,
+								". ",
+								m
+							]
+						}, m))
 					})]
 				})]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "small-note",
 				children: "Usual pattern: Monday/Saturday · Joyful; Tuesday/Friday · Sorrowful; Wednesday/Sunday · Glorious; Thursday · Luminous. Sunday choices may vary by liturgical season."
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "rosary-audio story-audio",
+				"aria-label": "Pray the rosary aloud",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 21 }), "Pray with me"] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Offer your intention, then listen or pray along. You can pause whenever you need a quiet moment." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "rosary-audio-settings",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: ["Prayer pace", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", {
+							value: speech.speed,
+							onChange: (e) => speech.changeSpeed(e.target.value),
+							children: Object.keys(readingSpeeds).map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: v }, v))
+						})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+							className: "rosary-fatima",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+								type: "checkbox",
+								checked: fatima,
+								onChange: (e) => {
+									speech.stop();
+									setFatima(e.target.checked);
+								}
+							}), "Include the optional Fatima prayer"]
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(VoicePicker, {
+						profile: "motherly",
+						onChange: speech.setVoice
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "timer-actions",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							className: "primary",
+							disabled: !speech.supported,
+							onClick: () => speech.read(passages.map((p) => p.text)),
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 18 }), busy ? "Restart rosary aloud" : "Pray rosary aloud"]
+						}), busy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							className: "secondary",
+							onClick: () => speech.state.status === "paused" ? speech.resume() : speech.pause(),
+							children: [
+								speech.state.status === "paused" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { size: 17 }),
+								" ",
+								speech.state.status === "paused" ? "Resume" : "Pause"
+							]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							className: "secondary",
+							onClick: speech.stop,
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 17 }), "Stop"]
+						})] })]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "small-note",
+						role: "status",
+						children: speech.supported === false ? "Audio is unavailable in this browser. All prayers and steps are written below." : speech.state.status === "done" ? "Your rosary is complete. May you go in peace." : speech.state.message
+					}),
+					current && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "rosary-current-prayer",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+								className: "eyebrow",
+								children: [current.decade ? `DECADE ${current.decade} · ` : "", current.title]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("progress", {
+								value: speech.state.segment + 1,
+								max: passages.length,
+								"aria-label": "Rosary prayer progress"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: current.text })
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "small-note",
+						children: [short ? "One chosen mystery, one Our Father, ten Hail Marys and a Glory Be." : "Includes the opening prayers, all fifty decade Hail Marys, each Glory Be, and the closing prayers.", " Audio uses your device’s available voice. Changing pace restarts the current prayer; changing the length or mystery stops audio."]
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("details", {
+				className: "rosary-bead-details",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("summary", { children: "Open the bead-by-bead guide" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
+					className: "rosary-photo rosary-guide",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						href: "./rosary-guide.svg",
+						target: "_blank",
+						rel: "noopener noreferrer",
+						"aria-label": "Open the enlarged rosary guide",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: "./rosary-guide.svg",
+							alt: "Rosary bead guide: opening prayers, then five decades of one Our Father, ten Hail Marys and Glory Be",
+							width: "1200",
+							height: "920",
+							loading: "lazy"
+						})
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figcaption", { children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+							href: "./rosary-guide.svg",
+							target: "_blank",
+							rel: "noopener noreferrer",
+							children: "Open enlarged guide"
+						}),
+						" · ",
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+							href: "./rosary-original.png",
+							target: "_blank",
+							rel: "noopener noreferrer",
+							children: "View your original diagram"
+						})
+					] })]
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
+				className: "rosary-steps",
+				children: steps.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: s }, s))
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
 				className: "mystery-list",
@@ -40134,10 +42764,10 @@ function Rosary() {
 	});
 }
 //#endregion
-//#region app/st-jude-prayer.ts
+//#region package/source/app/st-jude-prayer.ts
 var stJudePrayer = "O Glorious Apostle, St Jude Thaddeus true relative of Jesus and Mary. I greet you through the Most Sacred Heart of Jesus! Through this Heart, I praise and thank God for all the graces He has bestowed upon you. Humbly prostrate before you, I implore you, through this Heart, to look down upon me with compassion. Oh, despise not my poor prayers; let not my trust be confounded. To you God has granted the privilege of aiding humankind in the most desperate cases. Oh, come to my aid that I may praise the mercies of God! All my life, I will be grateful to you and will be your faithful devotee until I can thank you in Heaven. Amen.";
 //#endregion
-//#region app/devotions.tsx
+//#region package/source/app/devotions.tsx
 var hail = "Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.";
 function ExtraDevotions() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
@@ -40268,7 +42898,7 @@ function ExtraDevotions() {
 	})] });
 }
 //#endregion
-//#region app/breastfeeding.tsx
+//#region package/source/app/breastfeeding.tsx
 var tips = [
 	["Notice early hunger cues", "Offer a feed when baby roots, brings hands to their mouth or makes sucking movements. Crying is a later cue."],
 	["Settle into a comfortable spot", "Support your back and shoulders. Keep water, a snack and anything your older child needs nearby."],
@@ -40368,125 +42998,7 @@ function Breastfeeding() {
 	] });
 }
 //#endregion
-//#region app/home.tsx
-var navGroups = [
-	{
-		label: "YOUR DAY",
-		items: [
-			{
-				name: "Weather & OOTD",
-				icon: CloudSun
-			},
-			{
-				name: "Homemade recipes",
-				icon: Utensils
-			},
-			{
-				name: "Saving tips",
-				icon: PiggyBank
-			},
-			{
-				name: "Coffee corner",
-				icon: Coffee
-			},
-			{
-				name: "Workouts",
-				icon: Dumbbell
-			},
-			{
-				name: "Mateo · AI friend",
-				icon: Sparkles
-			}
-		]
-	},
-	{
-		label: "FAMILY & LEARNING",
-		items: [
-			{
-				name: "Family checklists",
-				icon: ListChecks
-			},
-			{
-				name: "Breastfeeding tips",
-				icon: Heart
-			},
-			{
-				name: "Languages",
-				icon: BookOpen
-			},
-			{
-				name: "NZ quiz",
-				icon: Compass
-			},
-			{
-				name: "Focus time",
-				icon: Timer
-			},
-			{
-				name: "Reading nook",
-				icon: BookOpen
-			}
-		]
-	},
-	{
-		label: "FAITH & INSPIRATION",
-		items: [
-			{
-				name: "Inspiration",
-				icon: Quote
-			},
-			{
-				name: "Saints day",
-				icon: Sun
-			},
-			{
-				name: "How to pray the rosary",
-				icon: Heart
-			},
-			{
-				name: "Angelus & St Jude",
-				icon: Heart
-			},
-			{
-				name: "Short prayers",
-				icon: Heart
-			},
-			{
-				name: "Bible & Gospel",
-				icon: BookOpen
-			},
-			{
-				name: "Catholic churches",
-				icon: Church
-			}
-		]
-	},
-	{
-		label: "COMMUNITY",
-		items: [
-			{
-				name: "Small business",
-				icon: Store
-			},
-			{
-				name: "About us",
-				icon: Heart
-			},
-			{
-				name: "FAQ",
-				icon: Compass
-			},
-			{
-				name: "Report an issue",
-				icon: MapPin
-			},
-			{
-				name: "Review",
-				icon: Heart
-			}
-		]
-	}
-];
+//#region package/source/app/home.tsx
 var emptyBusiness = {
 	name: "",
 	description: "",
@@ -40498,7 +43010,18 @@ var emptyBusiness = {
 function Home({ canEdit }) {
 	const [search, setSearch] = (0, import_react.useState)(""), [collection, setCollection] = (0, import_react.useState)("All collections");
 	const [deleteId, setDeleteId] = (0, import_react.useState)(null);
-	const [tab, setTab] = (0, import_react.useState)("Weather & OOTD"), [filter, setFilter] = (0, import_react.useState)("All quotes"), [quotes, setQuotes] = (0, import_react.useState)([]), [business, setBusiness] = (0, import_react.useState)(null), [loading, setLoading] = (0, import_react.useState)(true), [error, setError] = (0, import_react.useState)(""), [modal, setModal] = (0, import_react.useState)(null), [saving, setSaving] = (0, import_react.useState)(false), [saved, setSaved] = (0, import_react.useState)("");
+	const [homeStory, setHomeStory] = (0, import_react.useState)(null);
+	function navigate(section) {
+		setHomeStory(null);
+		setTab(section);
+		setSaved("");
+	}
+	function openHomeStory(index) {
+		setHomeStory(index);
+		setTab("Reading nook");
+		setSaved("");
+	}
+	const [tab, setTab] = (0, import_react.useState)("Home"), [filter, setFilter] = (0, import_react.useState)("All quotes"), [quotes, setQuotes] = (0, import_react.useState)([]), [business, setBusiness] = (0, import_react.useState)(null), [loading, setLoading] = (0, import_react.useState)(true), [error, setError] = (0, import_react.useState)(""), [modal, setModal] = (0, import_react.useState)(null), [saving, setSaving] = (0, import_react.useState)(false), [saved, setSaved] = (0, import_react.useState)("");
 	const [text, setText] = (0, import_react.useState)(""), [author, setAuthor] = (0, import_react.useState)(""), [category, setCategory] = (0, import_react.useState)(categories[0]), [bulk, setBulk] = (0, import_react.useState)(false), [draft, setDraft] = (0, import_react.useState)(emptyBusiness), [formError, setFormError] = (0, import_react.useState)("");
 	async function load() {
 		setLoading(true);
@@ -40626,107 +43149,36 @@ function Home({ canEdit }) {
 	}
 	const shown = [...quotes, ...starters].filter((q) => (filter === "All quotes" || q.category === filter) && (q.text + " " + q.author).toLowerCase().includes(search.toLowerCase()) && (collection === "All collections" || (collection === "Added quotes" ? !q.id.startsWith("sample-") : q.id.startsWith("sample-"))));
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "site",
+		className: "site bookstore-layout",
 		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-				className: "header",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-					href: "/",
-					className: "brand",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "brand-icon",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sun, { size: 25 })
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: ["The James NZ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "FAITH · FAMILY · COMMUNITY" })] })]
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-					className: "header-note",
-					children: ["A little light for every day ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sun, { size: 17 })]
-				})]
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SiteNavigation, {
+				tab,
+				onNavigate: navigate
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Tabs, {
-				value: tab,
-				onValueChange: (v) => {
-					setTab(v);
-					setSaved("");
-				},
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "layout",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("aside", {
-					className: "sidebar",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
-							className: "mobile-section-picker",
-							children: ["Explore The James NZ", /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Select$1, {
-								value: tab,
-								onValueChange: (v) => {
-									setTab(v);
-									setSaved("");
-								},
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectTrigger, {
-									"aria-label": "Explore website sections",
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectValue, {})
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectContent, {
-									className: "site-select-menu",
-									position: "popper",
-									align: "start",
-									sideOffset: 6,
-									collisionPadding: 16,
-									children: navGroups.map((g) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SelectGroup, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectLabel, { children: g.label }), g.items.map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SelectItem, {
-										value: t.name,
-										children: t.name
-									}, t.name))] }, g.label))
-								})]
-							})]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TabsList, {
-							className: "site-tabs",
-							"aria-label": "Main sections",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Accordion, {
-								type: "multiple",
-								defaultValue: navGroups.map((g) => g.label),
-								className: "nav-folders",
-								children: navGroups.map((g) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AccordionItem, {
-									value: g.label,
-									className: "nav-group",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AccordionTrigger, {
-										className: "nav-folder-trigger",
-										children: g.label
-									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AccordionContent, {
-										className: "nav-folder-content",
-										children: g.items.map((t) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(TabsTrigger, {
-											value: t.name,
-											className: tab === t.name ? "nav-item active" : "nav-item",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(t.icon, { size: 19 }), t.name]
-										}, t.name))
-									})]
-								}, g.label))
-							})
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "sidebar-bottom",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Leaf, { size: 23 }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-									"Rooted in kindness.",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-									"Made for curious minds."
-								] }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "AOTEAROA NEW ZEALAND" })
-							]
-						})
-					]
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
 					id: "main",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(TabsContent, {
-						value: tab,
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+						"aria-label": tab,
+						className: "section-content",
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							tab !== "Home" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "breadcrumbs",
 								children: [
-									navGroups.find((g) => g.items.some((t) => t.name === tab))?.label,
-									" ",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+										onClick: () => navigate("Home"),
+										children: "Home"
+									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "/" }),
-									" ",
+									navGroups.find((g) => g.items.some((t) => t.name === tab))?.label,
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "/" }),
 									tab
 								]
+							}),
+							tab === "Home" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowseHome, {
+								onNavigate: navigate,
+								onStory: openHomeStory
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Toaster, { position: "top-right" }),
 							error && ["Inspiration", "Small business"].includes(tab) && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -40960,8 +43412,8 @@ function Home({ canEdit }) {
 							tab === "Reading nook" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageTitle, {
 								eyebrow: "JUST ONE MORE PAGE",
 								title: "The reading nook.",
-								text: "30 original family stories for ages 5–9. Read alone or with a grown-up."
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reading, {})] }),
+								text: `${stories.length} original family stories. Read alone or with a grown-up.`
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reading, { initialStory: homeStory })] }),
 							tab === "Saints day" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageTitle, {
 								eyebrow: "CATHOLIC CALENDAR",
 								title: "A saint for every day.",
@@ -41010,7 +43462,7 @@ function Home({ canEdit }) {
 							})
 						]
 					}, tab)
-				})]
+				})
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AlertDialog, {
 				open: !!deleteId,
@@ -41474,8 +43926,8 @@ function Focus() {
 		})
 	] });
 }
-function Reading() {
-	const [selected, setSelected] = (0, import_react.useState)(null), [storySearch, setStorySearch] = (0, import_react.useState)("");
+function Reading({ initialStory = null }) {
+	const [selected, setSelected] = (0, import_react.useState)(initialStory), [storySearch, setStorySearch] = (0, import_react.useState)("");
 	const matching = stories.map((story, index) => ({
 		story,
 		index
@@ -41550,6 +44002,6 @@ function Reading() {
 	] });
 }
 //#endregion
-//#region .sites-runtime/github-export/entry.tsx
+//#region package/source/github-frontend/entry.tsx
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Home, { canEdit: false }));
 //#endregion
