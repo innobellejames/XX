@@ -9907,8 +9907,8 @@ var require_react_dom_client_production = /* @__PURE__ */ __commonJSMin(((export
 	};
 }));
 //#endregion
-//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/client.js
-var require_client = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+//#region app/json-response.ts
+var import_client = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function checkDCE() {
 		if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
 		try {
@@ -9919,7 +9919,22 @@ var require_client = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 	checkDCE();
 	module.exports = require_react_dom_client_production();
-}));
+})))();
+async function readJsonResponse(response, message) {
+	if (!(response.headers.get("content-type") || "").toLowerCase().includes("json")) throw new Error(message);
+	let data;
+	try {
+		data = await response.json();
+	} catch {
+		throw new Error(message);
+	}
+	if (!data || typeof data !== "object" || Array.isArray(data)) throw new Error(message);
+	if (!response.ok) {
+		const error = data.error;
+		throw new Error(typeof error === "string" && !error.includes("<") ? error : message);
+	}
+	return data;
+}
 //#endregion
 //#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.mjs
 /**
@@ -10265,6 +10280,30 @@ var CloudSun = createLucideIcon("cloud-sun", [
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Coffee = createLucideIcon("coffee", [
+	["path", {
+		d: "M10 2v2",
+		key: "7u0qdc"
+	}],
+	["path", {
+		d: "M14 2v2",
+		key: "6buw04"
+	}],
+	["path", {
+		d: "M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1",
+		key: "pwadti"
+	}],
+	["path", {
+		d: "M6 2v2",
+		key: "colzsn"
+	}]
+]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Compass = createLucideIcon("compass", [["circle", {
 	cx: "12",
 	cy: "12",
@@ -10300,6 +10339,30 @@ var Dumbbell = createLucideIcon("dumbbell", [
 	["path", {
 		d: "m9.6 14.4 4.8-4.8",
 		key: "6umqxw"
+	}]
+]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Footprints = createLucideIcon("footprints", [
+	["path", {
+		d: "M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z",
+		key: "1dudjm"
+	}],
+	["path", {
+		d: "M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z",
+		key: "l2t8xc"
+	}],
+	["path", {
+		d: "M16 17h4",
+		key: "1dejxt"
+	}],
+	["path", {
+		d: "M4 13h4",
+		key: "1bwh8b"
 	}]
 ]);
 /**
@@ -10432,6 +10495,40 @@ var MapPin = createLucideIcon("map-pin", [["path", {
 	r: "3",
 	key: "ilqhr7"
 }]]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var MessageCircle = createLucideIcon("message-circle", [["path", {
+	d: "M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719",
+	key: "1sd12s"
+}]]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Mic = createLucideIcon("mic", [
+	["path", {
+		d: "M12 19v3",
+		key: "npa21l"
+	}],
+	["path", {
+		d: "M19 10v2a7 7 0 0 1-14 0v-2",
+		key: "1vc78b"
+	}],
+	["rect", {
+		x: "9",
+		y: "2",
+		width: "6",
+		height: "13",
+		rx: "3",
+		key: "s6n7sd"
+	}]
+]);
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -10625,6 +10722,20 @@ var Sparkles = createLucideIcon("sparkles", [
 		key: "6kqj1y"
 	}]
 ]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Square = createLucideIcon("square", [["rect", {
+	width: "18",
+	height: "18",
+	x: "3",
+	y: "3",
+	rx: "2",
+	key: "afitv7"
+}]]);
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -10829,6 +10940,26 @@ var Utensils = createLucideIcon("utensils", [
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Volume2 = createLucideIcon("volume-2", [
+	["path", {
+		d: "M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z",
+		key: "uqj9uw"
+	}],
+	["path", {
+		d: "M16 9a5 5 0 0 1 0 6",
+		key: "1q6k2b"
+	}],
+	["path", {
+		d: "M19.364 18.364a9 9 0 0 0 0-12.728",
+		key: "ijwkga"
+	}]
+]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var X = createLucideIcon("x", [["path", {
 	d: "M18 6 6 18",
 	key: "1bl5f8"
@@ -10836,6 +10967,2125 @@ var X = createLucideIcon("x", [["path", {
 	d: "m6 6 12 12",
 	key: "d8bk6v"
 }]]);
+//#endregion
+//#region app/speech-reader.ts
+var readingSpeeds = {
+	Slow: .7,
+	Med: 1,
+	Fast: 1.3
+};
+var idleSpeech = {
+	status: "idle",
+	segment: -1,
+	char: -1,
+	message: ""
+};
+function readingTokens(text) {
+	const result = [];
+	let at = 0;
+	for (const match of text.matchAll(/[\p{L}\p{N}]+(?:[’'-][\p{L}\p{N}]+)*/gu)) {
+		const start = match.index;
+		if (start > at) result.push({
+			text: text.slice(at, start),
+			start: at,
+			word: false
+		});
+		result.push({
+			text: match[0],
+			start,
+			word: true
+		});
+		at = start + match[0].length;
+	}
+	if (at < text.length) result.push({
+		text: text.slice(at),
+		start: at,
+		word: false
+	});
+	return result;
+}
+var SpeechReader = class {
+	constructor(synth, create, update) {
+		this.synth = synth;
+		this.create = create;
+		this.update = update;
+		this.generation = 0;
+		this.parts = [];
+		this.current = null;
+		this.state = { ...idleSpeech };
+		this.rate = 1;
+	}
+	emit(state) {
+		this.state = state;
+		this.update(state);
+	}
+	read(parts, start = 0) {
+		this.generation++;
+		this.synth.cancel();
+		this.synth.resume();
+		this.parts = parts;
+		const session = this.generation;
+		const next = (index) => {
+			if (session !== this.generation) return;
+			if (index >= parts.length) {
+				this.current = null;
+				this.emit({
+					...idleSpeech,
+					status: "done",
+					message: "Reading complete."
+				});
+				return;
+			}
+			const utterance = this.create();
+			this.current = utterance;
+			utterance.text = parts[index];
+			utterance.lang = "en-NZ";
+			utterance.rate = this.rate;
+			const voices = this.synth.getVoices();
+			const voice = voices.find((v) => /^en[-_]NZ/i.test(v.lang)) || voices.find((v) => /^en[-_]AU/i.test(v.lang)) || voices.find((v) => /^en/i.test(v.lang) && v.localService) || voices.find((v) => /^en/i.test(v.lang));
+			if (voice) {
+				utterance.voice = voice;
+				utterance.lang = voice.lang;
+			}
+			this.emit({
+				status: "reading",
+				segment: index,
+				char: 0,
+				message: "Reading aloud."
+			});
+			utterance.onboundary = (e) => {
+				if (session === this.generation && this.state.status === "reading") this.emit({
+					...this.state,
+					char: e.charIndex
+				});
+			};
+			utterance.onend = () => next(index + 1);
+			utterance.onerror = (e) => {
+				if (session !== this.generation) return;
+				this.current = null;
+				this.emit({
+					...idleSpeech,
+					status: "error",
+					message: e.error === "not-allowed" ? "Tap Read again to allow your browser to speak." : "Audio could not play. You can still read the story, or try another browser with speech support."
+				});
+			};
+			this.synth.speak(utterance);
+		};
+		next(Math.max(0, start));
+	}
+	stop() {
+		this.generation++;
+		this.synth.cancel();
+		this.parts = [];
+		this.current = null;
+		this.emit({
+			...idleSpeech,
+			message: "Reading stopped."
+		});
+	}
+	pause() {
+		if (this.state.status === "reading") {
+			this.synth.pause();
+			this.emit({
+				...this.state,
+				status: "paused",
+				message: "Reading paused."
+			});
+		}
+	}
+	resume() {
+		if (this.state.status === "paused") {
+			this.synth.resume();
+			this.emit({
+				...this.state,
+				status: "reading",
+				message: "Reading aloud."
+			});
+		}
+	}
+	setRate(rate) {
+		this.rate = rate;
+		if (this.state.status === "reading" || this.state.status === "paused") this.read(this.parts, this.state.segment);
+	}
+	dispose() {
+		this.generation++;
+		this.synth.cancel();
+		this.parts = [];
+		this.current = null;
+	}
+};
+//#endregion
+//#region app/use-speech.ts
+function useSpeech() {
+	const reader = (0, import_react.useRef)(null), [supported, setSupported] = (0, import_react.useState)(null), [state, setState] = (0, import_react.useState)(idleSpeech), [speed, setSpeed] = (0, import_react.useState)("Med");
+	(0, import_react.useEffect)(() => {
+		if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+			setSupported(false);
+			return;
+		}
+		setSupported(true);
+		reader.current = new SpeechReader(window.speechSynthesis, () => new SpeechSynthesisUtterance(), setState);
+		return () => {
+			reader.current?.dispose();
+			reader.current = null;
+		};
+	}, []);
+	function changeSpeed(value) {
+		setSpeed(value);
+		reader.current?.setRate(readingSpeeds[value]);
+	}
+	return {
+		supported,
+		state,
+		speed,
+		changeSpeed,
+		read: (parts) => reader.current?.read(parts),
+		stop: () => reader.current?.stop(),
+		pause: () => reader.current?.pause(),
+		resume: () => reader.current?.resume()
+	};
+}
+//#endregion
+//#region app/content.ts
+var categories = [
+	"Leadership",
+	"Spiritual guidance",
+	"Parenting",
+	"Everyday inspiration",
+	"Faith & hope",
+	"Kindness",
+	"Gratitude",
+	"Perseverance"
+];
+var starters = [
+	{
+		id: "sample-1",
+		text: "Lead with the kind of care you hope others will pass on.",
+		author: "The James NZ · original reflection",
+		category: "Leadership"
+	},
+	{
+		id: "sample-2",
+		text: "Make room for a quiet moment. Hope often begins there.",
+		author: "The James NZ · original reflection",
+		category: "Spiritual guidance"
+	},
+	{
+		id: "sample-3",
+		text: "A child does not need a perfect day. A moment of your full attention can be enough.",
+		author: "The James NZ · original reflection",
+		category: "Parenting"
+	},
+	{
+		id: "sample-4",
+		text: "Small steps still move you forward.",
+		author: "The James NZ · original reflection",
+		category: "Everyday inspiration"
+	}
+];
+starters.push(...[
+	{
+		"id": "sample-extra-0",
+		"text": "Listen long enough to understand before you ask to be understood.",
+		"author": "The James NZ · original reflection",
+		"category": "Leadership"
+	},
+	{
+		"id": "sample-extra-1",
+		"text": "A steady example can teach more than a loud instruction.",
+		"author": "The James NZ · original reflection",
+		"category": "Leadership"
+	},
+	{
+		"id": "sample-extra-2",
+		"text": "Make space for the quiet voice in the room.",
+		"author": "The James NZ · original reflection",
+		"category": "Leadership"
+	},
+	{
+		"id": "sample-extra-3",
+		"text": "Let a quiet prayer make room for a kinder response.",
+		"author": "The James NZ · original reflection",
+		"category": "Spiritual guidance"
+	},
+	{
+		"id": "sample-extra-4",
+		"text": "A moment of stillness can help you notice what matters.",
+		"author": "The James NZ · original reflection",
+		"category": "Spiritual guidance"
+	},
+	{
+		"id": "sample-extra-5",
+		"text": "Bring your questions as well as your gratitude to prayer.",
+		"author": "The James NZ · original reflection",
+		"category": "Spiritual guidance"
+	},
+	{
+		"id": "sample-extra-6",
+		"text": "Connection grows in the small moments you share.",
+		"author": "The James NZ · original reflection",
+		"category": "Parenting"
+	},
+	{
+		"id": "sample-extra-7",
+		"text": "You can begin again after a difficult moment.",
+		"author": "The James NZ · original reflection",
+		"category": "Parenting"
+	},
+	{
+		"id": "sample-extra-8",
+		"text": "Listen to the little stories; they matter to the storyteller.",
+		"author": "The James NZ · original reflection",
+		"category": "Parenting"
+	},
+	{
+		"id": "sample-extra-9",
+		"text": "Begin with the next thing you can do.",
+		"author": "The James NZ · original reflection",
+		"category": "Everyday inspiration"
+	},
+	{
+		"id": "sample-extra-10",
+		"text": "A gentle start is still a start.",
+		"author": "The James NZ · original reflection",
+		"category": "Everyday inspiration"
+	},
+	{
+		"id": "sample-extra-11",
+		"text": "There is room for rest on the way forward.",
+		"author": "The James NZ · original reflection",
+		"category": "Everyday inspiration"
+	},
+	{
+		"id": "sample-extra-12",
+		"text": "Hope can be small and still be worth holding.",
+		"author": "The James NZ · original reflection",
+		"category": "Faith & hope"
+	},
+	{
+		"id": "sample-extra-13",
+		"text": "Let faith guide your care for the person beside you.",
+		"author": "The James NZ · original reflection",
+		"category": "Faith & hope"
+	},
+	{
+		"id": "sample-extra-14",
+		"text": "You can pray with a full heart or with no words at all.",
+		"author": "The James NZ · original reflection",
+		"category": "Faith & hope"
+	},
+	{
+		"id": "sample-extra-15",
+		"text": "Trust can grow one honest prayer at a time.",
+		"author": "The James NZ · original reflection",
+		"category": "Faith & hope"
+	},
+	{
+		"id": "sample-extra-16",
+		"text": "Kindness is often a small act done with full attention.",
+		"author": "The James NZ · original reflection",
+		"category": "Kindness"
+	},
+	{
+		"id": "sample-extra-17",
+		"text": "Leave someone a little more encouraged than you found them.",
+		"author": "The James NZ · original reflection",
+		"category": "Kindness"
+	},
+	{
+		"id": "sample-extra-18",
+		"text": "A patient answer can change the shape of a day.",
+		"author": "The James NZ · original reflection",
+		"category": "Kindness"
+	},
+	{
+		"id": "sample-extra-19",
+		"text": "Care begins with noticing.",
+		"author": "The James NZ · original reflection",
+		"category": "Kindness"
+	},
+	{
+		"id": "sample-extra-20",
+		"text": "Name one good thing, then make room to notice another.",
+		"author": "The James NZ · original reflection",
+		"category": "Gratitude"
+	},
+	{
+		"id": "sample-extra-21",
+		"text": "Thank the people whose quiet care makes your day possible.",
+		"author": "The James NZ · original reflection",
+		"category": "Gratitude"
+	},
+	{
+		"id": "sample-extra-22",
+		"text": "A grateful heart can still acknowledge a difficult day.",
+		"author": "The James NZ · original reflection",
+		"category": "Gratitude"
+	},
+	{
+		"id": "sample-extra-23",
+		"text": "Small joys deserve a place in your memory.",
+		"author": "The James NZ · original reflection",
+		"category": "Gratitude"
+	},
+	{
+		"id": "sample-extra-24",
+		"text": "Try again with what you learned last time.",
+		"author": "The James NZ · original reflection",
+		"category": "Perseverance"
+	},
+	{
+		"id": "sample-extra-25",
+		"text": "Progress does not have to be loud to be real.",
+		"author": "The James NZ · original reflection",
+		"category": "Perseverance"
+	},
+	{
+		"id": "sample-extra-26",
+		"text": "Let your next step be small enough to take.",
+		"author": "The James NZ · original reflection",
+		"category": "Perseverance"
+	},
+	{
+		"id": "sample-extra-27",
+		"text": "Rest can be part of continuing.",
+		"author": "The James NZ · original reflection",
+		"category": "Perseverance"
+	}
+]);
+var questions = [
+	{
+		q: "Which city is the capital of New Zealand?",
+		options: [
+			"Auckland",
+			"Wellington",
+			"Christchurch"
+		],
+		answer: 1,
+		why: "Wellington is New Zealand’s capital city.",
+		url: "https://www.newzealand.com/nz/feature/wellington-attractions/",
+		source: "Tourism New Zealand"
+	},
+	{
+		q: "Which of these birds cannot fly?",
+		options: [
+			"Kiwi",
+			"Sparrow",
+			"Seagull"
+		],
+		answer: 0,
+		why: "Kiwi are flightless birds and a national symbol of New Zealand.",
+		url: "https://www.tepapa.govt.nz/digital-museum/explore-digital-museum/kiwi-the-national-bird-of-aotearoa-new-zealand",
+		source: "Te Papa"
+	},
+	{
+		q: "Which Māori greeting can mean “hello”?",
+		options: [
+			"Haere rā",
+			"Pō mārie",
+			"Kia ora"
+		],
+		answer: 2,
+		why: "Kia ora is a friendly greeting. It can also express thanks.",
+		url: "https://nzhistory.govt.nz/culture/maori-language-week/365-maori-words",
+		source: "NZ History"
+	},
+	{
+		q: "What is New Zealand’s highest mountain?",
+		options: [
+			"Aoraki / Mount Cook",
+			"Mount Eden",
+			"Mount Victoria"
+		],
+		answer: 0,
+		why: "Aoraki / Mount Cook is New Zealand’s highest mountain.",
+		url: "https://www.newzealand.com/int/aoraki-mount-cook/",
+		source: "Tourism New Zealand"
+	},
+	{
+		q: "Where is the national museum, Te Papa?",
+		options: [
+			"Dunedin",
+			"Hamilton",
+			"Wellington"
+		],
+		answer: 2,
+		why: "Te Papa is on Wellington’s waterfront.",
+		url: "https://www.tepapa.govt.nz/about",
+		source: "Te Papa"
+	}
+];
+var stories = [
+	{
+		"title": "Sue and the little light",
+		"level": "Ages 5–7 · 3 min",
+		"theme": "Kindness",
+		"paragraphs": [
+			"Sue, the eldest daughter, loved the lighthouse near the sea. One evening she watched its beam with Dad. “That is a big job for one light,” she said.",
+			"The next morning, Sue and her younger sister Rae took a toy boat to a shallow rock pool. Mom carried baby Mye, and Dad held Mateo the Labrador’s lead. Everyone had a part in their little adventure.",
+			"Rae’s boat tipped over. Its sail fell into the water. Rae’s smile disappeared. “My boat is broken,” she whispered.",
+			"Sue could not fix everything at once. But she could listen. She held the mast while Dad helped Rae tie a new knot. Mom found a dry place for them to sit, and Mye gave a happy little giggle.",
+			"Together the sisters placed the boat back in the pool. The sail stayed up. Mateo sat beside Dad and watched. “You helped!” Rae told Sue.",
+			"That evening, Sue watched the lighthouse again. “Little lights can help too,” she told Mom. “They certainly can,” Mom said."
+		],
+		"ask": [
+			"What did Sue do when Rae felt upset?",
+			"How did each family member help?",
+			"What small kind thing could you do today?"
+		],
+		"words": "Mast: the pole that holds a boat’s sail. Shallow: not deep.",
+		"image": "./story-cartoons/story-01.webp",
+		"imageAlt": "Sue holds a toy boat steady while Dad helps Rae fix its sail beside a rock pool."
+	},
+	{
+		"title": "Rae and the five sounds",
+		"level": "Read together · ages 3–7 · 3 min",
+		"theme": "Noticing",
+		"paragraphs": [
+			"Rae wanted to draw a bird, but her pencil raced across the page. Its wings looked enormous. Its beak looked tiny. “It is not right,” she said.",
+			"Sue sat beside her. “Let’s be sound detectives first. Can we find five sounds?” Mom settled Mye safely in her arms by the window. Dad put down his cup to listen too.",
+			"First they heard leaves rustling. Then a spoon tapped Dad’s cup. A car rolled past. Mateo gave one cheerful bark. At last, a little bird sang from the fence.",
+			"“Five!” Rae said. She looked carefully at the bird. Sue offered a fresh piece of paper. Rae drew a round body, a little head and one wing.",
+			"Her picture was not exactly like the real bird. That was all right. “I slowed down enough to see,” she said. Mom smiled, Mye waved her tiny hands, and Dad put the picture on the fridge.",
+			"Mateo lay nearby as the sisters listened once more. There was always something new to notice."
+		],
+		"ask": [
+			"Can you name the five sounds the family heard?",
+			"What helped Rae try again?",
+			"What quiet sound can you hear right now?"
+		],
+		"words": "Rustling: a soft sound made by moving leaves. Detectives: people who look carefully for clues.",
+		"image": "./story-cartoons/story-02.webp",
+		"imageAlt": "Sue helps Rae draw a bird after the family listens to sounds by the window."
+	},
+	{
+		"title": "The James family’s patient garden",
+		"level": "Ages 5–9 · 4 min",
+		"theme": "Patience",
+		"paragraphs": [
+			"Sue planted a bean in a pot on Monday. Rae helped make a little label. On Tuesday they checked it. Nothing. On Wednesday they checked again. Still nothing. “Perhaps it is a sleeping bean,” Rae said.",
+			"Dad showed Sue how to feel the soil with one finger. If it felt dry, they could give it a little water. If it was damp, they could wait. Mom helped them find a sunny window, with the pot safely away from baby Mye and Mateo.",
+			"The sisters made a chart. Sue drew the pictures, and Rae chose a colour for each day. For a while, their pictures were just brown soil. Then one morning a tiny green loop appeared.",
+			"“Can we make it taller?” Rae asked. “It is growing at its own pace,” Mom said, holding Mye. They watched the loop become a stem. Two leaves slowly opened.",
+			"Sue was learning to read a difficult word: adventure. Dad helped her try one part at a time. She did not get it at first, but she kept practising. Rae cheered when she finished.",
+			"That afternoon the whole family gathered near the window. Mye smiled in Mom’s arms, and Mateo rested beside Dad. Sue looked at the little plant. “It is still growing,” she said. “And so are we.”"
+		],
+		"ask": [
+			"Why did the family check the soil before watering?",
+			"How was learning a new word like growing a bean?",
+			"What are you practising patiently?"
+		],
+		"words": "Damp: a little wet. Pace: the speed at which something happens. Adventure: a new or exciting experience.",
+		"image": "./story-cartoons/story-03.webp",
+		"imageAlt": "The family admires the first green leaves of Sue and Rae's bean plant."
+	},
+	{
+		"title": "The loaf that grew",
+		"theme": "Teamwork",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue watched Mom mix bread dough. Rae wanted to stir too. Dad held baby Mye beside the table, while Mateo settled on his mat. “We can give everyone a job,” Mom said. Sue measured flour with help, and Rae tipped water into the bowl.",
+			"The dough felt sticky. Sue wanted to add lots more flour, but Mom showed her how a little patience helped. Rae pressed a soft dent into the dough. Mye kicked her feet as if she were kneading too.",
+			"After a rest, the dough had grown. Dad put it into the hot oven while the girls stood back. When the loaf cooled, its crooked shape made them laugh.",
+			"Sue shared the first slice with Rae. “Our jobs were different,” she said, “but we made one loaf together.” Mateo received his usual dog food, and everyone enjoyed the warm kitchen."
+		],
+		"ask": ["What jobs did the sisters do?", "How can your family work together?"],
+		"words": "Knead: press and fold dough. Measure: find the right amount.",
+		"image": "./story-cartoons/story-04.webp",
+		"imageAlt": "Sue measures flour and Rae adds water as Mom helps them make bread dough."
+	},
+	{
+		"title": "The library treasure",
+		"theme": "Curiosity",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Dad brought a library bag, and Mom carried Mye. Sue hurried towards the picture books. Rae found one with a dog on the cover. Mateo waited at home with his water bowl; Sue promised to tell him about their adventure.",
+			"Sue chose a book with a long word she could not read. “Maybe this is too hard,” she whispered. Dad helped her sound out the first part. Mom pointed to a picture that gave another clue.",
+			"Rae chose a book about colours. The sisters borrowed both books and carefully placed them in the bag. Mye smiled at a bright yellow page.",
+			"At home, Mateo curled beside them as Sue read aloud. Rae helped name the colours. The hardest word became their favourite treasure, because they had discovered it together."
+		],
+		"ask": ["What helped Sue read the word?", "What book would you like to borrow?"],
+		"words": "Borrow: use something and return it. Clue: a helpful hint.",
+		"image": "./story-cartoons/story-05.webp",
+		"imageAlt": "Dad helps Sue read a picture book in the library while Rae chooses a colourful book."
+	},
+	{
+		"title": "A shell for remembering",
+		"theme": "Respect for nature",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"At the beach, Sue found a beautiful shell. Rae found another with a tiny creature inside. Dad kept Mateo on his lead, and Mom carried Mye well away from the waves.",
+			"“Can we take this one home?” Rae asked. Mom explained that the shell was someone’s home already. Sue looked more closely. The little creature was moving, very slowly.",
+			"Dad helped Rae put the shell gently back where she found it. Sue drew both shells in her notebook instead. Mye watched the pages flutter, while Mateo sniffed the salty breeze.",
+			"On the way home, Rae said, “My treasure stayed at the beach.” Sue showed her the drawing. They still had a memory to keep, and the little creature still had its home."
+		],
+		"ask": ["Why did Rae leave the shell?", "How can you remember a place without taking things?"],
+		"words": "Creature: a living animal. Memory: something you remember.",
+		"image": "./story-cartoons/story-06.webp",
+		"imageAlt": "Dad helps Rae return a shell with a tiny creature inside while Sue draws it."
+	},
+	{
+		"title": "The rainy-day rainbow",
+		"theme": "Creativity",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Rain tapped the window. Sue had hoped to visit the playground, and Rae had already put on her shoes. Dad hung the raincoats by the door. Mom settled Mye on her lap, and Mateo sighed on his mat.",
+			"“It is all grey,” Sue said. Mom suggested finding colours inside. Rae spotted her red bracelet. Sue found a blue book. Dad brought a yellow tea towel and spread it on the table.",
+			"They arranged safe household objects into a rainbow. Mye reached towards the colours, so Mom offered her a suitable baby toy. Mateo’s golden coat became their last colour.",
+			"The rain did not stop straight away. But Sue’s disappointment grew smaller as she helped Rae find green. Their indoor rainbow had made room for a different kind of good day."
+		],
+		"ask": ["How did the family change their plan?", "Which colours can you find nearby?"],
+		"words": "Arrange: put things in order. Disappointment: feeling sad when a plan changes.",
+		"image": "./story-cartoons/story-07.webp",
+		"imageAlt": "Sue and Rae make an indoor rainbow with colourful household objects on a rainy day."
+	},
+	{
+		"title": "Rae’s waiting shoes",
+		"theme": "Independence",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Rae wanted to put on her shoes without help. Sue was ready to leave, Dad held Mateo’s lead, and Mom checked Mye’s baby bag. Everyone waited by the door.",
+			"Rae pushed one foot into the wrong shoe. She frowned and pulled it out. “I cannot do it,” she said. Sue sat beside her and placed the shoes in the right order.",
+			"Dad said there was time for another try. Mom held Mye where Rae could see her smile. Rae opened the straps wide, slid in her feet, and fastened both shoes.",
+			"Outside, Mateo walked slowly with Dad. Sue stayed beside Rae. The family had not hurried her learning, and Rae’s proud little steps made the short walk feel special."
+		],
+		"ask": ["What helped Rae try again?", "What are you learning to do yourself?"],
+		"words": "Fasten: close or secure something. Independent: able to do something yourself.",
+		"image": "./story-cartoons/story-08.webp",
+		"imageAlt": "Sue waits beside Rae as she learns to fasten her own shoes."
+	},
+	{
+		"title": "The kite that needed a tail",
+		"theme": "Problem solving",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue and Rae took a paper kite to an open grassy field. Dad checked that they were far from roads and power lines. Mom held Mye, while Mateo stayed beside Dad on his lead.",
+			"The kite spun around and dropped. Sue tried running faster, but it fell again. Rae said it looked dizzy. Dad suggested watching carefully before changing anything.",
+			"Mom noticed that the kite had no tail. They attached a light strip of cloth and tried once more. Sue held the string while Rae cheered. This time the kite lifted steadily.",
+			"Mye watched it dance above the grass. Mateo watched the girls instead. Sue learned that trying harder was not always the answer; sometimes noticing the problem came first."
+		],
+		"ask": ["What change helped the kite?", "Why did Dad check the field first?"],
+		"words": "Steady: balanced and not shaking. Notice: look carefully and become aware.",
+		"image": "./story-cartoons/story-09.webp",
+		"imageAlt": "Sue's kite flies steadily with its new cloth tail while Rae cheers."
+	},
+	{
+		"title": "Thank-you stones",
+		"theme": "Gratitude",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue and Rae painted large smooth stones at the garden table. Dad sat nearby with Mateo, and Mom held Mye. They chose stones too big for little mouths and kept the paint away from the baby and dog.",
+			"Mom asked what each colour could remind them of. Sue painted yellow for the sunshine. Rae painted pink for her favourite jumper. Dad chose blue for a quiet afternoon together.",
+			"The sisters placed the dry stones beside a plant. When Sue later felt cross about a broken crayon, Rae pointed to the yellow stone. “We can still have a thank-you,” she said.",
+			"Sue thought for a moment. She was thankful Rae had helped her. Mye giggled in Mom’s arms, and Mateo leaned against Dad. The stones did not remove every worry, but they helped the family notice good things too."
+		],
+		"ask": ["What did each colour remind someone of?", "What small thing are you thankful for?"],
+		"words": "Gratitude: noticing and appreciating good things. Smooth: without rough bumps.",
+		"image": "./story-cartoons/story-10.webp",
+		"imageAlt": "Sue and Rae paint large colourful thank-you stones at the garden table."
+	},
+	{
+		"title": "The cardboard moon ship",
+		"theme": "Imagination",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Dad brought home an empty cardboard box. Sue called it a moon ship. Rae wanted it to be a bakery. Mom held Mye and smiled, while Mateo sniffed the box and lay beside it.",
+			"The sisters disagreed about which game to play. Dad asked whether their ideas could meet. Sue thought carefully. “Perhaps the moon needs a bakery,” she said.",
+			"Rae drew pretend buns on paper. Sue made a control panel with crayons. Mom became the first customer, and Mye waved from her lap. Mateo was the sleepy space dog, safely outside the box.",
+			"Their moon bakery had no real oven and no real rockets. It did have two happy sisters. Sharing an idea had made their imaginary journey bigger than either plan alone."
+		],
+		"ask": ["How did the sisters combine their ideas?", "What could you make from a cardboard box?"],
+		"words": "Imagine: make a picture or idea in your mind. Combine: bring things together.",
+		"image": "./story-cartoons/story-11.webp",
+		"imageAlt": "Sue and Rae turn a cardboard box into an imaginary moon bakery."
+	},
+	{
+		"title": "One ball, two turns",
+		"theme": "Sharing",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue bounced the bright ball, and Rae reached for it. “My turn!” Rae said. Dad held Mateo’s lead nearby, while Mom settled Mye on a picnic blanket.",
+			"Sue wanted one more bounce. Rae wanted the ball immediately. Mom suggested a simple plan: three bounces for Sue, then three for Rae. Dad helped count slowly.",
+			"Rae dropped the ball on her first bounce. Sue almost grabbed it, then remembered the plan. She waited while Rae picked it up and tried again. Mye clapped her little hands.",
+			"Mateo watched the ball roll between the sisters. By the end, neither girl needed Dad to count. Knowing a turn was coming made it easier to enjoy someone else’s turn too."
+		],
+		"ask": ["Why was waiting easier with a plan?", "How could you take turns in a favourite game?"],
+		"words": "Turn: a chance to do something. Patient: able to wait calmly.",
+		"image": "./story-cartoons/story-12.webp",
+		"imageAlt": "Sue patiently waits for her turn while Rae bounces their ball."
+	},
+	{
+		"title": "The picnic’s last job",
+		"theme": "Caring for places",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Mom packed sandwiches, and Dad packed water for everyone, including Mateo. Sue spread a blanket while Rae sat beside baby Mye in Mom’s arms. Their picnic place looked bright and clean.",
+			"After lunch, Sue wanted to play straight away. Dad held up the empty lunch bag. “One last job first,” he said. Rae spotted a wrapper near the blanket.",
+			"The girls gathered their own rubbish while Mom checked the ground for small pieces. Dad handled an unfamiliar sharp-looking object without letting the children touch it. Mateo stayed on his lead.",
+			"Then they played on the grass. Before leaving, Sue looked back at their picnic spot. “It is ready for the next family,” she said. Their last job had been a kindness to people they might never meet."
+		],
+		"ask": ["What did the family do before playing?", "Why should a grown-up handle unknown rubbish?"],
+		"words": "Wrapper: covering around food. Care: look after something thoughtfully.",
+		"image": "./story-cartoons/story-13.webp",
+		"imageAlt": "Sue and Rae collect their picnic wrappers so the spot is ready for another family."
+	},
+	{
+		"title": "Mye’s colour book",
+		"theme": "Helping a sibling",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue wanted to make a book for Mye. Rae wanted to choose every colour. Dad found thick paper, and Mom held the baby safely on her lap. Mateo rested beneath Dad’s chair.",
+			"Sue drew a red apple. Rae drew a blue puddle with a very large splash. They used crayons and avoided small decorations that could come loose. Dad helped fasten the pages securely.",
+			"Mom turned the pages for Mye. The baby gazed at the bright shapes. Rae thought Mye’s favourite was blue, while Sue thought it was red. Mom said they could keep noticing as she grew.",
+			"Mateo appeared on the last page as a golden dog. Sue and Rae read their homemade book together. They had made something simple, safe and full of love for their little sister."
+		],
+		"ask": ["How did the sisters keep their book safe?", "What would you draw for a baby?"],
+		"words": "Secure: firmly attached. Gaze: look at something for a while.",
+		"image": "./story-cartoons/story-14.webp",
+		"imageAlt": "Sue and Rae show their homemade colour book to Mye on Mom's lap."
+	},
+	{
+		"title": "Ten garden steps",
+		"theme": "Counting",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Dad took Sue and Rae into the garden. Mom followed with Mye in her arms, and Mateo walked beside Dad. Rae decided the path had a hundred steps.",
+			"Sue began counting her own footsteps. One, two, three. Rae tried to keep up but skipped a number. Dad suggested slowing down and saying each number together.",
+			"They reached ten at the flower pot. Mom asked why Dad had used fewer steps. Sue looked at his long legs and then at Rae’s short ones. Their feet travelled the same path differently.",
+			"Mye watched the sisters walk back. Mateo needed no counting lesson at all. Rae laughed. The garden was not a hundred steps long, but it had given them plenty to discover."
+		],
+		"ask": ["Why did Dad take fewer steps?", "What happens when you count slowly?"],
+		"words": "Distance: how far apart things are. Count: say numbers in order.",
+		"image": "./story-cartoons/story-15.webp",
+		"imageAlt": "Sue and Rae count their steps along the garden path beside Dad."
+	},
+	{
+		"title": "The neighbour’s heavy bag",
+		"theme": "Kindness",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue noticed their neighbour carrying a heavy garden bag. Rae wanted to help immediately. Dad stayed beside them, Mom held Mye, and Mateo waited on his lead.",
+			"Dad asked the neighbour whether help would be welcome. The neighbour smiled and said yes. Dad carried the heavy bag himself. Sue and Rae were given a light, safe watering can to take to the gate.",
+			"Mom and Mye watched from nearby. Mateo sat calmly while the neighbour thanked the family. Rae had hoped helping would be a huge adventure, but their job had taken only a minute.",
+			"At home, Sue said that small jobs could make someone’s day easier. Dad nodded. Kindness did not need to be grand. It could begin with noticing, asking, and doing a suitable little part."
+		],
+		"ask": ["Why did Dad ask before helping?", "What small safe job could you offer to do?"],
+		"words": "Neighbour: someone who lives nearby. Offer: ask whether someone would like something.",
+		"image": "./story-cartoons/story-16.webp",
+		"imageAlt": "Dad carries a neighbour's heavy bag while Sue and Rae help with a light watering can."
+	},
+	{
+		"title": "The bedtime lantern",
+		"theme": "Rest",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Rae did not want the day to end. Sue brought a storybook, Dad checked the night-light, and Mom cuddled Mye. Mateo circled his bed and settled down.",
+			"“Can we have another game?” Rae asked. Mom said their bodies needed a quieter ending. Sue suggested a story, then one thing each person had enjoyed that day.",
+			"Dad remembered their walk. Sue remembered finishing a puzzle. Rae remembered her pink socks. Mye made a sleepy sound, and the family pretended it meant she had liked her cuddles.",
+			"After the story, Dad tucked in the girls. Mateo slept nearby. Rae still liked being awake, but she also liked the warm feeling of their bedtime routine. Tomorrow would have room for new games."
+		],
+		"ask": ["What helped the family slow down?", "What is a peaceful part of your bedtime?"],
+		"words": "Routine: things done in a regular order. Rest: a quiet break for the body.",
+		"image": "./story-cartoons/story-17.webp",
+		"imageAlt": "Dad tucks Sue and Rae into bed as Mom cuddles Mye and Mateo settles to sleep."
+	},
+	{
+		"title": "The morning picture plan",
+		"theme": "Getting organised",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue searched for her school bag while Rae looked for a bracelet. Dad prepared breakfast, Mom held Mye, and Mateo waited hopefully beside his empty dog bowl.",
+			"Everyone seemed to need something at once. After breakfast, Mom suggested making a picture plan for the next morning. Sue drew breakfast, clothes, teeth and a school bag. Rae added a picture of shoes.",
+			"Dad included feeding Mateo. Mom added checking Mye’s baby bag. They placed the plan where the girls could reach it and put their things in sensible places that evening.",
+			"The next morning was still busy, but Sue knew what came next. Rae pointed proudly to the shoe picture. A little preparation had made more room for a goodbye cuddle."
+		],
+		"ask": ["Which pictures were on the plan?", "What could you prepare before a busy morning?"],
+		"words": "Prepare: get ready beforehand. Organise: put things in a useful order.",
+		"image": "./story-cartoons/story-18.webp",
+		"imageAlt": "Sue and Rae make a picture plan for breakfast, clothes, teeth, bags and shoes."
+	},
+	{
+		"title": "The bee’s quiet visit",
+		"theme": "Gentleness",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue saw a bee land on a garden flower. Rae wanted to get very close. Dad kept Mateo beside him, while Mom held Mye and asked the girls to watch from a little distance.",
+			"The bee moved from bloom to bloom. Sue noticed yellow dust on its legs. Mom explained that bees carry pollen between flowers. Rae whispered that the bee was doing its shopping.",
+			"Dad reminded them not to touch or chase it. They stood quietly until it flew away. Mateo sniffed a patch of grass instead. Mye looked at the swaying leaves.",
+			"Later, Sue drew the bee in her notebook. Rae added a flower as a thank-you. They had learned something by giving a tiny visitor plenty of space to do its work."
+		],
+		"ask": ["How did the family watch safely?", "What details did Sue notice?"],
+		"words": "Pollen: fine powder made by flowers. Bloom: a flower.",
+		"image": "./story-cartoons/story-19.webp",
+		"imageAlt": "The family quietly watches a bee visit garden flowers from a safe distance."
+	},
+	{
+		"title": "The slightly crooked biscuits",
+		"theme": "Trying again",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Mom helped Sue and Rae make biscuits. Dad held Mye, and Mateo stayed on his kitchen mat. Sue wanted every biscuit to look exactly the same.",
+			"Rae’s dough shape leaned to one side. Sue tried to fix it, but Rae pulled it back. “That one is mine,” she said. Mom suggested leaving room for different shapes.",
+			"Dad handled the hot tray while the girls stood clear. When the biscuits had cooled, Sue’s neat circle and Rae’s crooked oval both smelled lovely. Mye watched them from Dad’s arms.",
+			"Sue apologised for changing Rae’s work without asking. They shared the biscuits with the grown-ups, and Mateo ate only his usual food. Their baking lesson had become a lesson about respecting someone else’s effort."
+		],
+		"ask": ["Why did Rae want to keep her shape?", "How can you help without taking over?"],
+		"words": "Effort: work put into something. Respect: treat someone’s choices with care.",
+		"image": "./story-cartoons/story-20.webp",
+		"imageAlt": "Sue and Rae admire their cooled round and crooked biscuits with Mom."
+	},
+	{
+		"title": "A birthday made at home",
+		"theme": "Thoughtfulness",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue wanted to give Mom a birthday surprise. Rae suggested a huge mountain of presents. Dad asked what Mom might enjoy most. Mye listened from his arms, and Mateo wagged his tail.",
+			"The girls decided on a homemade card and a small loaf of bread. Dad helped with the baking and kept the oven work to himself. Sue wrote a message, while Rae drew Mom’s tied-up bun.",
+			"They set the table with ordinary plates. Mateo stayed away from the food, and Mye wore her cosy everyday clothes. Nothing looked like a shop window, but everything had been chosen carefully.",
+			"Mom read the card twice. “You noticed what I like,” she said. Rae forgot about the mountain of presents. Their thoughtful surprise had felt big enough all along."
+		],
+		"ask": ["What made the surprise special?", "What would someone you love enjoy?"],
+		"words": "Thoughtful: showing care for someone’s feelings. Surprise: something pleasant you did not expect.",
+		"image": "./story-cartoons/story-21.webp",
+		"imageAlt": "Sue and Rae surprise Mom with a homemade card and small loaf of bread."
+	},
+	{
+		"title": "The coat check",
+		"theme": "Looking after yourself",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue looked outside and saw sunshine. Rae wanted sandals. Dad checked the forecast before their walk, while Mom dressed Mye comfortably and Mateo waited by his lead.",
+			"The air outside was cooler than the bright window had suggested. Sue shivered. Dad helped her put on a warm layer. Mom packed an extra baby layer without covering Mye’s face.",
+			"Rae chose comfortable closed shoes for the path. The sisters carried light jackets rather than trying to guess that sunshine meant warmth. Mateo had water and a gentle pace beside Dad.",
+			"They enjoyed the walk together. Sue noticed that looking after yourself could be a quiet choice before an adventure. A forecast, a comfortable layer and a little preparation had helped everyone enjoy the day."
+		],
+		"ask": ["Why was sunshine not the whole weather story?", "What would you check before going out?"],
+		"words": "Forecast: a prediction of the weather. Layer: one piece worn over another.",
+		"image": "./story-cartoons/story-22.webp",
+		"imageAlt": "Dad helps Sue put on a warm layer before the family's sunny but cool walk."
+	},
+	{
+		"title": "A welcome in two languages",
+		"theme": "Welcome",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Mom said “Kumusta” when Sue came into the room. Dad said “Namaste” to Rae. Mye smiled from Mom’s lap, and Mateo greeted everyone with his wagging tail.",
+			"Sue asked why the greetings sounded different. Dad explained that families can carry words from different places. Mom said both greetings could begin a friendly conversation.",
+			"Rae practised slowly. She did not say every sound perfectly, and Sue did not laugh. Instead, they took turns trying and listening. Dad thanked them for their careful effort.",
+			"Later, the sisters made a welcome sign with a grown-up’s help. Mateo could not read it, but he understood their cheerful voices. The family’s words had opened a little doorway into each other’s worlds."
+		],
+		"ask": ["How did Sue help Rae practise?", "Which greeting would you like to learn?"],
+		"words": "Greeting: words used to welcome someone. Practise: try something again to learn it.",
+		"image": "./story-cartoons/story-23.webp",
+		"imageAlt": "Mom and Dad help Sue and Rae practise warm greetings from their family languages."
+	},
+	{
+		"title": "The feeling-colour clouds",
+		"theme": "Naming feelings",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue came home feeling cross. Rae felt excited and wanted to talk immediately. Dad sat with them, Mom held Mye, and Mateo lay beside Sue’s feet.",
+			"Mom offered paper and crayons. Sue drew a dark cloud. Rae drew a bright yellow one. Dad explained that different feelings could share the same room, and nobody had to copy someone else’s mood.",
+			"Sue said a game had gone wrong at school. Rae listened for a little while before telling her own news. Mye made a cheerful sound, and Sue’s cloud gained a small patch of blue.",
+			"The family did not pretend everything was perfect. They named what they felt and chose a kind next step. Mateo stayed close as Sue asked Dad for a quiet cuddle."
+		],
+		"ask": ["What helped Sue describe her feeling?", "How can you listen when someone feels different from you?"],
+		"words": "Mood: how you feel at a particular time. Describe: explain with words or pictures.",
+		"image": "./story-cartoons/story-24.webp",
+		"imageAlt": "Sue and Rae draw different coloured clouds to describe their feelings."
+	},
+	{
+		"title": "The puzzle’s missing corner",
+		"theme": "Perseverance",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue spread a puzzle across the table. Rae tried to join two pieces that did not fit. Dad kept the small pieces away from Mye, whom Mom was holding. Mateo rested under the table.",
+			"They searched for a corner piece. Sue began to think it was lost. Dad suggested sorting the straight edges first. Rae found a piece with a blue stripe and placed it in the edge pile.",
+			"Mom noticed the corner beside the box. Sue thanked her and connected the first row. Mye watched the bright picture slowly appear, while Mateo slept through the hardest part.",
+			"They did not finish in one sitting. They left the puzzle safely covered for another day. Sue had learned that a pause could belong to perseverance too; resting did not mean giving up."
+		],
+		"ask": ["What helped them sort the puzzle?", "Why can taking a break be useful?"],
+		"words": "Perseverance: continuing with a task over time. Edge: the outside boundary.",
+		"image": "./story-cartoons/story-25.webp",
+		"imageAlt": "Mom spots a missing puzzle corner while Sue and Rae sort the edge pieces."
+	},
+	{
+		"title": "The mitten on the hook",
+		"theme": "Responsibility",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Rae could not find her mitten before a cool-day walk. Sue searched the sofa. Dad held Mateo’s lead, while Mom settled Mye safely in her arms.",
+			"Rae wanted someone to buy a new mitten immediately. Dad suggested remembering the last place she had used it. Rae remembered showing it to Mye near the front door.",
+			"Sue looked beneath the coat hooks. There was the mitten, beside a shoe. Mom helped Rae put both mittens in a basket where she could reach them. Mateo waited patiently while they got ready.",
+			"After their walk, Rae returned her mittens to the basket without being asked. Sue smiled. Finding the mitten had been useful; learning a place to keep it would help again tomorrow."
+		],
+		"ask": ["What clue helped them find the mitten?", "Where could you keep something you often lose?"],
+		"words": "Responsible: taking care of your own jobs. Clue: information that helps solve a problem.",
+		"image": "./story-cartoons/story-26.webp",
+		"imageAlt": "Sue finds Rae's mitten by the shoes and Rae puts her mittens into their basket."
+	},
+	{
+		"title": "The birds from the window",
+		"theme": "Observation",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue saw a small bird on the garden fence. Rae tapped the window excitedly. Dad gently asked her to stop, while Mom held Mye and Mateo sat quietly nearby.",
+			"The sisters watched without chasing the bird. Sue noticed its quick head movements. Rae noticed its tiny feet. Dad helped them look at a bird guide rather than guessing its name straight away.",
+			"The bird flew to a tree. Mom said watching wildlife sometimes meant waiting. Mye stared at the leaves, and Mateo stretched out for a nap. Soon another bird arrived on the fence.",
+			"Sue recorded what she had seen in a notebook. Rae drew the feet. Their patient window watching had turned an ordinary afternoon into a little investigation."
+		],
+		"ask": ["What different details did the sisters notice?", "Why did they stay quiet?"],
+		"words": "Observe: watch carefully. Investigation: looking for information about something.",
+		"image": "./story-cartoons/story-27.webp",
+		"imageAlt": "Sue and Rae quietly observe a bird from the window with Dad's bird guide."
+	},
+	{
+		"title": "The saving-jar choice",
+		"theme": "Making choices",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Sue wanted a new toy. Rae wanted a sparkly bag. Dad placed a saving jar on a high shelf, away from Mye and Mateo. Mom brought paper pictures of coins so the girls could practise safely.",
+			"They each chose a goal and drew it. Dad explained that saving meant keeping some money for later. Sue realised that buying every little thing would leave less for her bigger plan.",
+			"Rae found a bag she already owned and added a ribbon with Mom’s help. Dad put real coins into the jar while Mye watched from Mom’s lap. Mateo was happy with his familiar toy.",
+			"Sue did not stop wanting new things. She simply had a plan for choosing. Rae carried her refreshed bag proudly, and both sisters learned that waiting could make a goal feel clearer."
+		],
+		"ask": ["Why did the girls use paper coins?", "What would you like to save towards?"],
+		"words": "Save: keep something for later. Goal: something you hope to achieve.",
+		"image": "./story-cartoons/story-28.webp",
+		"imageAlt": "Rae decorates her old bag while Sue plans a saving goal with paper coins."
+	},
+	{
+		"title": "The note in Dad’s pocket",
+		"theme": "Encouragement",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"Dad had a busy morning ahead. Sue noticed him checking the time, and Rae noticed his tired smile. Mom held Mye while Mateo waited for his usual morning cuddle.",
+			"Sue suggested making a note. Rae drew a golden dog, and Sue wrote, “One thing at a time, Dad.” Mom helped them fold the paper neatly. They gave it to Dad before he left.",
+			"At lunchtime, Dad found the note in his pocket. It did not do his work for him, but it reminded him of people who cared. He kept it beside his lunchbox.",
+			"That evening, Dad thanked Sue and Rae. Mye smiled in Mom’s arms, and Mateo leaned into his knee. A small message had travelled through a busy day and brought a little kindness with it."
+		],
+		"ask": ["What did the note remind Dad of?", "What encouraging message could you write?"],
+		"words": "Encourage: help someone feel supported. Neatly: in a tidy and careful way.",
+		"image": "./story-cartoons/story-29.webp",
+		"imageAlt": "Sue and Rae give Dad a homemade encouragement note before his busy day."
+	},
+	{
+		"title": "The first evening star",
+		"theme": "Wonder",
+		"level": "Ages 5–9 · 2 min",
+		"paragraphs": [
+			"As the sky darkened, Sue spotted a bright point above the garden. Rae called it a tiny torch. Dad stood beside them with Mateo, while Mom kept Mye warm in her arms.",
+			"Sue wondered whether it was a star or a planet. Dad said they could look it up together rather than pretending to know. Mom asked the girls to notice the colours still left in the sky.",
+			"Rae saw purple. Sue saw orange near the horizon. Mye watched their faces, and Mateo listened to a distant sound. They stayed in their familiar garden, safely away from the road.",
+			"Before going inside, Sue asked one more question. Dad smiled. They would not answer every sky question that evening, but wondering together had been a lovely place to begin."
+		],
+		"ask": ["Why did Dad suggest looking it up?", "What question would you ask about the sky?"],
+		"words": "Horizon: where the sky seems to meet the land. Wonder: feel curious about something.",
+		"image": "./story-cartoons/story-30.webp",
+		"imageAlt": "Sue points out the first bright evening star as the family watches the garden sky."
+	}
+];
+//#endregion
+//#region app/story-quizzes.ts
+var quizByTitle = {
+	"Sue and the little light": [
+		{
+			"q": "What did Rae take to the rock pool?",
+			"options": [
+				"A toy boat",
+				"A kite",
+				"A loaf of bread"
+			],
+			"answer": 0,
+			"why": "Rae and Sue took a toy boat to the shallow pool."
+		},
+		{
+			"q": "Who helped tie a new knot?",
+			"options": [
+				"A bird",
+				"A neighbour",
+				"Dad"
+			],
+			"answer": 2,
+			"why": "Dad helped Rae tie a new knot while Sue held the mast."
+		},
+		{
+			"q": "What kind thing did Sue do?",
+			"options": [
+				"She hid the boat",
+				"She listened and helped",
+				"She laughed at Rae"
+			],
+			"answer": 1,
+			"why": "Sue listened to Rae and helped with the broken sail."
+		}
+	],
+	"Rae and the five sounds": [
+		{
+			"q": "What did Rae want to draw?",
+			"options": [
+				"A boat",
+				"A moon",
+				"A bird"
+			],
+			"answer": 2,
+			"why": "Rae wanted to draw a bird."
+		},
+		{
+			"q": "How many sounds did the family find?",
+			"options": [
+				"Ten",
+				"Five",
+				"Two"
+			],
+			"answer": 1,
+			"why": "They heard leaves, a spoon, a car, Mateo and a bird."
+		},
+		{
+			"q": "What helped Rae draw again?",
+			"options": [
+				"Slowing down and looking",
+				"Racing faster",
+				"Throwing away every pencil"
+			],
+			"answer": 0,
+			"why": "Rae slowed down enough to notice the bird."
+		}
+	],
+	"The James family’s patient garden": [
+		{
+			"q": "What did Sue plant?",
+			"options": [
+				"A shell",
+				"A bean",
+				"A biscuit"
+			],
+			"answer": 1,
+			"why": "Sue planted a bean in a pot on Monday."
+		},
+		{
+			"q": "When could the plant have a little water?",
+			"options": [
+				"When the soil felt dry",
+				"Whenever the girls shouted",
+				"Only at midnight"
+			],
+			"answer": 0,
+			"why": "Dad showed them to check whether the soil was dry."
+		},
+		{
+			"q": "What did the family practise?",
+			"options": [
+				"Hurrying everything",
+				"Never trying again",
+				"Patience"
+			],
+			"answer": 2,
+			"why": "The plant and Sue’s reading both grew with patient practice."
+		}
+	],
+	"The loaf that grew": [
+		{
+			"q": "What were the sisters making?",
+			"options": [
+				"Bread",
+				"A kite",
+				"A library card"
+			],
+			"answer": 0,
+			"why": "Mom helped Sue and Rae make bread dough."
+		},
+		{
+			"q": "Who put the dough in the hot oven?",
+			"options": [
+				"Rae alone",
+				"Mateo",
+				"Dad"
+			],
+			"answer": 2,
+			"why": "Dad handled the hot oven while the girls stood back."
+		},
+		{
+			"q": "How did the family make one loaf?",
+			"options": [
+				"By refusing to share",
+				"By doing different jobs together",
+				"By hiding the flour"
+			],
+			"answer": 1,
+			"why": "Each person had a different helpful part."
+		}
+	],
+	"The library treasure": [
+		{
+			"q": "Where did the family borrow books?",
+			"options": [
+				"The beach",
+				"The garden gate",
+				"The library"
+			],
+			"answer": 2,
+			"why": "They chose and borrowed books from the library."
+		},
+		{
+			"q": "Where did Mateo wait?",
+			"options": [
+				"On the moon",
+				"At home",
+				"Inside the library bag"
+			],
+			"answer": 1,
+			"why": "Mateo waited at home with his water bowl."
+		},
+		{
+			"q": "What helped Sue read a hard word?",
+			"options": [
+				"Sounds and a picture clue",
+				"Giving up immediately",
+				"Closing the book forever"
+			],
+			"answer": 0,
+			"why": "Dad helped with sounds and Mom pointed to a picture clue."
+		}
+	],
+	"A shell for remembering": [
+		{
+			"q": "What was inside Rae’s shell?",
+			"options": [
+				"A biscuit",
+				"A tiny creature",
+				"A birthday card"
+			],
+			"answer": 1,
+			"why": "A little creature was living in the shell."
+		},
+		{
+			"q": "Where did Rae leave the shell?",
+			"options": [
+				"Back where she found it",
+				"In the oven",
+				"Under her pillow"
+			],
+			"answer": 0,
+			"why": "Dad helped Rae put the shell gently back."
+		},
+		{
+			"q": "How did Sue keep a memory?",
+			"options": [
+				"She took every shell",
+				"She chased the creature",
+				"She drew the shells"
+			],
+			"answer": 2,
+			"why": "Sue kept a drawing, leaving the creature’s home undisturbed."
+		}
+	],
+	"The rainy-day rainbow": [
+		{
+			"q": "What changed the playground plan?",
+			"options": [
+				"Rain",
+				"A missing library book",
+				"A birthday party"
+			],
+			"answer": 0,
+			"why": "Rain tapped the window when Sue hoped to go out."
+		},
+		{
+			"q": "What did the family make indoors?",
+			"options": [
+				"A real rocket",
+				"A hot oven for Mye",
+				"A rainbow of colours"
+			],
+			"answer": 2,
+			"why": "They arranged colourful household objects into a rainbow."
+		},
+		{
+			"q": "What golden colour joined the rainbow?",
+			"options": [
+				"A purple jumper",
+				"Mateo’s coat",
+				"Dad’s school bag"
+			],
+			"answer": 1,
+			"why": "Mateo’s golden coat became their last colour."
+		}
+	],
+	"Rae’s waiting shoes": [
+		{
+			"q": "What was Rae learning to put on?",
+			"options": [
+				"Dad’s coat",
+				"A life jacket",
+				"Her shoes"
+			],
+			"answer": 2,
+			"why": "Rae wanted to put on her shoes without help."
+		},
+		{
+			"q": "How did Sue help?",
+			"options": [
+				"She hurried away",
+				"She put the shoes in order",
+				"She hid the straps"
+			],
+			"answer": 1,
+			"why": "Sue sat beside Rae and arranged the shoes correctly."
+		},
+		{
+			"q": "What gave Rae another chance?",
+			"options": [
+				"The family waited patiently",
+				"Everyone shouted",
+				"Dad took the shoes away"
+			],
+			"answer": 0,
+			"why": "Dad said there was time for another try."
+		}
+	],
+	"The kite that needed a tail": [
+		{
+			"q": "What kept falling down?",
+			"options": [
+				"A loaf of bread",
+				"The kite",
+				"A library shelf"
+			],
+			"answer": 1,
+			"why": "The paper kite spun around and dropped."
+		},
+		{
+			"q": "What did the kite need?",
+			"options": [
+				"A tail",
+				"A spoon",
+				"A toy boat"
+			],
+			"answer": 0,
+			"why": "A light cloth tail helped the kite lift steadily."
+		},
+		{
+			"q": "What did the family do before changing the kite?",
+			"options": [
+				"They ran into the road",
+				"They threw every piece away",
+				"They watched carefully"
+			],
+			"answer": 2,
+			"why": "Dad suggested noticing the problem before changing things."
+		}
+	],
+	"Thank-you stones": [
+		{
+			"q": "What did the sisters paint?",
+			"options": [
+				"Large smooth stones",
+				"Mateo’s fur",
+				"Mom’s glasses"
+			],
+			"answer": 0,
+			"why": "They painted large smooth stones at the garden table."
+		},
+		{
+			"q": "What did Sue’s yellow stone mean?",
+			"options": [
+				"A broken shoe",
+				"A dark cloud",
+				"Sunshine"
+			],
+			"answer": 2,
+			"why": "Sue chose yellow to remind her of sunshine."
+		},
+		{
+			"q": "What did the stones help them notice?",
+			"options": [
+				"How to stop every worry forever",
+				"Good things in their day",
+				"Only mistakes"
+			],
+			"answer": 1,
+			"why": "The stones helped them notice good things as well as worries."
+		}
+	],
+	"The cardboard moon ship": [
+		{
+			"q": "What did Dad bring home?",
+			"options": [
+				"A real spaceship",
+				"A beach shell",
+				"An empty cardboard box"
+			],
+			"answer": 2,
+			"why": "The cardboard box began their pretend game."
+		},
+		{
+			"q": "What did their two ideas become?",
+			"options": [
+				"A rainy shoe shop",
+				"A moon bakery",
+				"A garden library"
+			],
+			"answer": 1,
+			"why": "Sue’s moon ship and Rae’s bakery became a moon bakery."
+		},
+		{
+			"q": "Where was Mateo during the game?",
+			"options": [
+				"Beside the box",
+				"Inside a real rocket",
+				"At the library"
+			],
+			"answer": 0,
+			"why": "Mateo became the sleepy space dog, safely outside the box."
+		}
+	],
+	"One ball, two turns": [
+		{
+			"q": "What did Sue and Rae share?",
+			"options": [
+				"A library card",
+				"A ball",
+				"A hot tray"
+			],
+			"answer": 1,
+			"why": "The sisters both wanted a turn with the bright ball."
+		},
+		{
+			"q": "How many bounces did each girl get?",
+			"options": [
+				"Three",
+				"Twenty",
+				"None"
+			],
+			"answer": 0,
+			"why": "Mom suggested three bounces for Sue, then three for Rae."
+		},
+		{
+			"q": "What helped them wait?",
+			"options": [
+				"Hiding the ball",
+				"Ignoring the plan",
+				"Knowing a turn was coming"
+			],
+			"answer": 2,
+			"why": "The turn-taking plan made waiting easier."
+		}
+	],
+	"The picnic’s last job": [
+		{
+			"q": "What was the picnic’s last job?",
+			"options": [
+				"Gathering their rubbish",
+				"Leaving wrappers behind",
+				"Taking the blanket into the sea"
+			],
+			"answer": 0,
+			"why": "They cleaned their picnic place before playing."
+		},
+		{
+			"q": "Who handled unknown sharp-looking rubbish?",
+			"options": [
+				"Rae alone",
+				"Mye",
+				"Dad"
+			],
+			"answer": 2,
+			"why": "Dad handled the unfamiliar sharp-looking object."
+		},
+		{
+			"q": "Why did Sue like leaving the spot clean?",
+			"options": [
+				"It would grow a toy",
+				"It was ready for the next family",
+				"It would stop all rain"
+			],
+			"answer": 1,
+			"why": "Leaving a clean place was kind to the next visitors."
+		}
+	],
+	"Mye’s colour book": [
+		{
+			"q": "Who was the homemade colour book for?",
+			"options": [
+				"The neighbour",
+				"A bee",
+				"Mye"
+			],
+			"answer": 2,
+			"why": "Sue and Rae made their book for baby Mye."
+		},
+		{
+			"q": "Who helped fasten the pages?",
+			"options": [
+				"A bird",
+				"Dad",
+				"Mateo"
+			],
+			"answer": 1,
+			"why": "Dad helped attach the thick paper securely."
+		},
+		{
+			"q": "Which animal was on the last page?",
+			"options": [
+				"A golden dog",
+				"A whale",
+				"A butterfly"
+			],
+			"answer": 0,
+			"why": "Mateo appeared on the last page as a golden dog."
+		}
+	],
+	"Ten garden steps": [
+		{
+			"q": "Where did the sisters reach ten steps?",
+			"options": [
+				"At the moon bakery",
+				"At the flower pot",
+				"Inside the library"
+			],
+			"answer": 1,
+			"why": "They counted ten steps to the flower pot."
+		},
+		{
+			"q": "Why did Dad use fewer steps?",
+			"options": [
+				"His legs were longer",
+				"He could fly",
+				"He moved the flower pot"
+			],
+			"answer": 0,
+			"why": "Dad’s longer legs made his steps bigger."
+		},
+		{
+			"q": "What helped Rae count?",
+			"options": [
+				"Skipping every number",
+				"Running without looking",
+				"Saying each number slowly together"
+			],
+			"answer": 2,
+			"why": "Dad suggested slowing down and counting together."
+		}
+	],
+	"The neighbour’s heavy bag": [
+		{
+			"q": "What was the neighbour carrying?",
+			"options": [
+				"A heavy garden bag",
+				"A toy kite",
+				"A colour book"
+			],
+			"answer": 0,
+			"why": "The neighbour was carrying a heavy garden bag."
+		},
+		{
+			"q": "What light item did the girls carry?",
+			"options": [
+				"A hot tray",
+				"A heavy oven",
+				"A watering can"
+			],
+			"answer": 2,
+			"why": "The girls took a light, safe watering can to the gate."
+		},
+		{
+			"q": "What did Dad do before helping?",
+			"options": [
+				"He sent the girls away alone",
+				"He asked the neighbour",
+				"He grabbed every bag"
+			],
+			"answer": 1,
+			"why": "Dad checked whether the neighbour wanted help."
+		}
+	],
+	"The bedtime lantern": [
+		{
+			"q": "Which animal settled on his bed?",
+			"options": [
+				"A garden bee",
+				"A seagull",
+				"Mateo"
+			],
+			"answer": 2,
+			"why": "Mateo circled his bed and settled down."
+		},
+		{
+			"q": "What quiet activity did Sue suggest?",
+			"options": [
+				"A loud kitchen game",
+				"A story and a good memory",
+				"A race on the road"
+			],
+			"answer": 1,
+			"why": "Sue suggested a story and something each person enjoyed."
+		},
+		{
+			"q": "What did the bedtime routine help them do?",
+			"options": [
+				"Slow down for rest",
+				"Avoid every morning",
+				"Finish a kite tail"
+			],
+			"answer": 0,
+			"why": "A quieter routine helped the family end the day gently."
+		}
+	],
+	"The morning picture plan": [
+		{
+			"q": "What did the family make for mornings?",
+			"options": [
+				"A pretend rocket",
+				"A picture plan",
+				"A shell necklace"
+			],
+			"answer": 1,
+			"why": "They drew a plan showing their morning tasks."
+		},
+		{
+			"q": "Which job was for Mateo?",
+			"options": [
+				"Feeding him",
+				"Reading his school report",
+				"Painting his fur"
+			],
+			"answer": 0,
+			"why": "Dad added feeding Mateo to the plan."
+		},
+		{
+			"q": "What helped the next morning?",
+			"options": [
+				"Hiding every shoe",
+				"Skipping breakfast",
+				"Preparing things the evening before"
+			],
+			"answer": 2,
+			"why": "They organised their things and made a helpful plan."
+		}
+	],
+	"The bee’s quiet visit": [
+		{
+			"q": "What landed on a garden flower?",
+			"options": [
+				"A bee",
+				"A boat",
+				"A shoe"
+			],
+			"answer": 0,
+			"why": "Sue saw a bee land on the flower."
+		},
+		{
+			"q": "What did Sue notice on its legs?",
+			"options": [
+				"Blue socks",
+				"A ribbon",
+				"Yellow pollen"
+			],
+			"answer": 2,
+			"why": "Sue noticed yellow dust, and Mom explained pollen."
+		},
+		{
+			"q": "How did the family treat the bee?",
+			"options": [
+				"They tried to put it in a bag",
+				"They watched without touching",
+				"They chased it"
+			],
+			"answer": 1,
+			"why": "The family gave the bee space and watched quietly."
+		}
+	],
+	"The slightly crooked biscuits": [
+		{
+			"q": "What were the sisters baking?",
+			"options": [
+				"A kite",
+				"A mitten",
+				"Biscuits"
+			],
+			"answer": 2,
+			"why": "Mom helped them make biscuits."
+		},
+		{
+			"q": "What shape did Rae want to keep?",
+			"options": [
+				"A garden stone",
+				"Her crooked oval",
+				"Sue’s neat circle only"
+			],
+			"answer": 1,
+			"why": "Rae wanted to keep the dough shape she had made."
+		},
+		{
+			"q": "Why did Sue apologise?",
+			"options": [
+				"She changed Rae’s work without asking",
+				"She fed Mateo his normal food",
+				"She waited for the tray to cool"
+			],
+			"answer": 0,
+			"why": "Sue learned to ask before changing someone else’s effort."
+		}
+	],
+	"A birthday made at home": [
+		{
+			"q": "Whose birthday surprise were they making?",
+			"options": [
+				"A bee’s",
+				"Mom’s",
+				"Mateo’s neighbour’s"
+			],
+			"answer": 1,
+			"why": "Sue and Rae prepared a birthday surprise for Mom."
+		},
+		{
+			"q": "What did they make?",
+			"options": [
+				"A card and bread",
+				"A hundred shop presents",
+				"A real moon ship"
+			],
+			"answer": 0,
+			"why": "The girls made a homemade card and a small loaf."
+		},
+		{
+			"q": "Why was Mom pleased?",
+			"options": [
+				"They bought the biggest mountain",
+				"They hid her glasses",
+				"They noticed what she liked"
+			],
+			"answer": 2,
+			"why": "Their thoughtful choices mattered to Mom."
+		}
+	],
+	"The coat check": [
+		{
+			"q": "What did Dad check before the walk?",
+			"options": [
+				"The weather forecast",
+				"A puzzle box",
+				"A biscuit recipe"
+			],
+			"answer": 0,
+			"why": "Dad checked the forecast before they left."
+		},
+		{
+			"q": "What did Sue need outside?",
+			"options": [
+				"A new library bag",
+				"A garden label",
+				"A warm layer"
+			],
+			"answer": 2,
+			"why": "The air was cooler than the sunny window suggested."
+		},
+		{
+			"q": "What shoes did Rae choose?",
+			"options": [
+				"Dad’s huge shoes",
+				"Comfortable closed shoes",
+				"No shoes at all"
+			],
+			"answer": 1,
+			"why": "Rae chose closed shoes suitable for the path."
+		}
+	],
+	"A welcome in two languages": [
+		{
+			"q": "Which greeting did Mom use?",
+			"options": [
+				"Goodbye forever",
+				"Thank-you stones",
+				"Kumusta"
+			],
+			"answer": 2,
+			"why": "Mom said Kumusta when Sue entered."
+		},
+		{
+			"q": "Which greeting did Dad use?",
+			"options": [
+				"Ten garden steps",
+				"Namaste",
+				"Moon bakery"
+			],
+			"answer": 1,
+			"why": "Dad said Namaste to Rae."
+		},
+		{
+			"q": "How did the sisters practise?",
+			"options": [
+				"By listening and taking turns",
+				"By laughing at mistakes",
+				"By never trying the sounds"
+			],
+			"answer": 0,
+			"why": "The sisters listened carefully and tried the greetings kindly."
+		}
+	],
+	"The feeling-colour clouds": [
+		{
+			"q": "How did Sue feel at first?",
+			"options": [
+				"Sleepy on the moon",
+				"Cross",
+				"Excited about every game"
+			],
+			"answer": 1,
+			"why": "Sue came home feeling cross after a game went wrong."
+		},
+		{
+			"q": "What did Sue draw?",
+			"options": [
+				"A dark cloud",
+				"A golden loaf",
+				"A blue mitten"
+			],
+			"answer": 0,
+			"why": "Sue used a dark cloud to show her feeling."
+		},
+		{
+			"q": "What kind thing did Rae do?",
+			"options": [
+				"She demanded Sue smile",
+				"She hid the crayons",
+				"She listened before sharing her news"
+			],
+			"answer": 2,
+			"why": "Rae made room to listen before telling her own news."
+		}
+	],
+	"The puzzle’s missing corner": [
+		{
+			"q": "What were they looking for?",
+			"options": [
+				"A corner puzzle piece",
+				"A beach shell",
+				"A kite tail"
+			],
+			"answer": 0,
+			"why": "The family searched for the puzzle’s missing corner."
+		},
+		{
+			"q": "Where did Mom find it?",
+			"options": [
+				"In the hot oven",
+				"On the moon",
+				"Beside the box"
+			],
+			"answer": 2,
+			"why": "Mom noticed the corner beside the puzzle box."
+		},
+		{
+			"q": "What did they do before finishing?",
+			"options": [
+				"Let Mye play with small pieces",
+				"Took a break and left it safely covered",
+				"Gave up forever"
+			],
+			"answer": 1,
+			"why": "They planned to continue another day and kept the pieces safe."
+		}
+	],
+	"The mitten on the hook": [
+		{
+			"q": "What could Rae not find?",
+			"options": [
+				"A hot tray",
+				"A bee",
+				"Her mitten"
+			],
+			"answer": 2,
+			"why": "Rae’s mitten was missing before the cool-day walk."
+		},
+		{
+			"q": "Where was it?",
+			"options": [
+				"In the sea",
+				"Near a shoe under the coat hooks",
+				"Inside a library book"
+			],
+			"answer": 1,
+			"why": "Sue found the mitten near a shoe beneath the hooks."
+		},
+		{
+			"q": "What did Rae learn to do afterwards?",
+			"options": [
+				"Keep her mittens in a basket",
+				"Buy new mittens every morning",
+				"Hide every shoe"
+			],
+			"answer": 0,
+			"why": "A regular place helped Rae look after her mittens."
+		}
+	],
+	"The birds from the window": [
+		{
+			"q": "Where did the first bird land?",
+			"options": [
+				"On a hot tray",
+				"On the garden fence",
+				"Inside Dad’s pocket"
+			],
+			"answer": 1,
+			"why": "Sue saw a small bird on the fence."
+		},
+		{
+			"q": "What did Rae notice?",
+			"options": [
+				"Its tiny feet",
+				"A blue scarf",
+				"A paper kite"
+			],
+			"answer": 0,
+			"why": "Rae noticed the bird’s tiny feet."
+		},
+		{
+			"q": "How did they learn about the bird?",
+			"options": [
+				"Chasing it around the garden",
+				"Guessing without looking",
+				"Watching quietly and using a guide"
+			],
+			"answer": 2,
+			"why": "They observed patiently and looked at a bird guide."
+		}
+	],
+	"The saving-jar choice": [
+		{
+			"q": "What did the girls practise with?",
+			"options": [
+				"Paper pictures of coins",
+				"Real coins within Mye’s reach",
+				"Hot bread trays"
+			],
+			"answer": 0,
+			"why": "They used paper coins to practise safely."
+		},
+		{
+			"q": "What did Rae refresh?",
+			"options": [
+				"A real rocket",
+				"A garden bee",
+				"A bag she already owned"
+			],
+			"answer": 2,
+			"why": "Mom helped Rae add a ribbon to her existing bag."
+		},
+		{
+			"q": "What does saving mean in the story?",
+			"options": [
+				"Hiding every toy",
+				"Keeping some money for later",
+				"Buying every little thing"
+			],
+			"answer": 1,
+			"why": "Dad explained saving for a bigger goal."
+		}
+	],
+	"The note in Dad’s pocket": [
+		{
+			"q": "Where did Dad find the note?",
+			"options": [
+				"In the sea",
+				"Under the garden soil",
+				"In his pocket"
+			],
+			"answer": 2,
+			"why": "Dad found the note in his pocket at lunchtime."
+		},
+		{
+			"q": "What did Sue write?",
+			"options": [
+				"Buy every toy, Dad",
+				"One thing at a time, Dad",
+				"Never rest, Dad"
+			],
+			"answer": 1,
+			"why": "Sue wrote a short encouraging message."
+		},
+		{
+			"q": "What did the note remind Dad of?",
+			"options": [
+				"People who cared about him",
+				"A missing mitten",
+				"A library fine"
+			],
+			"answer": 0,
+			"why": "The message brought kindness into his busy day."
+		}
+	],
+	"The first evening star": [
+		{
+			"q": "What did Sue spot in the sky?",
+			"options": [
+				"A toy boat",
+				"A bright point",
+				"A hot biscuit"
+			],
+			"answer": 1,
+			"why": "Sue noticed a bright point above the garden."
+		},
+		{
+			"q": "What did Dad suggest when he was unsure?",
+			"options": [
+				"Looking it up together",
+				"Pretending he knew",
+				"Chasing Mateo into the road"
+			],
+			"answer": 0,
+			"why": "Dad suggested finding out rather than pretending to know."
+		},
+		{
+			"q": "What did the family enjoy together?",
+			"options": [
+				"Answering every question instantly",
+				"Leaving the garden alone",
+				"Wondering and noticing"
+			],
+			"answer": 2,
+			"why": "They noticed colours and shared questions about the sky."
+		}
+	]
+};
+var storyQuizzes = stories.map((story) => quizByTitle[story.title]);
+//#endregion
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react-jsx-runtime.production.js
+/**
+* @license React
+* react-jsx-runtime.production.js
+*
+* Copyright (c) Meta Platforms, Inc. and affiliates.
+*
+* This source code is licensed under the MIT license found in the
+* LICENSE file in the root directory of this source tree.
+*/
+var require_react_jsx_runtime_production = /* @__PURE__ */ __commonJSMin(((exports) => {
+	var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+	function jsxProd(type, config, maybeKey) {
+		var key = null;
+		void 0 !== maybeKey && (key = "" + maybeKey);
+		void 0 !== config.key && (key = "" + config.key);
+		if ("key" in config) {
+			maybeKey = {};
+			for (var propName in config) "key" !== propName && (maybeKey[propName] = config[propName]);
+		} else maybeKey = config;
+		config = maybeKey.ref;
+		return {
+			$$typeof: REACT_ELEMENT_TYPE,
+			type,
+			key,
+			ref: void 0 !== config ? config : null,
+			props: maybeKey
+		};
+	}
+	exports.Fragment = REACT_FRAGMENT_TYPE;
+	exports.jsx = jsxProd;
+	exports.jsxs = jsxProd;
+}));
+//#endregion
+//#region app/story-reader.tsx
+var import_jsx_runtime = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
+	module.exports = require_react_jsx_runtime_production();
+})))();
+function StoryReader({ index, onBack }) {
+	const story = stories[index], speech = useSpeech();
+	const [word, setWord] = (0, import_react.useState)(null);
+	const busy = speech.state.status === "reading" || speech.state.status === "paused";
+	function speakWord(value) {
+		setWord(value);
+		speech.read([value]);
+	}
+	function text(value, segment) {
+		return readingTokens(value).map((token, i) => token.word ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			type: "button",
+			className: "readable-word" + (word === null && speech.state.segment === segment && speech.state.char >= token.start && speech.state.char < token.start + token.text.length || word === token.text && busy ? " speaking" : ""),
+			disabled: !speech.supported,
+			onClick: () => speakWord(token.text),
+			"aria-label": "Read word: " + token.text,
+			children: token.text
+		}, i) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: token.text }, i));
+	}
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+		className: "story",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: "secondary",
+				onClick: () => {
+					speech.stop();
+					onBack();
+				},
+				children: "Back to all stories"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+				className: "eyebrow",
+				children: [
+					story.level,
+					" · ",
+					story.theme
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+				className: "interactive-story-title",
+				children: text(story.title, 0)
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+				className: "story-photo",
+				src: story.image,
+				alt: story.imageAlt
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "story-audio",
+				"aria-label": "Read-aloud controls",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 21 }), "Read with me"] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Touch a word to hear it, or listen to the whole story." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "filters",
+						"aria-label": "Reading speed",
+						children: Object.keys(readingSpeeds).map((value) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+							"aria-pressed": speech.speed === value,
+							className: speech.speed === value ? "selected" : "",
+							onClick: () => speech.changeSpeed(value),
+							children: value
+						}, value))
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "timer-actions",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								className: "primary",
+								disabled: !speech.supported,
+								onClick: () => {
+									setWord(null);
+									speech.read([story.title, ...story.paragraphs]);
+								},
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 18 }), "Read entire story"]
+							}),
+							busy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								className: "secondary",
+								onClick: () => speech.state.status === "paused" ? speech.resume() : speech.pause(),
+								children: [
+									speech.state.status === "paused" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 18 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { size: 18 }),
+									" ",
+									speech.state.status === "paused" ? "Resume" : "Pause"
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								className: "secondary",
+								disabled: !busy,
+								onClick: () => {
+									setWord(null);
+									speech.stop();
+								},
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 16 }), "Stop"]
+							})
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						role: "status",
+						className: "small-note",
+						children: speech.supported === false ? "Read-aloud is unavailable in this browser. All story text and quizzes still work." : speech.state.message
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "small-note",
+						children: "Uses your browser’s available English voice. Sound and word highlighting vary by browser. Changing speed restarts the current paragraph."
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "interactive-story-text",
+				children: story.paragraphs.map((p, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: word === null && speech.state.segment === i + 1 && busy ? "reading-paragraph" : "",
+					children: text(p, i + 1)
+				}, i))
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "story-questions",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Let’s talk about it" }),
+					story.ask.map((q) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: q }, q)),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Words to discover" }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: story.words })
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(StoryQuiz, { index }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "small-note",
+				children: "An original The James NZ story."
+			})
+		]
+	});
+}
+function StoryQuiz({ index }) {
+	const questions = storyQuizzes[index];
+	const [answers, setAnswers] = (0, import_react.useState)({}), [checked, setChecked] = (0, import_react.useState)(false);
+	const score = questions.reduce((n, q, i) => n + (answers[i] === q.answer ? 1 : 0), 0);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		className: "story-quiz",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "eyebrow",
+				children: "A LITTLE DISCOVERY"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Story quiz" }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Three easy questions. Take your time, and look back at the story whenever you like." }),
+			questions.map((q, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("fieldset", { children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("legend", { children: [
+					i + 1,
+					". ",
+					q.q
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "answers",
+					children: q.options.map((value, j) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						type: "button",
+						disabled: checked,
+						"aria-pressed": answers[i] === j,
+						className: checked ? j === q.answer ? "correct" : answers[i] === j ? "incorrect" : "" : answers[i] === j ? "selected" : "",
+						onClick: () => setAnswers((v) => ({
+							...v,
+							[i]: j
+						})),
+						children: value
+					}, value))
+				}),
+				checked && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+					className: "quiz-explanation",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: answers[i] === q.answer ? "That’s right!" : "A little clue for next time:" }),
+						" ",
+						q.why
+					]
+				})
+			] }, q.q)),
+			checked ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+				role: "status",
+				children: [
+					"You got ",
+					score,
+					" of ",
+					questions.length,
+					" right. ",
+					score === questions.length ? "Lovely reading!" : "Every answer helps you learn. You can read again and have another go."
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: "secondary",
+				onClick: () => {
+					setAnswers({});
+					setChecked(false);
+				},
+				children: "Try quiz again"
+			})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: "primary",
+				disabled: Object.keys(answers).length !== questions.length,
+				onClick: () => setChecked(true),
+				children: "Check my answers"
+			})
+		]
+	});
+}
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-compose-refs@1.1.5_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-compose-refs/dist/index.mjs
 var __defProp$30 = Object.defineProperty;
@@ -10984,48 +13234,8 @@ var createSlottableError = /* @__PURE__ */ __name$29((ownerName) => {
 }, "createSlottableError");
 var use = import_react[" use ".trim().toString()];
 //#endregion
-//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react-jsx-runtime.production.js
-/**
-* @license React
-* react-jsx-runtime.production.js
-*
-* Copyright (c) Meta Platforms, Inc. and affiliates.
-*
-* This source code is licensed under the MIT license found in the
-* LICENSE file in the root directory of this source tree.
-*/
-var require_react_jsx_runtime_production = /* @__PURE__ */ __commonJSMin(((exports) => {
-	var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-	function jsxProd(type, config, maybeKey) {
-		var key = null;
-		void 0 !== maybeKey && (key = "" + maybeKey);
-		void 0 !== config.key && (key = "" + config.key);
-		if ("key" in config) {
-			maybeKey = {};
-			for (var propName in config) "key" !== propName && (maybeKey[propName] = config[propName]);
-		} else maybeKey = config;
-		config = maybeKey.ref;
-		return {
-			$$typeof: REACT_ELEMENT_TYPE,
-			type,
-			key,
-			ref: void 0 !== config ? config : null,
-			props: maybeKey
-		};
-	}
-	exports.Fragment = REACT_FRAGMENT_TYPE;
-	exports.jsx = jsxProd;
-	exports.jsxs = jsxProd;
-}));
-//#endregion
-//#region node_modules/.pnpm/react@19.2.6/node_modules/react/jsx-runtime.js
-var require_jsx_runtime = /* @__PURE__ */ __commonJSMin(((exports, module) => {
-	module.exports = require_react_jsx_runtime_production();
-}));
-//#endregion
 //#region node_modules/.pnpm/@radix-ui+react-primitive@2.1.10_@types+react-dom@19.2.3_@types+react@19.2.14__@types+r_27cc90bfdf39cd858b25dc435d408769/node_modules/@radix-ui/react-primitive/dist/index.mjs
 var import_react_dom = /* @__PURE__ */ __toESM(require_react_dom(), 1);
-var import_jsx_runtime = require_jsx_runtime();
 var __defProp$28 = Object.defineProperty;
 var __name$28 = (target, value) => __defProp$28(target, "name", {
 	value,
@@ -17975,7 +20185,6 @@ var Trigger = TabsTrigger$1;
 var Content = TabsContent$1;
 //#endregion
 //#region node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
-var import_client = require_client();
 function r$1(e) {
 	var t, f, n = "";
 	if ("string" == typeof e || "number" == typeof e) n += e;
@@ -21374,6 +23583,694 @@ function cn$1(...inputs) {
 	return twMerge(clsx(inputs));
 }
 //#endregion
+//#region components/ui/progress.tsx
+function Progress({ className, value, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root$1, {
+		"data-slot": "progress",
+		value,
+		className: cn$1("relative h-2 w-full overflow-hidden rounded-full bg-primary/20", className),
+		...props,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Indicator, {
+			"data-slot": "progress-indicator",
+			className: "h-full w-full flex-1 bg-primary transition-all",
+			style: { transform: `translateX(-${100 - (value ?? 0)}%)` }
+		})
+	});
+}
+//#endregion
+//#region app/mindfulness.tsx
+var who = "https://tdr.who.int/home/our-work/global-engagement/9789240003927";
+var mindfulnessExercises = [
+	{
+		id: "leaves",
+		title: "Leaves on a Stream",
+		kind: "COGNITIVE DEFUSION",
+		icon: Leaf,
+		summary: "Notice thoughts without needing to chase or remove them.",
+		source: "US Department of Veterans Affairs · exercise guide",
+		url: "https://www.ptsd.va.gov/gethelp/captions/Track03_LeavesOnTheStream.pdf",
+		steps: [
+			"Sit somewhere comfortable and safe. Keep your eyes open if you prefer. Imagine a gentle stream; you do not need to visit real water.",
+			"Notice a thought. Imagine placing its words or picture on a leaf floating along the stream. Pleasant and difficult thoughts can both have leaves.",
+			"Let the leaf move at its own pace. You do not have to force the thought away or make the stream flow faster.",
+			"If you get caught in a thought, gently notice that. Return to watching. A thought about doing this wrong can have a leaf too.",
+			"Come back to the room. Notice your feet and one nearby sound. Choose a small, kind next step."
+		]
+	},
+	{
+		id: "grounding",
+		title: "Feet on the floor",
+		kind: "MINDFULNESS",
+		icon: Footprints,
+		summary: "Bring attention gently back to the room.",
+		source: "WHO · grounding guidance",
+		url: who,
+		steps: [
+			"Notice your feet touching the floor and your body’s support.",
+			"Breathe naturally. Look around and name three things you see.",
+			"Notice two sounds and one comfortable point of contact.",
+			"Choose one small task, bringing your attention back gently."
+		]
+	},
+	{
+		id: "thought",
+		title: "I notice the thought…",
+		kind: "COGNITIVE DEFUSION",
+		icon: MessageCircle,
+		summary: "Practise hearing a thought as a thought.",
+		source: "WHO · noticing, naming and unhooking",
+		url: who,
+		steps: [
+			"Choose an ordinary thought, such as “I might make a mistake.”",
+			"Say: “I notice I am having the thought that…”",
+			"Notice the wording. You need not debate or obey the thought.",
+			"Return attention to your surroundings and a useful next action."
+		]
+	},
+	{
+		id: "feelings",
+		title: "Name it, make room",
+		kind: "MINDFULNESS",
+		icon: Sun,
+		summary: "Notice a feeling without rushing to change it.",
+		source: "WHO · making room guidance",
+		url: who,
+		steps: [
+			"Gently name a feeling: worry, excitement, frustration, or something else.",
+			"Notice where it feels present, without forcing yourself to examine it.",
+			"Let your breathing be ordinary. Allow some room around the feeling.",
+			"Look around again. Choose a caring action while the feeling is here."
+		]
+	},
+	{
+		id: "kindness",
+		title: "A kind next step",
+		kind: "MINDFULNESS",
+		icon: Heart,
+		summary: "Respond to a busy mind with kindness.",
+		source: "WHO · kindness and values guidance",
+		url: who,
+		steps: [
+			"Notice whether your mind is speaking harshly to you.",
+			"Try one kind sentence you would offer a friend.",
+			"Choose a small action that matters: listen, rest, or ask for help.",
+			"You can act kindly without waiting for every thought to change."
+		]
+	}
+];
+function MindfulnessExercises() {
+	const [selected, setSelected] = (0, import_react.useState)("leaves"), [step, setStep] = (0, import_react.useState)(0), [started, setStarted] = (0, import_react.useState)(false), [done, setDone] = (0, import_react.useState)(false);
+	const speech = useSpeech();
+	const exercise = mindfulnessExercises.find((e) => e.id === selected);
+	const audioBusy = speech.state.status === "reading" || speech.state.status === "paused";
+	(0, import_react.useEffect)(() => {
+		if (speech.state.status === "reading" && speech.state.segment > 0) {
+			setStarted(true);
+			setDone(false);
+			setStep(Math.min(speech.state.segment - 1, exercise.steps.length - 1));
+		}
+	}, [
+		speech.state.segment,
+		speech.state.status,
+		exercise.steps.length
+	]);
+	function reset() {
+		speech.stop();
+		setStep(0);
+		setStarted(false);
+		setDone(false);
+	}
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		className: "mindfulness-panel",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "section-row",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "eyebrow",
+					children: "PAUSE WITH KINDNESS"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Mindfulness & noticing thoughts" })] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Leaf, { size: 32 })]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Cognitive defusion means noticing thoughts as thoughts. These short, original guided adaptations invite observation, rather than trying to make thoughts disappear." }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "mindfulness-choices",
+				children: mindfulnessExercises.map((e) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+					"aria-pressed": selected === e.id,
+					className: "mindfulness-choice" + (selected === e.id ? " selected" : ""),
+					onClick: () => {
+						setSelected(e.id);
+						reset();
+					},
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(e.icon, { size: 21 }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: e.title }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: e.kind === "COGNITIVE DEFUSION" ? "Noticing thoughts" : "Mindful attention" })] })]
+				}, e.id))
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+				className: "mindfulness-guide",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "eyebrow",
+						children: exercise.kind
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: exercise.title }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: exercise.summary }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+						className: "story-audio mindfulness-audio",
+						"aria-label": "Mindfulness audio",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h4", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 20 }), "Listen to the guide"] }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "filters",
+								"aria-label": "Mindfulness reading speed",
+								children: Object.keys(readingSpeeds).map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									className: speech.speed === v ? "selected" : "",
+									"aria-pressed": speech.speed === v,
+									onClick: () => speech.changeSpeed(v),
+									children: v
+								}, v))
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "timer-actions",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										className: "primary",
+										disabled: !speech.supported,
+										onClick: () => {
+											setStarted(true);
+											setDone(false);
+											speech.read([exercise.title, ...exercise.steps]);
+										},
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }), "Read entire exercise"]
+									}),
+									audioBusy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										className: "secondary",
+										onClick: () => speech.state.status === "paused" ? speech.resume() : speech.pause(),
+										children: [
+											speech.state.status === "paused" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { size: 17 }),
+											" ",
+											speech.state.status === "paused" ? "Resume" : "Pause"
+										]
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										className: "secondary",
+										disabled: !audioBusy,
+										onClick: speech.stop,
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 16 }), "Stop audio"]
+									})
+								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "small-note",
+								role: "status",
+								children: speech.supported === false ? "Audio is unavailable in this browser. Follow the written steps below." : speech.state.message
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "small-note",
+								children: "Pause whenever you need more time. Changing speed restarts the current step. Uses your browser’s available voice."
+							})
+						]
+					}),
+					!started && !done ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Follow one step at a time. Stay with each step as long as you like." }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "primary",
+						onClick: () => setStarted(true),
+						children: "Begin exercise"
+					})] }) : done ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						role: "status",
+						children: "You made a little space to notice. There is no perfect score here."
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "secondary",
+						onClick: reset,
+						children: "Start again"
+					})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+							className: "pill",
+							children: [
+								"STEP ",
+								step + 1,
+								" OF ",
+								exercise.steps.length
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Progress, {
+							value: (step + 1) / exercise.steps.length * 100,
+							"aria-label": "Exercise progress"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mindfulness-instruction",
+							"aria-live": "polite",
+							children: exercise.steps[step]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "timer-actions",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									className: "secondary",
+									disabled: step === 0,
+									onClick: () => {
+										speech.stop();
+										setStep((v) => v - 1);
+									},
+									children: "Previous step"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									className: "primary",
+									onClick: () => {
+										speech.stop();
+										step === exercise.steps.length - 1 ? setDone(true) : setStep((v) => v + 1);
+									},
+									children: step === exercise.steps.length - 1 ? "Finish exercise" : "Next step"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									className: "secondary",
+									onClick: reset,
+									children: "Stop exercise"
+								})
+							]
+						})
+					] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						className: "exercise-source",
+						href: exercise.url,
+						target: "_blank",
+						rel: "noopener noreferrer",
+						children: exercise.source
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "small-note",
+				children: "Children can practise with a trusted grown-up. Keep your eyes open, skip a step or stop if it feels uncomfortable. These are general wellbeing practices, not treatment; seek support from someone you trust or a health professional if you need it."
+			})
+		]
+	});
+}
+//#endregion
+//#region app/coffee-content.ts
+var coffeeFacts = [
+	{
+		title: "A bean that is really a seed",
+		text: "Coffee beans are seeds inside the fruit of a coffee tree. That fruit is called a coffee cherry."
+	},
+	{
+		title: "Two familiar names",
+		text: "Arabica and robusta are the two most common coffee plant species used for coffee."
+	},
+	{
+		title: "Before the brown bean",
+		text: "Raw coffee beans are green. Roasting changes them into the fragrant brown beans we recognise."
+	},
+	{
+		title: "A journey from fruit to cup",
+		text: "Coffee processing removes seeds from the cherries. The seeds are then dried and roasted before brewing."
+	},
+	{
+		title: "More than one way to process",
+		text: "Natural, washed and honey processing are different ways of preparing coffee cherries. Processing helps shape the flavour."
+	},
+	{
+		title: "Decaf still comes from coffee",
+		text: "Decaf is coffee with most of its caffeine removed. It begins with coffee beans too."
+	}
+].map((f) => ({
+	...f,
+	source: "https://www.aboutcoffee.org/beans/"
+}));
+var coffeeQuotes = [
+	"A warm cup, a kind word, a fresh beginning.",
+	"Let the coffee cool while the conversation warms.",
+	"A small pause can make room for a better day.",
+	"Pour a little patience into your morning.",
+	"Good company is the best thing beside a coffee cup.",
+	"Some mornings begin with coffee; every morning can begin with kindness.",
+	"There is room at this table for your story.",
+	"Take your time. Even a little cup can hold a lovely moment."
+];
+coffeeFacts.push(...[
+	{
+		"title": "Arabica’s roots",
+		"text": "Arabica coffee traces its origins to Ethiopia.",
+		"source": "https://www.aboutcoffee.org/beans/varieties/"
+	},
+	{
+		"title": "Robusta’s scientific name",
+		"text": "Robusta coffee is associated with the species Coffea canephora.",
+		"source": "https://www.aboutcoffee.org/beans/varieties/"
+	},
+	{
+		"title": "Different bean shapes",
+		"text": "Arabica beans are generally flatter and more elongated than robusta beans.",
+		"source": "https://www.aboutcoffee.org/beans/varieties/"
+	},
+	{
+		"title": "More than the species",
+		"text": "Soil, climate and altitude help influence a coffee’s flavour.",
+		"source": "https://www.aboutcoffee.org/beans/varieties/"
+	},
+	{
+		"title": "A word for place",
+		"text": "Terroir describes growing conditions that contribute to a coffee’s character.",
+		"source": "https://www.aboutcoffee.org/beans/varieties/"
+	},
+	{
+		"title": "What single-origin means",
+		"text": "Single-origin coffee comes from one farm, region or country.",
+		"source": "https://www.aboutcoffee.org/beans/varieties/"
+	},
+	{
+		"title": "Body in a cup",
+		"text": "Coffee’s body refers to its texture and thickness.",
+		"source": "https://www.aboutcoffee.org/beans/varieties/"
+	},
+	{
+		"title": "Growing preferences",
+		"text": "Arabica generally prefers cooler growing conditions than robusta.",
+		"source": "https://www.aboutcoffee.org/beans/varieties/"
+	},
+	{
+		"title": "Heat changes the bean",
+		"text": "Roasting uses heat to develop coffee’s familiar aroma and flavour.",
+		"source": "https://www.aboutcoffee.org/beans/roasts/"
+	},
+	{
+		"title": "Light, medium, dark",
+		"text": "Roasts are commonly grouped into light, medium and dark categories.",
+		"source": "https://www.aboutcoffee.org/beans/roasts/"
+	},
+	{
+		"title": "A matte surface",
+		"text": "Light-roasted beans usually have a matte surface.",
+		"source": "https://www.aboutcoffee.org/beans/roasts/"
+	},
+	{
+		"title": "An oily sheen",
+		"text": "Dark-roasted beans often have an oily surface.",
+		"source": "https://www.aboutcoffee.org/beans/roasts/"
+	},
+	{
+		"title": "Names can vary",
+		"text": "Roast names and darkness can differ between roasters.",
+		"source": "https://www.aboutcoffee.org/beans/roasts/"
+	},
+	{
+		"title": "Espresso roast is flexible",
+		"text": "An espresso roast is chosen for that brewing method; it is not one fixed roast level.",
+		"source": "https://www.aboutcoffee.org/beans/roasts/"
+	},
+	{
+		"title": "Espresso is a method",
+		"text": "Espresso names a brewing method, rather than a particular bean species.",
+		"source": "https://www.aboutcoffee.org/brewing/espresso/"
+	},
+	{
+		"title": "Pressure at work",
+		"text": "Espresso uses pressure to push hot water through finely ground coffee.",
+		"source": "https://www.aboutcoffee.org/brewing/espresso/"
+	},
+	{
+		"title": "The golden top",
+		"text": "The golden-brown top layer on an espresso is called crema.",
+		"source": "https://www.aboutcoffee.org/brewing/espresso/"
+	},
+	{
+		"title": "A latte’s starting point",
+		"text": "Espresso shots are used to make lattes and cappuccinos.",
+		"source": "https://www.aboutcoffee.org/brewing/espresso/"
+	},
+	{
+		"title": "A concentrated cup",
+		"text": "Espresso has a denser, more concentrated flavour than many brewed coffees.",
+		"source": "https://www.aboutcoffee.org/brewing/espresso/"
+	},
+	{
+		"title": "Grinding for espresso",
+		"text": "Espresso brewing uses finely ground coffee.",
+		"source": "https://www.aboutcoffee.org/brewing/espresso/"
+	},
+	{
+		"title": "Keep the light out",
+		"text": "An opaque container protects coffee from light during storage.",
+		"source": "https://www.aboutcoffee.org/beans/storage-and-shelf-life/"
+	},
+	{
+		"title": "Air matters",
+		"text": "An airtight container helps preserve roasted coffee’s freshness.",
+		"source": "https://www.aboutcoffee.org/beans/storage-and-shelf-life/"
+	},
+	{
+		"title": "Cool cupboard, happy beans",
+		"text": "A cool, dark storage spot helps protect coffee’s flavour.",
+		"source": "https://www.aboutcoffee.org/beans/storage-and-shelf-life/"
+	},
+	{
+		"title": "Freshly ground",
+		"text": "Grinding only what you need just before brewing helps preserve freshness.",
+		"source": "https://www.aboutcoffee.org/beans/storage-and-shelf-life/"
+	}
+]);
+coffeeQuotes.push(...[
+	"Let your first sip remind you to begin gently.",
+	"Coffee is a lovely excuse to sit beside someone you love.",
+	"The kettle can wait; a kind hello cannot.",
+	"A coffee break is a small invitation to notice your day.",
+	"Warm hands, an open heart, a little time together.",
+	"Make your morning generous before you make it busy.",
+	"There is no hurry in a conversation worth having.",
+	"Save a seat, pour a cup, welcome a story.",
+	"A favourite mug can hold a new beginning.",
+	"Coffee tastes better when nobody has to rush away.",
+	"May your cup be warm and your words gentle.",
+	"A shared table turns a drink into a memory.",
+	"Let the aroma call you back to this moment.",
+	"Some of the best plans begin over a small cup.",
+	"Bring your whole self to the table, even on tired mornings.",
+	"Coffee and patience both deserve a little time.",
+	"A good morning can start with a grateful pause.",
+	"Your cup does not need to be perfect to be enjoyed.",
+	"Meet the day one sip and one kind choice at a time.",
+	"A quiet coffee can be a cheerful companion.",
+	"The nicest addition to a cup is a listening ear.",
+	"A coffee shared with Dad can become a story retold.",
+	"Mom’s warm bread and a coffee make an ordinary table special.",
+	"Let a coffee break leave room for laughter.",
+	"Slow down enough to notice the warmth in your hands.",
+	"A little pause can help you hear yourself again.",
+	"Offer someone your attention along with their cup.",
+	"Coffee cannot finish the day’s tasks, but company can lighten them.",
+	"Your favourite mug is a reminder that small joys count.",
+	"A cheerful hello belongs beside every morning brew.",
+	"Leave room in the day for a friendly refill.",
+	"Let conversation be richer than the coffee.",
+	"Start with kindness; the coffee can follow.",
+	"A cup on the table says there is time for you.",
+	"The best café is wherever someone makes you welcome.",
+	"A rainy window and a warm mug make a peaceful pair.",
+	"Each morning is a new page, even with yesterday’s mug.",
+	"Sip slowly enough to enjoy what you already have.",
+	"A cup of coffee is a small reason to gather.",
+	"Notice the people who make your morning possible.",
+	"A thoughtful question can outlast the last sip.",
+	"There is comfort in a familiar cup and a fresh thought.",
+	"A coffee break can be short and still be meaningful.",
+	"Let gratitude have the first seat at the table.",
+	"A warm drink makes a lovely companion for a good book.",
+	"Coffee has a way of inviting stories to begin.",
+	"Enjoy the cup in front of you before planning the next.",
+	"A humble mug can belong to a beautiful morning.",
+	"Keep your coffee close and your kindness closer.",
+	"Make space for the person behind the cup.",
+	"A coffee invitation is another way to say you matter.",
+	"There is a little celebration in choosing your favourite mug.",
+	"Some mornings need fewer plans and more listening.",
+	"The happiest coffee break has room for everyone’s news.",
+	"Let your pause be as generous as your pour.",
+	"A morning ritual can remind you what deserves your attention.",
+	"Coffee is a beginning; kindness carries the day.",
+	"A cup enjoyed in silence can hold a peaceful moment.",
+	"Thank the hands that grew, roasted and prepared your coffee.",
+	"A café table is a good place to practise being present.",
+	"Let an ordinary coffee become an extraordinary conversation.",
+	"Your next sip is a chance to notice something lovely.",
+	"A little warmth can make a busy morning softer.",
+	"The cup will empty; a kind memory can stay.",
+	"Invite someone to sit before asking them to hurry.",
+	"Good coffee and honest conversation both reward attention.",
+	"Choose a cup you love and a thought that encourages you.",
+	"A coffee break can make room for a fresh perspective.",
+	"Find a small joy before the day finds its demands.",
+	"Keep a spare seat for an unexpected conversation.",
+	"Your morning does not need an audience to be worth enjoying.",
+	"Let the last sip be a reminder to pass kindness on."
+]);
+//#endregion
+//#region app/coffee-corner.tsx
+function CoffeeCorner() {
+	const [view, setView] = (0, import_react.useState)("Did you know?"), [fact, setFact] = (0, import_react.useState)(0), [quote, setQuote] = (0, import_react.useState)(0), [search, setSearch] = (0, import_react.useState)(""), [page, setPage] = (0, import_react.useState)(0);
+	const filteredFacts = coffeeFacts.filter((f) => (f.title + " " + f.text).toLowerCase().includes(search.toLowerCase())), filteredQuotes = coffeeQuotes.filter((q) => q.toLowerCase().includes(search.toLowerCase()));
+	const total = view === "All fun facts" ? filteredFacts.length : filteredQuotes.length;
+	const pages = Math.max(1, Math.ceil(total / 12));
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		className: "coffee-corner",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "title-row",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "eyebrow",
+						children: "A CUP OF CURIOSITY"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Coffee corner." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "30 sourced facts and 80 original quotes for your next coffee break." })
+				] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Coffee, {
+					size: 42,
+					"aria-hidden": "true"
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "filters",
+				"aria-label": "Coffee collection",
+				children: [
+					"Did you know?",
+					"All fun facts",
+					"Coffee quotes"
+				].map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					"aria-pressed": view === v,
+					className: view === v ? "selected" : "",
+					onClick: () => {
+						setView(v);
+						setSearch("");
+						setPage(0);
+					},
+					children: v
+				}, v))
+			}),
+			view !== "Did you know?" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+				className: "coffee-search",
+				children: [
+					"Search ",
+					view === "Coffee quotes" ? "quotes" : "facts",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+						type: "search",
+						value: search,
+						onChange: (e) => {
+							setSearch(e.target.value);
+							setPage(0);
+						},
+						placeholder: "Find something curious…"
+					})
+				]
+			}),
+			view === "Did you know?" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+				className: "coffee-feature",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+						className: "pill",
+						children: [
+							"DID YOU KNOW? · ",
+							fact + 1,
+							" / ",
+							coffeeFacts.length
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: coffeeFacts[fact].title }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: coffeeFacts[fact].text }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						href: coffeeFacts[fact].source,
+						target: "_blank",
+						rel: "noopener noreferrer",
+						children: "Source: National Coffee Association"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "timer-actions",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+							className: "secondary",
+							onClick: () => setFact((fact + coffeeFacts.length - 1) % coffeeFacts.length),
+							children: "Previous fact"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+							className: "primary",
+							onClick: () => setFact((fact + 1) % coffeeFacts.length),
+							children: "Next fact"
+						})]
+					})
+				]
+			}),
+			view === "All fun facts" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "quote-grid",
+				children: filteredFacts.slice(page * 12, page * 12 + 12).map((f) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+					className: "quote-card",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Coffee, {
+							size: 23,
+							"aria-hidden": "true"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: f.title }),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: f.text }),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+							href: f.source,
+							target: "_blank",
+							rel: "noopener noreferrer",
+							children: "Read the source"
+						})
+					]
+				}, f.title))
+			}),
+			view === "Coffee quotes" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+				className: "coffee-feature",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: "pill",
+						children: "WORDS FOR YOUR COFFEE BREAK"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("blockquote", { children: [
+						"“",
+						coffeeQuotes[quote],
+						"”"
+					] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "The James NZ · original coffee quote" }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "primary",
+						onClick: () => setQuote((quote + 1) % coffeeQuotes.length),
+						children: "Another warm thought"
+					})
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "quote-grid",
+				children: filteredQuotes.slice(page * 12, page * 12 + 12).map((q) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+					className: "quote-card",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("blockquote", { children: [
+						"“",
+						q,
+						"”"
+					] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", { children: "The James NZ · original" })]
+				}, q))
+			})] }),
+			view !== "Did you know?" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "coffee-pagination",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+					role: "status",
+					children: [
+						total,
+						" matches · page ",
+						page + 1,
+						" of ",
+						pages
+					]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "timer-actions",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "secondary",
+						disabled: page === 0,
+						onClick: () => setPage((v) => v - 1),
+						children: "Previous page"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "secondary",
+						disabled: page + 1 >= pages,
+						onClick: () => setPage((v) => v + 1),
+						children: "Next page"
+					})]
+				})]
+			})
+		]
+	});
+}
+//#endregion
 //#region node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs
 /**
 * Copyright 2022 Joe Bell. All rights reserved.
@@ -21571,21 +24468,6 @@ function Checkbox({ className, ...props }) {
 			"data-slot": "checkbox-indicator",
 			className: "grid place-content-center text-current transition-none",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { className: "size-3.5" })
-		})
-	});
-}
-//#endregion
-//#region components/ui/progress.tsx
-function Progress({ className, value, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root$1, {
-		"data-slot": "progress",
-		value,
-		className: cn$1("relative h-2 w-full overflow-hidden rounded-full bg-primary/20", className),
-		...props,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Indicator, {
-			"data-slot": "progress-indicator",
-			className: "h-full w-full flex-1 bg-primary transition-all",
-			style: { transform: `translateX(-${100 - (value ?? 0)}%)` }
 		})
 	});
 }
@@ -22806,23 +25688,14 @@ async function loadWeather(name, signal) {
 }
 //#endregion
 //#region app/family-outfit.tsx
-var motions = [
-	"walk",
-	"chat",
-	"play"
-];
-var labels = {
-	walk: "A family stroll",
-	chat: "Chatting on our stroll",
-	play: "Playtime with Mateo"
+var wardrobe = {
+	Casual: "./family-play-consistent.webp",
+	"Smart casual": "./family-smart-casual.png",
+	Formal: "./family-formal.png",
+	"Home clothes": "./family-home-clothes.png"
 };
-var dialogue = [
-	["Dad", "Ready for a little adventure?"],
-	["Mum", "Let’s go together!"],
-	["Girls", "Mateo’s coming too!"]
-];
-function FamilyOutfitAnimation({ kind, confirmed, manual = false }) {
-	const [moving, setMoving] = (0, import_react.useState)(true), [choice, setChoice] = (0, import_react.useState)("play"), [scene, setScene] = (0, import_react.useState)("play"), [reduced, setReduced] = (0, import_react.useState)(false), [line, setLine] = (0, import_react.useState)(0);
+function FamilyOutfitAnimation({ kind, style = "Casual", confirmed, manual = false }) {
+	const [moving, setMoving] = (0, import_react.useState)(true), [reduced, setReduced] = (0, import_react.useState)(false);
 	(0, import_react.useEffect)(() => {
 		const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
 		const update = () => setReduced(preference.matches);
@@ -22830,68 +25703,28 @@ function FamilyOutfitAnimation({ kind, confirmed, manual = false }) {
 		preference.addEventListener("change", update);
 		return () => preference.removeEventListener("change", update);
 	}, []);
-	(0, import_react.useEffect)(() => {
-		if (choice !== "day" || !moving || reduced) return;
-		const timer = setInterval(() => setScene((v) => motions[(motions.indexOf(v) + 1) % motions.length]), 8e3);
-		return () => clearInterval(timer);
-	}, [
-		choice,
-		moving,
-		reduced
-	]);
-	const motion = choice === "day" ? scene : choice;
-	(0, import_react.useEffect)(() => {
-		if (motion !== "chat" || !moving || reduced) return;
-		setLine(0);
-		const timer = setInterval(() => setLine((v) => (v + 1) % dialogue.length), 2500);
-		return () => clearInterval(timer);
-	}, [
-		motion,
-		moving,
-		reduced
-	]);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
 		className: "family-outfit-figure",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "family-motion-stage " + (moving && !reduced ? "running" : ""),
+				className: "family-motion-stage",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "family-outfit-animation " + kind + " " + motion + (moving && !reduced ? " moving" : ""),
+					"data-outfit-style": style,
+					className: "family-outfit-animation " + kind + " play" + (moving && !reduced ? " moving" : ""),
+					style: { backgroundImage: `url("${wardrobe[style]}")` },
 					role: "img",
-					"aria-label": "The James family: dad, mum, two daughters, baby girl and Mateo the Labrador " + (motion === "walk" ? "walking together" : motion === "chat" ? "strolling with pretend on-screen conversation" : "playing together") + ", wearing " + (kind === "rain" ? "rainwear" : kind === "cold" ? "warm layers" : "light everyday clothes")
-				})
+					"aria-label": "Dad, Mom, Sue, Rae, Mye and Mateo playing together in " + style.toLowerCase() + " clothes with " + (kind === "rain" ? "waterproof coats" : kind === "cold" ? "warm layers" : "light layers")
+				}, style)
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "family-scene-label",
-				children: labels[motion]
-			}),
-			motion === "chat" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-				className: "family-dialogue",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: dialogue[line][0] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: dialogue[line][1] })]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "family-motion-controls",
-				role: "group",
-				"aria-label": "Family animation activity",
-				children: [
-					["day", "Family day"],
-					["walk", "Walk"],
-					["chat", "Chat"],
-					["play", "Play"]
-				].map(([value, label]) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					className: "secondary" + (choice === value ? " active" : ""),
-					"aria-pressed": choice === value,
-					onClick: () => {
-						setChoice(value);
-						if (value === "day") setScene("walk");
-					},
-					children: label
-				}, value))
+				children: "Playtime with Mateo"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figcaption", { children: [
-				"AI family animation · ",
+				style,
+				" · ",
 				manual ? "your selected weather look" : confirmed ? "clothes matched to the outfit forecast" : "general inspiration while outfit weather is unavailable",
-				". Silent scenes and pretend on-screen conversation inspired by our family."
+				". AI animation inspired by our family."
 			] }),
 			reduced ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "small-note",
@@ -23026,15 +25859,28 @@ function WeatherOutfits() {
 		return () => controller.abort();
 	}, [location, tick]);
 	const kind = outfitChoice === "auto" ? weatherOutfit(weather) : outfitChoice, cold = kind === "cold", rain = kind === "rain";
-	const clothes = style === "Smart casual" ? [
-		"Dad: collared shirt, comfortable chinos and tidy closed shoes.",
-		"Mum: blouse or knit top with trousers or a comfortable midi skirt.",
-		"Older girls: comfortable tops with trousers or knee-length skirts, plus shoes suitable for play."
-	] : [
-		"Dad: cotton tee, relaxed trousers and walking shoes.",
-		"Mum: breathable tee, comfortable trousers and trainers.",
-		"Older girls: tees with comfortable trousers or shorts and secure trainers."
-	];
+	const suggestions = {
+		"Casual": [
+			"Dad: cotton tee, relaxed trousers and walking shoes.",
+			"Mom: breathable tee, comfortable trousers and trainers.",
+			"Sue & Rae: tees, comfortable trousers or shorts and secure trainers."
+		],
+		"Smart casual": [
+			"Dad: collared shirt, chinos and tidy closed shoes.",
+			"Mom: blouse or knit top with trousers or a comfortable midi skirt.",
+			"Sue & Rae: tidy tops with trousers or knee-length skirts and comfortable shoes."
+		],
+		"Formal": [
+			"Dad: a suit or blazer, collared shirt and polished shoes.",
+			"Mom: a modest comfortable dress or tailored outfit with stable shoes.",
+			"Sue & Rae: occasion dresses or tidy separates with shoes they can move in."
+		],
+		"Home clothes": [
+			"Dad: soft tee and comfortable joggers.",
+			"Mom: relaxed top, lounge trousers and a cosy cardigan when needed.",
+			"Sue & Rae: soft tees and stretchy play clothes with non-slip indoor footwear."
+		]
+	}[style];
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "title-row",
@@ -23166,7 +26012,12 @@ function WeatherOutfits() {
 		}) }),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "filters",
-			children: ["Casual", "Smart casual"].map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			children: [
+				"Casual",
+				"Smart casual",
+				"Formal",
+				"Home clothes"
+			].map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				className: style === s ? "selected" : "",
 				"aria-pressed": style === s,
 				onClick: () => setStyle(s),
@@ -23176,6 +26027,7 @@ function WeatherOutfits() {
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "outfit-panel",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FamilyOutfitAnimation, {
+				style,
 				kind,
 				confirmed: !!weather && outfitChoice === "auto",
 				manual: outfitChoice !== "auto"
@@ -23218,7 +26070,7 @@ function WeatherOutfits() {
 					children: "You selected this look. Return to Automatic to follow the outfit forecast."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", { children: [
-					clothes.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: s }, s)),
+					suggestions.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: s }, s)),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: rain ? "Everyone: add a waterproof jacket and grippy waterproof shoes; carry a dry layer." : cold ? "Everyone: add a warm knit, jacket and socks; use a hat if you feel cold." : "Everyone: carry a light jacket for the cooler morning or evening." }),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Baby: comfortable clothes, with an extra layer available. Keep her face uncovered and avoid overheating." }),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Labrador: a comfortable harness, lead and fresh water. Check pavement temperature before a walk." })
@@ -23226,7 +26078,7 @@ function WeatherOutfits() {
 				(weather?.daily.uv ?? 0) >= 3 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "UV reaches 3 or higher: bring a sunhat and use sun protection." }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "small-note",
-					children: "Illustrations show a general weather look. Use the checklist for your chosen style. Adjust layers to your comfort; check severe weather alerts before outdoor plans."
+					children: "The animation changes with your clothing style and weather selection. Home clothes are for indoors; add suitable shoes and outer layers before going out. Adjust layers to your comfort; check severe weather alerts before outdoor plans."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: "https://www.metservice.com/warnings/home",
@@ -24800,12 +27652,248 @@ function Workouts() {
 	] });
 }
 //#endregion
+//#region app/use-voice-input.ts
+function useVoiceInput(onTranscript) {
+	const [supported, setSupported] = (0, import_react.useState)(null), [listening, setListening] = (0, import_react.useState)(false), [message, setMessage] = (0, import_react.useState)("");
+	const active = (0, import_react.useRef)(null), callback = (0, import_react.useRef)(onTranscript);
+	callback.current = onTranscript;
+	(0, import_react.useEffect)(() => {
+		const w = window;
+		setSupported(!!(w.SpeechRecognition || w.webkitSpeechRecognition));
+		return () => {
+			const r = active.current;
+			active.current = null;
+			if (r) {
+				r.onresult = null;
+				r.onerror = null;
+				r.onend = null;
+				r.onstart = null;
+				r.abort();
+			}
+		};
+	}, []);
+	function stop() {
+		const r = active.current;
+		active.current = null;
+		r?.abort();
+		setListening(false);
+		setMessage("Microphone stopped.");
+	}
+	function start() {
+		if (active.current) return;
+		const w = window;
+		const C = w.SpeechRecognition || w.webkitSpeechRecognition;
+		if (!C) {
+			setMessage("Voice input is unavailable here. Please type your message.");
+			return;
+		}
+		const r = new C();
+		active.current = r;
+		r.lang = "en-NZ";
+		r.continuous = false;
+		r.interimResults = false;
+		r.maxAlternatives = 1;
+		let received = false;
+		r.onstart = () => {
+			if (active.current === r) {
+				setListening(true);
+				setMessage("Listening… Say your message.");
+			}
+		};
+		r.onresult = (e) => {
+			if (active.current !== r || received) return;
+			const transcript = Array.from(e.results).filter((v) => v.isFinal).map((v) => v[0].transcript).join(" ").trim();
+			if (!transcript) return;
+			received = true;
+			active.current = null;
+			r.abort();
+			setListening(false);
+			setMessage("Message heard. Mateo is replying.");
+			callback.current(transcript);
+		};
+		r.onerror = (e) => {
+			if (active.current !== r) return;
+			active.current = null;
+			setListening(false);
+			setMessage(e.error === "not-allowed" || e.error === "service-not-allowed" ? "Microphone access was not allowed. You can type instead." : e.error === "no-speech" ? "I did not hear a message. Tap Talk to Mateo and try again." : "Voice input could not connect. Please try again or type your message.");
+		};
+		r.onend = () => {
+			if (active.current === r) {
+				active.current = null;
+				setListening(false);
+				setMessage("Listening ended. Tap Talk to Mateo to try again.");
+			}
+		};
+		try {
+			setListening(true);
+			setMessage("Opening microphone…");
+			r.start();
+		} catch {
+			active.current = null;
+			setListening(false);
+			setMessage("The microphone could not start. Please try again or type your message.");
+		}
+	}
+	return {
+		supported,
+		listening,
+		message,
+		start,
+		stop
+	};
+}
+//#endregion
+//#region app/mateo-encouragement.ts
+var messages = {
+	calm: {
+		words: /anxious|anxiety|stress|worried|worry|overwhelm|panic|sad|depress|tired|lonely/i,
+		quotes: [
+			"You can begin gently. One small step is enough for this moment.",
+			"A difficult day does not take away your worth. There is room to rest and ask for company.",
+			"You do not need to carry every worry at once. Let this next moment be a little gentler."
+		],
+		prayer: "Loving God, meet me in this unsettled moment. Give me peace for the next breath, courage to ask for support, and patience with myself. Help me notice the people who care for me. Amen."
+	},
+	family: {
+		words: /family|parent|mum|mom|mother|dad|father|child|kid|baby|daughter/i,
+		quotes: [
+			"Small moments of kindness help a family grow: a patient answer, a shared laugh, a listening ear.",
+			"You do not have to be a perfect parent to offer love. Begin again with kindness.",
+			"A little attention can become a child’s favourite memory."
+		],
+		prayer: "Dear God, bless our family with patience, gentle words and listening hearts. Guide Dad, Mom and every child in our care. Help us make room for one another and begin again when we make mistakes. Amen."
+	},
+	goals: {
+		words: /goal|study|learn|work|motivat|exam|start|success|fail|try/i,
+		quotes: [
+			"Progress often begins with a small task done with care.",
+			"You may be learning slowly and still be moving forward.",
+			"An unfinished goal is an invitation to choose your next manageable step."
+		],
+		prayer: "God of wisdom, guide the work before me. Give me focus for one task, courage to keep learning and humility to ask for help. Let my effort be honest and my next step kind. Amen."
+	},
+	thanks: {
+		words: /thank|grateful|gratitude|happy|joy|bless/i,
+		quotes: [
+			"Notice one good thing today, however small. It deserves a place in your story.",
+			"Gratitude makes room for joy without asking us to ignore what is hard.",
+			"A thankful heart can begin with an ordinary moment shared."
+		],
+		prayer: "Generous God, thank You for the small gifts of this day: a kind word, a shared meal, a moment of rest. Help me recognise goodness and pass kindness on to someone else. Amen."
+	},
+	healing: {
+		words: /heal|sick|illness|hospital|pain|recover/i,
+		quotes: [
+			"Needing care is part of being human. You are worthy of gentleness and support.",
+			"Let today’s strength be enough for today. Rest can belong to the journey.",
+			"A caring presence can bring comfort even when answers take time."
+		],
+		prayer: "Compassionate God, be close to those who are unwell. Bring comfort, strength and loving care. Guide the people supporting them, and help us offer patient companionship. Amen."
+	},
+	grief: {
+		words: /departed|died|death|grief|griev|loss|miss someone/i,
+		quotes: [
+			"Love leaves memories that deserve tenderness. Take your time with them.",
+			"There is no need to hurry a grieving heart. Company and kindness can share the path.",
+			"Remembering someone with love can be a quiet act of gratitude."
+		],
+		prayer: "Merciful God, receive our loved ones who have died into Your care. Comfort those who mourn, hold our memories tenderly and help us support one another with love. Amen."
+	},
+	faith: {
+		words: /faith|hope|god|jesus|spirit|petition|intention|jude/i,
+		quotes: [
+			"Hope can be a quiet light: enough to help you take the next step.",
+			"Faith can begin with a simple honest prayer and a willing heart.",
+			"Let kindness be one way you live the hope you carry."
+		],
+		prayer: "Loving God, I bring You the intention on my heart. Give me wisdom, courage and patience. Help me trust Your care and respond with kindness to the people around me. Amen."
+	},
+	everyday: {
+		words: /.*/,
+		quotes: [
+			"A little kindness can change the shape of an ordinary day.",
+			"Begin where you are, with what you have, and let one caring step count.",
+			"Your worth is greater than your to-do list. Make room for something that nourishes you."
+		],
+		prayer: "Dear God, walk with me through this day. Help me speak gently, act wisely and notice opportunities to care. Give me hope for what is ahead and gratitude for what is here. Amen."
+	}
+};
+function mateoEncouragement(text, mode, index = 0) {
+	const entry = Object.values(messages).find((v) => v.words.test(text));
+	const prayer = mode === "Prayer" || mode === "Automatic" && /pray|prayer|amen|intercession/i.test(text);
+	const body = prayer ? entry.prayer : "“" + entry.quotes[index % entry.quotes.length] + "”";
+	return {
+		kind: prayer ? "prayer" : "quote",
+		content: "Thank you for sharing. " + (prayer ? "Here is a short prayer you can make your own." : "Here is a little encouragement for you.") + "\n\n" + body + "\n\nThe James NZ · original " + (prayer ? "prayer" : "quote")
+	};
+}
+//#endregion
+//#region app/mateo-local-reply.ts
+function mateoLocalReply(text, mode, index = 0, now = /* @__PURE__ */ new Date()) {
+	if (mode !== "Automatic") return mateoEncouragement(text, mode, index);
+	const normalized = text.trim().toLowerCase().replace(/[.!?]+$/, "");
+	if (/^(hello|hi|hey|kia ora|good morning|good evening)( mateo)?$/.test(normalized)) return {
+		kind: "chat",
+		content: "Hello! It is lovely to hear from you. I’m Mateo. Would you like a little encouragement, a prayer, or a coffee fact?"
+	};
+	if (/^(thanks|thank you|thank you mateo|thanks mateo)$/.test(normalized)) return {
+		kind: "chat",
+		content: "You are very welcome. I’m happy to share a little kindness with you. What would you like next?"
+	};
+	if (/what (can you do|do you do)|how (can|do) (you|i) (help|use)|help me use/i.test(text)) return {
+		kind: "chat",
+		content: "You can ask me for an inspirational quote, a short prayer, a coffee fact, or the time in New Zealand. Tap Talk to Mateo, say your question, and I will reply. You can type your message too."
+	};
+	if (/\bcoffee\b/.test(normalized) && /fact|did you know|learn|tell me about/.test(normalized)) {
+		const f = coffeeFacts[index % coffeeFacts.length];
+		return {
+			kind: "fact",
+			content: "Of course! " + f.title + ". " + f.text + "\n\nSource: National Coffee Association. Explore Coffee Corner to read more."
+		};
+	}
+	if (/\bcoffee\b/.test(normalized) && /quote|inspir|encourag/.test(normalized)) return {
+		kind: "quote",
+		content: "Here is a warm thought for your coffee break.\n\n“" + coffeeQuotes[index % coffeeQuotes.length] + "”\n\nThe James NZ · original coffee quote"
+	};
+	if (/what(?:’s|'s| is)? (?:the )?time|what time is it/.test(normalized)) return {
+		kind: "chat",
+		content: "The time in New Zealand is " + new Intl.DateTimeFormat("en-NZ", {
+			timeZone: "Pacific/Auckland",
+			hour: "numeric",
+			minute: "2-digit"
+		}).format(now) + "."
+	};
+	if (/what(?:’s|'s| is)? (?:the )?date|what day is (it|today)/.test(normalized)) return {
+		kind: "chat",
+		content: "In New Zealand, it is " + new Intl.DateTimeFormat("en-NZ", {
+			timeZone: "Pacific/Auckland",
+			weekday: "long",
+			day: "numeric",
+			month: "long",
+			year: "numeric"
+		}).format(now) + "."
+	};
+	return mateoEncouragement(text, mode, index);
+}
+//#endregion
 //#region app/ai-friend.tsx
 function AIFriend({ canEdit }) {
-	const [action, setAction] = (0, import_react.useState)("smile"), [moving, setMoving] = (0, import_react.useState)(true), [messages, setMessages] = (0, import_react.useState)([]), [text, setText] = (0, import_react.useState)(""), [enabled, setEnabled] = (0, import_react.useState)(false), [checking, setChecking] = (0, import_react.useState)(true), [busy, setBusy] = (0, import_react.useState)(false), [error, setError] = (0, import_react.useState)("");
+	const [moving, setMoving] = (0, import_react.useState)(true), [messages, setMessages] = (0, import_react.useState)([]), [text, setText] = (0, import_react.useState)(""), [enabled, setEnabled] = (0, import_react.useState)(false), [busy, setBusy] = (0, import_react.useState)(false), [error, setError] = (0, import_react.useState)(""), [mode, setMode] = (0, import_react.useState)("Automatic");
 	const end = (0, import_react.useRef)(null);
+	const speech = useSpeech();
+	const [spoken, setSpoken] = (0, import_react.useState)(true);
+	const voice = useVoiceInput((value) => {
+		setText(value);
+		send(void 0, value);
+	});
+	function speakReply(value) {
+		speech.read(value.replace(/The James NZ · original (prayer|quote)/g, "").split(/(?<=[.!?])\s+|\n\s*\n/).filter((v) => v.trim()));
+	}
+	function replyAloud(value) {
+		if (spoken) speakReply(value);
+	}
 	(0, import_react.useEffect)(() => {
-		fetch("/api/friend").then((r) => r.json()).then((d) => setEnabled(d.enabled)).catch(() => setError("Chat availability could not be checked.")).finally(() => setChecking(false));
+		fetch("/api/friend").then((r) => readJsonResponse(r, "")).then((d) => setEnabled(d.enabled === true)).catch(() => setEnabled(false));
 	}, []);
 	(0, import_react.useEffect)(() => {
 		end.current?.scrollIntoView({
@@ -24813,29 +27901,47 @@ function AIFriend({ canEdit }) {
 			behavior: "smooth"
 		});
 	}, [messages, busy]);
-	async function send(e) {
-		e.preventDefault();
-		if (!text.trim() || busy || !enabled) return;
-		setBusy(true);
+	async function send(e, heard) {
+		e?.preventDefault();
+		const question = (heard ?? text).trim();
+		if (!question || busy) return;
+		voice.stop();
+		speech.stop();
 		setError("");
 		const next = [...messages, {
 			role: "user",
-			content: text.trim()
-		}].slice(-11);
-		try {
-			const r = await fetch("/api/friend", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({ messages: next })
-			}), d = await r.json();
-			if (!r.ok) throw new Error(d.error);
+			content: question
+		}];
+		if (mode !== "AI conversation") {
+			const reply = mateoLocalReply(question, mode, messages.filter((m) => m.role === "assistant").length);
 			setMessages([...next, {
 				role: "assistant",
-				content: d.reply
+				...reply
 			}]);
-			setAction("smile");
+			setText("");
+			setMoving(true);
+			replyAloud(reply.content);
+			return;
+		}
+		setBusy(true);
+		try {
+			const d = await readJsonResponse(await fetch("/api/friend", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({ messages: next.slice(-11).map(({ role, content }) => ({
+					role,
+					content
+				})) })
+			}), "The AI conversation could not reply right now. You can still choose a quote or prayer.");
+			if (typeof d.reply !== "string" || !d.reply.trim()) throw new Error("Please choose a quote or prayer while AI conversation is unavailable.");
+			setMessages([...next, {
+				role: "assistant",
+				content: d.reply,
+				kind: "ai"
+			}]);
 			setMoving(true);
 			setText("");
+			replyAloud(d.reply);
 		} catch (e) {
 			setError(e.message);
 		} finally {
@@ -24850,7 +27956,7 @@ function AIFriend({ canEdit }) {
 				children: "A LITTLE ENCOURAGEMENT"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Meet Mateo, your AI friend." }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A friendly place to find a small next step, a fresh idea or a little motivation." })
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Share what is on your mind for a friendly quote or a short prayer." })
 		] })
 	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		className: "friend-panel",
@@ -24859,11 +27965,11 @@ function AIFriend({ canEdit }) {
 				className: "friend-heading",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "mateo-avatar mateo-sprite " + action + (moving ? " moving" : " paused"),
+						className: "mateo-avatar mateo-sprite smile" + (moving ? " moving" : " paused"),
 						role: "img",
-						"aria-label": "Mateo the Labrador " + (action === "walk" ? "pretending to walk" : action === "talk" ? "pretending to talk" : "smiling")
+						"aria-label": "Mateo the Labrador smiling"
 					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Mateo" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Your AI encouragement companion" })] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Mateo" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Your encouragement companion" })] }),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 						className: "secondary motion-toggle",
 						"aria-pressed": moving,
@@ -24874,9 +27980,10 @@ function AIFriend({ canEdit }) {
 						className: "secondary",
 						disabled: busy || !messages.length,
 						onClick: () => {
+							voice.stop();
+							speech.stop();
 							setMessages([]);
 							setError("");
-							setAction("smile");
 							setMoving(true);
 						},
 						children: "New chat"
@@ -24885,24 +27992,96 @@ function AIFriend({ canEdit }) {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "mateo-actions filters",
-				"aria-label": "Mateo’s animation",
-				children: [
-					"walk",
-					"talk",
-					"smile"
-				].map((a) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					"aria-pressed": action === a,
-					className: action === a ? "selected" : "",
-					onClick: () => {
-						setAction(a);
-						setMoving(true);
-					},
-					children: a === "walk" ? "Walk" : a === "talk" ? "Pretend talk" : "Smile"
-				}, a))
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					className: "selected",
+					"aria-pressed": moving,
+					onClick: () => setMoving(true),
+					children: "Smile"
+				})
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+				className: "mateo-voice",
+				"aria-label": "Talk with Mateo",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mic, { size: 20 }), "Talk with Mateo"] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Tap, ask for encouragement, a prayer, a coffee fact or the New Zealand time, then hear Mateo’s reply." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "timer-actions",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								type: "button",
+								className: "primary",
+								disabled: !voice.supported || busy,
+								onClick: () => {
+									speech.stop();
+									voice.listening ? voice.stop() : voice.start();
+								},
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mic, { size: 18 }), voice.listening ? "Stop listening" : "Talk to Mateo"]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								type: "button",
+								className: "secondary",
+								onClick: () => {
+									voice.stop();
+									speech.stop();
+								},
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 16 }), "Stop voice"]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								type: "button",
+								className: "secondary",
+								"aria-pressed": spoken,
+								disabled: !speech.supported,
+								onClick: () => {
+									if (spoken) speech.stop();
+									setSpoken((v) => !v);
+								},
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 18 }),
+									"Spoken replies ",
+									spoken ? "on" : "off"
+								]
+							})
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						role: "status",
+						className: "small-note",
+						children: voice.supported === false ? "Voice input is unavailable in this browser. Please type below." : voice.listening ? voice.message : speech.state.status === "reading" ? "Mateo is speaking…" : voice.message
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "small-note",
+						children: ["Listening starts only when you tap. Your browser may send audio to its speech-recognition provider. You can type instead. ", speech.supported === false && "Spoken replies are unavailable in this browser."]
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "filters",
+				"aria-label": "Mateo response type",
+				children: [[
+					"Automatic",
+					"Quote",
+					"Prayer"
+				].map((value) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					className: mode === value ? "selected" : "",
+					"aria-pressed": mode === value,
+					disabled: busy,
+					onClick: () => {
+						setMode(value);
+						setError("");
+					},
+					children: value === "Automatic" ? "Choose for me" : value === "Quote" ? "Inspirational quote" : "Short prayer"
+				}, value)), enabled && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					className: mode === "AI conversation" ? "selected" : "",
+					"aria-pressed": mode === "AI conversation",
+					disabled: busy,
+					onClick: () => setMode("AI conversation"),
+					children: "AI conversation"
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 				className: "small-note",
-				children: "Mateo’s playful animations are silent. Tap a pose to see him move."
+				children: ["Mateo understands greetings, coffee fact requests, New Zealand time questions, and themes for our original quotes and prayers. They work without an AI connection", enabled ? "; choose AI conversation for generated replies." : "."]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "chat-log",
@@ -24911,11 +28090,21 @@ function AIFriend({ canEdit }) {
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "chat-bubble assistant",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Welcome" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Bring a goal, a question or a creative idea. We can work on one manageable step together." })]
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Welcome" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Hello! Would you like a little inspiration or a moment of prayer? Tell me a theme, such as family, gratitude, worry or a new goal." })]
 					}),
 					messages.map((m, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "chat-bubble " + m.role,
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: m.role === "user" ? "You" : "Mateo · AI" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: m.content })]
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: m.role === "user" ? "You" : m.kind === "ai" ? "Mateo · AI" : m.kind === "prayer" ? "Mateo · short prayer" : m.kind === "fact" ? "Mateo · coffee fact" : m.kind === "chat" ? "Mateo" : "Mateo · inspiration" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: m.content }),
+							m.role === "assistant" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+								type: "button",
+								className: "secondary",
+								disabled: !speech.supported || voice.listening,
+								onClick: () => speakReply(m.content),
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 16 }), "Hear reply"]
+							})
+						]
 					}, i)),
 					busy && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						role: "status",
@@ -24924,19 +28113,12 @@ function AIFriend({ canEdit }) {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { ref: end })
 				]
 			}),
-			checking ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				role: "status",
-				children: "Checking chat availability…"
-			}) : !enabled && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "care-note",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: ["Mateo’s chat is not available yet.", canEdit ? " The AI service needs to be connected before visitors can chat." : " Please come back soon."] })
-			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "filters",
 				children: [
-					"Help me start a small goal",
-					"Give me a gentle pep talk",
-					"Suggest a kind family activity"
+					"A quote for a new goal",
+					"A prayer for my family",
+					"Encouragement when I feel worried"
 				].map((p) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 					disabled: busy,
 					onClick: () => setText(p),
@@ -24951,7 +28133,7 @@ function AIFriend({ canEdit }) {
 						onChange: (e) => setText(e.target.value),
 						rows: 3,
 						maxLength: 2e3,
-						placeholder: "What would you like encouragement with?"
+						placeholder: "Please share a quote about kindness…"
 					})] }),
 					error && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "error",
@@ -24960,7 +28142,7 @@ function AIFriend({ canEdit }) {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 						className: "primary",
-						disabled: !enabled || busy || !text.trim(),
+						disabled: busy || !text.trim(),
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Send, { size: 16 }), busy ? "Sending…" : "Send message"]
 					})
 				]
@@ -24968,7 +28150,9 @@ function AIFriend({ canEdit }) {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 				className: "small-note",
 				children: [
-					"Mateo is AI and can make mistakes. Young visitors should use chat with a grown-up. Avoid sensitive personal details. Messages are sent to OpenAI to generate replies; this site does not save conversation history, and refreshing clears this chat. For urgent help in New Zealand call 111; ",
+					"Mateo speaks using your browser’s available voice. Quotes and prayers are encouragement, not personal or medical advice. Young visitors should use this page with a grown-up. This site does not save conversation history; refreshing clears the chat. ",
+					mode === "AI conversation" && "AI replies can make mistakes. In AI conversation mode your messages are sent to OpenAI; avoid sensitive personal details. ",
+					"For urgent help in New Zealand call 111; ",
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 						href: "https://1737.org.nz",
 						target: "_blank",
@@ -26543,7 +29727,7 @@ function About() {
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "About The James NZ" })] })
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
-			className: "family-portrait",
+			className: "family-portrait about-family-portrait animated",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 				src: "./family-seaside-consistent.webp",
 				alt: "The James family and Mateo the golden Labrador in an enhanced family portrait",
@@ -33939,6 +37123,36 @@ function Rosary() {
 					children: "Catholic guide · USCCB"
 				})]
 			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
+				className: "rosary-photo rosary-guide",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+					href: "./rosary-guide.svg",
+					target: "_blank",
+					rel: "noopener noreferrer",
+					"aria-label": "Open the enlarged rosary guide",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						src: "./rosary-guide.svg",
+						alt: "Rosary bead guide: begin at the cross, pray Our Father, three Hail Marys and Glory Be, then five decades of one Our Father, ten Hail Marys and Glory Be",
+						width: "1200",
+						height: "920"
+					})
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figcaption", { children: [
+					"A clearer guide based on the diagram you supplied. ",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						href: "./rosary-guide.svg",
+						target: "_blank",
+						rel: "noopener noreferrer",
+						children: "Open enlarged guide"
+					}),
+					" · ",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						href: "./rosary-original.png",
+						target: "_blank",
+						rel: "noopener noreferrer",
+						children: "View your original diagram"
+					})
+				] })]
+			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "filters",
 				children: ["Short · one decade", "Full · five decades"].map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
@@ -34010,65 +37224,132 @@ var stJudePrayer = "O Glorious Apostle, St Jude Thaddeus true relative of Jesus 
 //#region app/devotions.tsx
 var hail = "Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.";
 function ExtraDevotions() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-		className: "devotions-panel",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Angelus & St Jude" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Accordion, {
-			type: "single",
-			collapsible: true,
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AccordionItem, {
-				value: "angelus",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AccordionTrigger, { children: "The Angelus · traditional prayer" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AccordionContent, { children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Traditionally prayed in the morning, at noon and in the evening. During Eastertide, the Regina Caeli is traditionally used instead." }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "V." }),
-						" The Angel of the Lord declared unto Mary.",
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "R." }),
-						" And she conceived of the Holy Ghost."
-					] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: hail }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "V." }),
-						" Behold the handmaid of the Lord.",
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "R." }),
-						" Be it done unto me according to thy word."
-					] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: hail }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "V." }),
-						" And the Word was made flesh.",
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "R." }),
-						" And dwelt among us."
-					] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: hail }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "V." }),
-						" Pray for us, O holy Mother of God.",
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "R." }),
-						" That we may be made worthy of the promises of Christ."
-					] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Let us pray." }), " Pour forth, we beseech thee, O Lord, thy grace into our hearts; that we, to whom the Incarnation of Christ thy Son was made known by the message of an angel, may by his Passion and Cross be brought to the glory of his Resurrection. Through the same Christ our Lord. Amen."] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "small-note",
-						children: "Traditional public-domain English prayer."
-					})
-				] })]
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AccordionItem, {
-				value: "jude",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AccordionTrigger, { children: "A prayer through St Jude’s intercession" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(AccordionContent, { children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Pause here to name the intention you would like to bring to St Jude’s intercession." }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: stJudePrayer }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "small-note",
-						children: "Prayer to St Jude · from the prayer supplied by the James family."
-					})
-				] })]
-			})]
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
+		className: "prayer-page-nav",
+		"aria-label": "Choose a devotion",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+			href: "#angelus-prayer",
+			children: "The Angelus"
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+			href: "#st-jude-prayer",
+			children: "St Jude’s intercession"
 		})]
-	});
+	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "devotions-layout",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+			className: "devotions-panel angelus-card",
+			id: "angelus-prayer",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "eyebrow",
+					children: "A PAUSE IN YOUR DAY"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "The Angelus" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Traditionally prayed in the morning, at noon and in the evening. During Eastertide, the Regina Caeli is traditionally used instead." }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "V." }),
+					" The Angel of the Lord declared unto Mary.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "R." }),
+					" And she conceived of the Holy Ghost."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: hail }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "V." }),
+					" Behold the handmaid of the Lord.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "R." }),
+					" Be it done unto me according to thy word."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: hail }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "V." }),
+					" And the Word was made flesh.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "R." }),
+					" And dwelt among us."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: hail }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "V." }),
+					" Pray for us, O holy Mother of God.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "R." }),
+					" That we may be made worthy of the promises of Christ."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Let us pray." }), " Pour forth, we beseech thee, O Lord, thy grace into our hearts; that we, to whom the Incarnation of Christ thy Son was made known by the message of an angel, may by his Passion and Cross be brought to the glory of his Resurrection. Through the same Christ our Lord. Amen."] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "small-note",
+					children: "Traditional public-domain English prayer."
+				})
+			]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+			className: "devotions-panel st-jude-full-prayer",
+			id: "st-jude-prayer",
+			"aria-labelledby": "st-jude-title",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "eyebrow",
+					children: "HOPE & INTERCESSION"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+					id: "st-jude-title",
+					children: "St Jude’s intercession"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Pause here to name the intention you would like to bring to St Jude’s intercession." }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Novena to St Jude Thaddeus" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					"May the Most Sacred Heart of Jesus be adored and loved in all the Tabernacles until the end of time.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					"Amen."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					"May the Most Sacred Heart of Jesus be praised and glorified now and forever.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					"Amen."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					"St Jude Thaddeus pray for us and hear our prayers.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					"Amen."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					"Blessed be the Sacred Heart of Jesus,",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					"Blessed be the Immaculate Heart of Mary,",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					"Blessed be St Jude Thaddeus,",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					"In all the world and for all eternity."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Follow the novena prayer with one Our Father and one Hail Mary." }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Our Father" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					"Our Father, who art in heaven, hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation but deliver us from evil.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					"Amen."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Hail Mary" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					"Hail Mary, full of Grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners now, and at the hour of our death.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					"Amen."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", { children: "Prayer to St Jude" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: stJudePrayer }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "small-note",
+					children: "All prayer texts above are from the document supplied by the James family."
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+					href: "./st-jude-prayer.pdf",
+					target: "_blank",
+					rel: "noopener noreferrer",
+					children: "Read the original St Jude prayer document (PDF)"
+				})
+			]
+		})]
+	})] });
 }
 //#endregion
 //#region app/breastfeeding.tsx
@@ -34171,335 +37452,6 @@ function Breastfeeding() {
 	] });
 }
 //#endregion
-//#region app/content.ts
-var categories = [
-	"Leadership",
-	"Spiritual guidance",
-	"Parenting",
-	"Everyday inspiration",
-	"Faith & hope",
-	"Kindness",
-	"Gratitude",
-	"Perseverance"
-];
-var starters = [
-	{
-		id: "sample-1",
-		text: "Lead with the kind of care you hope others will pass on.",
-		author: "The James NZ · original reflection",
-		category: "Leadership"
-	},
-	{
-		id: "sample-2",
-		text: "Make room for a quiet moment. Hope often begins there.",
-		author: "The James NZ · original reflection",
-		category: "Spiritual guidance"
-	},
-	{
-		id: "sample-3",
-		text: "A child does not need a perfect day. A moment of your full attention can be enough.",
-		author: "The James NZ · original reflection",
-		category: "Parenting"
-	},
-	{
-		id: "sample-4",
-		text: "Small steps still move you forward.",
-		author: "The James NZ · original reflection",
-		category: "Everyday inspiration"
-	}
-];
-starters.push(...[
-	{
-		"id": "sample-extra-0",
-		"text": "Listen long enough to understand before you ask to be understood.",
-		"author": "The James NZ · original reflection",
-		"category": "Leadership"
-	},
-	{
-		"id": "sample-extra-1",
-		"text": "A steady example can teach more than a loud instruction.",
-		"author": "The James NZ · original reflection",
-		"category": "Leadership"
-	},
-	{
-		"id": "sample-extra-2",
-		"text": "Make space for the quiet voice in the room.",
-		"author": "The James NZ · original reflection",
-		"category": "Leadership"
-	},
-	{
-		"id": "sample-extra-3",
-		"text": "Let a quiet prayer make room for a kinder response.",
-		"author": "The James NZ · original reflection",
-		"category": "Spiritual guidance"
-	},
-	{
-		"id": "sample-extra-4",
-		"text": "A moment of stillness can help you notice what matters.",
-		"author": "The James NZ · original reflection",
-		"category": "Spiritual guidance"
-	},
-	{
-		"id": "sample-extra-5",
-		"text": "Bring your questions as well as your gratitude to prayer.",
-		"author": "The James NZ · original reflection",
-		"category": "Spiritual guidance"
-	},
-	{
-		"id": "sample-extra-6",
-		"text": "Connection grows in the small moments you share.",
-		"author": "The James NZ · original reflection",
-		"category": "Parenting"
-	},
-	{
-		"id": "sample-extra-7",
-		"text": "You can begin again after a difficult moment.",
-		"author": "The James NZ · original reflection",
-		"category": "Parenting"
-	},
-	{
-		"id": "sample-extra-8",
-		"text": "Listen to the little stories; they matter to the storyteller.",
-		"author": "The James NZ · original reflection",
-		"category": "Parenting"
-	},
-	{
-		"id": "sample-extra-9",
-		"text": "Begin with the next thing you can do.",
-		"author": "The James NZ · original reflection",
-		"category": "Everyday inspiration"
-	},
-	{
-		"id": "sample-extra-10",
-		"text": "A gentle start is still a start.",
-		"author": "The James NZ · original reflection",
-		"category": "Everyday inspiration"
-	},
-	{
-		"id": "sample-extra-11",
-		"text": "There is room for rest on the way forward.",
-		"author": "The James NZ · original reflection",
-		"category": "Everyday inspiration"
-	},
-	{
-		"id": "sample-extra-12",
-		"text": "Hope can be small and still be worth holding.",
-		"author": "The James NZ · original reflection",
-		"category": "Faith & hope"
-	},
-	{
-		"id": "sample-extra-13",
-		"text": "Let faith guide your care for the person beside you.",
-		"author": "The James NZ · original reflection",
-		"category": "Faith & hope"
-	},
-	{
-		"id": "sample-extra-14",
-		"text": "You can pray with a full heart or with no words at all.",
-		"author": "The James NZ · original reflection",
-		"category": "Faith & hope"
-	},
-	{
-		"id": "sample-extra-15",
-		"text": "Trust can grow one honest prayer at a time.",
-		"author": "The James NZ · original reflection",
-		"category": "Faith & hope"
-	},
-	{
-		"id": "sample-extra-16",
-		"text": "Kindness is often a small act done with full attention.",
-		"author": "The James NZ · original reflection",
-		"category": "Kindness"
-	},
-	{
-		"id": "sample-extra-17",
-		"text": "Leave someone a little more encouraged than you found them.",
-		"author": "The James NZ · original reflection",
-		"category": "Kindness"
-	},
-	{
-		"id": "sample-extra-18",
-		"text": "A patient answer can change the shape of a day.",
-		"author": "The James NZ · original reflection",
-		"category": "Kindness"
-	},
-	{
-		"id": "sample-extra-19",
-		"text": "Care begins with noticing.",
-		"author": "The James NZ · original reflection",
-		"category": "Kindness"
-	},
-	{
-		"id": "sample-extra-20",
-		"text": "Name one good thing, then make room to notice another.",
-		"author": "The James NZ · original reflection",
-		"category": "Gratitude"
-	},
-	{
-		"id": "sample-extra-21",
-		"text": "Thank the people whose quiet care makes your day possible.",
-		"author": "The James NZ · original reflection",
-		"category": "Gratitude"
-	},
-	{
-		"id": "sample-extra-22",
-		"text": "A grateful heart can still acknowledge a difficult day.",
-		"author": "The James NZ · original reflection",
-		"category": "Gratitude"
-	},
-	{
-		"id": "sample-extra-23",
-		"text": "Small joys deserve a place in your memory.",
-		"author": "The James NZ · original reflection",
-		"category": "Gratitude"
-	},
-	{
-		"id": "sample-extra-24",
-		"text": "Try again with what you learned last time.",
-		"author": "The James NZ · original reflection",
-		"category": "Perseverance"
-	},
-	{
-		"id": "sample-extra-25",
-		"text": "Progress does not have to be loud to be real.",
-		"author": "The James NZ · original reflection",
-		"category": "Perseverance"
-	},
-	{
-		"id": "sample-extra-26",
-		"text": "Let your next step be small enough to take.",
-		"author": "The James NZ · original reflection",
-		"category": "Perseverance"
-	},
-	{
-		"id": "sample-extra-27",
-		"text": "Rest can be part of continuing.",
-		"author": "The James NZ · original reflection",
-		"category": "Perseverance"
-	}
-]);
-var questions = [
-	{
-		q: "Which city is the capital of New Zealand?",
-		options: [
-			"Auckland",
-			"Wellington",
-			"Christchurch"
-		],
-		answer: 1,
-		why: "Wellington is New Zealand’s capital city.",
-		url: "https://www.newzealand.com/nz/feature/wellington-attractions/",
-		source: "Tourism New Zealand"
-	},
-	{
-		q: "Which of these birds cannot fly?",
-		options: [
-			"Kiwi",
-			"Sparrow",
-			"Seagull"
-		],
-		answer: 0,
-		why: "Kiwi are flightless birds and a national symbol of New Zealand.",
-		url: "https://www.tepapa.govt.nz/digital-museum/explore-digital-museum/kiwi-the-national-bird-of-aotearoa-new-zealand",
-		source: "Te Papa"
-	},
-	{
-		q: "Which Māori greeting can mean “hello”?",
-		options: [
-			"Haere rā",
-			"Pō mārie",
-			"Kia ora"
-		],
-		answer: 2,
-		why: "Kia ora is a friendly greeting. It can also express thanks.",
-		url: "https://nzhistory.govt.nz/culture/maori-language-week/365-maori-words",
-		source: "NZ History"
-	},
-	{
-		q: "What is New Zealand’s highest mountain?",
-		options: [
-			"Aoraki / Mount Cook",
-			"Mount Eden",
-			"Mount Victoria"
-		],
-		answer: 0,
-		why: "Aoraki / Mount Cook is New Zealand’s highest mountain.",
-		url: "https://www.newzealand.com/int/aoraki-mount-cook/",
-		source: "Tourism New Zealand"
-	},
-	{
-		q: "Where is the national museum, Te Papa?",
-		options: [
-			"Dunedin",
-			"Hamilton",
-			"Wellington"
-		],
-		answer: 2,
-		why: "Te Papa is on Wellington’s waterfront.",
-		url: "https://www.tepapa.govt.nz/about",
-		source: "Te Papa"
-	}
-];
-var stories = [
-	{
-		"title": "Sue and the little light",
-		"level": "Ages 5–7 · 3 min",
-		"theme": "Kindness",
-		"paragraphs": [
-			"Sue, the eldest daughter, loved the lighthouse near the sea. One evening she watched its beam with Dad. “That is a big job for one light,” she said.",
-			"The next morning, Sue and her younger sister Rae took a toy boat to a shallow rock pool. Mom carried baby Mye, and Dad held Mateo the Labrador’s lead. Everyone had a part in their little adventure.",
-			"Rae’s boat tipped over. Its sail fell into the water. Rae’s smile disappeared. “My boat is broken,” she whispered.",
-			"Sue could not fix everything at once. But she could listen. She held the mast while Dad helped Rae tie a new knot. Mom found a dry place for them to sit, and Mye gave a happy little giggle.",
-			"Together the sisters placed the boat back in the pool. The sail stayed up. Mateo sat beside Dad and watched. “You helped!” Rae told Sue.",
-			"That evening, Sue watched the lighthouse again. “Little lights can help too,” she told Mom. “They certainly can,” Mom said."
-		],
-		"ask": [
-			"What did Sue do when Rae felt upset?",
-			"How did each family member help?",
-			"What small kind thing could you do today?"
-		],
-		"words": "Mast: the pole that holds a boat’s sail. Shallow: not deep."
-	},
-	{
-		"title": "Rae and the five sounds",
-		"level": "Read together · ages 3–7 · 3 min",
-		"theme": "Noticing",
-		"paragraphs": [
-			"Rae wanted to draw a bird, but her pencil raced across the page. Its wings looked enormous. Its beak looked tiny. “It is not right,” she said.",
-			"Sue sat beside her. “Let’s be sound detectives first. Can we find five sounds?” Mom settled Mye safely in her arms by the window. Dad put down his cup to listen too.",
-			"First they heard leaves rustling. Then a spoon tapped Dad’s cup. A car rolled past. Mateo gave one cheerful bark. At last, a little bird sang from the fence.",
-			"“Five!” Rae said. She looked carefully at the bird. Sue offered a fresh piece of paper. Rae drew a round body, a little head and one wing.",
-			"Her picture was not exactly like the real bird. That was all right. “I slowed down enough to see,” she said. Mom smiled, Mye waved her tiny hands, and Dad put the picture on the fridge.",
-			"Mateo lay nearby as the sisters listened once more. There was always something new to notice."
-		],
-		"ask": [
-			"Can you name the five sounds the family heard?",
-			"What helped Rae try again?",
-			"What quiet sound can you hear right now?"
-		],
-		"words": "Rustling: a soft sound made by moving leaves. Detectives: people who look carefully for clues."
-	},
-	{
-		"title": "The James family’s patient garden",
-		"level": "Ages 5–9 · 4 min",
-		"theme": "Patience",
-		"paragraphs": [
-			"Sue planted a bean in a pot on Monday. Rae helped make a little label. On Tuesday they checked it. Nothing. On Wednesday they checked again. Still nothing. “Perhaps it is a sleeping bean,” Rae said.",
-			"Dad showed Sue how to feel the soil with one finger. If it felt dry, they could give it a little water. If it was damp, they could wait. Mom helped them find a sunny window, with the pot safely away from baby Mye and Mateo.",
-			"The sisters made a chart. Sue drew the pictures, and Rae chose a colour for each day. For a while, their pictures were just brown soil. Then one morning a tiny green loop appeared.",
-			"“Can we make it taller?” Rae asked. “It is growing at its own pace,” Mom said, holding Mye. They watched the loop become a stem. Two leaves slowly opened.",
-			"Sue was learning to read a difficult word: adventure. Dad helped her try one part at a time. She did not get it at first, but she kept practising. Rae cheered when she finished.",
-			"That afternoon the whole family gathered near the window. Mye smiled in Mom’s arms, and Mateo rested beside Dad. Sue looked at the little plant. “It is still growing,” she said. “And so are we.”"
-		],
-		"ask": [
-			"Why did the family check the soil before watering?",
-			"How was learning a new word like growing a bean?",
-			"What are you practising patiently?"
-		],
-		"words": "Damp: a little wet. Pace: the speed at which something happens. Adventure: a new or exciting experience."
-	}
-];
-//#endregion
 //#region app/home.tsx
 var navGroups = [
 	{
@@ -34516,6 +37468,10 @@ var navGroups = [
 			{
 				name: "Saving tips",
 				icon: PiggyBank
+			},
+			{
+				name: "Coffee corner",
+				icon: Coffee
 			},
 			{
 				name: "Workouts",
@@ -34632,11 +37588,10 @@ function Home({ canEdit }) {
 		setLoading(true);
 		setError("");
 		try {
-			const r = await fetch("/api/content");
-			const d = await r.json();
-			if (!r.ok) throw new Error(d.error);
+			const d = await readJsonResponse(await fetch("/api/content"), "Saved quotes and adverts are unavailable right now. The built-in collection is still here.");
+			if (!Array.isArray(d.quotes)) throw new Error("Saved content could not load. Please try again.");
 			setQuotes(d.quotes);
-			setBusiness(d.business);
+			setBusiness(d.business || null);
 		} catch (e) {
 			setError(e.message);
 		} finally {
@@ -34702,13 +37657,11 @@ function Home({ canEdit }) {
 		return () => window.removeEventListener("keydown", fn);
 	}, [modal, saving]);
 	async function write(body) {
-		const r = await fetch("/api/content", {
+		await readJsonResponse(await fetch("/api/content", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(body)
-		});
-		const d = await r.json();
-		if (!r.ok) throw new Error(d.error);
+		}), "Changes could not be saved. Please check that the website backend is connected.");
 	}
 	async function save(e) {
 		e.preventDefault();
@@ -34770,14 +37723,7 @@ function Home({ canEdit }) {
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: ["The James NZ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("small", { children: "FAITH · FAMILY · COMMUNITY" })] })]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 					className: "header-note",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							src: "./family-photo.webp",
-							alt: ""
-						}),
-						"A little light for every day ",
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sun, { size: 17 })
-					]
+					children: ["A little light for every day ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sun, { size: 17 })]
 				})]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Tabs, {
@@ -34867,7 +37813,7 @@ function Home({ canEdit }) {
 								]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Toaster, { position: "top-right" }),
-							error && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							error && ["Inspiration", "Small business"].includes(tab) && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "error",
 								role: "alert",
 								children: [
@@ -35101,12 +38047,12 @@ function Home({ canEdit }) {
 							tab === "Focus time" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageTitle, {
 								eyebrow: "PAUSE · NOTICE · TRY",
 								title: "A little room to focus.",
-								text: "Short activities for ages 5–9. Choose one and go at your own pace."
+								text: "Mindful pauses for families, plus focus games for ages 5–9. Go at your own pace."
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Focus, {})] }),
 							tab === "Reading nook" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageTitle, {
 								eyebrow: "JUST ONE MORE PAGE",
 								title: "The reading nook.",
-								text: "Original short stories for ages 5–9. Read alone or with a grown-up."
+								text: "30 original family stories for ages 5–9. Read alone or with a grown-up."
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reading, {})] }),
 							tab === "Saints day" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageTitle, {
 								eyebrow: "CATHOLIC CALENDAR",
@@ -35137,6 +38083,7 @@ function Home({ canEdit }) {
 							tab === "Mateo · AI friend" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AIFriend, { canEdit }),
 							tab === "Homemade recipes" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Recipes, {}),
 							tab === "Saving tips" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SavingTips, {}),
+							tab === "Coffee corner" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CoffeeCorner, {}),
 							tab === "Languages" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LanguageLearning, {}),
 							tab === "About us" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(About, {}),
 							tab === "FAQ" && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FAQ, {}),
@@ -35453,6 +38400,7 @@ function Focus() {
 		return () => clearTimeout(id);
 	}, [memory]);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MindfulnessExercises, {}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "activity-grid",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
@@ -35620,105 +38568,57 @@ function Focus() {
 }
 function Reading() {
 	const [selected, setSelected] = (0, import_react.useState)(null);
-	if (selected !== null) {
-		const s = stories[selected];
-		return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-			className: "story",
+	if (selected !== null) return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(StoryReader, {
+		index: selected,
+		onBack: () => setSelected(null)
+	}, selected);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "reading-feature",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+			src: stories[0].image,
+			alt: stories[0].imageAlt
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "pill",
+				children: "READ TOGETHER"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", { children: [
+				"A story is a lovely",
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+				"place to begin."
+			] }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Find a comfortable spot. Take turns reading. Pause whenever a question pops up." }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: "primary",
+				onClick: () => setSelected(0),
+				children: "Read “Sue and the little light”"
+			})
+		] })]
+	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: "reading-grid",
+		children: stories.map((s, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+			className: "story-card tone-" + i % 3,
 			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					className: "secondary",
-					onClick: () => setSelected(null),
-					children: "Back to all stories"
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					className: "story-card-photo",
+					src: s.image,
+					alt: s.imageAlt,
+					loading: "lazy"
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "eyebrow",
-					children: [
-						s.level,
-						" · ",
-						s.theme
-					]
+					children: s.theme
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: s.title }),
-				s.paragraphs.map((p, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: p }, i)),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "story-questions",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Let’s talk about it" }),
-						s.ask.map((q) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: q }, q)),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Words to discover" }),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: s.words })
-					]
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-					className: "small-note",
-					children: "An original The James NZ story."
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: s.level }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					className: "secondary",
+					onClick: () => setSelected(i),
+					children: "Open story"
 				})
 			]
-		});
-	}
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
-		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-			className: "reading-family",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Meet our story family" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "word-chips",
-				children: [
-					["Dad", "father"],
-					["Mom", "mother"],
-					["Sue", "eldest daughter"],
-					["Rae", "middle daughter"],
-					["Mye", "baby girl"],
-					["Mateo", "Labrador"]
-				].map(([name, role]) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: name }),
-					" · ",
-					role
-				] }, name))
-			})]
-		}),
-		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "reading-feature",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-				src: "./reading-art.png",
-				alt: "Two children sharing a book beside a lighthouse"
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-					className: "pill",
-					children: "READ TOGETHER"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", { children: [
-					"A story is a lovely",
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-					"place to begin."
-				] }),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Find a comfortable spot. Take turns reading. Pause whenever a question pops up." }),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					className: "primary",
-					onClick: () => setSelected(0),
-					children: "Read “Sue and the little light”"
-				})
-			] })]
-		}),
-		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			className: "reading-grid",
-			children: stories.map((s, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-				className: "story-card tone-" + i,
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(BookOpen, { size: 28 }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "eyebrow",
-						children: s.theme
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: s.title }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: s.level }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						className: "secondary",
-						onClick: () => setSelected(i),
-						children: "Open story"
-					})
-				]
-			}, s.title))
-		})
-	] });
+		}, s.title))
+	})] });
 }
 //#endregion
 //#region .sites-runtime/github-export/entry.tsx
