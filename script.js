@@ -10115,6 +10115,21 @@ var BookOpen = createLucideIcon("book-open", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Camera = createLucideIcon("camera", [["path", {
+	d: "M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z",
+	key: "18u6gg"
+}], ["circle", {
+	cx: "12",
+	cy: "13",
+	r: "3",
+	key: "1vg3eu"
+}]]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Check = createLucideIcon("check", [["path", {
 	d: "M20 6 9 17l-5-5",
 	key: "1gmf2c"
@@ -10383,6 +10398,28 @@ var Footprints = createLucideIcon("footprints", [
 	["path", {
 		d: "M4 13h4",
 		key: "1bwh8b"
+	}]
+]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Globe = createLucideIcon("globe", [
+	["circle", {
+		cx: "12",
+		cy: "12",
+		r: "10",
+		key: "1mglay"
+	}],
+	["path", {
+		d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20",
+		key: "13o1zl"
+	}],
+	["path", {
+		d: "M2 12h20",
+		key: "9i4pu4"
 	}]
 ]);
 /**
@@ -10706,6 +10743,46 @@ var Send = createLucideIcon("send", [["path", {
 	d: "m21.854 2.147-10.94 10.939",
 	key: "12cjpa"
 }]]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Share2 = createLucideIcon("share-2", [
+	["circle", {
+		cx: "18",
+		cy: "5",
+		r: "3",
+		key: "gq8acd"
+	}],
+	["circle", {
+		cx: "6",
+		cy: "12",
+		r: "3",
+		key: "w7nqdw"
+	}],
+	["circle", {
+		cx: "18",
+		cy: "19",
+		r: "3",
+		key: "1xt0gg"
+	}],
+	["line", {
+		x1: "8.59",
+		x2: "15.42",
+		y1: "13.51",
+		y2: "17.49",
+		key: "47mynk"
+	}],
+	["line", {
+		x1: "15.41",
+		x2: "8.59",
+		y1: "6.51",
+		y2: "10.49",
+		key: "1n3mei"
+	}]
+]);
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -12890,6 +12967,629 @@ var quizByTitle = {
 };
 var storyQuizzes = stories.map((story) => quizByTitle[story.title]);
 //#endregion
+//#region app/story-page-pictures.ts
+var storyPictures = [
+	[
+		{
+			"image": "./story-pages/story-01-begin.webp",
+			"alt": "Sue and Dad look toward lighthouse beam at dusk by sea"
+		},
+		{
+			"image": "./story-pages/story-01-middle.webp",
+			"alt": "Sue holds mast as Dad helps disappointed Rae repair toy sailboat at shallow rock pool"
+		},
+		{
+			"image": "./story-pages/story-01-end.webp",
+			"alt": "Sisters place repaired boat upright in rock pool while parents baby and leashed Mateo watch"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-02-begin.webp",
+			"alt": "Rae frowns at rushed bird drawing as Sue sits beside her"
+		},
+		{
+			"image": "./story-pages/story-02-middle.webp",
+			"alt": "Family listens quietly near window with bird outside, Dad's cup and Mateo"
+		},
+		{
+			"image": "./story-pages/story-02-end.webp",
+			"alt": "Dad pins Rae's improved bird drawing on fridge while sisters smile"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-03-begin.webp",
+			"alt": "Sue and Rae plant bean and Dad tests pot soil with finger"
+		},
+		{
+			"image": "./story-pages/story-03-middle.webp",
+			"alt": "Girls study new green shoot and their picture chart by sunny window"
+		},
+		{
+			"image": "./story-pages/story-03-end.webp",
+			"alt": "Dad helps Sue read book beside bean plant with two leaves and family"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-04-begin.webp",
+			"alt": "Mom helps Sue measure flour and Rae add water to dough bowl"
+		},
+		{
+			"image": "./story-pages/story-04-middle.webp",
+			"alt": "Girls knead sticky dough at table with Mom supervising Dad holding Mye"
+		},
+		{
+			"image": "./story-pages/story-04-end.webp",
+			"alt": "Sue shares cooled crooked loaf slice with Rae in warm kitchen"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-05-begin.webp",
+			"alt": "Sue and Rae choose library picture books with parents, no dog at library"
+		},
+		{
+			"image": "./story-pages/story-05-middle.webp",
+			"alt": "Dad helps Sue sound out picture book while Mom points to illustration"
+		},
+		{
+			"image": "./story-pages/story-05-end.webp",
+			"alt": "Sisters read borrowed books at home with Mateo curled beside them"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-06-begin.webp",
+			"alt": "Girls discover shell with small creature at beach with family away from waves"
+		},
+		{
+			"image": "./story-pages/story-06-middle.webp",
+			"alt": "Dad helps Rae gently replace occupied shell while Sue draws notebook"
+		},
+		{
+			"image": "./story-pages/story-06-end.webp",
+			"alt": "Rae and Sue walk home showing shell drawings, Mateo leashed"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-07-begin.webp",
+			"alt": "Girls look disappointed at rain window and raincoats"
+		},
+		{
+			"image": "./story-pages/story-07-middle.webp",
+			"alt": "Family gathers red bracelet blue book yellow tea towel on table"
+		},
+		{
+			"image": "./story-pages/story-07-end.webp",
+			"alt": "Girls smile at rainbow arrangement of household items and golden Mateo"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-08-begin.webp",
+			"alt": "Rae struggles with wrong shoe at front door Sue ready beside her"
+		},
+		{
+			"image": "./story-pages/story-08-middle.webp",
+			"alt": "Sue arranges shoes as Rae opens straps and puts on own shoes"
+		},
+		{
+			"image": "./story-pages/story-08-end.webp",
+			"alt": "Rae walks proudly beside Sue outdoors with family and leashed Mateo"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-09-begin.webp",
+			"alt": "Paper kite drops onto open grassy field family observes"
+		},
+		{
+			"image": "./story-pages/story-09-middle.webp",
+			"alt": "Mom helps add cloth tail to grounded kite"
+		},
+		{
+			"image": "./story-pages/story-09-end.webp",
+			"alt": "Sue flies kite with cloth tail steadily high as Rae cheers"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-10-begin.webp",
+			"alt": "Girls paint large smooth stones at garden table with parents"
+		},
+		{
+			"image": "./story-pages/story-10-middle.webp",
+			"alt": "Sue yellow Rae pink Dad blue stones drying beside plant"
+		},
+		{
+			"image": "./story-pages/story-10-end.webp",
+			"alt": "Rae points at yellow stone reassuring Sue with broken crayon, family warmth"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-11-begin.webp",
+			"alt": "Sisters disagree whether cardboard box is moon ship or bakery"
+		},
+		{
+			"image": "./story-pages/story-11-middle.webp",
+			"alt": "Girls decorate box control panel and paper pretend buns"
+		},
+		{
+			"image": "./story-pages/story-11-end.webp",
+			"alt": "Girls play combined moon bakery Mom with baby customer Mateo resting outside box"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-12-begin.webp",
+			"alt": "Sue bounces bright ball Rae reaches for turn on lawn"
+		},
+		{
+			"image": "./story-pages/story-12-middle.webp",
+			"alt": "Dad counts on fingers Rae retrieves dropped ball Sue patiently waits"
+		},
+		{
+			"image": "./story-pages/story-12-end.webp",
+			"alt": "Girls happily roll ball between them family on picnic blanket"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-13-begin.webp",
+			"alt": "Family eats picnic on clean lawn blanket"
+		},
+		{
+			"image": "./story-pages/story-13-middle.webp",
+			"alt": "Girls gather own food wrappers into bag Dad supervises"
+		},
+		{
+			"image": "./story-pages/story-13-end.webp",
+			"alt": "Girls play on clean grass looking back at tidy picnic spot"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-14-begin.webp",
+			"alt": "Sue and Rae draw red apple blue puddle on thick paper for Mye"
+		},
+		{
+			"image": "./story-pages/story-14-middle.webp",
+			"alt": "Dad securely binds crayon pages Mom holds Mye"
+		},
+		{
+			"image": "./story-pages/story-14-end.webp",
+			"alt": "Mom shows homemade colour book golden dog page to Mye sisters smile"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-15-begin.webp",
+			"alt": "Dad Sue Rae walk garden path beginning to count steps"
+		},
+		{
+			"image": "./story-pages/story-15-middle.webp",
+			"alt": "Girls count slowly together Dad pointing to flower pot"
+		},
+		{
+			"image": "./story-pages/story-15-end.webp",
+			"alt": "Girls compare Dad long stride their short steps at pot Mom baby Mateo"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-16-begin.webp",
+			"alt": "Family sees neighbour struggling with heavy garden bag"
+		},
+		{
+			"image": "./story-pages/story-16-middle.webp",
+			"alt": "Dad carries heavy bag sisters carry light watering can to gate"
+		},
+		{
+			"image": "./story-pages/story-16-end.webp",
+			"alt": "Neighbour thanks family girls smile at small kind job"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-17-begin.webp",
+			"alt": "Rae asks another game as Sue brings bedtime book"
+		},
+		{
+			"image": "./story-pages/story-17-middle.webp",
+			"alt": "Family shares bedtime story and memories Mom cuddles Mye"
+		},
+		{
+			"image": "./story-pages/story-17-end.webp",
+			"alt": "Dad tucks girls in cosy beds Mateo sleeps on dog bed"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-18-begin.webp",
+			"alt": "Busy morning girls seek school bag and bracelet"
+		},
+		{
+			"image": "./story-pages/story-18-middle.webp",
+			"alt": "Girls draw picture-only morning plan at table Dad includes dog bowl"
+		},
+		{
+			"image": "./story-pages/story-18-end.webp",
+			"alt": "Girls prepared school bag shoes by door enjoy goodbye cuddle"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-19-begin.webp",
+			"alt": "Family watches bee on flower at safe little distance"
+		},
+		{
+			"image": "./story-pages/story-19-middle.webp",
+			"alt": "Sue notices pollen legs Rae whispers Dad keeps Mateo close"
+		},
+		{
+			"image": "./story-pages/story-19-end.webp",
+			"alt": "Girls draw bee and flower in notebook at home"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-20-begin.webp",
+			"alt": "Mom helps girls shape biscuit dough Sue precise Rae crooked"
+		},
+		{
+			"image": "./story-pages/story-20-middle.webp",
+			"alt": "Girls stand safely back Dad handles tray at oven"
+		},
+		{
+			"image": "./story-pages/story-20-end.webp",
+			"alt": "Girls admire cooled circle and crooked oval biscuits and share with adults"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-21-begin.webp",
+			"alt": "Girls plan Mom birthday surprise Dad holds Mye"
+		},
+		{
+			"image": "./story-pages/story-21-middle.webp",
+			"alt": "Dad helps girls make loaf and homemade picture-only card"
+		},
+		{
+			"image": "./story-pages/story-21-end.webp",
+			"alt": "Mom delights at card and small loaf on simple birthday table"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-22-begin.webp",
+			"alt": "Family checks sunny view before walk and Dad weather phone"
+		},
+		{
+			"image": "./story-pages/story-22-middle.webp",
+			"alt": "Dad helps Sue put warm layer Rae chooses closed shoes"
+		},
+		{
+			"image": "./story-pages/story-22-end.webp",
+			"alt": "Family enjoys cool sunny walk jackets baby warm face clear Mateo leashed"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-23-begin.webp",
+			"alt": "Mom greets Sue Dad welcomes Rae at home"
+		},
+		{
+			"image": "./story-pages/story-23-middle.webp",
+			"alt": "Sisters practise greetings taking turns kindly parents listening"
+		},
+		{
+			"image": "./story-pages/story-23-end.webp",
+			"alt": "Family displays picture-only welcome sign by door Mateo cheerful"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-24-begin.webp",
+			"alt": "Sue cross after school Rae excited Dad listens"
+		},
+		{
+			"image": "./story-pages/story-24-middle.webp",
+			"alt": "Girls draw dark cloud and yellow cloud using crayons"
+		},
+		{
+			"image": "./story-pages/story-24-end.webp",
+			"alt": "Sue's cloud gains blue patch Dad gives quiet comforting cuddle"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-25-begin.webp",
+			"alt": "Girls sort puzzle pieces on table Mom holds baby away"
+		},
+		{
+			"image": "./story-pages/story-25-middle.webp",
+			"alt": "Mom points at corner piece beside box girls connect edge row"
+		},
+		{
+			"image": "./story-pages/story-25-end.webp",
+			"alt": "Family leaves unfinished puzzle safely covered for restful break"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-26-begin.webp",
+			"alt": "Rae searches mitten Sue checks sofa family waits at door"
+		},
+		{
+			"image": "./story-pages/story-26-middle.webp",
+			"alt": "Sue finds mitten beneath coat hooks beside shoe"
+		},
+		{
+			"image": "./story-pages/story-26-end.webp",
+			"alt": "Rae puts mittens in reachable basket after walk"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-27-begin.webp",
+			"alt": "Girls quietly watch small bird on fence through window"
+		},
+		{
+			"image": "./story-pages/story-27-middle.webp",
+			"alt": "Dad shows bird guide sisters observe bird feet and head"
+		},
+		{
+			"image": "./story-pages/story-27-end.webp",
+			"alt": "Sue writes notebook Rae draws tiny bird feet after patient observation"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-28-begin.webp",
+			"alt": "Dad places saving jar on high shelf girls use paper coins at table"
+		},
+		{
+			"image": "./story-pages/story-28-middle.webp",
+			"alt": "Girls draw toy and sparkly bag savings goals on paper"
+		},
+		{
+			"image": "./story-pages/story-28-end.webp",
+			"alt": "Rae proudly decorates existing bag ribbon Mom helps Dad deposits real coins safely high"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-29-begin.webp",
+			"alt": "Girls notice Dad tired before busy work morning"
+		},
+		{
+			"image": "./story-pages/story-29-middle.webp",
+			"alt": "Dad at lunch looks fondly at folded note with golden dog drawing beside lunchbox"
+		},
+		{
+			"image": "./story-pages/story-29-end.webp",
+			"alt": "Dad thanks girls at home Mateo leans knee Mom holds smiling baby"
+		}
+	],
+	[
+		{
+			"image": "./story-pages/story-30-begin.webp",
+			"alt": "Sue points bright light above garden as dusk falls"
+		},
+		{
+			"image": "./story-pages/story-30-middle.webp",
+			"alt": "Dad and girls look up sky light using guide phone Mom baby nearby"
+		},
+		{
+			"image": "./story-pages/story-30-end.webp",
+			"alt": "Family admires purple orange horizon from safe garden"
+		}
+	]
+];
+var storyPageMaps = [
+	[
+		0,
+		1,
+		1,
+		1,
+		2,
+		0
+	],
+	[
+		0,
+		1,
+		1,
+		-1,
+		2,
+		1
+	],
+	[
+		0,
+		0,
+		1,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		0,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		0,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		0,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	],
+	[
+		0,
+		-1,
+		1,
+		2
+	],
+	[
+		0,
+		1,
+		2,
+		2
+	]
+];
+//#endregion
+//#region app/story-illustration.ts
+function storyIllustration(index, page) {
+	const story = stories[index];
+	const panel = storyPageMaps[index][page - 1];
+	if (page === 0 || panel === -1) return {
+		image: story.image,
+		alt: story.imageAlt
+	};
+	return storyPictures[index][panel ?? 2];
+}
+//#endregion
 //#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react-jsx-runtime.production.js
 /**
 * @license React
@@ -12933,6 +13633,7 @@ function StoryReader({ index, onBack }) {
 	const [page, setPage] = (0, import_react.useState)(0), [direction, setDirection] = (0, import_react.useState)("forward"), [word, setWord] = (0, import_react.useState)(null), [scope, setScope] = (0, import_react.useState)("page");
 	const touch = (0, import_react.useRef)(null);
 	const last = story.paragraphs.length + 1, busy = speech.state.status === "reading" || speech.state.status === "paused";
+	const picture = storyIllustration(index, page);
 	(0, import_react.useEffect)(() => {
 		if (scope !== "all") return;
 		if (speech.state.status === "reading" && speech.state.segment >= 0) {
@@ -12948,6 +13649,13 @@ function StoryReader({ index, onBack }) {
 		speech.state.status,
 		last
 	]);
+	(0, import_react.useEffect)(() => {
+		const images = new Set(story.paragraphs.map((_, i) => storyIllustration(index, i + 1).image));
+		for (const src of images) {
+			const preload = new Image();
+			preload.src = src;
+		}
+	}, [index]);
 	function turn(next) {
 		if (next < 0 || next > last) return;
 		speech.stop();
@@ -13096,9 +13804,9 @@ function StoryReader({ index, onBack }) {
 					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
 						className: "book-picture",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							src: story.image,
-							alt: story.imageAlt
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: story.imageAlt })]
+							src: picture.image,
+							alt: picture.alt
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: picture.alt })]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "book-text interactive-story-text",
 						children: page === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
@@ -24002,100 +24710,437 @@ var coffeeBackgrounds = [
 function coffeeBackground(index) {
 	return coffeeBackgrounds[index % coffeeBackgrounds.length];
 }
-function wrapQuote(text, measure, width) {
-	const lines = [];
-	let line = "";
-	for (const word of text.split(/\s+/)) {
-		const next = line ? line + " " + word : word;
-		if (line && measure(next) > width) {
-			lines.push(line);
-			line = word;
-		} else line = next;
-	}
-	if (line) lines.push(line);
-	return lines;
-}
-async function downloadCoffeeQuote(quote, index) {
-	const picture = new Image();
-	picture.decoding = "async";
-	const loaded = new Promise((resolve, reject) => {
-		picture.onload = () => resolve();
-		picture.onerror = () => reject(/* @__PURE__ */ new Error("The coffee photo could not load. Please try again."));
+//#endregion
+//#region node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs
+/**
+* Copyright 2022 Joe Bell. All rights reserved.
+*
+* This file is licensed to you under the Apache License, Version 2.0
+* (the "License"); you may not use this file except in compliance with the
+* License. You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+* WARRANTIES OR REPRESENTATIONS OF ANY KIND, either express or implied. See the
+* License for the specific language governing permissions and limitations under
+* the License.
+*/ var falsyToString = (value) => typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
+var cx = clsx;
+var cva = (base, config) => (props) => {
+	var _config_compoundVariants;
+	if ((config === null || config === void 0 ? void 0 : config.variants) == null) return cx(base, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+	const { variants, defaultVariants } = config;
+	const getVariantClassNames = Object.keys(variants).map((variant) => {
+		const variantProp = props === null || props === void 0 ? void 0 : props[variant];
+		const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
+		if (variantProp === null) return null;
+		const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
+		return variants[variant][variantKey];
 	});
-	picture.src = coffeeBackground(index);
+	const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param) => {
+		let [key, value] = param;
+		if (value === void 0) return acc;
+		acc[key] = value;
+		return acc;
+	}, {});
+	return cx(base, getVariantClassNames, config === null || config === void 0 ? void 0 : (_config_compoundVariants = config.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param) => {
+		let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
+		return Object.entries(compoundVariantOptions).every((param) => {
+			let [key, value] = param;
+			return Array.isArray(value) ? value.includes({
+				...defaultVariants,
+				...propsWithoutUndefined
+			}[key]) : {
+				...defaultVariants,
+				...propsWithoutUndefined
+			}[key] === value;
+		}) ? [
+			...acc,
+			cvClass,
+			cvClassName
+		] : acc;
+	}, []), props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+};
+//#endregion
+//#region components/ui/button.tsx
+var buttonVariants = cva("inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", {
+	variants: {
+		variant: {
+			default: "bg-primary text-primary-foreground hover:bg-primary/90",
+			destructive: "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:bg-destructive/60 dark:focus-visible:ring-destructive/40",
+			outline: "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+			secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+			ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+			link: "text-primary underline-offset-4 hover:underline"
+		},
+		size: {
+			default: "h-9 px-4 py-2 has-[>svg]:px-3",
+			xs: "h-6 gap-1 rounded-md px-2 text-xs has-[>svg]:px-1.5 [&_svg:not([class*='size-'])]:size-3",
+			sm: "h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5",
+			lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+			icon: "size-9",
+			"icon-xs": "size-6 rounded-md [&_svg:not([class*='size-'])]:size-3",
+			"icon-sm": "size-8",
+			"icon-lg": "size-10"
+		}
+	},
+	defaultVariants: {
+		variant: "default",
+		size: "default"
+	}
+});
+function Button({ className, variant = "default", size = "default", asChild = false, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(asChild ? Slot$2 : "button", {
+		"data-slot": "button",
+		"data-variant": variant,
+		"data-size": size,
+		className: cn$1(buttonVariants({
+			variant,
+			size,
+			className
+		})),
+		...props
+	});
+}
+//#endregion
+//#region components/ui/dialog.tsx
+function Dialog({ ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog$1, {
+		"data-slot": "dialog",
+		...props
+	});
+}
+function DialogPortal({ ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogPortal$1, {
+		"data-slot": "dialog-portal",
+		...props
+	});
+}
+function DialogOverlay({ className, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay$1, {
+		"data-slot": "dialog-overlay",
+		className: cn$1("fixed inset-0 z-50 bg-black/50 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0", className),
+		...props
+	});
+}
+function DialogContent({ className, children, showCloseButton = true, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogPortal, {
+		"data-slot": "dialog-portal",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent$1, {
+			"data-slot": "dialog-content",
+			className: cn$1("fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border bg-background p-6 shadow-lg duration-200 outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 sm:max-w-lg", className),
+			...props,
+			children: [children, showCloseButton && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogClose, {
+				"data-slot": "dialog-close",
+				className: "absolute top-4 right-4 rounded-xs opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "sr-only",
+					children: "Close"
+				})]
+			})]
+		})]
+	});
+}
+function DialogTitle({ className, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle$1, {
+		"data-slot": "dialog-title",
+		className: cn$1("text-lg leading-none font-semibold", className),
+		...props
+	});
+}
+function DialogDescription({ className, ...props }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription$1, {
+		"data-slot": "dialog-description",
+		className: cn$1("text-sm text-muted-foreground", className),
+		...props
+	});
+}
+//#endregion
+//#region app/photo-post.ts
+var savingsBackgrounds = {
+	"Groceries": "./photo-share/savings-groceries.webp",
+	"Money habits": "./photo-share/savings-money.webp",
+	"Home & bills": "./photo-share/savings-home.webp"
+};
+var prayerBackground = "./photo-share/prayer.webp";
+function wrapPostText(text, measure, width) {
+	return text.split("\n").flatMap((paragraph) => {
+		const lines = [];
+		let line = "";
+		for (const word of paragraph.split(/\s+/).filter(Boolean)) {
+			if (measure(line ? line + " " + word : word) > width && line) {
+				lines.push(line);
+				line = "";
+			}
+			if (measure(word) > width) {
+				let part = "";
+				for (const letter of word) {
+					if (part && measure(part + letter) > width) {
+						lines.push(part);
+						part = "";
+					}
+					part += letter;
+				}
+				line = part;
+			} else line = line ? line + " " + word : word;
+		}
+		if (line) lines.push(line);
+		return lines.length ? lines : [""];
+	});
+}
+async function createPhotoPost(post) {
+	const image = new Image();
+	image.decoding = "async";
+	const loaded = new Promise((resolve, reject) => {
+		image.onload = () => resolve();
+		image.onerror = () => reject(/* @__PURE__ */ new Error("The photo could not load. Please try again."));
+	});
+	image.src = post.background;
 	await loaded;
 	const canvas = document.createElement("canvas");
 	canvas.width = canvas.height = 1080;
 	const ctx = canvas.getContext("2d");
-	if (!ctx) throw new Error("Image downloads are unavailable in this browser.");
-	ctx.drawImage(picture, 0, 0, 1080, 1080);
-	ctx.fillStyle = "rgba(12,8,5,0.62)";
+	if (!ctx) throw new Error("Your browser cannot prepare a photo here.");
+	const edge = Math.min(image.naturalWidth, image.naturalHeight);
+	ctx.drawImage(image, (image.naturalWidth - edge) / 2, (image.naturalHeight - edge) / 2, edge, edge, 0, 0, 1080, 1080);
+	ctx.fillStyle = "rgba(8,19,24,.72)";
 	ctx.fillRect(0, 0, 1080, 1080);
-	const text = "“" + quote + "”";
-	let size = 64, lines = [];
-	while (size >= 32) {
-		ctx.font = size + "px Georgia, serif";
-		lines = wrapQuote(text, (value) => ctx.measureText(value).width, 840);
-		if (lines.length * size * 1.45 <= 690) break;
-		size -= 2;
-	}
 	ctx.textAlign = "center";
 	ctx.textBaseline = "middle";
-	ctx.fillStyle = "#ffffff";
-	const height = size * 1.45, start = 515 - (lines.length - 1) * height / 2;
+	ctx.fillStyle = "#fff";
+	if (post.title) {
+		ctx.font = "bold 36px Georgia, serif";
+		wrapPostText(post.title, (v) => ctx.measureText(v).width, 840).slice(0, 3).forEach((line, i) => ctx.fillText(line, 540, 90 + i * 45));
+	}
+	let size = post.title ? 46 : 60, lines = [];
+	const top = post.title ? 230 : 120, bottom = 790;
+	while (size >= 12) {
+		ctx.font = size + "px Georgia, serif";
+		lines = wrapPostText(post.text, (v) => ctx.measureText(v).width, 840);
+		if (lines.length * size * 1.4 <= bottom - top) break;
+		size--;
+	}
+	const height = size * 1.4, start = (top + bottom) / 2 - (lines.length - 1) * height / 2;
 	lines.forEach((line, i) => ctx.fillText(line, 540, start + i * height));
-	ctx.font = "24px Arial, sans-serif";
+	ctx.font = "22px Arial, sans-serif";
 	ctx.fillStyle = "#f3dfb5";
-	ctx.fillText("THE JAMES NZ · ORIGINAL COFFEE QUOTE", 540, 936);
-	const blob = await new Promise((resolve, reject) => canvas.toBlob((value) => value ? resolve(value) : reject(/* @__PURE__ */ new Error("The image could not be created.")), "image/png"));
-	const url = URL.createObjectURL(blob);
+	wrapPostText(post.credit, (v) => ctx.measureText(v).width, 840).slice(0, 5).forEach((line, i) => ctx.fillText(line, 540, 855 + i * 28));
+	ctx.font = "22px Arial, sans-serif";
+	ctx.fillText("THE JAMES NZ", 540, 1030);
+	const blob = await new Promise((resolve, reject) => canvas.toBlob((value) => value ? resolve(value) : reject(/* @__PURE__ */ new Error("The image could not be prepared.")), "image/png"));
+	return new File([blob], post.filename.replace(/\.png$/i, "") + ".png", { type: "image/png" });
+}
+function savePhotoFile(file) {
+	const url = URL.createObjectURL(file);
 	const link = document.createElement("a");
 	link.href = url;
-	link.download = "TheJamesNZ-coffee-quote-" + String(index + 1).padStart(2, "0") + ".png";
+	link.download = file.name;
 	document.body.appendChild(link);
 	link.click();
 	link.remove();
 	setTimeout(() => URL.revokeObjectURL(url), 1e4);
 }
+function supportsPhotoShare(file) {
+	try {
+		return typeof navigator.share === "function" && typeof navigator.canShare === "function" && navigator.canShare({ files: [file] });
+	} catch {
+		return false;
+	}
+}
+async function sharePhotoFile(file, title) {
+	if (!supportsPhotoShare(file)) throw new Error("Photo sharing is unavailable here. Save the photo and upload it in your chosen app.");
+	await navigator.share({
+		files: [file],
+		title
+	});
+}
+//#endregion
+//#region app/photo-share.tsx
+var apps = [
+	{
+		name: "Facebook",
+		url: "https://www.facebook.com/",
+		icon: Globe
+	},
+	{
+		name: "Instagram",
+		url: "https://www.instagram.com/",
+		icon: Camera
+	},
+	{
+		name: "WhatsApp",
+		url: "https://web.whatsapp.com/",
+		icon: MessageCircle
+	}
+];
+function PhotoShare({ post }) {
+	const [open, setOpen] = (0, import_react.useState)(false), [file, setFile] = (0, import_react.useState)(null), [preview, setPreview] = (0, import_react.useState)(""), [busy, setBusy] = (0, import_react.useState)(false), [preparing, setPreparing] = (0, import_react.useState)(false), [message, setMessage] = (0, import_react.useState)(""), [app, setApp] = (0, import_react.useState)("");
+	const generation = (0, import_react.useRef)(0), previewURL = (0, import_react.useRef)("");
+	(0, import_react.useEffect)(() => () => {
+		generation.current++;
+		if (previewURL.current) URL.revokeObjectURL(previewURL.current);
+	}, []);
+	async function prepare() {
+		const current = ++generation.current;
+		setOpen(true);
+		setFile(null);
+		setApp("");
+		setMessage("");
+		setPreparing(true);
+		try {
+			const result = await createPhotoPost(post);
+			if (current !== generation.current) return;
+			if (previewURL.current) URL.revokeObjectURL(previewURL.current);
+			previewURL.current = URL.createObjectURL(result);
+			setPreview(previewURL.current);
+			setFile(result);
+		} catch (e) {
+			if (current === generation.current) setMessage(e.message);
+		} finally {
+			if (current === generation.current) setPreparing(false);
+		}
+	}
+	async function share() {
+		if (!file || busy) return;
+		setBusy(true);
+		setMessage("");
+		try {
+			await sharePhotoFile(file, post.title || "The James NZ");
+			setMessage("The photo was handed to your chosen app. Complete your post there.");
+		} catch (e) {
+			setMessage(e.name === "AbortError" ? "Sharing cancelled. Your photo is still ready." : e.message);
+		} finally {
+			setBusy(false);
+		}
+	}
+	const canShare = file ? supportsPhotoShare(file) : false;
+	const selected = apps.find((a) => a.name === app);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+		className: "secondary photo-share-trigger",
+		onClick: prepare,
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Share2, { size: 17 }), "Share"]
+	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog, {
+		open,
+		onOpenChange: (v) => {
+			if (!busy) {
+				setOpen(v);
+				if (!v) {
+					generation.current++;
+					setPreparing(false);
+				}
+			}
+		},
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent, {
+			className: "photo-share-dialog",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle, { children: "Share a little encouragement" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription, { children: "Preview your square photo, then choose how to share it." }),
+				preparing ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					role: "status",
+					children: "Preparing your photo…"
+				}) : file ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						className: "photo-share-preview",
+						src: preview,
+						alt: "Preview of your photo post with its complete text"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						className: "primary",
+						disabled: !canShare || busy,
+						onClick: share,
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Share2, { size: 17 }), busy ? "Opening sharing…" : "Share photo to an app"]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "small-note",
+						children: canShare ? "Choose Facebook, Instagram, WhatsApp or another available app in your device’s share sheet. Apps shown depend on your device." : "This browser cannot share image files directly. Save the photo below, then upload it in your chosen app."
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "share-app-options",
+						"aria-label": "Help sharing to a platform",
+						children: apps.map((a) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							className: app === a.name ? "secondary selected" : "secondary",
+							"aria-pressed": app === a.name,
+							onClick: () => setApp(a.name),
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(a.icon, { size: 17 }), a.name]
+						}, a.name))
+					}),
+					selected && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "share-app-help",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+							"For ",
+							selected.name,
+							", save the photo, open ",
+							selected.name,
+							", and attach it to a new ",
+							selected.name === "WhatsApp" ? "message or status" : "post or story",
+							". You choose the audience and finish posting in the app."
+						] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+							className: "secondary",
+							href: selected.url,
+							target: "_blank",
+							rel: "noopener noreferrer",
+							children: ["Open ", selected.name]
+						})]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						className: "secondary",
+						onClick: () => {
+							savePhotoFile(file);
+							setMessage("Photo saved. It is ready to upload to your chosen app.");
+						},
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, { size: 17 }), "Save photo for posting"]
+					})
+				] }) : null,
+				message && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					role: "status",
+					className: "small-note",
+					children: message
+				}),
+				!preparing && !file && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					className: "secondary",
+					onClick: prepare,
+					children: "Try again"
+				})
+			]
+		})
+	})] });
+}
+//#endregion
+//#region app/photo-card.tsx
+function PhotoCard({ text, title, credit, background, filename, kind = "reflection" }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "photo-card-content " + kind,
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
+			className: "photo-text-card",
+			style: { backgroundImage: `linear-gradient(#081318bd,#081318bd),url("${background}")` },
+			children: [
+				title && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: title }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("blockquote", { children: text }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: credit })
+			]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhotoShare, { post: {
+			text,
+			title,
+			credit,
+			background,
+			filename
+		} })]
+	});
+}
 //#endregion
 //#region app/coffee-quote-card.tsx
 function CoffeeQuoteCard({ quote, index }) {
-	const [saving, setSaving] = (0, import_react.useState)(false), [message, setMessage] = (0, import_react.useState)("");
-	async function download() {
-		setSaving(true);
-		setMessage("");
-		try {
-			await downloadCoffeeQuote(quote, index);
-			setMessage("Your 1080 × 1080 PNG is ready in downloads.");
-		} catch (e) {
-			setMessage(e.message);
-		} finally {
-			setSaving(false);
-		}
-	}
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", {
 		className: "coffee-post-card",
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
-				style: { backgroundImage: `linear-gradient(#140c089e,#140c089e),url("${coffeeBackground(index)}")` },
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("blockquote", { children: [
-					"“",
-					quote,
-					"”"
-				] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: "The James NZ · original coffee quote" })]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-				className: "secondary",
-				disabled: saving,
-				onClick: download,
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, { size: 17 }), saving ? "Preparing image…" : "Download post image"]
-			}),
-			message && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				role: "status",
-				className: "small-note",
-				children: message
-			})
-		]
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhotoCard, {
+			text: "“" + quote + "”",
+			credit: "The James NZ · original coffee quote",
+			background: coffeeBackground(index),
+			filename: "TheJamesNZ-coffee-quote-" + String(index + 1).padStart(2, "0"),
+			kind: "coffee"
+		})
 	});
 }
 //#endregion
@@ -24450,7 +25495,7 @@ function CoffeeCorner() {
 			view === "Coffee quotes" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "small-note",
-					children: "Every quote has a coffee-photo background. Download a square 1080 × 1080 PNG to post online."
+					children: "Every quote has a coffee-photo background. Tap Share to preview a square photo and send it to an available app."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "coffee-feature-post",
@@ -24498,153 +25543,6 @@ function CoffeeCorner() {
 				})]
 			})
 		]
-	});
-}
-//#endregion
-//#region node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs
-/**
-* Copyright 2022 Joe Bell. All rights reserved.
-*
-* This file is licensed to you under the Apache License, Version 2.0
-* (the "License"); you may not use this file except in compliance with the
-* License. You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-* WARRANTIES OR REPRESENTATIONS OF ANY KIND, either express or implied. See the
-* License for the specific language governing permissions and limitations under
-* the License.
-*/ var falsyToString = (value) => typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
-var cx = clsx;
-var cva = (base, config) => (props) => {
-	var _config_compoundVariants;
-	if ((config === null || config === void 0 ? void 0 : config.variants) == null) return cx(base, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
-	const { variants, defaultVariants } = config;
-	const getVariantClassNames = Object.keys(variants).map((variant) => {
-		const variantProp = props === null || props === void 0 ? void 0 : props[variant];
-		const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
-		if (variantProp === null) return null;
-		const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
-		return variants[variant][variantKey];
-	});
-	const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param) => {
-		let [key, value] = param;
-		if (value === void 0) return acc;
-		acc[key] = value;
-		return acc;
-	}, {});
-	return cx(base, getVariantClassNames, config === null || config === void 0 ? void 0 : (_config_compoundVariants = config.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param) => {
-		let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
-		return Object.entries(compoundVariantOptions).every((param) => {
-			let [key, value] = param;
-			return Array.isArray(value) ? value.includes({
-				...defaultVariants,
-				...propsWithoutUndefined
-			}[key]) : {
-				...defaultVariants,
-				...propsWithoutUndefined
-			}[key] === value;
-		}) ? [
-			...acc,
-			cvClass,
-			cvClassName
-		] : acc;
-	}, []), props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
-};
-//#endregion
-//#region components/ui/button.tsx
-var buttonVariants = cva("inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", {
-	variants: {
-		variant: {
-			default: "bg-primary text-primary-foreground hover:bg-primary/90",
-			destructive: "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:bg-destructive/60 dark:focus-visible:ring-destructive/40",
-			outline: "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
-			secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-			ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-			link: "text-primary underline-offset-4 hover:underline"
-		},
-		size: {
-			default: "h-9 px-4 py-2 has-[>svg]:px-3",
-			xs: "h-6 gap-1 rounded-md px-2 text-xs has-[>svg]:px-1.5 [&_svg:not([class*='size-'])]:size-3",
-			sm: "h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5",
-			lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
-			icon: "size-9",
-			"icon-xs": "size-6 rounded-md [&_svg:not([class*='size-'])]:size-3",
-			"icon-sm": "size-8",
-			"icon-lg": "size-10"
-		}
-	},
-	defaultVariants: {
-		variant: "default",
-		size: "default"
-	}
-});
-function Button({ className, variant = "default", size = "default", asChild = false, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(asChild ? Slot$2 : "button", {
-		"data-slot": "button",
-		"data-variant": variant,
-		"data-size": size,
-		className: cn$1(buttonVariants({
-			variant,
-			size,
-			className
-		})),
-		...props
-	});
-}
-//#endregion
-//#region components/ui/dialog.tsx
-function Dialog({ ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog$1, {
-		"data-slot": "dialog",
-		...props
-	});
-}
-function DialogPortal({ ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogPortal$1, {
-		"data-slot": "dialog-portal",
-		...props
-	});
-}
-function DialogOverlay({ className, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay$1, {
-		"data-slot": "dialog-overlay",
-		className: cn$1("fixed inset-0 z-50 bg-black/50 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0", className),
-		...props
-	});
-}
-function DialogContent({ className, children, showCloseButton = true, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogPortal, {
-		"data-slot": "dialog-portal",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent$1, {
-			"data-slot": "dialog-content",
-			className: cn$1("fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border bg-background p-6 shadow-lg duration-200 outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 sm:max-w-lg", className),
-			...props,
-			children: [children, showCloseButton && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogClose, {
-				"data-slot": "dialog-close",
-				className: "absolute top-4 right-4 rounded-xs opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-					className: "sr-only",
-					children: "Close"
-				})]
-			})]
-		})]
-	});
-}
-function DialogTitle({ className, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle$1, {
-		"data-slot": "dialog-title",
-		className: cn$1("text-lg leading-none font-semibold", className),
-		...props
-	});
-}
-function DialogDescription({ className, ...props }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription$1, {
-		"data-slot": "dialog-description",
-		className: cn$1("text-sm text-muted-foreground", className),
-		...props
 	});
 }
 //#endregion
@@ -30814,7 +31712,8 @@ function SavingTips() {
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "saving-grid",
 			children: matches.slice(page * 12, page * 12 + 12).map((t, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-				className: "tone-" + i % 4,
+				className: "saving-photo-tip",
+				style: { backgroundImage: `linear-gradient(#081318c4,#081318c4),url("${savingsBackgrounds[t.category]}")` },
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 						className: "pill",
@@ -30823,7 +31722,7 @@ function SavingTips() {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: t.title }),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: t.text })
 				]
-			}, t.title))
+			}, t.id))
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "timer-actions",
@@ -31565,18 +32464,17 @@ function PrayerLibrary() {
 				className: "prayer-grid",
 				children: prayers.filter((p) => intention === "All prayers" || p.intention === intention).map((p) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 					className: "prayer-card",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "pill",
-							children: p.intention === "Departed" ? "For the departed" : p.intention
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: p.title }),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: p.text }),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							className: "small-note",
-							children: "The James NZ · original prayer"
-						})
-					]
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: "pill",
+						children: p.intention === "Departed" ? "For the departed" : p.intention
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhotoCard, {
+						title: p.title,
+						text: p.text,
+						credit: "The James NZ · original prayer",
+						background: prayerBackground,
+						filename: "TheJamesNZ-prayer-" + p.intention.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+						kind: "prayer"
+					})]
 				}, p.title))
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -39867,24 +40765,14 @@ function Home({ canEdit }) {
 										children: "Sign in to add quotes"
 									})]
 								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "featured",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-											className: "pill",
-											children: "A MOMENT TO REFLECT"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("blockquote", { children: [
-											"“The way we care for each other",
-											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", { className: "desktop" }),
-											" is the light we leave behind.”"
-										] }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "The James NZ · original reflection" })
-									] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sun, {
-										className: "feature-sun",
-										size: 110,
-										strokeWidth: 1
-									})]
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "inspiration-feature",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhotoCard, {
+										text: "“The way we care for each other is the light we leave behind.”",
+										credit: "The James NZ · original reflection",
+										background: "./photo-share/inspiration.webp",
+										filename: "TheJamesNZ-a-moment-to-reflect"
+									})
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "section-row",
@@ -39956,22 +40844,24 @@ function Home({ canEdit }) {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 									className: "quote-grid",
 									children: shown.map((q, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-										className: "quote-card tone-" + i % 4,
+										className: "inspiration-photo-card",
 										children: [
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												className: "quote-top",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: q.category }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Quote, { size: 23 })]
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+												className: "pill",
+												children: q.category
 											}),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("blockquote", { children: [
-												"“",
-												q.text,
-												"”"
-											] }),
-											/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: q.author || "Author not specified" }), canEdit && !q.id.startsWith("sample-") && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+											/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhotoCard, {
+												text: "“" + q.text + "”",
+												credit: q.author || "Author not specified",
+												background: "./photo-share/inspiration.webp",
+												filename: "TheJamesNZ-reflection-" + q.id.replace(/[^a-z0-9-]/gi, "")
+											}),
+											canEdit && !q.id.startsWith("sample-") && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+												className: "quote-delete",
 												"aria-label": "Delete quote",
 												onClick: () => setDeleteId(q.id),
 												children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Trash2, { size: 17 })
-											})] })
+											})
 										]
 									}, q.id))
 								}),
