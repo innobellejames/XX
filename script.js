@@ -10319,6 +10319,26 @@ var Compass = createLucideIcon("compass", [["circle", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Download = createLucideIcon("download", [
+	["path", {
+		d: "M12 15V3",
+		key: "m9g1x1"
+	}],
+	["path", {
+		d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",
+		key: "ih7n3h"
+	}],
+	["path", {
+		d: "m7 10 5 5 5-5",
+		key: "brsn70"
+	}]
+]);
+/**
+* @license lucide-react v1.31.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Dumbbell = createLucideIcon("dumbbell", [
 	["path", {
 		d: "M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z",
@@ -10970,6 +10990,7 @@ var X = createLucideIcon("x", [["path", {
 //#endregion
 //#region app/speech-reader.ts
 var readingSpeeds = {
+	"Very slow": .45,
 	Slow: .7,
 	Med: 1,
 	Fast: 1.3
@@ -11004,11 +11025,24 @@ function readingTokens(text) {
 	});
 	return result;
 }
+function selectSpeechVoice(voices, profile, preferred) {
+	const english = voices.filter((v) => /^en/i.test(v.lang));
+	if (preferred) {
+		const chosen = voices.find((v) => v.voiceURI === preferred);
+		if (chosen) return chosen;
+	}
+	if (profile === "mateo") {
+		const named = english.find((v) => /\b(daniel|alex|david|george|james|guy|aaron|fred|thomas|oliver|arthur|lee|rishi|male)\b/i.test(v.name));
+		if (named) return named;
+	}
+	return english.find((v) => /^en[-_]NZ/i.test(v.lang)) || english.find((v) => /^en[-_]AU/i.test(v.lang)) || english.find((v) => v.localService) || english[0];
+}
 var SpeechReader = class {
-	constructor(synth, create, update) {
+	constructor(synth, create, update, profile = "reader") {
 		this.synth = synth;
 		this.create = create;
 		this.update = update;
+		this.profile = profile;
 		this.generation = 0;
 		this.parts = [];
 		this.current = null;
@@ -11041,8 +11075,8 @@ var SpeechReader = class {
 			utterance.text = parts[index];
 			utterance.lang = "en-NZ";
 			utterance.rate = this.rate;
-			const voices = this.synth.getVoices();
-			const voice = voices.find((v) => /^en[-_]NZ/i.test(v.lang)) || voices.find((v) => /^en[-_]AU/i.test(v.lang)) || voices.find((v) => /^en/i.test(v.lang) && v.localService) || voices.find((v) => /^en/i.test(v.lang));
+			const voice = selectSpeechVoice(this.synth.getVoices(), this.profile, this.preferredVoice);
+			utterance.pitch = this.profile === "mateo" ? .65 : 1;
 			if (voice) {
 				utterance.voice = voice;
 				utterance.lang = voice.lang;
@@ -11103,6 +11137,9 @@ var SpeechReader = class {
 			});
 		}
 	}
+	setVoice(uri) {
+		this.preferredVoice = uri || void 0;
+	}
 	setRate(rate) {
 		this.rate = rate;
 		if (this.state.status === "reading" || this.state.status === "paused") this.read(this.parts, this.state.segment);
@@ -11116,15 +11153,16 @@ var SpeechReader = class {
 };
 //#endregion
 //#region app/use-speech.ts
-function useSpeech() {
-	const reader = (0, import_react.useRef)(null), [supported, setSupported] = (0, import_react.useState)(null), [state, setState] = (0, import_react.useState)(idleSpeech), [speed, setSpeed] = (0, import_react.useState)("Med");
+function useSpeech(profile = "reader", initialSpeed = "Med") {
+	const reader = (0, import_react.useRef)(null), [supported, setSupported] = (0, import_react.useState)(null), [state, setState] = (0, import_react.useState)(idleSpeech), [speed, setSpeed] = (0, import_react.useState)(initialSpeed);
 	(0, import_react.useEffect)(() => {
 		if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
 			setSupported(false);
 			return;
 		}
 		setSupported(true);
-		reader.current = new SpeechReader(window.speechSynthesis, () => new SpeechSynthesisUtterance(), setState);
+		reader.current = new SpeechReader(window.speechSynthesis, () => new SpeechSynthesisUtterance(), setState, profile);
+		reader.current.setRate(readingSpeeds[initialSpeed]);
 		return () => {
 			reader.current?.dispose();
 			reader.current = null;
@@ -11139,6 +11177,7 @@ function useSpeech() {
 		state,
 		speed,
 		changeSpeed,
+		setVoice: (uri) => reader.current?.setVoice(uri),
 		read: (parts) => reader.current?.read(parts),
 		stop: () => reader.current?.stop(),
 		pause: () => reader.current?.pause(),
@@ -12890,25 +12929,49 @@ var import_jsx_runtime = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_jsx_runtime_production();
 })))();
 function StoryReader({ index, onBack }) {
-	const story = stories[index], speech = useSpeech();
-	const [word, setWord] = (0, import_react.useState)(null);
-	const busy = speech.state.status === "reading" || speech.state.status === "paused";
-	function speakWord(value) {
-		setWord(value);
-		speech.read([value]);
+	const story = stories[index], speech = useSpeech("reader", "Very slow");
+	const [page, setPage] = (0, import_react.useState)(0), [direction, setDirection] = (0, import_react.useState)("forward"), [word, setWord] = (0, import_react.useState)(null), [scope, setScope] = (0, import_react.useState)("page");
+	const touch = (0, import_react.useRef)(null);
+	const last = story.paragraphs.length + 1, busy = speech.state.status === "reading" || speech.state.status === "paused";
+	(0, import_react.useEffect)(() => {
+		if (scope !== "all") return;
+		if (speech.state.status === "reading" && speech.state.segment >= 0) {
+			setDirection("forward");
+			setPage(speech.state.segment);
+		} else if (speech.state.status === "done") {
+			setDirection("forward");
+			setPage(last);
+		}
+	}, [
+		scope,
+		speech.state.segment,
+		speech.state.status,
+		last
+	]);
+	function turn(next) {
+		if (next < 0 || next > last) return;
+		speech.stop();
+		setWord(null);
+		setScope("page");
+		setDirection(next < page ? "backward" : "forward");
+		setPage(next);
 	}
 	function text(value, segment) {
-		return readingTokens(value).map((token, i) => token.word ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+		return readingTokens(value).map((t, i) => t.word ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 			type: "button",
-			className: "readable-word" + (word === null && speech.state.segment === segment && speech.state.char >= token.start && speech.state.char < token.start + token.text.length || word === token.text && busy ? " speaking" : ""),
+			className: "readable-word" + (scope === "word" && word === t.text && busy || scope !== "word" && speech.state.segment === segment && speech.state.char >= t.start && speech.state.char < t.start + t.text.length && busy ? " speaking" : ""),
 			disabled: !speech.supported,
-			onClick: () => speakWord(token.text),
-			"aria-label": "Read word: " + token.text,
-			children: token.text
-		}, i) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: token.text }, i));
+			onClick: () => {
+				setScope("word");
+				setWord(t.text);
+				speech.read([t.text]);
+			},
+			"aria-label": "Read word: " + t.text,
+			children: t.text
+		}, i) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: t.text }, i));
 	}
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-		className: "story",
+		className: "story story-book-reader",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 				className: "secondary",
@@ -12926,30 +12989,20 @@ function StoryReader({ index, onBack }) {
 					story.theme
 				]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-				className: "interactive-story-title",
-				children: text(story.title, 0)
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-				className: "story-photo",
-				src: story.image,
-				alt: story.imageAlt
-			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: story.title }),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 				className: "story-audio",
 				"aria-label": "Read-aloud controls",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 21 }), "Read with me"] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Touch a word to hear it, or listen to the whole story." }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "filters",
-						"aria-label": "Reading speed",
-						children: Object.keys(readingSpeeds).map((value) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-							"aria-pressed": speech.speed === value,
-							className: speech.speed === value ? "selected" : "",
-							onClick: () => speech.changeSpeed(value),
-							children: value
-						}, value))
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Touch a word to hear it. Turn pages with the buttons, left/right keys, or a swipe." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+						className: "audio-speed-label",
+						children: ["Reading pace", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", {
+							value: speech.speed,
+							onChange: (e) => speech.changeSpeed(e.target.value),
+							children: Object.keys(readingSpeeds).map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { children: v }, v))
+						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "timer-actions",
@@ -12959,61 +13012,138 @@ function StoryReader({ index, onBack }) {
 								disabled: !speech.supported,
 								onClick: () => {
 									setWord(null);
+									setScope("all");
+									setPage(0);
 									speech.read([story.title, ...story.paragraphs]);
 								},
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 18 }), "Read entire story"]
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 17 }), "Read entire book"]
 							}),
-							busy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							page < last && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								className: "secondary",
+								disabled: !speech.supported,
+								onClick: () => {
+									setWord(null);
+									setScope("page");
+									speech.read([page === 0 ? story.title : story.paragraphs[page - 1]]);
+								},
+								children: "Read this page"
+							}),
+							busy && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								className: "secondary",
 								onClick: () => speech.state.status === "paused" ? speech.resume() : speech.pause(),
 								children: [
-									speech.state.status === "paused" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 18 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { size: 18 }),
+									speech.state.status === "paused" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { size: 16 }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { size: 16 }),
 									" ",
 									speech.state.status === "paused" ? "Resume" : "Pause"
 								]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								className: "secondary",
-								disabled: !busy,
-								onClick: () => {
-									setWord(null);
-									speech.stop();
-								},
+								onClick: speech.stop,
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 16 }), "Stop"]
-							})
+							})] })
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						role: "status",
 						className: "small-note",
-						children: speech.supported === false ? "Read-aloud is unavailable in this browser. All story text and quizzes still work." : speech.state.message
+						children: speech.supported === false ? "Audio is unavailable here. You can still read and turn every page." : speech.state.message
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "small-note",
-						children: "Uses your browser’s available English voice. Sound and word highlighting vary by browser. Changing speed restarts the current paragraph."
+						children: "Very slow gives little readers extra time. Browser voices and highlighting vary. Changing pace restarts the current paragraph; turning a page stops audio."
 					})
 				]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "interactive-story-text",
-				children: story.paragraphs.map((p, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: word === null && speech.state.segment === i + 1 && busy ? "reading-paragraph" : "",
-					children: text(p, i + 1)
-				}, i))
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+				className: "storybook",
+				"aria-label": story.title + " book",
+				tabIndex: 0,
+				onKeyDown: (e) => {
+					if (e.key === "ArrowRight") {
+						e.preventDefault();
+						turn(page + 1);
+					}
+					if (e.key === "ArrowLeft") {
+						e.preventDefault();
+						turn(page - 1);
+					}
+				},
+				onTouchStart: (e) => {
+					touch.current = {
+						x: e.touches[0].clientX,
+						y: e.touches[0].clientY
+					};
+				},
+				onTouchEnd: (e) => {
+					if (!touch.current) return;
+					const dx = e.changedTouches[0].clientX - touch.current.x, dy = e.changedTouches[0].clientY - touch.current.y;
+					touch.current = null;
+					if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.5) turn(page + (dx < 0 ? 1 : -1));
+				},
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "book-leaf " + direction + (page === last ? " quiz-leaf" : ""),
+					children: page === last ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "book-quiz-page",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(StoryQuiz, { index }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "story-questions",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Let’s talk about it" }),
+								story.ask.map((q) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: q }, q)),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Words to discover" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: story.words })
+							]
+						})]
+					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
+						className: "book-picture",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: story.image,
+							alt: story.imageAlt
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: story.imageAlt })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "book-text interactive-story-text",
+						children: page === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "eyebrow",
+								children: "OPEN A LITTLE ADVENTURE"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "interactive-story-title",
+								children: text(story.title, 0)
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "With Dad, Mom, Sue, Rae, Mye and Mateo." }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Turn the page to begin." })
+						] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+							className: "pill",
+							children: ["PAGE ", page]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: text(story.paragraphs[page - 1], scope === "all" ? page : 0) })] })
+					})] })
+				}, page)
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "story-questions",
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
+				className: "book-pagination",
+				"aria-label": "Book pages",
 				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Let’s talk about it" }),
-					story.ask.map((q) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: q }, q)),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: "Words to discover" }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: story.words })
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "secondary",
+						disabled: page === 0,
+						onClick: () => turn(page - 1),
+						children: "Previous page"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						role: "status",
+						children: page === 0 ? "Cover" : page === last ? "Story quiz" : `Page ${page} of ${story.paragraphs.length}`
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "primary",
+						disabled: page === last,
+						onClick: () => turn(page + 1),
+						children: page === 0 ? "Open book" : page === last - 1 ? "Go to quiz" : "Next page"
+					})
 				]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(StoryQuiz, { index }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "small-note",
-				children: "An original The James NZ story."
+				children: "The James NZ · original story"
 			})
 		]
 	});
@@ -23863,6 +23993,112 @@ function MindfulnessExercises() {
 	});
 }
 //#endregion
+//#region app/coffee-post.ts
+var coffeeBackgrounds = [
+	"./coffee-posts/coffee-01.webp",
+	"./coffee-posts/coffee-02.webp",
+	"./coffee-posts/coffee-03.webp"
+];
+function coffeeBackground(index) {
+	return coffeeBackgrounds[index % coffeeBackgrounds.length];
+}
+function wrapQuote(text, measure, width) {
+	const lines = [];
+	let line = "";
+	for (const word of text.split(/\s+/)) {
+		const next = line ? line + " " + word : word;
+		if (line && measure(next) > width) {
+			lines.push(line);
+			line = word;
+		} else line = next;
+	}
+	if (line) lines.push(line);
+	return lines;
+}
+async function downloadCoffeeQuote(quote, index) {
+	const picture = new Image();
+	picture.decoding = "async";
+	const loaded = new Promise((resolve, reject) => {
+		picture.onload = () => resolve();
+		picture.onerror = () => reject(/* @__PURE__ */ new Error("The coffee photo could not load. Please try again."));
+	});
+	picture.src = coffeeBackground(index);
+	await loaded;
+	const canvas = document.createElement("canvas");
+	canvas.width = canvas.height = 1080;
+	const ctx = canvas.getContext("2d");
+	if (!ctx) throw new Error("Image downloads are unavailable in this browser.");
+	ctx.drawImage(picture, 0, 0, 1080, 1080);
+	ctx.fillStyle = "rgba(12,8,5,0.62)";
+	ctx.fillRect(0, 0, 1080, 1080);
+	const text = "“" + quote + "”";
+	let size = 64, lines = [];
+	while (size >= 32) {
+		ctx.font = size + "px Georgia, serif";
+		lines = wrapQuote(text, (value) => ctx.measureText(value).width, 840);
+		if (lines.length * size * 1.45 <= 690) break;
+		size -= 2;
+	}
+	ctx.textAlign = "center";
+	ctx.textBaseline = "middle";
+	ctx.fillStyle = "#ffffff";
+	const height = size * 1.45, start = 515 - (lines.length - 1) * height / 2;
+	lines.forEach((line, i) => ctx.fillText(line, 540, start + i * height));
+	ctx.font = "24px Arial, sans-serif";
+	ctx.fillStyle = "#f3dfb5";
+	ctx.fillText("THE JAMES NZ · ORIGINAL COFFEE QUOTE", 540, 936);
+	const blob = await new Promise((resolve, reject) => canvas.toBlob((value) => value ? resolve(value) : reject(/* @__PURE__ */ new Error("The image could not be created.")), "image/png"));
+	const url = URL.createObjectURL(blob);
+	const link = document.createElement("a");
+	link.href = url;
+	link.download = "TheJamesNZ-coffee-quote-" + String(index + 1).padStart(2, "0") + ".png";
+	document.body.appendChild(link);
+	link.click();
+	link.remove();
+	setTimeout(() => URL.revokeObjectURL(url), 1e4);
+}
+//#endregion
+//#region app/coffee-quote-card.tsx
+function CoffeeQuoteCard({ quote, index }) {
+	const [saving, setSaving] = (0, import_react.useState)(false), [message, setMessage] = (0, import_react.useState)("");
+	async function download() {
+		setSaving(true);
+		setMessage("");
+		try {
+			await downloadCoffeeQuote(quote, index);
+			setMessage("Your 1080 × 1080 PNG is ready in downloads.");
+		} catch (e) {
+			setMessage(e.message);
+		} finally {
+			setSaving(false);
+		}
+	}
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+		className: "coffee-post-card",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
+				style: { backgroundImage: `linear-gradient(#140c089e,#140c089e),url("${coffeeBackground(index)}")` },
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("blockquote", { children: [
+					"“",
+					quote,
+					"”"
+				] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: "The James NZ · original coffee quote" })]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+				className: "secondary",
+				disabled: saving,
+				onClick: download,
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Download, { size: 17 }), saving ? "Preparing image…" : "Download post image"]
+			}),
+			message && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				role: "status",
+				className: "small-note",
+				children: message
+			})
+		]
+	});
+}
+//#endregion
 //#region app/coffee-content.ts
 var coffeeFacts = [
 	{
@@ -24211,36 +24447,30 @@ function CoffeeCorner() {
 					]
 				}, f.title))
 			}),
-			view === "Coffee quotes" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-				className: "coffee-feature",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "pill",
-						children: "WORDS FOR YOUR COFFEE BREAK"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("blockquote", { children: [
-						"“",
-						coffeeQuotes[quote],
-						"”"
-					] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "The James NZ · original coffee quote" }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						className: "primary",
+			view === "Coffee quotes" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "small-note",
+					children: "Every quote has a coffee-photo background. Download a square 1080 × 1080 PNG to post online."
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "coffee-feature-post",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CoffeeQuoteCard, {
+						quote: coffeeQuotes[quote],
+						index: quote
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "secondary",
 						onClick: () => setQuote((quote + 1) % coffeeQuotes.length),
 						children: "Another warm thought"
-					})
-				]
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "quote-grid",
-				children: filteredQuotes.slice(page * 12, page * 12 + 12).map((q) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-					className: "quote-card",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("blockquote", { children: [
-						"“",
-						q,
-						"”"
-					] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", { children: "The James NZ · original" })]
-				}, q))
-			})] }),
+					})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "coffee-post-grid",
+					children: filteredQuotes.slice(page * 12, page * 12 + 12).map((q) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CoffeeQuoteCard, {
+						quote: q,
+						index: coffeeQuotes.indexOf(q)
+					}, q))
+				})
+			] }),
 			view !== "Did you know?" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "coffee-pagination",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -27880,8 +28110,15 @@ function mateoLocalReply(text, mode, index = 0, now = /* @__PURE__ */ new Date()
 function AIFriend({ canEdit }) {
 	const [moving, setMoving] = (0, import_react.useState)(true), [messages, setMessages] = (0, import_react.useState)([]), [text, setText] = (0, import_react.useState)(""), [enabled, setEnabled] = (0, import_react.useState)(false), [busy, setBusy] = (0, import_react.useState)(false), [error, setError] = (0, import_react.useState)(""), [mode, setMode] = (0, import_react.useState)("Automatic");
 	const end = (0, import_react.useRef)(null);
-	const speech = useSpeech();
-	const [spoken, setSpoken] = (0, import_react.useState)(true);
+	const speech = useSpeech("mateo");
+	const [spoken, setSpoken] = (0, import_react.useState)(true), [voices, setVoices] = (0, import_react.useState)([]), [voiceChoice, setVoiceChoice] = (0, import_react.useState)("");
+	(0, import_react.useEffect)(() => {
+		if (!window.speechSynthesis) return;
+		const load = () => setVoices(window.speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang)));
+		load();
+		window.speechSynthesis.addEventListener("voiceschanged", load);
+		return () => window.speechSynthesis.removeEventListener("voiceschanged", load);
+	}, []);
 	const voice = useVoiceInput((value) => {
 		setText(value);
 		send(void 0, value);
@@ -27956,132 +28193,41 @@ function AIFriend({ canEdit }) {
 				children: "A LITTLE ENCOURAGEMENT"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Meet Mateo, your AI friend." }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Share what is on your mind for a friendly quote or a short prayer." })
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A friendly voice, a little inspiration, a moment of prayer." })
 		] })
 	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-		className: "friend-panel",
+		className: "friend-panel mateo-calm",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "friend-heading",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "mateo-avatar mateo-sprite smile" + (moving ? " moving" : " paused"),
-						role: "img",
-						"aria-label": "Mateo the Labrador smiling"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Mateo" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Your encouragement companion" })] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						className: "secondary motion-toggle",
-						"aria-pressed": moving,
-						onClick: () => setMoving((v) => !v),
-						children: moving ? "Pause movement" : "Animate Mateo"
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						className: "secondary",
-						disabled: busy || !messages.length,
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "mateo-avatar mateo-sprite smile" + (moving ? " moving" : " paused"),
+					role: "img",
+					"aria-label": "Mateo the Labrador smiling"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Hi, I’m Mateo." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Tell me what is on your mind." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+						type: "button",
+						className: "primary mateo-talk",
+						disabled: busy || !voice.supported && !voice.listening && speech.state.status !== "reading",
 						onClick: () => {
-							voice.stop();
-							speech.stop();
-							setMessages([]);
-							setError("");
-							setMoving(true);
+							if (voice.listening || speech.state.status === "reading" || speech.state.status === "paused") {
+								voice.stop();
+								speech.stop();
+							} else {
+								speech.stop();
+								voice.start();
+							}
 						},
-						children: "New chat"
-					})
-				]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "mateo-actions filters",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					className: "selected",
-					"aria-pressed": moving,
-					onClick: () => setMoving(true),
-					children: "Smile"
-				})
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-				className: "mateo-voice",
-				"aria-label": "Talk with Mateo",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h3", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mic, { size: 20 }), "Talk with Mateo"] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Tap, ask for encouragement, a prayer, a coffee fact or the New Zealand time, then hear Mateo’s reply." }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "timer-actions",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-								type: "button",
-								className: "primary",
-								disabled: !voice.supported || busy,
-								onClick: () => {
-									speech.stop();
-									voice.listening ? voice.stop() : voice.start();
-								},
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mic, { size: 18 }), voice.listening ? "Stop listening" : "Talk to Mateo"]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-								type: "button",
-								className: "secondary",
-								onClick: () => {
-									voice.stop();
-									speech.stop();
-								},
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { size: 16 }), "Stop voice"]
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
-								type: "button",
-								className: "secondary",
-								"aria-pressed": spoken,
-								disabled: !speech.supported,
-								onClick: () => {
-									if (spoken) speech.stop();
-									setSpoken((v) => !v);
-								},
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 18 }),
-									"Spoken replies ",
-									spoken ? "on" : "off"
-								]
-							})
-						]
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mic, { size: 18 }), voice.listening ? "Stop listening" : speech.state.status === "reading" || speech.state.status === "paused" ? "Stop speaking" : "Talk to Mateo"]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						role: "status",
 						className: "small-note",
-						children: voice.supported === false ? "Voice input is unavailable in this browser. Please type below." : voice.listening ? voice.message : speech.state.status === "reading" ? "Mateo is speaking…" : voice.message
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-						className: "small-note",
-						children: ["Listening starts only when you tap. Your browser may send audio to its speech-recognition provider. You can type instead. ", speech.supported === false && "Spoken replies are unavailable in this browser."]
+						children: voice.supported === false ? "Please type below; voice input is unavailable here." : voice.listening ? voice.message : speech.state.status === "reading" ? "Mateo is speaking…" : voice.message
 					})
-				]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "filters",
-				"aria-label": "Mateo response type",
-				children: [[
-					"Automatic",
-					"Quote",
-					"Prayer"
-				].map((value) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					className: mode === value ? "selected" : "",
-					"aria-pressed": mode === value,
-					disabled: busy,
-					onClick: () => {
-						setMode(value);
-						setError("");
-					},
-					children: value === "Automatic" ? "Choose for me" : value === "Quote" ? "Inspirational quote" : "Short prayer"
-				}, value)), enabled && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					className: mode === "AI conversation" ? "selected" : "",
-					"aria-pressed": mode === "AI conversation",
-					disabled: busy,
-					onClick: () => setMode("AI conversation"),
-					children: "AI conversation"
-				})]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-				className: "small-note",
-				children: ["Mateo understands greetings, coffee fact requests, New Zealand time questions, and themes for our original quotes and prayers. They work without an AI connection", enabled ? "; choose AI conversation for generated replies." : "."]
+				] })]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "chat-log",
@@ -28090,19 +28236,19 @@ function AIFriend({ canEdit }) {
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "chat-bubble assistant",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Welcome" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Hello! Would you like a little inspiration or a moment of prayer? Tell me a theme, such as family, gratitude, worry or a new goal." })]
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Mateo" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Hello! Ask me for a quote, a prayer, a coffee fact or the New Zealand time." })]
 					}),
 					messages.map((m, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "chat-bubble " + m.role,
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: m.role === "user" ? "You" : m.kind === "ai" ? "Mateo · AI" : m.kind === "prayer" ? "Mateo · short prayer" : m.kind === "fact" ? "Mateo · coffee fact" : m.kind === "chat" ? "Mateo" : "Mateo · inspiration" }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: m.role === "user" ? "You" : "Mateo" }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: m.content }),
-							m.role === "assistant" && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							m.role === "assistant" && i === messages.length - 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 								type: "button",
-								className: "secondary",
+								className: "mateo-replay",
 								disabled: !speech.supported || voice.listening,
 								onClick: () => speakReply(m.content),
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 16 }), "Hear reply"]
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { size: 15 }), "Listen again"]
 							})
 						]
 					}, i)),
@@ -28113,27 +28259,16 @@ function AIFriend({ canEdit }) {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { ref: end })
 				]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "filters",
-				children: [
-					"A quote for a new goal",
-					"A prayer for my family",
-					"Encouragement when I feel worried"
-				].map((p) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					disabled: busy,
-					onClick: () => setText(p),
-					children: p
-				}, p))
-			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("form", {
+				className: "mateo-compose",
 				onSubmit: send,
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: ["Your message", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("textarea", {
 						value: text,
 						onChange: (e) => setText(e.target.value),
-						rows: 3,
+						rows: 2,
 						maxLength: 2e3,
-						placeholder: "Please share a quote about kindness…"
+						placeholder: "A prayer for my family, please…"
 					})] }),
 					error && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "error",
@@ -28143,15 +28278,104 @@ function AIFriend({ canEdit }) {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 						className: "primary",
 						disabled: busy || !text.trim(),
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Send, { size: 16 }), busy ? "Sending…" : "Send message"]
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Send, { size: 16 }), busy ? "Sending…" : "Send"]
+					})
+				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("details", {
+				className: "mateo-settings",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("summary", { children: "Voice & chat settings" }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mateo-settings-grid",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: ["Reply style", /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
+								value: mode,
+								disabled: busy,
+								onChange: (e) => {
+									setMode(e.target.value);
+									setError("");
+								},
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+										value: "Automatic",
+										children: "Choose for me"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+										value: "Quote",
+										children: "Inspirational quote"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+										value: "Prayer",
+										children: "Short prayer"
+									}),
+									enabled && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+										value: "AI conversation",
+										children: "AI conversation"
+									})
+								]
+							})] }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", { children: ["Mateo’s voice", /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("select", {
+								value: voiceChoice,
+								onChange: (e) => {
+									setVoiceChoice(e.target.value);
+									speech.setVoice(e.target.value);
+								},
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", {
+									value: "",
+									children: "Automatic · prefer a male voice"
+								}), voices.map((v) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("option", {
+									value: v.voiceURI,
+									children: [
+										v.name,
+										" · ",
+										v.lang
+									]
+								}, v.voiceURI))]
+							})] }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+								className: "mateo-setting-check",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+									type: "checkbox",
+									checked: spoken,
+									onChange: (e) => {
+										setSpoken(e.target.checked);
+										if (!e.target.checked) speech.stop();
+									}
+								}), "Speak replies aloud"]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+								className: "mateo-setting-check",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+									type: "checkbox",
+									checked: moving,
+									onChange: (e) => setMoving(e.target.checked)
+								}), "Animate Mateo’s smile"]
+							})
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "small-note",
+						children: ["A lower pitch gives Mateo a warm, playful character voice. Male voices and pitch changes depend on your device; choose the voice you prefer. ", speech.supported === false && "Audio is unavailable in this browser."]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "secondary",
+						disabled: busy || !messages.length,
+						onClick: () => {
+							voice.stop();
+							speech.stop();
+							setMessages([]);
+							setError("");
+						},
+						children: "Start a new chat"
 					})
 				]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 				className: "small-note",
 				children: [
-					"Mateo speaks using your browser’s available voice. Quotes and prayers are encouragement, not personal or medical advice. Young visitors should use this page with a grown-up. This site does not save conversation history; refreshing clears the chat. ",
-					mode === "AI conversation" && "AI replies can make mistakes. In AI conversation mode your messages are sent to OpenAI; avoid sensitive personal details. ",
+					"Listening starts only when you tap. Your browser may send audio to its speech-recognition provider. Quotes and prayers come from our original collection. Young visitors can chat with a grown-up; refreshing clears this conversation. ",
+					mode === "AI conversation" && "Generated replies can make mistakes; messages in this mode go to OpenAI. ",
 					"For urgent help in New Zealand call 111; ",
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 						href: "https://1737.org.nz",
@@ -28557,66 +28781,1813 @@ var recipes = [...[
 	...r,
 	tags: ["Kids-friendly", ...r.id === "lentil-soup" ? ["Gluten-free ingredients", "Dairy-free ingredients"] : []]
 })), ...moreRecipes];
-var savingTips = [
+//#endregion
+//#region app/savings-content.ts
+var savingCategories = [
+	"Groceries",
+	"Money habits",
+	"Home & bills"
+];
+var expandedSavingTips = [
 	{
-		category: "Groceries",
-		title: "Plan from what you already have",
-		text: "Check your pantry, fridge, and freezer before choosing a few meals. Put the missing ingredients on a list and shop from that list."
+		"id": "groceries-001",
+		"category": "Groceries",
+		"title": "Pantry first",
+		"text": "Check your cupboards before buying ingredients you already own."
 	},
 	{
-		category: "Groceries",
-		title: "Compare the unit price",
-		text: "Compare prices per 100 g, kilogram, or litre. A bigger pack is only useful if it fits your budget and you will use it."
+		"id": "groceries-002",
+		"category": "Groceries",
+		"title": "Fridge photograph",
+		"text": "Take a fridge photo before shopping to remember what needs using."
 	},
 	{
-		category: "Groceries",
-		title: "Give leftovers a plan",
-		text: "Set aside a portion for another meal, label it with the date, and store it safely. Freeze what you will not use soon."
+		"id": "groceries-003",
+		"category": "Groceries",
+		"title": "Freezer inventory",
+		"text": "Keep a list of frozen food and cross off items as used."
 	},
 	{
-		category: "Groceries",
-		title: "Keep a flexible staple meal",
-		text: "Have one meal you can make from shelf-stable basics, such as lentil soup or tomato and bean pasta. Swap vegetables to match what is available."
+		"id": "groceries-004",
+		"category": "Groceries",
+		"title": "One shopping list",
+		"text": "Combine everyone’s requests into one list before leaving home."
 	},
 	{
-		category: "Money habits",
-		title: "Start with a manageable amount",
-		text: "Choose a small amount you can set aside after essential costs. A repeatable habit is more useful than a target you cannot sustain."
+		"id": "groceries-005",
+		"category": "Groceries",
+		"title": "Plan three dinners",
+		"text": "Choose three affordable dinners using overlapping ingredients."
 	},
 	{
-		category: "Money habits",
-		title: "Make saving automatic",
-		text: "If your income is predictable, schedule a transfer after payday to a separate savings account. Review it if your circumstances change."
+		"id": "groceries-006",
+		"category": "Groceries",
+		"title": "Flexible menu",
+		"text": "Swap an expensive ingredient for a suitable cheaper alternative."
 	},
 	{
-		category: "Money habits",
-		title: "Name one savings goal",
-		text: "Write down what the money is for and keep it separate from everyday spending. Emergency money should be accessible when needed."
+		"id": "groceries-007",
+		"category": "Groceries",
+		"title": "Leftover lunch",
+		"text": "Plan tomorrow’s lunch when deciding tonight’s dinner portions."
 	},
 	{
-		category: "Money habits",
-		title: "Track spending without judgement",
-		text: "Look at one month of spending and group it into essentials and flexible costs. Choose one small change to try next month."
+		"id": "groceries-008",
+		"category": "Groceries",
+		"title": "Simple breakfast",
+		"text": "Keep an affordable breakfast option ready for busy mornings."
 	},
 	{
-		category: "Home & bills",
-		title: "Review recurring payments",
-		text: "Check subscriptions and memberships. Cancel those you no longer use, and note renewal dates so you have time to decide."
+		"id": "groceries-009",
+		"category": "Groceries",
+		"title": "Snack portions",
+		"text": "Pack a reasonable snack serving instead of buying separate packets."
 	},
 	{
-		category: "Home & bills",
-		title: "Compare the total cost",
-		text: "Before switching providers, compare the ongoing cost, fees, minimum terms, and what is included. A promotion may not be cheapest over the full term."
+		"id": "groceries-010",
+		"category": "Groceries",
+		"title": "Check household numbers",
+		"text": "Buy for the people actually eating at home this week."
 	},
 	{
-		category: "Home & bills",
-		title: "Pause before non-essential buys",
-		text: "Keep a short wish list and revisit it after a day or two. Check whether borrowing, repairing, or buying second-hand would meet the same need."
+		"id": "groceries-011",
+		"category": "Groceries",
+		"title": "Compare unit prices",
+		"text": "Compare the price per kilogram, litre or item between packs."
 	},
 	{
-		category: "Home & bills",
-		title: "Ask for help early",
-		text: "If bills are becoming difficult to cover, contact the provider before the due date and explore free budgeting support through trusted New Zealand services."
+		"id": "groceries-012",
+		"category": "Groceries",
+		"title": "Own-brand trial",
+		"text": "Try one suitable store-brand product and judge whether it works for you."
+	},
+	{
+		"id": "groceries-013",
+		"category": "Groceries",
+		"title": "Sale-list match",
+		"text": "Buy sale items only when they fit your list and budget."
+	},
+	{
+		"id": "groceries-014",
+		"category": "Groceries",
+		"title": "Small-pack check",
+		"text": "A small pack may cost less overall when a large one would be wasted."
+	},
+	{
+		"id": "groceries-015",
+		"category": "Groceries",
+		"title": "Bulk with a plan",
+		"text": "Buy bulk only when you have storage and will use the contents."
+	},
+	{
+		"id": "groceries-016",
+		"category": "Groceries",
+		"title": "Receipt review",
+		"text": "Compare the receipt with shelf prices and query unexpected charges."
+	},
+	{
+		"id": "groceries-017",
+		"category": "Groceries",
+		"title": "Price notebook",
+		"text": "Record prices of your regular staples to recognise a genuine deal."
+	},
+	{
+		"id": "groceries-018",
+		"category": "Groceries",
+		"title": "Shelf scan",
+		"text": "Look above and below eye level for alternative brands and sizes."
+	},
+	{
+		"id": "groceries-019",
+		"category": "Groceries",
+		"title": "Online basket check",
+		"text": "Review the basket before paying and remove accidental duplicates."
+	},
+	{
+		"id": "groceries-020",
+		"category": "Groceries",
+		"title": "Delivery total",
+		"text": "Include delivery and service charges when comparing grocery options."
+	},
+	{
+		"id": "groceries-021",
+		"category": "Groceries",
+		"title": "Seasonal choice",
+		"text": "Compare local seasonal produce with out-of-season alternatives."
+	},
+	{
+		"id": "groceries-022",
+		"category": "Groceries",
+		"title": "Loose produce",
+		"text": "Buy the quantity of loose produce your household can use."
+	},
+	{
+		"id": "groceries-023",
+		"category": "Groceries",
+		"title": "Frozen vegetables",
+		"text": "Compare frozen vegetables with fresh options for planned meals."
+	},
+	{
+		"id": "groceries-024",
+		"category": "Groceries",
+		"title": "Frozen fruit",
+		"text": "Consider frozen fruit for smoothies when fresh fruit costs more."
+	},
+	{
+		"id": "groceries-025",
+		"category": "Groceries",
+		"title": "Suitable imperfect produce",
+		"text": "Choose sound, usable imperfect produce when it is priced lower."
+	},
+	{
+		"id": "groceries-026",
+		"category": "Groceries",
+		"title": "Whole vegetable value",
+		"text": "Compare whole vegetables with pre-cut packs, including preparation time."
+	},
+	{
+		"id": "groceries-027",
+		"category": "Groceries",
+		"title": "Herb portions",
+		"text": "Buy herbs for several planned dishes rather than one garnish."
+	},
+	{
+		"id": "groceries-028",
+		"category": "Groceries",
+		"title": "Legume meals",
+		"text": "Include a bean or lentil meal your household enjoys."
+	},
+	{
+		"id": "groceries-029",
+		"category": "Groceries",
+		"title": "Egg meal plan",
+		"text": "Compare an egg-based meal with other suitable dinner choices."
+	},
+	{
+		"id": "groceries-030",
+		"category": "Groceries",
+		"title": "Protein portions",
+		"text": "Plan suitable portions so expensive ingredients do not crowd out the meal."
+	},
+	{
+		"id": "groceries-031",
+		"category": "Groceries",
+		"title": "Soup from planned vegetables",
+		"text": "Use suitable vegetables in a planned soup before they deteriorate."
+	},
+	{
+		"id": "groceries-032",
+		"category": "Groceries",
+		"title": "Flexible stir-fry",
+		"text": "Choose stir-fry vegetables based on current prices and household preferences."
+	},
+	{
+		"id": "groceries-033",
+		"category": "Groceries",
+		"title": "Pasta pantry dinner",
+		"text": "Keep ingredients for one simple pantry pasta meal."
+	},
+	{
+		"id": "groceries-034",
+		"category": "Groceries",
+		"title": "Rice bowl night",
+		"text": "Build a rice bowl using suitable vegetables and a modest protein portion."
+	},
+	{
+		"id": "groceries-035",
+		"category": "Groceries",
+		"title": "Baked potato meal",
+		"text": "Try a filling baked potato with toppings you already have."
+	},
+	{
+		"id": "groceries-036",
+		"category": "Groceries",
+		"title": "Oats for breakfast",
+		"text": "Compare plain oats with individually packaged breakfast products."
+	},
+	{
+		"id": "groceries-037",
+		"category": "Groceries",
+		"title": "Plain yoghurt choice",
+		"text": "Compare plain yoghurt plus fruit with flavoured single-serving pots."
+	},
+	{
+		"id": "groceries-038",
+		"category": "Groceries",
+		"title": "Homemade sandwich",
+		"text": "Pack a sandwich on days when buying lunch is avoidable."
+	},
+	{
+		"id": "groceries-039",
+		"category": "Groceries",
+		"title": "Reusable water bottle",
+		"text": "Carry drinking water rather than buying bottles for ordinary outings."
+	},
+	{
+		"id": "groceries-040",
+		"category": "Groceries",
+		"title": "Coffee budget",
+		"text": "Decide which café visits matter most and budget for those."
+	},
+	{
+		"id": "groceries-041",
+		"category": "Groceries",
+		"title": "Date rotation",
+		"text": "Place older suitable ingredients in front of newer purchases."
+	},
+	{
+		"id": "groceries-042",
+		"category": "Groceries",
+		"title": "Use-first box",
+		"text": "Keep a visible fridge box for ingredients that need using promptly."
+	},
+	{
+		"id": "groceries-043",
+		"category": "Groceries",
+		"title": "Label freezer meals",
+		"text": "Label frozen portions with the contents and freezing date."
+	},
+	{
+		"id": "groceries-044",
+		"category": "Groceries",
+		"title": "Portion before freezing",
+		"text": "Freeze suitable food in portions you can use without thawing too much."
+	},
+	{
+		"id": "groceries-045",
+		"category": "Groceries",
+		"title": "Check storage instructions",
+		"text": "Follow label storage instructions to avoid spoiling an otherwise good purchase."
+	},
+	{
+		"id": "groceries-046",
+		"category": "Groceries",
+		"title": "Use-by attention",
+		"text": "Plan to use food before its use-by date; do not eat expired use-by food."
+	},
+	{
+		"id": "groceries-047",
+		"category": "Groceries",
+		"title": "Best-before understanding",
+		"text": "Check MPI guidance when interpreting best-before dates and food quality."
+	},
+	{
+		"id": "groceries-048",
+		"category": "Groceries",
+		"title": "Meal labels",
+		"text": "Mark prepared meals so everyone knows which portion is for tomorrow."
+	},
+	{
+		"id": "groceries-049",
+		"category": "Groceries",
+		"title": "Visible leftovers",
+		"text": "Keep safely stored leftovers visible so they are not forgotten."
+	},
+	{
+		"id": "groceries-050",
+		"category": "Groceries",
+		"title": "Safe-food savings",
+		"text": "Never stretch unsafe food storage just to avoid buying replacement food."
+	},
+	{
+		"id": "groceries-051",
+		"category": "Groceries",
+		"title": "Bread portions",
+		"text": "Freeze suitable bread in usable portions before it becomes stale."
+	},
+	{
+		"id": "groceries-052",
+		"category": "Groceries",
+		"title": "Lunchbox leftovers",
+		"text": "Use safely stored leftovers for lunches when appropriate."
+	},
+	{
+		"id": "groceries-053",
+		"category": "Groceries",
+		"title": "Recipe servings",
+		"text": "Check recipe serving numbers before buying an oversized ingredient quantity."
+	},
+	{
+		"id": "groceries-054",
+		"category": "Groceries",
+		"title": "Half recipe",
+		"text": "Halve a recipe when the full amount would go uneaten."
+	},
+	{
+		"id": "groceries-055",
+		"category": "Groceries",
+		"title": "Measure staples",
+		"text": "Measure rice or pasta before cooking to reduce unwanted excess."
+	},
+	{
+		"id": "groceries-056",
+		"category": "Groceries",
+		"title": "First serving smaller",
+		"text": "Start with a smaller serving and allow seconds instead of discarding food."
+	},
+	{
+		"id": "groceries-057",
+		"category": "Groceries",
+		"title": "Family taste list",
+		"text": "Keep a list of affordable meals the household reliably enjoys."
+	},
+	{
+		"id": "groceries-058",
+		"category": "Groceries",
+		"title": "New recipe cautiously",
+		"text": "Try a small batch before buying a large quantity for an unfamiliar recipe."
+	},
+	{
+		"id": "groceries-059",
+		"category": "Groceries",
+		"title": "One new ingredient",
+		"text": "Choose a new recipe needing only one unfamiliar ingredient."
+	},
+	{
+		"id": "groceries-060",
+		"category": "Groceries",
+		"title": "Sauce simplicity",
+		"text": "Compare a simple homemade sauce with a purchased one, including your time."
+	},
+	{
+		"id": "groceries-061",
+		"category": "Groceries",
+		"title": "Shopping after food",
+		"text": "Shop after eating if hunger tends to increase unplanned purchases."
+	},
+	{
+		"id": "groceries-062",
+		"category": "Groceries",
+		"title": "Children’s choice limit",
+		"text": "Agree on one affordable optional treat before entering the shop."
+	},
+	{
+		"id": "groceries-063",
+		"category": "Groceries",
+		"title": "Route through store",
+		"text": "Follow your list’s sections to reduce repeated impulse-aisle visits."
+	},
+	{
+		"id": "groceries-064",
+		"category": "Groceries",
+		"title": "Basket review",
+		"text": "Before checkout, check whether each extra item is worth its cost."
+	},
+	{
+		"id": "groceries-065",
+		"category": "Groceries",
+		"title": "Treat allowance",
+		"text": "Include a realistic treat allowance instead of an unworkable all-or-nothing rule."
+	},
+	{
+		"id": "groceries-066",
+		"category": "Groceries",
+		"title": "Avoid deal pressure",
+		"text": "Leave a special behind when it is not useful to your household."
+	},
+	{
+		"id": "groceries-067",
+		"category": "Groceries",
+		"title": "Loyalty comparison",
+		"text": "Compare the final price rather than buying solely to earn points."
+	},
+	{
+		"id": "groceries-068",
+		"category": "Groceries",
+		"title": "Coupon conditions",
+		"text": "Read coupon minimum-spend conditions before adding unnecessary items."
+	},
+	{
+		"id": "groceries-069",
+		"category": "Groceries",
+		"title": "Separate grocery categories",
+		"text": "Track food separately from cleaning products to understand spending."
+	},
+	{
+		"id": "groceries-070",
+		"category": "Groceries",
+		"title": "One planned extra trip",
+		"text": "Avoid repeated small top-up trips by planning essentials carefully."
+	},
+	{
+		"id": "groceries-071",
+		"category": "Groceries",
+		"title": "Local options",
+		"text": "Compare nearby shops without travelling further than the saving justifies."
+	},
+	{
+		"id": "groceries-072",
+		"category": "Groceries",
+		"title": "Market total",
+		"text": "Include transport and quantities when judging a market purchase."
+	},
+	{
+		"id": "groceries-073",
+		"category": "Groceries",
+		"title": "Shared bulk purchase",
+		"text": "Split a suitable bulk purchase with someone trusted when both need it."
+	},
+	{
+		"id": "groceries-074",
+		"category": "Groceries",
+		"title": "Neighbour herb swap",
+		"text": "Swap spare edible herbs with a neighbour if quality and handling are suitable."
+	},
+	{
+		"id": "groceries-075",
+		"category": "Groceries",
+		"title": "Garden modestly",
+		"text": "Grow an easy herb only if the setup cost and care fit your household."
+	},
+	{
+		"id": "groceries-076",
+		"category": "Groceries",
+		"title": "Seeds before supplies",
+		"text": "Plan a small growing project before buying containers and gardening extras."
+	},
+	{
+		"id": "groceries-077",
+		"category": "Groceries",
+		"title": "Preserve carefully",
+		"text": "Use verified safe preservation instructions rather than improvising to save food."
+	},
+	{
+		"id": "groceries-078",
+		"category": "Groceries",
+		"title": "Gift surplus safely",
+		"text": "Offer suitable unopened surplus food before it goes unused."
+	},
+	{
+		"id": "groceries-079",
+		"category": "Groceries",
+		"title": "Donation suitability",
+		"text": "Check a food charity’s acceptance rules before donating surplus items."
+	},
+	{
+		"id": "groceries-080",
+		"category": "Groceries",
+		"title": "Container reuse",
+		"text": "Use clean suitable reusable containers instead of buying more storage unnecessarily."
+	},
+	{
+		"id": "groceries-081",
+		"category": "Groceries",
+		"title": "Lunch planning calendar",
+		"text": "Mark days needing packed lunches before the weekly shop."
+	},
+	{
+		"id": "groceries-082",
+		"category": "Groceries",
+		"title": "School snack preparation",
+		"text": "Prepare suitable school snacks ahead instead of last-minute convenience purchases."
+	},
+	{
+		"id": "groceries-083",
+		"category": "Groceries",
+		"title": "Picnic packing",
+		"text": "Pack a simple picnic for an outing when food safety and storage allow."
+	},
+	{
+		"id": "groceries-084",
+		"category": "Groceries",
+		"title": "Travel grocery list",
+		"text": "Buy only what can be used during a short holiday stay."
+	},
+	{
+		"id": "groceries-085",
+		"category": "Groceries",
+		"title": "Guest meal portions",
+		"text": "Ask how many guests will eat before buying party food."
+	},
+	{
+		"id": "groceries-086",
+		"category": "Groceries",
+		"title": "Celebration menu limits",
+		"text": "Choose a few well-liked dishes rather than an oversized celebration spread."
+	},
+	{
+		"id": "groceries-087",
+		"category": "Groceries",
+		"title": "Shared celebration food",
+		"text": "Agree clearly on contributions when sharing the cost of a family gathering."
+	},
+	{
+		"id": "groceries-088",
+		"category": "Groceries",
+		"title": "Drinks count",
+		"text": "Plan drink quantities before buying several unopened bottles for a gathering."
+	},
+	{
+		"id": "groceries-089",
+		"category": "Groceries",
+		"title": "Freezer space check",
+		"text": "Check actual freezer space before taking advantage of a frozen-food sale."
+	},
+	{
+		"id": "groceries-090",
+		"category": "Groceries",
+		"title": "Staple reorder point",
+		"text": "Replace a staple when it is nearly finished rather than stockpiling automatically."
+	},
+	{
+		"id": "groceries-091",
+		"category": "Groceries",
+		"title": "Reusable grocery bags",
+		"text": "Keep reusable shopping bags where you remember to take them."
+	},
+	{
+		"id": "groceries-092",
+		"category": "Groceries",
+		"title": "Transport with errands",
+		"text": "Combine grocery shopping with another necessary trip when practical."
+	},
+	{
+		"id": "groceries-093",
+		"category": "Groceries",
+		"title": "Shopping frequency review",
+		"text": "Compare weekly and fortnightly shopping by waste and total cost."
+	},
+	{
+		"id": "groceries-094",
+		"category": "Groceries",
+		"title": "Food spending reflection",
+		"text": "Review which groceries were enjoyed and which were wasted this week."
+	},
+	{
+		"id": "groceries-095",
+		"category": "Groceries",
+		"title": "Price-change adjustment",
+		"text": "Change next week’s menu when a favourite ingredient becomes expensive."
+	},
+	{
+		"id": "groceries-096",
+		"category": "Groceries",
+		"title": "Meal-cost estimate",
+		"text": "Estimate ingredient cost for a familiar dinner to compare alternatives."
+	},
+	{
+		"id": "groceries-097",
+		"category": "Groceries",
+		"title": "Convenience consciously",
+		"text": "Use convenience food selectively where it prevents a more expensive fallback."
+	},
+	{
+		"id": "groceries-098",
+		"category": "Groceries",
+		"title": "Emergency pantry meal",
+		"text": "Keep one suitable quick meal available for an unexpectedly busy evening."
+	},
+	{
+		"id": "groceries-099",
+		"category": "Groceries",
+		"title": "No duplicate subscription food",
+		"text": "Check meal-box deliveries before also shopping for the same meals."
+	},
+	{
+		"id": "groceries-100",
+		"category": "Groceries",
+		"title": "Realistic grocery goal",
+		"text": "Choose one manageable food-saving change and review whether it helped."
+	},
+	{
+		"id": "money-001",
+		"category": "Money habits",
+		"title": "Know take-home income",
+		"text": "Build your spending plan around money actually available after deductions."
+	},
+	{
+		"id": "money-002",
+		"category": "Money habits",
+		"title": "Irregular income view",
+		"text": "List low-income months as well as good months when planning."
+	},
+	{
+		"id": "money-003",
+		"category": "Money habits",
+		"title": "Essential costs first",
+		"text": "Allow for necessary housing, food and care before optional spending."
+	},
+	{
+		"id": "money-004",
+		"category": "Money habits",
+		"title": "One money calendar",
+		"text": "Put paydays and bill dates on the same calendar."
+	},
+	{
+		"id": "money-005",
+		"category": "Money habits",
+		"title": "Weekly review",
+		"text": "Spend a few minutes reviewing your plan every week."
+	},
+	{
+		"id": "money-006",
+		"category": "Money habits",
+		"title": "Monthly overview",
+		"text": "Check the whole month rather than judging one unusually cheap week."
+	},
+	{
+		"id": "money-007",
+		"category": "Money habits",
+		"title": "Annual expenses list",
+		"text": "List yearly costs so renewals do not arrive as surprises."
+	},
+	{
+		"id": "money-008",
+		"category": "Money habits",
+		"title": "Small savings target",
+		"text": "Choose a savings amount you can realistically maintain."
+	},
+	{
+		"id": "money-009",
+		"category": "Money habits",
+		"title": "Name the goal",
+		"text": "Give each savings goal a clear purpose, such as a school trip."
+	},
+	{
+		"id": "money-010",
+		"category": "Money habits",
+		"title": "Goal deadline",
+		"text": "Estimate when you need the money before deciding regular contributions."
+	},
+	{
+		"id": "money-011",
+		"category": "Money habits",
+		"title": "Automatic saving check",
+		"text": "Consider a manageable payday savings transfer after allowing for essential costs."
+	},
+	{
+		"id": "money-012",
+		"category": "Money habits",
+		"title": "Separate goal money",
+		"text": "Keep a clear record of money reserved for a specific goal."
+	},
+	{
+		"id": "money-013",
+		"category": "Money habits",
+		"title": "Emergency planning",
+		"text": "Plan a realistic emergency buffer using Sorted’s guidance for your situation."
+	},
+	{
+		"id": "money-014",
+		"category": "Money habits",
+		"title": "Start gently",
+		"text": "Begin with a small contribution rather than waiting for a perfect month."
+	},
+	{
+		"id": "money-015",
+		"category": "Money habits",
+		"title": "Revisit contributions",
+		"text": "Adjust planned saving when income or essential costs change."
+	},
+	{
+		"id": "money-016",
+		"category": "Money habits",
+		"title": "Celebrate consistency",
+		"text": "Notice regular progress rather than comparing your savings with someone else’s."
+	},
+	{
+		"id": "money-017",
+		"category": "Money habits",
+		"title": "Visual progress",
+		"text": "Use a simple chart to show progress toward a household goal."
+	},
+	{
+		"id": "money-018",
+		"category": "Money habits",
+		"title": "One goal at a time",
+		"text": "Prioritise a manageable goal if several targets make the plan confusing."
+	},
+	{
+		"id": "money-019",
+		"category": "Money habits",
+		"title": "Windfall pause",
+		"text": "Pause before allocating unexpected income and review current needs."
+	},
+	{
+		"id": "money-020",
+		"category": "Money habits",
+		"title": "Refund intention",
+		"text": "Decide where a refund belongs instead of letting it disappear into spending."
+	},
+	{
+		"id": "money-021",
+		"category": "Money habits",
+		"title": "Spending diary",
+		"text": "Record small purchases for a week to see patterns clearly."
+	},
+	{
+		"id": "money-022",
+		"category": "Money habits",
+		"title": "Bank statement scan",
+		"text": "Review statements for unfamiliar transactions and query them promptly."
+	},
+	{
+		"id": "money-023",
+		"category": "Money habits",
+		"title": "Cash spending record",
+		"text": "Include cash purchases when tracking household expenses."
+	},
+	{
+		"id": "money-024",
+		"category": "Money habits",
+		"title": "Category totals",
+		"text": "Compare actual spending by category with the plan you made."
+	},
+	{
+		"id": "money-025",
+		"category": "Money habits",
+		"title": "Weekend allowance",
+		"text": "Set a realistic optional spending limit for a weekend outing."
+	},
+	{
+		"id": "money-026",
+		"category": "Money habits",
+		"title": "Online purchase pause",
+		"text": "Wait before a non-essential online purchase to check whether you still want it."
+	},
+	{
+		"id": "money-027",
+		"category": "Money habits",
+		"title": "Wishlist instead",
+		"text": "Save an item to a wishlist rather than purchasing immediately."
+	},
+	{
+		"id": "money-028",
+		"category": "Money habits",
+		"title": "Remove saved checkout cards",
+		"text": "If impulse purchases are a problem, add a deliberate checkout step."
+	},
+	{
+		"id": "money-029",
+		"category": "Money habits",
+		"title": "Shopping notification control",
+		"text": "Turn off promotional alerts that prompt unnecessary purchases."
+	},
+	{
+		"id": "money-030",
+		"category": "Money habits",
+		"title": "Email promotion review",
+		"text": "Unsubscribe from retailer emails that repeatedly encourage unplanned spending."
+	},
+	{
+		"id": "money-031",
+		"category": "Money habits",
+		"title": "Total price view",
+		"text": "Include delivery, installation and accessories when comparing a purchase."
+	},
+	{
+		"id": "money-032",
+		"category": "Money habits",
+		"title": "Cost per use",
+		"text": "Consider how often you will actually use an item before buying it."
+	},
+	{
+		"id": "money-033",
+		"category": "Money habits",
+		"title": "Repair comparison",
+		"text": "Compare repair with replacement, including likely useful life."
+	},
+	{
+		"id": "money-034",
+		"category": "Money habits",
+		"title": "Borrow first",
+		"text": "Borrow a rarely needed item when a safe suitable option is available."
+	},
+	{
+		"id": "money-035",
+		"category": "Money habits",
+		"title": "Rent rarely used equipment",
+		"text": "Compare short-term hire with buying equipment for one task."
+	},
+	{
+		"id": "money-036",
+		"category": "Money habits",
+		"title": "Second-hand checks",
+		"text": "Check condition, safety and return terms before buying used items."
+	},
+	{
+		"id": "money-037",
+		"category": "Money habits",
+		"title": "Existing-item inventory",
+		"text": "Look for something you already own that meets the same need."
+	},
+	{
+		"id": "money-038",
+		"category": "Money habits",
+		"title": "One-in one-out thought",
+		"text": "Decide where a new item will fit before paying for it."
+	},
+	{
+		"id": "money-039",
+		"category": "Money habits",
+		"title": "Shopping purpose",
+		"text": "Write down what problem a purchase is meant to solve."
+	},
+	{
+		"id": "money-040",
+		"category": "Money habits",
+		"title": "Purchase follow-up",
+		"text": "Review whether a recent purchase delivered the value you expected."
+	},
+	{
+		"id": "money-041",
+		"category": "Money habits",
+		"title": "Subscription list",
+		"text": "List every recurring subscription with its renewal date."
+	},
+	{
+		"id": "money-042",
+		"category": "Money habits",
+		"title": "Unused service cancellation",
+		"text": "Cancel an unused non-essential subscription under its cancellation terms."
+	},
+	{
+		"id": "money-043",
+		"category": "Money habits",
+		"title": "Trial reminder",
+		"text": "Set a reminder before a free trial becomes paid."
+	},
+	{
+		"id": "money-044",
+		"category": "Money habits",
+		"title": "One entertainment service",
+		"text": "Consider rotating entertainment services rather than paying for several unused ones."
+	},
+	{
+		"id": "money-045",
+		"category": "Money habits",
+		"title": "Household account review",
+		"text": "Check whether household members already pay for duplicate services."
+	},
+	{
+		"id": "money-046",
+		"category": "Money habits",
+		"title": "Plan tier review",
+		"text": "Compare a service’s basic tier with the features you actually use."
+	},
+	{
+		"id": "money-047",
+		"category": "Money habits",
+		"title": "Auto-renew awareness",
+		"text": "Review renewal terms before signing up to a new service."
+	},
+	{
+		"id": "money-048",
+		"category": "Money habits",
+		"title": "Pause options",
+		"text": "Check whether a non-essential service allows a temporary pause."
+	},
+	{
+		"id": "money-049",
+		"category": "Money habits",
+		"title": "Membership attendance",
+		"text": "Compare membership cost with how often you use it."
+	},
+	{
+		"id": "money-050",
+		"category": "Money habits",
+		"title": "Calendar before booking",
+		"text": "Check availability before paying for non-refundable activities."
+	},
+	{
+		"id": "money-051",
+		"category": "Money habits",
+		"title": "Gift spending plan",
+		"text": "Budget for birthdays and celebrations before the month they happen."
+	},
+	{
+		"id": "money-052",
+		"category": "Money habits",
+		"title": "Homemade gift option",
+		"text": "Choose a thoughtful homemade gift when it suits the recipient."
+	},
+	{
+		"id": "money-053",
+		"category": "Money habits",
+		"title": "Gift agreement",
+		"text": "Agree on an affordable gift limit with willing family members."
+	},
+	{
+		"id": "money-054",
+		"category": "Money habits",
+		"title": "Shared occasion budget",
+		"text": "Discuss the total event budget before booking individual elements."
+	},
+	{
+		"id": "money-055",
+		"category": "Money habits",
+		"title": "Party priorities",
+		"text": "Spend on the parts of a celebration people value most."
+	},
+	{
+		"id": "money-056",
+		"category": "Money habits",
+		"title": "Reusable party supplies",
+		"text": "Keep useful decorations for another celebration."
+	},
+	{
+		"id": "money-057",
+		"category": "Money habits",
+		"title": "School costs calendar",
+		"text": "Plan for school supplies and activity costs ahead of term changes."
+	},
+	{
+		"id": "money-058",
+		"category": "Money habits",
+		"title": "Uniform stocktake",
+		"text": "Check fit and condition before buying a new uniform set."
+	},
+	{
+		"id": "money-059",
+		"category": "Money habits",
+		"title": "Toy rotation",
+		"text": "Rotate suitable existing toys before adding more."
+	},
+	{
+		"id": "money-060",
+		"category": "Money habits",
+		"title": "Library discovery",
+		"text": "Explore library borrowing instead of automatically buying every book."
+	},
+	{
+		"id": "money-061",
+		"category": "Money habits",
+		"title": "Free local activities",
+		"text": "Look for suitable free council or community activities."
+	},
+	{
+		"id": "money-062",
+		"category": "Money habits",
+		"title": "Outing full cost",
+		"text": "Include transport, food and admission when comparing outings."
+	},
+	{
+		"id": "money-063",
+		"category": "Money habits",
+		"title": "Off-peak options",
+		"text": "Compare suitable off-peak activity prices when your schedule allows."
+	},
+	{
+		"id": "money-064",
+		"category": "Money habits",
+		"title": "Ticket conditions",
+		"text": "Check cancellation and change conditions before buying event tickets."
+	},
+	{
+		"id": "money-065",
+		"category": "Money habits",
+		"title": "Travel goal budget",
+		"text": "Separate a travel wish from the amount you can currently afford."
+	},
+	{
+		"id": "money-066",
+		"category": "Money habits",
+		"title": "Accommodation extras",
+		"text": "Include parking, meals and cleaning fees when comparing accommodation."
+	},
+	{
+		"id": "money-067",
+		"category": "Money habits",
+		"title": "Travel packing list",
+		"text": "Pack necessities you own to avoid replacing them during a trip."
+	},
+	{
+		"id": "money-068",
+		"category": "Money habits",
+		"title": "Day-trip comparison",
+		"text": "Compare a local day trip with an overnight outing."
+	},
+	{
+		"id": "money-069",
+		"category": "Money habits",
+		"title": "Public transport comparison",
+		"text": "Compare actual fares and schedules with your driving costs."
+	},
+	{
+		"id": "money-070",
+		"category": "Money habits",
+		"title": "Carpool arrangement",
+		"text": "Agree on a fair contribution before sharing regular travel."
+	},
+	{
+		"id": "money-071",
+		"category": "Money habits",
+		"title": "Money conversation",
+		"text": "Discuss spending expectations calmly with household members."
+	},
+	{
+		"id": "money-072",
+		"category": "Money habits",
+		"title": "Shared purchase rule",
+		"text": "Agree when a household purchase needs a conversation first."
+	},
+	{
+		"id": "money-073",
+		"category": "Money habits",
+		"title": "Personal allowance",
+		"text": "Allow reasonable personal spending within a shared household plan."
+	},
+	{
+		"id": "money-074",
+		"category": "Money habits",
+		"title": "No-blame review",
+		"text": "Use spending reviews to improve the plan rather than blame someone."
+	},
+	{
+		"id": "money-075",
+		"category": "Money habits",
+		"title": "Children’s saving lesson",
+		"text": "Use safe pretend money to practise choosing and saving with children."
+	},
+	{
+		"id": "money-076",
+		"category": "Money habits",
+		"title": "Progress story",
+		"text": "Explain a family savings goal in terms children can understand."
+	},
+	{
+		"id": "money-077",
+		"category": "Money habits",
+		"title": "Important document folder",
+		"text": "Keep bills and agreements together so decisions use accurate information."
+	},
+	{
+		"id": "money-078",
+		"category": "Money habits",
+		"title": "Digital receipt folder",
+		"text": "Save receipts for useful warranties, returns and spending records."
+	},
+	{
+		"id": "money-079",
+		"category": "Money habits",
+		"title": "Return window reminder",
+		"text": "Note the last return date for an item you may not keep."
+	},
+	{
+		"id": "money-080",
+		"category": "Money habits",
+		"title": "Refund tracking",
+		"text": "Follow up a promised refund rather than forgetting it."
+	},
+	{
+		"id": "money-081",
+		"category": "Money habits",
+		"title": "Fee awareness",
+		"text": "Read account and service fees before making a comparison."
+	},
+	{
+		"id": "money-082",
+		"category": "Money habits",
+		"title": "Payment timing",
+		"text": "Check payment dates to avoid accidental missed bills."
+	},
+	{
+		"id": "money-083",
+		"category": "Money habits",
+		"title": "Bill alerts",
+		"text": "Set reminders that suit how you normally check messages."
+	},
+	{
+		"id": "money-084",
+		"category": "Money habits",
+		"title": "No overdraft assumption",
+		"text": "Check available funds before payments instead of relying on an overdraft."
+	},
+	{
+		"id": "money-085",
+		"category": "Money habits",
+		"title": "Debt full-cost view",
+		"text": "Understand interest and fees before agreeing to borrow."
+	},
+	{
+		"id": "money-086",
+		"category": "Money habits",
+		"title": "Buy-now-pay-later totals",
+		"text": "Track the full remaining commitment before taking another instalment plan."
+	},
+	{
+		"id": "money-087",
+		"category": "Money habits",
+		"title": "Credit comparison help",
+		"text": "Use trustworthy guidance when comparing credit rather than only the payment size."
+	},
+	{
+		"id": "money-088",
+		"category": "Money habits",
+		"title": "Early payment difficulty",
+		"text": "Contact a provider early if you cannot meet an agreed payment."
+	},
+	{
+		"id": "money-089",
+		"category": "Money habits",
+		"title": "Support conversation",
+		"text": "Ask a trusted budgeting service for help when the plan no longer balances."
+	},
+	{
+		"id": "money-090",
+		"category": "Money habits",
+		"title": "Protect essential coverage",
+		"text": "Review insurance needs carefully rather than cancelling important protection to cut costs."
+	},
+	{
+		"id": "money-091",
+		"category": "Money habits",
+		"title": "Secure account access",
+		"text": "Use strong account security to reduce the risk of preventable financial loss."
+	},
+	{
+		"id": "money-092",
+		"category": "Money habits",
+		"title": "Scam pause",
+		"text": "Pause and verify unexpected requests for money through a known contact channel."
+	},
+	{
+		"id": "money-093",
+		"category": "Money habits",
+		"title": "No guaranteed-return claims",
+		"text": "Treat promised effortless or guaranteed high returns cautiously and seek qualified advice."
+	},
+	{
+		"id": "money-094",
+		"category": "Money habits",
+		"title": "Keep learning free",
+		"text": "Explore reputable free money education before paying for a course."
+	},
+	{
+		"id": "money-095",
+		"category": "Money habits",
+		"title": "Skill-based saving",
+		"text": "Learn a practical skill that helps maintain things you already own."
+	},
+	{
+		"id": "money-096",
+		"category": "Money habits",
+		"title": "Planned no-spend afternoon",
+		"text": "Choose a free afternoon activity without neglecting necessary purchases."
+	},
+	{
+		"id": "money-097",
+		"category": "Money habits",
+		"title": "Unspent allowance decision",
+		"text": "Give leftover planned spending a purpose at the end of the week."
+	},
+	{
+		"id": "money-098",
+		"category": "Money habits",
+		"title": "Budget after changes",
+		"text": "Update your plan after moving, changing work or welcoming a baby."
+	},
+	{
+		"id": "money-099",
+		"category": "Money habits",
+		"title": "Realistic expectations",
+		"text": "Avoid a savings plan that depends on never having an unexpected expense."
+	},
+	{
+		"id": "money-100",
+		"category": "Money habits",
+		"title": "Review one habit",
+		"text": "Pick one spending habit to improve and assess the result next month."
+	},
+	{
+		"id": "home-001",
+		"category": "Home & bills",
+		"title": "Read the bill",
+		"text": "Check the billing period and usage before comparing two utility bills."
+	},
+	{
+		"id": "home-002",
+		"category": "Home & bills",
+		"title": "Usage record",
+		"text": "Record household energy use regularly to notice meaningful changes."
+	},
+	{
+		"id": "home-003",
+		"category": "Home & bills",
+		"title": "Actual-reading check",
+		"text": "Check whether a bill is based on an estimate or an actual reading."
+	},
+	{
+		"id": "home-004",
+		"category": "Home & bills",
+		"title": "Household changes",
+		"text": "Account for visitors, weather or time at home when interpreting usage."
+	},
+	{
+		"id": "home-005",
+		"category": "Home & bills",
+		"title": "Tariff comparison",
+		"text": "Compare electricity plans using your actual household pattern and total charges."
+	},
+	{
+		"id": "home-006",
+		"category": "Home & bills",
+		"title": "Daily charge matters",
+		"text": "Include fixed daily charges when comparing power offers."
+	},
+	{
+		"id": "home-007",
+		"category": "Home & bills",
+		"title": "Contract conditions",
+		"text": "Read contract, discount and exit conditions before changing providers."
+	},
+	{
+		"id": "home-008",
+		"category": "Home & bills",
+		"title": "Off-peak suitability",
+		"text": "Use off-peak plans only when the timing genuinely suits your household."
+	},
+	{
+		"id": "home-009",
+		"category": "Home & bills",
+		"title": "Direct-debit terms",
+		"text": "Check payment discount terms without choosing a payment method you cannot manage."
+	},
+	{
+		"id": "home-010",
+		"category": "Home & bills",
+		"title": "Billing errors",
+		"text": "Query unexplained charges with the provider using your bill records."
+	},
+	{
+		"id": "home-011",
+		"category": "Home & bills",
+		"title": "Daylight first",
+		"text": "Use available daylight when it provides adequate light for the task."
+	},
+	{
+		"id": "home-012",
+		"category": "Home & bills",
+		"title": "Empty-room lights",
+		"text": "Turn off unnecessary lights when leaving an empty room."
+	},
+	{
+		"id": "home-013",
+		"category": "Home & bills",
+		"title": "Task lighting",
+		"text": "Use suitable task lighting instead of lighting every room brightly."
+	},
+	{
+		"id": "home-014",
+		"category": "Home & bills",
+		"title": "LED replacement planning",
+		"text": "Consider appropriate efficient lighting when existing bulbs need replacement."
+	},
+	{
+		"id": "home-015",
+		"category": "Home & bills",
+		"title": "Correct light fitting",
+		"text": "Check fitting type and required brightness before buying a bulb."
+	},
+	{
+		"id": "home-016",
+		"category": "Home & bills",
+		"title": "Outdoor light timer",
+		"text": "Check whether an outdoor light timer runs longer than needed."
+	},
+	{
+		"id": "home-017",
+		"category": "Home & bills",
+		"title": "Sensor settings",
+		"text": "Set outdoor sensors to light the area only when needed."
+	},
+	{
+		"id": "home-018",
+		"category": "Home & bills",
+		"title": "Lamp placement",
+		"text": "Place reading lamps where they provide useful light without extra fixtures."
+	},
+	{
+		"id": "home-019",
+		"category": "Home & bills",
+		"title": "Clean light covers",
+		"text": "Clean suitable light covers safely so dirt does not reduce illumination."
+	},
+	{
+		"id": "home-020",
+		"category": "Home & bills",
+		"title": "Decorative lights",
+		"text": "Limit unnecessary decorative-light hours while keeping essential lighting available."
+	},
+	{
+		"id": "home-021",
+		"category": "Home & bills",
+		"title": "Curtain routine",
+		"text": "Use curtains to retain warmth at night while keeping ventilation needs in mind."
+	},
+	{
+		"id": "home-022",
+		"category": "Home & bills",
+		"title": "Draught inspection",
+		"text": "Look for avoidable draughts and seek suitable safe sealing options."
+	},
+	{
+		"id": "home-023",
+		"category": "Home & bills",
+		"title": "Healthy warmth",
+		"text": "Keep the home comfortably warm; do not sacrifice health to lower a bill."
+	},
+	{
+		"id": "home-024",
+		"category": "Home & bills",
+		"title": "Heat-pump settings",
+		"text": "Use the manufacturer’s guidance for efficient heat-pump operation."
+	},
+	{
+		"id": "home-025",
+		"category": "Home & bills",
+		"title": "Filter care",
+		"text": "Clean heat-pump filters according to the manufacturer’s instructions."
+	},
+	{
+		"id": "home-026",
+		"category": "Home & bills",
+		"title": "Furniture clearance",
+		"text": "Keep furniture from blocking heater airflow or creating a fire risk."
+	},
+	{
+		"id": "home-027",
+		"category": "Home & bills",
+		"title": "Heating occupied spaces",
+		"text": "Heat the spaces you use appropriately rather than leaving unused areas heated unnecessarily."
+	},
+	{
+		"id": "home-028",
+		"category": "Home & bills",
+		"title": "Heating schedule review",
+		"text": "Review heating timers after your household’s routine changes."
+	},
+	{
+		"id": "home-029",
+		"category": "Home & bills",
+		"title": "Weather clothing",
+		"text": "Use comfortable indoor layers alongside suitable household heating."
+	},
+	{
+		"id": "home-030",
+		"category": "Home & bills",
+		"title": "Home improvement priorities",
+		"text": "Seek EECA guidance before spending on an energy-efficiency upgrade."
+	},
+	{
+		"id": "home-031",
+		"category": "Home & bills",
+		"title": "Avoid covered heaters",
+		"text": "Never cover a heater or dry clothes directly on it to save time."
+	},
+	{
+		"id": "home-032",
+		"category": "Home & bills",
+		"title": "Safe room layout",
+		"text": "Keep heater clearances as specified by the manufacturer."
+	},
+	{
+		"id": "home-033",
+		"category": "Home & bills",
+		"title": "Summer shade",
+		"text": "Use appropriate shading to reduce unwanted sun heat in summer."
+	},
+	{
+		"id": "home-034",
+		"category": "Home & bills",
+		"title": "Cooling timetable",
+		"text": "Review cooling timers so they fit the hours the home is occupied."
+	},
+	{
+		"id": "home-035",
+		"category": "Home & bills",
+		"title": "Window awareness",
+		"text": "Avoid unintentionally heating or cooling with windows left open for long periods."
+	},
+	{
+		"id": "home-036",
+		"category": "Home & bills",
+		"title": "Ventilation plan",
+		"text": "Maintain healthy ventilation instead of sealing the home indiscriminately."
+	},
+	{
+		"id": "home-037",
+		"category": "Home & bills",
+		"title": "Damp problem attention",
+		"text": "Address moisture problems early with reliable housing guidance."
+	},
+	{
+		"id": "home-038",
+		"category": "Home & bills",
+		"title": "Landlord communication",
+		"text": "Report necessary repairs to the landlord through the appropriate process."
+	},
+	{
+		"id": "home-039",
+		"category": "Home & bills",
+		"title": "Insulation advice",
+		"text": "Check suitable insulation options and eligibility through official guidance."
+	},
+	{
+		"id": "home-040",
+		"category": "Home & bills",
+		"title": "Upgrade cost comparison",
+		"text": "Compare installed costs and likely suitability before purchasing efficiency equipment."
+	},
+	{
+		"id": "home-041",
+		"category": "Home & bills",
+		"title": "Water leak check",
+		"text": "Look for visible leaks and arrange appropriate repairs."
+	},
+	{
+		"id": "home-042",
+		"category": "Home & bills",
+		"title": "Tap dripping",
+		"text": "Report a persistent dripping tap rather than accepting ongoing waste."
+	},
+	{
+		"id": "home-043",
+		"category": "Home & bills",
+		"title": "Toilet leak attention",
+		"text": "Investigate a suspected toilet leak with a suitable repair professional."
+	},
+	{
+		"id": "home-044",
+		"category": "Home & bills",
+		"title": "Shower routine",
+		"text": "Avoid unnecessarily long showers while meeting everyone’s hygiene and care needs."
+	},
+	{
+		"id": "home-045",
+		"category": "Home & bills",
+		"title": "Tap while brushing",
+		"text": "Turn off an unneeded running tap while brushing teeth."
+	},
+	{
+		"id": "home-046",
+		"category": "Home & bills",
+		"title": "Dish rinsing plan",
+		"text": "Avoid leaving water running while doing unrelated kitchen tasks."
+	},
+	{
+		"id": "home-047",
+		"category": "Home & bills",
+		"title": "Hot-water safety",
+		"text": "Do not lower hot-water settings below safe requirements to reduce costs."
+	},
+	{
+		"id": "home-048",
+		"category": "Home & bills",
+		"title": "Plumbing changes",
+		"text": "Use a qualified professional for plumbing work requiring that expertise."
+	},
+	{
+		"id": "home-049",
+		"category": "Home & bills",
+		"title": "Water bill review",
+		"text": "Check metered water bills for unexplained changes in consumption."
+	},
+	{
+		"id": "home-050",
+		"category": "Home & bills",
+		"title": "Reuse water appropriately",
+		"text": "Use water-saving ideas only where hygiene and local rules allow."
+	},
+	{
+		"id": "home-051",
+		"category": "Home & bills",
+		"title": "Wash full suitable loads",
+		"text": "Run suitably full laundry loads within the machine’s capacity."
+	},
+	{
+		"id": "home-052",
+		"category": "Home & bills",
+		"title": "Laundry care label",
+		"text": "Follow clothing care instructions to avoid damaging items during cheaper washes."
+	},
+	{
+		"id": "home-053",
+		"category": "Home & bills",
+		"title": "Cold wash when suitable",
+		"text": "Use a lower-temperature wash when suitable for the fabric and hygiene needs."
+	},
+	{
+		"id": "home-054",
+		"category": "Home & bills",
+		"title": "Detergent measure",
+		"text": "Measure detergent according to instructions rather than adding extra automatically."
+	},
+	{
+		"id": "home-055",
+		"category": "Home & bills",
+		"title": "Stain action",
+		"text": "Treat a stain using suitable instructions before it becomes harder to remove."
+	},
+	{
+		"id": "home-056",
+		"category": "Home & bills",
+		"title": "Air-dry when practical",
+		"text": "Air-dry suitable laundry when conditions and household space allow."
+	},
+	{
+		"id": "home-057",
+		"category": "Home & bills",
+		"title": "Dryer filter cleaning",
+		"text": "Clean dryer filters as instructed to maintain safe effective operation."
+	},
+	{
+		"id": "home-058",
+		"category": "Home & bills",
+		"title": "Dryer load compatibility",
+		"text": "Dry similar suitable items together rather than overloading the dryer."
+	},
+	{
+		"id": "home-059",
+		"category": "Home & bills",
+		"title": "Laundry schedule",
+		"text": "Plan laundry loads to avoid repeatedly washing only a few items."
+	},
+	{
+		"id": "home-060",
+		"category": "Home & bills",
+		"title": "Clothing repair",
+		"text": "Repair a loose button or small seam before replacing the garment."
+	},
+	{
+		"id": "home-061",
+		"category": "Home & bills",
+		"title": "Dishwasher capacity",
+		"text": "Use the dishwasher’s loading guidance to make effective use of a wash."
+	},
+	{
+		"id": "home-062",
+		"category": "Home & bills",
+		"title": "Eco cycle suitability",
+		"text": "Use an appropriate efficient wash cycle when it meets cleaning needs."
+	},
+	{
+		"id": "home-063",
+		"category": "Home & bills",
+		"title": "Dishwasher filter care",
+		"text": "Maintain filters according to the manufacturer’s instructions."
+	},
+	{
+		"id": "home-064",
+		"category": "Home & bills",
+		"title": "Kettle quantity",
+		"text": "Heat the amount of water you need within the kettle’s safe operating limits."
+	},
+	{
+		"id": "home-065",
+		"category": "Home & bills",
+		"title": "Pot lid",
+		"text": "Use a suitable lid where the recipe and safe cooking allow."
+	},
+	{
+		"id": "home-066",
+		"category": "Home & bills",
+		"title": "Pan size",
+		"text": "Match an appropriate pan to the cooking element when practical."
+	},
+	{
+		"id": "home-067",
+		"category": "Home & bills",
+		"title": "Cooking coordination",
+		"text": "Plan compatible oven dishes together instead of heating it repeatedly."
+	},
+	{
+		"id": "home-068",
+		"category": "Home & bills",
+		"title": "Avoid unnecessary preheating",
+		"text": "Follow recipe guidance rather than leaving the oven preheated without a plan."
+	},
+	{
+		"id": "home-069",
+		"category": "Home & bills",
+		"title": "Food appliance comparison",
+		"text": "Choose an appropriate cooking appliance for the quantity and recipe."
+	},
+	{
+		"id": "home-070",
+		"category": "Home & bills",
+		"title": "Appliance door opening",
+		"text": "Avoid repeatedly opening an oven or fridge without a purpose."
+	},
+	{
+		"id": "home-071",
+		"category": "Home & bills",
+		"title": "Fridge seal check",
+		"text": "Check damaged fridge door seals and arrange suitable repair."
+	},
+	{
+		"id": "home-072",
+		"category": "Home & bills",
+		"title": "Fridge airflow",
+		"text": "Leave the clearances around the fridge required by its manufacturer."
+	},
+	{
+		"id": "home-073",
+		"category": "Home & bills",
+		"title": "Safe fridge temperature",
+		"text": "Maintain safe refrigerator temperatures rather than raising them to save power."
+	},
+	{
+		"id": "home-074",
+		"category": "Home & bills",
+		"title": "Freezer organisation",
+		"text": "Organise suitable frozen food so the door need not remain open while searching."
+	},
+	{
+		"id": "home-075",
+		"category": "Home & bills",
+		"title": "Appliance maintenance log",
+		"text": "Keep a simple record of maintenance tasks and dates."
+	},
+	{
+		"id": "home-076",
+		"category": "Home & bills",
+		"title": "Repair estimate",
+		"text": "Get a repair estimate before assuming an appliance must be replaced."
+	},
+	{
+		"id": "home-077",
+		"category": "Home & bills",
+		"title": "Warranty details",
+		"text": "Check warranty and consumer-rights information before paying for a repair."
+	},
+	{
+		"id": "home-078",
+		"category": "Home & bills",
+		"title": "Replacement measurements",
+		"text": "Measure available space before buying a replacement appliance."
+	},
+	{
+		"id": "home-079",
+		"category": "Home & bills",
+		"title": "Running-cost comparison",
+		"text": "Compare appropriate energy labels and running costs when replacing equipment."
+	},
+	{
+		"id": "home-080",
+		"category": "Home & bills",
+		"title": "Useful features only",
+		"text": "Avoid paying for appliance features your household will not use."
+	},
+	{
+		"id": "home-081",
+		"category": "Home & bills",
+		"title": "Internet speed needs",
+		"text": "Compare internet plans with how your household actually uses the connection."
+	},
+	{
+		"id": "home-082",
+		"category": "Home & bills",
+		"title": "Mobile allowance review",
+		"text": "Check actual mobile data usage before paying for a larger plan."
+	},
+	{
+		"id": "home-083",
+		"category": "Home & bills",
+		"title": "Bundled-service total",
+		"text": "Compare a bundle’s total price with buying only the services needed."
+	},
+	{
+		"id": "home-084",
+		"category": "Home & bills",
+		"title": "Router placement",
+		"text": "Improve suitable router placement before assuming a more expensive plan is needed."
+	},
+	{
+		"id": "home-085",
+		"category": "Home & bills",
+		"title": "Device lifespan",
+		"text": "Maintain usable devices rather than replacing them solely for a new model."
+	},
+	{
+		"id": "home-086",
+		"category": "Home & bills",
+		"title": "Software updates",
+		"text": "Keep devices updated to reduce avoidable security and reliability problems."
+	},
+	{
+		"id": "home-087",
+		"category": "Home & bills",
+		"title": "Printer purpose",
+		"text": "Print only necessary pages and review before printing a large document."
+	},
+	{
+		"id": "home-088",
+		"category": "Home & bills",
+		"title": "Reusable cleaning cloths",
+		"text": "Use suitable washable cloths where hygiene allows instead of disposable ones."
+	},
+	{
+		"id": "home-089",
+		"category": "Home & bills",
+		"title": "Cleaning-product dose",
+		"text": "Follow product dilution and dosing instructions rather than using excess."
+	},
+	{
+		"id": "home-090",
+		"category": "Home & bills",
+		"title": "No chemical mixing",
+		"text": "Never mix cleaning chemicals in an attempt to stretch products."
+	},
+	{
+		"id": "home-091",
+		"category": "Home & bills",
+		"title": "Tool lending",
+		"text": "Borrow a safe suitable tool for an occasional job when practical."
+	},
+	{
+		"id": "home-092",
+		"category": "Home & bills",
+		"title": "Repair supplies list",
+		"text": "Buy the right repair materials after identifying the actual problem."
+	},
+	{
+		"id": "home-093",
+		"category": "Home & bills",
+		"title": "Seasonal maintenance",
+		"text": "Plan suitable seasonal home maintenance before small issues grow."
+	},
+	{
+		"id": "home-094",
+		"category": "Home & bills",
+		"title": "Furniture care",
+		"text": "Follow care instructions to extend the useful life of furniture."
+	},
+	{
+		"id": "home-095",
+		"category": "Home & bills",
+		"title": "Storage stocktake",
+		"text": "Check existing storage containers before buying new organisers."
+	},
+	{
+		"id": "home-096",
+		"category": "Home & bills",
+		"title": "Clothes fit inventory",
+		"text": "Check children’s clothes and sizes before buying another set."
+	},
+	{
+		"id": "home-097",
+		"category": "Home & bills",
+		"title": "Household essentials list",
+		"text": "Keep a reorder list to avoid emergency purchases of common necessities."
+	},
+	{
+		"id": "home-098",
+		"category": "Home & bills",
+		"title": "Service appointment grouping",
+		"text": "Group suitable errands or appointments when it reduces unnecessary travel."
+	},
+	{
+		"id": "home-099",
+		"category": "Home & bills",
+		"title": "Household cost conversation",
+		"text": "Agree on one achievable home-cost change with the people sharing the home."
+	},
+	{
+		"id": "home-100",
+		"category": "Home & bills",
+		"title": "Comfort before cuts",
+		"text": "Review savings by cost and wellbeing, keeping the home safe and comfortable."
 	}
 ];
 //#endregion
@@ -28790,7 +30761,9 @@ function FoodSafety() {
 	});
 }
 function SavingTips() {
-	const [filter, setFilter] = (0, import_react.useState)("All tips");
+	const [filter, setFilter] = (0, import_react.useState)("All tips"), [search, setSearch] = (0, import_react.useState)(""), [page, setPage] = (0, import_react.useState)(0);
+	const matches = expandedSavingTips.filter((t) => (filter === "All tips" || t.category === filter) && (t.title + " " + t.text).toLowerCase().includes(search.toLowerCase()));
+	const pages = Math.max(1, Math.ceil(matches.length / 12));
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "title-row",
@@ -28800,26 +30773,47 @@ function SavingTips() {
 					children: "SMALL CHANGES · EVERYDAY LIFE"
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Make room for savings." }),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Practical ideas for food, home, and everyday money habits." })
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "300 original practical ideas: 100 each for groceries, money habits, and home & bills." })
 			] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PiggyBank, { size: 38 })]
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "filters",
-			children: [
-				"All tips",
-				"Groceries",
-				"Money habits",
-				"Home & bills"
-			].map((c) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			children: ["All tips", ...savingCategories].map((c) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
 				className: filter === c ? "selected" : "",
 				"aria-pressed": filter === c,
-				onClick: () => setFilter(c),
-				children: c
+				onClick: () => {
+					setFilter(c);
+					setPage(0);
+				},
+				children: [c, c !== "All tips" && " · 100"]
 			}, c))
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+			className: "reading-search",
+			children: ["Search tips", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+				type: "search",
+				value: search,
+				onChange: (e) => {
+					setSearch(e.target.value);
+					setPage(0);
+				},
+				placeholder: "Search bills, lunch, goals…"
+			})]
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+			role: "status",
+			className: "small-note",
+			children: [
+				matches.length,
+				" matching tips · page ",
+				page + 1,
+				" of ",
+				pages
+			]
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "saving-grid",
-			children: savingTips.filter((t) => filter === "All tips" || t.category === filter).map((t, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+			children: matches.slice(page * 12, page * 12 + 12).map((t, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 				className: "tone-" + i % 4,
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
@@ -28832,9 +30826,33 @@ function SavingTips() {
 			}, t.title))
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "timer-actions",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: "secondary",
+				disabled: page === 0,
+				onClick: () => setPage((v) => v - 1),
+				children: "Previous tips"
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				className: "secondary",
+				disabled: page + 1 >= pages,
+				onClick: () => setPage((v) => v + 1),
+				children: "Next tips"
+			})]
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			className: "small-note",
+			children: "Choose ideas that fit your household. Costs and results vary; keep essential food, care and a safe, comfortable home in your plan."
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "trusted-resources",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "Helpful New Zealand resources" }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+					href: "https://www.eeca.govt.nz/for-homes/",
+					target: "_blank",
+					rel: "noopener noreferrer",
+					children: "EECA · safe home energy guidance"
+				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: "https://sorted.org.nz/guides/saving-and-investing/how-to-save-money/",
 					target: "_blank",
@@ -38567,61 +40585,81 @@ function Focus() {
 	] });
 }
 function Reading() {
-	const [selected, setSelected] = (0, import_react.useState)(null);
+	const [selected, setSelected] = (0, import_react.useState)(null), [storySearch, setStorySearch] = (0, import_react.useState)("");
+	const matching = stories.map((story, index) => ({
+		story,
+		index
+	})).filter(({ story }) => (story.title + " " + story.theme + " " + story.paragraphs.join(" ")).toLowerCase().includes(storySearch.toLowerCase()));
 	if (selected !== null) return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(StoryReader, {
 		index: selected,
 		onBack: () => setSelected(null)
 	}, selected);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "reading-feature",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-			src: stories[0].image,
-			alt: stories[0].imageAlt
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-				className: "pill",
-				children: "READ TOGETHER"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", { children: [
-				"A story is a lovely",
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
-				"place to begin."
-			] }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Find a comfortable spot. Take turns reading. Pause whenever a question pops up." }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-				className: "primary",
-				onClick: () => setSelected(0),
-				children: "Read “Sue and the little light”"
-			})
-		] })]
-	}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "reading-grid",
-		children: stories.map((s, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-			className: "story-card tone-" + i % 3,
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-					className: "story-card-photo",
-					src: s.image,
-					alt: s.imageAlt,
-					loading: "lazy"
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "reading-feature",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+				src: stories[0].image,
+				alt: stories[0].imageAlt
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "pill",
+					children: "READ TOGETHER"
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "eyebrow",
-					children: s.theme
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: s.title }),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: s.level }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", { children: [
+					"A story is a lovely",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+					"place to begin."
+				] }),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Find a comfortable spot. Take turns reading. Pause whenever a question pops up." }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					className: "secondary",
-					onClick: () => setSelected(i),
-					children: "Open story"
+					className: "primary",
+					onClick: () => setSelected(0),
+					children: "Read “Sue and the little light”"
 				})
-			]
-		}, s.title))
-	})] });
+			] })]
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
+			className: "reading-search",
+			children: ["Find a story", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+				type: "search",
+				value: storySearch,
+				onChange: (e) => setStorySearch(e.target.value),
+				placeholder: "Search a title, character or theme…"
+			})]
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+			className: "small-note",
+			role: "status",
+			children: [matching.length, " stories found"]
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: "reading-grid",
+			children: matching.map(({ story: s, index: i }) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+				className: "story-card tone-" + i % 3,
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+						className: "story-card-photo",
+						src: s.image,
+						alt: s.imageAlt,
+						loading: "lazy"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "eyebrow",
+						children: s.theme
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: s.title }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: s.level }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						className: "secondary",
+						onClick: () => setSelected(i),
+						children: "Open story"
+					})
+				]
+			}, s.title))
+		})
+	] });
 }
 //#endregion
 //#region .sites-runtime/github-export/entry.tsx
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Home, { canEdit: false }));
 //#endregion
-
