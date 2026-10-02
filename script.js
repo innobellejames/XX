@@ -1,3 +1,4 @@
+/* The James NZ — published live version 19; source c6f1ae3450beaceacccee44b893f1465cf88900a; export 2 October 2026. */
 //#region \0rolldown/runtime.js
 var __create = Object.create;
 var __defProp$32 = Object.defineProperty;
@@ -61,7 +62,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 	}
 })();
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js
+//#region node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js
 /**
 * @license React
 * scheduler.production.js
@@ -302,12 +303,12 @@ var require_scheduler_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	};
 }));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js
+//#region node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js
 var require_scheduler = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_scheduler_production();
 }));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react.production.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react.production.js
 /**
 * @license React
 * react.production.js
@@ -667,12 +668,12 @@ var require_react_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react@19.2.6/node_modules/react/index.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/index.js
 var require_react = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_production();
 }));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom.production.js
+//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom.production.js
 /**
 * @license React
 * react-dom.production.js
@@ -813,7 +814,7 @@ var require_react_dom_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/index.js
+//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/index.js
 var require_react_dom = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function checkDCE() {
 		if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -827,7 +828,7 @@ var require_react_dom = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_dom_production();
 }));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom-client.production.js
+//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom-client.production.js
 /**
 * @license React
 * react-dom-client.production.js
@@ -9907,7 +9908,7 @@ var require_react_dom_client_production = /* @__PURE__ */ __commonJSMin(((export
 	};
 }));
 //#endregion
-//#region package/source/app/json-response.ts
+//#region app/json-response.ts
 var import_client = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function checkDCE() {
 		if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -9936,7 +9937,7 @@ async function readJsonResponse(response, message) {
 	return data;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.mjs
+//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/mergeClasses.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9947,7 +9948,7 @@ var mergeClasses = (...classes) => classes.filter((className, index, array) => {
 	return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
 }).join(" ").trim();
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toKebabCase.mjs
+//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toKebabCase.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9956,7 +9957,7 @@ var mergeClasses = (...classes) => classes.filter((className, index, array) => {
 */
 var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toCamelCase.mjs
+//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toCamelCase.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9965,7 +9966,7 @@ var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLo
 */
 var toCamelCase = (string) => string.replace(/^([A-Z])|[\s-_]+(\w)/g, (match, p1, p2) => p2 ? p2.toUpperCase() : p1.toLowerCase());
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toPascalCase.mjs
+//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/toPascalCase.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9977,7 +9978,7 @@ var toPascalCase = (string) => {
 	return camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/defaultAttributes.mjs
+//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/defaultAttributes.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -9996,7 +9997,7 @@ var defaultAttributes = {
 	strokeLinejoin: "round"
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/hasA11yProp.mjs
+//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/shared/src/utils/hasA11yProp.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -10008,7 +10009,7 @@ var hasA11yProp = (props) => {
 	return false;
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/context.mjs
+//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/context.mjs
 var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
 /**
 * @license lucide-react v1.31.0 - ISC
@@ -10019,7 +10020,7 @@ var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
 var LucideContext = (0, import_react.createContext)({});
 var useLucideContext = () => (0, import_react.useContext)(LucideContext);
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/Icon.mjs
+//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/Icon.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -10042,7 +10043,7 @@ var Icon = (0, import_react.forwardRef)(({ color, size, strokeWidth, absoluteStr
 	}, [...iconNode.map(([tag, attrs]) => (0, import_react.createElement)(tag, attrs)), ...Array.isArray(children) ? children : [children]]);
 });
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/createLucideIcon.mjs
+//#region node_modules/.pnpm/lucide-react@1.31.0_react@19.2.6/node_modules/lucide-react/dist/esm/createLucideIcon.mjs
 /**
 * @license lucide-react v1.31.0 - ISC
 *
@@ -11098,7 +11099,7 @@ var X = createLucideIcon("x", [["path", {
 	key: "d8bk6v"
 }]]);
 //#endregion
-//#region package/source/app/speech-reader.ts
+//#region app/speech-reader.ts
 var readingSpeeds = {
 	"Very slow": .45,
 	Slow: .7,
@@ -11300,7 +11301,7 @@ var SpeechReader = class {
 	}
 };
 //#endregion
-//#region package/source/app/use-speech.ts
+//#region app/use-speech.ts
 function useSpeech(profile = "reader", initialSpeed = "Med") {
 	const reader = (0, import_react.useRef)(null), [supported, setSupported] = (0, import_react.useState)(null), [state, setState] = (0, import_react.useState)(idleSpeech), [speed, setSpeed] = (0, import_react.useState)(initialSpeed);
 	(0, import_react.useEffect)(() => {
@@ -11333,7 +11334,7 @@ function useSpeech(profile = "reader", initialSpeed = "Med") {
 	};
 }
 //#endregion
-//#region package/source/app/new-family-stories.ts
+//#region app/new-family-stories.ts
 var newFamilyStories = [
 	{
 		"title": "Sue and the rice cup",
@@ -12316,7 +12317,7 @@ var newFamilyPictures = [
 	]
 ];
 //#endregion
-//#region package/source/app/content.ts
+//#region app/content.ts
 var categories = [
 	"Leadership",
 	"Spiritual guidance",
@@ -13057,7 +13058,7 @@ var stories = [
 ];
 stories.push(...newFamilyStories);
 //#endregion
-//#region package/source/app/story-quizzes.ts
+//#region app/story-quizzes.ts
 var quizByTitle = {
 	"Sue and the little light": [
 		{
@@ -14023,7 +14024,7 @@ var quizByTitle = {
 Object.assign(quizByTitle, newFamilyQuizzes);
 var storyQuizzes = stories.map((story) => quizByTitle[story.title]);
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-compose-refs@1.1.5_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-compose-refs/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-compose-refs@1.1.5_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-compose-refs/dist/index.mjs
 var __defProp$31 = Object.defineProperty;
 var __name$31 = (target, value) => __defProp$31(target, "name", {
 	value,
@@ -14057,7 +14058,7 @@ function useComposedRefs(...refs) {
 }
 __name$31(useComposedRefs, "useComposedRefs");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-slot@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-slot/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-slot@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-slot/dist/index.mjs
 var __defProp$30 = Object.defineProperty;
 var __name$30 = (target, value) => __defProp$30(target, "name", {
 	value,
@@ -14170,7 +14171,7 @@ var createSlottableError = /* @__PURE__ */ __name$30((ownerName) => {
 }, "createSlottableError");
 var use = import_react[" use ".trim().toString()];
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react-jsx-runtime.production.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react-jsx-runtime.production.js
 /**
 * @license React
 * react-jsx-runtime.production.js
@@ -14204,12 +14205,12 @@ var require_react_jsx_runtime_production = /* @__PURE__ */ __commonJSMin(((expor
 	exports.jsxs = jsxProd;
 }));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react@19.2.6/node_modules/react/jsx-runtime.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/jsx-runtime.js
 var require_jsx_runtime = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_jsx_runtime_production();
 }));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-primitive@2.1.10_@types+react-dom@19.2.3_@types+react@19.2.14__@types+r_27cc90bfdf39cd858b25dc435d408769/node_modules/@radix-ui/react-primitive/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-primitive@2.1.10_@types+react-dom@19.2.3_@types+react@19.2.14__@types+r_27cc90bfdf39cd858b25dc435d408769/node_modules/@radix-ui/react-primitive/dist/index.mjs
 var import_react_dom = /* @__PURE__ */ __toESM(require_react_dom(), 1);
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp$29 = Object.defineProperty;
@@ -14257,7 +14258,7 @@ function dispatchDiscreteCustomEvent(target, event) {
 }
 __name$29(dispatchDiscreteCustomEvent, "dispatchDiscreteCustomEvent");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-visually-hidden@1.2.11_@types+react-dom@19.2.3_@types+react@19.2.14__@t_9dd925c72117cab446dfe9dd399ded80/node_modules/@radix-ui/react-visually-hidden/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-visually-hidden@1.2.11_@types+react-dom@19.2.3_@types+react@19.2.14__@t_9dd925c72117cab446dfe9dd399ded80/node_modules/@radix-ui/react-visually-hidden/dist/index.mjs
 var VISUALLY_HIDDEN_STYLES = Object.freeze({
 	position: "absolute",
 	border: 0,
@@ -14271,7 +14272,7 @@ var VISUALLY_HIDDEN_STYLES = Object.freeze({
 	wordWrap: "normal"
 });
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-context@1.2.2_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-context/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-context@1.2.2_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-context/dist/index.mjs
 var __defProp$28 = Object.defineProperty;
 var __name$28 = (target, value) => __defProp$28(target, "name", {
 	value,
@@ -14373,7 +14374,7 @@ function composeContextScopes(...scopes) {
 }
 __name$28(composeContextScopes, "composeContextScopes");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-collection@1.1.15_@types+react-dom@19.2.3_@types+react@19.2.14__@types+_cd91dfc3494d322c5ab139167ff27ec6/node_modules/@radix-ui/react-collection/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-collection@1.1.15_@types+react-dom@19.2.3_@types+react@19.2.14__@types+_cd91dfc3494d322c5ab139167ff27ec6/node_modules/@radix-ui/react-collection/dist/index.mjs
 var __defProp$27 = Object.defineProperty;
 var __name$27 = (target, value) => __defProp$27(target, "name", {
 	value,
@@ -14897,7 +14898,7 @@ function getChildListObserver(callback) {
 }
 __name$27(getChildListObserver, "getChildListObserver");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+primitive@1.1.7/node_modules/@radix-ui/primitive/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+primitive@1.1.7/node_modules/@radix-ui/primitive/dist/index.mjs
 var __defProp$26 = Object.defineProperty;
 var __name$26 = (target, value) => __defProp$26(target, "name", {
 	value,
@@ -14940,10 +14941,10 @@ function isFrame(element) {
 }
 __name$26(isFrame, "isFrame");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-layout-effect@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-use-layout-effect@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs
 var useLayoutEffect2 = globalThis?.document ? import_react.useLayoutEffect : () => {};
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-effect-event@0.0.5_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-effect-event/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-use-effect-event@0.0.5_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-effect-event/dist/index.mjs
 var __defProp$25 = Object.defineProperty;
 var __name$25 = (target, value) => __defProp$25(target, "name", {
 	value,
@@ -14966,7 +14967,7 @@ function useEffectEvent(callback) {
 }
 __name$25(useEffectEvent, "useEffectEvent");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-controllable-state@1.2.6_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-use-controllable-state@1.2.6_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs
 var __defProp$24 = Object.defineProperty;
 var __name$24 = (target, value) => __defProp$24(target, "name", {
 	value,
@@ -15068,7 +15069,7 @@ function useControllableStateReducer(reducer, userArgs, initialArg, init) {
 }
 __name$24(useControllableStateReducer, "useControllableStateReducer");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-presence@1.1.10_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_b749a9ebe1d4ae59943e055e03b8e8b4/node_modules/@radix-ui/react-presence/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-presence@1.1.10_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_b749a9ebe1d4ae59943e055e03b8e8b4/node_modules/@radix-ui/react-presence/dist/index.mjs
 var __defProp$23 = Object.defineProperty;
 var __name$23 = (target, value) => __defProp$23(target, "name", {
 	value,
@@ -15210,7 +15211,7 @@ function getElementRef(element) {
 }
 __name$23(getElementRef, "getElementRef");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-id@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-id/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-id@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-id/dist/index.mjs
 var __defProp$22 = Object.defineProperty;
 var __name$22 = (target, value) => __defProp$22(target, "name", {
 	value,
@@ -15227,7 +15228,7 @@ function useId(deterministicId) {
 }
 __name$22(useId, "useId");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-collapsible@1.1.20_@types+react-dom@19.2.3_@types+react@19.2.14__@types_ef3a43b9002ef0036ecabc8d63bf174e/node_modules/@radix-ui/react-collapsible/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-collapsible@1.1.20_@types+react-dom@19.2.3_@types+react@19.2.14__@types_ef3a43b9002ef0036ecabc8d63bf174e/node_modules/@radix-ui/react-collapsible/dist/index.mjs
 var __defProp$21 = Object.defineProperty;
 var __name$21 = (target, value) => __defProp$21(target, "name", {
 	value,
@@ -15346,7 +15347,7 @@ var Root$3 = Collapsible;
 var Trigger$1 = CollapsibleTrigger;
 var Content$1 = CollapsibleContent;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-direction@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-direction/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-direction@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-direction/dist/index.mjs
 var __defProp$20 = Object.defineProperty;
 var __name$20 = (target, value) => __defProp$20(target, "name", {
 	value,
@@ -15359,7 +15360,7 @@ function useDirection(localDir) {
 }
 __name$20(useDirection, "useDirection");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-accordion@1.2.20_@types+react-dom@19.2.3_@types+react@19.2.14__@types+r_e3959b1e7d17c0b0f5106e4a5d3324df/node_modules/@radix-ui/react-accordion/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-accordion@1.2.20_@types+react-dom@19.2.3_@types+react@19.2.14__@types+r_e3959b1e7d17c0b0f5106e4a5d3324df/node_modules/@radix-ui/react-accordion/dist/index.mjs
 var __defProp$19 = Object.defineProperty;
 var __name$19 = (target, value) => __defProp$19(target, "name", {
 	value,
@@ -15599,7 +15600,7 @@ var Header = AccordionHeader;
 var Trigger2 = AccordionTrigger$1;
 var Content2$3 = AccordionContent$1;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-callback-ref@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-use-callback-ref@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs
 var __defProp$18 = Object.defineProperty;
 var __name$18 = (target, value) => __defProp$18(target, "name", {
 	value,
@@ -15614,7 +15615,7 @@ function useCallbackRef$1(callback) {
 }
 __name$18(useCallbackRef$1, "useCallbackRef");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-dismissable-layer@1.1.19_@types+react-dom@19.2.3_@types+react@19.2.14___aef6053db4c6dbb8c0a45ae2dcd35fbe/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-dismissable-layer@1.1.19_@types+react-dom@19.2.3_@types+react@19.2.14___aef6053db4c6dbb8c0a45ae2dcd35fbe/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs
 var __defProp$17 = Object.defineProperty;
 var __name$17 = (target, value) => __defProp$17(target, "name", {
 	value,
@@ -15878,7 +15879,7 @@ function handleAndDispatchCustomEvent(name, handler, detail, { discrete }) {
 }
 __name$17(handleAndDispatchCustomEvent, "handleAndDispatchCustomEvent");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-focus-scope@1.1.16_@types+react-dom@19.2.3_@types+react@19.2.14__@types_81e264bd7e9c78fc68f9265e162603d7/node_modules/@radix-ui/react-focus-scope/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-focus-scope@1.1.16_@types+react-dom@19.2.3_@types+react@19.2.14__@types_81e264bd7e9c78fc68f9265e162603d7/node_modules/@radix-ui/react-focus-scope/dist/index.mjs
 var __defProp$16 = Object.defineProperty;
 var __name$16 = (target, value) => __defProp$16(target, "name", {
 	value,
@@ -16084,7 +16085,7 @@ function removeLinks(items) {
 }
 __name$16(removeLinks, "removeLinks");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-portal@1.1.17_@types+react-dom@19.2.3_@types+react@19.2.14__@types+reac_f7cbbc7df5ea253e16fa4e69f04c481a/node_modules/@radix-ui/react-portal/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-portal@1.1.17_@types+react-dom@19.2.3_@types+react@19.2.14__@types+reac_f7cbbc7df5ea253e16fa4e69f04c481a/node_modules/@radix-ui/react-portal/dist/index.mjs
 var __defProp$15 = Object.defineProperty;
 var __name$15 = (target, value) => __defProp$15(target, "name", {
 	value,
@@ -16101,7 +16102,7 @@ var Portal$1 = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ */ __name$15
 	}), container) : null;
 }, "Portal"));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-focus-guards@1.1.6_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-focus-guards/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-focus-guards@1.1.6_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-focus-guards/dist/index.mjs
 var __defProp$14 = Object.defineProperty;
 var __name$14 = (target, value) => __defProp$14(target, "name", {
 	value,
@@ -16147,7 +16148,7 @@ function createFocusGuard() {
 }
 __name$14(createFocusGuard, "createFocusGuard");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/tslib@2.8.1/node_modules/tslib/tslib.es6.mjs
+//#region node_modules/.pnpm/tslib@2.8.1/node_modules/tslib/tslib.es6.mjs
 var __assign = function() {
 	__assign = Object.assign || function __assign(t) {
 		for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -16176,7 +16177,7 @@ function __spreadArray(to, from, pack) {
 	return to.concat(ar || Array.prototype.slice.call(from));
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/constants.js
+//#region node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/constants.js
 var zeroRightClassName = "right-scroll-bar-position";
 var fullWidthClassName = "width-before-scroll-bar";
 var noScrollbarsClassName = "with-scroll-bars-hidden";
@@ -16186,7 +16187,7 @@ var noScrollbarsClassName = "with-scroll-bars-hidden";
 */
 var removedBarSizeVariable = "--removed-body-scroll-bar-size";
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/assignRef.js
+//#region node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/assignRef.js
 /**
 * Assigns a value for a given ref, no matter of the ref format
 * @param {RefObject} ref - a callback function or ref object
@@ -16206,7 +16207,7 @@ function assignRef(ref, value) {
 	return ref;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/useRef.js
+//#region node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/useRef.js
 /**
 * creates a MutableRef with ref change callback
 * @param initialValue - initial ref value
@@ -16244,7 +16245,7 @@ function useCallbackRef(initialValue, callback) {
 	return ref.facade;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/useMergeRef.js
+//#region node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.2.14_react@19.2.6/node_modules/use-callback-ref/dist/es2015/useMergeRef.js
 var useIsomorphicLayoutEffect = typeof window !== "undefined" ? import_react.useLayoutEffect : import_react.useEffect;
 var currentValues = /* @__PURE__ */ new WeakMap();
 /**
@@ -16285,7 +16286,7 @@ function useMergeRefs(refs, defaultValue) {
 	return callbackRef;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.14_react@19.2.6/node_modules/use-sidecar/dist/es2015/medium.js
+//#region node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.14_react@19.2.6/node_modules/use-sidecar/dist/es2015/medium.js
 function ItoI(a) {
 	return a;
 }
@@ -16365,7 +16366,7 @@ function createSidecarMedium(options) {
 	return medium;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.14_react@19.2.6/node_modules/use-sidecar/dist/es2015/exports.js
+//#region node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.2.14_react@19.2.6/node_modules/use-sidecar/dist/es2015/exports.js
 var SideCar = function(_a) {
 	var sideCar = _a.sideCar, rest = __rest(_a, ["sideCar"]);
 	if (!sideCar) throw new Error("Sidecar: please provide `sideCar` property to import the right car");
@@ -16379,10 +16380,10 @@ function exportSidecar(medium, exported) {
 	return SideCar;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/medium.js
+//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/medium.js
 var effectCar = createSidecarMedium();
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/UI.js
+//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/UI.js
 var nothing = function() {};
 /**
 * Removes scrollbar from the page and contain the scroll within the Lock
@@ -16438,14 +16439,14 @@ RemoveScroll.classNames = {
 	zeroRight: zeroRightClassName
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/get-nonce@1.0.1/node_modules/get-nonce/dist/es2015/index.js
+//#region node_modules/.pnpm/get-nonce@1.0.1/node_modules/get-nonce/dist/es2015/index.js
 var currentNonce;
 var getNonce = function() {
 	if (currentNonce) return currentNonce;
 	if (typeof __webpack_nonce__ !== "undefined") return __webpack_nonce__;
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/singleton.js
+//#region node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/singleton.js
 function makeStyleTag() {
 	if (!document) return null;
 	var tag = document.createElement("style");
@@ -16484,7 +16485,7 @@ var stylesheetSingleton = function() {
 	};
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/hook.js
+//#region node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/hook.js
 /**
 * creates a hook to control style singleton
 * @see {@link styleSingleton} for a safer component version
@@ -16506,7 +16507,7 @@ var styleHookSingleton = function() {
 	};
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/component.js
+//#region node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.2.14_react@19.2.6/node_modules/react-style-singleton/dist/es2015/component.js
 /**
 * create a Component to add styles on demand
 * - styles are added when first instance is mounted
@@ -16523,7 +16524,7 @@ var styleSingleton = function() {
 	return Sheet;
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/utils.js
+//#region node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/utils.js
 var zeroGap = {
 	left: 0,
 	top: 0,
@@ -16558,7 +16559,7 @@ var getGapWidth = function(gapMode) {
 	};
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/component.js
+//#region node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll-bar/dist/es2015/component.js
 var Style = styleSingleton();
 var lockAttribute = "data-scroll-locked";
 var getStyles = function(_a, allowRelative, gapMode, important) {
@@ -16596,7 +16597,7 @@ var RemoveScrollBar = function(_a) {
 	return import_react.createElement(Style, { styles: getStyles(gap, !noRelative, gapMode, !noImportant ? "!important" : "") });
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js
+//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js
 var passiveSupported = false;
 if (typeof window !== "undefined") try {
 	var options = Object.defineProperty({}, "passive", { get: function() {
@@ -16610,7 +16611,7 @@ if (typeof window !== "undefined") try {
 }
 var nonPassive = passiveSupported ? { passive: false } : false;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/handleScroll.js
+//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/handleScroll.js
 var alwaysContainsScroll = function(node) {
 	return node.tagName === "TEXTAREA";
 };
@@ -16693,7 +16694,7 @@ var handleScroll = function(axis, endTarget, event, sourceDelta, noOverscroll) {
 	return shouldCancelScroll;
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/SideEffect.js
+//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/SideEffect.js
 var getTouchXY = function(event) {
 	return "changedTouches" in event ? [event.changedTouches[0].clientX, event.changedTouches[0].clientY] : [0, 0];
 };
@@ -16848,10 +16849,10 @@ function getOutermostShadowParent(node) {
 	return shadowParent;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/sidecar.js
+//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/sidecar.js
 var sidecar_default = exportSidecar(effectCar, RemoveScrollSideCar);
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/Combination.js
+//#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.14_react@19.2.6/node_modules/react-remove-scroll/dist/es2015/Combination.js
 var ReactRemoveScroll = import_react.forwardRef(function(props, ref) {
 	return import_react.createElement(RemoveScroll, __assign({}, props, {
 		ref,
@@ -16860,7 +16861,7 @@ var ReactRemoveScroll = import_react.forwardRef(function(props, ref) {
 });
 ReactRemoveScroll.classNames = RemoveScroll.classNames;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js
+//#region node_modules/.pnpm/aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js
 var getDefaultParent = function(originalTarget) {
 	if (typeof document === "undefined") return null;
 	return (Array.isArray(originalTarget) ? originalTarget[0] : originalTarget).ownerDocument.body;
@@ -16966,7 +16967,7 @@ var hideOthers = function(originalTarget, parentNode, markerName) {
 	return applyAttributeToOthers(targets, activeParentNode, markerName, "aria-hidden");
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-dialog@1.1.23_@types+react-dom@19.2.3_@types+react@19.2.14__@types+reac_4f2d06368a9f8619113962ab14e94ae4/node_modules/@radix-ui/react-dialog/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-dialog@1.1.23_@types+react-dom@19.2.3_@types+react@19.2.14__@types+reac_4f2d06368a9f8619113962ab14e94ae4/node_modules/@radix-ui/react-dialog/dist/index.mjs
 var __defProp$13 = Object.defineProperty;
 var __name$13 = (target, value) => __defProp$13(target, "name", {
 	value,
@@ -17212,7 +17213,7 @@ function getState$2(open) {
 }
 __name$13(getState$2, "getState");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-alert-dialog@1.1.23_@types+react-dom@19.2.3_@types+react@19.2.14__@type_1bf2e65aa102eba0965a70dcf7b7cf1a/node_modules/@radix-ui/react-alert-dialog/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-alert-dialog@1.1.23_@types+react-dom@19.2.3_@types+react@19.2.14__@type_1bf2e65aa102eba0965a70dcf7b7cf1a/node_modules/@radix-ui/react-alert-dialog/dist/index.mjs
 var __defProp$12 = Object.defineProperty;
 var __name$12 = (target, value) => __defProp$12(target, "name", {
 	value,
@@ -17327,7 +17328,7 @@ var Cancel = AlertDialogCancel$1;
 var Title2 = AlertDialogTitle$1;
 var Description2 = AlertDialogDescription$1;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-size@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-size/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-use-size@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-size/dist/index.mjs
 var __defProp$11 = Object.defineProperty;
 var __name$11 = (target, value) => __defProp$11(target, "name", {
 	value,
@@ -17369,7 +17370,7 @@ function useSize(element) {
 }
 __name$11(useSize, "useSize");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-checkbox@1.3.11_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_10f4bbe0d32cb51b8f243241612dbabc/node_modules/@radix-ui/react-checkbox/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-checkbox@1.3.11_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_10f4bbe0d32cb51b8f243241612dbabc/node_modules/@radix-ui/react-checkbox/dist/index.mjs
 var __defProp$10 = Object.defineProperty;
 var __name$10 = (target, value) => __defProp$10(target, "name", {
 	value,
@@ -17562,7 +17563,7 @@ function getState$1(checked) {
 }
 __name$10(getState$1, "getState");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs
+//#region node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs
 /**
 * Custom positioning reference element.
 * @see https://floating-ui.com/docs/virtual-elements
@@ -17691,7 +17692,7 @@ function rectToClientRect(rect) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+core@1.8.0/node_modules/@floating-ui/core/dist/floating-ui.core.mjs
+//#region node_modules/.pnpm/@floating-ui+core@1.8.0/node_modules/@floating-ui/core/dist/floating-ui.core.mjs
 function computeCoordsFromPlacement(_ref, placement, rtl) {
 	let { reference, floating } = _ref;
 	const sideAxis = getSideAxis(placement);
@@ -18232,7 +18233,7 @@ var size$2 = function(options) {
 	};
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs
+//#region node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs
 function hasWindow() {
 	return typeof window !== "undefined";
 }
@@ -18345,7 +18346,7 @@ function getFrameElement(win) {
 	return win.parent && Object.getPrototypeOf(win.parent) ? win.frameElement : null;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+dom@1.8.0/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs
+//#region node_modules/.pnpm/@floating-ui+dom@1.8.0/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs
 function getCssDimensions(element) {
 	const css = getComputedStyle$1(element);
 	let width = parseFloat(css.width) || 0;
@@ -18877,7 +18878,7 @@ var computePosition = (reference, floating, options) => {
 	});
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@floating-ui+react-dom@2.1.9_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/@floating-ui/react-dom/dist/floating-ui.react-dom.mjs
+//#region node_modules/.pnpm/@floating-ui+react-dom@2.1.9_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/@floating-ui/react-dom/dist/floating-ui.react-dom.mjs
 var index = typeof document !== "undefined" ? import_react.useLayoutEffect : function noop() {};
 function deepEqual(a, b) {
 	if (a === b) return true;
@@ -19191,7 +19192,7 @@ var arrow = (options, deps) => {
 	};
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-popper@1.3.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react_10114d9d8383e78d6a73c10a966e4f8c/node_modules/@radix-ui/react-popper/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-popper@1.3.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react_10114d9d8383e78d6a73c10a966e4f8c/node_modules/@radix-ui/react-popper/dist/index.mjs
 var __defProp$9 = Object.defineProperty;
 var __name$9 = (target, value) => __defProp$9(target, "name", {
 	value,
@@ -19416,7 +19417,7 @@ var Root2$1 = Popper;
 var Anchor = PopperAnchor;
 var Content = PopperContent;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-is-hydrated@0.1.3_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-is-hydrated/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-use-is-hydrated@0.1.3_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-is-hydrated/dist/index.mjs
 var __defProp$8 = Object.defineProperty;
 var __name$8 = (target, value) => __defProp$8(target, "name", {
 	value,
@@ -19445,7 +19446,7 @@ function useIsHydratedModern() {
 __name$8(useIsHydratedModern, "useIsHydratedModern");
 var useIsHydrated2 = typeof useReactSyncExternalStore === "function" ? useIsHydratedModern : useIsHydrated;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-roving-focus@1.1.19_@types+react-dom@19.2.3_@types+react@19.2.14__@type_cb34a51f9aa695c33116267c3846fe0d/node_modules/@radix-ui/react-roving-focus/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-roving-focus@1.1.19_@types+react-dom@19.2.3_@types+react@19.2.14__@type_cb34a51f9aa695c33116267c3846fe0d/node_modules/@radix-ui/react-roving-focus/dist/index.mjs
 var __defProp$7 = Object.defineProperty;
 var __name$7 = (target, value) => __defProp$7(target, "name", {
 	value,
@@ -19647,7 +19648,7 @@ __name$7(wrapArray$2, "wrapArray");
 var Root$2 = RovingFocusGroup;
 var Item = RovingFocusGroupItem;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-menu@2.1.24_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react@_95bbdd9bd4af4f76a796630d1bb9b90f/node_modules/@radix-ui/react-menu/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-menu@2.1.24_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react@_95bbdd9bd4af4f76a796630d1bb9b90f/node_modules/@radix-ui/react-menu/dist/index.mjs
 var __defProp$6 = Object.defineProperty;
 var __name$6 = (target, value) => __defProp$6(target, "name", {
 	value,
@@ -20116,7 +20117,7 @@ var Content2$1 = MenuContent;
 var Label = MenuLabel;
 var Item2$1 = MenuItem;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-dropdown-menu@2.1.24_@types+react-dom@19.2.3_@types+react@19.2.14__@typ_8b4bd5e87bdfc6f78977825c660a3d8c/node_modules/@radix-ui/react-dropdown-menu/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-dropdown-menu@2.1.24_@types+react-dom@19.2.3_@types+react@19.2.14__@typ_8b4bd5e87bdfc6f78977825c660a3d8c/node_modules/@radix-ui/react-dropdown-menu/dist/index.mjs
 var __defProp$5 = Object.defineProperty;
 var __name$5 = (target, value) => __defProp$5(target, "name", {
 	value,
@@ -20260,7 +20261,7 @@ var Content2 = DropdownMenuContent$1;
 var Label2 = DropdownMenuLabel$1;
 var Item2 = DropdownMenuItem$1;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-use-previous@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-previous/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-use-previous@1.1.4_@types+react@19.2.14_react@19.2.6/node_modules/@radix-ui/react-use-previous/dist/index.mjs
 var __defProp$4 = Object.defineProperty;
 var __name$4 = (target, value) => __defProp$4(target, "name", {
 	value,
@@ -20281,7 +20282,7 @@ function usePrevious(value) {
 }
 __name$4(usePrevious, "usePrevious");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+number@1.1.3/node_modules/@radix-ui/number/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+number@1.1.3/node_modules/@radix-ui/number/dist/index.mjs
 var __defProp$3 = Object.defineProperty;
 var __name$3 = (target, value) => __defProp$3(target, "name", {
 	value,
@@ -20292,7 +20293,7 @@ function clamp(value, [min, max]) {
 }
 __name$3(clamp, "clamp");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-progress@1.1.16_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_34d9dcd918a25bf239c427eeb50caceb/node_modules/@radix-ui/react-progress/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-progress@1.1.16_@types+react-dom@19.2.3_@types+react@19.2.14__@types+re_34d9dcd918a25bf239c427eeb50caceb/node_modules/@radix-ui/react-progress/dist/index.mjs
 var __defProp$2 = Object.defineProperty;
 var __name$2 = (target, value) => __defProp$2(target, "name", {
 	value,
@@ -20375,7 +20376,7 @@ __name$2(getInvalidValueError, "getInvalidValueError");
 var Root$1 = Progress$1;
 var Indicator = ProgressIndicator;
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-radio-group@1.4.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+_f83232ddac98ee0c29a9a73ffdcfd011/node_modules/@radix-ui/react-radio-group/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-radio-group@1.4.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+_f83232ddac98ee0c29a9a73ffdcfd011/node_modules/@radix-ui/react-radio-group/dist/index.mjs
 var __defProp$1 = Object.defineProperty;
 var __name$1 = (target, value) => __defProp$1(target, "name", {
 	value,
@@ -20671,7 +20672,7 @@ var RadioGroupIndicator = /* @__PURE__ */ import_react.forwardRef(/* @__PURE__ *
 	});
 }, "RadioGroupIndicator"));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@radix-ui+react-select@2.3.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react_bf9645fe15d12591feb024a88d90a0d4/node_modules/@radix-ui/react-select/dist/index.mjs
+//#region node_modules/.pnpm/@radix-ui+react-select@2.3.7_@types+react-dom@19.2.3_@types+react@19.2.14__@types+react_bf9645fe15d12591feb024a88d90a0d4/node_modules/@radix-ui/react-select/dist/index.mjs
 var __defProp = Object.defineProperty;
 var __name = (target, value) => __defProp(target, "name", {
 	value,
@@ -21611,7 +21612,7 @@ function wrapArray(array, startIndex) {
 }
 __name(wrapArray, "wrapArray");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
+//#region node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
 function r$1(e) {
 	var t, f, n = "";
 	if ("string" == typeof e || "number" == typeof e) n += e;
@@ -21626,7 +21627,7 @@ function clsx() {
 	return n;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/tailwind-merge@3.6.0/node_modules/tailwind-merge/dist/bundle-mjs.mjs
+//#region node_modules/.pnpm/tailwind-merge@3.6.0/node_modules/tailwind-merge/dist/bundle-mjs.mjs
 /**
 * Concatenates two arrays faster than the array spread operator.
 */
@@ -25005,12 +25006,12 @@ var getDefaultConfig = () => {
 };
 var twMerge = /* @__PURE__ */ createTailwindMerge(getDefaultConfig);
 //#endregion
-//#region package/source/lib/utils.ts
+//#region lib/utils.ts
 function cn$1(...inputs) {
 	return twMerge(clsx(inputs));
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs
+//#region node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs
 /**
 * Copyright 2022 Joe Bell. All rights reserved.
 *
@@ -25063,7 +25064,7 @@ var cva = (base, config) => (props) => {
 	}, []), props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
 };
 //#endregion
-//#region package/source/components/ui/button.tsx
+//#region components/ui/button.tsx
 var buttonVariants = cva("inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", {
 	variants: {
 		variant: {
@@ -25104,7 +25105,7 @@ function Button({ className, variant = "default", size = "default", asChild = fa
 	});
 }
 //#endregion
-//#region package/source/components/ui/dialog.tsx
+//#region components/ui/dialog.tsx
 function Dialog({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog$1, {
 		"data-slot": "dialog",
@@ -25157,7 +25158,7 @@ function DialogDescription({ className, ...props }) {
 	});
 }
 //#endregion
-//#region package/source/app/photo-post.ts
+//#region app/photo-post.ts
 var savingsBackgrounds = {
 	"Groceries": "./photo-share/savings-groceries.webp",
 	"Money habits": "./photo-share/savings-money.webp",
@@ -25256,7 +25257,7 @@ async function sharePhotoFile(file, title) {
 	});
 }
 //#endregion
-//#region package/source/app/photo-share.tsx
+//#region app/photo-share.tsx
 var apps = [
 	{
 		name: "Facebook",
@@ -25407,7 +25408,7 @@ function PhotoShare({ post, label = "Share" }) {
 	})] });
 }
 //#endregion
-//#region package/source/app/voice-picker.tsx
+//#region app/voice-picker.tsx
 function VoicePicker({ profile, onChange }) {
 	const [voices, setVoices] = (0, import_react.useState)([]), [choice, setChoice] = (0, import_react.useState)("");
 	(0, import_react.useEffect)(() => {
@@ -25447,7 +25448,7 @@ function VoicePicker({ profile, onChange }) {
 	});
 }
 //#endregion
-//#region package/source/app/story-page-pictures.ts
+//#region app/story-page-pictures.ts
 var storyPictures = [
 	[
 		{
@@ -26066,7 +26067,7 @@ storyPageMaps.push(...newFamilyPictures.map(() => [
 	2
 ]));
 //#endregion
-//#region package/source/app/story-illustration.ts
+//#region app/story-illustration.ts
 function storyIllustration(index, page) {
 	const story = stories[index];
 	const panel = storyPageMaps[index][page - 1];
@@ -26077,7 +26078,7 @@ function storyIllustration(index, page) {
 	return storyPictures[index][panel ?? 2];
 }
 //#endregion
-//#region package/source/app/story-reader.tsx
+//#region app/story-reader.tsx
 function StoryReader({ index, onBack }) {
 	const story = stories[index], speech = useSpeech("teacher", "Med");
 	const [page, setPage] = (0, import_react.useState)(0), [direction, setDirection] = (0, import_react.useState)("forward"), [word, setWord] = (0, import_react.useState)(null), [scope, setScope] = (0, import_react.useState)("page");
@@ -26389,7 +26390,7 @@ function StoryQuiz({ index }) {
 	});
 }
 //#endregion
-//#region package/source/app/content-backgrounds.ts
+//#region app/content-backgrounds.ts
 function recipeCuisine(r) {
 	return "cuisine" in r && typeof r.cuisine === "string" ? r.cuisine : "Everyday";
 }
@@ -26449,7 +26450,7 @@ var mindfulnessScenes = {
 	}
 };
 //#endregion
-//#region package/source/app/mindfulness-scene.tsx
+//#region app/mindfulness-scene.tsx
 function MindfulnessScene({ id, title, summary }) {
 	const scene = mindfulnessScenes[id], ref = (0, import_react.useRef)(null), [moving, setMoving] = (0, import_react.useState)(false), [failed, setFailed] = (0, import_react.useState)(false), [ready, setReady] = (0, import_react.useState)(false);
 	(0, import_react.useEffect)(() => {
@@ -26509,7 +26510,7 @@ function MindfulnessScene({ id, title, summary }) {
 	})] });
 }
 //#endregion
-//#region package/source/components/ui/progress.tsx
+//#region components/ui/progress.tsx
 function Progress({ className, value, ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root$1, {
 		"data-slot": "progress",
@@ -26524,7 +26525,7 @@ function Progress({ className, value, ...props }) {
 	});
 }
 //#endregion
-//#region package/source/app/mindfulness.tsx
+//#region app/mindfulness.tsx
 var who = "https://tdr.who.int/home/our-work/global-engagement/9789240003927";
 var mindfulnessExercises = [
 	{
@@ -26797,7 +26798,7 @@ function MindfulnessExercises() {
 	});
 }
 //#endregion
-//#region package/source/app/coffee-post.ts
+//#region app/coffee-post.ts
 var coffeeBackgrounds = [
 	"./coffee-posts/coffee-01.webp",
 	"./coffee-posts/coffee-02.webp",
@@ -26807,7 +26808,7 @@ function coffeeBackground(index) {
 	return coffeeBackgrounds[index % coffeeBackgrounds.length];
 }
 //#endregion
-//#region package/source/app/photo-card.tsx
+//#region app/photo-card.tsx
 function PhotoCard({ text, title, credit, background, filename, kind = "reflection" }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "photo-card-content " + kind,
@@ -26829,7 +26830,7 @@ function PhotoCard({ text, title, credit, background, filename, kind = "reflecti
 	});
 }
 //#endregion
-//#region package/source/app/coffee-quote-card.tsx
+//#region app/coffee-quote-card.tsx
 function CoffeeQuoteCard({ quote, index }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", {
 		className: "coffee-post-card",
@@ -26843,7 +26844,7 @@ function CoffeeQuoteCard({ quote, index }) {
 	});
 }
 //#endregion
-//#region package/source/app/coffee-content.ts
+//#region app/coffee-content.ts
 var coffeeFacts = [
 	{
 		title: "A bean that is really a seed",
@@ -27080,7 +27081,7 @@ coffeeQuotes.push(...[
 	"Let the last sip be a reminder to pass kindness on."
 ]);
 //#endregion
-//#region package/source/app/coffee-corner.tsx
+//#region app/coffee-corner.tsx
 function CoffeeCorner() {
 	const [view, setView] = (0, import_react.useState)("Did you know?"), [fact, setFact] = (0, import_react.useState)(0), [quote, setQuote] = (0, import_react.useState)(0), [search, setSearch] = (0, import_react.useState)(""), [page, setPage] = (0, import_react.useState)(0);
 	const filteredFacts = coffeeFacts.filter((f) => (f.title + " " + f.text).toLowerCase().includes(search.toLowerCase())), filteredQuotes = coffeeQuotes.filter((q) => q.toLowerCase().includes(search.toLowerCase()));
@@ -27245,7 +27246,7 @@ function CoffeeCorner() {
 	});
 }
 //#endregion
-//#region package/source/components/ui/dropdown-menu.tsx
+//#region components/ui/dropdown-menu.tsx
 function DropdownMenu({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root2, {
 		"data-slot": "dropdown-menu",
@@ -27284,7 +27285,7 @@ function DropdownMenuLabel({ className, inset, ...props }) {
 	});
 }
 //#endregion
-//#region package/source/components/ui/sheet.tsx
+//#region components/ui/sheet.tsx
 function Sheet({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Dialog$1, {
 		"data-slot": "sheet",
@@ -27346,7 +27347,7 @@ function SheetDescription({ className, ...props }) {
 	});
 }
 //#endregion
-//#region package/source/components/ui/accordion.tsx
+//#region components/ui/accordion.tsx
 function Accordion({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root2$3, {
 		"data-slot": "accordion",
@@ -27383,7 +27384,7 @@ function AccordionContent({ className, children, ...props }) {
 	});
 }
 //#endregion
-//#region package/source/app/site-navigation.ts
+//#region app/site-navigation.ts
 var navGroups = [
 	{
 		label: "YOUR DAY",
@@ -27503,7 +27504,7 @@ var navGroups = [
 	}
 ];
 //#endregion
-//#region package/source/app/site-navigation-bar.tsx
+//#region app/site-navigation-bar.tsx
 var titles = [
 	"Your day",
 	"Family & learning",
@@ -27622,7 +27623,7 @@ function SiteNavigation({ tab, onNavigate }) {
 	] });
 }
 //#endregion
-//#region package/source/app/browse-home.tsx
+//#region app/browse-home.tsx
 var collections = [
 	{
 		title: "Your day",
@@ -27808,7 +27809,7 @@ function BrowseHome({ onNavigate, onStory }) {
 	});
 }
 //#endregion
-//#region package/source/components/ui/checkbox.tsx
+//#region components/ui/checkbox.tsx
 function Checkbox({ className, ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Checkbox$1, {
 		"data-slot": "checkbox",
@@ -27822,7 +27823,7 @@ function Checkbox({ className, ...props }) {
 	});
 }
 //#endregion
-//#region package/source/components/ui/select.tsx
+//#region components/ui/select.tsx
 function Select$1({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Select$2, {
 		"data-slot": "select",
@@ -27893,7 +27894,7 @@ function SelectScrollDownButton({ className, ...props }) {
 	});
 }
 //#endregion
-//#region package/source/components/ui/alert-dialog.tsx
+//#region components/ui/alert-dialog.tsx
 function AlertDialog({ ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Root2$2, {
 		"data-slot": "alert-dialog",
@@ -27960,7 +27961,7 @@ function AlertDialogCancel({ className, variant = "outline", size = "default", .
 	});
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/next-themes@0.4.6_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/next-themes/dist/index.mjs
+//#region node_modules/.pnpm/next-themes@0.4.6_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/next-themes/dist/index.mjs
 var M = (e, i, s, u, m, a, l, h) => {
 	let d = document.documentElement, w = ["light", "dark"];
 	function p(n) {
@@ -28006,7 +28007,7 @@ import_react.memo(({ forcedTheme: e, storageKey: i, attribute: s, enableSystem: 
 	});
 });
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/sonner@2.0.8_@types+react@19.2.14_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/sonner/dist/index.mjs
+//#region node_modules/.pnpm/sonner@2.0.8_@types+react@19.2.14_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/sonner/dist/index.mjs
 function __insertCSS(code) {
 	if (!code || typeof document == "undefined") return;
 	let head = document.head || document.getElementsByTagName("head")[0];
@@ -28950,7 +28951,7 @@ var Toaster$1 = /* @__PURE__ */ import_react.forwardRef(function Toaster(props, 
 	}));
 });
 //#endregion
-//#region package/source/components/ui/sonner.tsx
+//#region components/ui/sonner.tsx
 var Toaster = ({ ...props }) => {
 	const { theme = "system" } = z();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Toaster$1, {
@@ -28973,7 +28974,7 @@ var Toaster = ({ ...props }) => {
 	});
 };
 //#endregion
-//#region package/source/app/calendar-utils.ts
+//#region app/calendar-utils.ts
 function nzDate(now = /* @__PURE__ */ new Date()) {
 	const parts = new Intl.DateTimeFormat("en-NZ", {
 		timeZone: "Pacific/Auckland",
@@ -28997,7 +28998,7 @@ function moveDate(value, days, months = 0) {
 	return d.toISOString().slice(0, 10);
 }
 //#endregion
-//#region package/source/app/weather-service.ts
+//#region app/weather-service.ts
 var WeatherError = class extends Error {
 	constructor(message, status = 503) {
 		super(message);
@@ -29024,7 +29025,7 @@ async function loadWeather(name, signal) {
 	return data;
 }
 //#endregion
-//#region package/source/app/family-outfit.tsx
+//#region app/family-outfit.tsx
 var wardrobe = {
 	Casual: "./family-play-consistent.webp",
 	"Smart casual": "./family-smart-casual.png",
@@ -29076,7 +29077,7 @@ function FamilyOutfitAnimation({ kind, style = "Casual", confirmed, manual = fal
 	});
 }
 //#endregion
-//#region package/source/app/metservice-weather.tsx
+//#region app/metservice-weather.tsx
 var slugs = {
 	"Auckland": "auckland",
 	"Whangārei": "whangarei",
@@ -29132,7 +29133,7 @@ function MetServiceWeather({ location, refresh }) {
 	});
 }
 //#endregion
-//#region package/source/app/outfit-weather.ts
+//#region app/outfit-weather.ts
 function weatherOutfit(weather) {
 	if (!weather) return "mild";
 	if ((weather.daily.rain ?? 0) >= 45 || weather.daily.rainExpected || weather.current.precipitation > 0) return "rain";
@@ -29140,7 +29141,7 @@ function weatherOutfit(weather) {
 	return "mild";
 }
 //#endregion
-//#region package/source/app/daily-life.tsx
+//#region app/daily-life.tsx
 var cities = [
 	"Auckland",
 	"Whangārei",
@@ -29577,7 +29578,7 @@ function SeasonalProduce() {
 	});
 }
 //#endregion
-//#region package/source/app/bible-books.json
+//#region app/bible-books.json
 var bible_books_default = [
 	{
 		"name": "Genesis",
@@ -29873,7 +29874,7 @@ var bible_books_default = [
 	}
 ];
 //#endregion
-//#region package/source/app/bible.tsx
+//#region app/bible.tsx
 function BibleLibrary() {
 	const [book, setBook] = (0, import_react.useState)("John"), [chapter, setChapter] = (0, import_react.useState)("1"), [search, setSearch] = (0, import_react.useState)(""), [query, setQuery] = (0, import_react.useState)(""), [page, setPage] = (0, import_react.useState)(0), [data, setData] = (0, import_react.useState)(null), [error, setError] = (0, import_react.useState)(""), [loading, setLoading] = (0, import_react.useState)(true);
 	(0, import_react.useEffect)(() => {
@@ -30151,10 +30152,10 @@ function GospelReading() {
 	});
 }
 //#endregion
-//#region package/source/app/churches.json
+//#region app/churches.json
 var churches_default = /* @__PURE__ */ JSON.parse("[{\"id\":\"featured-auckland\",\"name\":\"Cathedral of St Patrick & St Joseph\",\"diocese\":\"Auckland\",\"address\":\"43 Wyndham Street, Auckland Central\",\"schedule\":\"Sunday:9am, 11am, 4:30pm, 7pm. Monday–Friday:7am, 12:15pm. Saturday and public holidays:8:30am.\",\"source\":\"https://stpatricks.org.nz/\",\"url\":\"https://stpatricks.org.nz/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=43 Wyndham Street, Auckland Central\"},{\"id\":\"ak-1\",\"name\":\"Avondale, St Mary of the Immaculate Conception\",\"diocese\":\"Auckland\",\"address\":\"2134 Great North Rd, Avondale\",\"schedule\":\"Sunday Masses · Due to fire destroying the Church building the Avondale Catholic Community will join the Christ the King Parish Owairaka for Sunday Mass · Saturday Vigil Mass:6.00pm · Sunday Masses:8.30am & 10.00am, 6pm · Weekday Masses · These will be held on site from 22 July details coming later · Tuesday to Saturday - Mass at 9.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2134 Great North Rd, Avondale\"},{\"id\":\"ak-2\",\"name\":\"Balmoral, Good Shepherd\",\"diocese\":\"Auckland\",\"address\":\"27 Telford Ave, Mt Eden\",\"schedule\":\"Sunday Masses · Saturday 5pm Vigil Mass · Sunday 9.30am · [NZSL interpreters present 4th Sunday of month] · Weekday Masses · Tuesday - Saturday 9.30am · Saturday: Exposition & Rosary from 8.30am followed by Mass at 9.30am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=27 Telford Ave, Mt Eden\"},{\"id\":\"ak-3\",\"name\":\"BeachHaven, Maria Assumpta\",\"diocese\":\"Auckland\",\"address\":\"198 Beach Haven Rd, Beach Haven\",\"schedule\":\"Sunday Masses · 8.00am & 10.00am · Weekday Masses · Monday:9.00 am\xA0Liturgy of the Word · Tuesday-Friday:9.00 am\xA0Mass · (1st Friday Mass at 9 am followed by adoration up to 12 pm) · Saturday:9.00 am\xA0Mass \xA0(Reconciliation 10 am - 12 pm)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=198 Beach Haven Rd, Beach Haven\"},{\"id\":\"ak-4\",\"name\":\"Blockhouse Bay, St Dominic\",\"diocese\":\"Auckland\",\"address\":\"St Dominic, Blockhouse Bay · check official parish for address\",\"schedule\":\"Sunday Masses · Saturday:6:00pm Vigil · Sunday:8:00am and 9:30am · Saturday Parish Renewal Rosary 7:30am and Sacrament of Baptism (By Fr. Ranjit) 10.00 am - 12 Noon · Weekday Masses · Monday 7:00am · Tuesday, Thursday and Friday\xA0 9:15am · Tuesday Reconciliation & Exposition will take place after the 9:15 AM Mass and continue until 11:00 a.m. · Wednesday - Novena at 6:45pm followed by Mass at 7:00pm · First Friday (Mass of Healing & Anointing of the sick)\xA0 9:15am · First Friday Adoration followed by Mass 6:30pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St+Dominic+Blockhouse+Bay+New+Zealand\"},{\"id\":\"ak-5\",\"name\":\"Clover Park, St Peter Chanel\",\"diocese\":\"Auckland\",\"address\":\"44 Boundary Rd, Clover Park\",\"schedule\":\"Sunday Mass · 9.00am · Weekday Mass · Tuesday to Friday:5.30pm · Saturday:8.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=44 Boundary Rd, Clover Park\"},{\"id\":\"ak-6\",\"name\":\"Coromandel Peninsula & Hauraki Plains\",\"diocese\":\"Auckland\",\"address\":\"111 Baillie St, Thames\",\"schedule\":\"Sunday Mass - Thames · Sunday Mass:8.30am (in Church) · Weekday Masses - Thames · Tuesday Mass:5.15pm (in Chapel) · Wed & Thurs Mass:9.15am (in Chapel) · Friday Rosary:11.00am (in Chapel) · Friday Exposition:11.15am (in Chapel) · Friday Mass:12.15pm (in Chapel) · Saturday Mass:9.15am (in Chapel)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=111 Baillie St, Thames\"},{\"id\":\"ak-7\",\"name\":\"Dargaville, Sacred Heart\",\"diocese\":\"Auckland\",\"address\":\"97 Hokianga Rd, Dargaville\",\"schedule\":\"Sunday Masses · Dargaville\xA0Sunday @ 9.30am · Dargaville\xA0Vigil 2nd and 4th Saturday @ 5.30pm · Kaihu\xA01st Sunday @ 11.30am · Ruawai\xA0Vigil 1st and 3rd Saturday @ Ruawai Community Church 5.30pm · Weekday Masses · Tuesday...Church open for prayer · Wednesday 5.30pm · Thursday 5.30pm · Friday 11.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=97 Hokianga Rd, Dargaville\"},{\"id\":\"ak-8\",\"name\":\"Devonport, St Francis de Sales & All Souls\",\"diocese\":\"Auckland\",\"address\":\"2A Albert St, Devonport\",\"schedule\":\"Sunday Masses · Saturday Vigil:5.30pm · Sunday:9.30am · Weekday Masses · Wednesday:12.00 noon · Friday:12.00 noon · Saturday:9.00am (Reconciliation available after Mass)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2A Albert St, Devonport\"},{\"id\":\"ak-9\",\"name\":\"East Coast Bays Parishes\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · Saturday – 5:30pm Vigil Mass · Sunday – 8:00am Mass · Weekday Masses · Monday\xA09.15am: Liturgy of the Word with Communion · Wednesday, Friday 9:15am Mass · Saturday - 9:00am Mass · St Francis de Sales · 8 Finchley Rd, Torbay · Sunday Masses · 10:00am Mass · Weekday Masses · Tuesday – 10:00am Liturgy of the Word with Communion · Thursday – 10:00am Mass · Saturday – 9:00am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-10\",\"name\":\"Ellerslie, Immaculate Conception\",\"diocese\":\"Auckland\",\"address\":\"66 Main Highway, Ellerslie\",\"schedule\":\"Sunday Masses · 5:30pm - Saturday Vigil · 9:00am - Sunday · Weekday Masses · Monday at 8:00am - Liturgy of the Word · Tuesday to Thursday - 8:00am · Friday, Saturday and Public Holiday - 9:00am · Anointing Mass will be every 1st Saturday of the month at 9am · Friday at 8:00am - Exposition of the Blessed Sacrament\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=66 Main Highway, Ellerslie\"},{\"id\":\"ak-11\",\"name\":\"Epsom, Our Lady of the Sacred Heart\",\"diocese\":\"Auckland\",\"address\":\"19 Banff Ave, Epsom\",\"schedule\":\"Sunday Masses · Saturday Vigil\xA0 5.30pm · Sunday Mass\xA0 \xA0 9.00am · Weekday Masses · Tuesday–Thursday\xA0 \xA08.00am · Friday Adoration of the Blessed Sacrament 11am, · followed by Mass at 12.05pm · Saturday 9.00am · Sacrament of Reconciliation: Saturday 4.45-5.15pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=19 Banff Ave, Epsom\"},{\"id\":\"ak-12\",\"name\":\"Flat Bush, St Luke\",\"diocese\":\"Auckland\",\"address\":\"260 Chapel Rd, Flatbush\",\"schedule\":\"Sunday Masses · Saturday 5pm Vigil Mass · Sunday 8:30am,10:30am and 5.00pm · Weekday Masses · Tuesday - Thursday 9am · Friday 9am · Friday 1:30pm only during school term · Saturday 9am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=260 Chapel Rd, Flatbush\"},{\"id\":\"ak-14\",\"name\":\"Glen Eden, Our Lady of Lourdes\",\"diocese\":\"Auckland\",\"address\":\"7 Glendale Rd, Glen Eden\",\"schedule\":\"Sunday Masses · Saturday:5 pm Vigil · Sunday:9am, 10.30 am, 5pm · Weekday Masses · Monday:9 am · Tues/Wed/Thurs:6.30 pm · Wed: Novena - 6 pm · Friday:9 am · First Friday:6.30 pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=7 Glendale Rd, Glen Eden\"},{\"id\":\"ak-16\",\"name\":\"Glen Innes, St Pius X\",\"diocese\":\"Auckland\",\"address\":\"101 Castledine Cres, Glen Innes\",\"schedule\":\"Sunday Masses · 8.30am and 10.00am · 12.30pm Samoan Divine Mercy Mass · (2nd Sunday of month) · Weekday Masses · Tuesday-Saturday 9am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=101 Castledine Cres, Glen Innes\"},{\"id\":\"ak-13\",\"name\":\"Glendowie, Mother of Perpetual Help\",\"diocese\":\"Auckland\",\"address\":\"510 Riddell Rd, Glendowie\",\"schedule\":\"Sunday Mass · 10:30am - Sunday Mass · Sacrament of Reconciliation - 8:45am - Saturday · Rosary - 8:50am - Saturday\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=510 Riddell Rd, Glendowie\"},{\"id\":\"ak-15\",\"name\":\"Glenfield, St Thomas More\",\"diocese\":\"Auckland\",\"address\":\"336 Wairau Rd, Glenfield\",\"schedule\":\"Sunday Masses · Saturday Vigil – 5:30pm · Sunday – 8:00am & 10:00am · Chaldean Rite\xA0\xA0Summer – 6:00pm\xA0 Winter – 5:00pm · Weekday Masses · Monday to Saturday – 9:15am · Thursday – 7:30pm · 1st Wednesday – 7:30pm · 1st Friday – 7:30pm · 4th Friday – Tongan Mass 7:00pm · Reconciliation · Thursday – 7:00pm · Saturday –\xA0 9:45am · Devotions · Blessed Sacrament Adoration · All day Thursday. · Our Lady of Perpetual Help · 1st Wednesday – 7:00pm · Divine Mercy Chaplet · 1st Friday – 7:00pm · Rosary Devotion · 1st Saturday after 9:15am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=336 Wairau Rd, Glenfield\"},{\"id\":\"ak-17\",\"name\":\"Grey Lynn, St Joseph\",\"diocese\":\"Auckland\",\"address\":\"470 Great North Rd, Grey Lynn\",\"schedule\":\"Sunday Masses · Saturday:5.30pm Vigil Mass · Sunday:8.30am Mass · Sunday:10.30am Samoan Mass · Weekday Masses · Monday - Friday:9.00am Mass · Saturday:8.15am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=470 Great North Rd, Grey Lynn\"},{\"id\":\"ak-18\",\"name\":\"Helensville, St Joseph\",\"diocese\":\"Auckland\",\"address\":\"1 Puriri St, Helensville\",\"schedule\":\"Sunday Masses · Vigil Mass, Weeks 2 and 4 @ 6.00pm · Sunday Mass, Weeks 1, 3 and 5 at 9.00am · Weekday Masses · Mass -\xA09:00 Mon, Wed and Thurs · Adoration -\xA09:30 to 10:30 Thursdays · Reconciliation -\xA0During adoration & other times by appointment · St Patrick's Huapai · Sunday Masses · Vigil Mass, Weeks 1, 3 and 5 @ 5.00pm · Sunday Mass, Weeks 2 and 4 at 9.00am · Weekday Masses · Mass -\xA010:00 Tuesday and Friday · Adoration -10:30 to 11:30 Friday · Reconciliation\xA0- During Adoration & other times by appointment\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=1 Puriri St, Helensville\"},{\"id\":\"ak-20\",\"name\":\"Henderson, Holy Cross\",\"diocese\":\"Auckland\",\"address\":\"2 Lavelle Rd, Henderson\",\"schedule\":\"Sunday Masses · 6.00pm Vigil Mass · Sunday 7.00am, 9.00am, 11.00am & 6.00pm · Weekday Masses · Tues, Thurs & Friday.....9.00am · Wednesday.....9.00am, 7.30pm · Friday.....7.30pm (1st Friday Mass) · Saturday....8.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2 Lavelle Rd, Henderson\"},{\"id\":\"ak-21\",\"name\":\"Hibiscus Coast\",\"diocese\":\"Auckland\",\"address\":\"180 Centreway Rd, Orewa\",\"schedule\":\"Weekday Masses:\xA0 Monday, Tuesday, Wednesday, Thursday and Saturday – 9.30am · St Francis by the Sea · Motutapu Ave, Manly · Sunday:8:30am · Liturgy of the Word & Holy Communion:\xA0Monday, Tuesday, Thursday and Saturday – 9.30am · Weekday Masses:\xA0Wednesday and Friday – 9.30am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=180 Centreway Rd, Orewa\"},{\"id\":\"ak-22\",\"name\":\"Hillsborough, St John Vianney\",\"diocese\":\"Auckland\",\"address\":\"317 Hillsborough Rd, Hillsborough\",\"schedule\":\"Sunday Masses · Vigil Mass 5.30pm · Sunday 9am and 5.30pm · Weekday Masses · Monday · No Mass · Tuesday · 7.00pm · Wednesday · 9am (At Murray Halberg Village, residents only) · 6:30 - 6:50 pm Reconciliation 7 pm Mass followed by the Novena of Mother of Perpetual Help · Thursday · 8.45am (At Hillsborough Heights Village, residents only) · 7.00pm · Friday · 10am · Saturday · Exposition of the Blessed Sacrament and Reconciliation 8 - 8:45 am followed by Benediction and Mass 9 am · _________________________________________________________________________________________________________________________________________________\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=317 Hillsborough Rd, Hillsborough\"},{\"id\":\"ak-19\",\"name\":\"Hospital Masses\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Mass 11.00am · (Liturgy of Word with Holy Communion · on the first Sunday of each month) · Auckland City Hospital · Sunday Mass\xA0 11.30am · Middlemore Hospital · Sunday Mass 11.00am · Wednesday Mass12.15pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-23\",\"name\":\"Howick, Our Lady, Star of the Sea\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · Howick · Saturday:6.00 p.m. · Sunday:9.00am and 5.30p.m. · Beachlands · Saturday 4.30p.m · This will be a Liturgy of the Word with Holy Communion, · Except on the Saturday before the 1st Saturday of the month, · when there will be Mass. · At St Hilda's Anglican Church, 3 Wakelin Road, Beachlands. · Weekday Masses · Monday : Rosary at 9.15am (no Mass) · Tuesday - Friday:9.15am. · (except on Friday, any funeral Mass may displace 9.15am Mass)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-24\",\"name\":\"Kaitaia, Holy Family\",\"diocese\":\"Auckland\",\"address\":\"23a Dominion Rd, Kaitaia\",\"schedule\":\"Sunday Masses · 9am St. Joseph Kaitaia · 3:30pm St. Andrew's Mangonui · 11am once a month Switzer Residential Care Home · 9am Mass in Te Reo every first Sunday of the month at St Joseph Kaitaia · Weekday Masses · 9:15am Wednesday and Friday · St Joseph Kaitaia\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=23a Dominion Rd, Kaitaia\"},{\"id\":\"ak-25\",\"name\":\"Kerikeri, Holy Family\",\"diocese\":\"Auckland\",\"address\":\"34 Cobham Rd, Kerikeri\",\"schedule\":\"Sunday Masses · Kerikeri · Sunday 10:15am · Waitāruke · Saturday Vigil 5.00pm · Liturgy every 3rd Sunday · Weekday Masses · Kerikeri · Monday - 9:15am (except January) · Tuesday, Wednesday, Saturday - 9:15am · Friday - 12:30pm · Waitāruke · Thursday - 9am (school mass) · __________________________________________________________________________________________________________________________________________________\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=34 Cobham Rd, Kerikeri\"},{\"id\":\"ak-26\",\"name\":\"Korean Parish, Holy Family\",\"diocese\":\"Auckland\",\"address\":\"28 Bishop Dunn Pl, Flatbush\",\"schedule\":\"Check the official parish timetable.\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=28 Bishop Dunn Pl, Flatbush\"},{\"id\":\"ak-27\",\"name\":\"Mangere Parishes\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · St Therese Parish Mangere East · Sunday – 8am, 10am & 6pm · Samoan Mass 12.00pm Noon · (every 4th Sunday of month except January) · St Anthony Parish Mangere Bridge · Saturday...Vigil Mass 5.00pm · Sunday Mass 9.00am · Weekday Masses · St Therese Parish Mangere East · Tuesday, Thursday, Saturday 9.00am · Tongan Mass Friday 7.00pm · (every first Friday of the month, except December) · St Anthony Parish Mangere Bridge · Monday, Wednesday, Friday 9.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-28\",\"name\":\"Manurewa, St Anne\",\"diocese\":\"Auckland\",\"address\":\"126 Russell Rd, Manurewa\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass 5:30pm · 8:00am Mass · 10:00am Mass · 5:00pm Mass · Occasional Sunday Masses · 11:30am Maori Mass - 4th Sunday (Feb - Nov) · 12pm Tongan Mass - 2nd Sunday (March - Nov) · 12pm Samoan Mass - 3rd Sunday (March - Nov) · Weekday Masses · Monday - 12:05pm Liturgy of the Word with Holy Communion · Tuesday – Thursday 12:05pm Mass · Friday - 9:00am Mass · Saturday - 8:00am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=126 Russell Rd, Manurewa\"},{\"id\":\"ak-29\",\"name\":\"Massey, St Paul\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · St Paul's Church · 162 Waimumu Rd, Massey · Saturday - 5.00pm Vigil (Reconciliation @ 4.15am) · Sunday - 7.30am & 10.30am Mass · St Malachy's Church · 461 Swanson Rd, Ranui · Sunday - 9.00am Mass · Weekday Masses · St Paul's Church · Monday, Wednesday & Friday - 9.00am Mass · St Malachy's Church · Tuesday & Thursday - 9.15am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-30\",\"name\":\"Meadowbank, Our Lady of Fatima\",\"diocese\":\"Auckland\",\"address\":\"4 Lucia Glade, Meadowbank\",\"schedule\":\"Sunday Masses · Saturday Vigil 5.30pm · Sunday 9.30am · Weekday Masses · Monday, Wednesday, Thursday, Friday & Saturday 9.00am · Tuesday 6.30pm Rosary, Novena and Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=4 Lucia Glade, Meadowbank\"},{\"id\":\"ak-31\",\"name\":\"Mid-North Parishes\",\"diocese\":\"Auckland\",\"address\":\"3 Hulme Dr, Okaihau\xA0 (Presbytery)\",\"schedule\":\"Sunday Masses · St Anthony Church · 126 Broadway, Kaikohe · 9.00am · The Shrine of Peter Chanel · Cnr Chapel & Beresford Sts · 11.30am · St Patrick Church · 234 Horeke Rd, Settlers Way · 5.30pm · St Charles Borromeo · 61 Parnell St, Rawene · 11:00am (4th Sunday) · St Nicholas in the Field · end of Wikaira Rd, Whirinaki · 11:00am (1st & 2nd Sunday) · St Therese Church · 17 Snowden Ave, Moerewa · 9.00am · St Paul's Anglican Church · 36 Marsden Rd, Paihia · Summer: · 1st Saturday of October – 1st Saturday of April · 5:30pm · Winter: · 2nd Saturday of April – 4th Saturday of September · 5:00pm · Weekday Masses · St Anthony Church · Tuesday 6.30pm · 1st Friday: Mass & Anointing at Kaikohe Care Centre and Hospital at 9.30am · St Patrick Church · Holy Hour:6:30pm · (every last Friday of the month) · St. Charles Borromeo · 61 Parnell St, Rawene · Wednesday Mass:9.00am · Rawene Hospital Mass:10.30am · (every 2nd Friday of the month) · St Therese Church · Wednesdays:6:30pm · Holy Hour:6:30pm · (every 1st Friday of the month) · Liturgy of the word with Bible sharing:6:30pm · (every Thursday)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=3 Hulme Dr, Okaihau\xA0 (Presbytery)\"},{\"id\":\"ak-32\",\"name\":\"Mt Albert, St Mary\",\"diocese\":\"Auckland\",\"address\":\"20 Kitenui Ave, Mt Albert\",\"schedule\":\"Sunday Masses · 8.00am, 10.00am & 5.30pm · Weekday Masses · Monday Liturgy:9.00am · (Liturgy of the Word with Holy Communion) · Tuesday Mass:6.30pm · Wednesday Mass:9.00am · Thursday Mass:10.00am · Friday Mass:9.00am · Saturday Mass:9.00am · (followed by Reconciliation Rite 1)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=20 Kitenui Ave, Mt Albert\"},{\"id\":\"ak-33\",\"name\":\"Mt Wellington, St Bernadette\",\"diocese\":\"Auckland\",\"address\":\"27 Bailey Rd, Mt Wellington\",\"schedule\":\"Sunday Masses · 9.00am Mass · Tongan Mass:1st Saturday of the month @ 6pm · Weekday Masses · Tuesday - Friday 6pm Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=27 Bailey Rd, Mt Wellington\"},{\"id\":\"ak-39\",\"name\":\"NZSL and Mass\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Check the official parish timetable.\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-34\",\"name\":\"Newton, St Benedicts\",\"diocese\":\"Auckland\",\"address\":\"1 St Benedicts St, Eden Terrace\",\"schedule\":\"Sunday Masses · Saturday Vigil 6.00pm · Sunday 9.30am · Weekday Masses · Wednesday - Friday:12.10pm · Wednesday Filipino Community @ 7.30pm · 1st & 3rd Friday Filipino Community @ 7.30pm · Ethnic Masses · Filipino @ 11.30am every Sunday · Tongan @ 1.30pm every 3rd Sunday · Indonesian @ 1.30pm every 4th Sunday\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=1 St Benedicts St, Eden Terrace\"},{\"id\":\"ak-35\",\"name\":\"Northcote, St Mary\",\"diocese\":\"Auckland\",\"address\":\"117 Onewa Rd, Northcote\",\"schedule\":\"Sunday Masses · 5.30pm Saturday Vigil · 8.30am, 10.30am & 5.00pm · Weekday Masses · Monday - Saturday 9.15am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=117 Onewa Rd, Northcote\"},{\"id\":\"ak-36\",\"name\":\"Onehunga, Our Lady of the Assumption\",\"diocese\":\"Auckland\",\"address\":\"97 Galway St, Onehunga\",\"schedule\":\"Sunday Masses · 6.00pm Saturday Vigil Mass · 8.30am Mass · 10.00am Mass · 10.00am Youth Mass (4th Sunday) · 11.30am Samoan Mass (3rd Sunday) · 12.00pm Tongan Mass (2nd Sunday) · Weekday Masses · Monday 7.30am Mass · Tuesday, Wednesday, Thursday 7.30am and 7.00pm · Friday 7.30am (all weeks) and 7.00pm (1st Friday only)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=97 Galway St, Onehunga\"},{\"id\":\"ak-37\",\"name\":\"Orakei, St Joseph\",\"diocese\":\"Auckland\",\"address\":\"16 Brenton Pl, Orakei\",\"schedule\":\"Sunday Masses · 5.30pm Saturday Vigil Mass · Sunday:9.30am and\xA05.00pm Mass · Weekday Masses · Monday & Wednesday:9.15am Mass · 4th Wed :\xA0CWL Mass @ 10.30am · Tuesday & Friday:6.00pm Mass · Saturday:9.00am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=16 Brenton Pl, Orakei\"},{\"id\":\"ak-38\",\"name\":\"Otahuhu, Ss Joseph & Joachim\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · 8am & 10am Mass · Weekday Masses · Tuesday 6.00pm Mass · Wednesday - Saturday:9.00am Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-40\",\"name\":\"Otara, St John the Evangelist\",\"diocese\":\"Auckland\",\"address\":\"14 Otara Rd, Otara\",\"schedule\":\"Sunday Masses · 8:30am & 10:30am · Weekday and Saturday Masses · 8.30am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=14 Otara Rd, Otara\"},{\"id\":\"ak-41\",\"name\":\"Owairaka, Christ the King\",\"diocese\":\"Auckland\",\"address\":\"260 Richardson Rd, Mt Roskill\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass:6.00pm · Sunday Masses:8.30am & 10.00am, 6pm · Weekday Masses · Monday: Liturgy of the Word & Holy Communion 9.00am · Tues - Thursday & Saturday:9.00am · Friday:10.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=260 Richardson Rd, Mt Roskill\"},{\"id\":\"ak-42\",\"name\":\"Pakuranga, St Mark\",\"diocese\":\"Auckland\",\"address\":\"334 Pakuranga Rd, Pakuranga\",\"schedule\":\"Sunday Masses · 5:30pm: Vigil Mass · 8.30am, 10.30am & 6.30pm · Weekday Masses · Tuesday to Saturday 9.00am · Wednesday 7.00pm · First Friday of the Month 7.00pm Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=334 Pakuranga Rd, Pakuranga\"},{\"id\":\"ak-43\",\"name\":\"Panguru, St Peter\",\"diocese\":\"Auckland\",\"address\":\"2204 West Coast Rd, RD2 Kohukohu.\",\"schedule\":\"Sunday Masses · 1st Sunday · 9am - Panguru · 11am - Pawarenga · 1pm - Herekino · 2nd Sunday · 9am - Panguru · 11am - Broadwood · 1pm - Whangape · 3rd Sunday · 9am Panguru · 11am - Pawarenga · 1.30pm-Motukaraka · 4th Sunday · 9am - Waihou / Te Karaka · 11am - Mitimiti · 1.30pm Kohukohu · 5th Sunday · 10am Area Mass - Panguru or Pawarenga · 1st - 3rd Saturday · 5pm Vigil - Motuti · 4th Saturday · 5pm Liturgy - Motuti · 4th Saturday · 5pm Mass - Broadwood\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2204 West Coast Rd, RD2 Kohukohu.\"},{\"id\":\"ak-44\",\"name\":\"Panmure, St Patrick\",\"diocese\":\"Auckland\",\"address\":\"19 Sunset View Rd, Panmure\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass:5.30 pm · Sunday:9 am · Weekday Masses · Monday -Saturday 9 am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=19 Sunset View Rd, Panmure\"},{\"id\":\"ak-45\",\"name\":\"Papakura, St Mary\",\"diocese\":\"Auckland\",\"address\":\"46 East Street, Papakura\",\"schedule\":\"Sunday Masses · Saturday 8:30am · Saturday Vigil 5:00pm · Sunday\xA0 8:30am, 10:30am · Ethnic Masses · Filipino Mass 1st Sunday 2:00pm · Samoan Mass 3rd Sunday 12:00pm · Every other month (call office for the confirmed date) · Tongan Mass 4th Sunday, 2:00pm · Every three months (call office for the confirmed date) · Weekday Masses · Monday 9.00am · Tuesday 6.30pm · Wednesday 6.30pm · Thursday 9.30am · Friday 9.00am · First Fridays of the month 10.00am · First Saturdays of the month · Anointing of the Sick - 8:30am · RECONCILIATION · 9:00 - 10:00am, Saturdays\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=46 East Street, Papakura\"},{\"id\":\"ak-46\",\"name\":\"Papatoetoe, Holy Cross\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · 5.30pm Vigil Mass · 8.00am Mass · 10.00 Mass · 5.30pm Mass · Filipino Mass:3rd Sunday at 2.30pm · Tongan Mass:3rd Saturday at 7.00pm · Weekday Masses · Monday, Tuesday, Thursday, Friday. Saturday 9.30am Mass · Wednesday, 12.00pm Mass\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-47\",\"name\":\"Parnell, St John the Baptist\",\"diocese\":\"Auckland\",\"address\":\"244 Parnell Rd, Parnell\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass 5.00 pm · Sunday Masses 7am and 9.30am · Weekday Masses · NO Weekday Masses until further notice. · Saturday and Public Holidays Mass at 9.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=244 Parnell Rd, Parnell\"},{\"id\":\"ak-48\",\"name\":\"Ponsonby Herne Bay Parish\",\"diocese\":\"Auckland\",\"address\":\"16 Vermont St, Ponsonby\",\"schedule\":\"Sunday Masses · Sacred Heart Parish · 16 Vermont St, Ponsonby · Vigil Mass 5pm · Sunday 10.30am · Spanish Mass:2nd and 4th Sundays 12.30pm · Our Lady of Perpetual Help Church · 84 Kelmarna Ave, Herne Bay · Mandarin Vigil Mass 5.00pm · Parish Mass 8.30am · Cantonese Mass 11.00am · Syro-Malankara Mass 3.00pm (Every Sunday except 3^{rd} of the month) · Weekday Masses · Sacred Heart Church · Tuesday 8am · Wednesday 5.30pm · Thursday 6.30am · Friday 12.10pm · Saturday 8.00am · Our Lady of Perpetual Help Church · Monday 7am · Wednesday 7am · Friday 7am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=16 Vermont St, Ponsonby\"},{\"id\":\"ak-49\",\"name\":\"Pt Chevalier, Ss Francis & Therese\",\"diocese\":\"Auckland\",\"address\":\"46 Pt Chevalier Rd, Pt Chevalier\",\"schedule\":\"Sunday Masses · Saturday 5:30pm Vigil · Sunday 9am · Weekday Masses · Monday 10am Selwyn Village Chapel (Residents only) · Tuesday 9:15am · Wednesday 12pm · Friday 9:15am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=46 Pt Chevalier Rd, Pt Chevalier\"},{\"id\":\"ak-50\",\"name\":\"Pukekohe, St Patrick\",\"diocese\":\"Auckland\",\"address\":\"133 Seddon St, Pukekohe\",\"schedule\":\"Sunday Masses · Sunday 8am, 10am, 5pm · Weekday Masses · Tuesday, Wednesday, Friday and Saturday 9am · Thursday 7pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=133 Seddon St, Pukekohe\"},{\"id\":\"ak-51\",\"name\":\"Remuera, St Michael\",\"diocese\":\"Auckland\",\"address\":\"6 Beatrice Rd, Remuera\",\"schedule\":\"Sunday Masses · 8am, 10am & 5pm · Weekday Masses · Monday - Friday 7am & 12noon · Saturday\xA08am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=6 Beatrice Rd, Remuera\"},{\"id\":\"ak-52\",\"name\":\"St Heliers, St Ignatius\",\"diocese\":\"Auckland\",\"address\":\"12 Kotiri St, St Heliers\",\"schedule\":\"Sunday Masses · 5:00pm - Saturday Vigil · 9:00am - Sunday\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=12 Kotiri St, St Heliers\"},{\"id\":\"ak-53\",\"name\":\"Takapuna, St Joseph\",\"diocese\":\"Auckland\",\"address\":\"10 Dominion St, Takapuna\",\"schedule\":\"Sunday Masses · 5.00pm Vigil Mass · SUNDAY 7.30am, 10.30am and 6.00pm · Youth Mass, every 3rd Sunday, 6pm · Korean Mass, every Saturday, 7:30pm · Weekday Masses · Monday - Friday 9.15am · Saturday 9.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=10 Dominion St, Takapuna\"},{\"id\":\"ak-54\",\"name\":\"Te Atatu, Holy Family\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · 8am (Latin)\xA0 &\xA0 9:30am (English) · Weekday Masses · Monday-Saturday 9am · Tuesday - 9am and 7pm\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-55\",\"name\":\"Three Kings, St Therese\",\"diocese\":\"Auckland\",\"address\":\"1/7 Frost Rd, Mt Albert\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass:5:00 pm · Sunday Mass 9:30 am · Weekday Masses · Monday to Friday:7:00 am · Special Masses · Tamil:6:30 pm every 1st Saturday · Fijian:2:00 pm every 1st Sunday\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=1/7 Frost Rd, Mt Albert\"},{\"id\":\"ak-56\",\"name\":\"Tuakau & Waiuku Parishes\",\"diocese\":\"Auckland\",\"address\":\"24 Domain St. Waiuku\",\"schedule\":\"Sunday Masses · St Anthony Waiuku · Sunday 9.00am · St Andrew's Tuakau · Saturday Vigil 5.00pm · Holy Rosary Matakawau · The last Sunday of the month at 12:00 noon. · Weekday Masses · St Anthony Waiuku · Tuesday, Thursday and Saturday 9.00am · St Andrew's Tuakau · Wednesday and Friday 11.00am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=24 Domain St. Waiuku\"},{\"id\":\"ak-57\",\"name\":\"Waiheke Island, St Peter\",\"diocese\":\"Auckland\",\"address\":\"197 Ocean View Rd, Oneroa\",\"schedule\":\"Sunday Masses · Saturday Vigil Mass @ 5pm · Sunday Mass @ 9.15am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=197 Ocean View Rd, Oneroa\"},{\"id\":\"ak-58\",\"name\":\"Warkworth, Holy Name\",\"diocese\":\"Auckland\",\"address\":\"\",\"schedule\":\"Sunday Masses · Holy Name Warkworth · Saturday Vigil 6:00 p.m. · Sunday Mass 10:30 a.m. · Sts Peter and Paul Puhoi · Sunday Mass 8:30 a.m. · Weekday Mass · Wednesday 9:00 am at Puhoi\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"ak-59\",\"name\":\"Wellsford, St Mary\",\"diocese\":\"Auckland\",\"address\":\"Matheson Rd, Wellsford\",\"schedule\":\"Sunday Masses · St Mary’s Wellsford · 6 Matheson Rd · Sunday 10.30am · Maungaturoto Church · Griffin Rd · Saturday Vigil 4.00pm · Mangawhai Heads · 8A Fagan Pl · Sunday 8.30am · Weekday Masses · St Mary’s Wellsford · Tuesday and Saturday 9.00am · Friday:11.30am · Maungaturoto Church · Wednesday, 10.00am · Mangawhai Heads · Thursday:10.30am · (Private home, check weekly newsletter for address)\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Matheson Rd, Wellsford\"},{\"id\":\"ak-60\",\"name\":\"Whangarei, St Francis Xavier\",\"diocese\":\"Auckland\",\"address\":\"Cnr Kamo Rd & Park Ave\",\"schedule\":\"Sunday Masses · St Francis Xavier · 63 Park Ave, Kensington, Whangarei · 5pm Vigil Mass (Standard Time) · 6pm Vigil Mass (Daylight Savings Time) · Sunday 8am & 10am · 1st Sunday\xA0@ 10am: Miha · 5th Sunday\xA0@ 5pm: Filipino · Ruakaka · Holy Family Centre, Peter Snell Rd, Ruakaka · 1st, 3rd & 5th Sunday:10.30am Liturgy of the Word with Holy Communion · 2nd & 4th Sunday 10.30am Mass · Whangarei Heads · McLeod Bay Community Church · 1st Sunday:5pm Saturday evening Vigil Mass (Standard time) · 6pm Saturday evening Vigil Mass (Daylight Savings Time) · 2nd & 4th:8.30am Liturgy of the Word with Holy Communion · 5th Sunday:10.00am, Combined Community Service · Hikurangi · Holy Name of Mary · 10 Valley Rd, Hikurangi · 1st Sunday:8am Mass · 3rd Sunday:10am Mass · 2nd, 4th & 5th Sunday:10am Liturgy of the Word with Holy Communion · Maungatapere · Interdenominational Church · 4th Sunday:8.30am Mass · Maungakaramea · St Peter & Paul Church · Main Rd, Maungakaramea · 1st Sunday:10.30am Mass · Weekday Masses · Monday and Thursday 7am · Tuesday 9am\",\"source\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"url\":\"https://www.aucklandcatholic.org.nz/parish-mass-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Cnr Kamo Rd & Park Ave\"},{\"id\":\"featured-hamilton\",\"name\":\"Cathedral of the Blessed Virgin Mary\",\"diocese\":\"Hamilton\",\"address\":\"494 Grey Street, Hamilton East\",\"schedule\":\"Saturday vigil:6pm. Sunday:7:30am, 10:30am, 6pm. Monday:8am; Tuesday:12:05pm; Wednesday/Thursday:8am, 12:05pm; Friday:12:05pm.\",\"source\":\"https://www.cdh.org.nz/hamilton-cathedral/\",\"url\":\"https://www.cdh.org.nz/hamilton-cathedral/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=494 Grey Street, Hamilton East\"},{\"id\":\"hm-opotoki\",\"name\":\"Parish of Our Lady Help of Christians\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Tuesday:9:00 am (Ōpōtiki) Wednesday:9:00 am (Ōpōtiki) Friday:9:00 am (Ōpōtiki) WEEKEND MASS TIMES Sunday:9:00 am (Ōpōtiki First Sunday:11:00 am (Miha Māori, Church of Our Lady Waiaua)\",\"source\":\"https://www.cdh.org.nz/opotoki/\",\"url\":\"https://www.cdh.org.nz/opotoki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-waihi\",\"name\":\"Parish of St Joseph's\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday:9.00 am (Liturgy Only) Thursday:9.00 am Friday:9.00 am Saturday:9.00 am WEEKEND MASS TIMES Sunday:9.00 am\",\"source\":\"https://www.cdh.org.nz/waihi/\",\"url\":\"https://www.cdh.org.nz/waihi/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-Rotorua\",\"name\":\"Parish of St Mary of the Cross MacKilliop\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday:9:00 am (St Mary's, Liturgy of the Word) Tuesday:5:30 pm (St Michael's) Thursday:9:00 am (St Michael's) Wednesday:12:05 pm (St Mary's) Friday:9:00 am (St Mary's) Saturday:9:00 am (St Mary's) WEEKEND MASS TIMES Saturday:5:00 pm (St Michael's, Vigil) Sunday:8:00 am (St Michael's) Sunday:10:00 am, 5:00 pm (St Mary's) Second Sunday of the Month:11:00 am (Murupara) Fourth Sunday of the Month:11:00 am (Murupara) Other Sundays:11:00am (Murupara, Liturgy of the Word with Holy Communion Service)\",\"source\":\"https://www.cdh.org.nz/Rotorua/\",\"url\":\"https://www.cdh.org.nz/Rotorua/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-whakatane\",\"name\":\"Parish of St Peter Chanel\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday:8.00 am Tuesday:5.15 pm Wednesday:8.00 am Thursday:8.00 am Friday:12.05 pm Saturday:8.00 am WEEKEND MASS TIMES Saturday:5.00 pm Sunday:9.00 am\",\"source\":\"https://www.cdh.org.nz/whakatane/\",\"url\":\"https://www.cdh.org.nz/whakatane/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-cambridge\",\"name\":\"Parish of St Peter's\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday:9.15 am (Matamata) Tuesday:5:30 pm (Cambridge) Wednesday:9.15 am (Cambridge) Thursday:9.15 am (Cambridge) Friday:12.05 pm (Cambridge), 5.00 pm (Matamata) WEEKEND MASS TIMES Saturday Vigil:5:30 p.m (Cambridge) Sunday:8:30 a.m (Cambridge) and 10.30 a.m (Matamata)\",\"source\":\"https://www.cdh.org.nz/cambridge/\",\"url\":\"https://www.cdh.org.nz/cambridge/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-hamilton-holy-cross\",\"name\":\"Parish of the Holy Cross\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Tuesday 9.15 am (St Josephs Fairfield), 10.15 am (St Peter Chanel Te Rapa) Wednesday 9.15 am (St Josephs Fairfield), 10.15 am (St Peter Chanel Te Rapa) Thursday 9.15 am (St Josephs Fairfield), 10.15 am (St Peter Chanel Te Rapa) Friday 9.15 am (St Josephs Fairfield), 10.15 am (St Peter Chanel Te Rapa) Saturday:9.00 am (St Joseph's Fairfield) WEEKEND MASS TIMES Saturday:5.00 pm (St Peter Chanel Te Rapa) Sunday:9.00 am (St Joseph's Fairfield)\",\"source\":\"https://www.cdh.org.nz/hamilton-holy-cross/\",\"url\":\"https://www.cdh.org.nz/hamilton-holy-cross/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"hm-hamilton-st-marys-chapel\",\"name\":\"St Mary's Chapel\",\"diocese\":\"Hamilton\",\"address\":\"\",\"schedule\":\"WEEKDAY MASS TIMES Monday 6.45 am Tuesday 6.45 am Wednesday 6.45 am Thursday 6.45 am Friday 6.45 am, 6:00 pm (Adoration) WEEKEND MASS TIMES Sunday, 5:00 pm (Latin Mass, normally preceded by Reconciliation)\",\"source\":\"https://www.cdh.org.nz/hamilton-st-marys-chapel/\",\"url\":\"https://www.cdh.org.nz/hamilton-st-marys-chapel/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=\"},{\"id\":\"featured-palmerston-north\",\"name\":\"Cathedral of the Holy Spirit\",\"diocese\":\"Palmerston North\",\"address\":\"197 Broadway Avenue, Palmerston North\",\"schedule\":\"Sunday:7:30am, 10am, 6pm. Monday:7:30am. Tuesday–Friday:12:05pm; Tuesday also 5:30pm. Saturday:9am. Public holidays:9am. Monday 12:05pm: Liturgy of the Word with Holy Communion.\",\"source\":\"https://pncathedral.org.nz/page/cathedral-of-holy-spirit.html\",\"url\":\"https://pncathedral.org.nz/page/cathedral-of-holy-spirit.html\",\"map\":\"https://www.google.com/maps/search/?api=1&query=197 Broadway Avenue, Palmerston North\"},{\"id\":\"pn-taranaki-204\",\"name\":\"Bell Block Catholic Centre\",\"diocese\":\"Palmerston North\",\"address\":\"Bell Block Catholic Centre, 138 Parklands Ave, Bell Block\",\"schedule\":\"Sunday 10:30am (Mass 1st Sunday of the month; Liturgy of the Word with Holy Communion 3rd Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Bell Block Catholic Centre, 138 Parklands Ave, Bell Block New Zealand\"},{\"id\":\"pn-whanganui-waimarino-231\",\"name\":\"Holy Family\",\"diocese\":\"Palmerston North\",\"address\":\"Holy Family, \xA022 Tawhero St, Whanganui\",\"schedule\":\"Saturday Vigil 5:30pm · Syro-Malabar Mass 5:30pm (1st Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Holy Family, \xA022 Tawhero St, Whanganui New Zealand\"},{\"id\":\"pn-taranaki-214\",\"name\":\"Immaculate Conception\",\"diocese\":\"Palmerston North\",\"address\":\"Immaculate Conception, 90 Miranda St, Stratford\",\"schedule\":\"Sunday 10:15am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception, 90 Miranda St, Stratford New Zealand\"},{\"id\":\"pn-hawkes-bay-223\",\"name\":\"Immaculate Conception\",\"diocese\":\"Palmerston North\",\"address\":\"Immaculate Conception, 16 Miriama Rd, Paki Paki\",\"schedule\":\"Sunday 8am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception, 16 Miriama Rd, Paki Paki New Zealand\"},{\"id\":\"pn-whanganui-waimarino-234\",\"name\":\"Kaiwhaiki\",\"diocese\":\"Palmerston North\",\"address\":\"Kaiwhaiki\",\"schedule\":\"Sunday 11am\xA0(1st Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Kaiwhaiki New Zealand\"},{\"id\":\"pn-taranaki-212\",\"name\":\"Nga Pekanga Te Kohanga Reo\",\"diocese\":\"Palmerston North\",\"address\":\"Nga Pekanga Te Kohanga Reo, cnr Bayly St and Princess St, Waitara\",\"schedule\":\"Contact Waitara (【57†[email\xA0protected])】 for Mass Times\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Nga Pekanga Te Kohanga Reo, cnr Bayly St and Princess St, Waitara New Zealand\"},{\"id\":\"pn-taranaki-205\",\"name\":\"Our Lady Help of Christians\",\"diocese\":\"Palmerston North\",\"address\":\"Our Lady Help of Christians, 24 Clinton St, Fitzroy\",\"schedule\":\"Saturday Vigil 5:30pm · Sunday 10:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady Help of Christians, 24 Clinton St, Fitzroy New Zealand\"},{\"id\":\"pn-taranaki-208\",\"name\":\"Our Lady Star of the Sea\",\"diocese\":\"Palmerston North\",\"address\":\"Our Lady Star of the Sea, 49 Whitcombe Rd, Opunake\",\"schedule\":\"Sunday 10am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady Star of the Sea, 49 Whitcombe Rd, Opunake New Zealand\"},{\"id\":\"pn-hawkes-bay-224\",\"name\":\"Our Lady of Lourdes\",\"diocese\":\"Palmerston North\",\"address\":\"Our Lady of Lourdes, \xA085 Te Mata Rd, Havelock North\",\"schedule\":\"Sunday 9:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Lourdes, \xA085 Te Mata Rd, Havelock North New Zealand\"},{\"id\":\"pn-taranaki-213\",\"name\":\"Our Lady of the Wayside\",\"diocese\":\"Palmerston North\",\"address\":\"Our Lady of the Wayside, 32 North St, Mokau\",\"schedule\":\"Contact Waitara (【59†[email\xA0protected])】 for Mass Times\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of the Wayside, 32 North St, Mokau New Zealand\"},{\"id\":\"pn-taranaki-210\",\"name\":\"Sacred Heart\",\"diocese\":\"Palmerston North\",\"address\":\"Sacred Heart, 23 Standish St, Inglewood\",\"schedule\":\"Sunday 10:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, 23 Standish St, Inglewood New Zealand\"},{\"id\":\"pn-hawkes-bay-225\",\"name\":\"Sacred Heart\",\"diocese\":\"Palmerston North\",\"address\":\"Sacred Heart, 425 Heretaunga Street East, Hastings\",\"schedule\":\"Sunday 9am & 5:30pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, 425 Heretaunga Street East, Hastings New Zealand\"},{\"id\":\"pn-whanganui-waimarino-233\",\"name\":\"Sacred Heart Catholic Church\",\"diocese\":\"Palmerston North\",\"address\":\"Sacred Heart Catholic Church, London (Rānana)\",\"schedule\":\"Sunday 12pm (4th Sunday of the month, alternating with Hiruhārama)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart Catholic Church, London (Rānana) New Zealand\"},{\"id\":\"pn-whanganui-waimarino-237\",\"name\":\"St Andrew’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Andrew’s, next to the Whangaehu Community Hall on Whangaehu Village Rd, Whangaehu\",\"schedule\":\"Sunday 9am\xA0(first Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Andrew’s, next to the Whangaehu Community Hall on Whangaehu Village Rd, Whangaehu New Zealand\"},{\"id\":\"pn-whanganui-waimarino-235\",\"name\":\"St Francis Xavier\",\"diocese\":\"Palmerston North\",\"address\":\"St Francis Xavier, 17 Russell St, Marton\",\"schedule\":\"Sunday 9.30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis Xavier, 17 Russell St, Marton New Zealand\"},{\"id\":\"pn-taranaki-219\",\"name\":\"St Francis de Sales\",\"diocese\":\"Palmerston North\",\"address\":\"St Francis de Sales, cnr Wilson and Brassey Sts, Waverley\",\"schedule\":\"Sunday 9:30am (Liturgy of the Word with Holy Communion, 3rd Sunday of the month) · Sunday 11am (Mass 2nd Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis de Sales, cnr Wilson and Brassey Sts, Waverley New Zealand\"},{\"id\":\"pn-taranaki-206\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 106 Powderham St, New Plymouth\",\"schedule\":\"Sunday 9am, 5:30pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 106 Powderham St, New Plymouth New Zealand\"},{\"id\":\"pn-taranaki-211\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 17 Nelson Street, Waitara\",\"schedule\":\"Sunday 9am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 17 Nelson Street, Waitara New Zealand\"},{\"id\":\"pn-taranaki-215\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 29 Stanners St, Eltham\",\"schedule\":\"Saturday Vigil 6pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 29 Stanners St, Eltham New Zealand\"},{\"id\":\"pn-taranaki-217\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, \xA038 Victoria St, Hawera\",\"schedule\":\"Saturday Vigil 5pm · Sunday 9am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, \xA038 Victoria St, Hawera New Zealand\"},{\"id\":\"pn-hawkes-bay-227\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 15 St Joseph St, Waipukurau\",\"schedule\":\"Sunday 9:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 15 St Joseph St, Waipukurau New Zealand\"},{\"id\":\"pn-whanganui-waimarino-238\",\"name\":\"St Joseph’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s, 45 Arawa St, Ohakune\",\"schedule\":\"Saturday Vigil 5:30pm · Please text 027 348 8508 for confirmation of Mass times and place\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s, 45 Arawa St, Ohakune New Zealand\"},{\"id\":\"pn-whanganui-waimarino-232\",\"name\":\"St Joseph’s Church\",\"diocese\":\"Palmerston North\",\"address\":\"St Joseph’s Church, Otaranoho Road, Jerusalem (Hiruhārama)\",\"schedule\":\"Sunday 12pm (4th Sunday of the month, alternating with\xA0Rānana)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph’s Church, Otaranoho Road, Jerusalem (Hiruhārama) New Zealand\"},{\"id\":\"pn-taranaki-209\",\"name\":\"St Martin’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Martin’s, 6328 South Rd, Pungarehu\",\"schedule\":\"No fixed schedule published. Contact the parish.\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Martin’s, 6328 South Rd, Pungarehu New Zealand\"},{\"id\":\"pn-hawkes-bay-220\",\"name\":\"St Mary’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Mary’s, 58 Osier Rd, Taradale\",\"schedule\":\"Sunday 9am & 5pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary’s, 58 Osier Rd, Taradale New Zealand\"},{\"id\":\"pn-whanganui-waimarino-230\",\"name\":\"St Mary’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Mary’s, 1 Campbell St, Whanganui\",\"schedule\":\"Sunday 9:30am\xA0(Māori miha mass 3rd Sunday of the month, Filipino Mass 4th Sunday of the month) and 5:30pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary’s, 1 Campbell St, Whanganui New Zealand\"},{\"id\":\"pn-whanganui-waimarino-236\",\"name\":\"St Mary’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Mary’s, 15 Johnson St, Bulls\",\"schedule\":\"No masses at this time\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary’s, 15 Johnson St, Bulls New Zealand\"},{\"id\":\"pn-whanganui-waimarino-239\",\"name\":\"St Mary’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Mary’s, 51 Huia St, Taihape\",\"schedule\":\"Sunday 8am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/whanganui-waimarino/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary’s, 51 Huia St, Taihape New Zealand\"},{\"id\":\"pn-taranaki-207\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 36 Cumming St, Okato\",\"schedule\":\"Saturday Vigil 6pm\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 36 Cumming St, Okato New Zealand\"},{\"id\":\"pn-taranaki-216\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 78 Victoria St, Kaponga\",\"schedule\":\"Sunday 8:45am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 78 Victoria St, Kaponga New Zealand\"},{\"id\":\"pn-taranaki-218\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 27 Egmont St,Patea\",\"schedule\":\"Sunday 9:30am (Liturgy of the Word with Holy Communion, 1st Sunday of the month) · Sunday 11am (Mass 4th Sunday of the month)\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/taranaki/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 27 Egmont St,Patea New Zealand\"},{\"id\":\"pn-hawkes-bay-221\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 4 Munroe St, Napier\",\"schedule\":\"Saturday Vigil 5:30pm · Sunday 10am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 4 Munroe St, Napier New Zealand\"},{\"id\":\"pn-hawkes-bay-228\",\"name\":\"St Patrick’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Patrick’s, 46 Waverley St, Waipawa\",\"schedule\":\"Saturday Vigil 5:30pm.\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick’s, 46 Waverley St, Waipawa New Zealand\"},{\"id\":\"pn-hawkes-bay-226\",\"name\":\"St Peter Chanel\",\"diocese\":\"Palmerston North\",\"address\":\"St Peter Chanel, 817 Gordon Road, Raureka, Hastings\",\"schedule\":\"Saturday Vigil 5:30pm · Sunday 10:30am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Peter Chanel, 817 Gordon Road, Raureka, Hastings New Zealand\"},{\"id\":\"pn-hawkes-bay-229\",\"name\":\"St Peter’s\",\"diocese\":\"Palmerston North\",\"address\":\"St Peter’s, 64 Queen St, Wairoa\",\"schedule\":\"Sunday 9am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Peter’s, 64 Queen St, Wairoa New Zealand\"},{\"id\":\"pn-hawkes-bay-222\",\"name\":\"St Thomas More\",\"diocese\":\"Palmerston North\",\"address\":\"St Thomas More, 92 Wycliffe St, Onekawa, Napier South\",\"schedule\":\"Sunday 8am\",\"source\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"url\":\"https://pndiocese.org.nz/pastoral/masstimes/hawkes-bay/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Thomas More, 92 Wycliffe St, Onekawa, Napier South New Zealand\"},{\"id\":\"featured-wellington\",\"name\":\"Metropolitan Cathedral of the Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"Hill Street, Thorndon, Wellington\",\"schedule\":\"Saturday:8:30am, 5:30pm vigil. Sunday:10am, 7pm. Tuesday–Friday:8am, 12:10pm. Monday 12:10pm: Liturgy of the Word with Holy Communion (except public holidays). Check calendar for changes.\",\"source\":\"https://mcshwellington.org/mass-and-reconciliation-times/\",\"url\":\"https://mcshwellington.org/mass-and-reconciliation-times/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Hill Street, Thorndon, Wellington\"},{\"id\":\"wn-wn-holy-family-porirua-east.data-1\",\"name\":\"Holy Family\",\"diocese\":\"Wellington\",\"address\":\"Holy Family Porirua East · see parish for church address\",\"schedule\":\"Saturday:6.00pm (Vigil) · Sunday:9.30am · Sunday:12.30pm 2nd Sunday (Cook Island) · Sunday:11.00am 2nd, 3rd, 4th, 5th Sundays (Samoan) · Sunday:12.30pm 4th Sunday (Tokelauan)\",\"source\":\"https://cadw.nz/parish/holy-family-porirua-east/\",\"url\":\"https://cadw.nz/parish/holy-family-porirua-east/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Holy Family Holy Family Porirua East New Zealand\"},{\"id\":\"wn-wn-te-whetu-o-te-moana-star-of-the-sea-marlborough-parish.data-3\",\"name\":\"Immaculate Conception\",\"diocese\":\"Wellington\",\"address\":\"Te Whetu o te Moana – Star of the Sea Marlborough Parish · see parish for church address\",\"schedule\":\"Sunday:8am Mass\",\"source\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"url\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception Te Whetu o te Moana – Star of the Sea Marlborough Parish New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-2\",\"name\":\"Motueka - St Peter Chanel\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Sunday:11.00am (Mass) · Tuesday: Holy Communion · Friday:9.30am (Liturgy of the Word)\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Motueka - St Peter Chanel St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-0\",\"name\":\"Nelson - St Mary\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Saturday:6.00pm (Vigil) · Sunday:10.30am (Mass)\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Nelson - St Mary St John Paul II New Zealand\"},{\"id\":\"wn-wn-our-lady-of-hope-parish.data-1\",\"name\":\"Our Lady of Fatima\",\"diocese\":\"Wellington\",\"address\":\"Our Lady of Hope Parish · see parish for church address\",\"schedule\":\"Sunday:8.30am, 10.30am\",\"source\":\"https://cadw.nz/parish/our-lady-of-hope-parish/\",\"url\":\"https://cadw.nz/parish/our-lady-of-hope-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Fatima Our Lady of Hope Parish New Zealand\"},{\"id\":\"wn-wn-our-lady-of-the-valleys-parish.data-0\",\"name\":\"Our Lady of Grace\",\"diocese\":\"Wellington\",\"address\":\"Our Lady of the Valleys Parish · see parish for church address\",\"schedule\":\"Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/our-lady-of-the-valleys-parish/\",\"url\":\"https://cadw.nz/parish/our-lady-of-the-valleys-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Grace Our Lady of the Valleys Parish New Zealand\"},{\"id\":\"wn-wn-te-whaea-tapu-o-kapiti-our-lady-of-kapiti-parish.data-0\",\"name\":\"Our Lady of Kapiti Church\",\"diocese\":\"Wellington\",\"address\":\"Te Whaea Tapu o Kāpiti – Our Lady of Kapiti Parish · see parish for church address\",\"schedule\":\"Saturday:5pm Vigil · Sunday:9.30am\",\"source\":\"https://cadw.nz/parish/te-whaea-tapu-o-kapiti-our-lady-of-kapiti-parish/\",\"url\":\"https://cadw.nz/parish/te-whaea-tapu-o-kapiti-our-lady-of-kapiti-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Kapiti Church Te Whaea Tapu o Kāpiti – Our Lady of Kapiti Parish New Zealand\"},{\"id\":\"wn-wn-te-wairua-tapu-holy-spirit-parish.data-3\",\"name\":\"Our Lady of the Rosary\",\"diocese\":\"Wellington\",\"address\":\"Te Wairua Tapu – Holy Spirit Parish · see parish for church address\",\"schedule\":\"Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"url\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of the Rosary Te Wairua Tapu – Holy Spirit Parish New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-3\",\"name\":\"Richmond – Our Lady of Perpetual Help\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Sunday:9.00am (Mass) · Wednesday:9.30am (Mass) · Friday:9.30am (Mass)\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Richmond – Our Lady of Perpetual Help St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-canice-parish-westport.data-1\",\"name\":\"Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Buller and Inangahua · see parish for church address\",\"schedule\":\"1st, 3rd, and 5th Sundays: Saturday vigil 5pm · 2nd and 4th Sundays: Sunday 9am\",\"source\":\"https://cadw.nz/parish/st-canice-parish-westport/\",\"url\":\"https://cadw.nz/parish/st-canice-parish-westport/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart Catholic Parish of Buller and Inangahua New Zealand\"},{\"id\":\"wn-wn-te-whetu-o-te-moana-star-of-the-sea-marlborough-parish.data-1\",\"name\":\"Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"Te Whetu o te Moana – Star of the Sea Marlborough Parish · see parish for church address\",\"schedule\":\"Tuesday:9.30am W&C · Wednesday:9.30am W&C; 7pm Rosary · Thursday:10am Scripture group; 5.15pm W&C · Friday:9.30am W&C · Sunday:9.30am Mass\",\"source\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"url\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart Te Whetu o te Moana – Star of the Sea Marlborough Parish New Zealand\"},{\"id\":\"wn-wn-te-wairua-tapu-holy-spirit-parish.data-1\",\"name\":\"Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"Te Wairua Tapu – Holy Spirit Parish · see parish for church address\",\"schedule\":\"Sunday:9.30am · Sunday:5.30pm\",\"source\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"url\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart Te Wairua Tapu – Holy Spirit Parish New Zealand\"},{\"id\":\"wn-wn-te-wairua-tapu-holy-spirit-parish.data-0\",\"name\":\"San Antonio\",\"diocese\":\"Wellington\",\"address\":\"Te Wairua Tapu – Holy Spirit Parish · see parish for church address\",\"schedule\":\"Saturday:5.30pm (Vigil)\",\"source\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"url\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=San Antonio Te Wairua Tapu – Holy Spirit Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-te-awakairangi.data-0\",\"name\":\"Ss Peter & Paul\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Te Awakairangi · see parish for church address\",\"schedule\":\"Saturday:5:30pm (Vigil) · Sunday:9.00am · Sunday:5.30pm\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Ss Peter & Paul Catholic Parish of Te Awakairangi New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-wellington-south.data-1\",\"name\":\"St Anne\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Wellington South · see parish for church address\",\"schedule\":\"Sunday:9.00am · Sunday:5.00pm · Sunday:11.00am Samoan Mass (3rd Sunday)\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-wellington-south/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-wellington-south/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Anne Catholic Parish of Wellington South New Zealand\"},{\"id\":\"wn-wn-holy-trinity-parish.data-1\",\"name\":\"St Anthony's\",\"diocese\":\"Wellington\",\"address\":\"Holy Trinity Parish · see parish for church address\",\"schedule\":\"Saturday:5.30pm (Vigil) · Wednesday:9.30am\",\"source\":\"https://cadw.nz/parish/holy-trinity-parish/\",\"url\":\"https://cadw.nz/parish/holy-trinity-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Anthony's Holy Trinity Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-te-awakairangi.data-1\",\"name\":\"St Bernadette\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Te Awakairangi · see parish for church address\",\"schedule\":\"Sunday:10.00am\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Bernadette Catholic Parish of Te Awakairangi New Zealand\"},{\"id\":\"wn-wn-st-canice-parish-westport.data-0\",\"name\":\"St Canice\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Buller and Inangahua · see parish for church address\",\"schedule\":\"1st, 3rd and 5th Sundays: Sunday 9.30am · 2nd and 4th Sundays: Saturday vigil 5pm\",\"source\":\"https://cadw.nz/parish/st-canice-parish-westport/\",\"url\":\"https://cadw.nz/parish/st-canice-parish-westport/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Canice Catholic Parish of Buller and Inangahua New Zealand\"},{\"id\":\"wn-wn-our-lady-of-the-valleys-parish.data-1\",\"name\":\"St Francis Xavier\",\"diocese\":\"Wellington\",\"address\":\"Our Lady of the Valleys Parish · see parish for church address\",\"schedule\":\"Saturday:5.30pm (Vigil) · Sunday:8.30am\",\"source\":\"https://cadw.nz/parish/our-lady-of-the-valleys-parish/\",\"url\":\"https://cadw.nz/parish/our-lady-of-the-valleys-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis Xavier Our Lady of the Valleys Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-wellington-south.data-0\",\"name\":\"St Francis de Sales\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Wellington South · see parish for church address\",\"schedule\":\"Saturday:6.00pm Vigil · Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-wellington-south/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-wellington-south/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis de Sales Catholic Parish of Wellington South New Zealand\"},{\"id\":\"wn-wn-st-francis-of-assisi-ohariu-parish.data-0\",\"name\":\"St Francis of Assisi Ohariu\",\"diocese\":\"Wellington\",\"address\":\"St Francis of Assisi Ohariu Parish · see parish for church address\",\"schedule\":\"Saturday: Vigil Mass 5pm · Sunday: Mass 10am\",\"source\":\"https://cadw.nz/parish/st-francis-of-assisi-ohariu-parish/\",\"url\":\"https://cadw.nz/parish/st-francis-of-assisi-ohariu-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis of Assisi Ohariu St Francis of Assisi Ohariu Parish New Zealand\"},{\"id\":\"wn-wn-holy-family-porirua-east.data-0\",\"name\":\"St John of the Cross\",\"diocese\":\"Wellington\",\"address\":\"Holy Family Porirua East · see parish for church address\",\"schedule\":\"Sunday:8.30am\",\"source\":\"https://cadw.nz/parish/holy-family-porirua-east/\",\"url\":\"https://cadw.nz/parish/holy-family-porirua-east/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St John of the Cross Holy Family Porirua East New Zealand\"},{\"id\":\"wn-wn-te-whetu-o-te-moana-star-of-the-sea-marlborough-parish.data-2\",\"name\":\"St Joseph's\",\"diocese\":\"Wellington\",\"address\":\"Te Whetu o te Moana – Star of the Sea Marlborough Parish · see parish for church address\",\"schedule\":\"Wednesday:9.30am Mass · Wednesday:10-10.30am (and by appointment) Exposition & Reconciliation · Thursday:5.15pm Adoration · Saturday:4pm Mass (5pm during Daylight Savings Time)\",\"source\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"url\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph's Te Whetu o te Moana – Star of the Sea Marlborough Parish New Zealand\"},{\"id\":\"wn-wn-st-josephs-upper-hutt.data-0\",\"name\":\"St Joseph's Church\",\"diocese\":\"Wellington\",\"address\":\"St Joseph’s Upper Hutt · see parish for church address\",\"schedule\":\"Saturday:6.00pm (Vigil) · Sunday:9.00am · Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/st-josephs-upper-hutt/\",\"url\":\"https://cadw.nz/parish/st-josephs-upper-hutt/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph's Church St Joseph’s Upper Hutt New Zealand\"},{\"id\":\"wn-wn-st-mary-of-the-angels-wellington-central-parish.data-1\",\"name\":\"St Joseph's church\",\"diocese\":\"Wellington\",\"address\":\"St Mary of the Angels Wellington Central Parish · see parish for church address\",\"schedule\":\"Sunday:9:30am\",\"source\":\"https://cadw.nz/parish/st-mary-of-the-angels-wellington-central-parish/\",\"url\":\"https://cadw.nz/parish/st-mary-of-the-angels-wellington-central-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph's church St Mary of the Angels Wellington Central Parish New Zealand\"},{\"id\":\"wn-wn-te-whetu-o-te-moana-star-of-the-sea-marlborough-parish.data-0\",\"name\":\"St Mary\",\"diocese\":\"Wellington\",\"address\":\"Te Whetu o te Moana – Star of the Sea Marlborough Parish · see parish for church address\",\"schedule\":\"Tuesday:9.30am Mass in Mercy Chapel · Wednesday:12.05pm Mass in Mercy Chapel; 5.30pm Rosary ph. 572 9067 for venue · Thursday:9.30am Mass in Mercy Chapel · Friday:11am Exposition in St Mary's Church; Reconciliation 11.30am-12 noon; 12.05pm Mass in St Mary's Church · Saturday:9.30am Mass (weekday mass) followed by Reconciliation; 5pm Mass · Sunday:10am Mass; 5pm Mass\",\"source\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"url\":\"https://cadw.nz/parish/te-whetu-o-te-moana-star-of-the-sea-marlborough-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary Te Whetu o te Moana – Star of the Sea Marlborough Parish New Zealand\"},{\"id\":\"wn-wn-hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-levin.data-0\",\"name\":\"St Mary's\",\"diocese\":\"Wellington\",\"address\":\"Hāto Mere – St Mary’s Parish Ōtaki · see parish for church address\",\"schedule\":\"Sunday:10am (Miha Māori 1st Sunday) · Monday:10am (Liturgy of the Word & Communion) · Tuesday:10am (Liturgy of the Word & Communion) · Wednesday:10am Mass · Thursday:10am Mass · Friday:10am Mass\",\"source\":\"https://cadw.nz/parish/hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-levin/\",\"url\":\"https://cadw.nz/parish/hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-levin/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary's Hāto Mere – St Mary’s Parish Ōtaki New Zealand\"},{\"id\":\"wn-wn-hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-otaki-and-levin.data-0\",\"name\":\"St Mary's\",\"diocese\":\"Wellington\",\"address\":\"St. Joseph’s Parish Levin · see parish for church address\",\"schedule\":\"Sunday:9:30am Mass · Monday:5:30pm Mass · Tuesday:9:30am Mass · Wednesday:7:00pm Mass · Thursday:9:30am Mass · Friday:12:10pm Mass · Saturday:5:30pm (Vigil Mass)\",\"source\":\"https://cadw.nz/parish/hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-otaki-and-levin/\",\"url\":\"https://cadw.nz/parish/hato-mere-me-hohepa-parish-ss-mary-joseph-parish-of-otaki-and-levin/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary's St. Joseph’s Parish Levin New Zealand\"},{\"id\":\"wn-wn-st-mary-of-the-angels-wellington-central-parish.data-0\",\"name\":\"St Mary's of the Angels church\",\"diocese\":\"Wellington\",\"address\":\"St Mary of the Angels Wellington Central Parish · see parish for church address\",\"schedule\":\"Sunday:7.00am; 9.00am 11.00am (Choral); 5.00pm\",\"source\":\"https://cadw.nz/parish/st-mary-of-the-angels-wellington-central-parish/\",\"url\":\"https://cadw.nz/parish/st-mary-of-the-angels-wellington-central-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary's of the Angels church St Mary of the Angels Wellington Central Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-te-awakairangi.data-2\",\"name\":\"St Michael\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Te Awakairangi · see parish for church address\",\"schedule\":\"Sunday:8.30am · Sunday:10.30am\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-te-awakairangi/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Michael Catholic Parish of Te Awakairangi New Zealand\"},{\"id\":\"wn-wn-te-wairua-tapu-holy-spirit-parish.data-2\",\"name\":\"St Patrick\",\"diocese\":\"Wellington\",\"address\":\"Te Wairua Tapu – Holy Spirit Parish · see parish for church address\",\"schedule\":\"Sunday:8.30am\",\"source\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"url\":\"https://cadw.nz/parish/te-wairua-tapu-holy-spirit-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick Te Wairua Tapu – Holy Spirit Parish New Zealand\"},{\"id\":\"wn-wn-holy-trinity-parish.data-0\",\"name\":\"St Patrick's\",\"diocese\":\"Wellington\",\"address\":\"Holy Trinity Parish · see parish for church address\",\"schedule\":\"Sunday:8.30am, 10.30am · Tuesday:9.30am · Friday:9.30am\",\"source\":\"https://cadw.nz/parish/holy-trinity-parish/\",\"url\":\"https://cadw.nz/parish/holy-trinity-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick's Holy Trinity Parish New Zealand\"},{\"id\":\"wn-wn-our-lady-of-hope-parish.data-0\",\"name\":\"St Pius X\",\"diocese\":\"Wellington\",\"address\":\"Our Lady of Hope Parish · see parish for church address\",\"schedule\":\"Saturday:5.30pm (Vigil)\",\"source\":\"https://cadw.nz/parish/our-lady-of-hope-parish/\",\"url\":\"https://cadw.nz/parish/our-lady-of-hope-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Pius X Our Lady of Hope Parish New Zealand\"},{\"id\":\"wn-wn-catholic-parish-of-otari.data-0\",\"name\":\"St Teresa's\",\"diocese\":\"Wellington\",\"address\":\"Catholic Parish of Otari · see parish for church address\",\"schedule\":\"Saturday:5.30pm Vigil · Sunday:10.00am\",\"source\":\"https://cadw.nz/parish/catholic-parish-of-otari/\",\"url\":\"https://cadw.nz/parish/catholic-parish-of-otari/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Teresa's Catholic Parish of Otari New Zealand\"},{\"id\":\"wn-wn-st-theresas-parish-plimmerton.data-0\",\"name\":\"St Theresa's\",\"diocese\":\"Wellington\",\"address\":\"St Theresa’s Parish Plimmerton · see parish for church address\",\"schedule\":\"Sunday:9.30am · Monday:9.30am (followed by Adoration until 1.30pm) · Tuesday-Friday:9.30am · Saturday:9.00am, 5.00pm (Vigil)\",\"source\":\"https://cadw.nz/parish/st-theresas-parish-plimmerton/\",\"url\":\"https://cadw.nz/parish/st-theresas-parish-plimmerton/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Theresa's St Theresa’s Parish Plimmerton New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-1\",\"name\":\"Stoke – St Francis of Assisi\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Sunday:8.30am (Mass)\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Stoke – St Francis of Assisi St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-4\",\"name\":\"Takaka - Sacred Heart\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Sunday:5.00pm summer (winter 4pm) - 1st and 3rd Sunday of the month · Sunday:9.30am (Liturgy of the Word) - 2nd Sundays of the month\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Takaka - Sacred Heart St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-6\",\"name\":\"Waimea West – Ss Peter & Paul\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Saturday:5pm (Vigil) - on 4th Saturday of the month\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Waimea West – Ss Peter & Paul St John Paul II New Zealand\"},{\"id\":\"wn-wn-st-john-paul-ii-parish.data-5\",\"name\":\"Wakefield – St Joseph's\",\"diocese\":\"Wellington\",\"address\":\"St John Paul II · see parish for church address\",\"schedule\":\"Saturday:5pm (Vigil) - 2nd Saturdays of the month\",\"source\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"url\":\"https://cadw.nz/parish/st-john-paul-ii-parish/\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Wakefield – St Joseph's St John Paul II New Zealand\"},{\"id\":\"featured-christchurch\",\"name\":\"St Mary’s Pro-Cathedral\",\"diocese\":\"Christchurch\",\"address\":\"373 Manchester Street, Christchurch\",\"schedule\":\"Saturday vigil:5:30pm. Sunday:8am, 9:30am, 11am (choral), 4:30pm, 6pm. Fourth Sunday:12:30pm Samoan Mass.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/find-a-church\",\"map\":\"https://www.google.com/maps/search/?api=1&query=373 Manchester Street, Christchurch\"},{\"id\":\"chch-0\",\"name\":\"Addington - Sacred Heart\",\"diocese\":\"Christchurch\",\"address\":\"70 Spencer Street, Addington, Christchurch 8024, New Zealand\",\"schedule\":\"Saturday (Vigil):5:00 pm | Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sacred-heart\",\"map\":\"https://www.google.com/maps/search/?api=1&query=70 Spencer Street, Addington, Christchurch 8024, New Zealand&query_place_id=ChIJT-kdzXuKMW0Rgs6imzF8V7Q\"},{\"id\":\"chch-1\",\"name\":\"Akaroa - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"29 Rue Lavaud, Akaroa 7520, New Zealand\",\"schedule\":\"Sunday:9:30 am ‘Liturgy of the Word with the Distribution of Communion’; Sunday Mass is celebrated periodically.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-akaroa\",\"map\":\"https://www.google.com/maps/search/?api=1&query=29 Rue Lavaud, Akaroa 7520, New Zealand&query_place_id=ChIJd_efFHXMM20R00JGkNL48RY\"},{\"id\":\"chch-26\",\"name\":\"Amberley - Holy Passion of the Lord\",\"diocese\":\"Christchurch\",\"address\":\"138 Carters Road, Amberley 7410, New Zealand\",\"schedule\":\"Official listing includes conflicting Sunday times (9am and 8:30am). Please confirm directly with the parish.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/holy-passion-of-the-lord-amberley\",\"map\":\"https://www.google.com/maps/search/?api=1&query=138 Carters Road, Amberley 7410, New Zealand&query_place_id=ChIJxxlt5Eu7MW0RuEe6dsu8FGA\"},{\"id\":\"chch-22\",\"name\":\"Ashburton - Holy Name\",\"diocese\":\"Christchurch\",\"address\":\"58 Sealy Street, Ashburton 7700, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/holy-name-ashburton\",\"map\":\"https://www.google.com/maps/search/?api=1&query=58 Sealy Street, Ashburton 7700, New Zealand&query_place_id=ChIJ-TGwFLC7LW0RVtq0v1MUYE0\"},{\"id\":\"chch-2\",\"name\":\"Beckenham - St Peter's\",\"diocese\":\"Christchurch\",\"address\":\"11 Fisher Avenue, Beckenham, Christchurch 8023, New Zealand\",\"schedule\":\"Sunday:9:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-peters\",\"map\":\"https://www.google.com/maps/search/?api=1&query=11 Fisher Avenue, Beckenham, Christchurch 8023, New Zealand&query_place_id=EjUxMSBGaXNoZXIgQXZlbnVlLCBDYW50ZXJidXJ5IFJlZ2lvbiA4MDIzLCBOZXcgWmVhbGFuZCIwEi4KFAoSCWdUHGivIDJtEc4EOZeEsBEMEAsqFAoSCZ1OS6OuIDJtEbF_nLSiboav\"},{\"id\":\"chch-3\",\"name\":\"Bishopdale - St Gregory's\",\"diocese\":\"Christchurch\",\"address\":\"26 Cotswold Avenue, Bishopdale, Christchurch 8053, New Zealand\",\"schedule\":\"Saturday (Vigil):6:00pm | Sunday:8:00 am | 10:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-gregorys\",\"map\":\"https://www.google.com/maps/search/?api=1&query=26 Cotswold Avenue, Bishopdale, Christchurch 8053, New Zealand&query_place_id=ChIJ754EjWiLMW0RjA7YgebgdTk\"},{\"id\":\"chch-4\",\"name\":\"Burnside - Christ the King\",\"diocese\":\"Christchurch\",\"address\":\"90 Greers Road, Burnside, Christchurch 8053, New Zealand\",\"schedule\":\"No Masses currently due to building safety risk\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/christ-the-king\",\"map\":\"https://www.google.com/maps/search/?api=1&query=90 Greers Road, Burnside, Christchurch 8053, New Zealand&query_place_id=ChIJQ7Ya3yaLMW0RAtkDprN8ouE\"},{\"id\":\"chch-27\",\"name\":\"Cheviot - St Anthony's\",\"diocese\":\"Christchurch\",\"address\":\"62 Ward Road, Cheviot 7310, New Zealand\",\"schedule\":\"Sunday:11:00 am - 1st, 3rd & 5th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-anthonys-cheviot\",\"map\":\"https://www.google.com/maps/search/?api=1&query=62 Ward Road, Cheviot 7310, New Zealand&query_place_id=ChIJS0gf6LvCMG0RO8FvadjKz9o\"},{\"id\":\"chch-45\",\"name\":\"Cobden - Holy Rosary\",\"diocese\":\"Christchurch\",\"address\":\"48 Richmond Street, Cobden, Greymouth 7802, New Zealand\",\"schedule\":\"Sunday:8:00 am (1st, 2nd & 3rd Sundays of the month)\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/holy-rosary-cobden\",\"map\":\"https://www.google.com/maps/search/?api=1&query=48 Richmond Street, Cobden, Greymouth 7802, New Zealand&query_place_id=ChIJe586sHdpL20Rqoz0gDgFHQA\"},{\"id\":\"chch-28\",\"name\":\"Culverden - Our Lady Help of Christians\",\"diocese\":\"Christchurch\",\"address\":\"12 Montrose Avenue, Culverden 7392, New Zealand\",\"schedule\":\"Saturday (Vigil):7:00pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-help-of-christians-culverden\",\"map\":\"https://www.google.com/maps/search/?api=1&query=12 Montrose Avenue, Culverden 7392, New Zealand&query_place_id=ChIJhR7P7LhZMG0RJGhjl4FcYsg\"},{\"id\":\"chch-6\",\"name\":\"Darfield - St Joseph's\",\"diocese\":\"Christchurch\",\"address\":\"Telegraph Road, Darfield 7510, New Zealand\",\"schedule\":\"Sunday:9.00 am (Winter) | 8.30am (during daylight saving)\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-josephs-darfield\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Telegraph Road, Darfield 7510, New Zealand&query_place_id=EipUZWxlZ3JhcGggUm9hZCwgRGFyZmllbGQgNzUxMCwgTmV3IFplYWxhbmQiLiosChQKEgmnffaxBv8tbREpOTrsGymvsRIUChIJm4vE_iQHLm0RJ60I-UIo2W0\"},{\"id\":\"chch-7\",\"name\":\"Diamond Harbour - St Andrew's Community Church\",\"diocese\":\"Christchurch\",\"address\":\"85 Marine Drive, Diamond Harbour 8971, New Zealand\",\"schedule\":\"Sunday:8:30am (Celebration in absence of priest 2nd, 3rd and 4th Sunday of the month) | 5:30pm (1st Sunday of the month)\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-andrews-community-church-diamond-harbour\",\"map\":\"https://www.google.com/maps/search/?api=1&query=85 Marine Drive, Diamond Harbour 8971, New Zealand&query_place_id=ChIJ_yNlFAMmMm0Rn1RapOIrStU\"},{\"id\":\"chch-36\",\"name\":\"Fairlie - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"7 Gall Street, Fairlie 7925, New Zealand\",\"schedule\":\"Sunday:9:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-fairlie\",\"map\":\"https://www.google.com/maps/search/?api=1&query=7 Gall Street, Fairlie 7925, New Zealand&query_place_id=ChIJcfADtvWBLG0RjGuh14bFWKo\"},{\"id\":\"chch-46\",\"name\":\"Fox Glacier - Our Lady of the Snows\",\"diocese\":\"Christchurch\",\"address\":\"Cook Flat Road, Fox Glacier 7886, New Zealand\",\"schedule\":\"The weekend timetable is subject to change. For up-to-date Mass times please check the schedule displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-snows-fox-glacier\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Cook Flat Road, Fox Glacier 7886, New Zealand&query_place_id=Ei1Db29rIEZsYXQgUm9hZCwgRm94IEdsYWNpZXIgNzg4NiwgTmV3IFplYWxhbmQiLiosChQKEglPcuu0Bi8qbRGKYOMaHGIKTRIUChIJ_epAj4UvKm0RcG55hIbvAAU\"},{\"id\":\"chch-47\",\"name\":\"Franz Josef - Our Lady of the Alps\",\"diocese\":\"Christchurch\",\"address\":\"Franz Josef Highway, Franz Josef / Waiau 7886, New Zealand\",\"schedule\":\"The weekend timetable is subject to change. For up-to-date Mass times please check the schedule displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-alps-franz-josef\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Franz Josef Highway, Franz Josef / Waiau 7886, New Zealand&query_place_id=EjpGcmFueiBKb3NlZiBIaWdod2F5LCBGcmFueiBKb3NlZiAvIFdhaWF1IDc4ODYsIE5ldyBaZWFsYW5kIi4qLAoUChIJhdpAHcl8KW0Rlcs-Ec8sarUSFAoSCTe0L-8mfiltEcBueYSG7wAF\"},{\"id\":\"chch-37\",\"name\":\"Geraldine - Immaculate Conception\",\"diocese\":\"Christchurch\",\"address\":\"19 Hislop Street, Geraldine 7930, New Zealand\",\"schedule\":\"Sunday:9:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/immaculate-conception-geraldine\",\"map\":\"https://www.google.com/maps/search/?api=1&query=19 Hislop Street, Geraldine 7930, New Zealand&query_place_id=ChIJ9dxgUsX1LG0RvGYazshWWe4\"},{\"id\":\"chch-48\",\"name\":\"Grey Valley-Ngahere - Sacred Heart\",\"diocese\":\"Christchurch\",\"address\":\"2296 State Highway 7, Ngahere 7872, New Zealand\",\"schedule\":\"Sunday:11:00 am - 4th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sacred-heart-grey-valley-ngahere\",\"map\":\"https://www.google.com/maps/search/?api=1&query=2296 State Highway 7, Ngahere 7872, New Zealand&query_place_id=ChIJ6cxFjU93L20R4ESgjWG6imo\"},{\"id\":\"chch-49\",\"name\":\"Greymouth - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"40 High Street, Greymouth 7805, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:9:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-greymouth\",\"map\":\"https://www.google.com/maps/search/?api=1&query=40 High Street, Greymouth 7805, New Zealand&query_place_id=ChIJ2e2VIDJqL20RnDzZIB919R0\"},{\"id\":\"chch-50\",\"name\":\"Haast - Our Lady of Lourdes\",\"diocese\":\"Christchurch\",\"address\":\"Johnston Crescent, Haast 7886, New Zealand\",\"schedule\":\"Sunday: The weekend timetable is subject to change. For up-to-date Mass times please check the schedule displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-lourdes-haast\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Johnston Crescent, Haast 7886, New Zealand&query_place_id=EipKb2huc3RvbiBDcmVzY2VudCwgSGFhc3QgNzg4NiwgTmV3IFplYWxhbmQiLiosChQKEglRa0pDggnVbBHPCbTOEg6xnhIUChIJZ5vYbCWd1WwR0HJ5hIbvAAU\"},{\"id\":\"chch-8\",\"name\":\"Halswell - Sts Peter & Paul\",\"diocese\":\"Christchurch\",\"address\":\"56 Nicholls Road, Halswell, Christchurch 8025, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:9:00am | 10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sts-peter-paul\",\"map\":\"https://www.google.com/maps/search/?api=1&query=56 Nicholls Road, Halswell, Christchurch 8025, New Zealand&query_place_id=ChIJD0gYb4cfMm0Rnn-7SiD9wiQ\"},{\"id\":\"chch-29\",\"name\":\"Hanmer Springs - St Roch's\",\"diocese\":\"Christchurch\",\"address\":\"27 Amuri Avenue, Hanmer Springs 7334, New Zealand\",\"schedule\":\"Saturday:5:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-rochs-hanmer-springs\",\"map\":\"https://www.google.com/maps/search/?api=1&query=27 Amuri Avenue, Hanmer Springs 7334, New Zealand&query_place_id=ChIJx0vy_YJjMG0R4obV5ucX1mE\"},{\"id\":\"chch-51\",\"name\":\"Hari Hari - St Anne's\",\"diocese\":\"Christchurch\",\"address\":\"Wanganui Flat Road, Harihari 7884, New Zealand\",\"schedule\":\"Sunday: The weekend timetable is subject to change. For up-to-date Mass times please check the schedule displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-annes-hari-hari\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Wanganui Flat Road, Harihari 7884, New Zealand&query_place_id=Ei5XYW5nYW51aSBGbGF0IFJvYWQsIEhhcmloYXJpIDc4ODQsIE5ldyBaZWFsYW5kIi4qLAoUChIJLRWppkBHKW0RRg08_kl_ojwSFAoSCV9FcJzTRyltETB0eYSG7wAF\"},{\"id\":\"chch-30\",\"name\":\"Hawarden - St Raphael\",\"diocese\":\"Christchurch\",\"address\":\"22 Ocarrolls Road, Hawarden 7385, New Zealand\",\"schedule\":\"Sunday:10:30 am - 2nd & 4th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-raphael-hawarden\",\"map\":\"https://www.google.com/maps/search/?api=1&query=22 Ocarrolls Road, Hawarden 7385, New Zealand&query_place_id=ChIJV7EvKVpLMG0RaH3Z6z6L8Ls\"},{\"id\":\"chch-9\",\"name\":\"Hei Hei - St Bernadette's\",\"diocese\":\"Christchurch\",\"address\":\"76 Hei Hei Road, Hei Hei, Christchurch 8042, New Zealand\",\"schedule\":\"Saturday:6:00 pm Samoan Mass: Sunday 12:30 pm on the third Sunday of the month | Brazilian Mass: Sunday 6:00 pm on the last Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-bernadettes\",\"map\":\"https://www.google.com/maps/search/?api=1&query=76 Hei Hei Road, Hei Hei, Christchurch 8042, New Zealand&query_place_id=ChIJr-AOGHH1MW0Rx23hur5vLFo\"},{\"id\":\"chch-52\",\"name\":\"Hokitika - St Mary's Chapel\",\"diocese\":\"Christchurch\",\"address\":\"71 Sewell Street, Hokitika 7810, New Zealand\",\"schedule\":\"Saturday:5:00 pm (St Mary's Chapel) *In Summer Mass is celebrated at 6.00pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-marys-hokitika\",\"map\":\"https://www.google.com/maps/search/?api=1&query=71 Sewell Street, Hokitika 7810, New Zealand&query_place_id=ChIJz0bmq2wvL20RgJ1B6k9Ywk0\"},{\"id\":\"chch-53\",\"name\":\"Hokitika - St Mary's School Hall\",\"diocese\":\"Christchurch\",\"address\":\"87 Sewell Street, Hokitika 7810, New Zealand\",\"schedule\":\"Sunday:9.00am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/hokitika-st-marys-school-hall\",\"map\":\"https://www.google.com/maps/search/?api=1&query=87 Sewell Street, Hokitika 7810, New Zealand&query_place_id=ChIJcVp0r2wvL20RhOfyTZGdMJk\"},{\"id\":\"chch-10\",\"name\":\"Hoon Hay - Carmelite Monastery\",\"diocese\":\"Christchurch\",\"address\":\"52 Halswell Road, Hillmorton, Christchurch 8025, New Zealand\",\"schedule\":\"Sunday:8:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/carmelite-monastery\",\"map\":\"https://www.google.com/maps/search/?api=1&query=52 Halswell Road, Hillmorton, Christchurch 8025, New Zealand&query_place_id=ChIJh_MbKHcgMm0RPBDgZobHDqU\"},{\"id\":\"chch-11\",\"name\":\"Hoon Hay - Our Lady of the Assumption\",\"diocese\":\"Christchurch\",\"address\":\"89 Sparks Road, Hoon Hay, Christchurch 8025, New Zealand\",\"schedule\":\"No Masses currently due to building safety risk\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-assumption\",\"map\":\"https://www.google.com/maps/search/?api=1&query=89 Sparks Road, Hoon Hay, Christchurch 8025, New Zealand&query_place_id=ChIJpe8-vIkgMm0RMjSJDTibVMY\"},{\"id\":\"chch-31\",\"name\":\"Kaiapoi - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"61 Fuller Street, Kaiapoi 7630, New Zealand\",\"schedule\":\"Sunday:9:00am, 11.00am (Latin Mass)\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-kaiapoi\",\"map\":\"https://www.google.com/maps/search/?api=1&query=61 Fuller Street, Kaiapoi 7630, New Zealand&query_place_id=ChIJ47TOZfORMW0Ra-u3khh0gds\"},{\"id\":\"chch-54\",\"name\":\"Kokatahi - St Paul's\",\"diocese\":\"Christchurch\",\"address\":\"Upper Kokatahi Road, Kokatahi 7881, New Zealand\",\"schedule\":\"Sunday:10:45am - 1st, 2nd, 3rd and 5th Sundays of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-pauls-kokatahi\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Upper Kokatahi Road, Kokatahi 7881, New Zealand&query_place_id=Ei9VcHBlciBLb2thdGFoaSBSb2FkLCBLb2thdGFoaSA3ODgxLCBOZXcgWmVhbGFuZCIuKiwKFAoSCcNj_ccj3y5tER6OFbBbLBMuEhQKEgkhygvMdd4ubRHA4nmEhu8ABQ\"},{\"id\":\"chch-55\",\"name\":\"Kumara - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"Third Street, Kumara 7832, New Zealand\",\"schedule\":\"Sunday:11:00 am - 5 th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-kumara\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Third Street, Kumara 7832, New Zealand&query_place_id=EiZUaGlyZCBTdHJlZXQsIEt1bWFyYSA3ODMyLCBOZXcgWmVhbGFuZCIuKiwKFAoSCfEP_xZIFi9tEVFUD0-c0FyXEhQKEgk5XuxHNBYvbRGAgHmEhu8ABQ\"},{\"id\":\"chch-12\",\"name\":\"Leeston - St John the Evangelist\",\"diocese\":\"Christchurch\",\"address\":\"154 High Street, Leeston 7632, New Zealand\",\"schedule\":\"Sunday:10:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-john-the-evangelist-leeston\",\"map\":\"https://www.google.com/maps/search/?api=1&query=154 High Street, Leeston 7632, New Zealand&query_place_id=Ei0xNTQgSGlnaCBTdHJlZXQsIENhbnRlcmJ1cnkgNzYzMiwgTmV3IFplYWxhbmQiMRIvChQKEgnbmW2K5AsybRH_9NWs3mSuZRCaASoUChIJZ7gr-PwLMm0R7xmr7lHDQ_4\"},{\"id\":\"chch-32\",\"name\":\"Leithfield - Community of the Beatitudes\",\"diocese\":\"Christchurch\",\"address\":\"67 Leithfield Road, Leithfield 7481, New Zealand\",\"schedule\":\"Sunday:11.00am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/community-of-the-beatitudes\",\"map\":\"https://www.google.com/maps/search/?api=1&query=67 Leithfield Road, Leithfield 7481, New Zealand&query_place_id=ChIJUx9MH7W8MW0R4Tg31LaUA-I\"},{\"id\":\"chch-13\",\"name\":\"Lincoln - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"31 Gerald Street, Lincoln 7608, New Zealand\",\"schedule\":\"Saturday:5:30 pm | Sunday:8:30am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-lincoln\",\"map\":\"https://www.google.com/maps/search/?api=1&query=31 Gerald Street, Lincoln 7608, New Zealand&query_place_id=ChIJX6zszWAZMm0RRUrO9RFVOjo\"},{\"id\":\"chch-23\",\"name\":\"Methven - Our Lady of the Snows\",\"diocese\":\"Christchurch\",\"address\":\"201 Main Street, Methven 7730, New Zealand\",\"schedule\":\"Sunday:8:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-snows-methven\",\"map\":\"https://www.google.com/maps/search/?api=1&query=201 Main Street, Methven 7730, New Zealand&query_place_id=ChIJQ-MwtDLQLW0RDu-tfL3TzYk\"},{\"id\":\"chch-14\",\"name\":\"New Brighton - St Mary's\",\"diocese\":\"Christchurch\",\"address\":\"116 Lonsdale Street, New Brighton, Christchurch 8083, New Zealand\",\"schedule\":\"Sunday:10:30 am | Samoan Mass:12:30 pm - 2nd Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-marys-new-brighton\",\"map\":\"https://www.google.com/maps/search/?api=1&query=116 Lonsdale Street, New Brighton, Christchurch 8083, New Zealand&query_place_id=ChIJfxKkW5eIMW0RqqGe6FnwI-w\"},{\"id\":\"chch-33\",\"name\":\"Oxford - Sacred Heart\",\"diocese\":\"Christchurch\",\"address\":\"100 Main Street, Oxford 7430, New Zealand\",\"schedule\":\"Sunday:8:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sacred-heart-oxford\",\"map\":\"https://www.google.com/maps/search/?api=1&query=100 Main Street, Oxford 7430, New Zealand&query_place_id=ChIJ-zdjfdkdLm0RgB6XqlmxF1Y\"},{\"id\":\"chch-15\",\"name\":\"Papanui - St Bede's College Chapel\",\"diocese\":\"Christchurch\",\"address\":\"210 Main North Road, Redwood, Christchurch 8051, New Zealand\",\"schedule\":\"Sunday:5:00pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-bedes-college-chapel\",\"map\":\"https://www.google.com/maps/search/?api=1&query=210 Main North Road, Redwood, Christchurch 8051, New Zealand&query_place_id=ChIJPy7nmo-LMW0RurWRDrH-iEY\"},{\"id\":\"chch-38\",\"name\":\"Pleasant Point - St Mary's\",\"diocese\":\"Christchurch\",\"address\":\"29 Afghan Street, Pleasant Point 7903, New Zealand\",\"schedule\":\"Saturday:6:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-marys-pleasant-point\",\"map\":\"https://www.google.com/maps/search/?api=1&query=29 Afghan Street, Pleasant Point 7903, New Zealand&query_place_id=ChIJb4GhrxKTLG0RkKxTnUSDdZQ\"},{\"id\":\"chch-24\",\"name\":\"Rakaia - St Ita's\",\"diocese\":\"Christchurch\",\"address\":\"West Town Belt, Rakaia 7710, New Zealand\",\"schedule\":\"Sunday:6:30 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-itas-rakaia\",\"map\":\"https://www.google.com/maps/search/?api=1&query=West Town Belt, Rakaia 7710, New Zealand&query_place_id=EihXZXN0IFRvd24gQmVsdCwgUmFrYWlhIDc3MTAsIE5ldyBaZWFsYW5kIi4qLAoUChIJRwlFjOftLW0RmxpPAHMNVqASFAoSCSEkzcTo7S1tER8-RV86msq3\"},{\"id\":\"chch-34\",\"name\":\"Rangiora - St Mary & St Francis de Sales\",\"diocese\":\"Christchurch\",\"address\":\"41 Victoria Street, Rangiora 7400, New Zealand\",\"schedule\":\"Saturday (Vigil):6:00 pm | Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-mary-st-francis-de-sales-rangiora\",\"map\":\"https://www.google.com/maps/search/?api=1&query=41 Victoria Street, Rangiora 7400, New Zealand&query_place_id=ChIJy3K6FI6UMW0REBH0lV20g5c\"},{\"id\":\"chch-16\",\"name\":\"Riccarton - St Teresa of Lisieux\",\"diocese\":\"Christchurch\",\"address\":\"8041/8 Puriri Street, Riccarton, Christchurch 8041, New Zealand\",\"schedule\":\"Sunday:8:00 am | 10:00 am | 7:00 pm Indonesian Mass: Saturday (vigil) 5:00 pm on the First Saturday of the month | Spanish Mass: Saturday (vigil) 5:00 pm on the Second Saturday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-teresa-of-lisieux-church-riccarton\",\"map\":\"https://www.google.com/maps/search/?api=1&query=8041/8 Puriri Street, Riccarton, Christchurch 8041, New Zealand&query_place_id=EjI4MDQxLzggUHVyaXJpIFN0cmVldCwgQ2FudGVyYnVyeSA4MDQxLCBOZXcgWmVhbGFuZCI6GjgKMBIuChQKEglJi0oA7YoxbREWKU_d1ZwwTRAIKhQKEgnT1Kpj7ooxbRGB6-xFj3vDcBIEODA0MQ\"},{\"id\":\"chch-17\",\"name\":\"Rolleston - Primary School\",\"diocese\":\"Christchurch\",\"address\":\"11 Tennyson Street, Rolleston 7614, New Zealand\",\"schedule\":\"Sunday:11.00am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/rolleston-primary-school\",\"map\":\"https://www.google.com/maps/search/?api=1&query=11 Tennyson Street, Rolleston 7614, New Zealand&query_place_id=ChIJfw-ZUTYDMm0R5TwcH9y157w\"},{\"id\":\"chch-56\",\"name\":\"Ross - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"19 Saint James Street, Ross 7812, New Zealand\",\"schedule\":\"Sunday:10:45am - 4th Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-church-ross\",\"map\":\"https://www.google.com/maps/search/?api=1&query=19 Saint James Street, Ross 7812, New Zealand&query_place_id=ChIJ73qaNkrTLm0RUlRRGreMUwM\"},{\"id\":\"chch-18\",\"name\":\"Sockburn - Our Lady of Victories\",\"diocese\":\"Christchurch\",\"address\":\"106 Main South Road, Sockburn, Christchurch 8042, New Zealand\",\"schedule\":\"Sunday:9:00 am | 11:00 am | 5:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-victories\",\"map\":\"https://www.google.com/maps/search/?api=1&query=106 Main South Road, Sockburn, Christchurch 8042, New Zealand&query_place_id=ChIJZRq9WEz1MW0RuPVpzvnyPfI\"},{\"id\":\"chch-19\",\"name\":\"Sumner - Our Lady Star of the Sea\",\"diocese\":\"Christchurch\",\"address\":\"42 Dryden Street, Sumner, Christchurch 8081, New Zealand\",\"schedule\":\"Sunday:9:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-star-of-the-sea-sumner\",\"map\":\"https://www.google.com/maps/search/?api=1&query=42 Dryden Street, Sumner, Christchurch 8081, New Zealand&query_place_id=ChIJeaN9mDsoMm0RY7_BQXaXFY0\"},{\"id\":\"chch-20\",\"name\":\"Te Rangimārie Chaplaincy\",\"diocese\":\"Christchurch\",\"address\":\"373 Manchester Street, Christchurch Central City, Christchurch 8013, New Zealand\",\"schedule\":\"Sunday:12:30 pm (First, Second, Third, Fifth Sunday) 6.00pm (Fourth Sunday) \",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/te-rangimārie-centre\",\"map\":\"https://www.google.com/maps/search/?api=1&query=373 Manchester Street, Christchurch Central City, Christchurch 8013, New Zealand&query_place_id=ChIJUYfftC-KMW0Rzq4NYAkhHDs\"},{\"id\":\"chch-39\",\"name\":\"Tekapo - Church of the Good Shepherd\",\"diocese\":\"Christchurch\",\"address\":\"Pioneer Drive, Lake Tekapo 7999, New Zealand\",\"schedule\":\"Sunday:6:00 pm - last Sunday of the month\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/church-of-the-good-shepherd\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Pioneer Drive, Lake Tekapo 7999, New Zealand&query_place_id=EixQaW9uZWVyIERyaXZlLCBMYWtlIFRla2FwbyA3OTk5LCBOZXcgWmVhbGFuZCIuKiwKFAoSCTuhs6tjdSttEThlW8y2tvlfEhQKEgmZrDHBGpkrbRHAgnmEhu8ABQ\"},{\"id\":\"chch-40\",\"name\":\"Temuka - St Joseph's\",\"diocese\":\"Christchurch\",\"address\":\"30 Wilkin Street, Temuka 7920, New Zealand\",\"schedule\":\"Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-josephs-temuka\",\"map\":\"https://www.google.com/maps/search/?api=1&query=30 Wilkin Street, Temuka 7920, New Zealand&query_place_id=ChIJb1KmiE_uLG0Rg3jn346PT6c\"},{\"id\":\"chch-41\",\"name\":\"Timaru - Sacred Heart Basilica\",\"diocese\":\"Christchurch\",\"address\":\"7 Craigie Avenue, Parkside, Timaru 7910, New Zealand\",\"schedule\":\"Sunday:9:00am | 5:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/sacred-heart-basilica-timaru\",\"map\":\"https://www.google.com/maps/search/?api=1&query=7 Craigie Avenue, Parkside, Timaru 7910, New Zealand&query_place_id=ChIJV4X3R3_BLG0RYje5NR6Mqqc\"},{\"id\":\"chch-42\",\"name\":\"Timaru North - St Thomas the Apostle\",\"diocese\":\"Christchurch\",\"address\":\"12 Mountain View Road, Glenwood, Timaru 7910, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:10:30 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-thomas-the-apostle-timaru-north\",\"map\":\"https://www.google.com/maps/search/?api=1&query=12 Mountain View Road, Glenwood, Timaru 7910, New Zealand&query_place_id=ChIJFwMeLUzALG0RHMJ3n6Y-XeI\"},{\"id\":\"chch-25\",\"name\":\"Tinwald - Holy Spirit\",\"diocese\":\"Christchurch\",\"address\":\"52 Thomson Street, Tinwald, Ashburton 7700, New Zealand\",\"schedule\":\"No schedule published. Contact the parish.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/holy-spirit-tinwald\",\"map\":\"https://www.google.com/maps/search/?api=1&query=52 Thomson Street, Tinwald, Ashburton 7700, New Zealand&query_place_id=ChIJN-jld_u6LW0RQjAM-GbP468\"},{\"id\":\"chch-43\",\"name\":\"Twizel - All Saints\",\"diocese\":\"Christchurch\",\"address\":\"52-54 MacKenzie Drive, Twizel 7901, New Zealand\",\"schedule\":\"Saturday:5:00 pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/all-saints-twizel\",\"map\":\"https://www.google.com/maps/search/?api=1&query=52-54 MacKenzie Drive, Twizel 7901, New Zealand&query_place_id=ChIJK5ISMeIfK20RVHzGZgIp8vU\"},{\"id\":\"chch-44\",\"name\":\"Waimate - St Patrick's\",\"diocese\":\"Christchurch\",\"address\":\"1 Timaru Road, Waimate 7924, New Zealand\",\"schedule\":\"Sunday:9:00 am\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-patricks-waimate\",\"map\":\"https://www.google.com/maps/search/?api=1&query=1 Timaru Road, Waimate 7924, New Zealand&query_place_id=ChIJFUBSy6nmKagRTrcIc73sYmc\"},{\"id\":\"chch-57\",\"name\":\"Whataroa - Our Lady of the Woods\",\"diocese\":\"Christchurch\",\"address\":\"7 Whataroa Flat Road, Whataroa 7886, New Zealand\",\"schedule\":\"Sunday: The weekend timetable is displayed on the front door of the church.\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/our-lady-of-the-woods-whataroa\",\"map\":\"https://www.google.com/maps/search/?api=1&query=7 Whataroa Flat Road, Whataroa 7886, New Zealand&query_place_id=ChIJUd5PwNBlKW0RDpUXS-IlCUE\"},{\"id\":\"chch-21\",\"name\":\"Woolston - St Anne's\",\"diocese\":\"Christchurch\",\"address\":\"739 Ferry Road, Woolston, Christchurch 8023, New Zealand\",\"schedule\":\"Saturday:6:00 pm | Sunday:10:30 am Samoan Mass:12:30 pm - 1st Sunday of the month 12:30 | Tongan Mass:3:30 pm - 2nd Sunday of the month 3:30pm\",\"source\":\"https://cdoc.nz/about/parishes/find-a-church\",\"url\":\"https://cdoc.nz/about/parishes/st-annes-woolston\",\"map\":\"https://www.google.com/maps/search/?api=1&query=739 Ferry Road, Woolston, Christchurch 8023, New Zealand&query_place_id=ChIJlaf1fdGJMW0R1hA-RWNz3SA\"},{\"id\":\"featured-dunedin\",\"name\":\"St Joseph’s Cathedral\",\"diocese\":\"Dunedin\",\"address\":\"Corner Rattray and Smith Streets, Dunedin\",\"schedule\":\"Sunday:10:30am; 9am Latin Mass in chapel. Monday:9:30am chapel. Wednesday:5:30pm cathedral. Saturday:9:30am chapel.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Corner Rattray and Smith Streets, Dunedin\"},{\"id\":\"dn-gore-0\",\"name\":\"Blessed Sacrament, Gore\",\"diocese\":\"Dunedin\",\"address\":\"16 Ardwick St Gore 9710\",\"schedule\":\"Saturday Vigil Mass:5:00pm Sunday Mass:9.00am Weekday Mass: Tuesday, Wednesday, Thursday, Saturday at 9.00am Friday at 1.30pm Filipino Mass: Second Sunday of the month at 7:00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"url\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Blessed Sacrament, Gore New Zealand\"},{\"id\":\"dn-invercargill-1\",\"name\":\"Catholic Māori Community, Invercargill\",\"diocese\":\"Dunedin\",\"address\":\"Te Tomairangi Marae (Behind Basilica) 54 Eye Street, Invercargill, Southland 9812\",\"schedule\":\"Sunday Mass:10:00am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Catholic Māori Community, Invercargill New Zealand\"},{\"id\":\"dn-dunedin-8\",\"name\":\"Filipino Catholic Community\",\"diocese\":\"Dunedin\",\"address\":\"Postal Address 24 Forbury Rd, Forbury, Dunedin 9012\",\"schedule\":\"St Brigid's, St Bernadette's & Dunedin Filipino Catholic Community are now part of the new Mercy parish of Dunedin South, which worships at St Patrick's Basilica on Macandrew Rd. Refer to Dunedin South for Mass times. Dunedin Filipino Gore: Church of the Blessed Sacrament 7pm every Second Sunday of the month. Also check out our Facebook Page by clicking here\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Filipino Catholic Community New Zealand\"},{\"id\":\"dn-central-otago-7\",\"name\":\"Glenorchy Church, Glenorchy\",\"diocese\":\"Dunedin\",\"address\":\"PO Box 208, Queenstown 9348\",\"schedule\":\"Sunday Mass 11.30am (2nd Sunday)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Glenorchy Church, Glenorchy New Zealand\"},{\"id\":\"dn-central-otago-4\",\"name\":\"Holy Fam ily, Wanaka\",\"diocese\":\"Dunedin\",\"address\":\"154 Aubrey R oad Wanaka 9305\",\"schedule\":\"Sunday Mass 9am (1st, 3rd, 5th Sundays) 11am (2nd, 4th Sundays) Weekday 9:30am Thurs & Fri\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Holy Fam ily, Wanaka New Zealand\"},{\"id\":\"dn-dunedin-9\",\"name\":\"Holy Name, Dunedin North\",\"diocese\":\"Dunedin\",\"address\":\"420 Great King Street Dunedin PO Box 6090 Dunedin 9059\",\"schedule\":\"Sunday Mass 7:30am, 10:00am & 7:00pm Weekday Mass Monday to Saturday, 8:30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Holy Name, Dunedin North New Zealand\"},{\"id\":\"dn-south-otago-2\",\"name\":\"Immaculate Conception, Milton\",\"diocese\":\"Dunedin\",\"address\":\"24 Dryden St, Milton Postal Address: 16 Colonsay Street, Lawrence 9532\",\"schedule\":\"Sunday Mass 9am Saturday Mass 9am Weekday Mass Wednesday, 9am in the school\",\"source\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception, Milton New Zealand\"},{\"id\":\"dn-dunedin-5\",\"name\":\"Immaculate Conception, Mosgiel\",\"diocese\":\"Dunedin\",\"address\":\"89 Church St Mosgiel 9024\",\"schedule\":\"Sunday Mass 6:00pm Vigil (Saturday) & 9:3 0am Weekday Mass Mon, Tues, Thurs, Fri, Sat 9:15am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Immaculate Conception, Mosgiel New Zealand\"},{\"id\":\"dn-dunedin-6\",\"name\":\"Mercy Parish, Dunedin South (included St Brigid Tainui, St Bernadette Forbury, Filipino Catholic Community, Samoan Community)\",\"diocese\":\"Dunedin\",\"address\":\"32 Macandrew Road Dunedin South, Dunedin 9012\",\"schedule\":\"Sunday Mass times:6:00pm Vigil (Saturday), 9:30am & 11:00am Weekday Mass 9:00am in the Mercy Chapel (situated behind St Patrick's) + Tue 12:10pm & Thurs 6:00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Mercy Parish, Dunedin South (included St Brigid Tainui, St Bernadette Forbury, Filipino Catholic Community, Samoan Community) New Zealand\"},{\"id\":\"dn-dunedin-13\",\"name\":\"Our Lady Star of the Sea, Hampden\",\"diocese\":\"Dunedin\",\"address\":\"83 Newcastle St reet Hampden\",\"schedule\":\"Sunday Mass 1:30pm (2nd & 4th Sundays)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady Star of the Sea, Hampden New Zealand\"},{\"id\":\"dn-central-otago-0\",\"name\":\"Our Lady of Peace, Roxburgh\",\"diocese\":\"Dunedin\",\"address\":\"5 Liddle St, Roxburgh 9500 Served from Alexandra 3 Killarney St, Alexandra 9320\",\"schedule\":\"Sunday Mass 11am Weekday Mass Wednesday, 5.15pm (church)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Our Lady of Peace, Roxburgh New Zealand\"},{\"id\":\"dn-north-otago-2\",\"name\":\"Sacred Heart, Kurow Parish Website>>\",\"diocese\":\"Dunedin\",\"address\":\"1 Ferguson Street, Kurow 9498 Served from Oamaru 68 Reed St Oamaru 9400\",\"schedule\":\"Sunday Mass 12 noon (1st and 3rd Sundays)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, Kurow Parish Website>> New Zealand\"},{\"id\":\"dn-dunedin-10\",\"name\":\"Sacred Heart, North East Valley\",\"diocese\":\"Dunedin\",\"address\":\"89 North Road North East Valley Dunedin 9010\",\"schedule\":\"Sunday Mass 9:30am Weekday Mass 9:30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, North East Valley New Zealand\"},{\"id\":\"dn-central-otago-8\",\"name\":\"Sacred Heart, Ranfurly\",\"diocese\":\"Dunedin\",\"address\":\"4 Stuart Rd, Ranfurly 9332\",\"schedule\":\"Sunday Mass 4pm Winter Months 5pm Summer Months Changes with Daylight Saving.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, Ranfurly New Zealand\"},{\"id\":\"dn-invercargill-6\",\"name\":\"Sacred Heart, Waikiwi\",\"diocese\":\"Dunedin\",\"address\":\"Invercargill North Pastoral Area. 449 North Rd, Waikiwi, Invercargill 9810\",\"schedule\":\"Sunday Mass 10.30am Weekday Mass 9.30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Sacred Heart, Waikiwi New Zealand\"},{\"id\":\"dn-western-southland-8\",\"name\":\"Saint's Peter & Paul, Nightcaps\",\"diocese\":\"Dunedin\",\"address\":\"11 Digger Road, Nightcaps, Southland 9630 Postal address: 65 Tyne Street Invercargill 98 1 0 Served by Invercargill Central\",\"schedule\":\"Sunday Mass - 11.00am 3rd Sunday Weekday Mass Friday 10.00am (during school term)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Saint's Peter & Paul, Nightcaps New Zealand\"},{\"id\":\"dn-dunedin-7\",\"name\":\"Samoan Catholic Community Dunedin\",\"diocese\":\"Dunedin\",\"address\":\"172 Corstorphine Road Corstorphine Dunedin\",\"schedule\":\"Contact the parish for the current timetable.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Samoan Catholic Community Dunedin New Zealand\"},{\"id\":\"dn-dunedin-12\",\"name\":\"St Anne's Church , Waikouaiti\",\"diocese\":\"Dunedin\",\"address\":\"Postal Address: P O Box 6090 Dunedin 9059 E: holynameparish@hotmail.com Mass Times Sunday Mass Waikouaiti 12:00pm (noon) 11 Thomas Street, Waikouaiti 9510 Hampden 1:30pm (2nd & 4th Sundays) Clergy Rev Fr Mark Chamberlain ( Parish Priest ) E: machamberlain61@gmail.com\",\"schedule\":\"Sunday Mass Waikouaiti 12:00pm (noon) 11 Thomas Street, Waikouaiti 9510 Hampden 1:30pm (2nd & 4th Sundays)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Anne's Church , Waikouaiti New Zealand\"},{\"id\":\"dn-western-southland-2\",\"name\":\"St Bernard, Te Anau\",\"diocese\":\"Dunedin\",\"address\":\"Serviced from Winton Parish PO Box 79, Winton 9741\",\"schedule\":\"Saturday Vigil Mass 7.00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Bernard, Te Anau New Zealand\"},{\"id\":\"dn-gore-2\",\"name\":\"St Columba, Balfour\",\"diocese\":\"Dunedin\",\"address\":\"62 Queen Street, Balfour Served from Gore\",\"schedule\":\"Sunday Mass 11:00 am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"url\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Columba, Balfour New Zealand\"},{\"id\":\"dn-western-southland-6\",\"name\":\"St Columba, Riverton\",\"diocese\":\"Dunedin\",\"address\":\"16 Milton Street, Riverton Postal address: 65 Tyne Street Invercargill 98 1 0 Served by Invercargill Central\",\"schedule\":\"Sunday Mass 9.00 am 1st, 3 rd & 5th Sundays (Liturgy of the Word with Holy Communion 2nd & 4th Sundays)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Columba, Riverton New Zealand\"},{\"id\":\"dn-dunedin-2\",\"name\":\"St Francis Xavier, Mornington\",\"diocese\":\"Dunedin\",\"address\":\"27 Benhar Street Maryhill, Dunedin 9011\",\"schedule\":\"Sunday Mass 9.00am Weekday Mass Wednesday:9:30am Thursday:9:30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Francis Xavier, Mornington New Zealand\"},{\"id\":\"dn-western-southland-4\",\"name\":\"St Joan of Arc, Mossburn\",\"diocese\":\"Dunedin\",\"address\":\"Serviced from Te Anau 37 State Hwy 94 Po Box 79, Winton 9741\",\"schedule\":\"Sunday Mass 9:00am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joan of Arc, Mossburn New Zealand\"},{\"id\":\"dn-invercargill-4\",\"name\":\"St Joan of Arc, Rimu\",\"diocese\":\"Dunedin\",\"address\":\"Church Address 871 Rimu Road Southland Invercargill South Pastoral Area Served by Invercargill Central\",\"schedule\":\"Sunday Mass 11am (2nd & 4th Sunday of each month)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joan of Arc, Rimu New Zealand\"},{\"id\":\"dn-central-otago-1\",\"name\":\"St John the Baptist, Alexandra\",\"diocese\":\"Dunedin\",\"address\":\"3 Killarney St, Alexandra 9320\",\"schedule\":\"Sunday Mass 9am Weekday Mass Tuesday, 5pm (Side Chapel) Wed, Thurs & Sat 9am (Side Chapel) Friday, noon (Church)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St John the Baptist, Alexandra New Zealand\"},{\"id\":\"dn-dunedin-3\",\"name\":\"St Joseph, Brockville - Little Sisters of the Poor, Sacred Heart Home & Hospital\",\"diocese\":\"Dunedin\",\"address\":\"295 Brockville Road Brockville, Dunedin\",\"schedule\":\"Sunday Mass 11:00am Weekday Mass Mon-Sat:11:00am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph, Brockville - Little Sisters of the Poor, Sacred Heart Home & Hospital New Zealand\"},{\"id\":\"dn-western-southland-5\",\"name\":\"St Joseph, Otautau\",\"diocese\":\"Dunedin\",\"address\":\"Former Sunday School Hall cnr Chester Street & Queen Street Otautau, Southland 9610 Postal address: 65 Tyne Street Invercargill 98 1 0 Served by Invercargill Central\",\"schedule\":\"Sunday Mass 7:00pm Vigil (Saturday) 2nd & 4th Sunday in the former Sunday School Hall, cnr Chester Street and Queen Street.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph, Otautau New Zealand\"},{\"id\":\"dn-central-otago-5\",\"name\":\"St Joseph, Queenstown\",\"diocese\":\"Dunedin\",\"address\":\"39 Melbourne St, Queenstown PO Box 208, Queenstown 9348\",\"schedule\":\"Sunday Mass 9am Saturday Mass Vigil 6.30pm Mass 9:30am - Monday, Wednesday & Friday\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Joseph, Queenstown New Zealand\"},{\"id\":\"dn-north-otago-1\",\"name\":\"St Kevin's College Chapel, Oamaru Parish Website>>\",\"diocese\":\"Dunedin\",\"address\":\"57 Taward St Oamaru, Otago 9400\",\"schedule\":\"Contact the College for school mass times.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Kevin's College Chapel, Oamaru Parish Website>> New Zealand\"},{\"id\":\"dn-south-otago-0\",\"name\":\"St Mary MacKillop, Balclutha\",\"diocese\":\"Dunedin\",\"address\":\"19 Gordon St, Balclutha Balclutha 9240\",\"schedule\":\"Sunday Mass 1st Sunday of the month, 5.30pm Saturday Vigil, 5.30pm Sundays , 10.30am Weekday Mass Tuesday, 10am Thursday, 10am Friday, 10am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary MacKillop, Balclutha New Zealand\"},{\"id\":\"dn-dunedin-1\",\"name\":\"St Mary, Kaikorai\",\"diocese\":\"Dunedin\",\"address\":\"200 Taieri Road Wakari, Dunedin 9010\",\"schedule\":\"Sunday Mass 6:00pm Vigil (Saturday) Weekday Mass Tuesday 9:30am Friday 9:30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary, Kaikorai New Zealand\"},{\"id\":\"dn-invercargill-2\",\"name\":\"St Mary, Star of the Sea, Bluff\",\"diocese\":\"Dunedin\",\"address\":\"190 Barrow Street, Bluff, Southland 9814 Postal address: 65 Tyne Street Invercargill 98 1 0 Invercargill South Pastoral Area. Served from Invercargill Central\",\"schedule\":\"Sunday Mass 9.00am (2nd and 4th Sunday of each month)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary, Star of the Sea, Bluff New Zealand\"},{\"id\":\"dn-dunedin-11\",\"name\":\"St Mary, Star of the Sea, Port Chalmers\",\"diocese\":\"Dunedin\",\"address\":\"38 Magnetic Street Port Chalmers\",\"schedule\":\"Sunday Mass Vigil 5pm Saturday\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Mary, Star of the Sea, Port Chalmers New Zealand\"},{\"id\":\"dn-western-southland-3\",\"name\":\"St Michael, Lumsden\",\"diocese\":\"Dunedin\",\"address\":\"Serviced from Te Anau Po Box 79, Winton 9741\",\"schedule\":\"First & Last Sunday Mass 7.00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Michael, Lumsden New Zealand\"},{\"id\":\"dn-central-otago-6\",\"name\":\"St Patrick, Arrowtown\",\"diocese\":\"Dunedin\",\"address\":\"Hertford St, Arrowtown PO Box 208, Queenstown 9348\",\"schedule\":\"Sunday Mass 11.00am (1st, 3rd, 4th & 5th Sundays) Liturgy of the Word with Holy Communion 11.00am (2nd Sunday )\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Arrowtown New Zealand\"},{\"id\":\"dn-invercargill-3\",\"name\":\"St Patrick, Georgetown\",\"diocese\":\"Dunedin\",\"address\":\"Church address 21 Rimu St, Heidelberg, Invercargill 9812 Postal address: 65 Tyne Street Invercargill 98 1 0 Invercargill South Pastoral Area. Served from Invercargill Central\",\"schedule\":\"Sunday Mass 6:00pm Vigil (Saturday) Weekday Mass Wednesday:9.30am (during school term)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Georgetown New Zealand\"},{\"id\":\"dn-south-otago-1\",\"name\":\"St Patrick, Lawrence\",\"diocese\":\"Dunedin\",\"address\":\"16 Colonsay St Lawrence 9532 P O Box 10 Lawrence 9543\",\"schedule\":\"Sunday Mass 1st Sunday of month - 11.00am Sundays - Saturday Vigil 4.30pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/south-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Lawrence New Zealand\"},{\"id\":\"dn-north-otago-0\",\"name\":\"St Patrick, Oamaru Parish Website>>\",\"diocese\":\"Dunedin\",\"address\":\"68 Reed St Oamaru 9400\",\"schedule\":\"Sunday Mass 9.30am (St Patrick's Basilica) Saturday Mass Vigil 5pm (St Patrick's Basilica) Daily Mass: Monday, Tuesday, Wednesday & Friday at 9.15 am in Dean O'Reilly Lounge. And Thursday during school holidays. Anointing Mass is the 1st Friday of the month.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/north-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Oamaru Parish Website>> New Zealand\"},{\"id\":\"dn-invercargill-7\",\"name\":\"St Patrick, Rakauhauka\",\"diocese\":\"Dunedin\",\"address\":\"4 Rakauhouka Church Road, Rakahouka 9872\",\"schedule\":\"Sunday Mass Rakauhouka - Sunday 8.30am (1st Sunday of each month)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Patrick, Rakauhauka New Zealand\"},{\"id\":\"dn-dunedin-4\",\"name\":\"St Peter Chanel, Green Island\",\"diocese\":\"Dunedin\",\"address\":\"250 Main South Road Po Box 13004 Green Island, Dunedin 9052\",\"schedule\":\"Sunday Mass 10.45am Weekday Mass Wed:9:15 am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"url\":\"https://www.cdd.nz/parishes-mass-times/dunedin\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Peter Chanel, Green Island New Zealand\"},{\"id\":\"dn-central-otago-2\",\"name\":\"St Peter, Omakau\",\"diocese\":\"Dunedin\",\"address\":\"Harvey Street Omakau Served from Alexandra 3 Killarney St, Alexandra 9320\",\"schedule\":\"Sunday Mass Vigil 6pm (Saturday)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Peter, Omakau New Zealand\"},{\"id\":\"dn-invercargill-5\",\"name\":\"St Theresa of Lisieux, Invercargill North\",\"diocese\":\"Dunedin\",\"address\":\"Church address: 40 Perth St, Windsor, Invercargill 9810 Invercargill North Pastoral Area. Served from Waikiwi Parish\",\"schedule\":\"Sunday Mass 9:00am & 7pm Weekday Mass 9am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Theresa of Lisieux, Invercargill North New Zealand\"},{\"id\":\"dn-western-southland-7\",\"name\":\"St Therese of Lisieux, Tuatapere\",\"diocese\":\"Dunedin\",\"address\":\"Mass Celebrated in the Anglican Church 43 Orawia Road, Tuatapere 9600 Postal address: 65 Tyne Street Invercargill 98 1 0 Served by Invercargill Central\",\"schedule\":\"Sunday Mass - 11.00am 1st Sunday in Anglican Church Weekday Liturgy Friday 1.00pm in Anglican Church\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Therese of Lisieux, Tuatapere New Zealand\"},{\"id\":\"dn-western-southland-1\",\"name\":\"St Thomas Aquinas, Dipton\",\"diocese\":\"Dunedin\",\"address\":\"9 Dipton-Castlerock Rd, Dipton, Southland Served from Winton 84 Great North Rd, Winton PO Box 79, Winton 9741\",\"schedule\":\"Saturday Vigil Mass 5.00pm\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Thomas Aquinas, Dipton New Zealand\"},{\"id\":\"dn-western-southland-0\",\"name\":\"St Thomas Aquinas, Winton\",\"diocese\":\"Dunedin\",\"address\":\"84 Great North Rd, Winton Po Box 79 Winton 9741\",\"schedule\":\"Sunday Mass 10.30am\",\"source\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"url\":\"https://www.cdd.nz/parishes-mass-times/western-southland\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St Thomas Aquinas, Winton New Zealand\"},{\"id\":\"dn-gore-1\",\"name\":\"Tapanui Community Centre Mass\",\"diocese\":\"Dunedin\",\"address\":\"Tapanui Community Centre 1 Suffolk Street, Tapanui Served from Gore 16 Ardwick St Gore 9710\",\"schedule\":\"Sunday Mass Vigil(1st & 3rd Sundays) 3.30pm (No Mass in January)\",\"source\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"url\":\"https://www.cdd.nz/parishes-mass-times/gore\",\"map\":\"https://www.google.com/maps/search/?api=1&query=Tapanui Community Centre Mass New Zealand\"},{\"id\":\"dn-central-otago-3\",\"name\":\"The Irish Martyrs, Cromwell\",\"diocese\":\"Dunedin\",\"address\":\"10 Sligo St reet Cromwell 9310\",\"schedule\":\"Sunday Mass 11am ( 1st, 3rd, 5th Sundays) 9 am (2nd, 4th Sundays) Weekday 5:00pm Tuesday 9:30am Wed & Sat\",\"source\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"url\":\"https://www.cdd.nz/parishes-mass-times/central-otago\",\"map\":\"https://www.google.com/maps/search/?api=1&query=The Irish Martyrs, Cromwell New Zealand\"},{\"id\":\"dn-invercargill-0\",\"name\":\"St Mary, Invercargill Central (Basilica)\",\"diocese\":\"Dunedin\",\"address\":\"65 Tyne Street, Invercargill 9810\",\"schedule\":\"Sunday: 8am and 10am. Monday, Tuesday, Thursday and Saturday: 9am. Wednesday: 5.30pm. Friday: 12.10pm.\",\"source\":\"https://www.cdd.nz/parishes-mass-times/invercargill\",\"url\":\"https://www.invercargillcatholic.nz\",\"map\":\"https://www.google.com/maps/search/?api=1&query=St+Mary+Basilica+65+Tyne+Street+Invercargill\"}]");
 //#endregion
-//#region package/source/app/photo-credits.json
+//#region app/photo-credits.json
 var photo_credits_default = [
 	{
 		"slug": "auckland",
@@ -30212,7 +30213,7 @@ var photo_credits_default = [
 	}
 ];
 //#endregion
-//#region package/source/app/church-directory.tsx
+//#region app/church-directory.tsx
 var dioceses = [
 	{
 		name: "Auckland",
@@ -30432,7 +30433,7 @@ function ChurchDirectory() {
 	] });
 }
 //#endregion
-//#region package/source/app/checklist-content.ts
+//#region app/checklist-content.ts
 var checklists = [
 	{
 		id: "first-mum",
@@ -30585,7 +30586,7 @@ var checklists = [
 	}
 ];
 //#endregion
-//#region package/source/app/checklists.tsx
+//#region app/checklists.tsx
 function FamilyChecklists() {
 	const [id, setId] = (0, import_react.useState)(checklists[0].id), [checked, setChecked] = (0, import_react.useState)([]), [error, setError] = (0, import_react.useState)(""), [auth, setAuth] = (0, import_react.useState)(true), [busy, setBusy] = (0, import_react.useState)(false), [loading, setLoading] = (0, import_react.useState)(true);
 	const c = checklists.find((c) => c.id === id);
@@ -30714,7 +30715,7 @@ function FamilyChecklists() {
 	] });
 }
 //#endregion
-//#region package/source/app/workouts.tsx
+//#region app/workouts.tsx
 var sessions = [
 	{
 		level: "Easy",
@@ -30996,7 +30997,7 @@ function Workouts() {
 	] });
 }
 //#endregion
-//#region package/source/app/use-voice-input.ts
+//#region app/use-voice-input.ts
 function useVoiceInput(onTranscript) {
 	const [supported, setSupported] = (0, import_react.useState)(null), [listening, setListening] = (0, import_react.useState)(false), [message, setMessage] = (0, import_react.useState)("");
 	const active = (0, import_react.useRef)(null), callback = (0, import_react.useRef)(onTranscript);
@@ -31087,7 +31088,7 @@ function useVoiceInput(onTranscript) {
 	};
 }
 //#endregion
-//#region package/source/app/mateo-encouragement.ts
+//#region app/mateo-encouragement.ts
 var messages = {
 	calm: {
 		words: /anxious|anxiety|stress|worried|worry|overwhelm|panic|sad|depress|tired|lonely/i,
@@ -31172,7 +31173,7 @@ function mateoEncouragement(text, mode, index = 0) {
 	};
 }
 //#endregion
-//#region package/source/app/mateo-local-reply.ts
+//#region app/mateo-local-reply.ts
 function mateoLocalReply(text, mode, index = 0, now = /* @__PURE__ */ new Date()) {
 	if (mode !== "Automatic") return mateoEncouragement(text, mode, index);
 	const normalized = text.trim().toLowerCase().replace(/[.!?]+$/, "");
@@ -31220,7 +31221,7 @@ function mateoLocalReply(text, mode, index = 0, now = /* @__PURE__ */ new Date()
 	return mateoEncouragement(text, mode, index);
 }
 //#endregion
-//#region package/source/app/ai-friend.tsx
+//#region app/ai-friend.tsx
 function AIFriend({ canEdit }) {
 	const [moving, setMoving] = (0, import_react.useState)(true), [messages, setMessages] = (0, import_react.useState)([]), [text, setText] = (0, import_react.useState)(""), [enabled, setEnabled] = (0, import_react.useState)(false), [busy, setBusy] = (0, import_react.useState)(false), [error, setError] = (0, import_react.useState)(""), [mode, setMode] = (0, import_react.useState)("Automatic");
 	const end = (0, import_react.useRef)(null);
@@ -31504,7 +31505,7 @@ function AIFriend({ canEdit }) {
 	})] });
 }
 //#endregion
-//#region package/source/app/coming-soon-business.tsx
+//#region app/coming-soon-business.tsx
 var businesses = [
 	{
 		name: "Kids’ accessories",
@@ -31545,7 +31546,7 @@ function ComingSoonBusiness() {
 	});
 }
 //#endregion
-//#region package/source/app/family-recipes.ts
+//#region app/family-recipes.ts
 var gf$1 = "Gluten-free ingredients", df$1 = "Dairy-free ingredients", kid$1 = "Kids-friendly";
 function recipe(id, name, cuisine, category, minutes, serves, description, ingredients, steps, allergens, tags, photo) {
 	return {
@@ -31768,7 +31769,7 @@ var familyRecipes = [
 	], "Wheat (gluten).", [df$1, kid$1], "./recipe-photos/bread.webp")
 ];
 //#endregion
-//#region package/source/app/more-recipes.ts
+//#region app/more-recipes.ts
 function r(id, name, category, minutes, serves, tags, ingredients, steps, allergens) {
 	return {
 		id,
@@ -32123,7 +32124,7 @@ var recipes = [
 	...familyRecipes
 ];
 //#endregion
-//#region package/source/app/savings-content.ts
+//#region app/savings-content.ts
 var savingCategories = [
 	"Groceries",
 	"Money habits",
@@ -33932,7 +33933,7 @@ var expandedSavingTips = [
 	}
 ];
 //#endregion
-//#region package/source/app/home-life.tsx
+//#region app/home-life.tsx
 function Recipes() {
 	const [filter, setFilter] = (0, import_react.useState)("All recipes"), [diet, setDiet] = (0, import_react.useState)("All dietary needs"), [cuisine, setCuisine] = (0, import_react.useState)("All cuisines"), [search, setSearch] = (0, import_react.useState)(""), [selected, setSelected] = (0, import_react.useState)(null);
 	const r = recipes.find((r) => r.id === selected);
@@ -34257,7 +34258,7 @@ function SavingTips() {
 	] });
 }
 //#endregion
-//#region package/source/components/ui/radio-group.tsx
+//#region components/ui/radio-group.tsx
 function RadioGroup({ className, ...props }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(RadioGroup$1, {
 		"data-slot": "radio-group",
@@ -34278,7 +34279,7 @@ function RadioGroupItem({ className, ...props }) {
 	});
 }
 //#endregion
-//#region package/source/app/faith-content.ts
+//#region app/faith-content.ts
 var prayers = [
 	{
 		intention: "Daily prayer",
@@ -34334,7 +34335,7 @@ var faqs = [
 	["Do I need to sign in?", "The site is currently private and uses ChatGPT sign-in. Submitting a report or review also requires sign-in. The custom domain does not change who can access the site."]
 ];
 //#endregion
-//#region package/source/app/languages.ts
+//#region app/languages.ts
 var languages = [
 	{
 		name: "Te reo Māori",
@@ -34881,7 +34882,7 @@ languages.push(...[
 	}
 ]);
 //#endregion
-//#region package/source/app/community.tsx
+//#region app/community.tsx
 function PrayerLibrary() {
 	const [intention, setIntention] = (0, import_react.useState)("Daily prayer");
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
@@ -35284,7 +35285,7 @@ function Feedback({ kind, canEdit }) {
 	] });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/tzName/index.js
+//#region node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/tzName/index.js
 /**
 * Time zone name format.
 */
@@ -35319,7 +35320,7 @@ function tzName(timeZone, date, format = "long") {
 	}).format(date).split(/\s/g).slice(2).join(" ");
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/tzOffset/index.js
+//#region node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/tzOffset/index.js
 var offsetFormatCache = {};
 var offsetCache = {};
 /**
@@ -35362,7 +35363,7 @@ function calcOffset(cacheStr, values) {
 	return offsetCache[cacheStr] = hours * 60 + minutes > 0 ? hours * 60 + minutes + seconds : hours * 60 - minutes - seconds;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/date/mini.js
+//#region node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/date/mini.js
 var TZDateMini = class TZDateMini extends Date {
 	constructor(...args) {
 		super();
@@ -35505,7 +35506,7 @@ function targetInternalTime(date, time) {
 	return +internal;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/date/index.js
+//#region node_modules/.pnpm/@date-fns+tz@1.5.0/node_modules/@date-fns/tz/date/index.js
 var TZDate = class TZDate extends TZDateMini {
 	static tz(tz, ...args) {
 		return args.length ? new TZDate(...args, tz) : new TZDate(Date.now(), tz);
@@ -35561,7 +35562,7 @@ var TZDate = class TZDate extends TZDateMini {
 	}
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/constants.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/constants.js
 /**
 * @constant
 * @name daysInYear
@@ -35610,7 +35611,7 @@ secondsInDay * daysInYear / 12 * 3;
 */
 var constructFromSymbol = Symbol.for("constructDateFrom");
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/constructFrom.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/constructFrom.js
 /**
 * @name constructFrom
 * @category Generic Helpers
@@ -35653,7 +35654,7 @@ function constructFrom(date, value) {
 	return new Date(value);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/toDate.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/toDate.js
 /**
 * @name toDate
 * @category Common Helpers
@@ -35696,7 +35697,7 @@ function toDate(argument, context) {
 	return constructFrom(context || argument, argument);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addDays.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addDays.js
 /**
 * The {@link addDays} function options.
 */
@@ -35749,7 +35750,7 @@ function addDays(date, amount, options) {
 	return _date;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addMonths.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addMonths.js
 /**
 * The {@link addMonths} function options.
 */
@@ -35793,13 +35794,13 @@ function addMonths(date, amount, options) {
 	}
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/defaultOptions.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/defaultOptions.js
 var defaultOptions = {};
 function getDefaultOptions() {
 	return defaultOptions;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfWeek.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfWeek.js
 /**
 * The {@link startOfWeek} function options.
 */
@@ -35841,7 +35842,7 @@ function startOfWeek(date, options) {
 	return _date;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfISOWeek.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfISOWeek.js
 /**
 * The {@link startOfISOWeek} function options.
 */
@@ -35876,7 +35877,7 @@ function startOfISOWeek(date, options) {
 	});
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getISOWeekYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getISOWeekYear.js
 /**
 * The {@link getISOWeekYear} function options.
 */
@@ -35916,7 +35917,7 @@ function getISOWeekYear(date, options) {
 	else return year - 1;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/getTimezoneOffsetInMilliseconds.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/getTimezoneOffsetInMilliseconds.js
 /**
 * Google Chrome as of 67.0.3396.87 introduced timezones with offset that includes seconds.
 * They usually appear for dates that denote time before the timezones were introduced
@@ -35935,13 +35936,13 @@ function getTimezoneOffsetInMilliseconds(date) {
 	return +date - +utcDate;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/normalizeDates.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/normalizeDates.js
 function normalizeDates(context, ...dates) {
 	const normalize = constructFrom.bind(null, context || dates.find((date) => typeof date === "object"));
 	return dates.map(normalize);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfDay.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfDay.js
 /**
 * The {@link startOfDay} function options.
 */
@@ -35973,7 +35974,7 @@ function startOfDay(date, options) {
 	return _date;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/differenceInCalendarDays.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/differenceInCalendarDays.js
 /**
 * The {@link differenceInCalendarDays} function options.
 */
@@ -36017,7 +36018,7 @@ function differenceInCalendarDays(laterDate, earlierDate, options) {
 	return Math.round((laterTimestamp - earlierTimestamp) / millisecondsInDay);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfISOWeekYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfISOWeekYear.js
 /**
 * The {@link startOfISOWeekYear} function options.
 */
@@ -36054,7 +36055,7 @@ function startOfISOWeekYear(date, options) {
 	return startOfISOWeek(fourthOfJanuary);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addWeeks.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addWeeks.js
 /**
 * The {@link addWeeks} function options.
 */
@@ -36084,7 +36085,7 @@ function addWeeks(date, amount, options) {
 	return addDays(date, amount * 7, options);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addYears.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/addYears.js
 /**
 * The {@link addYears} function options.
 */
@@ -36114,7 +36115,7 @@ function addYears(date, amount, options) {
 	return addMonths(date, amount * 12, options);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/max.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/max.js
 /**
 * The {@link max} function options.
 */
@@ -36154,7 +36155,7 @@ function max(dates, options) {
 	return constructFrom(context, result || NaN);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/min.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/min.js
 /**
 * The {@link min} function options.
 */
@@ -36194,7 +36195,7 @@ function min(dates, options) {
 	return constructFrom(context, result || NaN);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameDay.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameDay.js
 /**
 * The {@link isSameDay} function options.
 */
@@ -36232,7 +36233,7 @@ function isSameDay(laterDate, earlierDate, options) {
 	return +startOfDay(dateLeft_) === +startOfDay(dateRight_);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isDate.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isDate.js
 /**
 * @name isDate
 * @category Common Helpers
@@ -36269,7 +36270,7 @@ function isDate(value) {
 	return value instanceof Date || typeof value === "object" && Object.prototype.toString.call(value) === "[object Date]";
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isValid.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isValid.js
 /**
 * @name isValid
 * @category Common Helpers
@@ -36305,7 +36306,7 @@ function isValid(date) {
 	return !(!isDate(date) && typeof date !== "number" || isNaN(+toDate(date)));
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/differenceInCalendarMonths.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/differenceInCalendarMonths.js
 /**
 * The {@link differenceInCalendarMonths} function options.
 */
@@ -36338,7 +36339,7 @@ function differenceInCalendarMonths(laterDate, earlierDate, options) {
 	return yearsDiff * 12 + monthsDiff;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfMonth.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfMonth.js
 /**
 * The {@link endOfMonth} function options.
 */
@@ -36372,7 +36373,7 @@ function endOfMonth(date, options) {
 	return _date;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/normalizeInterval.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/normalizeInterval.js
 function normalizeInterval(context, interval) {
 	const [start, end] = normalizeDates(context, interval.start, interval.end);
 	return {
@@ -36381,7 +36382,7 @@ function normalizeInterval(context, interval) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/eachMonthOfInterval.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/eachMonthOfInterval.js
 /**
 * The {@link eachMonthOfInterval} function options.
 */
@@ -36441,7 +36442,7 @@ function eachMonthOfInterval(interval, options) {
 	return reversed ? dates.reverse() : dates;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfMonth.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfMonth.js
 /**
 * The {@link startOfMonth} function options.
 */
@@ -36475,7 +36476,7 @@ function startOfMonth(date, options) {
 	return _date;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfYear.js
 /**
 * The {@link endOfYear} function options.
 */
@@ -36509,7 +36510,7 @@ function endOfYear(date, options) {
 	return _date;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfYear.js
 /**
 * The {@link startOfYear} function options.
 */
@@ -36542,7 +36543,7 @@ function startOfYear(date, options) {
 	return date_;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/eachYearOfInterval.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/eachYearOfInterval.js
 /**
 * The {@link eachYearOfInterval} function options.
 */
@@ -36602,7 +36603,7 @@ function eachYearOfInterval(interval, options) {
 	return reversed ? dates.reverse() : dates;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfWeek.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfWeek.js
 /**
 * The {@link endOfWeek} function options.
 */
@@ -36644,7 +36645,7 @@ function endOfWeek(date, options) {
 	return _date;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfISOWeek.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/endOfISOWeek.js
 /**
 * The {@link endOfISOWeek} function options.
 */
@@ -36679,7 +36680,7 @@ function endOfISOWeek(date, options) {
 	});
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/formatDistance.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/formatDistance.js
 var formatDistanceLocale = {
 	lessThanXSeconds: {
 		one: "less than a second",
@@ -36754,7 +36755,7 @@ var formatDistance = (token, count, options) => {
 	return result;
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildFormatLongFn.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildFormatLongFn.js
 function buildFormatLongFn(args) {
 	return (options = {}) => {
 		const width = options.width ? String(options.width) : args.defaultWidth;
@@ -36791,7 +36792,7 @@ var formatLong = {
 	})
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/formatRelative.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/formatRelative.js
 var formatRelativeLocale = {
 	lastWeek: "'last' eeee 'at' p",
 	yesterday: "'yesterday at' p",
@@ -36802,7 +36803,7 @@ var formatRelativeLocale = {
 };
 var formatRelative = (token, _date, _baseDate, _options) => formatRelativeLocale[token];
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildLocalizeFn.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildLocalizeFn.js
 /**
 * The localize function argument callback which allows to convert raw value to
 * the actual type.
@@ -36852,7 +36853,7 @@ function buildLocalizeFn(args) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/localize.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US/_lib/localize.js
 var eraValues = {
 	narrow: ["B", "A"],
 	abbreviated: ["BC", "AD"],
@@ -37061,7 +37062,7 @@ var localize = {
 	})
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildMatchFn.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildMatchFn.js
 function buildMatchFn(args) {
 	return (string, options = {}) => {
 		const width = options.width;
@@ -37088,7 +37089,7 @@ function findIndex(array, predicate) {
 	for (let key = 0; key < array.length; key++) if (predicate(array[key])) return key;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildMatchPatternFn.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/_lib/buildMatchPatternFn.js
 function buildMatchPatternFn(args) {
 	return (string, options = {}) => {
 		const matchResult = string.match(args.matchPattern);
@@ -37106,7 +37107,7 @@ function buildMatchPatternFn(args) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/locale/en-US.js
 /**
 * @category Locales
 * @summary English locale (United States).
@@ -37247,7 +37248,7 @@ var enUS$1 = {
 	}
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getDayOfYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getDayOfYear.js
 /**
 * The {@link getDayOfYear} function options.
 */
@@ -37274,7 +37275,7 @@ function getDayOfYear(date, options) {
 	return differenceInCalendarDays(_date, startOfYear(_date)) + 1;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getISOWeek.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getISOWeek.js
 /**
 * The {@link getISOWeek} function options.
 */
@@ -37304,7 +37305,7 @@ function getISOWeek(date, options) {
 	return Math.round(diff / millisecondsInWeek) + 1;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getWeekYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getWeekYear.js
 /**
 * The {@link getWeekYear} function options.
 */
@@ -37360,7 +37361,7 @@ function getWeekYear(date, options) {
 	else return year - 1;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfWeekYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/startOfWeekYear.js
 /**
 * The {@link startOfWeekYear} function options.
 */
@@ -37411,7 +37412,7 @@ function startOfWeekYear(date, options) {
 	return startOfWeek(firstWeek, options);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getWeek.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getWeek.js
 /**
 * The {@link getWeek} function options.
 */
@@ -37455,12 +37456,12 @@ function getWeek(date, options) {
 	return Math.round(diff / millisecondsInWeek) + 1;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/addLeadingZeros.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/addLeadingZeros.js
 function addLeadingZeros(number, targetLength) {
 	return (number < 0 ? "-" : "") + Math.abs(number).toString().padStart(targetLength, "0");
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/lightFormatters.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/lightFormatters.js
 var lightFormatters = {
 	y(date, token) {
 		const signedYear = date.getFullYear();
@@ -37503,7 +37504,7 @@ var lightFormatters = {
 	}
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/formatters.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/formatters.js
 var dayPeriodEnum = {
 	am: "am",
 	pm: "pm",
@@ -37913,7 +37914,7 @@ function formatTimezone(offset, delimiter = "") {
 	return sign + hours + delimiter + minutes;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/longFormatters.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/format/longFormatters.js
 var dateLongFormatter = (pattern, formatLong) => {
 	switch (pattern) {
 		case "P": return formatLong.date({ width: "short" });
@@ -37957,7 +37958,7 @@ var longFormatters = {
 	P: dateTimeLongFormatter
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/protectedTokens.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/_lib/protectedTokens.js
 var dayOfYearTokenRE = /^D+$/;
 var weekYearTokenRE = /^Y+$/;
 var throwTokens = [
@@ -37982,7 +37983,7 @@ function message(token, format, input) {
 	return `Use \`${token.toLowerCase()}\` instead of \`${token}\` (in \`${format}\`) for formatting ${subject} to the input \`${input}\`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md`;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/format.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/format.js
 var formattingTokensRegExp = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g;
 var longFormattingTokensRegExp = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g;
 var escapedStringRegExp = /^'([^]*?)'?$/;
@@ -38329,7 +38330,7 @@ function cleanEscapedString(input) {
 	return matched[1].replace(doubleQuoteRegExp, "'");
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getDaysInMonth.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getDaysInMonth.js
 /**
 * The {@link getDaysInMonth} function options.
 */
@@ -38361,7 +38362,7 @@ function getDaysInMonth(date, options) {
 	return lastDayOfMonth.getDate();
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getMonth.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getMonth.js
 /**
 * The {@link getMonth} function options.
 */
@@ -38387,7 +38388,7 @@ function getMonth(date, options) {
 	return toDate(date, options?.in).getMonth();
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/getYear.js
 /**
 * The {@link getYear} function options.
 */
@@ -38413,7 +38414,7 @@ function getYear(date, options) {
 	return toDate(date, options?.in).getFullYear();
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isAfter.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isAfter.js
 /**
 * @name isAfter
 * @category Common Helpers
@@ -38436,7 +38437,7 @@ function isAfter(date, dateToCompare) {
 	return +toDate(date) > +toDate(dateToCompare);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isBefore.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isBefore.js
 /**
 * @name isBefore
 * @category Common Helpers
@@ -38459,7 +38460,7 @@ function isBefore(date, dateToCompare) {
 	return +toDate(date) < +toDate(dateToCompare);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameMonth.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameMonth.js
 /**
 * The {@link isSameMonth} function options.
 */
@@ -38492,7 +38493,7 @@ function isSameMonth(laterDate, earlierDate, options) {
 	return laterDate_.getFullYear() === earlierDate_.getFullYear() && laterDate_.getMonth() === earlierDate_.getMonth();
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/isSameYear.js
 /**
 * The {@link isSameYear} function options.
 */
@@ -38520,7 +38521,7 @@ function isSameYear(laterDate, earlierDate, options) {
 	return laterDate_.getFullYear() === earlierDate_.getFullYear();
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/setMonth.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/setMonth.js
 /**
 * The {@link setMonth} function options.
 */
@@ -38558,7 +38559,7 @@ function setMonth(date, month, options) {
 	return _date;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/setYear.js
+//#region node_modules/.pnpm/date-fns@4.4.0/node_modules/date-fns/setYear.js
 /**
 * The {@link setYear} function options.
 */
@@ -38591,7 +38592,7 @@ function setYear(date, year, options) {
 	return date_;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getBroadcastWeeksInMonth.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getBroadcastWeeksInMonth.js
 var FIVE_WEEKS = 5;
 var FOUR_WEEKS = 4;
 /**
@@ -38614,7 +38615,7 @@ function getBroadcastWeeksInMonth(month, dateLib) {
 	return dateLib.getMonth(month) === dateLib.getMonth(lastDateOfLastWeek) ? FIVE_WEEKS : FOUR_WEEKS;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/startOfBroadcastWeek.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/startOfBroadcastWeek.js
 /**
 * Returns the start date of the week in the broadcast calendar.
 *
@@ -38635,7 +38636,7 @@ function startOfBroadcastWeek(date, dateLib) {
 	else return dateLib.addDays(firstOfMonth, -1 * (dayOfWeek - 1));
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/endOfBroadcastWeek.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/endOfBroadcastWeek.js
 /**
 * Returns the end date of the week in the broadcast calendar.
 *
@@ -38653,7 +38654,7 @@ function endOfBroadcastWeek(date, dateLib) {
 	return dateLib.addDays(startDate, numberOfWeeks * 7 - 1);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/locale/en-US.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/locale/en-US.js
 /** English (United States) locale extended with DayPicker-specific translations. */
 var enUS = {
 	...enUS$1,
@@ -38709,7 +38710,7 @@ var enUS = {
 	}
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/DateLib.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/DateLib.js
 /**
 * A wrapper class around [date-fns](http://date-fns.org) that provides utility
 * methods for date manipulation and formatting.
@@ -39177,7 +39178,7 @@ DateLib.yearFirstLocales = new Set([
 */
 var defaultDateLib = new DateLib();
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarDay.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarDay.js
 /**
 * Represents a day displayed in the calendar.
 *
@@ -39207,7 +39208,7 @@ var CalendarDay = class {
 	}
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarMonth.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarMonth.js
 /**
 * Represents a month in a calendar year.
 *
@@ -39221,7 +39222,7 @@ var CalendarMonth = class {
 	}
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarWeek.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/classes/CalendarWeek.js
 /**
 * Represents a week in a calendar month.
 *
@@ -39234,7 +39235,7 @@ var CalendarWeek = class {
 	}
 };
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/CaptionLabel.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/CaptionLabel.js
 /**
 * Render the label in the month caption.
 *
@@ -39245,7 +39246,7 @@ function CaptionLabel(props) {
 	return import_react.createElement("span", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Chevron.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Chevron.js
 /**
 * Render the chevron icon used in the navigation buttons and dropdowns.
 *
@@ -39263,7 +39264,7 @@ function Chevron(props) {
 	}, orientation === "up" && import_react.createElement("polygon", { points: "6.77 17 12.5 11.43 18.24 17 20 15.28 12.5 8 5 15.28" }), orientation === "down" && import_react.createElement("polygon", { points: "6.77 8 12.5 13.57 18.24 8 20 9.72 12.5 17 5 9.72" }), orientation === "left" && import_react.createElement("polygon", { points: "16 18.112 9.81111111 12 16 5.87733333 14.0888889 4 6 12 14.0888889 20" }), orientation === "right" && import_react.createElement("polygon", { points: "8 18.112 14.18888889 12 8 5.87733333 9.91111111 4 18 12 9.91111111 20" }));
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Day.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Day.js
 /**
 * Render a grid cell for a specific day in the calendar.
 *
@@ -39279,7 +39280,7 @@ function Day(props) {
 	return import_react.createElement("td", { ...tdProps });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/DayButton.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/DayButton.js
 /**
 * Render a button for a specific day in the calendar.
 *
@@ -39298,7 +39299,7 @@ function DayButton(props) {
 	});
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/UI.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/UI.js
 /**
 * Enum representing the UI elements composing DayPicker. These elements are
 * mapped to {@link CustomComponents}, {@link ClassNames}, and {@link Styles}.
@@ -39420,7 +39421,7 @@ var Animation;
 	Animation["caption_before_exit"] = "caption_before_exit";
 })(Animation || (Animation = {}));
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useDayPicker.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useDayPicker.js
 /** @ignore */
 var dayPickerContext = (0, import_react.createContext)(void 0);
 /**
@@ -39441,7 +39442,7 @@ function useDayPicker() {
 	return context;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Dropdown.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Dropdown.js
 /**
 * Render a dropdown component for navigation in the calendar.
 *
@@ -39476,7 +39477,7 @@ function Dropdown(props) {
 	})));
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/DropdownNav.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/DropdownNav.js
 /**
 * Render the navigation dropdowns for the calendar.
 *
@@ -39487,7 +39488,7 @@ function DropdownNav(props) {
 	return import_react.createElement("div", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Footer.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Footer.js
 /**
 * Render the footer of the calendar.
 *
@@ -39498,7 +39499,7 @@ function Footer(props) {
 	return import_react.createElement("div", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Month.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Month.js
 /**
 * Render the grid with the weekday header row and the weeks for a specific
 * month.
@@ -39511,7 +39512,7 @@ function Month(props) {
 	return import_react.createElement("div", { ...divProps }, props.children);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthCaption.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthCaption.js
 /**
 * Render the caption for a month in the calendar.
 *
@@ -39523,7 +39524,7 @@ function MonthCaption(props) {
 	return import_react.createElement("div", { ...divProps });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthGrid.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthGrid.js
 /**
 * Render the grid of days for a specific month.
 *
@@ -39534,7 +39535,7 @@ function MonthGrid(props) {
 	return import_react.createElement("table", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Months.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Months.js
 /**
 * Render a container wrapping the month grids.
 *
@@ -39545,7 +39546,7 @@ function Months(props) {
 	return import_react.createElement("div", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthsDropdown.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/MonthsDropdown.js
 /**
 * Render a dropdown to navigate between months in the calendar.
 *
@@ -39557,7 +39558,7 @@ function MonthsDropdown(props) {
 	return import_react.createElement(components.Dropdown, { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Nav.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Nav.js
 /**
 * Render the navigation toolbar with buttons to navigate between months.
 *
@@ -39602,7 +39603,7 @@ function Nav(props) {
 	})));
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/NextMonthButton.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/NextMonthButton.js
 /**
 * Render the button to navigate to the next month in the calendar.
 *
@@ -39613,7 +39614,7 @@ function NextMonthButton(props) {
 	return import_react.createElement("button", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Option.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Option.js
 /**
 * Render an `option` element.
 *
@@ -39624,7 +39625,7 @@ function Option(props) {
 	return import_react.createElement("option", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/PreviousMonthButton.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/PreviousMonthButton.js
 /**
 * Render the button to navigate to the previous month in the calendar.
 *
@@ -39635,7 +39636,7 @@ function PreviousMonthButton(props) {
 	return import_react.createElement("button", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Root.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Root.js
 /**
 * Render the root element of the calendar.
 *
@@ -39650,7 +39651,7 @@ function Root(props) {
 	});
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Select.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Select.js
 /**
 * Render a `select` element.
 *
@@ -39661,7 +39662,7 @@ function Select(props) {
 	return import_react.createElement("select", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Week.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Week.js
 /**
 * Render a table row representing a week in the calendar.
 *
@@ -39673,7 +39674,7 @@ function Week(props) {
 	return import_react.createElement("tr", { ...trProps });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weekday.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weekday.js
 /**
 * Render a table header cell with the name of a weekday (e.g., "Mo", "Tu").
 *
@@ -39684,7 +39685,7 @@ function Weekday(props) {
 	return import_react.createElement("th", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weekdays.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weekdays.js
 /**
 * Render the table row containing the weekday names.
 *
@@ -39695,7 +39696,7 @@ function Weekdays(props) {
 	return import_react.createElement("thead", { "aria-hidden": true }, import_react.createElement("tr", { ...props }));
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/WeekNumber.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/WeekNumber.js
 /**
 * Render a table cell displaying the number of the week.
 *
@@ -39707,7 +39708,7 @@ function WeekNumber(props) {
 	return import_react.createElement("th", { ...thProps });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/WeekNumberHeader.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/WeekNumberHeader.js
 /**
 * Render the header cell for the week numbers column.
 *
@@ -39718,7 +39719,7 @@ function WeekNumberHeader(props) {
 	return import_react.createElement("th", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weeks.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/Weeks.js
 /**
 * Render the container for the weeks in the month grid.
 *
@@ -39729,7 +39730,7 @@ function Weeks(props) {
 	return import_react.createElement("tbody", { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/YearsDropdown.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/YearsDropdown.js
 /**
 * Render a dropdown to navigate between years in the calendar.
 *
@@ -39741,7 +39742,7 @@ function YearsDropdown(props) {
 	return import_react.createElement(components.Dropdown, { ...props });
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/custom-components.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/components/custom-components.js
 var custom_components_exports = /* @__PURE__ */ __exportAll({
 	CaptionLabel: () => CaptionLabel,
 	Chevron: () => Chevron,
@@ -39770,7 +39771,7 @@ var custom_components_exports = /* @__PURE__ */ __exportAll({
 	YearsDropdown: () => YearsDropdown
 });
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeIncludesDate.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeIncludesDate.js
 /**
 * Checks if a given date is within a specified date range.
 *
@@ -39794,7 +39795,7 @@ function rangeIncludesDate(range, date, excludeEnds = false, dateLib = defaultDa
 	return false;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/typeguards.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/typeguards.js
 /**
 * Checks if the given value is of type {@link DateInterval}.
 *
@@ -39857,7 +39858,7 @@ function isDatesArray(value, dateLib) {
 	return Array.isArray(value) && value.every(dateLib.isDate);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/dateMatchModifiers.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/dateMatchModifiers.js
 /**
 * Checks if a given date matches at least one of the specified {@link Matcher}.
 *
@@ -39894,7 +39895,7 @@ function dateMatchModifiers(date, matchers, dateLib = defaultDateLib) {
 	});
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/createGetModifiers.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/createGetModifiers.js
 /**
 * Creates a function to retrieve the modifiers for a given day.
 *
@@ -39958,7 +39959,7 @@ function createGetModifiers(days, props, navStart, navEnd, dateLib) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getClassNamesForModifiers.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getClassNamesForModifiers.js
 /**
 * Returns the class names for a day based on its modifiers.
 *
@@ -39980,7 +39981,7 @@ function getClassNamesForModifiers(modifiers, classNames, modifiersClassNames = 
 	}, [classNames[UI.Day]]);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getComponents.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getComponents.js
 /**
 * Merges custom components from the props with the default components.
 *
@@ -39998,7 +39999,7 @@ function getComponents(customComponents) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDataAttributes.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDataAttributes.js
 /**
 * Extracts `data-` attributes from the DayPicker props.
 *
@@ -40023,7 +40024,7 @@ function getDataAttributes(props) {
 	return dataAttributes;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDefaultClassNames.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDefaultClassNames.js
 /**
 * Returns the default class names for the UI elements.
 *
@@ -40042,7 +40043,7 @@ function getDefaultClassNames() {
 	return classNames;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatCaption.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatCaption.js
 /**
 * Formats the caption of the month.
 *
@@ -40059,7 +40060,7 @@ function formatCaption(month, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).formatMonthYear(month);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatDay.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatDay.js
 /**
 * Formats the day date shown in the day cell.
 *
@@ -40076,7 +40077,7 @@ function formatDay(date, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).format(date, "d");
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatMonthDropdown.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatMonthDropdown.js
 /**
 * Formats the month for the dropdown option label.
 *
@@ -40092,7 +40093,7 @@ function formatMonthDropdown(month, dateLib = defaultDateLib) {
 	return dateLib.format(month, "LLLL");
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekdayName.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekdayName.js
 /**
 * Formats the name of a weekday to be displayed in the weekdays header.
 *
@@ -40109,7 +40110,7 @@ function formatWeekdayName(weekday, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).format(weekday, "cccccc");
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekNumber.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekNumber.js
 /**
 * Formats the week number.
 *
@@ -40126,7 +40127,7 @@ function formatWeekNumber(weekNumber, dateLib = defaultDateLib) {
 	return dateLib.formatNumber(`${weekNumber.toLocaleString()}`);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekNumberHeader.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatWeekNumberHeader.js
 /**
 * Formats the header for the week number column.
 *
@@ -40139,7 +40140,7 @@ function formatWeekNumberHeader() {
 	return ``;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatYearDropdown.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/formatYearDropdown.js
 /**
 * Formats the year for the dropdown option label.
 *
@@ -40154,7 +40155,7 @@ function formatYearDropdown(year, dateLib = defaultDateLib) {
 	return dateLib.format(year, "yyyy");
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/index.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/formatters/index.js
 var formatters_exports = /* @__PURE__ */ __exportAll({
 	formatCaption: () => formatCaption,
 	formatDay: () => formatDay,
@@ -40165,7 +40166,7 @@ var formatters_exports = /* @__PURE__ */ __exportAll({
 	formatYearDropdown: () => formatYearDropdown
 });
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getFormatters.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getFormatters.js
 /**
 * Merges custom formatters from the props with the default formatters.
 *
@@ -40180,7 +40181,7 @@ function getFormatters(customFormatters) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelDayButton.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelDayButton.js
 /**
 * Generates the ARIA label for a day button.
 *
@@ -40203,7 +40204,7 @@ function labelDayButton(date, modifiers, options, dateLib) {
 	return label;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelGrid.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelGrid.js
 /**
 * Generates the ARIA label for the month grid, which is announced when entering
 * the grid.
@@ -40220,7 +40221,7 @@ function labelGrid(date, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).formatMonthYear(date);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelGridcell.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelGridcell.js
 /**
 * Generates the label for a day grid cell when the calendar is not interactive.
 *
@@ -40238,7 +40239,7 @@ function labelGridcell(date, modifiers, options, dateLib) {
 	return label;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelMonthDropdown.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelMonthDropdown.js
 /**
 * Generates the ARIA label for the months dropdown.
 *
@@ -40252,7 +40253,7 @@ function labelMonthDropdown(_options) {
 	return "Choose the Month";
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelNav.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelNav.js
 /**
 * Generates the ARIA label for the navigation toolbar.
 *
@@ -40265,7 +40266,7 @@ function labelNav() {
 	return "";
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelNext.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelNext.js
 var defaultLabel = "Go to the Next Month";
 /**
 * Generates the ARIA label for the "next month" button.
@@ -40281,7 +40282,7 @@ function labelNext(_month, _options) {
 	return defaultLabel;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelPrevious.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelPrevious.js
 /**
 * Generates the ARIA label for the "previous month" button.
 *
@@ -40296,7 +40297,7 @@ function labelPrevious(_month) {
 	return "Go to the Previous Month";
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekday.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekday.js
 /**
 * Generates the ARIA label for a weekday column header.
 *
@@ -40312,7 +40313,7 @@ function labelWeekday(date, options, dateLib) {
 	return (dateLib ?? new DateLib(options)).format(date, "cccc");
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekNumber.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekNumber.js
 /**
 * Generates the ARIA label for the week number cell (the first cell in a row).
 *
@@ -40327,7 +40328,7 @@ function labelWeekNumber(weekNumber, _options) {
 	return `Week ${weekNumber}`;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekNumberHeader.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelWeekNumberHeader.js
 /**
 * Generates the ARIA label for the week number header element.
 *
@@ -40341,7 +40342,7 @@ function labelWeekNumberHeader(_options) {
 	return "Week Number";
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelYearDropdown.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/labelYearDropdown.js
 /**
 * Generates the ARIA label for the years dropdown.
 *
@@ -40355,7 +40356,7 @@ function labelYearDropdown(_options) {
 	return "Choose the Year";
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/index.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/labels/index.js
 var labels_exports = /* @__PURE__ */ __exportAll({
 	labelDayButton: () => labelDayButton,
 	labelGrid: () => labelGrid,
@@ -40370,7 +40371,7 @@ var labels_exports = /* @__PURE__ */ __exportAll({
 	labelYearDropdown: () => labelYearDropdown
 });
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getLabels.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getLabels.js
 var resolveLabel = (defaultLabel, customLabel, localeLabel) => {
 	if (customLabel) return customLabel;
 	if (localeLabel) return typeof localeLabel === "function" ? localeLabel : (..._args) => localeLabel;
@@ -40405,7 +40406,7 @@ function getLabels(customLabels, options) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getMonthOptions.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getMonthOptions.js
 /**
 * Returns the months to show in the dropdown.
 *
@@ -40436,7 +40437,7 @@ function getMonthOptions(displayMonth, navStart, navEnd, formatters, dateLib) {
 	});
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getStyleForModifiers.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getStyleForModifiers.js
 /**
 * Returns the computed style for a day based on its modifiers.
 *
@@ -40459,7 +40460,7 @@ function getStyleForModifiers(dayModifiers, styles = {}, modifiersStyles = {}) {
 	return style;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getWeekdays.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getWeekdays.js
 /**
 * Generates a series of 7 days, starting from the beginning of the week, to use
 * for formatting weekday names (e.g., Monday, Tuesday, etc.).
@@ -40481,7 +40482,7 @@ function getWeekdays(dateLib, ISOWeek, broadcastCalendar, today) {
 	return days;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getYearOptions.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getYearOptions.js
 /**
 * Returns the years to display in the dropdown.
 *
@@ -40515,7 +40516,7 @@ function getYearOptions(navStart, navEnd, formatters, dateLib, reverse = false) 
 	});
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/noonDateLib.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/noonDateLib.js
 /**
 * Creates `dateLib` overrides that keep all calendar math at noon in the target
 * time zone. This avoids second-level offset changes (e.g., historical zones
@@ -40648,7 +40649,7 @@ function createNoonOverrides(timeZone, options = {}) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useAnimation.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useAnimation.js
 var asHtmlElement = (element) => {
 	if (element instanceof HTMLElement) return element;
 	return null;
@@ -40744,7 +40745,7 @@ function useAnimation(rootElRef, enabled, { classNames, months, focused, dateLib
 	});
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDates.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDates.js
 /**
 * Returns all the dates to display in the calendar.
 *
@@ -40783,7 +40784,7 @@ function getDates(displayMonths, maxDate, props, dateLib) {
 	return dates;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDays.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDays.js
 /**
 * Returns all the days belonging to the calendar by merging the days in the
 * weeks for each month.
@@ -40802,7 +40803,7 @@ function getDays(calendarMonths) {
 	}, initialDays.slice());
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDisplayMonths.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getDisplayMonths.js
 /**
 * Returns the months to display in the calendar.
 *
@@ -40824,7 +40825,7 @@ function getDisplayMonths(firstDisplayedMonth, calendarEndMonth, props, dateLib)
 	return months;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getInitialMonth.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getInitialMonth.js
 /**
 * Determines the initial month to display in the calendar based on the provided
 * props.
@@ -40845,7 +40846,7 @@ function getInitialMonth(props, navStart, navEnd, dateLib) {
 	return startOfMonth(initialMonth);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getMonths.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getMonths.js
 /**
 * Returns the months to display in the calendar.
 *
@@ -40892,7 +40893,7 @@ function getMonths(displayMonths, dates, props, dateLib) {
 	else return dayPickerMonths.reverse();
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNavMonth.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNavMonth.js
 /**
 * Returns the start and end months for calendar navigation.
 *
@@ -40911,7 +40912,7 @@ function getNavMonths(props, dateLib) {
 	return [startMonth ? startOfDay(startMonth) : startMonth, endMonth ? startOfDay(endMonth) : endMonth];
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNextMonth.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNextMonth.js
 /**
 * Returns the next month the user can navigate to, based on the given options.
 *
@@ -40940,7 +40941,7 @@ function getNextMonth(firstDisplayedMonth, calendarEndMonth, options, dateLib) {
 	return addMonths(month, offset);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getPreviousMonth.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getPreviousMonth.js
 /**
 * Returns the previous month the user can navigate to, based on the given
 * options.
@@ -40970,7 +40971,7 @@ function getPreviousMonth(firstDisplayedMonth, calendarStartMonth, options, date
 	return addMonths(month, -offset);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getWeeks.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getWeeks.js
 /**
 * Returns an array of calendar weeks from an array of calendar months.
 *
@@ -40983,7 +40984,7 @@ function getWeeks(months) {
 	}, [].slice());
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/useControlledValue.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/useControlledValue.js
 /**
 * A custom hook for managing both controlled and uncontrolled component states.
 *
@@ -41011,7 +41012,7 @@ function useControlledValue(defaultValue, controlledValue) {
 	return [controlledValue === void 0 ? uncontrolledValue : controlledValue, setValue];
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useCalendar.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useCalendar.js
 /**
 * Provides the calendar object to work with the calendar in custom components.
 *
@@ -41090,7 +41091,7 @@ function useCalendar(props, dateLib) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/calculateFocusTarget.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/calculateFocusTarget.js
 var FocusTargetPriority;
 (function(FocusTargetPriority) {
 	FocusTargetPriority[FocusTargetPriority["Today"] = 0] = "Today";
@@ -41149,7 +41150,7 @@ function calculateFocusTarget(days, getModifiers, isSelected, lastFocused) {
 	return focusTarget;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getFocusableDate.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getFocusableDate.js
 /**
 * Calculates the next date that should be focused in the calendar.
 *
@@ -41182,7 +41183,7 @@ function getFocusableDate(moveBy, moveDir, refDate, navStart, navEnd, props, dat
 	return focusableDate;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNextFocus.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/helpers/getNextFocus.js
 /**
 * Determines the next focusable day in the calendar.
 *
@@ -41210,7 +41211,7 @@ function getNextFocus(moveBy, moveDir, refDay, calendarStartMonth, calendarEndMo
 	return getNextFocus(moveBy, moveDir, focusDay, calendarStartMonth, calendarEndMonth, props, dateLib, attempt + 1);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useFocus.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useFocus.js
 /**
 * Manages focus behavior for the DayPicker component, including setting,
 * moving, and blurring focus on calendar days.
@@ -41256,7 +41257,7 @@ function useFocus(props, calendar, getModifiers, isSelected, dateLib) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useMulti.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useMulti.js
 /**
 * Hook to manage multiple-date selection in the DayPicker component.
 *
@@ -41294,7 +41295,7 @@ function useMulti(props, dateLib) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/addToRange.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/addToRange.js
 /**
 * Adds a date to an existing range, considering constraints like minimum and
 * maximum range size.
@@ -41373,7 +41374,7 @@ function addToRange(date, initialRange, min = 0, max = 0, required = false, date
 	return range;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeContainsDayOfWeek.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeContainsDayOfWeek.js
 /**
 * Checks if a date range contains one or more specified days of the week.
 *
@@ -41398,7 +41399,7 @@ function rangeContainsDayOfWeek(range, dayOfWeek, dateLib = defaultDateLib) {
 	return false;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeOverlaps.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeOverlaps.js
 /**
 * Determines if two date ranges overlap.
 *
@@ -41413,7 +41414,7 @@ function rangeOverlaps(rangeLeft, rangeRight, dateLib = defaultDateLib) {
 	return rangeIncludesDate(rangeLeft, rangeRight.from, false, dateLib) || rangeIncludesDate(rangeLeft, rangeRight.to, false, dateLib) || rangeIncludesDate(rangeRight, rangeLeft.from, false, dateLib) || rangeIncludesDate(rangeRight, rangeLeft.to, false, dateLib);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeContainsModifiers.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/rangeContainsModifiers.js
 /**
 * Checks if a date range contains dates that match the given modifiers.
 *
@@ -41460,7 +41461,7 @@ function rangeContainsModifiers(range, modifiers, dateLib = defaultDateLib) {
 	return false;
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useRange.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useRange.js
 /**
 * Hook to manage range selection in the DayPicker component.
 *
@@ -41510,7 +41511,7 @@ function useRange(props, dateLib) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useSingle.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/selection/useSingle.js
 /**
 * Hook to manage single-date selection in the DayPicker component.
 *
@@ -41543,7 +41544,7 @@ function useSingle(props, dateLib) {
 	};
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useSelection.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/useSelection.js
 /**
 * Determines the appropriate selection hook to use based on the selection mode
 * and returns the corresponding selection object.
@@ -41566,7 +41567,7 @@ function useSelection(props, dateLib) {
 	}
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/toTimeZone.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/toTimeZone.js
 /**
 * Convert a {@link Date} or {@link TZDate} instance to the given time zone.
 * Reuses the same instance when it is already a {@link TZDate} using the target
@@ -41577,7 +41578,7 @@ function toTimeZone(date, timeZone) {
 	return new TZDate(date, timeZone);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/convertMatchersToTimeZone.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/utils/convertMatchersToTimeZone.js
 function toZoneNoon(date, timeZone, noonSafe) {
 	if (!noonSafe) return toTimeZone(date, timeZone);
 	const zoned = toTimeZone(date, timeZone);
@@ -41615,7 +41616,7 @@ function convertMatchersToTimeZone(matchers, timeZone, noonSafe) {
 	return convertMatcher(matchers, timeZone, noonSafe);
 }
 //#endregion
-//#region ../../sites/little-lighthouse/node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/DayPicker.js
+//#region node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.14_react@19.2.6/node_modules/react-day-picker/dist/esm/DayPicker.js
 /**
 * Renders the DayPicker calendar component.
 *
@@ -42062,7 +42063,7 @@ function DayPicker(initialProps) {
 	}, props.footer)));
 }
 //#endregion
-//#region package/source/components/ui/calendar.tsx
+//#region components/ui/calendar.tsx
 function Calendar({ className, classNames, showOutsideDays = true, captionLayout = "label", buttonVariant = "ghost", formatters, components, ...props }) {
 	const defaultClassNames = getDefaultClassNames();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DayPicker, {
@@ -42159,7 +42160,7 @@ function CalendarDayButton({ className, day, modifiers, ...props }) {
 	});
 }
 //#endregion
-//#region package/source/app/saint-calendar.tsx
+//#region app/saint-calendar.tsx
 function SaintCalendar() {
 	const [date, setDate] = (0, import_react.useState)(() => nzDate()), [todayMode, setTodayMode] = (0, import_react.useState)(true), [showCalendar, setShowCalendar] = (0, import_react.useState)(false), [data, setData] = (0, import_react.useState)(null), [loading, setLoading] = (0, import_react.useState)(true), [error, setError] = (0, import_react.useState)("");
 	const [month, setMonth] = (0, import_react.useState)(() => /* @__PURE__ */ new Date(date + "T12:00:00"));
@@ -42405,7 +42406,7 @@ function SaintCalendar() {
 	});
 }
 //#endregion
-//#region package/source/app/rosary-content.ts
+//#region app/rosary-content.ts
 var rosaryPrayers = {
 	"Sign of the Cross": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
 	"Apostles’ Creed": "I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; he descended into hell; on the third day he rose again from the dead; he ascended into heaven, and is seated at the right hand of God the Father almighty; from there he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.",
@@ -42447,7 +42448,7 @@ var mysterySets = {
 	]
 };
 //#endregion
-//#region package/source/app/rosary-audio.ts
+//#region app/rosary-audio.ts
 function rosarySequence({ full, set, mystery = 0, fatima = true }) {
 	const parts = [];
 	function prayer(name, extra = {}) {
@@ -42507,7 +42508,7 @@ function rosarySequence({ full, set, mystery = 0, fatima = true }) {
 	return parts;
 }
 //#endregion
-//#region package/source/app/rosary.tsx
+//#region app/rosary.tsx
 function Rosary() {
 	const [mode, setMode] = (0, import_react.useState)("Short · one decade"), [set, setSet] = (0, import_react.useState)(() => [
 		"Glorious",
@@ -42764,10 +42765,10 @@ function Rosary() {
 	});
 }
 //#endregion
-//#region package/source/app/st-jude-prayer.ts
+//#region app/st-jude-prayer.ts
 var stJudePrayer = "O Glorious Apostle, St Jude Thaddeus true relative of Jesus and Mary. I greet you through the Most Sacred Heart of Jesus! Through this Heart, I praise and thank God for all the graces He has bestowed upon you. Humbly prostrate before you, I implore you, through this Heart, to look down upon me with compassion. Oh, despise not my poor prayers; let not my trust be confounded. To you God has granted the privilege of aiding humankind in the most desperate cases. Oh, come to my aid that I may praise the mercies of God! All my life, I will be grateful to you and will be your faithful devotee until I can thank you in Heaven. Amen.";
 //#endregion
-//#region package/source/app/devotions.tsx
+//#region app/devotions.tsx
 var hail = "Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.";
 function ExtraDevotions() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
@@ -42898,7 +42899,7 @@ function ExtraDevotions() {
 	})] });
 }
 //#endregion
-//#region package/source/app/breastfeeding.tsx
+//#region app/breastfeeding.tsx
 var tips = [
 	["Notice early hunger cues", "Offer a feed when baby roots, brings hands to their mouth or makes sucking movements. Crying is a later cue."],
 	["Settle into a comfortable spot", "Support your back and shoulders. Keep water, a snack and anything your older child needs nearby."],
@@ -42998,7 +42999,7 @@ function Breastfeeding() {
 	] });
 }
 //#endregion
-//#region package/source/app/home.tsx
+//#region app/home.tsx
 var emptyBusiness = {
 	name: "",
 	description: "",
@@ -44002,6 +44003,6 @@ function Reading({ initialStory = null }) {
 	] });
 }
 //#endregion
-//#region package/source/github-frontend/entry.tsx
+//#region .sites-runtime/github-export/entry.tsx
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Home, { canEdit: false }));
 //#endregion
