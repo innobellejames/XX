@@ -1,4 +1,7 @@
-/* The James NZ — published live version 19; source c6f1ae3450beaceacccee44b893f1465cf88900a; export 2 October 2026. */
+/* The James NZ — readable media-file edition, 2 October 2026. */
+// All photos/videos use the supplied asset folders. The embedded-media script.js
+// download contains these assets instead and needs no separate media folders.
+function __jamesAsset(path) { return new URL(path, document.baseURI).href; }
 //#region \0rolldown/runtime.js
 var __create = Object.create;
 var __defProp$32 = Object.defineProperty;
@@ -11352,7 +11355,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Measure: find how much there is. Fluffy: soft and light.",
-		"image": "./story-cartoons/story-31.webp",
+		"image": __jamesAsset("./story-cartoons/story-31.webp"),
 		"imageAlt": "Sue gathers rice and a measuring cup with Mom."
 	},
 	{
@@ -11371,7 +11374,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Rinse: wash away soap with clean water. Rack: a place for things to dry.",
-		"image": "./story-cartoons/story-32.webp",
+		"image": __jamesAsset("./story-cartoons/story-32.webp"),
 		"imageAlt": "Sue and Mom find the dishes waiting by the sink."
 	},
 	{
@@ -11390,7 +11393,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Hen: a female chicken. Peck: pick up food with a beak.",
-		"image": "./story-cartoons/story-33.webp",
+		"image": __jamesAsset("./story-cartoons/story-33.webp"),
 		"imageAlt": "Sue carries chicken feed to the coop with Dad."
 	},
 	{
@@ -11409,7 +11412,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Coop: a home for chickens. Nesting box: a cosy place where hens lay eggs.",
-		"image": "./story-cartoons/story-34.webp",
+		"image": __jamesAsset("./story-cartoons/story-34.webp"),
 		"imageAlt": "Sue takes an empty egg basket to the coop with Grandma."
 	},
 	{
@@ -11428,7 +11431,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Notebook: a book for writing ideas. Peaceful: quiet and calm.",
-		"image": "./story-cartoons/story-35.webp",
+		"image": __jamesAsset("./story-cartoons/story-35.webp"),
 		"imageAlt": "Mom writes her book while Sue and Rae bring their toys."
 	},
 	{
@@ -11447,7 +11450,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Craft: something you make with your hands. Wiggly: bending this way and that.",
-		"image": "./story-cartoons/story-36.webp",
+		"image": __jamesAsset("./story-cartoons/story-36.webp"),
 		"imageAlt": "Sue shows Rae the bright paper pieces for their craft."
 	},
 	{
@@ -11466,7 +11469,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Trail: a path to follow. Basket: a container for carrying or storing things.",
-		"image": "./story-cartoons/story-37.webp",
+		"image": __jamesAsset("./story-cartoons/story-37.webp"),
 		"imageAlt": "Rae notices toys scattered across her bedroom."
 	},
 	{
@@ -11485,7 +11488,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Gentle: careful and kind. Notice: pay attention to something.",
-		"image": "./story-cartoons/story-38.webp",
+		"image": __jamesAsset("./story-cartoons/story-38.webp"),
 		"imageAlt": "Rae sits beside baby Mye on the soft play mat."
 	},
 	{
@@ -11504,7 +11507,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Wriggle: move with little twists. Journey: going from one place to another.",
-		"image": "./story-cartoons/story-39.webp",
+		"image": __jamesAsset("./story-cartoons/story-39.webp"),
 		"imageAlt": "Mye reaches for a soft ball on the play mat."
 	},
 	{
@@ -11523,7 +11526,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Wobble: rock from side to side. Brief: lasting a short time.",
-		"image": "./story-cartoons/story-40.webp",
+		"image": __jamesAsset("./story-cartoons/story-40.webp"),
 		"imageAlt": "Mom helps Mye sit on the soft mat."
 	},
 	{
@@ -11542,7 +11545,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Taste: a flavour you notice when you eat. Signal: a way of showing something.",
-		"image": "./story-cartoons/story-41.webp",
+		"image": __jamesAsset("./story-cartoons/story-41.webp"),
 		"imageAlt": "Mom brings soft food to Mye in the highchair."
 	},
 	{
@@ -11561,7 +11564,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Orchestra: a group making music together. Audience: people watching a performance.",
-		"image": "./story-cartoons/story-42.webp",
+		"image": __jamesAsset("./story-cartoons/story-42.webp"),
 		"imageAlt": "Sue and Rae sit where Mye can see them."
 	},
 	{
@@ -11580,7 +11583,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Harness: straps used safely with a dog’s lead. Swish: a soft sweeping movement.",
-		"image": "./story-cartoons/story-43.webp",
+		"image": __jamesAsset("./story-cartoons/story-43.webp"),
 		"imageAlt": "Mateo waits by the door for his walk."
 	},
 	{
@@ -11599,7 +11602,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Company: being together. Patient: able to wait calmly.",
-		"image": "./story-cartoons/story-44.webp",
+		"image": __jamesAsset("./story-cartoons/story-44.webp"),
 		"imageAlt": "Sue and Rae bring a ball onto the lawn."
 	},
 	{
@@ -11618,7 +11621,7 @@ var newFamilyStories = [
 			"What could you try with a grown-up?"
 		],
 		"words": "Invitation: asking someone to join you. Delivery: bringing something to a place.",
-		"image": "./story-cartoons/story-45.webp",
+		"image": __jamesAsset("./story-cartoons/story-45.webp"),
 		"imageAlt": "Sue and Rae call Mateo to join their game."
 	}
 ];
@@ -12107,211 +12110,211 @@ var newFamilyQuizzes = {
 var newFamilyPictures = [
 	[
 		{
-			"image": "./story-pages/story-31-begin.webp",
+			"image": __jamesAsset("./story-pages/story-31-begin.webp"),
 			"alt": "Sue gathers rice and a measuring cup with Mom."
 		},
 		{
-			"image": "./story-pages/story-31-middle.webp",
+			"image": __jamesAsset("./story-pages/story-31-middle.webp"),
 			"alt": "Sue rinses the rice while Mom stays beside her."
 		},
 		{
-			"image": "./story-pages/story-31-end.webp",
+			"image": __jamesAsset("./story-pages/story-31-end.webp"),
 			"alt": "Warm rice is ready for the family to share."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-32-begin.webp",
+			"image": __jamesAsset("./story-pages/story-32-begin.webp"),
 			"alt": "Sue and Mom find the dishes waiting by the sink."
 		},
 		{
-			"image": "./story-pages/story-32-middle.webp",
+			"image": __jamesAsset("./story-pages/story-32-middle.webp"),
 			"alt": "Sue washes a plate with bubbly soap."
 		},
 		{
-			"image": "./story-pages/story-32-end.webp",
+			"image": __jamesAsset("./story-pages/story-32-end.webp"),
 			"alt": "The clean dishes shine in their drying rack."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-33-begin.webp",
+			"image": __jamesAsset("./story-pages/story-33-begin.webp"),
 			"alt": "Sue carries chicken feed to the coop with Dad."
 		},
 		{
-			"image": "./story-pages/story-33-middle.webp",
+			"image": __jamesAsset("./story-pages/story-33-middle.webp"),
 			"alt": "Sue scatters feed for the hungry hens."
 		},
 		{
-			"image": "./story-pages/story-33-end.webp",
+			"image": __jamesAsset("./story-pages/story-33-end.webp"),
 			"alt": "Sue and Dad watch the hens enjoy their breakfast."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-34-begin.webp",
+			"image": __jamesAsset("./story-pages/story-34-begin.webp"),
 			"alt": "Sue takes an empty egg basket to the coop with Grandma."
 		},
 		{
-			"image": "./story-pages/story-34-middle.webp",
+			"image": __jamesAsset("./story-pages/story-34-middle.webp"),
 			"alt": "Grandma shows Sue how to lift an egg gently."
 		},
 		{
-			"image": "./story-pages/story-34-end.webp",
+			"image": __jamesAsset("./story-pages/story-34-end.webp"),
 			"alt": "Sue and Grandma carry their fresh eggs home."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-35-begin.webp",
+			"image": __jamesAsset("./story-pages/story-35-begin.webp"),
 			"alt": "Mom writes her book while Sue and Rae bring their toys."
 		},
 		{
-			"image": "./story-pages/story-35-middle.webp",
+			"image": __jamesAsset("./story-pages/story-35-middle.webp"),
 			"alt": "The sisters build together while Mom writes nearby."
 		},
 		{
-			"image": "./story-pages/story-35-end.webp",
+			"image": __jamesAsset("./story-pages/story-35-end.webp"),
 			"alt": "Mom smiles at their beautiful block creation."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-36-begin.webp",
+			"image": __jamesAsset("./story-pages/story-36-begin.webp"),
 			"alt": "Sue shows Rae the bright paper pieces for their craft."
 		},
 		{
-			"image": "./story-pages/story-36-middle.webp",
+			"image": __jamesAsset("./story-pages/story-36-middle.webp"),
 			"alt": "Rae copies Sue and carefully sticks her circles down."
 		},
 		{
-			"image": "./story-pages/story-36-end.webp",
+			"image": __jamesAsset("./story-pages/story-36-end.webp"),
 			"alt": "The sisters proudly show their paper flowers."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-37-begin.webp",
+			"image": __jamesAsset("./story-pages/story-37-begin.webp"),
 			"alt": "Rae notices toys scattered across her bedroom."
 		},
 		{
-			"image": "./story-pages/story-37-middle.webp",
+			"image": __jamesAsset("./story-pages/story-37-middle.webp"),
 			"alt": "Rae puts each toy into its basket."
 		},
 		{
-			"image": "./story-pages/story-37-end.webp",
+			"image": __jamesAsset("./story-pages/story-37-end.webp"),
 			"alt": "Rae feels proud of her tidy room."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-38-begin.webp",
+			"image": __jamesAsset("./story-pages/story-38-begin.webp"),
 			"alt": "Rae sits beside baby Mye on the soft play mat."
 		},
 		{
-			"image": "./story-pages/story-38-middle.webp",
+			"image": __jamesAsset("./story-pages/story-38-middle.webp"),
 			"alt": "Rae offers Mye a soft bunny gently."
 		},
 		{
-			"image": "./story-pages/story-38-end.webp",
+			"image": __jamesAsset("./story-pages/story-38-end.webp"),
 			"alt": "Mye cuddles the bunny and smiles at Rae."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-39-begin.webp",
+			"image": __jamesAsset("./story-pages/story-39-begin.webp"),
 			"alt": "Mye reaches for a soft ball on the play mat."
 		},
 		{
-			"image": "./story-pages/story-39-middle.webp",
+			"image": __jamesAsset("./story-pages/story-39-middle.webp"),
 			"alt": "Mye crawls toward the ball while Mom watches."
 		},
 		{
-			"image": "./story-pages/story-39-end.webp",
+			"image": __jamesAsset("./story-pages/story-39-end.webp"),
 			"alt": "Mye reaches the ball and Mom claps."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-40-begin.webp",
+			"image": __jamesAsset("./story-pages/story-40-begin.webp"),
 			"alt": "Mom helps Mye sit on the soft mat."
 		},
 		{
-			"image": "./story-pages/story-40-middle.webp",
+			"image": __jamesAsset("./story-pages/story-40-middle.webp"),
 			"alt": "Mye practises sitting while Mom stays close."
 		},
 		{
-			"image": "./story-pages/story-40-end.webp",
+			"image": __jamesAsset("./story-pages/story-40-end.webp"),
 			"alt": "Mye smiles proudly beside Mom."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-41-begin.webp",
+			"image": __jamesAsset("./story-pages/story-41-begin.webp"),
 			"alt": "Mom brings soft food to Mye in the highchair."
 		},
 		{
-			"image": "./story-pages/story-41-middle.webp",
+			"image": __jamesAsset("./story-pages/story-41-middle.webp"),
 			"alt": "Mye tries one little spoonful."
 		},
 		{
-			"image": "./story-pages/story-41-end.webp",
+			"image": __jamesAsset("./story-pages/story-41-end.webp"),
 			"alt": "Mye smiles after the new taste."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-42-begin.webp",
+			"image": __jamesAsset("./story-pages/story-42-begin.webp"),
 			"alt": "Sue and Rae sit where Mye can see them."
 		},
 		{
-			"image": "./story-pages/story-42-middle.webp",
+			"image": __jamesAsset("./story-pages/story-42-middle.webp"),
 			"alt": "The sisters make gentle silly faces."
 		},
 		{
-			"image": "./story-pages/story-42-end.webp",
+			"image": __jamesAsset("./story-pages/story-42-end.webp"),
 			"alt": "All three sisters share a happy giggle."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-43-begin.webp",
+			"image": __jamesAsset("./story-pages/story-43-begin.webp"),
 			"alt": "Mateo waits by the door for his walk."
 		},
 		{
-			"image": "./story-pages/story-43-middle.webp",
+			"image": __jamesAsset("./story-pages/story-43-middle.webp"),
 			"alt": "Dad clips the lead onto Mateo’s collar."
 		},
 		{
-			"image": "./story-pages/story-43-end.webp",
+			"image": __jamesAsset("./story-pages/story-43-end.webp"),
 			"alt": "Dad and Mateo enjoy their garden walk."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-44-begin.webp",
+			"image": __jamesAsset("./story-pages/story-44-begin.webp"),
 			"alt": "Sue and Rae bring a ball onto the lawn."
 		},
 		{
-			"image": "./story-pages/story-44-middle.webp",
+			"image": __jamesAsset("./story-pages/story-44-middle.webp"),
 			"alt": "Mateo watches the girls play catch."
 		},
 		{
-			"image": "./story-pages/story-44-end.webp",
+			"image": __jamesAsset("./story-pages/story-44-end.webp"),
 			"alt": "The girls rest beside their happy dog."
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-45-begin.webp",
+			"image": __jamesAsset("./story-pages/story-45-begin.webp"),
 			"alt": "Sue and Rae call Mateo to join their game."
 		},
 		{
-			"image": "./story-pages/story-45-middle.webp",
+			"image": __jamesAsset("./story-pages/story-45-middle.webp"),
 			"alt": "Mateo brings them a soft toy ball."
 		},
 		{
-			"image": "./story-pages/story-45-end.webp",
+			"image": __jamesAsset("./story-pages/story-45-end.webp"),
 			"alt": "The girls thank Mateo and play together."
 		}
 	]
@@ -12605,7 +12608,7 @@ var stories = [
 			"What small kind thing could you do today?"
 		],
 		"words": "Mast: the pole that holds a boat’s sail. Shallow: not deep.",
-		"image": "./story-cartoons/story-01.webp",
+		"image": __jamesAsset("./story-cartoons/story-01.webp"),
 		"imageAlt": "Sue holds a toy boat steady while Dad helps Rae fix its sail beside a rock pool."
 	},
 	{
@@ -12626,7 +12629,7 @@ var stories = [
 			"What quiet sound can you hear right now?"
 		],
 		"words": "Rustling: a soft sound made by moving leaves. Detectives: people who look carefully for clues.",
-		"image": "./story-cartoons/story-02.webp",
+		"image": __jamesAsset("./story-cartoons/story-02.webp"),
 		"imageAlt": "Sue helps Rae draw a bird after the family listens to sounds by the window."
 	},
 	{
@@ -12647,7 +12650,7 @@ var stories = [
 			"What are you practising patiently?"
 		],
 		"words": "Damp: a little wet. Pace: the speed at which something happens. Adventure: a new or exciting experience.",
-		"image": "./story-cartoons/story-03.webp",
+		"image": __jamesAsset("./story-cartoons/story-03.webp"),
 		"imageAlt": "The family admires the first green leaves of Sue and Rae's bean plant."
 	},
 	{
@@ -12662,7 +12665,7 @@ var stories = [
 		],
 		"ask": ["What jobs did the sisters do?", "How can your family work together?"],
 		"words": "Knead: press and fold dough. Measure: find the right amount.",
-		"image": "./story-cartoons/story-04.webp",
+		"image": __jamesAsset("./story-cartoons/story-04.webp"),
 		"imageAlt": "Sue measures flour and Rae adds water as Mom helps them make bread dough."
 	},
 	{
@@ -12677,7 +12680,7 @@ var stories = [
 		],
 		"ask": ["What helped Sue read the word?", "What book would you like to borrow?"],
 		"words": "Borrow: use something and return it. Clue: a helpful hint.",
-		"image": "./story-cartoons/story-05.webp",
+		"image": __jamesAsset("./story-cartoons/story-05.webp"),
 		"imageAlt": "Dad helps Sue read a picture book in the library while Rae chooses a colourful book."
 	},
 	{
@@ -12692,7 +12695,7 @@ var stories = [
 		],
 		"ask": ["Why did Rae leave the shell?", "How can you remember a place without taking things?"],
 		"words": "Creature: a living animal. Memory: something you remember.",
-		"image": "./story-cartoons/story-06.webp",
+		"image": __jamesAsset("./story-cartoons/story-06.webp"),
 		"imageAlt": "Dad helps Rae return a shell with a tiny creature inside while Sue draws it."
 	},
 	{
@@ -12707,7 +12710,7 @@ var stories = [
 		],
 		"ask": ["How did the family change their plan?", "Which colours can you find nearby?"],
 		"words": "Arrange: put things in order. Disappointment: feeling sad when a plan changes.",
-		"image": "./story-cartoons/story-07.webp",
+		"image": __jamesAsset("./story-cartoons/story-07.webp"),
 		"imageAlt": "Sue and Rae make an indoor rainbow with colourful household objects on a rainy day."
 	},
 	{
@@ -12722,7 +12725,7 @@ var stories = [
 		],
 		"ask": ["What helped Rae try again?", "What are you learning to do yourself?"],
 		"words": "Fasten: close or secure something. Independent: able to do something yourself.",
-		"image": "./story-cartoons/story-08.webp",
+		"image": __jamesAsset("./story-cartoons/story-08.webp"),
 		"imageAlt": "Sue waits beside Rae as she learns to fasten her own shoes."
 	},
 	{
@@ -12737,7 +12740,7 @@ var stories = [
 		],
 		"ask": ["What change helped the kite?", "Why did Dad check the field first?"],
 		"words": "Steady: balanced and not shaking. Notice: look carefully and become aware.",
-		"image": "./story-cartoons/story-09.webp",
+		"image": __jamesAsset("./story-cartoons/story-09.webp"),
 		"imageAlt": "Sue's kite flies steadily with its new cloth tail while Rae cheers."
 	},
 	{
@@ -12752,7 +12755,7 @@ var stories = [
 		],
 		"ask": ["What did each colour remind someone of?", "What small thing are you thankful for?"],
 		"words": "Gratitude: noticing and appreciating good things. Smooth: without rough bumps.",
-		"image": "./story-cartoons/story-10.webp",
+		"image": __jamesAsset("./story-cartoons/story-10.webp"),
 		"imageAlt": "Sue and Rae paint large colourful thank-you stones at the garden table."
 	},
 	{
@@ -12767,7 +12770,7 @@ var stories = [
 		],
 		"ask": ["How did the sisters combine their ideas?", "What could you make from a cardboard box?"],
 		"words": "Imagine: make a picture or idea in your mind. Combine: bring things together.",
-		"image": "./story-cartoons/story-11.webp",
+		"image": __jamesAsset("./story-cartoons/story-11.webp"),
 		"imageAlt": "Sue and Rae turn a cardboard box into an imaginary moon bakery."
 	},
 	{
@@ -12782,7 +12785,7 @@ var stories = [
 		],
 		"ask": ["Why was waiting easier with a plan?", "How could you take turns in a favourite game?"],
 		"words": "Turn: a chance to do something. Patient: able to wait calmly.",
-		"image": "./story-cartoons/story-12.webp",
+		"image": __jamesAsset("./story-cartoons/story-12.webp"),
 		"imageAlt": "Sue patiently waits for her turn while Rae bounces their ball."
 	},
 	{
@@ -12797,7 +12800,7 @@ var stories = [
 		],
 		"ask": ["What did the family do before playing?", "Why should a grown-up handle unknown rubbish?"],
 		"words": "Wrapper: covering around food. Care: look after something thoughtfully.",
-		"image": "./story-cartoons/story-13.webp",
+		"image": __jamesAsset("./story-cartoons/story-13.webp"),
 		"imageAlt": "Sue and Rae collect their picnic wrappers so the spot is ready for another family."
 	},
 	{
@@ -12812,7 +12815,7 @@ var stories = [
 		],
 		"ask": ["How did the sisters keep their book safe?", "What would you draw for a baby?"],
 		"words": "Secure: firmly attached. Gaze: look at something for a while.",
-		"image": "./story-cartoons/story-14.webp",
+		"image": __jamesAsset("./story-cartoons/story-14.webp"),
 		"imageAlt": "Sue and Rae show their homemade colour book to Mye on Mom's lap."
 	},
 	{
@@ -12827,7 +12830,7 @@ var stories = [
 		],
 		"ask": ["Why did Dad take fewer steps?", "What happens when you count slowly?"],
 		"words": "Distance: how far apart things are. Count: say numbers in order.",
-		"image": "./story-cartoons/story-15.webp",
+		"image": __jamesAsset("./story-cartoons/story-15.webp"),
 		"imageAlt": "Sue and Rae count their steps along the garden path beside Dad."
 	},
 	{
@@ -12842,7 +12845,7 @@ var stories = [
 		],
 		"ask": ["Why did Dad ask before helping?", "What small safe job could you offer to do?"],
 		"words": "Neighbour: someone who lives nearby. Offer: ask whether someone would like something.",
-		"image": "./story-cartoons/story-16.webp",
+		"image": __jamesAsset("./story-cartoons/story-16.webp"),
 		"imageAlt": "Dad carries a neighbour's heavy bag while Sue and Rae help with a light watering can."
 	},
 	{
@@ -12857,7 +12860,7 @@ var stories = [
 		],
 		"ask": ["What helped the family slow down?", "What is a peaceful part of your bedtime?"],
 		"words": "Routine: things done in a regular order. Rest: a quiet break for the body.",
-		"image": "./story-cartoons/story-17.webp",
+		"image": __jamesAsset("./story-cartoons/story-17.webp"),
 		"imageAlt": "Dad tucks Sue and Rae into bed as Mom cuddles Mye and Mateo settles to sleep."
 	},
 	{
@@ -12872,7 +12875,7 @@ var stories = [
 		],
 		"ask": ["Which pictures were on the plan?", "What could you prepare before a busy morning?"],
 		"words": "Prepare: get ready beforehand. Organise: put things in a useful order.",
-		"image": "./story-cartoons/story-18.webp",
+		"image": __jamesAsset("./story-cartoons/story-18.webp"),
 		"imageAlt": "Sue and Rae make a picture plan for breakfast, clothes, teeth, bags and shoes."
 	},
 	{
@@ -12887,7 +12890,7 @@ var stories = [
 		],
 		"ask": ["How did the family watch safely?", "What details did Sue notice?"],
 		"words": "Pollen: fine powder made by flowers. Bloom: a flower.",
-		"image": "./story-cartoons/story-19.webp",
+		"image": __jamesAsset("./story-cartoons/story-19.webp"),
 		"imageAlt": "The family quietly watches a bee visit garden flowers from a safe distance."
 	},
 	{
@@ -12902,7 +12905,7 @@ var stories = [
 		],
 		"ask": ["Why did Rae want to keep her shape?", "How can you help without taking over?"],
 		"words": "Effort: work put into something. Respect: treat someone’s choices with care.",
-		"image": "./story-cartoons/story-20.webp",
+		"image": __jamesAsset("./story-cartoons/story-20.webp"),
 		"imageAlt": "Sue and Rae admire their cooled round and crooked biscuits with Mom."
 	},
 	{
@@ -12917,7 +12920,7 @@ var stories = [
 		],
 		"ask": ["What made the surprise special?", "What would someone you love enjoy?"],
 		"words": "Thoughtful: showing care for someone’s feelings. Surprise: something pleasant you did not expect.",
-		"image": "./story-cartoons/story-21.webp",
+		"image": __jamesAsset("./story-cartoons/story-21.webp"),
 		"imageAlt": "Sue and Rae surprise Mom with a homemade card and small loaf of bread."
 	},
 	{
@@ -12932,7 +12935,7 @@ var stories = [
 		],
 		"ask": ["Why was sunshine not the whole weather story?", "What would you check before going out?"],
 		"words": "Forecast: a prediction of the weather. Layer: one piece worn over another.",
-		"image": "./story-cartoons/story-22.webp",
+		"image": __jamesAsset("./story-cartoons/story-22.webp"),
 		"imageAlt": "Dad helps Sue put on a warm layer before the family's sunny but cool walk."
 	},
 	{
@@ -12947,7 +12950,7 @@ var stories = [
 		],
 		"ask": ["How did Sue help Rae practise?", "Which greeting would you like to learn?"],
 		"words": "Greeting: words used to welcome someone. Practise: try something again to learn it.",
-		"image": "./story-cartoons/story-23.webp",
+		"image": __jamesAsset("./story-cartoons/story-23.webp"),
 		"imageAlt": "Mom and Dad help Sue and Rae practise warm greetings from their family languages."
 	},
 	{
@@ -12962,7 +12965,7 @@ var stories = [
 		],
 		"ask": ["What helped Sue describe her feeling?", "How can you listen when someone feels different from you?"],
 		"words": "Mood: how you feel at a particular time. Describe: explain with words or pictures.",
-		"image": "./story-cartoons/story-24.webp",
+		"image": __jamesAsset("./story-cartoons/story-24.webp"),
 		"imageAlt": "Sue and Rae draw different coloured clouds to describe their feelings."
 	},
 	{
@@ -12977,7 +12980,7 @@ var stories = [
 		],
 		"ask": ["What helped them sort the puzzle?", "Why can taking a break be useful?"],
 		"words": "Perseverance: continuing with a task over time. Edge: the outside boundary.",
-		"image": "./story-cartoons/story-25.webp",
+		"image": __jamesAsset("./story-cartoons/story-25.webp"),
 		"imageAlt": "Mom spots a missing puzzle corner while Sue and Rae sort the edge pieces."
 	},
 	{
@@ -12992,7 +12995,7 @@ var stories = [
 		],
 		"ask": ["What clue helped them find the mitten?", "Where could you keep something you often lose?"],
 		"words": "Responsible: taking care of your own jobs. Clue: information that helps solve a problem.",
-		"image": "./story-cartoons/story-26.webp",
+		"image": __jamesAsset("./story-cartoons/story-26.webp"),
 		"imageAlt": "Sue finds Rae's mitten by the shoes and Rae puts her mittens into their basket."
 	},
 	{
@@ -13007,7 +13010,7 @@ var stories = [
 		],
 		"ask": ["What different details did the sisters notice?", "Why did they stay quiet?"],
 		"words": "Observe: watch carefully. Investigation: looking for information about something.",
-		"image": "./story-cartoons/story-27.webp",
+		"image": __jamesAsset("./story-cartoons/story-27.webp"),
 		"imageAlt": "Sue and Rae quietly observe a bird from the window with Dad's bird guide."
 	},
 	{
@@ -13022,7 +13025,7 @@ var stories = [
 		],
 		"ask": ["Why did the girls use paper coins?", "What would you like to save towards?"],
 		"words": "Save: keep something for later. Goal: something you hope to achieve.",
-		"image": "./story-cartoons/story-28.webp",
+		"image": __jamesAsset("./story-cartoons/story-28.webp"),
 		"imageAlt": "Rae decorates her old bag while Sue plans a saving goal with paper coins."
 	},
 	{
@@ -13037,7 +13040,7 @@ var stories = [
 		],
 		"ask": ["What did the note remind Dad of?", "What encouraging message could you write?"],
 		"words": "Encourage: help someone feel supported. Neatly: in a tidy and careful way.",
-		"image": "./story-cartoons/story-29.webp",
+		"image": __jamesAsset("./story-cartoons/story-29.webp"),
 		"imageAlt": "Sue and Rae give Dad a homemade encouragement note before his busy day."
 	},
 	{
@@ -13052,7 +13055,7 @@ var stories = [
 		],
 		"ask": ["Why did Dad suggest looking it up?", "What question would you ask about the sky?"],
 		"words": "Horizon: where the sky seems to meet the land. Wonder: feel curious about something.",
-		"image": "./story-cartoons/story-30.webp",
+		"image": __jamesAsset("./story-cartoons/story-30.webp"),
 		"imageAlt": "Sue points out the first bright evening star as the family watches the garden sky."
 	}
 ];
@@ -25160,11 +25163,11 @@ function DialogDescription({ className, ...props }) {
 //#endregion
 //#region app/photo-post.ts
 var savingsBackgrounds = {
-	"Groceries": "./photo-share/savings-groceries.webp",
-	"Money habits": "./photo-share/savings-money.webp",
-	"Home & bills": "./photo-share/savings-home.webp"
+	"Groceries": __jamesAsset("./photo-share/savings-groceries.webp"),
+	"Money habits": __jamesAsset("./photo-share/savings-money.webp"),
+	"Home & bills": __jamesAsset("./photo-share/savings-home.webp")
 };
-var prayerBackground = "./photo-share/prayer.webp";
+var prayerBackground = __jamesAsset("./photo-share/prayer.webp");
 function wrapPostText(text, measure, width) {
 	return text.split("\n").flatMap((paragraph) => {
 		const lines = [];
@@ -25452,421 +25455,421 @@ function VoicePicker({ profile, onChange }) {
 var storyPictures = [
 	[
 		{
-			"image": "./story-pages/story-01-begin.webp",
+			"image": __jamesAsset("./story-pages/story-01-begin.webp"),
 			"alt": "Sue and Dad look toward lighthouse beam at dusk by sea"
 		},
 		{
-			"image": "./story-pages/story-01-middle.webp",
+			"image": __jamesAsset("./story-pages/story-01-middle.webp"),
 			"alt": "Sue holds mast as Dad helps disappointed Rae repair toy sailboat at shallow rock pool"
 		},
 		{
-			"image": "./story-pages/story-01-end.webp",
+			"image": __jamesAsset("./story-pages/story-01-end.webp"),
 			"alt": "Sisters place repaired boat upright in rock pool while parents baby and leashed Mateo watch"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-02-begin.webp",
+			"image": __jamesAsset("./story-pages/story-02-begin.webp"),
 			"alt": "Rae frowns at rushed bird drawing as Sue sits beside her"
 		},
 		{
-			"image": "./story-pages/story-02-middle.webp",
+			"image": __jamesAsset("./story-pages/story-02-middle.webp"),
 			"alt": "Family listens quietly near window with bird outside, Dad's cup and Mateo"
 		},
 		{
-			"image": "./story-pages/story-02-end.webp",
+			"image": __jamesAsset("./story-pages/story-02-end.webp"),
 			"alt": "Dad pins Rae's improved bird drawing on fridge while sisters smile"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-03-begin.webp",
+			"image": __jamesAsset("./story-pages/story-03-begin.webp"),
 			"alt": "Sue and Rae plant bean and Dad tests pot soil with finger"
 		},
 		{
-			"image": "./story-pages/story-03-middle.webp",
+			"image": __jamesAsset("./story-pages/story-03-middle.webp"),
 			"alt": "Girls study new green shoot and their picture chart by sunny window"
 		},
 		{
-			"image": "./story-pages/story-03-end.webp",
+			"image": __jamesAsset("./story-pages/story-03-end.webp"),
 			"alt": "Dad helps Sue read book beside bean plant with two leaves and family"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-04-begin.webp",
+			"image": __jamesAsset("./story-pages/story-04-begin.webp"),
 			"alt": "Mom helps Sue measure flour and Rae add water to dough bowl"
 		},
 		{
-			"image": "./story-pages/story-04-middle.webp",
+			"image": __jamesAsset("./story-pages/story-04-middle.webp"),
 			"alt": "Girls knead sticky dough at table with Mom supervising Dad holding Mye"
 		},
 		{
-			"image": "./story-pages/story-04-end.webp",
+			"image": __jamesAsset("./story-pages/story-04-end.webp"),
 			"alt": "Sue shares cooled crooked loaf slice with Rae in warm kitchen"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-05-begin.webp",
+			"image": __jamesAsset("./story-pages/story-05-begin.webp"),
 			"alt": "Sue and Rae choose library picture books with parents, no dog at library"
 		},
 		{
-			"image": "./story-pages/story-05-middle.webp",
+			"image": __jamesAsset("./story-pages/story-05-middle.webp"),
 			"alt": "Dad helps Sue sound out picture book while Mom points to illustration"
 		},
 		{
-			"image": "./story-pages/story-05-end.webp",
+			"image": __jamesAsset("./story-pages/story-05-end.webp"),
 			"alt": "Sisters read borrowed books at home with Mateo curled beside them"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-06-begin.webp",
+			"image": __jamesAsset("./story-pages/story-06-begin.webp"),
 			"alt": "Girls discover shell with small creature at beach with family away from waves"
 		},
 		{
-			"image": "./story-pages/story-06-middle.webp",
+			"image": __jamesAsset("./story-pages/story-06-middle.webp"),
 			"alt": "Dad helps Rae gently replace occupied shell while Sue draws notebook"
 		},
 		{
-			"image": "./story-pages/story-06-end.webp",
+			"image": __jamesAsset("./story-pages/story-06-end.webp"),
 			"alt": "Rae and Sue walk home showing shell drawings, Mateo leashed"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-07-begin.webp",
+			"image": __jamesAsset("./story-pages/story-07-begin.webp"),
 			"alt": "Girls look disappointed at rain window and raincoats"
 		},
 		{
-			"image": "./story-pages/story-07-middle.webp",
+			"image": __jamesAsset("./story-pages/story-07-middle.webp"),
 			"alt": "Family gathers red bracelet blue book yellow tea towel on table"
 		},
 		{
-			"image": "./story-pages/story-07-end.webp",
+			"image": __jamesAsset("./story-pages/story-07-end.webp"),
 			"alt": "Girls smile at rainbow arrangement of household items and golden Mateo"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-08-begin.webp",
+			"image": __jamesAsset("./story-pages/story-08-begin.webp"),
 			"alt": "Rae struggles with wrong shoe at front door Sue ready beside her"
 		},
 		{
-			"image": "./story-pages/story-08-middle.webp",
+			"image": __jamesAsset("./story-pages/story-08-middle.webp"),
 			"alt": "Sue arranges shoes as Rae opens straps and puts on own shoes"
 		},
 		{
-			"image": "./story-pages/story-08-end.webp",
+			"image": __jamesAsset("./story-pages/story-08-end.webp"),
 			"alt": "Rae walks proudly beside Sue outdoors with family and leashed Mateo"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-09-begin.webp",
+			"image": __jamesAsset("./story-pages/story-09-begin.webp"),
 			"alt": "Paper kite drops onto open grassy field family observes"
 		},
 		{
-			"image": "./story-pages/story-09-middle.webp",
+			"image": __jamesAsset("./story-pages/story-09-middle.webp"),
 			"alt": "Mom helps add cloth tail to grounded kite"
 		},
 		{
-			"image": "./story-pages/story-09-end.webp",
+			"image": __jamesAsset("./story-pages/story-09-end.webp"),
 			"alt": "Sue flies kite with cloth tail steadily high as Rae cheers"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-10-begin.webp",
+			"image": __jamesAsset("./story-pages/story-10-begin.webp"),
 			"alt": "Girls paint large smooth stones at garden table with parents"
 		},
 		{
-			"image": "./story-pages/story-10-middle.webp",
+			"image": __jamesAsset("./story-pages/story-10-middle.webp"),
 			"alt": "Sue yellow Rae pink Dad blue stones drying beside plant"
 		},
 		{
-			"image": "./story-pages/story-10-end.webp",
+			"image": __jamesAsset("./story-pages/story-10-end.webp"),
 			"alt": "Rae points at yellow stone reassuring Sue with broken crayon, family warmth"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-11-begin.webp",
+			"image": __jamesAsset("./story-pages/story-11-begin.webp"),
 			"alt": "Sisters disagree whether cardboard box is moon ship or bakery"
 		},
 		{
-			"image": "./story-pages/story-11-middle.webp",
+			"image": __jamesAsset("./story-pages/story-11-middle.webp"),
 			"alt": "Girls decorate box control panel and paper pretend buns"
 		},
 		{
-			"image": "./story-pages/story-11-end.webp",
+			"image": __jamesAsset("./story-pages/story-11-end.webp"),
 			"alt": "Girls play combined moon bakery Mom with baby customer Mateo resting outside box"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-12-begin.webp",
+			"image": __jamesAsset("./story-pages/story-12-begin.webp"),
 			"alt": "Sue bounces bright ball Rae reaches for turn on lawn"
 		},
 		{
-			"image": "./story-pages/story-12-middle.webp",
+			"image": __jamesAsset("./story-pages/story-12-middle.webp"),
 			"alt": "Dad counts on fingers Rae retrieves dropped ball Sue patiently waits"
 		},
 		{
-			"image": "./story-pages/story-12-end.webp",
+			"image": __jamesAsset("./story-pages/story-12-end.webp"),
 			"alt": "Girls happily roll ball between them family on picnic blanket"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-13-begin.webp",
+			"image": __jamesAsset("./story-pages/story-13-begin.webp"),
 			"alt": "Family eats picnic on clean lawn blanket"
 		},
 		{
-			"image": "./story-pages/story-13-middle.webp",
+			"image": __jamesAsset("./story-pages/story-13-middle.webp"),
 			"alt": "Girls gather own food wrappers into bag Dad supervises"
 		},
 		{
-			"image": "./story-pages/story-13-end.webp",
+			"image": __jamesAsset("./story-pages/story-13-end.webp"),
 			"alt": "Girls play on clean grass looking back at tidy picnic spot"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-14-begin.webp",
+			"image": __jamesAsset("./story-pages/story-14-begin.webp"),
 			"alt": "Sue and Rae draw red apple blue puddle on thick paper for Mye"
 		},
 		{
-			"image": "./story-pages/story-14-middle.webp",
+			"image": __jamesAsset("./story-pages/story-14-middle.webp"),
 			"alt": "Dad securely binds crayon pages Mom holds Mye"
 		},
 		{
-			"image": "./story-pages/story-14-end.webp",
+			"image": __jamesAsset("./story-pages/story-14-end.webp"),
 			"alt": "Mom shows homemade colour book golden dog page to Mye sisters smile"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-15-begin.webp",
+			"image": __jamesAsset("./story-pages/story-15-begin.webp"),
 			"alt": "Dad Sue Rae walk garden path beginning to count steps"
 		},
 		{
-			"image": "./story-pages/story-15-middle.webp",
+			"image": __jamesAsset("./story-pages/story-15-middle.webp"),
 			"alt": "Girls count slowly together Dad pointing to flower pot"
 		},
 		{
-			"image": "./story-pages/story-15-end.webp",
+			"image": __jamesAsset("./story-pages/story-15-end.webp"),
 			"alt": "Girls compare Dad long stride their short steps at pot Mom baby Mateo"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-16-begin.webp",
+			"image": __jamesAsset("./story-pages/story-16-begin.webp"),
 			"alt": "Family sees neighbour struggling with heavy garden bag"
 		},
 		{
-			"image": "./story-pages/story-16-middle.webp",
+			"image": __jamesAsset("./story-pages/story-16-middle.webp"),
 			"alt": "Dad carries heavy bag sisters carry light watering can to gate"
 		},
 		{
-			"image": "./story-pages/story-16-end.webp",
+			"image": __jamesAsset("./story-pages/story-16-end.webp"),
 			"alt": "Neighbour thanks family girls smile at small kind job"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-17-begin.webp",
+			"image": __jamesAsset("./story-pages/story-17-begin.webp"),
 			"alt": "Rae asks another game as Sue brings bedtime book"
 		},
 		{
-			"image": "./story-pages/story-17-middle.webp",
+			"image": __jamesAsset("./story-pages/story-17-middle.webp"),
 			"alt": "Family shares bedtime story and memories Mom cuddles Mye"
 		},
 		{
-			"image": "./story-pages/story-17-end.webp",
+			"image": __jamesAsset("./story-pages/story-17-end.webp"),
 			"alt": "Dad tucks girls in cosy beds Mateo sleeps on dog bed"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-18-begin.webp",
+			"image": __jamesAsset("./story-pages/story-18-begin.webp"),
 			"alt": "Busy morning girls seek school bag and bracelet"
 		},
 		{
-			"image": "./story-pages/story-18-middle.webp",
+			"image": __jamesAsset("./story-pages/story-18-middle.webp"),
 			"alt": "Girls draw picture-only morning plan at table Dad includes dog bowl"
 		},
 		{
-			"image": "./story-pages/story-18-end.webp",
+			"image": __jamesAsset("./story-pages/story-18-end.webp"),
 			"alt": "Girls prepared school bag shoes by door enjoy goodbye cuddle"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-19-begin.webp",
+			"image": __jamesAsset("./story-pages/story-19-begin.webp"),
 			"alt": "Family watches bee on flower at safe little distance"
 		},
 		{
-			"image": "./story-pages/story-19-middle.webp",
+			"image": __jamesAsset("./story-pages/story-19-middle.webp"),
 			"alt": "Sue notices pollen legs Rae whispers Dad keeps Mateo close"
 		},
 		{
-			"image": "./story-pages/story-19-end.webp",
+			"image": __jamesAsset("./story-pages/story-19-end.webp"),
 			"alt": "Girls draw bee and flower in notebook at home"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-20-begin.webp",
+			"image": __jamesAsset("./story-pages/story-20-begin.webp"),
 			"alt": "Mom helps girls shape biscuit dough Sue precise Rae crooked"
 		},
 		{
-			"image": "./story-pages/story-20-middle.webp",
+			"image": __jamesAsset("./story-pages/story-20-middle.webp"),
 			"alt": "Girls stand safely back Dad handles tray at oven"
 		},
 		{
-			"image": "./story-pages/story-20-end.webp",
+			"image": __jamesAsset("./story-pages/story-20-end.webp"),
 			"alt": "Girls admire cooled circle and crooked oval biscuits and share with adults"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-21-begin.webp",
+			"image": __jamesAsset("./story-pages/story-21-begin.webp"),
 			"alt": "Girls plan Mom birthday surprise Dad holds Mye"
 		},
 		{
-			"image": "./story-pages/story-21-middle.webp",
+			"image": __jamesAsset("./story-pages/story-21-middle.webp"),
 			"alt": "Dad helps girls make loaf and homemade picture-only card"
 		},
 		{
-			"image": "./story-pages/story-21-end.webp",
+			"image": __jamesAsset("./story-pages/story-21-end.webp"),
 			"alt": "Mom delights at card and small loaf on simple birthday table"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-22-begin.webp",
+			"image": __jamesAsset("./story-pages/story-22-begin.webp"),
 			"alt": "Family checks sunny view before walk and Dad weather phone"
 		},
 		{
-			"image": "./story-pages/story-22-middle.webp",
+			"image": __jamesAsset("./story-pages/story-22-middle.webp"),
 			"alt": "Dad helps Sue put warm layer Rae chooses closed shoes"
 		},
 		{
-			"image": "./story-pages/story-22-end.webp",
+			"image": __jamesAsset("./story-pages/story-22-end.webp"),
 			"alt": "Family enjoys cool sunny walk jackets baby warm face clear Mateo leashed"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-23-begin.webp",
+			"image": __jamesAsset("./story-pages/story-23-begin.webp"),
 			"alt": "Mom greets Sue Dad welcomes Rae at home"
 		},
 		{
-			"image": "./story-pages/story-23-middle.webp",
+			"image": __jamesAsset("./story-pages/story-23-middle.webp"),
 			"alt": "Sisters practise greetings taking turns kindly parents listening"
 		},
 		{
-			"image": "./story-pages/story-23-end.webp",
+			"image": __jamesAsset("./story-pages/story-23-end.webp"),
 			"alt": "Family displays picture-only welcome sign by door Mateo cheerful"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-24-begin.webp",
+			"image": __jamesAsset("./story-pages/story-24-begin.webp"),
 			"alt": "Sue cross after school Rae excited Dad listens"
 		},
 		{
-			"image": "./story-pages/story-24-middle.webp",
+			"image": __jamesAsset("./story-pages/story-24-middle.webp"),
 			"alt": "Girls draw dark cloud and yellow cloud using crayons"
 		},
 		{
-			"image": "./story-pages/story-24-end.webp",
+			"image": __jamesAsset("./story-pages/story-24-end.webp"),
 			"alt": "Sue's cloud gains blue patch Dad gives quiet comforting cuddle"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-25-begin.webp",
+			"image": __jamesAsset("./story-pages/story-25-begin.webp"),
 			"alt": "Girls sort puzzle pieces on table Mom holds baby away"
 		},
 		{
-			"image": "./story-pages/story-25-middle.webp",
+			"image": __jamesAsset("./story-pages/story-25-middle.webp"),
 			"alt": "Mom points at corner piece beside box girls connect edge row"
 		},
 		{
-			"image": "./story-pages/story-25-end.webp",
+			"image": __jamesAsset("./story-pages/story-25-end.webp"),
 			"alt": "Family leaves unfinished puzzle safely covered for restful break"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-26-begin.webp",
+			"image": __jamesAsset("./story-pages/story-26-begin.webp"),
 			"alt": "Rae searches mitten Sue checks sofa family waits at door"
 		},
 		{
-			"image": "./story-pages/story-26-middle.webp",
+			"image": __jamesAsset("./story-pages/story-26-middle.webp"),
 			"alt": "Sue finds mitten beneath coat hooks beside shoe"
 		},
 		{
-			"image": "./story-pages/story-26-end.webp",
+			"image": __jamesAsset("./story-pages/story-26-end.webp"),
 			"alt": "Rae puts mittens in reachable basket after walk"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-27-begin.webp",
+			"image": __jamesAsset("./story-pages/story-27-begin.webp"),
 			"alt": "Girls quietly watch small bird on fence through window"
 		},
 		{
-			"image": "./story-pages/story-27-middle.webp",
+			"image": __jamesAsset("./story-pages/story-27-middle.webp"),
 			"alt": "Dad shows bird guide sisters observe bird feet and head"
 		},
 		{
-			"image": "./story-pages/story-27-end.webp",
+			"image": __jamesAsset("./story-pages/story-27-end.webp"),
 			"alt": "Sue writes notebook Rae draws tiny bird feet after patient observation"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-28-begin.webp",
+			"image": __jamesAsset("./story-pages/story-28-begin.webp"),
 			"alt": "Dad places saving jar on high shelf girls use paper coins at table"
 		},
 		{
-			"image": "./story-pages/story-28-middle.webp",
+			"image": __jamesAsset("./story-pages/story-28-middle.webp"),
 			"alt": "Girls draw toy and sparkly bag savings goals on paper"
 		},
 		{
-			"image": "./story-pages/story-28-end.webp",
+			"image": __jamesAsset("./story-pages/story-28-end.webp"),
 			"alt": "Rae proudly decorates existing bag ribbon Mom helps Dad deposits real coins safely high"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-29-begin.webp",
+			"image": __jamesAsset("./story-pages/story-29-begin.webp"),
 			"alt": "Girls notice Dad tired before busy work morning"
 		},
 		{
-			"image": "./story-pages/story-29-middle.webp",
+			"image": __jamesAsset("./story-pages/story-29-middle.webp"),
 			"alt": "Dad at lunch looks fondly at folded note with golden dog drawing beside lunchbox"
 		},
 		{
-			"image": "./story-pages/story-29-end.webp",
+			"image": __jamesAsset("./story-pages/story-29-end.webp"),
 			"alt": "Dad thanks girls at home Mateo leans knee Mom holds smiling baby"
 		}
 	],
 	[
 		{
-			"image": "./story-pages/story-30-begin.webp",
+			"image": __jamesAsset("./story-pages/story-30-begin.webp"),
 			"alt": "Sue points bright light above garden as dusk falls"
 		},
 		{
-			"image": "./story-pages/story-30-middle.webp",
+			"image": __jamesAsset("./story-pages/story-30-middle.webp"),
 			"alt": "Dad and girls look up sky light using guide phone Mom baby nearby"
 		},
 		{
-			"image": "./story-pages/story-30-end.webp",
+			"image": __jamesAsset("./story-pages/story-30-end.webp"),
 			"alt": "Family admires purple orange horizon from safe garden"
 		}
 	]
@@ -26400,52 +26403,52 @@ function recipePhoto(r) {
 	return recipePhotos[/pancake|fritter/.test(name) ? "pancakes" : /fish|salmon/.test(name) ? "fish" : /chicken|turkey|beef/.test(name) ? "chicken" : /salad|slaw|quinoa|wrap/.test(name) ? "salad" : /soup|minestrone/.test(name) ? "soup" : /rice|polenta|porridge/.test(name) ? "rice" : /pasta|bolognese/.test(name) ? "noodles" : /egg|frittata|omelette/.test(name) ? "eggs" : /toast|pizza|bread|rice cakes/.test(name) ? "bread" : /yoghurt|chia|dessert/.test(name) ? "yoghurt" : /apple|banana|fruit/.test(name) ? "fruit" : /lentil|bean|chickpea|hummus|dip|curry|chilli/.test(name) ? "lentils" : "vegetables"];
 }
 var recipePhotos = {
-	rice: "./recipe-photos/rice.webp",
-	chicken: "./recipe-photos/chicken.webp",
-	lentils: "./recipe-photos/lentils.webp",
-	soup: "./recipe-photos/soup.webp",
-	bread: "./recipe-photos/bread.webp",
-	eggs: "./recipe-photos/eggs.webp",
-	noodles: "./recipe-photos/noodles.webp",
-	fruit: "./recipe-photos/fruit.webp",
-	yoghurt: "./recipe-photos/yoghurt.webp",
-	vegetables: "./recipe-photos/vegetables.webp",
-	fish: "./recipe-photos/fish.webp",
-	salad: "./recipe-photos/salad.webp",
-	pancakes: "./recipe-photos/pancakes.webp"
+	rice: __jamesAsset("./recipe-photos/rice.webp"),
+	chicken: __jamesAsset("./recipe-photos/chicken.webp"),
+	lentils: __jamesAsset("./recipe-photos/lentils.webp"),
+	soup: __jamesAsset("./recipe-photos/soup.webp"),
+	bread: __jamesAsset("./recipe-photos/bread.webp"),
+	eggs: __jamesAsset("./recipe-photos/eggs.webp"),
+	noodles: __jamesAsset("./recipe-photos/noodles.webp"),
+	fruit: __jamesAsset("./recipe-photos/fruit.webp"),
+	yoghurt: __jamesAsset("./recipe-photos/yoghurt.webp"),
+	vegetables: __jamesAsset("./recipe-photos/vegetables.webp"),
+	fish: __jamesAsset("./recipe-photos/fish.webp"),
+	salad: __jamesAsset("./recipe-photos/salad.webp"),
+	pancakes: __jamesAsset("./recipe-photos/pancakes.webp")
 };
 var workoutPhotos = {
-	"Easy-Home": "./workout-photos/easy-home.webp",
-	"Med-Home": "./workout-photos/med-home.webp",
-	"Intense-Home": "./workout-photos/intense-home.webp",
-	"Easy-Outdoor": "./workout-photos/easy-outdoor.webp",
-	"Med-Outdoor": "./workout-photos/med-outdoor.webp",
-	"Intense-Outdoor": "./workout-photos/intense-outdoor.webp"
+	"Easy-Home": __jamesAsset("./workout-photos/easy-home.webp"),
+	"Med-Home": __jamesAsset("./workout-photos/med-home.webp"),
+	"Intense-Home": __jamesAsset("./workout-photos/intense-home.webp"),
+	"Easy-Outdoor": __jamesAsset("./workout-photos/easy-outdoor.webp"),
+	"Med-Outdoor": __jamesAsset("./workout-photos/med-outdoor.webp"),
+	"Intense-Outdoor": __jamesAsset("./workout-photos/intense-outdoor.webp")
 };
 var mindfulnessScenes = {
 	leaves: {
-		poster: "./mindfulness-scenes/stream.webp",
-		video: "./mindfulness-scenes/stream.mp4",
+		poster: __jamesAsset("./mindfulness-scenes/stream.webp"),
+		video: __jamesAsset("./mindfulness-scenes/stream.mp4"),
 		alt: "Leaves beside a quiet stream"
 	},
 	grounding: {
-		poster: "./mindfulness-scenes/garden.webp",
-		video: "./mindfulness-scenes/garden.mp4",
+		poster: __jamesAsset("./mindfulness-scenes/garden.webp"),
+		video: __jamesAsset("./mindfulness-scenes/garden.mp4"),
 		alt: "A quiet leafy garden"
 	},
 	thought: {
-		poster: "./mindfulness-scenes/sky.webp",
-		video: "./mindfulness-scenes/sky.mp4",
+		poster: __jamesAsset("./mindfulness-scenes/sky.webp"),
+		video: __jamesAsset("./mindfulness-scenes/sky.mp4"),
 		alt: "Soft clouds in an open sky"
 	},
 	feelings: {
-		poster: "./mindfulness-scenes/sky.webp",
-		video: "./mindfulness-scenes/sky.mp4",
+		poster: __jamesAsset("./mindfulness-scenes/sky.webp"),
+		video: __jamesAsset("./mindfulness-scenes/sky.mp4"),
 		alt: "Soft clouds in an open sky"
 	},
 	kindness: {
-		poster: "./mindfulness-scenes/garden.webp",
-		video: "./mindfulness-scenes/garden.mp4",
+		poster: __jamesAsset("./mindfulness-scenes/garden.webp"),
+		video: __jamesAsset("./mindfulness-scenes/garden.mp4"),
 		alt: "A quiet leafy garden"
 	}
 };
@@ -26800,9 +26803,9 @@ function MindfulnessExercises() {
 //#endregion
 //#region app/coffee-post.ts
 var coffeeBackgrounds = [
-	"./coffee-posts/coffee-01.webp",
-	"./coffee-posts/coffee-02.webp",
-	"./coffee-posts/coffee-03.webp"
+	__jamesAsset("./coffee-posts/coffee-01.webp"),
+	__jamesAsset("./coffee-posts/coffee-02.webp"),
+	__jamesAsset("./coffee-posts/coffee-03.webp")
 ];
 function coffeeBackground(index) {
 	return coffeeBackgrounds[index % coffeeBackgrounds.length];
@@ -27628,25 +27631,25 @@ var collections = [
 	{
 		title: "Your day",
 		text: "Weather, food, coffee & small savings",
-		image: "./photo-share/savings-groceries.webp",
+		image: __jamesAsset("./photo-share/savings-groceries.webp"),
 		section: "Weather & OOTD"
 	},
 	{
 		title: "Family & learning",
 		text: "Stories, languages & little discoveries",
-		image: "./story-pages/story-02-middle.webp",
+		image: __jamesAsset("./story-pages/story-02-middle.webp"),
 		section: "Reading nook"
 	},
 	{
 		title: "Faith & inspiration",
 		text: "Prayers, reflections & the Catholic calendar",
-		image: "./photo-share/inspiration.webp",
+		image: __jamesAsset("./photo-share/inspiration.webp"),
 		section: "Inspiration"
 	},
 	{
 		title: "Community",
 		text: "Our family, local business & your feedback",
-		image: "./family-seaside-consistent.webp",
+		image: __jamesAsset("./family-seaside-consistent.webp"),
 		section: "About us"
 	}
 ];
@@ -27654,25 +27657,25 @@ var everyday = [
 	{
 		title: "Coffee corner",
 		text: "A warm thought for your next break",
-		image: "./coffee-posts/coffee-01.webp",
+		image: __jamesAsset("./coffee-posts/coffee-01.webp"),
 		section: "Coffee corner"
 	},
 	{
 		title: "Make room for savings",
 		text: "300 practical household tips",
-		image: "./photo-share/savings-money.webp",
+		image: __jamesAsset("./photo-share/savings-money.webp"),
 		section: "Saving tips"
 	},
 	{
 		title: "Easy homemade recipes",
 		text: "64 recipes, including Filipino and Indian favourites",
-		image: "./recipe-art.png",
+		image: __jamesAsset("./recipe-art.png"),
 		section: "Homemade recipes"
 	},
 	{
 		title: "A little time in prayer",
 		text: "Bring a worry, a hope or a name",
-		image: "./photo-share/prayer.webp",
+		image: __jamesAsset("./photo-share/prayer.webp"),
 		section: "Short prayers"
 	}
 ];
@@ -27735,7 +27738,7 @@ function BrowseHome({ onNavigate, onStory }) {
 						})] })
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-					src: "./story-pages/story-01-end.webp",
+					src: __jamesAsset("./story-pages/story-01-end.webp"),
 					alt: "Sue and Rae sail their toy boat at a rock pool with Mom, Dad, baby Mye and Mateo nearby"
 				})]
 			}),
@@ -29027,10 +29030,10 @@ async function loadWeather(name, signal) {
 //#endregion
 //#region app/family-outfit.tsx
 var wardrobe = {
-	Casual: "./family-play-consistent.webp",
-	"Smart casual": "./family-smart-casual.png",
-	Formal: "./family-formal.png",
-	"Home clothes": "./family-home-clothes.png"
+	Casual: __jamesAsset("./family-play-consistent.webp"),
+	"Smart casual": __jamesAsset("./family-smart-casual.png"),
+	Formal: __jamesAsset("./family-formal.png"),
+	"Home clothes": __jamesAsset("./family-home-clothes.png")
 };
 function FamilyOutfitAnimation({ kind, style = "Casual", confirmed, manual = false }) {
 	const [moving, setMoving] = (0, import_react.useState)(true), [reduced, setReduced] = (0, import_react.useState)(false);
@@ -30325,7 +30328,7 @@ function ChurchDirectory() {
 			children: featured.map((c) => {
 				const d = dioceses.find((d) => d.name === c.diocese), credit = photo_credits_default.find((x) => x.slug === d.slug);
 				return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-					src: "./faith/" + d.slug + ".webp",
+					src: __jamesAsset("./faith/" + d.slug + ".webp"),
 					alt: c.name + (d.name === "Hamilton" ? " interior" : " exterior"),
 					loading: "lazy"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figcaption", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
@@ -31580,7 +31583,7 @@ var familyRecipes = [
 		"Add garlic, soy sauce, vinegar, water, bay leaves and pepper. Bring to a boil, then cover and simmer gently for 25–30 minutes, turning once.",
 		"Check chicken reaches at least 75°C in the thickest part. Uncover and simmer briefly to reduce the sauce; remove bay leaves.",
 		"Serve hot with a portion of rice and cooked vegetables."
-	], "Soy; ordinary soy sauce usually contains wheat.", [df$1, kid$1], "./recipe-photos/chicken.webp"),
+	], "Soy; ordinary soy sauce usually contains wheat.", [df$1, kid$1], __jamesAsset("./recipe-photos/chicken.webp")),
 	recipe("filipino-tinola", "Simple chicken tinola", "Filipino", "Dinner", 40, 4, "Ginger chicken soup with chayote or courgette and leafy greens.", [
 		"500 g boneless chicken thigh, cut into large pieces",
 		"1 onion, sliced",
@@ -31596,7 +31599,7 @@ var familyRecipes = [
 		"Add chicken and stock. Bring to a boil, cover and simmer for 15 minutes.",
 		"Add chayote and simmer 10–15 minutes until tender; courgette needs only about 5–7 minutes. Check chicken is at least 75°C throughout.",
 		"Stir in spinach until wilted. Add optional fish sauce to taste and serve hot."
-	], "Fish if using fish sauce; check stock for other allergens.", [df$1, kid$1], "./recipe-photos/soup.webp"),
+	], "Fish if using fish sauce; check stock for other allergens.", [df$1, kid$1], __jamesAsset("./recipe-photos/soup.webp")),
 	recipe("filipino-munggo", "Ginisang munggo with spinach", "Filipino", "Dinner", 60, 4, "A meat-free home version of mung bean stew with tomatoes and greens.", [
 		"200 g dry mung beans, rinsed",
 		"1 litre water, plus extra if needed",
@@ -31615,7 +31618,7 @@ var familyRecipes = [
 		gf$1,
 		df$1,
 		kid$1
-	], "./recipe-photos/lentils.webp"),
+	], __jamesAsset("./recipe-photos/lentils.webp")),
 	recipe("filipino-pancit", "Vegetable pancit bihon", "Filipino", "Dinner", 30, 4, "Rice noodles with tender vegetables, inspired by Filipino pancit bihon.", [
 		"200 g dried bihon rice noodles",
 		"1 tbsp oil",
@@ -31631,7 +31634,7 @@ var familyRecipes = [
 		"Cook onion in oil for 3 minutes. Add garlic, carrot and cabbage and cook for 4–5 minutes.",
 		"Add stock and soy sauce and bring to a simmer. Add noodles, tossing gently, until tender and liquid is mostly absorbed. Follow packet timing and add a splash of water if needed.",
 		"Serve hot with lemon. Cut noodles into manageable lengths for younger children."
-	], "Soy; ordinary soy sauce contains wheat. Check noodles and stock.", [df$1, kid$1], "./recipe-photos/noodles.webp"),
+	], "Soy; ordinary soy sauce contains wheat. Check noodles and stock.", [df$1, kid$1], __jamesAsset("./recipe-photos/noodles.webp")),
 	recipe("filipino-sinangag", "Garlic rice · sinangag", "Filipino", "Side", 15, 4, "A quick garlic rice using safely chilled cooked rice.", [
 		"3 cups cooked rice, cooled quickly and kept refrigerated for no more than 2 days",
 		"1 tbsp oil",
@@ -31647,7 +31650,7 @@ var familyRecipes = [
 		gf$1,
 		df$1,
 		kid$1
-	], "./recipe-photos/rice.webp"),
+	], __jamesAsset("./recipe-photos/rice.webp")),
 	recipe("filipino-tortang-talong", "Tortang talong · aubergine omelette", "Filipino", "Lunch", 45, 2, "Soft roasted aubergine folded into a simple egg coating.", [
 		"2 small aubergines",
 		"3 eggs",
@@ -31663,7 +31666,7 @@ var familyRecipes = [
 		gf$1,
 		df$1,
 		kid$1
-	], "./recipe-photos/eggs.webp"),
+	], __jamesAsset("./recipe-photos/eggs.webp")),
 	recipe("indian-dal", "Gentle red lentil dal", "Indian", "Dinner", 35, 4, "A mild home-style dal with red lentils, tomato and warming spices.", [
 		"200 g dry red lentils, rinsed",
 		"750 ml water",
@@ -31684,7 +31687,7 @@ var familyRecipes = [
 		gf$1,
 		df$1,
 		kid$1
-	], "./recipe-photos/lentils.webp"),
+	], __jamesAsset("./recipe-photos/lentils.webp")),
 	recipe("indian-chana", "Easy chana masala", "Indian", "Dinner", 30, 4, "A pantry chickpea curry with a mild tomato sauce.", [
 		"2 × 400 g cans chickpeas, drained and rinsed",
 		"1 tbsp oil",
@@ -31706,7 +31709,7 @@ var familyRecipes = [
 		gf$1,
 		df$1,
 		kid$1
-	], "./recipe-photos/lentils.webp"),
+	], __jamesAsset("./recipe-photos/lentils.webp")),
 	recipe("indian-pulao", "Vegetable pulao", "Indian", "Dinner", 35, 4, "One-pot basmati rice with peas, carrots and a gentle cumin aroma.", [
 		"1½ cups basmati rice, rinsed",
 		"1 tbsp oil",
@@ -31725,7 +31728,7 @@ var familyRecipes = [
 		gf$1,
 		df$1,
 		kid$1
-	], "./recipe-photos/rice.webp"),
+	], __jamesAsset("./recipe-photos/rice.webp")),
 	recipe("indian-aloo-gobi", "Simple aloo gobi", "Indian", "Side", 35, 4, "Potato and cauliflower cooked with mild spices.", [
 		"2 medium potatoes, cut into 2 cm cubes",
 		"1 small cauliflower, small florets",
@@ -31745,7 +31748,7 @@ var familyRecipes = [
 		gf$1,
 		df$1,
 		kid$1
-	], "./recipe-photos/vegetables.webp"),
+	], __jamesAsset("./recipe-photos/vegetables.webp")),
 	recipe("indian-raita", "Cucumber raita", "Indian", "Side", 10, 4, "A cool yoghurt accompaniment to a warm meal.", [
 		"1 cup plain unsweetened yoghurt",
 		"½ cucumber, washed and grated",
@@ -31755,7 +31758,7 @@ var familyRecipes = [
 		"Squeeze excess water from the grated cucumber using clean hands or a clean cloth.",
 		"Mix cucumber into yoghurt. Stir in cumin and optional mint.",
 		"Keep refrigerated until serving. Use a clean spoon and return leftovers promptly to the fridge."
-	], "Milk.", [gf$1, kid$1], "./recipe-photos/yoghurt.webp"),
+	], "Milk.", [gf$1, kid$1], __jamesAsset("./recipe-photos/yoghurt.webp")),
 	recipe("indian-chapati", "Everyday chapati", "Indian", "Side", 35, 4, "Simple wholemeal flatbreads made on a hot pan.", [
 		"250 g wholemeal flour, plus a little for rolling",
 		"160–180 ml warm water",
@@ -31766,7 +31769,7 @@ var familyRecipes = [
 		"Divide into 8 balls. Roll each into a thin circle on a lightly floured surface.",
 		"Heat a dry heavy frying pan over medium-high heat. Cook a chapati for about 1 minute until small bubbles form, then turn.",
 		"Cook the other side for 1–2 minutes until brown spots appear and the bread is cooked through. Use tongs near the hot pan. Keep covered with a clean cloth while cooking the rest."
-	], "Wheat (gluten).", [df$1, kid$1], "./recipe-photos/bread.webp")
+	], "Wheat (gluten).", [df$1, kid$1], __jamesAsset("./recipe-photos/bread.webp"))
 ];
 //#endregion
 //#region app/more-recipes.ts
@@ -34012,7 +34015,7 @@ function Recipes() {
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "recipe-banner",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-				src: "./recipe-art.png",
+				src: __jamesAsset("./recipe-art.png"),
 				alt: "Paper-cut illustration of lentil soup, bread, and vegetables on a kitchen table"
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { children: "A little homemade comfort." }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Start with what is in your kitchen. Choose a simple recipe and make it your own." })] })]
 		}),
@@ -35091,7 +35094,7 @@ function About() {
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
 			className: "family-portrait about-family-portrait animated",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-				src: "./family-seaside-consistent.webp",
+				src: __jamesAsset("./family-seaside-consistent.webp"),
 				alt: "The James family and Mateo the golden Labrador in an enhanced family portrait",
 				width: "1536",
 				height: "1024"
@@ -42334,7 +42337,7 @@ function SaintCalendar() {
 							(s.localPhoto || s.photo) && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
 								className: "saint-photo",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-									src: s.localPhoto ? "./faith/" + s.localPhoto + ".webp" : s.photo,
+									src: s.localPhoto ? __jamesAsset("./faith/" + s.localPhoto + ".webp") : s.photo,
 									alt: s.title,
 									loading: "lazy"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figcaption", { children: s.localPhoto ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
@@ -42559,7 +42562,7 @@ function Rosary() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
 				className: "rosary-natural-photo",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-					src: "./rosary-natural.webp",
+					src: __jamesAsset("./rosary-natural.webp"),
 					alt: "Wooden rosary beads and a silver crucifix resting on softly lit linen",
 					width: "1536",
 					height: "1024"
@@ -42712,12 +42715,12 @@ function Rosary() {
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("summary", { children: "Open the bead-by-bead guide" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figure", {
 					className: "rosary-photo rosary-guide",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "./rosary-guide.svg",
+						href: __jamesAsset("./rosary-guide.svg"),
 						target: "_blank",
 						rel: "noopener noreferrer",
 						"aria-label": "Open the enlarged rosary guide",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							src: "./rosary-guide.svg",
+							src: __jamesAsset("./rosary-guide.svg"),
 							alt: "Rosary bead guide: opening prayers, then five decades of one Our Father, ten Hail Marys and Glory Be",
 							width: "1200",
 							height: "920",
@@ -42725,14 +42728,14 @@ function Rosary() {
 						})
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("figcaption", { children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: "./rosary-guide.svg",
+							href: __jamesAsset("./rosary-guide.svg"),
 							target: "_blank",
 							rel: "noopener noreferrer",
 							children: "Open enlarged guide"
 						}),
 						" · ",
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: "./rosary-original.png",
+							href: __jamesAsset("./rosary-original.png"),
 							target: "_blank",
 							rel: "noopener noreferrer",
 							children: "View your original diagram"
@@ -43223,7 +43226,7 @@ function Home({ canEdit }) {
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhotoCard, {
 										text: "“The way we care for each other is the light we leave behind.”",
 										credit: "The James NZ · original reflection",
-										background: "./photo-share/inspiration.webp",
+										background: __jamesAsset("./photo-share/inspiration.webp"),
 										filename: "TheJamesNZ-a-moment-to-reflect"
 									})
 								}),
@@ -43306,7 +43309,7 @@ function Home({ canEdit }) {
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhotoCard, {
 												text: "“" + q.text + "”",
 												credit: q.author || "Author not specified",
-												background: "./photo-share/inspiration.webp",
+												background: __jamesAsset("./photo-share/inspiration.webp"),
 												filename: "TheJamesNZ-reflection-" + q.id.replace(/[^a-z0-9-]/gi, "")
 											}),
 											canEdit && !q.id.startsWith("sample-") && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
