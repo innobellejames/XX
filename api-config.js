@@ -1,3 +1,4 @@
+/* The James NZ — published live version 19; source c6f1ae3450beaceacccee44b893f1465cf88900a; export 2 October 2026. */
 // Set this to your separately hosted backend URL, for example https://api.example.com.
 // Never put an OpenAI API key in this file, HTML, or browser JavaScript.
 window.THE_JAMES_API_BASE = "";
