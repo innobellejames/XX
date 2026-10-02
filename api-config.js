@@ -26,5 +26,3 @@ window.THE_JAMES_API_BASE = "";
   return json({error:"This feature needs a connected backend. The GitHub copy includes the complete server source and setup instructions."},503);
  };
 })();
-
-```
